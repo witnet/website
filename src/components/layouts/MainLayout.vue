@@ -21,14 +21,23 @@
 </script>
 
 <style lang="stylus">
-  html body
+  body
     font-family Merriweather, serif
-  h1, h2, h3, h4, h5, h6
     margin 0
+    *
+      box-sizing border-box
+    h1, h2, h3, h4, h5, h6
+      font-family Montserrat, sans-serif
+      margin 0
+    p
+      color #444
+      font-size .9em
+      line-height 1.8em
 
   .wrapped
     max-width 1000px
     margin 0 auto
+    padding 0 10px
   a.buttonLike
     padding 12px 20px
     border-radius 4px

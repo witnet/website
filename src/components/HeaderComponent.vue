@@ -36,7 +36,8 @@
   menu
     float right
     position relative
-    top 18px
+    top 8px
+    right 12px
     li
       display inline
       foat left

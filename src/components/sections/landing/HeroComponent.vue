@@ -4,7 +4,7 @@
     h3 Witnet lets smart contracts be aware of anything happening outside the blockchain.
     div.buttons
       a.buttonLike Join mailing list
-      a.negative.transparent.buttonLike(href='//t.me/witnet') Join us on Telegram
+      a.negative.transparent.buttonLike(href='//t.me/joinwitnet') Join us on Telegram
     div.video
       video
       a.play Watch video

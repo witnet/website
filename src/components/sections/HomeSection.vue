@@ -1,16 +1,18 @@
 <template lang="pug">
   main
     heroComponent
+    descriptionComponent
 </template>
 
 <script lang="ts">
   import Vue from 'vue'
   import Component from 'vue-class-component';
-  import {HeroComponent} from "./landing";
+  import {DescriptionComponent, HeroComponent} from './landing';
 
   @Component({
     components: {
-      heroComponent: HeroComponent
+      heroComponent: HeroComponent,
+      descriptionComponent: DescriptionComponent
     }
   })
   export default class HomeSection extends Vue {
