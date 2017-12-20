@@ -1,6 +1,6 @@
 <template lang="pug">
   header
-    router-link(to='landing')
+    router-link(to='/')
       h1 Witnet
     menu
       ul

@@ -1,11 +1,11 @@
 import VueRouter from 'vue-router'
-import {FAQSection, LandingSection} from '../components/sections'
+import {FAQSection, HomeSection} from '../components/sections'
 import {MainLayout} from '../components/layouts'
 
 const routes = [
-  { path: '/', component: MainLayout, children: [
-      { path: '/landing', name: 'landing', component: LandingSection, alias: '/' },
-      { path: '/faq', name: 'faq', component: FAQSection, alias: '/' }
+  { path: '/', name: 'root', component: MainLayout, children: [
+      { path: '/home', name: 'landing', component: HomeSection, alias: '/' },
+      { path: '/faq', name: 'faq', component: FAQSection }
   ] }
 ]
 

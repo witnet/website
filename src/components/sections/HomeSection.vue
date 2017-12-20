@@ -1,6 +1,6 @@
 <template lang="pug">
   main
-    h2 Landing
+    h2 Home
 </template>
 
 <script lang="ts">
@@ -8,7 +8,7 @@
   import Component from 'vue-class-component';
 
   @Component({})
-  export default class LandingSection extends Vue {
+  export default class HomeSection extends Vue {
 
   }
 </script>
