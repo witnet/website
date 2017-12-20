@@ -1,18 +1,19 @@
 <template lang="pug">
   main
     headerComponent
-    section.main
-      router-view
+    router-view
+    footerComponent
 </template>
 
 <script lang="ts">
   import Vue from 'vue'
   import Component from 'vue-class-component';
-  import {HeaderComponent} from '../index'
+  import {FooterComponent, HeaderComponent} from '../index'
 
   @Component({
     components: {
-      headerComponent: HeaderComponent
+      headerComponent: HeaderComponent,
+      footerComponent: FooterComponent
     }
   })
   export default class MainLayout extends Vue {
