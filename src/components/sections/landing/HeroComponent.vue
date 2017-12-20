@@ -72,8 +72,9 @@ article.hero
         content '\25B6'
         top -95px
         position absolute
-        width 80px
+        width 75px
         height 80px
+        padding-left 5px
         background white
         color #60F
         font-size 4em
