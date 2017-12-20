@@ -35,9 +35,9 @@
     aside.intrigued
       span Intrigued?
       div.buttons
-        a.buttonLike Read the whitepaper
+        a.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
         a.buttonLike Join mailing list
-        a.negative.buttonLike(href='//t.me/joinwitnet') Join us on Telegram
+        a.negative.buttonLike(href='//t.me/joinwitnet', target='blank') Join us on Telegram
 </template>
 
 <script lang="ts">

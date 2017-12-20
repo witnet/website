@@ -13,7 +13,7 @@
           li
             a(href='//medium.com/witnet', target='_blank') Blog
           li
-            a.buttonLike(href='/static/whitepaper.pdf', target='blank') Read the whitepaper
+            a.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
 </template>
 
 <script lang="ts">
