@@ -28,11 +28,11 @@
 
 <style scoped lang="stylus">
   header
-    overflow auto
+    height 90px
     font-family Montserrat, sans-serif
   h1
     float left
-    margin-left 10px
+    margin 20px 0 0 10px
   menu
     float right
     position relative
@@ -41,7 +41,7 @@
       display inline
       foat left
       a
-        padding 15px 25px
+        padding 14px 20px
         margin 10px
         font-size .9em
         text-decoration: none
@@ -49,20 +49,8 @@
         transition color .2s ease
         &.buttonLike
           margin-left 30px
-          background #60f
-          color white
-          border-radius 4px
-          border 2px solid transparent
           font-size .8em
-          font-weight 500
-          letter-spacing .15em
-          text-transform uppercase
-          transition color, background .2s ease
-        &:hover
-          &:not(.buttonLike)
-            color #444
-          &.buttonLike
-            background transparent
-            color #60f
-            border 2px solid #60f
+          color white
+        &:hover:not(.buttonLike)
+          color #444
 </style>

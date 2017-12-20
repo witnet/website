@@ -1,13 +1,18 @@
 <template lang="pug">
-  main.wrapped
-    h2 Home
+  main
+    heroComponent
 </template>
 
 <script lang="ts">
   import Vue from 'vue'
   import Component from 'vue-class-component';
+  import {HeroComponent} from "./landing";
 
-  @Component({})
+  @Component({
+    components: {
+      heroComponent: HeroComponent
+    }
+  })
   export default class HomeSection extends Vue {
 
   }
