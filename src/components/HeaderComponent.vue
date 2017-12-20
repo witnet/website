@@ -1,11 +1,19 @@
 <template lang="pug">
   header
-    router-link(to='/')
-      h1 Witnet
-    menu
-      ul
-        li
-          router-link(to='faq') FAQ
+    div.wrapped
+      h1
+        router-link(to='/')
+          img(src='static/img/logo.png', alt='Witnet')
+      menu
+        ul
+          li
+            router-link(to='faq') FAQ
+          li
+            a(href='') Contact
+          li
+            a(href='//medium.com/witnet', target='_blank') Blog
+          li
+            a.buttonLike(href='/static/whitepaper.pdf', target='blank') Read the whitepaper
 </template>
 
 <script lang="ts">
@@ -19,5 +27,42 @@
 </script>
 
 <style scoped lang="stylus">
-
+  header
+    overflow auto
+    font-family Montserrat, sans-serif
+  h1
+    float left
+    margin-left 10px
+  menu
+    float right
+    position relative
+    top 18px
+    li
+      display inline
+      foat left
+      a
+        padding 15px 25px
+        margin 10px
+        font-size .9em
+        text-decoration: none
+        color #999
+        transition color .2s ease
+        &.buttonLike
+          margin-left 30px
+          background #60f
+          color white
+          border-radius 4px
+          border 2px solid transparent
+          font-size .8em
+          font-weight 500
+          letter-spacing .15em
+          text-transform uppercase
+          transition color, background .2s ease
+        &:hover
+          &:not(.buttonLike)
+            color #444
+          &.buttonLike
+            background transparent
+            color #60f
+            border 2px solid #60f
 </style>

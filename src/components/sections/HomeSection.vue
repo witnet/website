@@ -1,5 +1,5 @@
 <template lang="pug">
-  main
+  main.wrapped
     h2 Home
 </template>
 

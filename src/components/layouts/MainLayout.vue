@@ -19,3 +19,11 @@
 
   }
 </script>
+
+<style lang="stylus">
+  html body
+    font-family Merriweather, serif
+  .wrapped
+    max-width 1000px
+    margin 0 auto
+</style>
