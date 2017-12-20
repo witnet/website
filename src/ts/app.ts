@@ -9,6 +9,6 @@ declare global {
 
 Vue.use(VueRouter)
 
-const el = '#app'
+const el: string = '#app'
 
-const app = new Vue({el, router})
+new Vue({el, router})
