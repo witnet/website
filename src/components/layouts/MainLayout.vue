@@ -30,13 +30,13 @@
     max-width 1000px
     margin 0 auto
   a.buttonLike
-    padding 14px 24px
+    padding 12px 20px
     border-radius 4px
     background #60f
     color white
     border 2px solid transparent
     font-family Montserrat, sans-serif
-    font-size .8em
+    font-size .7em
     font-weight 500
     letter-spacing .15em
     text-transform uppercase
@@ -46,11 +46,11 @@
     &.negative, &:not(.negative):hover
       background white
       color #60f
-      border 2px solid #60f
+      border-color #60f
     &.negative:hover
       background #60f
       color white
-      border 2px solid transparent
+      border-color transparent
     &.transparent
       background transparent
 </style>

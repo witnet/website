@@ -24,32 +24,33 @@
 article.hero
   text-align center
   font-family Montserrat, sans-serif
-  padding 80px 20px
+  padding 50px 20px
   background-image url('/static/img/hero.png'),
   linear-gradient(to bottom, rgba(102,0,255,0) 0%,rgba(102,0,255,0.03) 100%)
   background-position bottom
   background-repeat no-repeat
+  border-bottom 1px solid #EEE
   > *
     margin 0 auto
   h2
     color #60f
     font-weight 600
-    font-size 2.4em
+    font-size 2em
   h3
-    margin-top 15px
+    margin-top 10px
     color #666
-    width 550px
+    width 450px
     max-width 100%
     font-weight 400
-    font-size 1.5em
+    font-size 1.2em
     line-height 1.5em
   .buttons
-    padding 50px
+    padding 40px 0 50px 0
     a
       margin 0 10px
   .video
     position relative
-    width 500px
+    width 420px
     max-width 100%
     cursor pointer
     video
@@ -61,17 +62,17 @@ article.hero
       top 70%
       width 100%
       color white
-      font-size .8em
+      font-size .7em
       font-weight 600
       text-transform uppercase
       text-shadow 0 2px 2px rgba(102, 0, 255, .2)
       opacity .8
       &:before
         content '\25B6'
-        top -105px
+        top -95px
         position absolute
-        width 95px
-        height 95px
+        width 80px
+        height 80px
         background white
         color #60F
         font-size 6.5em

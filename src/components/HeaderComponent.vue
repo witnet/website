@@ -41,15 +41,15 @@
       display inline
       foat left
       a
-        padding 14px 20px
+        padding 12px 20px
         margin 10px
-        font-size .9em
+        font-size .8em
         text-decoration: none
         color #999
         transition color .2s ease
         &.buttonLike
           margin-left 30px
-          font-size .8em
+          font-size .6em
           color white
         &:hover:not(.buttonLike)
           color #444
