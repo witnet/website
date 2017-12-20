@@ -75,13 +75,14 @@
           main
             float left
     aside.intrigued
-      height 90px
-      margin 0 20px
-      padding 30px
+      margin 0 20p2
+      padding 30px 30px 8px 30px
       border 2px solid #60F
       border-radius 4px
+      overflow auto
       span
         float left
+        margin-bottom 18px
         font-family Montserrat, sans-serif
         font-size 1.2em
         font-weight 500

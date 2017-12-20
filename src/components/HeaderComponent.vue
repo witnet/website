@@ -36,7 +36,6 @@
   menu
     float right
     position relative
-    top 8px
     right 12px
     li
       display inline

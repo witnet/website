@@ -40,6 +40,7 @@
     margin 0 auto
     padding 0 10px
   a.buttonLike
+    display inline-block
     padding 12px 20px
     border-radius 4px
     background #60f
@@ -51,6 +52,8 @@
     letter-spacing .15em
     text-transform uppercase
     text-decoration none
+    margin-top -8px
+    margin-bottom 14px
     transition color, background .2s ease
     cursor pointer
     &.negative, &:not(.negative):hover

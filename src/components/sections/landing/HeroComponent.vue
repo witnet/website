@@ -45,9 +45,10 @@ article.hero
     font-size 1.2em
     line-height 1.5em
   .buttons
-    padding 40px 0 50px 0
+    padding 30px 0
     a
-      margin 0 10px
+      margin-left 5px
+      margin-right 5px
   .video
     position relative
     width 420px
