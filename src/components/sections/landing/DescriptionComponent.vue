@@ -76,6 +76,7 @@
             float left
     aside.intrigued
       height 90px
+      margin 0 20px
       padding 30px
       border 2px solid #60F
       border-radius 4px

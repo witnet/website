@@ -3,7 +3,7 @@
     article.wrapped
       h1
         img(src='/static/img/logo-white.png').desaturated
-      p © 2018 Stampery, Inc. Some rights reserved.
+      p.copy © 2018 Stampery, Inc. Some rights reserved.
 </template>
 
 <script lang="ts">
@@ -16,9 +16,11 @@
 
 <style scoped lang="stylus">
   footer
-    padding 70px
+    padding 70px 20px
     background #222
     font-family Montserrat, sans-serif
     *
       color #DDD
+    p.copy
+      margin-top 0px
 </style>
