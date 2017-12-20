@@ -76,8 +76,8 @@ article.hero
         height 80px
         background white
         color #60F
-        font-size 6.5em
-        line-height 1
+        font-size 4em
+        line-height 1.6
         border-radius 100%
         box-shadow 0 2px 2px rgba(102, 0, 255, .2)
         transition background, color .2s ease
