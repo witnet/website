@@ -36,7 +36,7 @@
     float left
     a
       display block
-      padding 23px 10px 12px 10px
+      padding 25px 10px 12px 10px
   menu
     float right
     position relative
