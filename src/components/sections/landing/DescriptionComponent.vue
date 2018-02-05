@@ -112,21 +112,4 @@
         width 100%
       ul li figure
         margin 0 0 30px 0
-    aside.intrigued
-      margin 0 20p2
-      padding 30px 30px 8px 30px
-      border 2px solid #60D
-      border-radius 4px
-      overflow auto
-      span
-        float left
-        margin-bottom 18px
-        font-family "Titillium Web", sans-serif
-        font-size 1.2em
-        font-weight 500
-        color #60D
-      div.buttons
-        float right
-        a
-          margin-left 10px
 </style>
