@@ -4,8 +4,8 @@
       div.video
         video
         a.play Watch video
-      h2 Connecting smart contracts to the real world.
-      h3 Witnet connects smart contracts to any external data source.
+      h2 Create smart contracts #[br]with real power.
+      h3 Witnet connects smart contracts to any external data source available online.
       div.buttons
         a.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
         a.negative.transparent.buttonLike(href='//t.me/witnetio', target='blank') Join us on Telegram
