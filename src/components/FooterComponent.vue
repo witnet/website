@@ -3,7 +3,7 @@
     article.wrapped
       h1
         img(src='/static/img/logo-white.png').desaturated
-      p.copy © 2018 Stampery, Inc. Some rights reserved.
+      p.copy © 2018 Witnet Foundation. Some rights reserved.
 </template>
 
 <script lang="ts">
@@ -18,7 +18,7 @@
   footer
     padding 70px 20px
     background #222
-    font-family Montserrat, sans-serif
+    font-family "Titillium Web", sans-serif
     *
       color #DDD
     p.copy

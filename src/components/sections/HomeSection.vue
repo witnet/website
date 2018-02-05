@@ -2,17 +2,19 @@
   main
     heroComponent
     descriptionComponent
+    intriguedComponent
 </template>
 
 <script lang="ts">
   import Vue from 'vue'
   import Component from 'vue-class-component';
-  import {DescriptionComponent, HeroComponent} from './landing';
+  import {DescriptionComponent, HeroComponent, IntriguedComponent} from './landing';
 
   @Component({
     components: {
       heroComponent: HeroComponent,
-      descriptionComponent: DescriptionComponent
+      descriptionComponent: DescriptionComponent,
+      intriguedComponent: IntriguedComponent
     }
   })
   export default class HomeSection extends Vue {

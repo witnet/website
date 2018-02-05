@@ -13,7 +13,7 @@
           li
             a(href='//medium.com/witnet', target='_blank') Blog
           li
-            a.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
+            a.negative.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
 </template>
 
 <script lang="ts">
@@ -29,10 +29,14 @@
 <style scoped lang="stylus">
   header
     height 90px
-    font-family Montserrat, sans-serif
+    background #FF
+    border-top 2px solid #222834
+    font-family "Titillium Web", sans-serif
   h1
     float left
-    margin 20px 0 0 10px
+    a
+      display block
+      padding 23px 10px 12px 10px
   menu
     float right
     position relative
@@ -43,14 +47,15 @@
       a
         padding 12px 20px
         margin 10px
-        font-size .8em
+        font-size 1.1em
+        font-weight 600
         text-decoration: none
-        color #999
+        color #66
         transition color .2s ease
         &.buttonLike
+          margin-top: 3px
           margin-left 30px
-          font-size .6em
-          color white
+          font-size .8em
         &:hover:not(.buttonLike)
-          color #444
+          color #22
 </style>

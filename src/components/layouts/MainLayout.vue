@@ -23,47 +23,52 @@
 
 <style lang="stylus">
   body
-    font-family Merriweather, serif
+    background #FF
+    font-family "Titillium Web Light", sans-serif
     margin 0
     *
       box-sizing border-box
     h1, h2, h3, h4, h5, h6
-      font-family Montserrat, sans-serif
+      font-family "Titillium Web", sans-serif
       margin 0
     p
       color #444
-      font-size .9em
+      font-size 1em
       line-height 1.8em
 
   .wrapped
-    max-width 1000px
+    max-width 1200px
     margin 0 auto
     padding 0 10px
   a.buttonLike
     display inline-block
-    padding 12px 20px
+    padding 12px 30px
     border-radius 4px
-    background #60f
+    background #3C52F3
     color white
     border 2px solid transparent
-    font-family Montserrat, sans-serif
-    font-size .7em
-    font-weight 500
-    letter-spacing .15em
+    font-family "Titillium Web", sans-serif
+    font-size 1em
+    font-weight 600
     text-transform uppercase
     text-decoration none
     margin-top -8px
     margin-bottom 14px
     transition color, background .2s ease
     cursor pointer
-    &.negative, &:not(.negative):hover
+    &.negative, &:hover
       background white
-      color #60f
-      border-color #60f
-    &.negative:hover
-      background #60f
+      color #3C52F3
+      border-color #3C52F3
+    &.negative:not(.transparent):hover
+      background #3C52F3
       color white
       border-color transparent
-    &.transparent
+    &.transparent:not(:hover)
       background transparent
+      color #FF
+
+  @media (max-width 1200px)
+    .wrapped
+      max-width 1000px
 </style>
