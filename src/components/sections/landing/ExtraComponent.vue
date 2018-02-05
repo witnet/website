@@ -6,10 +6,10 @@
           img(src="//uploads.republic.co/p/images/attachments/original/000/004/791/4791-1517306031-30a31ed16ebc11086dc0f06394864ad8e0902bfb.png")
         main
           h4 Brought to you by a experienced team
-          p The Witnet protocol is being developed in collaboration with Stampery, the leaders of blockchain-powered data certification.
+          p The Witnet protocol is being developed in collaboration with #[a(href="//stampery.com") Stampery], the leaders of blockchain-powered data certification.
           p Ever since Stampery was founded in 2014, we have been on a mission: replacing blind trust with mathematical proof. Witnet is our next step towards this goal.
           p Stampery is backed by top venture capital funds and angel investors, including Tim Draper and Blockchain Capital.
-          p The Stampery team has also been involved in the development of Aragon, Trailbot, Mongoaudit and Loqui IM.
+          p The Stampery team has also been involved in the development of #[a(href="//aragon.one") Aragon], #[a(href="//trailbot.io") Trailbot], #[a(href="//mongoaud.it") Mongoaudit] and #[a(href="//loqui.im") Loqui IM].
       li.ark
         figure
           img(src="/static/img/illustrations/ark.svg")
