@@ -5,7 +5,7 @@
         video
         a.play Watch video
       h2 Connecting smart contracts to the real world.
-      h3 Witnet lets smart contracts be aware of anything happening outside the blockchain.
+      h3 Witnet connects smart contracts to any external data source.
       div.buttons
         a.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
         a.negative.transparent.buttonLike(href='//t.me/witnetio', target='blank') Join us on Telegram
