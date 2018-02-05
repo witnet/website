@@ -53,6 +53,9 @@
         min-height 200px
         list-style-type none
         overflow auto
+        &:not(:last-child)
+          padding-bottom 60px
+          border-bottom 1px solid #EE
         figure
           float left
           margin 0

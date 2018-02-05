@@ -50,8 +50,7 @@
 
 <style scoped lang="stylus">
   article.description
-    padding-top 70px
-    padding-bottom 50px
+    margin-top 90px
     h3
       font-size 1.7em
       font-weight 500
@@ -67,10 +66,13 @@
     > ul
       padding 0 20px
       > li
-        margin 40px 0 90px 0
+        margin 0 0 80px 0
         min-height 200px
         list-style-type none
         overflow auto
+        &:not(:last-child)
+          padding-bottom 60px
+          border-bottom 1px solid #EE
         figure
           float left
           margin 0
@@ -102,9 +104,10 @@
             float right
           main
             float left
-    .solution figure img
-      margin-top 30px
-      height 250px
+    @media (min-width 1001px)
+      .solution figure img
+        margin-top 30px
+        height 250px
     @media (max-width 1000px)
       ul li figure,
       ul li main

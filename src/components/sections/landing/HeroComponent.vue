@@ -26,7 +26,6 @@ article.hero
   font-family "Titillium Web", sans-serif
   background #222834
   border-bottom 1px solid #EEE
-    margin-bottom 20px
   .wrapped
     padding 200px 20px 120px 20px
     background-image url('/static/img/hero.png')
