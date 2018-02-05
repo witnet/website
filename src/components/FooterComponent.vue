@@ -17,9 +17,9 @@
               img(src="/static/img/social/twitter.svg", alt="Twitter")
         ul.links
           li
-            a(href="/") Home page
+            router-link(to='/') Home page
           li
-            a(href="/faq") Frequently Asked Questions
+            router-link(to='faq') Frequently Asked Questions
           li
             a(href="//medium.com/witnet") Official blog
       h1
