@@ -16,12 +16,17 @@ module.exports = {
     config.module = {
       rules: [
         {test: /\.vue$/, loader: 'vue-loader', options: {loaders: {ts: 'vue-ts-loader'}, esModule: true}},
-        {test: /\.ts$/, loader: 'ts-loader' },
+        {test: /\.ts$/, loader: 'ts-loader'},
         {test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader'}
       ]
     }
 
     return config
+  },
+
+  html: {
+    title: "Witnet - Create smart contracts with real power",
+    description: "Witnet connects smart contracts to any external data source available online."
   }
 
 }
