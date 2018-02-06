@@ -11,4 +11,8 @@ const routes = [
   ] }
 ]
 
-export const router = new VueRouter({routes})
+function scrollBehavior(to, from, savedPosition): any {
+  return { x: 0, y: 0 }
+}
+
+export const router = new VueRouter({routes, scrollBehavior})
