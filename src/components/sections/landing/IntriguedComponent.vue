@@ -5,7 +5,7 @@
       div.buttons
         router-link(to='faq').buttonLike Read the FAQ
         a.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
-        a.negative.buttonLike(href='//t.me/witnetio', target='blank') Join us on Telegram
+        router-link.negative.transparent.buttonLike(to="contact") Join the community
 </template>
 
 <script lang="ts">

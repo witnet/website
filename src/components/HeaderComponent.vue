@@ -2,16 +2,16 @@
   header
     div.wrapped
       h1
-        router-link(to='/')
+        router-link(to="/")
           img(src='static/img/logo.svg', alt='Witnet')
       menu
         ul
           li
-            router-link(to='faq') FAQ
+            router-link(to="faq") FAQ
           li
             a(href='//medium.com/witnet', target='_blank') Blog
           li
-            a(href) Contact
+            router-link(to="contact") Contact
           li
             a.negative.buttonLike.paper(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
 </template>

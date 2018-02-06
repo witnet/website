@@ -8,7 +8,7 @@
       h3 Witnet connects smart contracts to any external data source available online.
       div.buttons
         a.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
-        a.negative.transparent.buttonLike(href='//t.me/witnetio', target='blank') Join us on Telegram
+        router-link.negative.transparent.buttonLike(to="contact") Join the community
 </template>
 
 <script lang="ts">

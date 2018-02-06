@@ -4,6 +4,9 @@
       div.menu
         ul.social
           li
+            a(href="mailto:info@witnet.foundation?subject=Witnet project", target="_blank")
+              img(src="/static/img/social/email.svg", alt="Email")
+          li
             a(href="//reddit.com/r/witnet", target="_blank")
               img(src="/static/img/social/reddit.svg", alt="Reddit")
           li
@@ -16,6 +19,9 @@
             a(href="//github.com/witnet", target="_blank")
               img(src="/static/img/social/github.svg", alt="GitHub")
           li
+            a(href="//medium.com/witnet", target="_blank")
+              img(src="/static/img/social/medium.svg", alt="Medium")
+          li
             a(href="//twitter.com/witnet_io", target="_blank")
               img(src="/static/img/social/twitter.svg", alt="Twitter")
         ul.links
@@ -23,6 +29,8 @@
             router-link(to='/') Home page
           li
             router-link(to='faq') Frequently Asked Questions
+          li
+            router-link(to='contact') Contact channels
           li
             a(href="//medium.com/witnet") Official blog
       h1
@@ -68,7 +76,7 @@
             &:hover
               opacity 1
       ul.social
-        padding 20px 10px
+        padding 0 10px 20px 10px
         list-style-type none
         overflow auto
         border-bottom 1px solid rgba(255, 255, 255, .1)
@@ -76,7 +84,7 @@
           float right
           a
             padding 10px
-            opacity .7
+            opacity .5
             transition opacity .1s ease
             &:hover
               opacity 1
