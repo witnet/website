@@ -1,7 +1,7 @@
 <template lang="pug">
   li(v-bind:class="{open: isOpen}")
     header(@click="toggle")
-      h3 {{question}}
+      slot(name="question") {{question}}
     slot(name="answer")
 </template>
 
