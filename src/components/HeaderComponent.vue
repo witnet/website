@@ -3,7 +3,7 @@
     div.wrapped
       h1
         router-link(to='/')
-          img(src='static/img/logo.png', alt='Witnet')
+          img(src='static/img/logo.svg', alt='Witnet')
       menu
         ul
           li
