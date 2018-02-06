@@ -9,11 +9,11 @@
           li
             router-link(to='faq') FAQ
           li
-            a(href='') Contact
-          li
             a(href='//medium.com/witnet', target='_blank') Blog
           li
-            a.negative.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
+            a(href) Contact
+          li
+            a.negative.buttonLike.paper(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
 </template>
 
 <script lang="ts">
@@ -41,21 +41,42 @@
     float right
     position relative
     right 12px
-    li
-      display inline
-      foat left
-      a
-        padding 12px 20px
-        margin 10px
-        font-size 1.1em
-        font-weight 600
-        text-decoration: none
-        color #66
-        transition color .2s ease
-        &.buttonLike
-          margin-top: 3px
-          margin-left 30px
-          font-size .8em
-        &:hover:not(.buttonLike)
-          color #22
+    ul
+      padding 0
+      li
+        display inline
+        foat left
+        a
+          padding 12px 20px
+          margin 10px
+          font-size 1.1em
+          font-weight 600
+          text-decoration: none
+          color #66
+          transition color .2s ease
+          &.buttonLike
+            margin-top: 3px
+            margin-left 30px
+            font-size .8em
+          &:hover:not(.buttonLike)
+            color #22
+
+  @media (max-width 800px)
+    header
+      height auto
+      h1
+        float none
+        margin 0 auto
+        text-align center
+      menu
+        float none
+        margin 0 auto
+        padding 0
+        text-align center
+        padding-bottom 20px
+        li a
+          padding 30px 5vw
+        .paper
+          display none
+
 </style>

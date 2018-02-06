@@ -108,8 +108,8 @@ article.hero
 
   @media (max-width 1000px)
     .wrapped
-      padding-top 100px
+      padding-top 80px
       div.video
-        float left
+        float none
         margin 0 0 60px 0
 </style>

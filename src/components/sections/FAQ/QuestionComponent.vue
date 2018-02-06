@@ -88,4 +88,15 @@
           font-size 1.2em
           color #FF
           opacity .9
+
+  @media(max-width 800px)
+    li
+      &:before
+        left -20px
+      &:after
+        padding 25px 15px 10px 10px
+      header
+        padding-left 25px
+      main
+        padding 0 20px 15px 20px
 </style>

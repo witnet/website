@@ -46,10 +46,12 @@
     *
       color #DDD
     p.copy
-      max-width 400px
+      max-width 420px
     .menu
       float right
+      margin-left 30px
       ul.links
+        margin-bottom 50px
         padding-top 15px
         list-style-type none
         li
@@ -58,8 +60,12 @@
             display block
             padding 5px 20px
             text-decoration none
+            opacity .7
+            transition opacity .1s ease
+            &:hover
+              opacity 1
       ul.social
-        padding 20px
+        padding 20px 10px
         list-style-type none
         overflow auto
         border-bottom 1px solid rgba(255, 255, 255, .1)
@@ -68,7 +74,7 @@
           a
             padding 10px
             opacity .7
-            transition opacity .2s ease
+            transition opacity .1s ease
             &:hover
               opacity 1
             img

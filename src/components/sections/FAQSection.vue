@@ -47,4 +47,8 @@
     ol.questions
       margin-top 50px
       counter-reset questions
+
+  @media(max-width 800px)
+    ol.questions
+      padding 0
 </style>
