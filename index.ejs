@@ -3,14 +3,9 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title><%= htmlWebpackPlugin.options.title %></title>
-  <head profile="http://www.w3.org/2005/10/profile">
-  <link rel="icon" type="image/png" href="/static/img/favicon.png" />
-  <link rel="manifest" href="/manifest.json">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="theme-color" content="#6600DD">
-  <meta name='HandheldFriendly' content='True'>
-  <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
   <meta name="keywords" content="witnet, blockchain, smart contracts, oracles, network, cryptocurrency, protocol, foundation">
   <% if (htmlWebpackPlugin.options.description) { %>
   <meta name="description" content="<%= htmlWebpackPlugin.options.description %>"/>
@@ -20,6 +15,9 @@
   if (file.match(/\.(js|css)$/)) { %>
   <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
   <link href="https://fonts.googleapis.com/css?family=Titillium%20Web:300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/static/img/favicon.png" />
+  <link rel="manifest" href="/manifest.json">
+  <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
 <noscript>
