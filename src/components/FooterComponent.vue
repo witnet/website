@@ -10,6 +10,9 @@
             a(href="//gitter.im/witnet/witnet", target="_blank")
               img(src="/static/img/social/gitter.svg", alt="Gitter")
           li
+            a(href="//t.me/witnetio", target="_blank")
+              img(src="/static/img/social/telegram.svg", alt="Gitter")
+          li
             a(href="//github.com/witnet", target="_blank")
               img(src="/static/img/social/github.svg", alt="GitHub")
           li
