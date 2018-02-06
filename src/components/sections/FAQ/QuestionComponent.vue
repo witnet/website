@@ -27,7 +27,7 @@
 </script>
 
 <style scoped lang="stylus">
-  li
+  ol > li
     position relative
     list-style-type none
     margin-bottom 30px

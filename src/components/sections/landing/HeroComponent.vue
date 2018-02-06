@@ -6,6 +6,8 @@
         a.play Watch video
       h2 Create smart contracts #[br]with real power.
       h3 Witnet connects smart contracts to any external data source available online.
+      h3
+        small Coming in 2019.
       div.buttons
         a.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
         router-link.negative.transparent.buttonLike(to="contact") Join the community
@@ -52,8 +54,7 @@ article.hero
   .buttons
     padding-top 50px
     a
-      margin-left 5px
-      margin-right 5px
+      margin-right 10px
   .video
     float right
     position relative
