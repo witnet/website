@@ -1,5 +1,6 @@
 <template lang="pug">
   article.hero
+    div#particles
     div.wrapped
       div.video
         video
@@ -15,26 +16,36 @@
 
 <script lang="ts">
   import Vue from 'vue'
-  import Component from 'vue-class-component';
+  import Component from 'vue-class-component'
+  import 'particles.js'
 
   @Component({})
   export default class HeroComponent extends Vue {
+
+    mounted () {
+      window.particlesJS.load('particles', 'static/particles.json')
+    }
 
   }
 </script>
 
 <style scoped lang="stylus">
 article.hero
+  position relative
   font-family "Titillium Web", sans-serif
   background #222834
   border-bottom 1px solid #EEE
+  #particles
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    z-index 0
   .wrapped
+    position relative
     padding 200px 20px 120px 20px
-    background-image url('/static/img/hero.png')
-    background-position 110% 60%
-    bacground-size cover
-    background-repeat no-repeat
-    background-clip none
+    z-index 1
   h2
     width 600px
     max-width 100%
