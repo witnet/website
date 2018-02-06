@@ -15,10 +15,10 @@
           img(src="/static/img/illustrations/ark.svg")
         main
           h4 The door to a world where history is no longer written by the victors
-          p Witnet will enable the creation of "Digital Knoledge Arks": decentralized, immutable, censorship-resistant and eternal archives of humanity's most relevant digital data.
-          p A truth vault aimed to ensure that knowledge and truth remains democratic and verifiable forever.
+          p Witnet will enable the creation of "Digital Knowledge Arks": decentralized, immutable, censorship-resistant and eternal archives of humanity's most relevant digital data.
+          p A series of truth vaults aimed to ensure that knowledge and truth remains democratic and verifiable forever.
           p
-            a(href="/ark") Learn more at the Digital Knowledge Ark minisite >
+            router-link(to="ark") Learn more at the Digital Knowledge Arks minisite >
 </template>
 
 <script lang="ts">
