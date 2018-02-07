@@ -22,10 +22,10 @@
         h3(slot="question") What's the development roadmap for Witnet?
         main(slot="answer")
           p Witnet is an open initiative and an open source project that will be developed by Witnet Foundation in collaboration with a number of other organizations and independent developers. This means that Witnet Foundation can't set the roadmap unilaterally.
-          p However, Witnet Foundation has a strong commitment to comply with the following deadlines:
+          p However, Witnet Foundation has a strong commitment to ensure the following deliverables are met:
           ul
-            li September 2018: a user-facing demo/prototype that will let users explore the potential of the protocol being built.
-            li September 2019: a functional test network implementing the essential features of the Witnet protocol.
+            li 2018: a user-facing demo/prototype that will let users explore the potential of the protocol being built.
+            li 2019: a functional test network implementing the essential features of the Witnet protocol.
           p
             small Given the experimental nature of the technologies and network protocols under development, these dates may be subject to change due to reasons beyond the control of Witnet Foundation.
 </template>
