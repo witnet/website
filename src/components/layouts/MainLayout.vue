@@ -54,7 +54,7 @@
     text-decoration none
     margin-top -8px
     margin-bottom 14px
-    transition color, background .2s ease
+    transition all .2s ease
     cursor pointer
     &.negative, &:hover
       background white
@@ -67,6 +67,16 @@
     &.transparent:not(:hover)
       background transparent
       color #FF
+    &.compact
+      padding 8px 20px
+      font-size .8em
+    &.special
+      background linear-gradient(to left top, #377df3 0%, #60d 100%)
+      border 2px solid rgb(255,255,255)
+      &:hover
+        background white
+        color #3C52F3
+        border-color #3C52F3
 
   @media (max-width 1200px)
     .wrapped

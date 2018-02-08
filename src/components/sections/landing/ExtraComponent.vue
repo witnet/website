@@ -18,7 +18,8 @@
           p Witnet will enable the creation of "Digital Knowledge Arks": decentralized, immutable, censorship-resistant and eternal archives of humanity's most relevant digital data.
           p A series of truth vaults aimed to ensure that knowledge and truth remains democratic and verifiable forever.
           p
-            router-link(to="ark") Learn more at the Digital Knowledge Arks minisite >
+            router-link(to="ark").ark.buttonLike.compact.special Learn more
+            small at the Digital Knowledge Ark minisite.
 </template>
 
 <script lang="ts">
@@ -89,11 +90,16 @@
             float left
     .team figure img
       margin-top 60px
-    @media (max-width 1000px)
-      ul li figure,
-      ul li main
-        float none
-        width 100%
-      ul li figure
-        margin 0 0 30px 0
+
+.ark.buttonLike
+  margin-top 10px
+  margin-right 10px
+
+@media (max-width 1000px)
+  ul li figure,
+  ul li main
+    float none
+    width 100%
+  ul li figure
+    margin 0 0 30px 0
 </style>
