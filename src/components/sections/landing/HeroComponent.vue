@@ -52,6 +52,9 @@
       this.uncovered = true
       const msg: string = new ytMessage('playVideo').serialize()
       this.$refs.youtube.contentWindow.postMessage(msg, '*')
+      setTimeout(() => {
+        this.$refs.youtube.contentWindow.postMessage(msg, '*')
+      }, 1000, this)
     }
 
   }
