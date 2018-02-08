@@ -2,9 +2,9 @@
   article.hero
     div#particles
     div.wrapped
-      div.video
-        video
-        a.play Watch video
+      div.video(v-bind:class="{uncovered: uncovered}")
+        iframe(ref="youtube", src="https://www.youtube-nocookie.com/embed/wEtOiStvQoU?rel=0&showinfo=0&enablejsapi=1&vq=highres" frameborder="0" allow="encrypted-media" allowfullscreen)
+        img.cover(@click="uncover", src="/static/img/poster.png")
       h2 Create smart contracts #[br]with real power.
       h3 Witnet connects smart contracts to any external data source available online.
       h3
@@ -19,11 +19,39 @@
   import Component from 'vue-class-component'
   import 'particles.js'
 
+  class ytMessage {
+    event: string = 'command'
+    func: string
+    args: Array = []
+
+    constructor(func, args?) {
+      this.func = func
+      if (args)
+        this.args = args
+    }
+
+    serialize() {
+      return JSON.stringify({
+        event: this.event,
+        func: this.func,
+        args: this.args
+      })
+    }
+  }
+
   @Component({})
   export default class HeroComponent extends Vue {
 
+    uncovered: boolean = false
+
     mounted () {
       window.particlesJS.load('particles', 'static/particles.json')
+    }
+
+    uncover(e: MouseEvent): void {
+      this.uncovered = true
+      const msg: string = new ytMessage('playVideo').serialize()
+      this.$refs.youtube.contentWindow.postMessage(msg, '*')
     }
 
   }
@@ -44,7 +72,7 @@ article.hero
     z-index 0
   .wrapped
     position relative
-    padding 200px 20px 120px 20px
+    padding 150px 20px 100px 20px
     z-index 1
   h2
     width 600px
@@ -69,59 +97,44 @@ article.hero
   .video
     float right
     position relative
-    top 30px
-    width 450px
+    top 20px
+    width 550px
+    height 310px
     max-width 100%
     margin-left 20px
-    *
-      text-align center
+    background rgba(0, 0, 0, .2)
+    transform perspective(600px) rotateY(-15deg)
+    transition transform 1s ease
+    &.uncovered
+      transform rotateY(0)
+      .cover
+        display none
+    iframe
+      width 100%
+      height 100%
+    .cover
+      position absolute
+      top 0
+      right 0
+      bottom 0
+      left 0
+      width 100%
+      height 100%
       cursor pointer
-    video
-      width 100%
-      background rgba(0, 0, 0, .2)
-    .play
-      position absolute
-      left 0
-      top 70%
-      width 100%
-      color white
-      font-size .9em
-      font-weight 600
-      text-transform uppercase
-      text-shadow 0 2px 2px #3C52F3
-      opacity .8
-      &:before
-        content '\25B6'
-        top -95px
-        position absolute
-        width 73px
-        height 80px
-        padding-left 7px
-        background white
-        color #3C52F3
-        font-size 3em
-        line-height 1.65
-        border-radius 100%
-        box-shadow 0 2px 2px rgba(102, 0, 255, .2)
-        transition background, color .2s ease
-    &:hover .play:before
-      background #3C52F3
-      background linear-gradient(135deg, rgba(55,125,243,1) 0%,rgba(102,0,221,1) 100%)
-      color white
-    &:after
-      content ''
-      display block
-      width 100%
-      height 10px
-      position absolute
-      bottom 5px
-      left 0
-      box-shadow 0 9px 10px rgba(0, 0, 0, .1)
+
+  @media (max-width 1200px)
+    .video
+      width 450px
+      height 253px
 
   @media (max-width 1000px)
     .wrapped
       padding-top 80px
-      div.video
+      margin 0 auto
+      width 600px
+      max-width 100%
+      .video
         float none
         margin 0 0 60px 0
+        transform rotateY(0)
 </style>
