@@ -7,17 +7,17 @@
             a(href="mailto:info@witnet.foundation?subject=Witnet project", target="_blank")
               img(src="/static/img/social/email.svg", alt="Email")
           li
-            a(href="//reddit.com/r/witnet", target="_blank")
-              img(src="/static/img/social/reddit.svg", alt="Reddit")
-          li
             a(href="//gitter.im/witnet/witnet", target="_blank")
               img(src="/static/img/social/gitter.svg", alt="Gitter")
           li
-            a(href="//t.me/witnetio", target="_blank")
-              img(src="/static/img/social/telegram.svg", alt="Gitter")
-          li
             a(href="//github.com/witnet", target="_blank")
               img(src="/static/img/social/github.svg", alt="GitHub")
+          li
+            a(href="//reddit.com/r/witnet", target="_blank")
+              img(src="/static/img/social/reddit.svg", alt="Reddit")
+          li
+            a(href="//t.me/witnetio", target="_blank")
+              img(src="/static/img/social/telegram.svg", alt="Telegram")
           li
             a(href="//medium.com/witnet", target="_blank")
               img(src="/static/img/social/medium.svg", alt="Medium")

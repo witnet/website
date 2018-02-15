@@ -40,6 +40,8 @@
     max-width 1200px
     margin 0 auto
     padding 0 10px
+  a
+    color #3C52F3
   a.buttonLike
     display inline-block
     padding 12px 30px
@@ -71,12 +73,14 @@
       padding 8px 20px
       font-size .8em
     &.special
+      position relative
+      color white
       background linear-gradient(to left top, #377df3 0%, #60d 100%)
       border 2px solid rgb(255,255,255)
+      transition opacity .2s ease
+      opacity .9
       &:hover
-        background white
-        color #3C52F3
-        border-color #3C52F3
+        opacity 1
 
   @media (max-width 1200px)
     .wrapped

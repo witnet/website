@@ -11,21 +11,21 @@
         a(href="//medium.com/witnet", target="_blank") Witnet Foundation official blog on Medium >
         p Follow Witnet Foundation on Medium to read different articles stating our vision and future roadmap.
       li
+        img.back(src="/static/img/social/telegram.svg")
+        a(href="//t.me/witnetio", target="_blank") Witnet Community on Telegram >
+        p Join other members of the Witnet Community at the official Telegram group.
+      li
+        img.back(src="/static/img/social/reddit.svg")
+        a(href="//reddit.com/r/witnet", target="_blank") Witnet Community subreddit >
+        p The space for linking articles, informal discussion, kitten pictures and occasional memes.
+      li
         img.back(src="/static/img/social/github.svg")
         a(href="//github.com/witnet", target="_blank") Witnet GitHub repository >
         p GitHub is where the Witnet protocol development takes place. Are you a programmer? Your contributions are more than welcome!
       li
-        img.back(src="/static/img/social/telegram.svg")
-        a(href="//t.me/witnetio", target="_blank") Witnet Telegram news channel >
-        p Alternative channel to our Twitter account, for those who prefer to receive news in their favorite messaging app.
-      li
         img.back(src="/static/img/social/gitter.svg")
-        a(href="//gitter.im/witnet/witnet", target="_blank") Witnet community Gitter.im >
+        a(href="//gitter.im/witnet/witnet", target="_blank") Witnet Development Community at Gitter >
         p Join the official Witnet community Gitter room to discuss with the rest of the community and get direct support from the developers.
-      li
-        img.back(src="/static/img/social/reddit.svg")
-        a(href="//reddit.com/r/witnet", target="_blank") Witnet community subreddit >
-        p The space for linking articles, informal discussion, kitten pictures and occasional memes.
       li
         img.back(src="/static/img/social/email.svg")
         a(href="mailto:info@witnet.foundation?subject=Witnet project", target="_blank") Witnet Foundation contact email >

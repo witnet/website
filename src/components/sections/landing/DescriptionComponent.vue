@@ -34,7 +34,7 @@
           img(src="/static/img/illustrations/truth.svg")
         main
           h4 100% truth, 100% trust
-          p Data provided by Witnet is reliable not because of authority but because it comes from anonymous witnesses who are incentivized to remain honest and to compete each other for rewards.
+          p Data provided by Witnet is reliable not because of authority but because it comes from anonymous witnesses who are incentivized to remain honest and to compete with each other for rewards.
           p In addition, veracity of this data is guaranteed by a consensus algorithm that detects fraudsters, who are immediately punished.
 </template>
 

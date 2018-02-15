@@ -11,7 +11,7 @@
           li
             a(href='//medium.com/witnet', target='_blank') Blog
           li
-            router-link(to="contact") Contact
+            router-link(to="contact") Contact channels
           li
             a.negative.buttonLike.paper(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
 </template>

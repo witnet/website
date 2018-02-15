@@ -7,8 +7,6 @@
         img.cover(@click="uncover", src="/static/img/poster.png")
       h2 Create smart contracts #[br]with real power.
       h3 Witnet connects smart contracts to any external data source available online.
-      h3
-        small Coming in 2019.
       div.buttons
         a.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
         router-link.negative.transparent.buttonLike(to="contact") Join the community
@@ -100,14 +98,17 @@ article.hero
   .video
     float right
     position relative
-    top 20px
     width 550px
     height 310px
     max-width 100%
     margin-left 20px
     background rgba(0, 0, 0, .2)
     transform perspective(600px) rotateY(-15deg)
-    transition transform 1s ease
+    opacity .9
+    transition all .5s ease
+    &:hover
+      opacity 1
+      transform scale(1.01) perspective(600px) rotateY(-15deg)
     &.uncovered
       transform rotateY(0)
       .cover
@@ -138,6 +139,7 @@ article.hero
       max-width 100%
       .video
         float none
+        top 20px
         margin 0 0 60px 0
         transform rotateY(0)
 </style>
