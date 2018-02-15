@@ -24,7 +24,7 @@
         p GitHub is where the Witnet protocol development takes place. Are you a programmer? Your contributions are more than welcome!
       li
         img.back(src="/static/img/social/gitter.svg")
-        a(href="//gitter.im/witnet/witnet", target="_blank") Witnet Development Community at Gitter >
+        a(href="//gitter.im/witnet/community", target="_blank") Witnet Development Community at Gitter >
         p Join the official Witnet community Gitter room to discuss with the rest of the community and get direct support from the developers.
       li
         img.back(src="/static/img/social/email.svg")

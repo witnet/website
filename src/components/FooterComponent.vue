@@ -7,7 +7,7 @@
             a(href="mailto:info@witnet.foundation?subject=Witnet project", target="_blank")
               img(src="/static/img/social/email.svg", alt="Email")
           li
-            a(href="//gitter.im/witnet/witnet", target="_blank")
+            a(href="//gitter.im/witnet/community", target="_blank")
               img(src="/static/img/social/gitter.svg", alt="Gitter")
           li
             a(href="//github.com/witnet", target="_blank")
