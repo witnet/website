@@ -4,7 +4,7 @@
       span Intrigued?
       div.buttons
         router-link(to='faq').buttonLike Read the FAQ
-        a.buttonLike(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
+        a.buttonLike(href='/static/witnet-whitepaper.pdf', target='blank') Read the whitepaper
         router-link.negative.transparent.buttonLike(to="contact") Join the community
 </template>
 

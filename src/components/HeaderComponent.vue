@@ -13,7 +13,7 @@
           li
             router-link(to="contact") Community
           li
-            a.negative.buttonLike.paper(href='//arxiv.org/pdf/1711.09756.pdf', target='blank') Read the whitepaper
+            a.negative.buttonLike.paper(href='/static/witnet-whitepaper.pdf', target='blank') Read the whitepaper
 </template>
 
 <script lang="ts">

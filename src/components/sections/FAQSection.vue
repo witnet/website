@@ -5,13 +5,13 @@
       question
         h3(slot="question") Where can I read the Witnet whitepaper?
         main(slot="answer")
-          p The Witnet protocol whitepaper is #[a(href="//arxiv.org/pdf/1711.09756.pdf") available at arXiv]. It's a a must read if you are really into blockchain protocols, the underlying tech and their economics.
+          p The Witnet protocol whitepaper is #[a(href="/static/witnet-whitepaper.pdf") available at arXiv]. It's a a must read if you are really into blockchain protocols, the underlying tech and their economics.
           p However, for the average investor, the "One Pager" and "Primer" documents may be a much easier start point to understand the Witnet project. Give them a look first!
       question
         h3(slot="question") Will Witnet work with Ethereum smart contracts?
         main(slot="answer")
           p #[strong Yes]. Ethereum smart contracts will be able to send data requests to the Witnet network and get the responses back thanks to a special kind of bridge nodes that will make Witnet act as a sidechain of Ethereum, Bitcoin or any other public blockchain.
-          p Bridge nodes are explained in more detail in the #[a(href="//arxiv.org/pdf/1711.09756.pdf") Witnet protocol whitepaper].
+          p Bridge nodes are explained in more detail in the #[a(href="/static/witnet-whitepaper.pdf") Witnet protocol whitepaper].
       question
         h3(slot="question") How's Witnet different from Augur, Gnosis and other "prediction markets"?
         main(slot="answer")
