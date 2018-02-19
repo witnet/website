@@ -25,8 +25,8 @@ module.exports = {
   },
 
   html: {
-    title: "Witnet - Create smart contracts with real power",
-    description: "Witnet connects smart contracts to any external data source available online."
+    title: "Witnet - Smart Contracts with Real Power",
+    description: "The Witnet protocol gives smart contracts real power by connecting them to any online data source. Sport results, stock prices, weather forecasts or even other blockchains!"
   }
 
 }
