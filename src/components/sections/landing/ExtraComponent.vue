@@ -18,7 +18,7 @@
           p Witnet will enable the creation of "Digital Knowledge Arks": decentralized, immutable, censorship-resistant and eternal archives of humanity's most relevant digital data.
           p A series of truth vaults aimed to ensure that knowledge and truth remains democratic and verifiable forever.
           p
-            a(href="//medium.com/witnet/tagged/digital-knowledge-arks").ark.buttonLike.compact.special Learn more
+            a(href="//medium.com/witnet/tagged/digital-knowledge-arks" target="_blank").ark.buttonLike.compact.special Learn more
             small about Digital Knowledge Arks.
 </template>
 
