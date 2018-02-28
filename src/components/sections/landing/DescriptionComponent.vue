@@ -13,8 +13,8 @@
           img(src="/static/img/illustrations/solution.svg")
         main
           h4 The solution: a Decentralized Oracle Network
-          p The Witnet protocol gives smart contracts real power by connecting them to any online data source. Sport results, stock prices, weather forecasts or even other blockchains.
-          p Witnet works thanks to a distributed network of mining nodes—called witnesses—who earn Wit tokens as a reward for retrieving web data and reporting it directly to the smart contracts.
+          p The Witnet protocol connects smart contracts to any online data source. Sport results, stock prices, weather forecasts or even other blockchains.
+          p The protocol works thanks to a distributed network of mining nodes—called witnesses—who earn Wit tokens as a reward for retrieving web data and reporting it directly to the smart contracts.
       li.wit
         figure
           img(src="/static/img/illustrations/wit.svg")
@@ -34,7 +34,7 @@
           img(src="/static/img/illustrations/truth.svg")
         main
           h4 100% truth, 0% trust
-          p Data provided by Witnet is reliable not because of authority but because it comes from anonymous witnesses who are incentivized to remain honest and to compete with each other for rewards.
+          p Data provided by Witnet is reliable not because of authority but because it comes from anonymous witnesses who are incentivized to remain honest and to compete for rewards.
           p In addition, veracity of this data is guaranteed by a consensus algorithm that detects fraudsters, who are immediately punished.
 </template>
 
