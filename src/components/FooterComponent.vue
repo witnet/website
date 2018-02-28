@@ -30,7 +30,7 @@
           li
             router-link(to='faq') Frequently Asked Questions
           li
-            router-link(to='contact') Contact channels
+            router-link(to='community') Join the community
           li
             a(href="//medium.com/witnet") Official blog
       h1

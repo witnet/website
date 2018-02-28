@@ -11,7 +11,7 @@
           li
             a(href='//medium.com/witnet', target='_blank') Blog
           li
-            router-link(to="contact") Community
+            router-link(to="community") Community
           li
             a.negative.buttonLike.paper(href='/static/witnet-whitepaper.pdf', target='blank') Read the whitepaper
 </template>

@@ -1,6 +1,6 @@
 <template lang="pug">
-  main.contact.wrapped
-    h2 Witnet official communication channels
+  main.community.wrapped
+    h2 Join the Witnet community!
     ul.channels
       li
         img.back(src="/static/img/social/twitter.svg")
@@ -42,11 +42,11 @@
       question: QuestionComponent
     }
   })
-  export default class ContactSection extends Vue {}
+  export default class CommunitySection extends Vue {}
 </script>
 
 <style scoped lang="stylus">
-  main.contact
+  main.community
     padding 50px 20px 60px 20px
     h2
       font-size 1.5em
@@ -97,7 +97,7 @@
             transform rotate(-15deg) scale(1.1)
 
   @media (max-width 800px)
-    main.contact
+    main.community
       ul.channels
         li
           float none

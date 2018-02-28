@@ -5,7 +5,7 @@
       div.buttons
         router-link(to='faq').buttonLike Read the FAQ
         a.buttonLike(href='/static/witnet-whitepaper.pdf', target='blank') Read the whitepaper
-        router-link.negative.transparent.buttonLike(to="contact") Join the community
+        router-link.negative.transparent.buttonLike(to="community") Join the community
 </template>
 
 <script lang="ts">
