@@ -1,5 +1,5 @@
 <template lang="pug">
-  li(v-bind:class="{open: isOpen}")
+  li.questionComponent(v-bind:class="{open: isOpen}")
     header(@click="toggle")
       slot(name="question") {{question}}
     slot(name="answer")
@@ -27,7 +27,7 @@
 </script>
 
 <style scoped lang="stylus">
-  ol > li
+  ol > li.questionComponent
     position relative
     list-style-type none
     margin-bottom 30px
@@ -71,7 +71,6 @@
       padding 0 40px 15px 40px
       font-weight 300
       a[href], strong, b
-        text-decoration none
         color inherit
         font-weight 600
     &.open
