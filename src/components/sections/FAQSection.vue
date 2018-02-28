@@ -11,7 +11,7 @@
         h3(slot="question") Will Witnet work with Ethereum smart contracts?
         main(slot="answer")
           p #[strong Yes]. Ethereum smart contracts will be able to send data requests to the Witnet network and get the responses back thanks to a special kind of bridge nodes that will make Witnet act as a sidechain of Ethereum, Bitcoin or any other public blockchain.
-          p Bridge nodes are explained in more detail in the #[a(href="/static/witnet-whitepaper.pdf") Witnet protocol whitepaper].
+          p Bridge nodes are explained in more detail in #[a(href="//medium.com/witnet/ethereum-loves-witnet-9a3fd21e6f5c") this article from our blog].
       question
         h3(slot="question") How's Witnet different from Augur, Gnosis and other "prediction markets"?
         main(slot="answer")
@@ -22,12 +22,12 @@
         h3(slot="question") What's the development roadmap for Witnet?
         main(slot="answer")
           p Witnet is an open initiative and an open source project that will be developed by Witnet Foundation in collaboration with a number of other organizations and independent developers. This means that Witnet Foundation can't set the roadmap unilaterally.
-          p However, Witnet Foundation has a strong commitment to ensure the following deliverables are met:
+          p However, Witnet Foundation has a strong commitment to ensure the following milestones are met:
           ul
-            li 2018: a user-facing demo/prototype that will let users explore the potential of the protocol being built.
-            li 2019: a functional test network implementing the essential features of the Witnet protocol.
+            li By September 2018: a user-facing demo/prototype that will let users explore the potential of the protocol being built.
+            li By September 2019: a functional test network implementing the essential features of the Witnet protocol.
           p
-            small Given the experimental nature of the technologies and network protocols under development, these dates may be subject to change due to reasons beyond the control of Witnet Foundation.
+            small Given the experimental nature of the technologies and network protocols under development, these dates and deliverables may be subject to change due to reasons beyond the control of Witnet Foundation.
 </template>
 
 <script lang="ts">
