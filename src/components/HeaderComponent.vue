@@ -1,19 +1,27 @@
 <template lang="pug">
-  header
-    div.wrapped
-      h1
-        router-link(to="/")
-          img(src='static/img/logo.svg', alt='Witnet')
-      menu
-        ul
-          li
-            router-link(to="faq") FAQ
-          li
-            a(href='//medium.com/witnet', target='_blank') Blog
-          li
-            router-link(to="community") Community
-          li
-            a.negative.buttonLike.paper(href='/static/witnet-whitepaper.pdf', target='blank') Read the whitepaper
+  main
+    aside.republic
+      div.wrapped
+        p The #[strong wit] token offering is now live on Republic Crypto!
+        a.cta.compact.buttonLike(href="//republic.co/witnet" target="_blank") Go to offering page
+        figure.illustrations
+          img.mountain(src="https://assets.republic.co/assets/homepage/header_mountain-3225f173dc2b9b52b389ad2b8be22e9a300ba96c86cf8280246cacffeaae2b23.svg")
+          img.people(src="https://assets.republic.co/assets/homepage/header_people-e2994373e05da115d821f48329b5e168c61b9ad609b8451ceacc2d9c1f05a03a.svg")
+    header
+      div.wrapped
+        h1
+          router-link(to="/")
+            img(src='static/img/logo.svg', alt='Witnet')
+        menu
+          ul
+            li
+              router-link(to="faq") FAQ
+            li
+              a(href='//medium.com/witnet', target='_blank') Blog
+            li
+              router-link(to="community") Community
+            li
+              a.negative.buttonLike.paper(href='/static/witnet-whitepaper.pdf', target='blank') Read the whitepaper
 </template>
 
 <script lang="ts">
@@ -30,7 +38,6 @@
   header
     height 90px
     background #FF
-    border-top 2px solid #222834
     font-family "Titillium Web", sans-serif
   h1
     float left
@@ -47,7 +54,7 @@
         display inline
         foat left
         a
-          padding 12px 20px
+          padding 14px 20px
           margin 10px
           font-size 1.1em
           font-weight 600
@@ -81,5 +88,41 @@
           padding 20px 0
         .paper
           display none
+  aside.republic
+    display block
+    background #CEEAFF
+    .wrapped
+      position relative
+      padding 50px 30px
+      overflow hidden
+      p
+        position relative
+        font-size 1.2em
+        z-index 1
+      .cta
+        position absolute
+        right 340px
+        bottom 52px
+        z-index 1
+      .illustrations
+        z-index 0
+        .mountain
+          position absolute
+          height 150px
+          right 10px
+          bottom 0
+        .people
+          position absolute
+          height 50px
+          right 220px
+          bottom 0
 
+  @media (max-width 1000px)
+    aside.republic
+      .wrapped .cta
+        position relative
+        right 0
+        bottom 0
+      .illustrations
+        opacity .3
 </style>
