@@ -25,7 +25,7 @@
       question
         h3(slot="question") How's Witnet different from Augur, Gnosis and other "prediction markets"?
         main(slot="answer")
-          p Augur, Gnosis and similar projects rely mainly on human intervention to resolve their crowdsourced predictions about future events. This introduces latency and makes this schemes unsuitable for automated attestations needed by smart contracts and other software.
+          p Augur, Gnosis and similar projects rely mainly on human intervention to resolve their crowdsourced predictions about future events. This introduces latency and makes thosess schemes unsuitable for automated attestations needed by smart contracts and other software.
           p On the contrary, Witnet uses a network of witness nodes that run an automated web browser to retrieve and attest data from the Internet without human intervention. Attestation requests can report information that is already available online or be scheduled to retrieve some piece of data that will be published in the future.
           p Essentialy, #[strong Witnet is based on verifiable facts], not someone's predictions.
       question
@@ -39,7 +39,6 @@
             li trivially predictable and thus easily targetable by DoS attacks.
           p In these schemes, oracle nodes typically use a trusted execution environment known as Intel SGX. This "enclave" is only available on selected hardware, so it's a clear entry barrier. Moreover, the SGX has recently been #[a(href="//arxiv.org/pdf/1702.08719.pdf") proven vulnerable] to #[a(href="//spiral.imperial.ac.uk/bitstream/10044/1/42264/2/esorics2016%20%281%29.pdf") many attacks], #[a(href="//github.com/lsds/spectre-attack-sgx") including Spectre].
           p Also, "tokenomics" of projects like ChainLink rely heavily on ERC-20 tokens in the Ethereum blockchain to incentivize oracles to resolve tasks. This fact will hinder their viability until Ethereum's scalability challenges are solved or they accept alternative means of payment.
-          p This fact will hinder their viability until Ethereum's scalability challenges are solved or they accept alternative means of payment.
           p Witnet approach is instead based on the most generalized form of oracles. They perform "retrieve-attest-deliver" tasks without distinction between the sources they query. Weather APIs are not that different from courier APIs! This way, we get rid of any conflict of interests, given that oracle nodes can't even predict which tasks will be assigned to them.
           p In Witnet, the oracle nodes in the network are called "witnesses". They are automated headless browsers that you can hire to retrieve information from the Internet and deliver it to you or your smart contracts. The more fees you pay, the more the number of witnesses that will be employed.
           p Although you can decide how many witnesses to employ, the thing is that you can't choose who they are. Tasks are randomly assigned to witnesses in proportion to their reputation.
