@@ -1,7 +1,7 @@
 <template lang="pug">
   main
     aside.republic(v-if="!bannerClose")
-      button.close(@click="close") +
+      button.close(@click="close")
       div.wrapped
         p You can still join the #[strong wit] token offering waitlist on Republic Crypto!
         a.cta.compact.buttonLike(href="//republic.co/witnet" target="_blank") Go to offering page
@@ -55,7 +55,9 @@
     float right
     position relative
     right 12px
+    margin 15px 0
     ul
+      margin 0
       padding 0
       li
         display inline
@@ -100,15 +102,15 @@
     background #CEEAFF
     button.close
       position absolute
+      width 25px
+      height 25px
       right 10px
       top 10px
-      background none
-      border 3px solid #1599FF
-      border-radius 50%
-      color #1599FF
-      font-size 1.5em
-      font-weight 700
-      transform rotateZ(45deg) scale(.8)
+      border none
+      background url("https://www.materialui.co/materialIcons/navigation/close_black_2048x2048.png")
+      background-size contain
+      cursor pointer
+      opacity .3
       z-index 2
     .wrapped
       position relative
