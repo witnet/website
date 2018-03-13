@@ -17,7 +17,7 @@
             li
               router-link(to="faq") FAQ
             li
-              a(href='//medium.com/witnet', target='_blank') Blog
+              router-link(to="team") Team
             li
               router-link(to="community") Community
             li

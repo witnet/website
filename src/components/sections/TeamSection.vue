@@ -1,53 +1,101 @@
 <template lang="pug">
-  main.community.wrapped
-    h2 Join the Witnet community!
-    ul.channels
-      li
-        img.back(src="/static/img/social/twitter.svg")
-        a(href="//twitter.com/witnet_io", target="_blank") Witnet Foundation Twitter account >
-        p Follow Witnet Foundation on Twitter to get daily updates on the progress of the project.
-      li
-        img.back(src="/static/img/social/medium.svg")
-        a(href="//medium.com/witnet", target="_blank") Witnet Foundation official blog on Medium >
-        p Follow Witnet Foundation on Medium to read different articles stating our vision and future roadmap.
-      li
-        img.back(src="/static/img/social/telegram.svg")
-        a(href="//t.me/witnetio", target="_blank") Witnet Community on Telegram >
-        p Join other members of the Witnet Community at the official Telegram group.
-      li
-        img.back(src="/static/img/social/reddit.svg")
-        a(href="//reddit.com/r/witnet", target="_blank") Witnet Community subreddit >
-        p The space for linking articles, informal discussion, kitten pictures and occasional memes.
-      li
-        img.back(src="/static/img/social/github.svg")
-        a(href="//github.com/witnet", target="_blank") Witnet GitHub repository >
-        p GitHub is where the Witnet protocol development takes place. Are you a programmer? Your contributions are more than welcome!
-      li
-        img.back(src="/static/img/social/gitter.svg")
-        a(href="//gitter.im/witnet/community", target="_blank") Witnet Development Community at Gitter >
-        p Join the official Witnet community Gitter room to discuss with the rest of the community and get direct support from the developers.
-      li
-        img.back(src="/static/img/social/email.svg")
-        a(href="mailto:info@witnet.foundation?subject=Witnet project", target="_blank") Witnet Foundation contact email >
-        p You can write us directly for any inquiry not appropriate for any of the other channels.
+main.team.wrapped
+  article
+    h2 About Witnet Foundation
+    p Witnet is an open source project originally devised by #[a(href="//stampery.com", target="_blank") Stampery], the leaders of blockchain-powered data certification. The protocol is now being developed by Witnet Foundation in collaboration with a community of independent contributors.
+    p Witnet Foundation is a non profit organization whose mission is ensuring the successful development and deployment of the Witnet protocol, as well as guaranteeing its sustainability and fostering the ecosystem of applications built on top of the protocol.
+    p Although Witnet Foundation will play a leading role during the first years, as the project evolves and the Witnet community becomes wider, Witnet Foundation will progressively relinquish its weight in favor of the community.
+  article
+    h2 Who we are
+    div.subart.leaders
+      h3 Project Leaders
+      figure.person
+        img(src="https://uploads.republic.co/p/roles/team_members/avatars/large/000/000/666/666-1516718309-ae974b2e5a8d2e750d983315fe926c8ff926260a.jpg")
+        caption
+          strong Adán Sánchez de Pedro
+          em Cofounder and Tech Lead
+          p CTO at Stampery, founder of LoquiIM and Whatools, lecturer, amateur ukulele player and politically aware citizen.
+      figure.person
+        img(src="https://uploads.republic.co/p/roles/team_members/avatars/large/000/000/667/667-1516723810-64f4664088e83253e4e946f7ee4e06a5583ee247.jpg")
+        caption
+          strong Daniele Levi
+          em Cofounder and Operations Lead
+          p CEO at Stampery, cryptocurrency pioneer, serial entrepreneur and cryptography enthusiast.
+    div.subart.team
+      h3 Team
+      figure.person
+        img(src="https://s3.amazonaws.com/stampery-cdn/build/rsc/photos/johann.jpg?=1499247229220")
+        caption
+          strong Johann Ortiz
+          em Back-end Software Engineer
+      figure.person
+        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
+        caption
+          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Back-end Software Engineer") Apply now!]
+          em Back-end Software Engineer
+      figure.person
+        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
+        caption
+          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Solidity Engineer") Apply now!]
+          em Solidity and Smart Contracts Developer
+      figure.person
+        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
+        caption
+          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Front-end Software Engineer") Apply now!]
+          em Front-end Software Engineer
+      figure.person
+        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
+        caption
+          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Scientific Research Lead") Apply now!]
+          em Scientific Research Lead
+      figure.person
+        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
+        caption
+          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Community Lead") Apply now!]
+          em Community and Contents Lead
+      figure.person
+        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
+        caption
+          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Operations Lead") Apply now!]
+          em Operations Assistant
+    div.subart.advisors
+      h3 Advisory board
+      figure.person
+        img(src="https://uploads.republic.co/p/roles/team_members/avatars/large/000/000/668/668-1519664002-bbedd878b1e2ec6bb9be90a4b5b7cae7aff540d2.png")
+        caption
+          strong Luis Iván Cuende
+          em Whitepaper Co-Author and Project Advisor
+          p Project Lead at #[a(href="//district0x.io", target="_blank") Aragon]. Stampery co-founder. Forbes 30 under 30 & MIT TR3
+      figure.person
+        img(src="https://crunchbase-production-res.cloudinary.com/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco/kjtbvrrphusrmdjrn6lf")
+        caption
+          strong Joe Urgo
+          em Whitepaper Reviewer and Project Advisor
+          p Cofounder and Operations Lead at #[a(href="//district0x.io", target="_blank") district0x]
 </template>
 
 <script lang="ts">
   import Vue from 'vue'
   import Component from 'vue-class-component'
-  import {QuestionComponent} from './FAQ'
 
-  @Component({
-    components: {
-      question: QuestionComponent
-    }
-  })
-  export default class CommunitySection extends Vue {}
+  @Component({})
+  export default class TeamSection extends Vue {}
 </script>
 
 <style scoped lang="stylus">
-  main.community
-    padding 50px 20px 60px 20px
+main.team
+  padding 50px 20px 60px 20px
+  article
+    margin-bottom 50px
+    div.subart
+      margin-bottom 20px
+      overflow auto
+      &.team
+        figure.person
+          width 33%
+          img
+            width 120px
+            height 120px
     h2
       font-size 1.5em
       font-weight 500
@@ -59,48 +107,51 @@
         width 100px
         height 2px
         background linear-gradient(90deg, rgb(55,125,243) 0%, rgb(20,25,133) 50%, rgb(102,0,221) 100%)
-    ul.channels
-      padding 30px 5px 0 5px
-      list-style-type none
-      overflow auto
-      li
-        position relative
-        float left
-        width calc(50% - 10px)
-        margin-bottom 20px
-        padding 35px 40px 30px 40px
-        background #FF
-        box-shadow 0 2px 10px rgba(20,25,133,.1)
-        overflow hidden
-        transition box-shadow .1s ease
-        &:nth-child(2n+1)
-          margin-right 20px
-        a
-          font-size 1.3em
-          font-weight 500
-          text-decoration none
-          color #3C52F3
-        img.back
-          position absolute
-          bottom -25px
-          right -25px
-          filter invert(100%) blur(1px)
-          width 100px
-          height 100px
-          opacity .1
-          transition transform .2s ease
-        &:hover
-          box-shadow 0 2px 15px rgba(20,25,133,.15)
+    h3
+      margin 20px 0
+      font-weight 100
+      font-size 1.4em
+      color #99
+      text-align center
+      &:after
+        content ''
+        display block
+        width 30px
+        border-bottom 1px solid #DD
+        margin 10px auto
+    figure.person
+      float left
+      margin 0 0 20px 0
+      padding 20px 0
+      width 50%
+      text-align center
+      img
+        width 150px
+        height 150px
+        background #DD
+        border-radius 6px
+      caption
+        width 100%
+        padding 0 60px
+        strong
+          display block
+          margin-top 8px
+          color #33
           a
-            text-decoration underline
-          img.back
-            transform rotate(-15deg) scale(1.1)
+            font-size .7em
+        em
+          display block
+          margin-top -4px
+          margin-bottom -8px
+          color #66
 
-  @media (max-width 800px)
-    main.community
-      ul.channels
-        li
-          float none
-          width 100%
-          margin-right 0
+  @media (max-width 1000px)
+    article figure.person caption
+      padding 10px
+
+  @media (max-width 600px)
+    article
+      div
+        figure.person
+          width 100%!important
 </style>
