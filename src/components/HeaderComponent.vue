@@ -1,6 +1,7 @@
 <template lang="pug">
   main
-    aside.republic
+    aside.republic(v-if="!bannerClose")
+      button.close(@click="close") +
       div.wrapped
         p You can still join the #[strong wit] token offering waitlist on Republic Crypto!
         a.cta.compact.buttonLike(href="//republic.co/witnet" target="_blank") Go to offering page
@@ -30,6 +31,12 @@
 
   @Component({})
   export default class HeaderComponent extends Vue {
+
+    bannerClose = false
+
+    close (): void {
+      this.bannerClose = true
+    }
 
   }
 </script>
@@ -91,6 +98,18 @@
   aside.republic
     display block
     background #CEEAFF
+    button.close
+      position absolute
+      right 10px
+      top 10px
+      background none
+      border 3px solid #1599FF
+      border-radius 50%
+      color #1599FF
+      font-size 1.5em
+      font-weight 700
+      transform rotateZ(45deg) scale(.8)
+      z-index 2
     .wrapped
       position relative
       padding 50px 30px
