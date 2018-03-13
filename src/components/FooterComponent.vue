@@ -30,9 +30,9 @@
           li
             router-link(to='faq') Frequently Asked Questions
           li
-            router-link(to='community') Join the community
+            router-link(to="team") Meet the Witnet Team
           li
-            a(href="//medium.com/witnet") Official blog
+            router-link(to='community') Join the community
       h1
         img(src='/static/img/logo-white.png')
       p.copy
