@@ -2,7 +2,7 @@
   main
     aside.republic
       div.wrapped
-        p The #[strong wit] token offering is now live on Republic Crypto!
+        p You can still join the #[strong wit] token offering waitlist on Republic Crypto!
         a.cta.compact.buttonLike(href="//republic.co/witnet" target="_blank") Go to offering page
         figure.illustrations
           img.mountain(src="https://assets.republic.co/assets/homepage/header_mountain-3225f173dc2b9b52b389ad2b8be22e9a300ba96c86cf8280246cacffeaae2b23.svg")
