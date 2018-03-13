@@ -10,6 +10,8 @@
           p Ever since Stampery was founded in 2014, they have been on a mission: replacing blind trust with mathematical proof. Witnet is the next step towards this goal.
           p Stampery is backed by top venture capital funds and angel investors, including #[a(href="//en.wikipedia.org/wiki/Tim_Draper") Tim Draper] and #[a(href="http://blockchain.capital/portfolio/") Blockchain Capital].
           p The Stampery team has also been involved in the development of #[a(href="//aragon.one") Aragon], #[a(href="//trailbot.io") Trailbot], #[a(href="//mongoaud.it") Mongoaudit] and #[a(href="//loqui.im") Loqui IM].
+          p
+            router-link(to="team") Meet the key people in the team >
       li.ark
         figure
           img(src="/static/img/illustrations/ark.svg")
