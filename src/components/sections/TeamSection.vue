@@ -11,13 +11,13 @@ main.team.wrapped
       h3 Project Leaders
       figure.person
         img(src="https://uploads.republic.co/p/roles/team_members/avatars/large/000/000/666/666-1516718309-ae974b2e5a8d2e750d983315fe926c8ff926260a.jpg")
-        caption
+        figcaption
           strong Adán Sánchez de Pedro
           em Cofounder and Tech Lead
           p CTO at Stampery, founder of LoquiIM and Whatools, lecturer, amateur ukulele player and politically aware citizen.
       figure.person
         img(src="https://uploads.republic.co/p/roles/team_members/avatars/large/000/000/667/667-1516723810-64f4664088e83253e4e946f7ee4e06a5583ee247.jpg")
-        caption
+        figcaption
           strong Daniele Levi
           em Cofounder and Operations Lead
           p CEO at Stampery, cryptocurrency pioneer, serial entrepreneur and cryptography enthusiast.
@@ -25,50 +25,50 @@ main.team.wrapped
       h3 Team
       figure.person
         img(src="https://s3.amazonaws.com/stampery-cdn/build/rsc/photos/johann.jpg?=1499247229220")
-        caption
+        figcaption
           strong Johann Ortiz
           em Back-end Software Engineer
       figure.person
         img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
-        caption
+        figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Back-end Software Engineer") Apply now!]
           em Back-end Software Engineer
       figure.person
         img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
-        caption
+        figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Solidity Engineer") Apply now!]
           em Solidity and Smart Contracts Developer
       figure.person
         img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
-        caption
+        figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Front-end Software Engineer") Apply now!]
           em Front-end Software Engineer
       figure.person
         img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
-        caption
+        figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Scientific Research Lead") Apply now!]
           em Scientific Research Lead
       figure.person
         img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
-        caption
+        figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Community Lead") Apply now!]
           em Community and Contents Lead
       figure.person
         img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
-        caption
+        figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Operations Lead") Apply now!]
           em Operations Assistant
     div.subart.advisors
       h3 Advisory board
       figure.person
         img(src="https://uploads.republic.co/p/roles/team_members/avatars/large/000/000/668/668-1519664002-bbedd878b1e2ec6bb9be90a4b5b7cae7aff540d2.png")
-        caption
+        figcaption
           strong Luis Iván Cuende
           em Whitepaper Co-Author and Project Advisor
           p Project Lead at #[a(href="//district0x.io", target="_blank") Aragon]. Stampery co-founder. Forbes 30 under 30 & MIT TR3
       figure.person
         img(src="https://crunchbase-production-res.cloudinary.com/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco/kjtbvrrphusrmdjrn6lf")
-        caption
+        figcaption
           strong Joe Urgo
           em Whitepaper Reviewer and Project Advisor
           p Cofounder and Operations Lead at #[a(href="//district0x.io", target="_blank") district0x]
@@ -130,7 +130,7 @@ main.team
         height 150px
         background #DD
         border-radius 6px
-      caption
+      figcaption
         width 100%
         padding 0 60px
         strong
@@ -146,7 +146,7 @@ main.team
           color #66
 
   @media (max-width 1000px)
-    article figure.person caption
+    article figure.person figcaption
       padding 10px
 
   @media (max-width 600px)
