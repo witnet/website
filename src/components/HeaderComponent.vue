@@ -1,13 +1,11 @@
 <template lang="pug">
   main
-    aside.republic(v-if="!bannerClose")
+    aside.hiring(v-if="!bannerClose")
       button.close(@click="close")
       div.wrapped
-        p You can still join the #[strong wit] token offering waitlist on Republic Crypto!
-        a.cta.compact.buttonLike(href="//republic.co/witnet" target="_blank") Go to offering page
-        figure.illustrations
-          img.mountain(src="https://assets.republic.co/assets/homepage/header_mountain-3225f173dc2b9b52b389ad2b8be22e9a300ba96c86cf8280246cacffeaae2b23.svg")
-          img.people(src="https://assets.republic.co/assets/homepage/header_people-e2994373e05da115d821f48329b5e168c61b9ad609b8451ceacc2d9c1f05a03a.svg")
+        p Hey, we are #[b hiring]!
+        a.cta.compact.buttonLike(href="//angel.co/witnet-foundation-1/jobs" target="_blank") Apply on AngelList
+        img.wewantyou(src="//i.imgur.com/o5JYlZ2.png")
     header
       div.wrapped
         h1
@@ -97,7 +95,7 @@
           padding 20px 0
         .paper
           display none
-  aside.republic
+  aside.hiring
     display block
     background #CEEAFF
     button.close
@@ -114,36 +112,29 @@
       z-index 2
     .wrapped
       position relative
-      padding 50px 30px
+      padding 10px 30px
       overflow hidden
+      .cta
+        position relative
+        float left
+        top 24px
+        left 30px
       p
         position relative
+        float left
         font-size 1.2em
         z-index 1
-      .cta
+      img.wewantyou
         position absolute
-        right 340px
-        bottom 52px
-        z-index 1
-      .illustrations
-        z-index 0
-        .mountain
-          position absolute
-          height 150px
-          right 10px
-          bottom 0
-        .people
-          position absolute
-          height 50px
-          right 220px
-          bottom 0
-
-  @media (max-width 1000px)
-    aside.republic
-      .wrapped .cta
-        position relative
-        right 0
+        right 50px
         bottom 0
-      .illustrations
-        opacity .3
+        height 100px
+
+@media (max-width 799px)
+  img.wewantyou
+    display none
+@media (max-width 400px)
+  aside.hiring .wrapped .cta
+    top 0
+    left 0
 </style>
