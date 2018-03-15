@@ -10,13 +10,13 @@ main.team.wrapped
     div.subart.leaders
       h3 Project Leaders
       figure.person
-        img(src="https://uploads.republic.co/p/roles/team_members/avatars/large/000/000/666/666-1516718309-ae974b2e5a8d2e750d983315fe926c8ff926260a.jpg")
+        img(src="/static/img/team/adan.jpg")
         figcaption
           strong Adán Sánchez de Pedro
           em Cofounder and Tech Lead
           p CTO at Stampery, founder of LoquiIM and Whatools, lecturer, amateur ukulele player and politically aware citizen.
       figure.person
-        img(src="https://uploads.republic.co/p/roles/team_members/avatars/large/000/000/667/667-1516723810-64f4664088e83253e4e946f7ee4e06a5583ee247.jpg")
+        img(src="/static/img/team/daniele.jpg")
         figcaption
           strong Daniele Levi
           em Cofounder and Operations Lead
