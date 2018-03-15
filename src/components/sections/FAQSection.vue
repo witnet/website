@@ -23,11 +23,11 @@
           p
             small Given the experimental nature of the technologies and network protocols under development, these dates and deliverables may be subject to change due to reasons beyond the control of Witnet Foundation.
       question
-        h3(slot="question") How's Witnet different from Augur, Gnosis and other "prediction markets"?
+        h3(slot="question") How's Witnet different from Augur, Gnosis and other prediction markets?
         main(slot="answer")
-          p Augur, Gnosis and similar projects rely mainly on human intervention to resolve their crowdsourced predictions about future events. This introduces latency and makes thosess schemes unsuitable for automated attestations needed by smart contracts and other software.
+          p Augur, Gnosis and similar projects are prediction markets that rely mainly on human intervention to resolve their crowdsourced predictions about future events.
           p On the contrary, Witnet uses a network of witness nodes that run an automated web browser to retrieve and attest data from the Internet without human intervention. Attestation requests can report information that is already available online or be scheduled to retrieve some piece of data that will be published in the future.
-          p Essentialy, #[strong Witnet is based on verifiable facts], not someone's predictions.
+          p We want to work with different prediction market projects to provide them the capability of performing automated resolution so that their predictions can be verified automatically and in a trustless way.
       question
         h3(slot="question") How's Witnet different from other oracle projects?
         main(slot="answer")
