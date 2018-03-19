@@ -3,7 +3,7 @@ main.team.wrapped
   article
     h2 About Witnet Foundation
     p Witnet is an open source project originally devised by #[a(href="//stampery.com", target="_blank") Stampery], the leaders of blockchain-powered data certification. The protocol is now being developed by Witnet Foundation in collaboration with a community of independent contributors.
-    p Witnet Foundation is a non profit organization whose mission is ensuring the successful development and deployment of the Witnet protocol, as well as guaranteeing its sustainability and fostering the ecosystem of applications built on top of the protocol.
+    p The mission of Witnet Foundation is ensuring the successful development and deployment of the Witnet protocol, as well as guaranteeing its sustainability and fostering the ecosystem of applications built on top of the protocol.
     p Although Witnet Foundation will play a leading role during the first years, as the project evolves and the Witnet community becomes wider, Witnet Foundation will progressively relinquish its weight in favor of the community.
   article
     h2 Who we are
