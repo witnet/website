@@ -5,7 +5,6 @@
       div.wrapped
         p Hey, we are #[b hiring]!
         a.cta.compact.buttonLike(href="//angel.co/witnet-foundation-1/jobs" target="_blank") Apply on AngelList
-        img.wewantyou(src="//i.imgur.com/o5JYlZ2.png")
     header
       div.wrapped
         h1
