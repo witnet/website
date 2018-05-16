@@ -93,15 +93,19 @@
     .team figure img
       margin-top 60px
 
+    @media (min-width 1001px)
+      .solution figure img
+        margin-top 0px
+        height 250px
+    @media (max-width 1000px)
+      ul li figure,
+      ul li main
+        float none
+        width 100%
+      ul li figure
+        margin 0 0 30px 0
+
 .ark.buttonLike
   margin-top 10px
   margin-right 10px
-
-@media (max-width 1000px)
-  ul li figure,
-  ul li main
-    float none
-    width 100%
-  ul li figure
-    margin 0 0 30px 0
 </style>
