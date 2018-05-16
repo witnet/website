@@ -14,7 +14,7 @@ main.team.wrapped
         figcaption
           strong Adán Sánchez de Pedro
           em Cofounder and Tech Lead
-          p CTO at Stampery, founder of LoquiIM and Whatools, lecturer, amateur ukulele player and politically aware citizen.
+          p CTO at Stampery, founder of LoquiIM and Whatools, lecturer, cypherpunk and amateur ukulele player.
       figure.person
         img(src="/static/img/team/daniele.jpg")
         figcaption
@@ -24,50 +24,72 @@ main.team.wrapped
     div.subart.team
       h3 Team
       figure.person
-        img(src="https://s3.amazonaws.com/stampery-cdn/build/rsc/photos/johann.jpg?=1499247229220")
+        img(src="/static/img/team/johann.jpg")
         figcaption
           strong Johann Ortiz
           em Back-end Software Engineer
       figure.person
-        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
+        img(src="/static/img/team/maria.jpg")
+        figcaption
+          strong María Martín
+          em Back-end Software Engineer
+      figure.person
+        img(src="/static/img/team/anler.jpg")
+        figcaption
+          strong Anler Hernández
+          em Back-end Software Engineer
+      figure.person
+        img(src="/static/img/team/mario.jpg")
+        figcaption
+          strong Mario Cao
+          em SCRUM Master and Software Engineer
+      figure.person
+        img(src="/static/img/team/cesar.jpg")
+        figcaption
+          strong César Moreno
+          em Operations Assistant
+      figure.person
+        img(src="/static/img/team/jose.jpg")
+        figcaption
+          strong José Garay
+          em Community Manager
+    div.subart.team
+      h3 Open positions
+      figure.person
+        img(src="/static/img/team/nobody.svg")
         figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Back-end Software Engineer") Apply now!]
           em Back-end Software Engineer
       figure.person
-        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
+        img(src="/static/img/team/nobody.svg")
         figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Solidity Engineer") Apply now!]
           em Solidity and Smart Contracts Developer
       figure.person
-        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
+        img(src="/static/img/team/nobody.svg")
         figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Front-end Software Engineer") Apply now!]
           em Front-end Software Engineer
       figure.person
-        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
+        img(src="/static/img/team/nobody.svg")
         figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Scientific Research Lead") Apply now!]
           em Scientific Research Lead
       figure.person
-        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
+        img(src="/static/img/team/nobody.svg")
         figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Community Lead") Apply now!]
           em Community and Contents Lead
-      figure.person
-        img(src="https://assets.republic.co/assets/default/user/medium-c2559faff1a8ec3af897753a7480d9e3bd8c484094f15e4fea3202fc23fa9ea8.svg")
-        figcaption
-          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Operations Lead") Apply now!]
-          em Operations Assistant
     div.subart.advisors
       h3 Advisory board
       figure.person
-        img(src="https://uploads.republic.co/p/roles/team_members/avatars/large/000/000/668/668-1519664002-bbedd878b1e2ec6bb9be90a4b5b7cae7aff540d2.png")
+        img(src="/static/img/team/luis.png")
         figcaption
           strong Luis Iván Cuende
           em Whitepaper Co-Author and Project Advisor
           p Project Lead at #[a(href="//district0x.io", target="_blank") Aragon]. Stampery co-founder. Forbes 30 under 30 & MIT TR3
       figure.person
-        img(src="https://crunchbase-production-res.cloudinary.com/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco/kjtbvrrphusrmdjrn6lf")
+        img(src="/static/img/team/joe.jpg")
         figcaption
           strong Joe Urgo
           em Whitepaper Reviewer and Project Advisor
