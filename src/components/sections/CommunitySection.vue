@@ -7,25 +7,25 @@
         a(href="//twitter.com/witnet_io", target="_blank") Witnet Foundation Twitter account >
         p Follow Witnet Foundation on Twitter to get daily updates on the progress of the project.
       li
-        img.back(src="/static/img/social/medium.svg")
-        a(href="//medium.com/witnet", target="_blank") Witnet Foundation official blog on Medium >
-        p Follow Witnet Foundation on Medium to read different articles stating our vision and future roadmap.
-      li
         img.back(src="/static/img/social/telegram.svg")
         a(href="//t.me/witnetio", target="_blank") Witnet Community on Telegram >
         p Join other members of the Witnet Community at the official Telegram group.
       li
-        img.back(src="/static/img/social/reddit.svg")
-        a(href="//reddit.com/r/witnet", target="_blank") Witnet Community subreddit >
-        p The space for linking articles, informal discussion, kitten pictures and occasional memes.
+        img.back(src="/static/img/social/discord.svg")
+        a(href="//discord.gg/X4uurfP", target="_blank") Witnet Community on Discord >
+        p Join the official Witnet community Discrod room to discuss with the rest of the community and get direct support from the developers.
       li
         img.back(src="/static/img/social/github.svg")
         a(href="//github.com/witnet", target="_blank") Witnet GitHub repository >
         p GitHub is where the Witnet protocol development takes place. Are you a programmer? Your contributions are more than welcome!
       li
-        img.back(src="/static/img/social/gitter.svg")
-        a(href="//gitter.im/witnet/community", target="_blank") Witnet Development Community at Gitter >
-        p Join the official Witnet community Gitter room to discuss with the rest of the community and get direct support from the developers.
+        img.back(src="/static/img/social/medium.svg")
+        a(href="//medium.com/witnet", target="_blank") Witnet Foundation official blog on Medium >
+        p Follow Witnet Foundation on Medium to read different articles stating our vision and future roadmap.
+      li
+        img.back(src="/static/img/social/reddit.svg")
+        a(href="//reddit.com/r/witnet", target="_blank") Witnet Community subreddit >
+        p The space for linking articles, informal discussion, kitten pictures and occasional memes.
       li
         img.back(src="/static/img/social/email.svg")
         a(href="mailto:info@witnet.foundation?subject=Witnet project", target="_blank") Witnet Foundation contact email >
