@@ -6,7 +6,6 @@
         h3(slot="question") Where can I read the Witnet whitepaper?
         main(slot="answer")
           p The Witnet protocol whitepaper is #[a(href="/static/witnet-whitepaper.pdf") available at arXiv]. It's a a must read if you are really into blockchain protocols, the underlying tech and their economics.
-          p However, for the average investor, the "One Pager" and "Primer" documents may be a much easier start point to understand the Witnet project. Give them a look first!
       question
         h3(slot="question") Will Witnet work with Ethereum smart contracts?
         main(slot="answer")
@@ -18,12 +17,12 @@
           p Witnet is an open initiative and an open source project that will be developed by Witnet Foundation in collaboration with a number of other organizations and independent developers. This means that Witnet Foundation can't set the roadmap unilaterally.
           p However, Witnet Foundation has a strong commitment to ensure the following milestones are met:
           ul
-            li By September 2018: a user-facing demo/prototype that will let users explore the potential of the protocol being built.
-            li By September 2019: a functional test network implementing the essential features of the Witnet protocol.
+            li [Already met] September 2018: a user-facing demo/prototype that will let users explore the potential of the protocol being built.
+            li 2019 Q1: a functional test network implementing the essential features of the Witnet protocol.
           p
             small Given the experimental nature of the technologies and network protocols under development, these dates and deliverables may be subject to change due to reasons beyond the control of Witnet Foundation.
       question
-        h3(slot="question") How's Witnet different from Augur, Gnosis and other prediction markets?
+        h3(slot="question") How are oracle networks different from Augur, Gnosis and prediction markets in general?
         main(slot="answer")
           p Augur, Gnosis and similar projects are prediction markets that rely mainly on human intervention to resolve their crowdsourced predictions about future events.
           p On the contrary, Witnet uses a network of witness nodes that run an automated web browser to retrieve and attest data from the Internet without human intervention. Attestation requests can report information that is already available online or be scheduled to retrieve some piece of data that will be published in the future.
