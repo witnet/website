@@ -8,13 +8,12 @@ main.team.wrapped
   article
     h2 Who we are
     div.subart.leaders
-      h3 Project Leaders
       figure.person
         img(src="/static/img/team/adan.jpg")
         figcaption
           strong Adán Sánchez de Pedro
           em Cofounder and Tech Lead
-          p CTO at Stampery, founder of LoquiIM and Whatools, lecturer, cypherpunk and amateur ukulele player.
+          p CTO at Stampery, founder of LoquiIM, lecturer, cypherpunk and skepticism maximalist.
       figure.person
         img(src="/static/img/team/daniele.jpg")
         figcaption
@@ -22,31 +21,50 @@ main.team.wrapped
           em Cofounder and Operations Lead
           p CEO at Stampery, cryptocurrency pioneer, serial entrepreneur and cryptography enthusiast.
     div.subart.team
-      h3 Team
       figure.person
-        img(src="/static/img/team/johann.jpg")
+        img(src="/static/img/team/gorka.jpg")
         figcaption
-          strong Johann Ortiz
-          em Back-end Software Engineer
+          strong Gorka Irazoqui, Ph.D.
+          em Scientific Research Lead
+      figure.person
+        img(src="/static/img/team/james.jpg")
+        figcaption
+          strong James Moreau
+          em Developer Relations Lead
       figure.person
         img(src="/static/img/team/maria.jpg")
         figcaption
           strong María Martín
-          em Back-end Software Engineer
+          em Rust Developer
       figure.person
         img(src="/static/img/team/anler.jpg")
         figcaption
           strong Anler Hernández
-          em Back-end Software Engineer
+          em Rust Developer
       figure.person
         img(src="/static/img/team/mario.jpg")
         figcaption
-          strong Mario Cao
-          em SCRUM Master and Software Engineer
+          strong Mario Cao, Ph.D.
+          em Rust Developer, SCRUM Master
       figure.person
-        img(src="/static/img/team/cesar.jpg")
+        img(src="/static/img/team/tomas.jpg")
         figcaption
-          strong César Moreno
+          strong Tomás Ruiz
+          em Rust Developer
+      figure.person
+        img(src="/static/img/team/luisr.jpg")
+        figcaption
+          strong Luis Rubio
+          em Rust Developer
+      figure.person
+        img(src="/static/img/team/tomasz.jpg")
+        figcaption
+          strong Tomaz Polaczyk
+          em Rust Developer
+      figure.person
+        img(src="/static/img/team/edita.jpg")
+        figcaption
+          strong Edita Eitmantyte
           em Operations Assistant
       figure.person
         img(src="/static/img/team/jose.jpg")
@@ -58,28 +76,23 @@ main.team.wrapped
       figure.person
         img(src="/static/img/team/nobody.svg")
         figcaption
-          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Back-end Software Engineer") Apply now!]
-          em Back-end Software Engineer
+          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Rust Developer") Apply now!]
+          em Rust Developer
       figure.person
         img(src="/static/img/team/nobody.svg")
         figcaption
-          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Solidity Engineer") Apply now!]
-          em Solidity and Smart Contracts Developer
+          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Solidity Developer") Apply now!]
+          em Solidity Developer
       figure.person
         img(src="/static/img/team/nobody.svg")
         figcaption
-          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Front-end Software Engineer") Apply now!]
-          em Front-end Software Engineer
+          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=React Developer") Apply now!]
+          em React Developer
       figure.person
         img(src="/static/img/team/nobody.svg")
         figcaption
-          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Scientific Research Lead") Apply now!]
-          em Scientific Research Lead
-      figure.person
-        img(src="/static/img/team/nobody.svg")
-        figcaption
-          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Community Lead") Apply now!]
-          em Community and Contents Lead
+          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Rholang Developer") Apply now!]
+          em Rholang Developer
     div.subart.advisors
       h3 Advisory board
       figure.person
@@ -110,7 +123,7 @@ main.team
   article
     margin-bottom 50px
     div.subart
-      margin-bottom 20px
+      margin 20px 0
       overflow auto
       &.team
         figure.person
