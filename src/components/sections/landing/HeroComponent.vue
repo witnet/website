@@ -20,7 +20,7 @@
   class ytMessage {
     event: string = 'command'
     func: string
-    args: Array = []
+    args: Array<string> = []
 
     constructor(func, args?) {
       this.func = func
@@ -43,15 +43,16 @@
     uncovered: boolean = false
 
     mounted () {
-      window.particlesJS.load('particles', 'static/particles.json')
+      (<any>window).particlesJS.load('particles', 'static/particles.json')
     }
 
     uncover(e: MouseEvent): void {
       this.uncovered = true
       const msg: string = new ytMessage('playVideo').serialize()
-      this.$refs.youtube.contentWindow.postMessage(msg, '*')
+      const yt = <any>this.$refs.youtube
+      yt.contentWindow.postMessage(msg, '*')
       setTimeout(() => {
-        this.$refs.youtube.contentWindow.postMessage(msg, '*')
+        yt.contentWindow.postMessage(msg, '*')
       }, 1000, this)
     }
 
