@@ -59,7 +59,7 @@ main.team.wrapped
       figure.person
         img(src="/static/img/team/tomasz.jpg")
         figcaption
-          strong Tomaz Polaczyk
+          strong Tomasz Polaczyk
           em Rust Developer
       figure.person
         img(src="/static/img/team/edita.jpg")
