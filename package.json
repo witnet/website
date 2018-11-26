@@ -24,5 +24,11 @@
     "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.13",
     "vue-ts-loader": "^0.0.3"
-  }
+  },
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/witnet/website.git",
+  "author": "Sara Curiel <kengork@gmail.com>",
+  "license": "MIT"
 }
