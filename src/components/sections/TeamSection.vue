@@ -62,6 +62,11 @@ main.team.wrapped
           strong Tomasz Polaczyk
           em Rust Developer
       figure.person
+        img(src="/static/img/team/sara.jpg")
+        figcaption
+          strong Sara Curiel
+          em React Developer
+      figure.person
         img(src="/static/img/team/edita.jpg")
         figcaption
           strong Edita Eitmantyte
