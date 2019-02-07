@@ -32,11 +32,6 @@ main.team.wrapped
           strong James Moreau
           em Developer Relations Lead
       figure.person
-        img(src="/static/img/team/maria.jpg")
-        figcaption
-          strong María Martín
-          em Rust Developer
-      figure.person
         img(src="/static/img/team/anler.jpg")
         figcaption
           strong Anler Hernández
@@ -65,7 +60,7 @@ main.team.wrapped
         img(src="/static/img/team/sara.jpg")
         figcaption
           strong Sara Curiel
-          em React Developer
+          em Front-end Developer
       figure.person
         img(src="/static/img/team/edita.jpg")
         figcaption
@@ -93,11 +88,6 @@ main.team.wrapped
         figcaption
           strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=React Developer") Apply now!]
           em React Developer
-      figure.person
-        img(src="/static/img/team/nobody.svg")
-        figcaption
-          strong Maybe you? #[a(href="mailto:info@witnet.foundation?subject=Rholang Developer") Apply now!]
-          em Rholang Developer
     div.subart.advisors
       h3 Advisory board
       figure.person
