@@ -27,11 +27,6 @@ main.team.wrapped
           strong Gorka Irazoqui, Ph.D.
           em Scientific Research Lead
       figure.person
-        img(src="/static/img/team/james.jpg")
-        figcaption
-          strong James Moreau
-          em Developer Relations Lead
-      figure.person
         img(src="/static/img/team/anler.jpg")
         figcaption
           strong Anler Hernández
@@ -40,12 +35,12 @@ main.team.wrapped
         img(src="/static/img/team/mario.jpg")
         figcaption
           strong Mario Cao, Ph.D.
-          em Rust Developer, SCRUM Master
+          em VP Engineering
       figure.person
         img(src="/static/img/team/tomas.jpg")
         figcaption
           strong Tomás Ruiz
-          em Rust Developer
+          em Front-end Lead Developer
       figure.person
         img(src="/static/img/team/luisr.jpg")
         figcaption
@@ -66,11 +61,6 @@ main.team.wrapped
         figcaption
           strong Edita Eitmantyte
           em Operations Assistant
-      figure.person
-        img(src="/static/img/team/jose.jpg")
-        figcaption
-          strong José Garay
-          em Community Manager
     div.subart.team
       h3 Open positions
       figure.person
