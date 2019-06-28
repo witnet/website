@@ -7,20 +7,22 @@ main.team.wrapped
     p Although Witnet Foundation will play a leading role during the first years, as the project evolves and the Witnet community becomes wider, Witnet Foundation will progressively relinquish its weight in favor of the community.
   article
     h2 Who we are
-    div.subart.leaders
+    div.subart.team
       figure.person
         img(src="/static/img/team/adan.jpg")
         figcaption
           strong Adán Sánchez de Pedro
           em Cofounder and Tech Lead
-          p CTO at Stampery, founder of LoquiIM, lecturer, cypherpunk and skepticism maximalist.
       figure.person
         img(src="/static/img/team/daniele.jpg")
         figcaption
           strong Daniele Levi
           em Cofounder and Operations Lead
-          p CEO at Stampery, cryptocurrency pioneer, serial entrepreneur and cryptography enthusiast.
-    div.subart.team
+      figure.person
+        img(src="/static/img/team/mario.jpg")
+        figcaption
+          strong Mario Cao, Ph.D.
+          em Product Lead
       figure.person
         img(src="/static/img/team/gorka.jpg")
         figcaption
@@ -30,17 +32,12 @@ main.team.wrapped
         img(src="/static/img/team/anler.jpg")
         figcaption
           strong Anler Hernández
-          em Rust Developer
-      figure.person
-        img(src="/static/img/team/mario.jpg")
-        figcaption
-          strong Mario Cao, Ph.D.
-          em VP Engineering
+          em Senior Architect & Rust Developer
       figure.person
         img(src="/static/img/team/tomas.jpg")
         figcaption
           strong Tomás Ruiz
-          em Front-end Lead Developer
+          em Front-end Development Lead
       figure.person
         img(src="/static/img/team/luisr.jpg")
         figcaption
@@ -51,11 +48,6 @@ main.team.wrapped
         figcaption
           strong Tomasz Polaczyk
           em Rust Developer
-      figure.person
-        img(src="/static/img/team/sara.jpg")
-        figcaption
-          strong Sara Curiel
-          em Front-end Developer
       figure.person
         img(src="/static/img/team/edita.jpg")
         figcaption
