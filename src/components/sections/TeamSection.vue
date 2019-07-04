@@ -22,7 +22,7 @@ main.team.wrapped
         img(src="/static/img/team/mario.jpg")
         figcaption
           strong Mario Cao, Ph.D.
-          em Product Lead
+          em Head of Engineering
       figure.person
         img(src="/static/img/team/gorka.jpg")
         figcaption
