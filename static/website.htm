@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:3000/#next -->
+<html class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>website</title><meta data-n-head="1" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="1" data-hid="description" name="description" content="Witnet protocol website"><link data-n-head="1" rel="icon" type="image/x-icon" href="http://localhost:3000/favicon.ico"><link rel="preload" href="./website_files/runtime.js" as="script"><link rel="preload" href="./website_files/commons.app.js" as="script"><link rel="preload" href="./website_files/vendors.app.js" as="script"><link rel="preload" href="./website_files/app.js" as="script"><link rel="preload" href="http://localhost:3000/_nuxt/app.33d1464fceb34e091075.hot-update.js" as="script">
+  <style type="text/css">
+.__nuxt-error-page {
+  padding: 1rem;
+  background: #F7F8FB;
+  color: #47494E;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-weight: 100 !important;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.__nuxt-error-page .error {
+  max-width: 450px;
+}
+.__nuxt-error-page .title {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #47494E;
+  margin-bottom: 8px;
+}
+.__nuxt-error-page .description {
+  color: #7F828B;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+.__nuxt-error-page a {
+  color: #7F828B !important;
+  text-decoration: none;
+}
+.__nuxt-error-page .logo {
+  position: fixed;
+  left: 12px;
+  bottom: 12px;
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/.nuxt/components/nuxt-error.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvLm51eHQvY29tcG9uZW50cy9udXh0LWVycm9yLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBcURBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIsMkJBQTJCO0VBQzNCLDBCQUEwQjtFQUMxQiw4QkFBOEI7RUFDOUIsbUNBQW1DO0VBQ25DLGtCQUFrQjtFQUNsQixNQUFNO0VBQ04sT0FBTztFQUNQLFFBQVE7RUFDUixTQUFTO0FBQ1g7QUFDQTtFQUNFLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsaUJBQWlCO0VBQ2pCLGdCQUFnQjtFQUNoQixjQUFjO0VBQ2Qsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSxjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UseUJBQXlCO0VBQ3pCLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsZUFBZTtFQUNmLFVBQVU7RUFDVixZQUFZO0FBQ2QiLCJmaWxlIjoibnV4dC1lcnJvci52dWU/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZsYW5nPWNzcyYiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuLl9fbnV4dC1lcnJvci1wYWdlIHtcbiAgcGFkZGluZzogMXJlbTtcbiAgYmFja2dyb3VuZDogI0Y3RjhGQjtcbiAgY29sb3I6ICM0NzQ5NEU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogMTAwICFpbXBvcnRhbnQ7XG4gIC1tcy10ZXh0LXNpemUtYWRqdXN0OiAxMDAlO1xuICAtd2Via2l0LXRleHQtc2l6ZS1hZGp1c3Q6IDEwMCU7XG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgcmlnaHQ6IDA7XG4gIGJvdHRvbTogMDtcbn1cbi5fX251eHQtZXJyb3ItcGFnZSAuZXJyb3Ige1xuICBtYXgtd2lkdGg6IDQ1MHB4O1xufVxuLl9fbnV4dC1lcnJvci1wYWdlIC50aXRsZSB7XG4gIGZvbnQtc2l6ZTogMS41cmVtO1xuICBtYXJnaW4tdG9wOiAxNXB4O1xuICBjb2xvcjogIzQ3NDk0RTtcbiAgbWFyZ2luLWJvdHRvbTogOHB4O1xufVxuLl9fbnV4dC1lcnJvci1wYWdlIC5kZXNjcmlwdGlvbiB7XG4gIGNvbG9yOiAjN0Y4MjhCO1xuICBsaW5lLWhlaWdodDogMjFweDtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn1cbi5fX251eHQtZXJyb3ItcGFnZSBhIHtcbiAgY29sb3I6ICM3RjgyOEIgIWltcG9ydGFudDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuLl9fbnV4dC1lcnJvci1wYWdlIC5sb2dvIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBsZWZ0OiAxMnB4O1xuICBib3R0b206IDEycHg7XG59XG4iXX0= */</style><style type="text/css">
+.nuxt-progress {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 2px;
+  width: 0%;
+  opacity: 1;
+  transition: width 0.1s, opacity 0.4s;
+  background-color: #fff;
+  z-index: 999999;
+}
+.nuxt-progress.nuxt-progress-notransition {
+  transition: none;
+}
+.nuxt-progress-failed {
+  background-color: red;
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/.nuxt/components/nuxt-loading.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvLm51eHQvY29tcG9uZW50cy9udXh0LWxvYWRpbmcudnVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUE0SkE7RUFDRSxlQUFlO0VBQ2YsUUFBUTtFQUNSLFNBQVM7RUFDVCxVQUFVO0VBQ1YsV0FBVztFQUNYLFNBQVM7RUFDVCxVQUFVO0VBQ1Ysb0NBQW9DO0VBQ3BDLHNCQUFzQjtFQUN0QixlQUFlO0FBQ2pCO0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7QUFFQTtFQUNFLHFCQUFxQjtBQUN2QiIsImZpbGUiOiJudXh0LWxvYWRpbmcudnVlP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmbGFuZz1jc3MmIiwic291cmNlc0NvbnRlbnQiOlsiXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuLm51eHQtcHJvZ3Jlc3Mge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRvcDogMHB4O1xuICBsZWZ0OiAwcHg7XG4gIHJpZ2h0OiAwcHg7XG4gIGhlaWdodDogMnB4O1xuICB3aWR0aDogMCU7XG4gIG9wYWNpdHk6IDE7XG4gIHRyYW5zaXRpb246IHdpZHRoIDAuMXMsIG9wYWNpdHkgMC40cztcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbiAgei1pbmRleDogOTk5OTk5O1xufVxuXG4ubnV4dC1wcm9ncmVzcy5udXh0LXByb2dyZXNzLW5vdHJhbnNpdGlvbiB7XG4gIHRyYW5zaXRpb246IG5vbmU7XG59XG5cbi5udXh0LXByb2dyZXNzLWZhaWxlZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJlZDtcbn1cbiJdfQ== */</style><style type="text/css">
+.nuxt__build_indicator[data-v-71e9e103] {
+  box-sizing: border-box;
+  position: fixed;
+  font-family: monospace;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+  width: 88px;
+  z-index: 2147483647;
+  font-size: 16px;
+  line-height: 1.2rem;
+}
+.v-enter-active[data-v-71e9e103], .v-leave-active[data-v-71e9e103] {
+  transition-delay: 0.2s;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+.v-leave-to[data-v-71e9e103] {
+  opacity: 0;
+  transform: translateY(20px);
+}
+svg[data-v-71e9e103] {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 1.1em;
+  position: relative;
+  top: 1px;
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/.nuxt/components/nuxt-build-indicator.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvLm51eHQvY29tcG9uZW50cy9udXh0LWJ1aWxkLWluZGljYXRvci52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQStHQTtFQUNFLHNCQUFzQjtFQUN0QixlQUFlO0VBQ2Ysc0JBQXNCO0VBQ3RCLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsMkNBQTJDO0VBQzNDLFdBQVc7RUFDWCxtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0Usc0JBQXNCO0VBQ3RCLHdCQUF3QjtFQUN4Qix5QkFBeUI7QUFDM0I7QUFDQTtFQUNFLFVBQVU7RUFDViwyQkFBMkI7QUFDN0I7QUFDQTtFQUNFLHFCQUFxQjtFQUNyQix3QkFBd0I7RUFDeEIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixRQUFRO0FBQ1YiLCJmaWxlIjoibnV4dC1idWlsZC1pbmRpY2F0b3IudnVlP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmaWQ9NzFlOWUxMDMmc2NvcGVkPXRydWUmbGFuZz1jc3MmIiwic291cmNlc0NvbnRlbnQiOlsiXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuLm51eHRfX2J1aWxkX2luZGljYXRvciB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTtcbiAgcGFkZGluZzogNXB4IDEwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgYm94LXNoYWRvdzogMXB4IDFweCAycHggMHB4IHJnYmEoMCwwLDAsMC4yKTtcbiAgd2lkdGg6IDg4cHg7XG4gIHotaW5kZXg6IDIxNDc0ODM2NDc7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgbGluZS1oZWlnaHQ6IDEuMnJlbTtcbn1cbi52LWVudGVyLWFjdGl2ZSwgLnYtbGVhdmUtYWN0aXZlIHtcbiAgdHJhbnNpdGlvbi1kZWxheTogMC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogYWxsO1xuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjNzO1xufVxuLnYtbGVhdmUtdG8ge1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMjBweCk7XG59XG5zdmcge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTtcbiAgd2lkdGg6IDEuMWVtO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHRvcDogMXB4O1xufVxuIl19 */</style><style type="text/css">.primary {
+  display: inline-block;
+  background-color: #6600de;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 30px; }
+
+.seconday-purple {
+  display: inline-block;
+  background-color: none;
+  color: #6600de;
+  border: 1px solid #6600de;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer; }
+
+.secondary-white {
+  display: inline-block;
+  background-color: none;
+  color: white;
+  border: 1px solid white;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer; }
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/styles/main.scss */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvc3R5bGVzL21haW4uc2NzcyIsIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvc3R5bGVzL2NvbG9ycy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdBO0VBQ0UscUJBQXFCO0VBQ3JCLHlCQ0p1QjtFREt2QixZQ0RXO0VERVgsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZixtQkFBbUIsRUFBQTs7QUFHckI7RUFDRSxxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLGNDakJ1QjtFRGtCdkIseUJDbEJ1QjtFRG1CdkIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsZUFBZSxFQUFBOztBQUdqQjtFQUNFLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsWUN4Qlc7RUR5QlgsdUJDekJXO0VEMEJYLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLGVBQWUsRUFBQSIsImZpbGUiOiJtYWluLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IFwiY29sb3JzXCI7XG5cbi8vUFJJTUFSWSBCVVRUT05cbi5wcmltYXJ5IHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAkcHVycGxlO1xuICBjb2xvcjogJHdoaXRlO1xuICBib3JkZXI6IG5vbmU7XG4gIHBhZGRpbmc6IDE2cHggMjRweDtcbiAgZm9udC1zaXplOiAxNHB4O1xuICBmb250LXdlaWdodDogNTAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIG1hcmdpbi1ib3R0b206IDMwcHg7XG59XG4vL1NFQ09OREFZIFBVUlBMRSBCVVRUT05cbi5zZWNvbmRheS1wdXJwbGUge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGJhY2tncm91bmQtY29sb3I6IG5vbmU7XG4gIGNvbG9yOiAkcHVycGxlO1xuICBib3JkZXI6IDFweCBzb2xpZCAkcHVycGxlO1xuICBwYWRkaW5nOiAxNnB4IDI0cHg7XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuLy9TRUNPTkRBWSBXSElURSBCVVRUT05cbi5zZWNvbmRhcnktd2hpdGUge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGJhY2tncm91bmQtY29sb3I6IG5vbmU7XG4gIGNvbG9yOiAkd2hpdGU7XG4gIGJvcmRlcjogMXB4IHNvbGlkICR3aGl0ZTtcbiAgcGFkZGluZzogMTZweCAyNHB4O1xuICBmb250LXNpemU6IDE0cHg7XG4gIGZvbnQtd2VpZ2h0OiA1MDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn0iLCIvL3B1cnBsZVxuJHB1cnBsZTogcmdiKDEwMiwgMCwgMjIyKTtcbiRwdXJwbGUtMTogcmdiYSgxMDQsIDAsIDIyMiwgMC4wOTYpO1xuJHB1cnBsZS0yOiByZ2JhKDEwMCwgNDUsIDE2MywgMC4yNCk7XG4vL2dyZXkgYW5kIHdoaXRlXG4kd2hpdGU6IHdoaXRlO1xuJGdyZXktMTogcmdiKDI0NCwgMjQ0LCAyNDQpO1xuJGdyZXktMjogcmdiKDYxLCA2MSwgNjEpOyJdfQ== */</style><style type="text/css">nav[data-v-0957edea] {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+nav .logo[data-v-0957edea] {
+    margin: 40px 32px;
+    width: 250px;
+}
+nav .tab-container[data-v-0957edea] {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav .tab-container li a[data-v-0957edea] {
+      display: flex;
+      color: #3d3d3d;
+      align-items: center;
+      text-decoration: none;
+      padding: 24px 32px;
+}
+nav .tab-container li a img[data-v-0957edea] {
+        width: 20px;
+        margin: auto 8px;
+}
+nav .tab-container li a[data-v-0957edea]:hover {
+        color: #6600de;
+}
+nav .tab-container .language-btn[data-v-0957edea] {
+      font-size: 16px;
+      padding: 0 8px;
+      display: flex;
+      height: 30px;
+      margin-right: 1vw;
+      align-items: center;
+      text-justify: center;
+      background-color: rgba(104, 0, 222, 0.096);
+      color: #3d3d3d;
+      border: none;
+      cursor: pointer;
+}
+nav .tab-container .language-btn[data-v-0957edea]:active {
+        outline: none;
+}
+nav .tab-container .language-btn[data-v-0957edea]:hover {
+        opacity: 0.75;
+}
+nav .tab-container .language-btn img[data-v-0957edea] {
+        padding-left: 8px;
+        width: 8px;
+}
+nav .tab-container .smooth-in-move[data-v-0957edea] {
+      transition: all 600ms ease-in-out 50ms;
+}
+nav .tab-container .smooth-in-enter-active[data-v-0957edea] {
+      transition: all 400ms ease-out;
+}
+nav .tab-container .smooth-in-leave-active[data-v-0957edea] {
+      transition: all 200ms ease-in;
+      position: absolute;
+      z-index: 0;
+}
+nav .tab-container .smooth-in-enter[data-v-0957edea],
+    nav .tab-container .smooth-in-leave-to[data-v-0957edea] {
+      opacity: 0;
+}
+nav .tab-container .drop-down[data-v-0957edea] {
+      position: absolute;
+      z-index: 50;
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+}
+nav .tab-container .drop-down .drop-down-item[data-v-0957edea] {
+        background-color: transparent;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        background-color: none;
+        color: #3d3d3d;
+        padding: 8px;
+        border-bottom: 1px solid #3d3d3d;
+}
+nav .tab-container .drop-down .drop-down-item[data-v-0957edea]:hover {
+          opacity: 0.75;
+}
+nav .tab-container .drop-down .drop-down-item[data-v-0957edea]:active {
+          box-shadow: none;
+          outline: none;
+}
+@media screen and (max-width: 1200px) {
+nav[data-v-0957edea] {
+    display: flex;
+    flex-direction: column;
+}
+nav .logo[data-v-0957edea] {
+      margin: 40px 32px;
+      width: 250px;
+}
+nav .tab-container[data-v-0957edea] {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      background-color: #9293ce;
+      z-index: 60;
+      justify-content: center;
+      align-items: center;
+}
+nav .tab-container li a[data-v-0957edea] {
+        background-color: #9293ce;
+        display: flex;
+        color: #3d3d3d;
+        align-items: center;
+        text-decoration: none;
+        padding: 24px 32px;
+}
+nav .tab-container li a img[data-v-0957edea] {
+          width: 20px;
+          margin: auto 8px;
+}
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/components/NavBar.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvY29tcG9uZW50cy9OYXZCYXIudnVlIiwiL1VzZXJzL3VzZXIvRGVza3RvcC9XaXRuZXQvd2Vic2l0ZS9zdHlsZXMvY29sb3JzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBNEVBO0VBQ0UsYUFBYTtFQUNiLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsOEJBQThCO0VBQzlCLG1CQUFtQjtBQUFBO0FBTHJCO0lBT0ksaUJBQWlCO0lBQ2pCLFlBQVk7QUFBQTtBQVJoQjtJQVdJLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsbUJBQW1CO0FBQUE7QUFidkI7TUFlTSxhQUFhO01BQ2IsY0FBc0I7TUFDdEIsbUJBQW1CO01BQ25CLHFCQUFxQjtNQUNyQixrQkFBa0I7QUFBQTtBQW5CeEI7UUFxQlEsV0FBVztRQUNYLGdCQUFnQjtBQUFBO0FBdEJ4QjtRQXlCUSxjQ3BHaUI7QUFBQTtBRDJFekI7TUE2Qk0sZUFBZTtNQUNmLGNBQWM7TUFDZCxhQUFhO01BQ2IsWUFBWTtNQUNaLGlCQUFpQjtNQUNqQixtQkFBbUI7TUFDbkIsb0JBQW9CO01BQ3BCLDBDQzlHNkI7TUQrRzdCLGNBQXNCO01BQ3RCLFlBQVk7TUFDWixlQUFlO0FBQUE7QUF2Q3JCO1FBeUNRLGFBQWE7QUFBQTtBQXpDckI7UUE0Q1EsYUFBYTtBQUFBO0FBNUNyQjtRQStDUSxpQkFBaUI7UUFDakIsVUFBVTtBQUFBO0FBaERsQjtNQW9ETSxzQ0FBc0M7QUFBQTtBQXBENUM7TUF1RE0sOEJBQThCO0FBQUE7QUF2RHBDO01BMERNLDZCQUE2QjtNQUM3QixrQkFBa0I7TUFDbEIsVUFBVTtBQUFBO0FBNURoQjs7TUFnRU0sVUFBVTtBQUFBO0FBaEVoQjtNQW1FTSxrQkFBa0I7TUFDbEIsV0FBVztNQUNYLGdCQUFnQjtNQUNoQixhQUFhO01BQ2Isc0JBQXNCO0FBQUE7QUF2RTVCO1FBeUVRLDZCQUE2QjtRQUM3QixlQUFlO1FBQ2YsZUFBZTtRQUNmLFlBQVk7UUFDWixzQkFBc0I7UUFDdEIsY0FBc0I7UUFDdEIsWUFBWTtRQUNaLGdDQUF3QztBQUFBO0FBaEZoRDtVQWtGVSxhQUFhO0FBQUE7QUFsRnZCO1VBcUZVLGdCQUFnQjtVQUNoQixhQUFhO0FBQUE7QUFNdkI7QUFDRTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7QUFBQTtBQUZ4QjtNQUlJLGlCQUFpQjtNQUNqQixZQUFZO0FBQUE7QUFMaEI7TUFRSSxnQkFBZ0I7TUFDaEIsYUFBYTtNQUNiLHNCQUFzQjtNQUN0Qix5QkFBb0M7TUFDcEMsV0FBVztNQUNYLHVCQUF1QjtNQUN2QixtQkFBbUI7QUFBQTtBQWR2QjtRQWdCTSx5QkFBb0M7UUFDcEMsYUFBYTtRQUNiLGNBQXNCO1FBQ3RCLG1CQUFtQjtRQUNuQixxQkFBcUI7UUFDckIsa0JBQWtCO0FBQUE7QUFyQnhCO1VBdUJRLFdBQVc7VUFDWCxnQkFBZ0I7QUFBQTtBQUNqQiIsImZpbGUiOiJOYXZCYXIudnVlP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmaWQ9MDk1N2VkZWEmc2NvcGVkPXRydWUmbGFuZz1zY3NzJiIsInNvdXJjZXNDb250ZW50IjpbIlxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5AaW1wb3J0ICdAL3N0eWxlcy9jb2xvcnMuc2Nzcyc7XG5cbm5hdiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGhlaWdodDogMTB2aDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBtYXJnaW4tYm90dG9tOiA1MHB4O1xuICAubG9nbyB7XG4gICAgbWFyZ2luOiA0MHB4IDMycHg7XG4gICAgd2lkdGg6IDI1MHB4O1xuICB9XG4gIC50YWItY29udGFpbmVyIHtcbiAgICBsaXN0LXN0eWxlOiBub25lO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBsaSBhIHtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBjb2xvcjogcmdiKDYxLCA2MSwgNjEpO1xuICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgIHBhZGRpbmc6IDI0cHggMzJweDtcbiAgICAgICYgaW1nIHtcbiAgICAgICAgd2lkdGg6IDIwcHg7XG4gICAgICAgIG1hcmdpbjogYXV0byA4cHg7XG4gICAgICB9XG4gICAgICAmOmhvdmVyIHtcbiAgICAgICAgY29sb3I6ICRwdXJwbGU7XG4gICAgICB9XG4gICAgfVxuICAgIC5sYW5ndWFnZS1idG4ge1xuICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgcGFkZGluZzogMCA4cHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgaGVpZ2h0OiAzMHB4O1xuICAgICAgbWFyZ2luLXJpZ2h0OiAxdnc7XG4gICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgdGV4dC1qdXN0aWZ5OiBjZW50ZXI7XG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAkcHVycGxlLTE7XG4gICAgICBjb2xvcjogcmdiKDYxLCA2MSwgNjEpO1xuICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgJjphY3RpdmUge1xuICAgICAgICBvdXRsaW5lOiBub25lO1xuICAgICAgfVxuICAgICAgJjpob3ZlciB7XG4gICAgICAgIG9wYWNpdHk6IDAuNzU7XG4gICAgICB9XG4gICAgICAmIGltZyB7XG4gICAgICAgIHBhZGRpbmctbGVmdDogOHB4O1xuICAgICAgICB3aWR0aDogOHB4O1xuICAgICAgfVxuICAgIH1cbiAgICAuc21vb3RoLWluLW1vdmUge1xuICAgICAgdHJhbnNpdGlvbjogYWxsIDYwMG1zIGVhc2UtaW4tb3V0IDUwbXM7XG4gICAgfVxuICAgIC5zbW9vdGgtaW4tZW50ZXItYWN0aXZlIHtcbiAgICAgIHRyYW5zaXRpb246IGFsbCA0MDBtcyBlYXNlLW91dDtcbiAgICB9XG4gICAgLnNtb290aC1pbi1sZWF2ZS1hY3RpdmUge1xuICAgICAgdHJhbnNpdGlvbjogYWxsIDIwMG1zIGVhc2UtaW47XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICB6LWluZGV4OiAwO1xuICAgIH1cbiAgICAuc21vb3RoLWluLWVudGVyLFxuICAgIC5zbW9vdGgtaW4tbGVhdmUtdG8ge1xuICAgICAgb3BhY2l0eTogMDtcbiAgICB9XG4gICAgLmRyb3AtZG93biB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICB6LWluZGV4OiA1MDtcbiAgICAgIG1hcmdpbi10b3A6IDE2cHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAgICYgLmRyb3AtZG93bi1pdGVtIHtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IG5vbmU7XG4gICAgICAgIGNvbG9yOiByZ2IoNjEsIDYxLCA2MSk7XG4gICAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHJnYig2MSwgNjEsIDYxKTtcbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgb3BhY2l0eTogMC43NTtcbiAgICAgICAgfVxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgYm94LXNoYWRvdzogbm9uZTtcbiAgICAgICAgICBvdXRsaW5lOiBub25lO1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAxMjAwcHgpIHtcbiAgbmF2IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgLmxvZ28ge1xuICAgICAgbWFyZ2luOiA0MHB4IDMycHg7XG4gICAgICB3aWR0aDogMjUwcHg7XG4gICAgfVxuICAgIC50YWItY29udGFpbmVyIHtcbiAgICAgIGxpc3Qtc3R5bGU6IG5vbmU7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigxNDYsIDE0NywgMjA2KTtcbiAgICAgIHotaW5kZXg6IDYwO1xuICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgbGkgYSB7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigxNDYsIDE0NywgMjA2KTtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgY29sb3I6IHJnYig2MSwgNjEsIDYxKTtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICBwYWRkaW5nOiAyNHB4IDMycHg7XG4gICAgICAgICYgaW1nIHtcbiAgICAgICAgICB3aWR0aDogMjBweDtcbiAgICAgICAgICBtYXJnaW46IGF1dG8gOHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iLCIvL3B1cnBsZVxuJHB1cnBsZTogcmdiKDEwMiwgMCwgMjIyKTtcbiRwdXJwbGUtMTogcmdiYSgxMDQsIDAsIDIyMiwgMC4wOTYpO1xuJHB1cnBsZS0yOiByZ2JhKDEwMCwgNDUsIDE2MywgMC4yNCk7XG4vL2dyZXkgYW5kIHdoaXRlXG4kd2hpdGU6IHdoaXRlO1xuJGdyZXktMTogcmdiKDI0NCwgMjQ0LCAyNDQpO1xuJGdyZXktMjogcmdiKDYxLCA2MSwgNjEpOyJdfQ== */</style><style type="text/css">footer[data-v-0d2d6594] {
+  color: white;
+  padding: 40px;
+  background-color: rgba(100, 45, 163, 0.24);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-logo[data-v-0d2d6594] {
+    width: 250px;
+}
+footer .footer-description[data-v-0d2d6594] {
+    margin: 30px 0px;
+    font-size: 14px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+footer .social-bar[data-v-0d2d6594] {
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+footer .social-bar .social[data-v-0d2d6594] {
+      width: 30px;
+      margin: 5px;
+}
+footer .read-btn[data-v-0d2d6594] {
+    margin-top: 56px;
+}
+footer .column-right[data-v-0d2d6594] {
+    text-align: center;
+}
+@media screen and (max-width: 1200px) {
+footer[data-v-0d2d6594] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/components/Footer.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvY29tcG9uZW50cy9Gb290ZXIudnVlIiwiL1VzZXJzL3VzZXIvRGVza3RvcC9XaXRuZXQvd2Vic2l0ZS9zdHlsZXMvY29sb3JzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBd0RBO0VBQ0UsWUNwRFc7RURxRFgsYUFBYTtFQUNiLDBDQ3hEaUM7RUR5RGpDLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsbUJBQW1CO0FBQUE7QUFOckI7SUFRSSxZQUFZO0FBQUE7QUFSaEI7SUFXSSxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLFlBQVk7SUFDWixhQUFhO0lBQ2Isc0JBQXNCO0FBQUE7QUFmMUI7SUFrQkksWUFBWTtJQUNaLDhCQ3RFUztBQUFBO0FEbURiO01BcUJNLFdBQVc7TUFDWCxXQUFXO0FBQUE7QUF0QmpCO0lBMEJJLGdCQUFnQjtBQUFBO0FBMUJwQjtJQTZCSSxrQkFBa0I7QUFBQTtBQUd0QjtBQUNFO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsc0JBQXNCO0FBQUE7QUFDdkIiLCJmaWxlIjoiRm9vdGVyLnZ1ZT92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmlkPTBkMmQ2NTk0JnNjb3BlZD10cnVlJmxhbmc9c2NzcyYiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5AaW1wb3J0ICdAL3N0eWxlcy9jb2xvcnMuc2Nzcyc7XG5cbmZvb3RlciB7XG4gIGNvbG9yOiAkd2hpdGU7XG4gIHBhZGRpbmc6IDQwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICRwdXJwbGUtMjtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAuZm9vdGVyLWxvZ28ge1xuICAgIHdpZHRoOiAyNTBweDtcbiAgfVxuICAuZm9vdGVyLWRlc2NyaXB0aW9uIHtcbiAgICBtYXJnaW46IDMwcHggMHB4O1xuICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICB3aWR0aDogNDUwcHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICB9XG4gIC5zb2NpYWwtYmFyIHtcbiAgICBwYWRkaW5nOiA1cHg7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICR3aGl0ZTtcbiAgICAuc29jaWFsIHtcbiAgICAgIHdpZHRoOiAzMHB4O1xuICAgICAgbWFyZ2luOiA1cHg7XG4gICAgfVxuICB9XG4gIC5yZWFkLWJ0biB7XG4gICAgbWFyZ2luLXRvcDogNTZweDtcbiAgfVxuICAuY29sdW1uLXJpZ2h0IHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIH1cbn1cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDEyMDBweCkge1xuICBmb290ZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICB9XG59XG4iLCIvL3B1cnBsZVxuJHB1cnBsZTogcmdiKDEwMiwgMCwgMjIyKTtcbiRwdXJwbGUtMTogcmdiYSgxMDQsIDAsIDIyMiwgMC4wOTYpO1xuJHB1cnBsZS0yOiByZ2JhKDEwMCwgNDUsIDE2MywgMC4yNCk7XG4vL2dyZXkgYW5kIHdoaXRlXG4kd2hpdGU6IHdoaXRlO1xuJGdyZXktMTogcmdiKDI0NCwgMjQ0LCAyNDQpO1xuJGdyZXktMjogcmdiKDYxLCA2MSwgNjEpOyJdfQ== */</style><style type="text/css">
+html {
+  scroll-behavior: smooth;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+html {
+    scroll-behavior: auto;
+}
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/layouts/default.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvbGF5b3V0cy9kZWZhdWx0LnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBcUJBO0VBQ0UsdUJBQXVCO0VBQ3ZCOytDQUM2QztFQUM3QyxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLDBCQUEwQjtFQUMxQiw4QkFBOEI7RUFDOUIsa0NBQWtDO0VBQ2xDLG1DQUFtQztBQUNyQztBQUNBO0FBQ0U7SUFDRSxxQkFBcUI7QUFDdkI7QUFDRiIsImZpbGUiOiJkZWZhdWx0LnZ1ZT92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmxhbmc9Y3NzJiIsInNvdXJjZXNDb250ZW50IjpbIlxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cbmh0bWwge1xuICBzY3JvbGwtYmVoYXZpb3I6IHNtb290aDtcbiAgZm9udC1mYW1pbHk6ICdTb3VyY2UgU2FucyBQcm8nLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsXG4gICAgUm9ib3RvLCAnSGVsdmV0aWNhIE5ldWUnLCBBcmlhbCwgc2Fucy1zZXJpZjtcbiAgZm9udC1zaXplOiAxNnB4O1xuICB3b3JkLXNwYWNpbmc6IDFweDtcbiAgLW1zLXRleHQtc2l6ZS1hZGp1c3Q6IDEwMCU7XG4gIC13ZWJraXQtdGV4dC1zaXplLWFkanVzdDogMTAwJTtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG59XG5AbWVkaWEgc2NyZWVuIGFuZCAocHJlZmVycy1yZWR1Y2VkLW1vdGlvbjogcmVkdWNlKSB7XG4gIGh0bWwge1xuICAgIHNjcm9sbC1iZWhhdmlvcjogYXV0bztcbiAgfVxufVxuIl19 */</style><script charset="utf-8" src="./website_files/index.js"></script><style type="text/css">.card[data-v-bb44060c] {
+  margin-bottom: 56px;
+}
+.card .card-img[data-v-bb44060c] {
+    width: 250px;
+    margin-bottom: 30px;
+}
+.card .card-title[data-v-bb44060c] {
+    color: #6600de;
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/components/cards/CardA.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvY29tcG9uZW50cy9jYXJkcy9DYXJkQS52dWUiLCIvVXNlcnMvdXNlci9EZXNrdG9wL1dpdG5ldC93ZWJzaXRlL3N0eWxlcy9jb2xvcnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFtQkE7RUFRRSxtQkFBbUI7QUFBQTtBQVJyQjtJQUVJLFlBQVk7SUFDWixtQkFBbUI7QUFBQTtBQUh2QjtJQU1JLGNDeEJxQjtBQUFBIiwiZmlsZSI6IkNhcmRBLnZ1ZT92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmlkPWJiNDQwNjBjJmxhbmc9c2NzcyZzY29wZWQ9dHJ1ZSYiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5AaW1wb3J0ICdAL3N0eWxlcy9jb2xvcnMuc2Nzcyc7XG4uY2FyZCB7XG4gIC5jYXJkLWltZyB7XG4gICAgd2lkdGg6IDI1MHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDMwcHg7XG4gIH1cbiAgLmNhcmQtdGl0bGUge1xuICAgIGNvbG9yOiAkcHVycGxlO1xuICB9XG4gIG1hcmdpbi1ib3R0b206IDU2cHg7XG59XG4iLCIvL3B1cnBsZVxuJHB1cnBsZTogcmdiKDEwMiwgMCwgMjIyKTtcbiRwdXJwbGUtMTogcmdiYSgxMDQsIDAsIDIyMiwgMC4wOTYpO1xuJHB1cnBsZS0yOiByZ2JhKDEwMCwgNDUsIDE2MywgMC4yNCk7XG4vL2dyZXkgYW5kIHdoaXRlXG4kd2hpdGU6IHdoaXRlO1xuJGdyZXktMTogcmdiKDI0NCwgMjQ0LCAyNDQpO1xuJGdyZXktMjogcmdiKDYxLCA2MSwgNjEpOyJdfQ== */</style><style type="text/css">.link[data-v-bb27d70a] {
+  text-decoration: none;
+}
+.link .card[data-v-bb27d70a] {
+    background-color: #f4f4f4;
+    margin: 64px 48px 48px 48px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.link .card .card-img[data-v-bb27d70a] {
+      width: 150px;
+      margin: 30px;
+}
+.link .card .card-title[data-v-bb27d70a] {
+      color: #3d3d3d;
+      padding-bottom: 20px;
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/components/cards/CardB.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvY29tcG9uZW50cy9jYXJkcy9DYXJkQi52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0JBO0VBQ0UscUJBQXFCO0FBQUE7QUFEdkI7SUFHSSx5QkFBb0M7SUFDcEMsMkJBQTJCO0lBQzNCLFlBQVk7SUFDWixhQUFhO0lBQ2Isa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQVNsQixtQkFBbUI7QUFBQTtBQWpCdkI7TUFVTSxZQUFZO01BQ1osWUFBWTtBQUFBO0FBWGxCO01BY00sY0FBc0I7TUFDdEIsb0JBQW9CO0FBQUEiLCJmaWxlIjoiQ2FyZEIudnVlP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmaWQ9YmIyN2Q3MGEmbGFuZz1zY3NzJnNjb3BlZD10cnVlJiIsInNvdXJjZXNDb250ZW50IjpbIlxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG4ubGluayB7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgLmNhcmQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyNDQsIDI0NCwgMjQ0KTtcbiAgICBtYXJnaW46IDY0cHggNDhweCA0OHB4IDQ4cHg7XG4gICAgd2lkdGg6IDMwMHB4O1xuICAgIGhlaWdodDogMzAwcHg7XG4gICAgYm9yZGVyLXJhZGl1czogMTAlO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAuY2FyZC1pbWcge1xuICAgICAgd2lkdGg6IDE1MHB4O1xuICAgICAgbWFyZ2luOiAzMHB4O1xuICAgIH1cbiAgICAuY2FyZC10aXRsZSB7XG4gICAgICBjb2xvcjogcmdiKDYxLCA2MSwgNjEpO1xuICAgICAgcGFkZGluZy1ib3R0b206IDIwcHg7XG4gICAgfVxuICAgIG1hcmdpbi1ib3R0b206IDU2cHg7XG4gIH1cbn1cbiJdfQ== */</style><style type="text/css">.card[data-v-bb0ba808] {
+  margin: 48px;
+  width: 300px;
+  margin-bottom: 56px;
+}
+.card .card-img[data-v-bb0ba808] {
+    width: 25px;
+    margin: 0 10px;
+}
+.card .link[data-v-bb0ba808] {
+    text-decoration: none;
+}
+.card .link .card-title[data-v-bb0ba808] {
+      background-color: white;
+      color: #6600de;
+      display: inline;
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/components/cards/CardC.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvY29tcG9uZW50cy9jYXJkcy9DYXJkQy52dWUiLCIvVXNlcnMvdXNlci9EZXNrdG9wL1dpdG5ldC93ZWJzaXRlL3N0eWxlcy9jb2xvcnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFxQkE7RUFDRSxZQUFZO0VBQ1osWUFBWTtFQWFaLG1CQUFtQjtBQUFBO0FBZnJCO0lBSUksV0FBVztJQUNYLGNBQWM7QUFBQTtBQUxsQjtJQVFJLHFCQUFxQjtBQUFBO0FBUnpCO01BVU0sdUJDMUJPO01EMkJQLGNDL0JtQjtNRGdDbkIsZUFBZTtBQUFBIiwiZmlsZSI6IkNhcmRDLnZ1ZT92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmlkPWJiMGJhODA4Jmxhbmc9c2NzcyZzY29wZWQ9dHJ1ZSYiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cbkBpbXBvcnQgJ0Avc3R5bGVzL2NvbG9ycy5zY3NzJztcblxuLmNhcmQge1xuICBtYXJnaW46IDQ4cHg7XG4gIHdpZHRoOiAzMDBweDtcbiAgLmNhcmQtaW1nIHtcbiAgICB3aWR0aDogMjVweDtcbiAgICBtYXJnaW46IDAgMTBweDtcbiAgfVxuICAubGluayB7XG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgIC5jYXJkLXRpdGxlIHtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6ICR3aGl0ZTtcbiAgICAgIGNvbG9yOiAkcHVycGxlO1xuICAgICAgZGlzcGxheTogaW5saW5lO1xuICAgIH1cbiAgfVxuICBtYXJnaW4tYm90dG9tOiA1NnB4O1xufVxuIiwiLy9wdXJwbGVcbiRwdXJwbGU6IHJnYigxMDIsIDAsIDIyMik7XG4kcHVycGxlLTE6IHJnYmEoMTA0LCAwLCAyMjIsIDAuMDk2KTtcbiRwdXJwbGUtMjogcmdiYSgxMDAsIDQ1LCAxNjMsIDAuMjQpO1xuLy9ncmV5IGFuZCB3aGl0ZVxuJHdoaXRlOiB3aGl0ZTtcbiRncmV5LTE6IHJnYigyNDQsIDI0NCwgMjQ0KTtcbiRncmV5LTI6IHJnYig2MSwgNjEsIDYxKTsiXX0= */</style><style type="text/css">.container {
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  min-height: 90vh;
+}
+header .particles {
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 80vw;
+    top: 0px;
+}
+header .witnet-ethereum {
+    width: 800px;
+    position: absolute;
+    z-index: 5;
+    margin: 10vh 40vw;
+}
+header .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8vw;
+    margin-top: 24vh;
+    background-color: none;
+    width: 400px;
+}
+header .content-container .title {
+      font-size: 32px;
+      color: #6600de;
+}
+header .content-container .description {
+      font-size: 24px;
+      color: #3d3d3d;
+      padding-bottom: 30px;
+}
+header .content-container .learn-more-btn {
+      display: flex;
+      align-items: center;
+}
+header .content-container .learn-more-btn img {
+        padding-left: 10px;
+        width: 16px;
+}
+.card-container {
+  margin: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.section1 {
+  background-color: #f4f4f4;
+  color: #3d3d3d;
+  text-align: center;
+}
+.section1 .blur-background .title-section {
+    background-color: rgba(104, 0, 222, 0.096);
+    margin: 64px 40px;
+    display: inline-block;
+}
+.section2 {
+  color: #3d3d3d;
+  text-align: center;
+  padding: 40px;
+}
+.section3 {
+  background-color: #f4f4f4;
+  text-align: right;
+  padding: 40px;
+}
+@media screen and (max-width: 1200px) {
+.witnet-ethereum {
+    display: none;
+}
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/pages/index.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvcGFnZXMvaW5kZXgudnVlIiwiL1VzZXJzL3VzZXIvRGVza3RvcC9XaXRuZXQvd2Vic2l0ZS9zdHlsZXMvY29sb3JzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0pBO0VBQ0UsY0FBYztBQUFBO0FBRWhCO0VBQ0UsYUFBYTtFQUNiLGdCQUFnQjtBQUFBO0FBRmxCO0lBSUksa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxhQUFhO0lBQ2IsV0FBVztJQUNYLFFBQVE7QUFBQTtBQVJaO0lBV0ksWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixVQUFVO0lBQ1YsaUJBQWlCO0FBQUE7QUFkckI7SUFpQkksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixzQkFBc0I7SUFDdEIsWUFBWTtBQUFBO0FBdkJoQjtNQXlCTSxlQUFlO01BQ2YsY0NoTG1CO0FBQUE7QURzSnpCO01BNkJNLGVBQWU7TUFDZixjQUFzQjtNQUN0QixvQkFBb0I7QUFBQTtBQS9CMUI7TUFrQ00sYUFBYTtNQUNiLG1CQUFtQjtBQUFBO0FBbkN6QjtRQXFDUSxrQkFBa0I7UUFDbEIsV0FBVztBQUFBO0FBS25CO0VBQ0UsWUFBWTtFQUNaLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IsZUFBZTtBQUFBO0FBRWpCO0VBQ0UseUJBQW9DO0VBQ3BDLGNBQXNCO0VBQ3RCLGtCQUFrQjtBQUFBO0FBSHBCO0lBTU0sMENDNU02QjtJRDZNN0IsaUJBQWlCO0lBQ2pCLHFCQUFxQjtBQUFBO0FBSTNCO0VBQ0UsY0FBc0I7RUFDdEIsa0JBQWtCO0VBQ2xCLGFBQWE7QUFBQTtBQUVmO0VBQ0UseUJBQW9DO0VBQ3BDLGlCQUFpQjtFQUNqQixhQUFhO0FBQUE7QUFFZjtBQUNFO0lBQ0UsYUFBYTtBQUFBO0FBQ2QiLCJmaWxlIjoiaW5kZXgudnVlP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmbGFuZz1zY3NzJiIsInNvdXJjZXNDb250ZW50IjpbIlxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5AaW1wb3J0ICdAL3N0eWxlcy9jb2xvcnMuc2Nzcyc7XG5cbi5jb250YWluZXIge1xuICBtYXJnaW46IDAgYXV0bztcbn1cbmhlYWRlciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIG1pbi1oZWlnaHQ6IDkwdmg7XG4gIC5wYXJ0aWNsZXMge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB6LWluZGV4OiAtMTtcbiAgICBoZWlnaHQ6IDEwMHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIHRvcDogMHB4O1xuICB9XG4gIC53aXRuZXQtZXRoZXJldW0ge1xuICAgIHdpZHRoOiA4MDBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgei1pbmRleDogNTtcbiAgICBtYXJnaW46IDEwdmggNDB2dztcbiAgfVxuICAuY29udGVudC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBhbGlnbi1pdGVtczogZmxleC1zdGFydDtcbiAgICBtYXJnaW4tbGVmdDogOHZ3O1xuICAgIG1hcmdpbi10b3A6IDI0dmg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogbm9uZTtcbiAgICB3aWR0aDogNDAwcHg7XG4gICAgLnRpdGxlIHtcbiAgICAgIGZvbnQtc2l6ZTogMzJweDtcbiAgICAgIGNvbG9yOiAkcHVycGxlO1xuICAgIH1cbiAgICAuZGVzY3JpcHRpb24ge1xuICAgICAgZm9udC1zaXplOiAyNHB4O1xuICAgICAgY29sb3I6IHJnYig2MSwgNjEsIDYxKTtcbiAgICAgIHBhZGRpbmctYm90dG9tOiAzMHB4O1xuICAgIH1cbiAgICAubGVhcm4tbW9yZS1idG4ge1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAmIGltZyB7XG4gICAgICAgIHBhZGRpbmctbGVmdDogMTBweDtcbiAgICAgICAgd2lkdGg6IDE2cHg7XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4uY2FyZC1jb250YWluZXIge1xuICBtYXJnaW46IDQwcHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBmbGV4LXdyYXA6IHdyYXA7XG59XG4uc2VjdGlvbjEge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjQ0LCAyNDQsIDI0NCk7XG4gIGNvbG9yOiByZ2IoNjEsIDYxLCA2MSk7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgLmJsdXItYmFja2dyb3VuZCB7XG4gICAgLnRpdGxlLXNlY3Rpb24ge1xuICAgICAgYmFja2dyb3VuZC1jb2xvcjogJHB1cnBsZS0xO1xuICAgICAgbWFyZ2luOiA2NHB4IDQwcHg7XG4gICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgfVxuICB9XG59XG4uc2VjdGlvbjIge1xuICBjb2xvcjogcmdiKDYxLCA2MSwgNjEpO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBhZGRpbmc6IDQwcHg7XG59XG4uc2VjdGlvbjMge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjQ0LCAyNDQsIDI0NCk7XG4gIHRleHQtYWxpZ246IHJpZ2h0O1xuICBwYWRkaW5nOiA0MHB4O1xufVxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMTIwMHB4KSB7XG4gIC53aXRuZXQtZXRoZXJldW0ge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cbn1cbiIsIi8vcHVycGxlXG4kcHVycGxlOiByZ2IoMTAyLCAwLCAyMjIpO1xuJHB1cnBsZS0xOiByZ2JhKDEwNCwgMCwgMjIyLCAwLjA5Nik7XG4kcHVycGxlLTI6IHJnYmEoMTAwLCA0NSwgMTYzLCAwLjI0KTtcbi8vZ3JleSBhbmQgd2hpdGVcbiR3aGl0ZTogd2hpdGU7XG4kZ3JleS0xOiByZ2IoMjQ0LCAyNDQsIDI0NCk7XG4kZ3JleS0yOiByZ2IoNjEsIDYxLCA2MSk7Il19 */</style><script charset="utf-8" src="./website_files/about.js"></script><script charset="utf-8" src="./website_files/participate.js"></script><style type="text/css">.content[data-v-0a606064] {
+  color: #3d3d3d;
+  line-height: 25px;
+  width: 50%;
+  margin-left: 5vw;
+}
+.content .title[data-v-0a606064] {
+    color: #6600de;
+}
+@media screen and (max-width: 1200px) {
+.content[data-v-0a606064] {
+    margin-top: 50vw;
+}
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/pages/about.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvcGFnZXMvYWJvdXQudnVlIiwiL1VzZXJzL3VzZXIvRGVza3RvcC9XaXRuZXQvd2Vic2l0ZS9zdHlsZXMvY29sb3JzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBY0E7RUFDRSxjQUFzQjtFQUN0QixpQkFBaUI7RUFDakIsVUFBVTtFQUNWLGdCQUFnQjtBQUFBO0FBSmxCO0lBTUksY0NuQnFCO0FBQUE7QURzQnpCO0FBQ0U7SUFDRSxnQkFBZ0I7QUFBQTtBQUNqQiIsImZpbGUiOiJhYm91dC52dWU/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD0wYTYwNjA2NCZzY29wZWQ9dHJ1ZSZsYW5nPXNjc3MmIiwic291cmNlc0NvbnRlbnQiOlsiXG5cblxuXG5cblxuXG5cblxuXG5cblxuQGltcG9ydCAnQC9zdHlsZXMvY29sb3JzLnNjc3MnO1xuXG4uY29udGVudCB7XG4gIGNvbG9yOiByZ2IoNjEsIDYxLCA2MSk7XG4gIGxpbmUtaGVpZ2h0OiAyNXB4O1xuICB3aWR0aDogNTAlO1xuICBtYXJnaW4tbGVmdDogNXZ3O1xuICAudGl0bGUge1xuICAgIGNvbG9yOiAkcHVycGxlO1xuICB9XG59XG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAxMjAwcHgpIHtcbiAgLmNvbnRlbnQge1xuICAgIG1hcmdpbi10b3A6IDUwdnc7XG4gIH1cbn1cbiIsIi8vcHVycGxlXG4kcHVycGxlOiByZ2IoMTAyLCAwLCAyMjIpO1xuJHB1cnBsZS0xOiByZ2JhKDEwNCwgMCwgMjIyLCAwLjA5Nik7XG4kcHVycGxlLTI6IHJnYmEoMTAwLCA0NSwgMTYzLCAwLjI0KTtcbi8vZ3JleSBhbmQgd2hpdGVcbiR3aGl0ZTogd2hpdGU7XG4kZ3JleS0xOiByZ2IoMjQ0LCAyNDQsIDI0NCk7XG4kZ3JleS0yOiByZ2IoNjEsIDYxLCA2MSk7Il19 */</style><style type="text/css">.content[data-v-7edcd0f5] {
+  color: #3d3d3d;
+  line-height: 25px;
+  margin-left: 5vw;
+  width: 50%;
+}
+.content .title[data-v-7edcd0f5] {
+    color: #6600de;
+}
+@media screen and (max-width: 1200px) {
+.content[data-v-7edcd0f5] {
+    margin-top: 50vw;
+}
+}
+
+/*# sourceURL=/Users/user/Desktop/Witnet/website/pages/participate.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy91c2VyL0Rlc2t0b3AvV2l0bmV0L3dlYnNpdGUvcGFnZXMvcGFydGljaXBhdGUudnVlIiwiL1VzZXJzL3VzZXIvRGVza3RvcC9XaXRuZXQvd2Vic2l0ZS9zdHlsZXMvY29sb3JzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUE7RUFDRSxjQUFzQjtFQUN0QixpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLFVBQVU7QUFBQTtBQUpaO0lBTUksY0NqQnFCO0FBQUE7QURvQnpCO0FBQ0U7SUFDRSxnQkFBZ0I7QUFBQTtBQUNqQiIsImZpbGUiOiJwYXJ0aWNpcGF0ZS52dWU/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD03ZWRjZDBmNSZzY29wZWQ9dHJ1ZSZsYW5nPXNjc3MmIiwic291cmNlc0NvbnRlbnQiOlsiXG5cblxuXG5cblxuXG5cblxuXG5AaW1wb3J0ICdAL3N0eWxlcy9jb2xvcnMuc2Nzcyc7XG5cbi5jb250ZW50IHtcbiAgY29sb3I6IHJnYig2MSwgNjEsIDYxKTtcbiAgbGluZS1oZWlnaHQ6IDI1cHg7XG4gIG1hcmdpbi1sZWZ0OiA1dnc7XG4gIHdpZHRoOiA1MCU7XG4gIC50aXRsZSB7XG4gICAgY29sb3I6ICRwdXJwbGU7XG4gIH1cbn1cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDEyMDBweCkge1xuICAuY29udGVudCB7XG4gICAgbWFyZ2luLXRvcDogNTB2dztcbiAgfVxufVxuIiwiLy9wdXJwbGVcbiRwdXJwbGU6IHJnYigxMDIsIDAsIDIyMik7XG4kcHVycGxlLTE6IHJnYmEoMTA0LCAwLCAyMjIsIDAuMDk2KTtcbiRwdXJwbGUtMjogcmdiYSgxMDAsIDQ1LCAxNjMsIDAuMjQpO1xuLy9ncmV5IGFuZCB3aGl0ZVxuJHdoaXRlOiB3aGl0ZTtcbiRncmV5LTE6IHJnYigyNDQsIDI0NCwgMjQ0KTtcbiRncmV5LTI6IHJnYig2MSwgNjEsIDYxKTsiXX0= */</style><script charset="utf-8" src="./website_files/app.76153378511376093a8a.hot-update.js"></script><script charset="utf-8" src="./website_files/app.8cda037e5ffc818a2587.hot-update.js"></script><script charset="utf-8" src="./website_files/app.f6a22eec12a88fc3032d.hot-update.js"></script><script charset="utf-8" src="./website_files/app.be2c9a5e6b32029a3f4b.hot-update.js"></script><script charset="utf-8" src="./website_files/app.a47bdd7c9a0ec5de64fd.hot-update.js"></script><script charset="utf-8" src="./website_files/app.1fc57fca382fe2666ffa.hot-update.js"></script><script charset="utf-8" src="./website_files/app.ddd9d8b1a972ed4f6ab7.hot-update.js"></script><script charset="utf-8" src="./website_files/app.ee914f6eceae1e88310f.hot-update.js"></script><script charset="utf-8" src="./website_files/app.7b8eb0c457259343408d.hot-update.js"></script><script charset="utf-8" src="./website_files/app.3a466865e2067cbdba89.hot-update.js"></script><script charset="utf-8" src="./website_files/app.ce6d3823ad1481915f7f.hot-update.js"></script><script charset="utf-8" src="./website_files/app.34c9b76faa8537ca4a82.hot-update.js"></script><script charset="utf-8" src="./website_files/app.e574969319d46bb57c6c.hot-update.js"></script><script charset="utf-8" src="./website_files/app.9c63af7a4988732532a7.hot-update.js"></script><script charset="utf-8" src="./website_files/app.5b31f4f0619a267e4afc.hot-update.js"></script><script charset="utf-8" src="./website_files/app.f60162284456981ef988.hot-update.js"></script></head>
+  <body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+    <div id="__nuxt"><!----><!----><div id="__layout"><div><div data-v-0957edea="" class="top"><nav data-v-0957edea="" class="NavBar"><a data-v-0957edea="" href="http://localhost:3000/" class="logo-container nuxt-link-active"><img data-v-0957edea="" src="./website_files/logo.svg" alt="the witnet protocol" class="logo"></a> <ul data-v-0957edea="" class="tab-container"><li data-v-0957edea=""><a data-v-0957edea="" href="http://localhost:3000/about" class="tab">
+          What is witnet?
+        </a></li> <li data-v-0957edea=""><a data-v-0957edea="" href="http://localhost:3000/participate" class="tab">
+          How to participate
+        </a></li> <li data-v-0957edea=""><a data-v-0957edea="" href="https://github.com/witnet" target="_blank">
+          GitHub
+          <img data-v-0957edea="" src="./website_files/github-black-logo.svg" alt="github-logo"></a></li> <li data-v-0957edea=""><div data-v-0957edea="" class="language-btn">
+          Language
+          <img data-v-0957edea="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNyAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjkyMDIgMS4zMjI0Mkw4LjUwNDI2IDE0LjA0MDdMMS4xOTc5MSAxLjI1OTE1TDE1LjkyMDIgMS4zMjI0MloiIGZpbGw9IiMzRDNEM0QiIHN0cm9rZT0iIzNEM0QzRCIvPgo8L3N2Zz4K" alt="drop-down-arrow"></div> <!----></li></ul></nav></div> <main class="container"><header class="hero"><div class="content-container"><h2 class="title">The decentralized oracle protocol.</h2> <p class="description">
+        Witnet trustlessly connects your smart contracts to the real world.
+      </p> <a href="http://localhost:3000/#next" class="seconday-purple learn-more-btn">
+        Learn more
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDggMTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zLjY0NjQ1IDkuMzUzNTVDMy44NDE3MSA5LjU0ODgyIDQuMTU4MjkgOS41NDg4MiA0LjM1MzU1IDkuMzUzNTVMNy41MzU1MyA2LjE3MTU3QzcuNzMwOCA1Ljk3NjMxIDcuNzMwOCA1LjY1OTczIDcuNTM1NTMgNS40NjQ0N0M3LjM0MDI3IDUuMjY5MiA3LjAyMzY5IDUuMjY5MiA2LjgyODQzIDUuNDY0NDdMNCA4LjI5Mjg5TDEuMTcxNTcgNS40NjQ0N0MwLjk3NjMxMSA1LjI2OTIgMC42NTk3MjggNS4yNjkyIDAuNDY0NDY2IDUuNDY0NDdDMC4yNjkyMDQgNS42NTk3MyAwLjI2OTIwNCA1Ljk3NjMxIDAuNDY0NDY2IDYuMTcxNTdMMy42NDY0NSA5LjM1MzU1Wk0zLjUgMEwzLjUgOUg0LjVMNC41IDBMMy41IDBaIiBmaWxsPSIjNjYwMERFIi8+Cjwvc3ZnPgo=" alt="arrow"></a></div> <img src="./website_files/witnet-ethereum.svg" alt="witnet-ethereum" class="witnet-ethereum"> <div id="particles-js" color="#a48dbd" particleopacity="0.7" linescolor="#6600de" particlesnumber="80" shapetype="circle" particlesize="4" lineswidth="1" linelinked="true" lineopacity="0.05" linesdistance="150" movespeed="3" hovereffect="true" hovermode="grab" clickeffect="true" clickmode="push" class="particles"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="993" height="2208"></canvas></div></header> <section id="next" class="section1"><div class="blur-background"><h2 class="title-section">
+        Lorem ipsum dolor sit amet consectetur
+      </h2></div> <div class="card-container"><div data-v-bb44060c="" class="card"><img data-v-bb44060c="" src="./website_files/wit.svg" alt="wit" class="card-img"> <h3 data-v-bb44060c="" class="card-title">Wit: a minable native token</h3></div><div data-v-bb44060c="" class="card"><img data-v-bb44060c="" src="./website_files/fair.svg" alt="wit" class="card-img"> <h3 data-v-bb44060c="" class="card-title">Decentralized and fair by default</h3></div><div data-v-bb44060c="" class="card"><img data-v-bb44060c="" src="./website_files/truth.svg" alt="wit" class="card-img"> <h3 data-v-bb44060c="" class="card-title">100% truth, 0% trust</h3></div></div> <a href="http://localhost:3000/about" class="primary">
+      Know more
+    </a></section> <section class="section2"><h2>How to participate?</h2> <div class="card-container"><a data-v-bb27d70a="" href="http://localhost:3000/#section" class="link"><div data-v-bb27d70a="" class="card"><img data-v-bb27d70a="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjc0IiBoZWlnaHQ9IjI4MiIgdmlld0JveD0iMCAwIDI3NCAyODIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjEyOS41IiBjeT0iMTQ1LjUiIHI9IjM5IiBzdHJva2U9IiM2NjAwREUiLz4KPGxpbmUgeDE9IjEyOC41IiB5MT0iMTA2IiB4Mj0iMTI4LjUiIHkyPSI2MCIgc3Ryb2tlPSIjNjYwMERFIi8+CjxsaW5lIHgxPSIxMDAuNTQ3IiB5MT0iMTE3LjkzOCIgeDI9Ijc4LjU0ODEiIHkyPSI5NC41OTkiIHN0cm9rZT0iIzY2MDBERSIvPgo8bGluZSB4MT0iMTI4LjUiIHkxPSIyMjYiIHgyPSIxMjguNSIgeTI9IjE4NSIgc3Ryb2tlPSIjNjYwMERFIi8+CjxsaW5lIHgxPSIxNTQuNjAxIiB5MT0iMTE1LjU3NSIgeDI9IjIyOC4zNTMiIHkyPSI0NC45NDAzIiBzdHJva2U9IiM2NjAwREUiLz4KPGxpbmUgeDE9IjM2LjE4NjkiIHkxPSIyNDguNzk3IiB4Mj0iMTA5LjIwOCIgeTI9IjE3OC42NTMiIHN0cm9rZT0iIzY2MDBERSIvPgo8Y2lyY2xlIGN4PSIxMzAiIGN5PSI0NyIgcj0iMTMuNSIgc3Ryb2tlPSIjNjYwMERFIi8+CjxjaXJjbGUgY3g9IjI0Ny41IiBjeT0iMjYuNSIgcj0iMjYiIHN0cm9rZT0iIzY2MDBERSIvPgo8Y2lyY2xlIGN4PSIxMzAuNSIgY3k9IjI0Ni41IiByPSIyMCIgc3Ryb2tlPSIjNjYwMERFIi8+CjxjaXJjbGUgY3g9IjIwLjUiIGN5PSIyNjEuNSIgcj0iMjAiIHN0cm9rZT0iIzY2MDBERSIvPgo8cGF0aCBkPSJNODQuNSA4MC41Qzg0LjUgOTEuNTU3NCA3NS43NTggMTAwLjUgNjUgMTAwLjVDNTQuMjQyIDEwMC41IDQ1LjUgOTEuNTU3NCA0NS41IDgwLjVDNDUuNSA2OS40NDI2IDU0LjI0MiA2MC41IDY1IDYwLjVDNzUuNzU4IDYwLjUgODQuNSA2OS40NDI2IDg0LjUgODAuNVoiIHN0cm9rZT0iIzY2MDBERSIvPgo8L3N2Zz4K" alt="wit" class="card-img"> <h3 data-v-bb27d70a="" class="card-title">Run a node</h3></div></a><a data-v-bb27d70a="" href="http://localhost:3000/#section" class="link"><div data-v-bb27d70a="" class="card"><img data-v-bb27d70a="" src="./website_files/developers-icon.svg" alt="wit" class="card-img"> <h3 data-v-bb27d70a="" class="card-title">Witnet for developers</h3></div></a><a data-v-bb27d70a="" href="http://localhost:3000/#section" class="link"><div data-v-bb27d70a="" class="card"><img data-v-bb27d70a="" src="./website_files/wallet-icon.svg" alt="wit" class="card-img"> <h3 data-v-bb27d70a="" class="card-title">Get your wallet</h3></div></a></div></section> <section class="section3"><h2>?</h2> <div class="card-container"><div data-v-bb0ba808="" class="card"><img data-v-bb0ba808="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDciIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCA0NyAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuMTg3NSAxMC45MDYyTDE5Ljg1OTQgMTYuODM1OVYyMS40Mjk3TDAuNjg3NSAxMi41NDY5VjkuMTI1TDE5Ljg1OTQgMC4yNjU2MjVWNC44NTkzOEw1LjE4NzUgMTAuOTA2MlpNNDIuMDU0NyAxMC43NjU2TDI2LjU2MjUgNC42OTUzMVYwLjI0MjE4OEw0Ni41NzgxIDkuMTAxNTZWMTIuNTIzNEwyNi41NjI1IDIxLjQwNjJWMTYuOTA2Mkw0Mi4wNTQ3IDEwLjc2NTZaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="wit" class="card-img"> <a data-v-bb0ba808="" href="http://localhost:3000/#section" class="link"><h3 data-v-bb0ba808="" class="card-title">Where can I read the Witnet whitepaper?</h3></a></div><div data-v-bb0ba808="" class="card"><img data-v-bb0ba808="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDciIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCA0NyAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuMTg3NSAxMC45MDYyTDE5Ljg1OTQgMTYuODM1OVYyMS40Mjk3TDAuNjg3NSAxMi41NDY5VjkuMTI1TDE5Ljg1OTQgMC4yNjU2MjVWNC44NTkzOEw1LjE4NzUgMTAuOTA2MlpNNDIuMDU0NyAxMC43NjU2TDI2LjU2MjUgNC42OTUzMVYwLjI0MjE4OEw0Ni41NzgxIDkuMTAxNTZWMTIuNTIzNEwyNi41NjI1IDIxLjQwNjJWMTYuOTA2Mkw0Mi4wNTQ3IDEwLjc2NTZaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="wit" class="card-img"> <a data-v-bb0ba808="" href="http://localhost:3000/#section" class="link"><h3 data-v-bb0ba808="" class="card-title">Will Witnet work with Ethereum smart contracts?</h3></a></div><div data-v-bb0ba808="" class="card"><img data-v-bb0ba808="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDciIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCA0NyAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuMTg3NSAxMC45MDYyTDE5Ljg1OTQgMTYuODM1OVYyMS40Mjk3TDAuNjg3NSAxMi41NDY5VjkuMTI1TDE5Ljg1OTQgMC4yNjU2MjVWNC44NTkzOEw1LjE4NzUgMTAuOTA2MlpNNDIuMDU0NyAxMC43NjU2TDI2LjU2MjUgNC42OTUzMVYwLjI0MjE4OEw0Ni41NzgxIDkuMTAxNTZWMTIuNTIzNEwyNi41NjI1IDIxLjQwNjJWMTYuOTA2Mkw0Mi4wNTQ3IDEwLjc2NTZaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="wit" class="card-img"> <a data-v-bb0ba808="" href="http://localhost:3000/#section" class="link"><h3 data-v-bb0ba808="" class="card-title">What's the development roadmap for Witnet?</h3></a></div><div data-v-bb0ba808="" class="card"><img data-v-bb0ba808="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDciIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCA0NyAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuMTg3NSAxMC45MDYyTDE5Ljg1OTQgMTYuODM1OVYyMS40Mjk3TDAuNjg3NSAxMi41NDY5VjkuMTI1TDE5Ljg1OTQgMC4yNjU2MjVWNC44NTkzOEw1LjE4NzUgMTAuOTA2MlpNNDIuMDU0NyAxMC43NjU2TDI2LjU2MjUgNC42OTUzMVYwLjI0MjE4OEw0Ni41NzgxIDkuMTAxNTZWMTIuNTIzNEwyNi41NjI1IDIxLjQwNjJWMTYuOTA2Mkw0Mi4wNTQ3IDEwLjc2NTZaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="wit" class="card-img"> <a data-v-bb0ba808="" href="http://localhost:3000/#section" class="link"><h3 data-v-bb0ba808="" class="card-title">How are oracle networks different from Augur, Gnosis and prediction markets in general?</h3></a></div><div data-v-bb0ba808="" class="card"><img data-v-bb0ba808="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDciIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCA0NyAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuMTg3NSAxMC45MDYyTDE5Ljg1OTQgMTYuODM1OVYyMS40Mjk3TDAuNjg3NSAxMi41NDY5VjkuMTI1TDE5Ljg1OTQgMC4yNjU2MjVWNC44NTkzOEw1LjE4NzUgMTAuOTA2MlpNNDIuMDU0NyAxMC43NjU2TDI2LjU2MjUgNC42OTUzMVYwLjI0MjE4OEw0Ni41NzgxIDkuMTAxNTZWMTIuNTIzNEwyNi41NjI1IDIxLjQwNjJWMTYuOTA2Mkw0Mi4wNTQ3IDEwLjc2NTZaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="wit" class="card-img"> <a data-v-bb0ba808="" href="http://localhost:3000/#section" class="link"><h3 data-v-bb0ba808="" class="card-title">How's Witnet different from other oracle projects?</h3></a></div><div data-v-bb0ba808="" class="card"><img data-v-bb0ba808="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDciIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCA0NyAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuMTg3NSAxMC45MDYyTDE5Ljg1OTQgMTYuODM1OVYyMS40Mjk3TDAuNjg3NSAxMi41NDY5VjkuMTI1TDE5Ljg1OTQgMC4yNjU2MjVWNC44NTkzOEw1LjE4NzUgMTAuOTA2MlpNNDIuMDU0NyAxMC43NjU2TDI2LjU2MjUgNC42OTUzMVYwLjI0MjE4OEw0Ni41NzgxIDkuMTAxNTZWMTIuNTIzNEwyNi41NjI1IDIxLjQwNjJWMTYuOTA2Mkw0Mi4wNTQ3IDEwLjc2NTZaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="wit" class="card-img"> <a data-v-bb0ba808="" href="http://localhost:3000/#section" class="link"><h3 data-v-bb0ba808="" class="card-title">How's Witnet different from other oracle kkkkkkkkk?</h3></a></div></div></section></main> <footer data-v-0d2d6594=""><div data-v-0d2d6594="" class="column-left"><img data-v-0d2d6594="" src="./website_files/white-logo.svg" alt="white witnet-logo" class="footer-logo"> <p data-v-0d2d6594="" class="footer-description">
+      Witnet is a decentralized oracle network that connects smart contracts to the outer world. It aims to allow any piece of software to retrieve the contents published at any web address with complete and verifiable proof of its integrity and withoutblindly trusting any third party.
+    </p> <p data-v-0d2d6594="" class="footer-description">
+      © 2018 Witnet Foundation. Some rights reserved.
+    </p></div> <div data-v-0d2d6594="" class="column-right"><div data-v-0d2d6594="" class="social-bar"><a data-v-0d2d6594="" href="https://twitter.com/witnet_io" target="_blank"><img data-v-0d2d6594="" src="./website_files/twitter.svg" alt="social" class="social"></a> <a data-v-0d2d6594="" href="https://discord.gg/X4uurfP" target="_blank"><img data-v-0d2d6594="" src="./website_files/discord.svg" alt="social" class="social"></a> <a data-v-0d2d6594="" href="https://medium.com/witnet" target="_blank"><img data-v-0d2d6594="" src="./website_files/medium.svg" alt="social" class="social"></a> <a data-v-0d2d6594="" href="mailto:info@witnet.foundation?subject=Witnet%20project" targer="_blank"><img data-v-0d2d6594="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI0LjA5NzkgNDYuMTk1OEMzNi4zMDIzIDQ2LjE5NTggNDYuMTk1OCAzNi4zMDIyIDQ2LjE5NTggMjQuMDk3OUM0Ni4xOTU4IDExLjg5MzYgMzYuMzAyMyAyIDI0LjA5NzkgMkMxMS44OTM2IDIgMiAxMS44OTM2IDIgMjQuMDk3OUMyIDM2LjMwMjIgMTEuODkzNiA0Ni4xOTU4IDI0LjA5NzkgNDYuMTk1OFoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMi4yIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTExLjA2NzEgMTQuNzlWMTQuOTM2OUwyMS44NzA0IDI0Ljg4NTVDMjMuMTA2NSAyNi4wMjM3IDI1LjA2NDYgMjYuMDIzOSAyNi4zMDA3IDI0Ljg4NTZMMzcuMTI4NyAxNC45MTQ0VjE0Ljc5SDExLjA2NzFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzcuMTI4NyAxNi44MDkxTDI5LjA3OTMgMjQuMjIxNEwzNy4xMjg3IDMyLjI3MDhWMTYuODA5MVpNMTEuMDY3MSAxNi44MzJWMzIuNDRMMTkuMTkyNiAyNC4zMTQ1TDExLjA2NzEgMTYuODMyWk0yOC4wNTE1IDI1LjE2OEwyNy4zMjkyIDI1LjgzM0MyNS41NDEgMjcuNDc5OCAyMi42Mjk3IDI3LjQ3OTggMjAuODQxNSAyNS44MzNMMjAuMjIwNSAyNS4yNjEzTDEyLjA3NjIgMzMuNDA1NUgzNi4yODg4TDI4LjA1MTUgMjUuMTY4WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==" alt="social" class="social"></a> <a data-v-0d2d6594="" href="https://t.me/witnetio" target="_blank"><img data-v-0d2d6594="" src="./website_files/telegram.svg" alt="social" class="social"></a> <a data-v-0d2d6594="" href="https://github.com/witnet" target="_blank"><img data-v-0d2d6594="" src="./website_files/github.svg" alt="social" class="social"></a> <a data-v-0d2d6594="" href="https://reddit.com/r/witnet" target="_blank"><img data-v-0d2d6594="" src="./website_files/reddit.svg" alt="social" class="social"></a></div> <a data-v-0d2d6594="" href="http://localhost:3000/witnet-whitepaper.pdf" target="_blank" class="secondary-white read-btn">
+      Read the White paper
+    </a></div></footer></div></div></div>
+  <script type="text/javascript" src="./website_files/runtime.js"></script><script type="text/javascript" src="./website_files/commons.app.js"></script><script type="text/javascript" src="./website_files/vendors.app.js"></script><script type="text/javascript" src="./website_files/app.js"></script>
+
+</body></html>

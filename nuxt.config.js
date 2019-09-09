@@ -23,11 +23,14 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/styles/main.scss'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/vue-particles.js', ssr: false },
+    { src: '~/plugins/i18n.js', ssr: false },
+  ],
   /*
    ** Nuxt.js dev-modules
    */

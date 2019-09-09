@@ -1,0 +1,36 @@
+@import "colors";
+
+//PRIMARY BUTTON
+.primary {
+  display: inline-block;
+  background-color: $purple;
+  color: $white;
+  border: none;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+//SECONDAY PURPLE BUTTON
+.seconday-purple {
+  display: inline-block;
+  background-color: none;
+  color: $purple;
+  border: 1px solid $purple;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+//SECONDAY WHITE BUTTON
+.secondary-white {
+  display: inline-block;
+  background-color: none;
+  color: $white;
+  border: 1px solid $white;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
