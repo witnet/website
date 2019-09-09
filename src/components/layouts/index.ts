@@ -1,1 +1,0 @@
-export const MainLayout = require('./MainLayout.vue').default
