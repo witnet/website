@@ -21,10 +21,12 @@ export default {
 
 .link-container {
   margin: 48px;
-  width: 300px;
+  width: 400px;
+  display: flex;
+  text-align: left;
   .link-img {
     width: 25px;
-    margin: 0 10px;
+    margin: 0 30px;
   }
   .link {
     text-decoration: none;
@@ -35,5 +37,15 @@ export default {
     }
   }
   margin-bottom: 56px;
+}
+
+@media screen and (max-width: 1200px) {
+  .link-container {
+    margin: 48px 0;
+    .link-img {
+      width: 25px;
+      margin: 0 30px;
+    }
+  }
 }
 </style>

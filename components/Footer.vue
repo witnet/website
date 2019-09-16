@@ -37,7 +37,7 @@
         </a>
       </div>
       <a
-        href="/witnet-whitepaper.pdf"
+        href="witnet-whitepaper.pdf"
         class="secondary-white read-btn"
         target="_blank"
       >

@@ -1,59 +1,61 @@
 <template>
   <div class="top">
     <nav class="navbar">
-      <nuxt-link to="/" class="logo-container">
+      <nuxt-link to="/" class="logo-container" @click.native="closeMenu">
         <img src="~/assets/logo.svg" alt="the witnet protocol" class="logo" />
       </nuxt-link>
       <label class="label" @click="toggleMenu">&#9776;</label>
-      <ul class="tab-container" :class="{ visible: isMenuVisible }">
-        <li>
-          <nuxt-link to="/about" class="tab" @click.native="toggleMenu">
-            {{ this.$t('tab1') }}
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/participate" class="tab" @click.native="toggleMenu">
-            {{ this.$t('tab2') }}
-          </nuxt-link>
-        </li>
-        <li @mouseover="hover = true" @mouseleave="hover = false">
-          <a class="tab" href="https://github.com/witnet" target="_blank">
-            {{ this.$t('tab3') }}
-            <img
-              v-if="hover"
-              class="social"
-              src="~/assets/github-purple-logo.svg"
-              alt="github-logo"
-            />
-            <img
-              v-else
-              class="social"
-              src="~/assets/github-black-logo.svg"
-              alt="github-logo"
-            />
-          </a>
-        </li>
-        <li>
-          <div class="language-btn" @click="displayDropDown">
-            Language
-            <img
-              class="arrow"
-              src="~/assets/dropdown-arrow.svg"
-              alt="drop-down-arrow"
-            />
-          </div>
-          <transition tag="div" class="smooth-in" name="smooth-in">
-            <div v-if="displayBox" class="drop-down">
-              <button class="drop-down-item" @click="changeLanguage('en')">
-                English
-              </button>
-              <button class="drop-down-item" @click="changeLanguage('ch')">
-                Chinese
-              </button>
+      <transition name="dropdown" class="dropdown">
+        <ul class="tab-container" :class="{ visible: isMenuVisible }">
+          <li>
+            <nuxt-link to="/about" class="tab" @click.native="closeMenu">
+              {{ this.$t('tab1') }}
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/participate" class="tab" @click.native="closeMenu">
+              {{ this.$t('tab2') }}
+            </nuxt-link>
+          </li>
+          <li @mouseover="hover = true" @mouseleave="hover = false">
+            <a class="tab" href="https://github.com/witnet" target="_blank">
+              {{ this.$t('tab3') }}
+              <img
+                v-if="hover"
+                class="social"
+                src="~/assets/github-purple-logo.svg"
+                alt="github-logo"
+              />
+              <img
+                v-else
+                class="social"
+                src="~/assets/github-black-logo.svg"
+                alt="github-logo"
+              />
+            </a>
+          </li>
+          <li>
+            <div class="language-btn" @click="displayDropDown">
+              Language
+              <img
+                class="arrow"
+                src="~/assets/dropdown-arrow.svg"
+                alt="drop-down-arrow"
+              />
             </div>
-          </transition>
-        </li>
-      </ul>
+            <transition tag="div" class="smooth-in" name="smooth-in">
+              <div v-if="displayBox" class="drop-down">
+                <button class="drop-down-item" @click="changeLanguage('en')">
+                  English
+                </button>
+                <button class="drop-down-item" @click="changeLanguage('ch')">
+                  Chinese
+                </button>
+              </div>
+            </transition>
+          </li>
+        </ul>
+      </transition>
     </nav>
   </div>
 </template>
@@ -68,6 +70,9 @@ export default {
     }
   },
   methods: {
+    closeMenu() {
+      this.isMenuVisible = false
+    },
     toggleMenu() {
       this.isMenuVisible = !this.isMenuVisible
     },
@@ -201,6 +206,27 @@ export default {
       }
     }
   }
+  .dropdown {
+    &-enter,
+    &-leave-to {
+      opacity: 0;
+    }
+
+    &-leave,
+    &-enter-to {
+      opacity: 1;
+    }
+
+    &-enter-active,
+    &-leave-active {
+      width: 100%;
+      transition: opacity 200ms ease-in-out;
+    }
+
+    &-enter-active {
+      transition-delay: 100ms;
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -209,19 +235,18 @@ export default {
     position: relative;
 
     .logo {
-      margin: 40px 32px;
+      margin: 20px 5px;
       width: 250px;
     }
 
     .label {
-      margin: 32px;
+      margin: 14px 0;
       display: block;
       cursor: pointer;
       position: absolute;
       top: 10px;
       right: 10px;
     }
-
     .tab-container {
       list-style: none;
       display: none;
@@ -252,14 +277,21 @@ export default {
         justify-content: center;
         padding: 24px 32px;
         border-bottom: 1px solid rgba(61, 61, 61, 0.233);
+        &:hover {
+          color: $purple;
+        }
+        .arrow {
+          display: none;
+        }
       }
 
       .drop-down {
         position: relative;
         margin: 0px;
+        padding: 20px;
 
         .drop-down-item {
-          border-bottom: 1px solid rgba(61, 61, 61, 0.233);
+          border-bottom: none;
         }
       }
     }

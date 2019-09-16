@@ -24,7 +24,7 @@
 }
 @media screen and (max-width: 1200px) {
   .content {
-    margin-top: 10vw;
+    width: 80%;
   }
 }
 </style>

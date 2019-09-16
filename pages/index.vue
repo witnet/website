@@ -24,7 +24,7 @@
         shape-type="circle"
         :particle-size="4"
         lines-color="#6600de"
-        :lines-width="1"
+        :lines-width="2"
         :line-linked="true"
         :line-opacity="0.05"
         :lines-distance="150"
@@ -197,7 +197,6 @@ header {
   }
 }
 .items-container {
-  margin: 40px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
