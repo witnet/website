@@ -18,11 +18,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html {
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+  }
   scroll-behavior: smooth;
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -30,6 +38,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

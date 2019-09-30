@@ -688,6 +688,7 @@
   </div>
 </template>
 <script>
+<<<<<<< HEAD
 import { VueMathjax } from 'vue-mathjax'
 export default {
   components: {
@@ -696,6 +697,20 @@ export default {
   data() {
     return {
       formula1: '$$H(<t||rand(t)_{M_i}>)/2^L \\leq I_i^t$$',
+=======
+export default {
+  head() {
+    return {
+      title: 'Witnet - What is Witnet?',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'The Witnet protocol gives smart contracts real power by connecting them to any online data source. Sport results, stock prices, weather forecasts or even other ...',
+        },
+      ],
+>>>>>>> implement suggestions
     }
   },
 }
@@ -708,7 +723,7 @@ export default {
   color: rgb(61, 61, 61);
   line-height: 25px;
   width: 50%;
-  margin-top: 10vw;
+  margin-top: 5vw;
   margin-left: 5vw;
   .title {
     color: $purple;

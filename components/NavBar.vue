@@ -1,8 +1,9 @@
 <template>
-  <div class="top">
+  <div :class="{ drop: isMenuVisible }">
     <nav class="navbar">
       <nuxt-link to="/" class="logo-container" @click.native="closeMenu">
         <img src="~/assets/logo.svg" alt="the witnet protocol" class="logo" />
+        <h1>the <span class="logo-span">Witnet</span> protocol</h1>
       </nuxt-link>
       <label class="label" @click="toggleMenu">&#9776;</label>
       <transition name="dropdown" class="dropdown">
@@ -35,16 +36,20 @@
             </a>
           </li>
           <li>
-            <div class="language-btn" @click="displayDropDown">
-              Language
+            <div ref="button" class="language-btn" @click="displayDropDown">
+              <p class="text">Language</p>
               <img
                 class="arrow"
-                src="~/assets/dropdown-arrow.svg"
+                src="~/assets/dropdown-arrow-purple.svg"
                 alt="drop-down-arrow"
               />
             </div>
             <transition tag="div" class="smooth-in" name="smooth-in">
-              <div v-if="displayBox" class="drop-down">
+              <div
+                v-if="displayBox"
+                v-closable="{ exclude: ['button'], handler: 'displayDropDown' }"
+                class="drop-down"
+              >
                 <button class="drop-down-item" @click="changeLanguage('en')">
                   English
                 </button>
@@ -67,6 +72,7 @@ export default {
       hover: false,
       displayBox: false,
       isMenuVisible: false,
+      items: ['chinese', 'english'],
     }
   },
   methods: {
@@ -83,6 +89,9 @@ export default {
       this.$i18n.locale = lang
       this.displayBox = !this.displayBox
     },
+    onClose() {
+      this.active = false
+    },
   },
 }
 </script>
@@ -95,10 +104,25 @@ export default {
   padding: 8px;
   height: 10vh;
   justify-content: space-between;
-
-  .logo {
-    margin: 40px 32px;
-    width: 250px;
+  .logo-container {
+    display: flex;
+    text-decoration: none;
+    h1 {
+      font-size: 20px;
+      font-weight: normal;
+      color: rgb(61, 61, 61);
+      margin-top: 24px;
+    }
+    .logo-span {
+      color: $purple;
+    }
+    &:active &:hover {
+      color: rgb(61, 61, 61);
+    }
+    .logo {
+      margin: 8px 16px 0px 40px;
+      width: 80px;
+    }
   }
 
   .label {
@@ -140,9 +164,10 @@ export default {
       margin-right: 1vw;
       align-items: center;
       text-justify: center;
-      background-color: $purple-1;
-      color: rgb(61, 61, 61);
-      border: none;
+      // background-color: $purple;
+      border: 1px solid $purple;
+      color: $purple;
+      // border: none;
       cursor: pointer;
 
       &:active {
@@ -159,29 +184,11 @@ export default {
       }
     }
 
-    .smooth-in-move {
-      transition: all 600ms ease-in-out 50ms;
-    }
-
-    .smooth-in-enter-active {
-      transition: all 400ms ease-out;
-    }
-
-    .smooth-in-leave-active {
-      transition: all 200ms ease-in;
-      position: absolute;
-      z-index: 0;
-    }
-
-    .smooth-in-enter,
-    .smooth-in-leave-to {
-      opacity: 0;
-    }
-
     .drop-down {
       position: absolute;
       display: block;
-      margin-top: 16px;
+      width: 100px;
+      // margin-top: 16px;
       display: flex;
       flex-direction: column;
 
@@ -206,41 +213,32 @@ export default {
       }
     }
   }
-  .dropdown {
-    &-enter,
-    &-leave-to {
-      opacity: 0;
-    }
-
-    &-leave,
-    &-enter-to {
-      opacity: 1;
-    }
-
-    &-enter-active,
-    &-leave-active {
-      width: 100%;
-      transition: opacity 200ms ease-in-out;
-    }
-
-    &-enter-active {
-      transition-delay: 100ms;
-    }
-  }
 }
 
 @media screen and (max-width: 1200px) {
+  .drop {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    background-color: white;
+  }
   .navbar {
     display: block;
     position: relative;
-
-    .logo {
-      margin: 20px 5px;
-      width: 250px;
+    .logo-container {
+      .logo {
+        margin: 10px;
+        width: 70px;
+      }
+      h1 {
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+      }
     }
 
     .label {
-      margin: 14px 0;
+      margin: 8px;
       display: block;
       cursor: pointer;
       position: absolute;
@@ -252,6 +250,8 @@ export default {
       display: none;
       background-color: white;
       text-align: center;
+      height: 100vh;
+      width: 100vw;
       padding: 0px;
       margin: 0px;
       &.visible {
@@ -273,25 +273,31 @@ export default {
 
       .language-btn {
         background-color: white;
+        color: rgb(61, 61, 61);
         display: flex;
-        justify-content: center;
-        padding: 24px 32px;
+        justify-content: space-between;
+        margin: 16px 50px 0px 50px;
+        border: none;
         border-bottom: 1px solid rgba(61, 61, 61, 0.233);
         &:hover {
           color: $purple;
         }
         .arrow {
-          display: none;
+          display: block;
         }
       }
 
       .drop-down {
         position: relative;
-        margin: 0px;
-        padding: 20px;
+        border-top: none;
+        margin: 0px auto;
+        padding: 0px;
+        width: 275px;
 
         .drop-down-item {
-          border-bottom: none;
+          border-bottom: 1px solid rgba(61, 61, 61, 0.233);
+          padding: 10px;
+          text-align: left;
         }
       }
     }

@@ -53,7 +53,7 @@
 .footer {
   color: $white;
   padding: 40px;
-  background-color: $purple-2;
+  background-color: rgb(61, 61, 61);
   display: flex;
   justify-content: space-between;
   align-items: center;

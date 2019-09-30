@@ -18,21 +18,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/styles/colors.scss';
+
 .link {
   text-decoration: none;
   .card {
-    background-color: rgb(244, 244, 244);
+    background-color: $purple;
+    // background-color: rgb(244, 244, 244);
+    box-shadow: 1px 3px 11px 0px rgba(44, 44, 44, 0.349);
     margin: 64px 48px 48px 48px;
     width: 300px;
     height: 300px;
-    border-radius: 10%;
     text-align: center;
     .card-img {
       width: 150px;
       margin: 30px;
     }
     .card-title {
-      color: rgb(61, 61, 61);
+      color: white;
+      // color: rgb(61, 61, 61);
       padding-bottom: 20px;
     }
     margin-bottom: 56px;

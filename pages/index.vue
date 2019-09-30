@@ -24,7 +24,7 @@
         shape-type="circle"
         :particle-size="4"
         lines-color="#6600de"
-        :lines-width="2"
+        :lines-width="1"
         :line-linked="true"
         :line-opacity="0.05"
         :lines-distance="150"
@@ -36,11 +36,9 @@
       />
     </header>
     <section id="next" class="section1">
-      <div class="blur-background">
-        <h2 class="title-section">
-          {{ this.$t('title_section_1') }}
-        </h2>
-      </div>
+      <h2 class="title-section">
+        {{ this.$t('title_section_1') }}
+      </h2>
       <div class="items-container">
         <DescriptiveImage
           v-for="image in descriptiveImages"
@@ -83,6 +81,19 @@ import Card from '~/components/Card.vue'
 import Link from '~/components/Link.vue'
 
 export default {
+  head() {
+    return {
+      title: 'Witnet - Smart Contracts with Real Power',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'The Witnet protocol gives smart contracts real power by connecting them to any online data source. Sport results, stock prices, weather forecasts or even other ...',
+        },
+      ],
+    }
+  },
   components: {
     DescriptiveImage,
     Card,
@@ -108,15 +119,15 @@ export default {
     cards() {
       return {
         node: {
-          img: require('~/assets/node-icon.svg'),
+          img: require('~/assets/node-icon-white.svg'),
           title: this.$t('s2_node'),
         },
         developers: {
-          img: require('~/assets/developers-icon.svg'),
+          img: require('~/assets/developers-icon-white.svg'),
           title: this.$t('s2_developers'),
         },
         wallet: {
-          img: require('~/assets/wallet-icon.svg'),
+          img: require('~/assets/wallet-icon-white.svg'),
           title: this.$t('s2_wallet'),
         },
       }
@@ -160,14 +171,14 @@ header {
     position: absolute;
     z-index: -100;
     height: 100vh;
-    width: 80vw;
+    width: 100vw;
     top: 0px;
   }
   .witnet-ethereum {
-    width: 800px;
+    width: 65vw;
     position: absolute;
     z-index: 5;
-    margin: 10vh 40vw;
+    margin: 6vh 40vw;
   }
   .content-container {
     display: flex;
@@ -179,6 +190,7 @@ header {
     width: 400px;
     .title {
       font-size: 32px;
+      font-weight: 900;
       color: $purple;
     }
     .description {
@@ -205,12 +217,9 @@ header {
   background-color: rgb(244, 244, 244);
   color: rgb(61, 61, 61);
   text-align: center;
-  .blur-background {
-    .title-section {
-      background-color: $purple-1;
-      margin: 64px 40px;
-      display: inline-block;
-    }
+  .title-section {
+    margin: 64px 40px;
+    display: inline-block;
   }
 }
 .section2 {
@@ -220,12 +229,17 @@ header {
 }
 .section3 {
   background-color: rgb(244, 244, 244);
-  text-align: right;
+  text-align: center;
   padding: 40px;
 }
 @media screen and (max-width: 1200px) {
   .witnet-ethereum {
     display: none;
+  }
+  header {
+    .content-container {
+      width: 90vw;
+    }
   }
 }
 </style>

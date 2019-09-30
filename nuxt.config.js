@@ -33,6 +33,7 @@ export default {
   plugins: [
     { src: '~/plugins/vue-particles.js', ssr: false },
     { src: '~/plugins/i18n.js', ssr: false },
+    { src: '~/plugins/directives.js', ssr: false },
   ],
   /*
    ** Nuxt.js dev-modules

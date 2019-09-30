@@ -31,9 +31,10 @@ export default {
   .link {
     text-decoration: none;
     .link-title {
-      background-color: $white;
-      color: $purple;
+      color: $grey-2;
       display: inline;
+      background-color: rgb(255, 255, 0);
+      line-height: 1.5;
     }
   }
   margin-bottom: 56px;

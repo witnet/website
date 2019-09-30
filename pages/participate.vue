@@ -6,6 +6,23 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  head() {
+    return {
+      title: 'Witnet - Participate',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'The Witnet protocol gives smart contracts real power by connecting them to any online data source. Sport results, stock prices, weather forecasts or even other ...',
+        },
+      ],
+    }
+  },
+}
+</script>
 
 <style scoped lang="scss">
 @import '@/styles/colors.scss';
