@@ -14,7 +14,7 @@
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/participate" class="tab" @click.native="closeMenu">
+            <nuxt-link to="#participate" class="tab" @click.native="closeMenu">
               {{ this.$t('tab2') }}
             </nuxt-link>
           </li>
@@ -106,6 +106,7 @@ export default {
   justify-content: space-between;
   .logo-container {
     display: flex;
+    align-items: center;
     text-decoration: none;
     h1 {
       font-size: 20px;

@@ -24,6 +24,7 @@ export default {
   width: 400px;
   display: flex;
   text-align: left;
+  align-items: center;
   .link-img {
     width: 25px;
     margin: 0 30px;
@@ -33,7 +34,7 @@ export default {
     .link-title {
       color: $grey-2;
       display: inline;
-      background-color: rgb(255, 255, 0);
+      background-color: rgba(255, 255, 143, 0.794);
       line-height: 1.5;
     }
   }

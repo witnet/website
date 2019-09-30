@@ -1,10 +1,108 @@
 <template>
   <div class="tab-frame">
+    <div id="content-menu" class="content-menu" :class="{ fixed: fixTop }">
+      <ul>
+        <li>
+          <a class="link-main" href="#introduction">Introduction</a>
+          <ul>
+            <li>
+              <a class="link" href="#not-what-you-where-told">
+                Smart Contracts Are Not What You Were Told
+              </a>
+            </li>
+            <li>
+              <a class="link" href="#blockchain-oracles">
+                Blockchain Oracles, And Their Problem
+              </a>
+            </li>
+            <li>
+              <a class="link" href="#solution">
+                The Solution: A Decentralized Oracle Network
+              </a>
+            </li>
+            <li>
+              <a class="link" href="#trust">
+                100% Truth, 0% Trust
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="link-main" href="#flow">
+            Flow of the protocol
+          </a>
+          <ul>
+            <li>
+              <a class="link" href="#witnet">
+                Witnet as a blockchain
+              </a>
+            </li>
+            <li>
+              <a class="link" href="#retrieve-attest-deliver">
+                Retrieve-Attest-Deliver
+              </a>
+            </li>
+            <li>
+              <a class="link" href="#miners">
+                Miners
+              </a>
+            </li>
+            <li>
+              <a class="link" href="#bridges">
+                Bridges
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="link-main" href="#consensus">
+            Consensus
+          </a>
+          <ul>
+            <li>
+              <a class="link" href="#defense">
+                Defense over Attacks
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="link-main" href="#development">
+            Development
+          </a>
+          <ul>
+            <li>
+              <a class="link" href="#sheikah-radon">
+                Sheikah and Radon
+              </a>
+            </li>
+            <li>
+              <a class="link" href="#rust">
+                Rust
+              </a>
+            </li>
+            <li>
+              <a class="link" href="#smart-contracts">
+                Smart contracts
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="link-main" href="#wit-token">
+            WIT token
+          </a>
+        </li>
+        <li>
+          <a class="link-main" href="#sum-up">
+            To sum up
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="content">
       <h1 class="title">What is Witnet?</h1>
-      <A name="introduction">
-        <h2 class="Section1">Introduction</h2>
-      </A>
+      <h2 id="introduction" ref="element" class="Section1">Introduction</h2>
       <p class="p1">
         Witnet is a decentralized oracle network (DON) that connects smart
         contracts to the outer world. Generally speaking, it allows any piece of
@@ -19,7 +117,9 @@
         entity.
       </p>
       <p class="p3">Wait, what? Ok, lets go one step at a time.</p>
-      <h3 class="Subsection1">Smart Contracts Are Not What You Were Told</h3>
+      <h3 id="not-what-you-where-told" ref="element" class="Subsection1">
+        Smart Contracts Are Not What You Were Told
+      </h3>
       <p class="p4">
         Over the last years, blockchain technology has promised to revolutionize
         business by allowing creation of "smart contracts" that, unlike paper
@@ -43,7 +143,9 @@
         then you have a contract that is capable of enforcing itself and leaves
         no room for contestation. Boom &#x1F4A3;.
       </p>
-      <h3 class="Subsection2">Blockchain Oracles, And Their Problem</h3>
+      <h3 id="blockchain-oracles" ref="element" class="Subsection2">
+        Blockchain Oracles, And Their Problem
+      </h3>
 
       <p class="p9">
         Given that smart contracts need to be completely
@@ -70,7 +172,9 @@
         to feed them information trustlessly.
       </p>
       <p class="p13">This is often called <i>"the oracle problem"</i>.</p>
-      <h3 class="Subsection3">The Solution: A Decentralized Oracle Network</h3>
+      <h3 id="solution" ref="element" class="Subsection3">
+        The Solution: A Decentralized Oracle Network
+      </h3>
       <p class="p14">
         The Witnet protocol aims to create an overlay network that connects
         smart contracts to any online data source. Sport results, stock prices,
@@ -148,7 +252,7 @@
         without the owner of the computer having to actively do anything else
         than installing it.
       </p>
-      <h3 class="Subsection4">100% Truth, 0% Trust</h3>
+      <h3 id="trust" ref="element" class="Subsection4">100% Truth, 0% Trust</h3>
       <p class="p22">
         Data retrieved, attested and delivered using the Witnet protocol is
         reliable not because of authority but because it comes from anonymous
@@ -171,10 +275,10 @@
         its truthness—and the data that is eventually delivered the smart
         contracts.
       </p>
-      <h2 class="Section2">Flow of the protocol</h2>
-      <A name="witnet as a blockchain">
-        <h3 class="Subection5">Witnet as a blockchain</h3>
-      </A>
+      <h2 id="flow" ref="element" class="Section2">Flow of the protocol</h2>
+      <h3 id="witnet" ref="element" class="Subection5">
+        Witnet as a blockchain
+      </h3>
       <p class="p27">
         The Witnet Protocol runs on its own blockchain with a native token
         called WIT. Having it’s own blockchain guarantees that the fate of
@@ -218,13 +322,15 @@
         and mine blocks on the Witnet blockchain. Every node maintains the
         history of all the transactions on the blockchain.
       </p>
-      <A name="rad">
-        <h3 class="Subection6">Retrieve-Attest-Deliver</h3>
+      <h3 id="retrieve-attest-deliver" ref="element" class="Subection6">
+        Retrieve-Attest-Deliver
+      </h3>
+      <p class="p32">
         Once a Data Request is published, some nodes are selected (by Reputation
         system proof of elegibility, see the <a href="#consensus">Consensus</a>
         section for more details), to retrieve the data from the APIs specified
         in the DR, attest the result and deliver it. Meaning by this,
-      </A>
+      </p>
       <ul class="p34">
         <li>
           Retrieve: to acquire knowledge of information that is external to the
@@ -257,9 +363,7 @@
         The flow, given three APIs and two nodes resolving the data reques, is
         symbolize in the next figure:
       </p>
-      <A name="miners">
-        <h3 class="Subection7">Miners</h3>
-      </A>
+      <h3 id="miners" ref="element" class="Subection7">Miners</h3>
       <p class="p38">
         As in any blockchain, the miners are nodes in charge of adding blocks to
         the blockchain. These nodes are selected by the Proof of Elegibility,
@@ -270,9 +374,7 @@
         eligible to resolve data requests or mining. This fact incentives new
         nodes to join the network and thus helps the decentralization.
       </p>
-      <A name="bridges">
-        <h3 class="Subection8">Bridges</h3>
-      </A>
+      <h3 id="bridges" ref="element" class="Subection8">Bridges</h3>
       <p class="p39">
         The bridge nodes are the ones in charge to interact between Witnet and
         an external public Blockchain.
@@ -300,9 +402,7 @@
           >blog</a
         >.
       </p>
-      <A name="consensus">
-        <h2 class="Section3">Consensus</h2>
-      </A>
+      <h2 id="consensus" ref="element" class="Section3">Consensus</h2>
       <p class="p44">
         The consensus mechanism is based on a reputation system. Instead of a
         <b>Proof of Work</b> (PoW) or <b>Proof of Stake</b> (PoS), a node is
@@ -326,13 +426,12 @@
       <p class="p45">
         As described in the
         <a href="https://witnet.io/static/witnet-whitepaper.pdf">Whitpaper</a>,
-        a node <MATH>M_i</MATH> in epoch *t* is ellected, so it will later
+        a node (math)M_i(math) in epoch *t* is ellected, so it will later
         publish the PoE and it will finally mine the block (resolve a DR or
         whatever it needs to do) depending on the reputation with respect to the
         rest of the nodes that have been selected, if the following condition is
         satisfied:
       </p>
-      <vue-mathjax :formula="formula1" />
       <ul class="p47">
         <li>
           $rand(t)$ is a public randomness that can be extracted from the
@@ -363,9 +462,9 @@
           >sections 4 and 5 of the Whitepaper</a
         >.
       </p>
-      <A name="defense attacks">
-        <h3 class="Subection9">Defense over Attacks</h3>
-      </A>
+      <h3 id="defense" ref="element" class="Subection9">
+        Defense over Attacks
+      </h3>
       <p class="p49">
         The most frequent attacks in blockchains have been strongly analized in
         the last years for the cases of PoW and PoS consensus, but how does a
@@ -408,7 +507,7 @@
           relation between IPs and Public keys.
         </li>
       </ul>
-      <h2 class="Section4">Development</h2>
+      <h2 id="development" ref="element" class="Section4">Development</h2>
       <p class="p51">
         Ok, but how is Witnet built? <br />
         The Witnet Ecosystem consists of serveral parts and so it has different
@@ -428,9 +527,7 @@
       <p class="p53">
         Let's explain each of them.
       </p>
-      <A href="radon">
-        <h3 class="Subsection10">Sheikah and Radon</h3>
-      </A>
+      <h3 id="sheikah-radon" class="Subsection10">Sheikah and Radon</h3>
       <p class="p53">
         Creating Data Requests is one of the main actions in Witnet, as when
         they are published the hole Oracle protocol takes place, so how do you
@@ -483,7 +580,7 @@
           >example</a
         >.
       </p>
-      <h3 class="Subsection11">Rust</h3>
+      <h3 id="rust" ref="element" class="Subsection11">Rust</h3>
       <p class="p59">
         Another point of discussion was which lenguage we should use to build
         the nodes. Having its own underlying blockchain, Witnet requires code
@@ -533,7 +630,9 @@
         There are intstallation guides to run a node for several operator
         systems. You can find them <a href="https://docs.witnet.io/">here</a>.
       </p>
-      <h3 class="Subsection12">Smart contracts</h3>
+      <h3 id="smart-contracts" ref="element" class="Subsection12">
+        Smart contracts
+      </h3>
       <p class="p65">
         As Witnet is a decentralize oracle for smart contracts, the bridge nodes
         need to able to understand and interact with each smart contract
@@ -547,7 +646,7 @@
           >here</a
         >.
       </p>
-      <h2 class="Section5">WIT token</h2>
+      <h2 id="wit-token" ref="element" class="Section5">WIT token</h2>
       <p class="p66">
         As mentioned in
         <a href="#witnet as a blockchain">Witnet as blockchain</a>, Witnet runs
@@ -590,7 +689,7 @@
         issuance mechanism will never exceed 2,500,000,000 minus the 30% that
         has already been preassigned. This is represented in the next figure.
       </p>
-      <h2 class="Section6">To sum up</h2>
+      <h2 id="sum-up" ref="element" class="Section6">To sum up</h2>
       <h3 class="Subection13">
         The protocol at the moment (Current development status)
       </h3>
@@ -688,17 +787,13 @@
   </div>
 </template>
 <script>
-<<<<<<< HEAD
-import { VueMathjax } from 'vue-mathjax'
 export default {
-  components: {
-    'vue-mathjax': VueMathjax,
-  },
   data() {
     return {
-      formula1: '$$H(<t||rand(t)_{M_i}>)/2^L \\leq I_i^t$$',
-=======
-export default {
+      lastScrollPosition: 0,
+      fixTop: false,
+    }
+  },
   head() {
     return {
       title: 'Witnet - What is Witnet?',
@@ -710,21 +805,95 @@ export default {
             'The Witnet protocol gives smart contracts real power by connecting them to any online data source. Sport results, stock prices, weather forecasts or even other ...',
         },
       ],
->>>>>>> implement suggestions
     }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.onScroll)
+    window.addEventListener('scroll', this.changeFixTop)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.onScroll)
+  },
+  methods: {
+    changeFixTop() {
+      console.log('heyehehyhe')
+      if (this.lastScrollPosition > 100) {
+        this.fixTop = true
+      } else {
+        this.fixTop = false
+      }
+    },
+    onScroll(event) {
+      const sections = document.querySelectorAll('#content-menu a')
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop
+      for (let i = 0; i < sections.length; i++) {
+        const currLink = sections[i]
+        const val = currLink.getAttribute('href')
+        const refElement = document.querySelector(val)
+        const refHeight = refElement.offsetTop + refElement.offsetHeight
+        if (
+          refElement.offsetTop <= this.lastScrollPosition &&
+          refHeight > this.lastScrollPosition
+        ) {
+          const active = document.getElementsByClassName('active')[0]
+          if (active) {
+            active.classList.remove('active')
+          }
+          currLink.classList.add('active')
+        }
+      }
+      this.lastScrollPosition = currentScrollPosition
+    },
   },
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import '@/styles/colors.scss';
 
+.content-menu {
+  font-size: 14px;
+  position: fixed;
+  left: 4vw;
+  width: 20vw;
+  top: 15vh;
+  ul {
+    line-height: 1.5;
+    list-style: none;
+    .link-main {
+      color: $purple;
+      list-style: none;
+      text-decoration: none;
+      &:hover {
+        color: $purple;
+        opacity: 0.75;
+      }
+    }
+  }
+  .link {
+    color: $grey-2;
+    list-style: none;
+    text-decoration: none;
+    &:hover {
+      color: $purple;
+      opacity: 0.75;
+    }
+  }
+  .active {
+    color: $purple;
+    opacity: 0.75;
+  }
+}
+.fixed {
+  top: 5vh;
+}
 .content {
   color: rgb(61, 61, 61);
   line-height: 25px;
   width: 50%;
   margin-top: 5vw;
-  margin-left: 5vw;
+  margin-left: 30vw;
   .title {
     color: $purple;
   }

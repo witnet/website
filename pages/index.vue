@@ -51,7 +51,7 @@
         {{ this.$t('know_more_btn') }}
       </nuxt-link>
     </section>
-    <section class="section2">
+    <section id="participate" class="section2">
       <h2>{{ this.$t('title_section_2') }}</h2>
       <div class="items-container">
         <Card
@@ -119,15 +119,15 @@ export default {
     cards() {
       return {
         node: {
-          img: require('~/assets/node-icon-white.svg'),
+          img: require('~/assets/node-icon.svg'),
           title: this.$t('s2_node'),
         },
         developers: {
-          img: require('~/assets/developers-icon-white.svg'),
+          img: require('~/assets/developers-icon.svg'),
           title: this.$t('s2_developers'),
         },
         wallet: {
-          img: require('~/assets/wallet-icon-white.svg'),
+          img: require('~/assets/wallet-icon.svg'),
           title: this.$t('s2_wallet'),
         },
       }
@@ -176,9 +176,10 @@ header {
   }
   .witnet-ethereum {
     width: 65vw;
+    max-height: 90vh;
     position: absolute;
     z-index: 5;
-    margin: 6vh 40vw;
+    margin: 0vh 40vw;
   }
   .content-container {
     display: flex;
@@ -210,15 +211,18 @@ header {
 }
 .items-container {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 5vh 0;
 }
 .section1 {
   background-color: rgb(244, 244, 244);
   color: rgb(61, 61, 61);
   text-align: center;
+  padding: 5vh 0;
   .title-section {
-    margin: 64px 40px;
+    padding-bottom: 5vh;
     display: inline-block;
   }
 }

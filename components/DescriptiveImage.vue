@@ -20,6 +20,7 @@ export default {
 .image {
   .image-img {
     width: 250px;
+    height: 280px;
     margin-bottom: 30px;
   }
   .image-title {
