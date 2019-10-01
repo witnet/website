@@ -18,6 +18,12 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        src:
+          'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML',
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -34,6 +40,7 @@ export default {
     { src: '~/plugins/vue-particles.js', ssr: false },
     { src: '~/plugins/i18n.js', ssr: false },
     { src: '~/plugins/directives.js', ssr: false },
+    { src: '~/plugins/mathjax.js', ssr: false },
   ],
   /*
    ** Nuxt.js dev-modules

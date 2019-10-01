@@ -1,6 +1,7 @@
 <template>
   <div class="tab-frame">
     <div id="content-menu" class="content-menu" :class="{ fixed: fixTop }">
+      <MathjaxExample />
       <ul>
         <li>
           <a class="link-main" href="#introduction">Introduction</a>
@@ -787,7 +788,12 @@
   </div>
 </template>
 <script>
+import MathjaxExample from '~/components/MathjaxExample.vue'
+
 export default {
+  components: {
+    MathjaxExample,
+  },
   data() {
     return {
       lastScrollPosition: 0,
