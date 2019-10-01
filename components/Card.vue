@@ -1,5 +1,5 @@
 <template>
-  <a class="link" href="#section">
+  <a class="link" target="_blank" :href="url">
     <div class="card">
       <img class="card-img" :src="img" alt="wit" />
       <h3 v-if="title" class="card-title">{{ title }}</h3>
@@ -13,6 +13,7 @@ export default {
   props: {
     img: String,
     title: String,
+    url: String,
   },
 }
 </script>

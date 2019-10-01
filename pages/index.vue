@@ -59,6 +59,7 @@
           :key="card.title"
           :title="card.title"
           :img="card.img"
+          :url="card.url"
         />
       </div>
     </section>
@@ -121,14 +122,17 @@ export default {
         node: {
           img: require('~/assets/node-icon.svg'),
           title: this.$t('s2_node'),
+          url: 'https://docs.witnet.io',
         },
         developers: {
           img: require('~/assets/developers-icon.svg'),
           title: this.$t('s2_developers'),
+          url: 'https://docs.witnet.io',
         },
         wallet: {
           img: require('~/assets/wallet-icon.svg'),
           title: this.$t('s2_wallet'),
+          url: 'https://github.com/witnet/sheikah',
         },
       }
     },
