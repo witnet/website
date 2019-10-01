@@ -1,9 +1,9 @@
 <template>
   <div class="link-container">
     <img class="link-img" src="~/assets/wit-dot.svg" alt="wit" />
-    <a class="link" href="#section">
+    <nuxt-link :to="'about/' + link" class="link">
       <h3 v-if="title" class="link-title">{{ title }}</h3>
-    </a>
+    </nuxt-link>
   </div>
 </template>
 
@@ -12,6 +12,7 @@ export default {
   name: 'Link',
   props: {
     title: String,
+    link: String,
   },
 }
 </script>

@@ -29,6 +29,7 @@ html {
   h3 {
     font-family: 'Montserrat', sans-serif;
   }
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -37,10 +38,11 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-}
-body {
-  padding: 0px;
-  margin: 0px;
+  body {
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

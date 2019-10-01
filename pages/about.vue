@@ -1,7 +1,11 @@
 <template>
   <div class="tab-frame">
-    <div id="content-menu" class="content-menu" :class="{ fixed: fixTop }">
-      <MathjaxExample />
+    <label class="label" @click="toggleMenu">Index</label>
+    <div
+      id="content-menu"
+      class="content-menu"
+      :class="{ fixed: fixTop, visible: isMenuVisible }"
+    >
       <ul>
         <li>
           <a class="link-main" href="#introduction">Introduction</a>
@@ -103,7 +107,7 @@
     </div>
     <div class="content">
       <h1 class="title">What is Witnet?</h1>
-      <h2 id="introduction" ref="element" class="Section1">Introduction</h2>
+      <h2 id="introduction" ref="element" class="section">Introduction</h2>
       <p class="p1">
         Witnet is a decentralized oracle network (DON) that connects smart
         contracts to the outer world. Generally speaking, it allows any piece of
@@ -118,7 +122,7 @@
         entity.
       </p>
       <p class="p3">Wait, what? Ok, lets go one step at a time.</p>
-      <h3 id="not-what-you-where-told" ref="element" class="Subsection1">
+      <h3 id="not-what-you-where-told" ref="element" class="subsection">
         Smart Contracts Are Not What You Were Told
       </h3>
       <p class="p4">
@@ -144,14 +148,15 @@
         then you have a contract that is capable of enforcing itself and leaves
         no room for contestation. Boom &#x1F4A3;.
       </p>
-      <h3 id="blockchain-oracles" ref="element" class="Subsection2">
+      <h3 id="blockchain-oracles" ref="element" class="subsection">
         Blockchain Oracles, And Their Problem
       </h3>
 
       <p class="p9">
         Given that smart contracts need to be completely
-        <a href="#comentario">deterministic</a>, they do not support input of
-        data from non-deterministic sources such as APIs or websites.
+        <a class="link" href="#comentario">deterministic</a>, they do not
+        support input of data from non-deterministic sources such as APIs or
+        websites.
       </p>
       <p class="p10">
         As a result, smart contracts are mostly isolated from the rest of the
@@ -173,7 +178,7 @@
         to feed them information trustlessly.
       </p>
       <p class="p13">This is often called <i>"the oracle problem"</i>.</p>
-      <h3 id="solution" ref="element" class="Subsection3">
+      <h3 id="solution" ref="element" class="subsection">
         The Solution: A Decentralized Oracle Network
       </h3>
       <p class="p14">
@@ -205,11 +210,12 @@
       <p class="p15">
         In other words, the Witnet Protocol is Decentralized Oracle Network, a
         peer-to-peer (P2P) network capable of processing
-        <a href="rad">Retrieve-Attest-Deliver</a> requests.
+        <a class="link" href="rad">Retrieve-Attest-Deliver</a> requests.
       </p>
       <p class="p16">
         You can find a deeper explanation of the DON in this
         <a
+          class="link"
           href="https://medium.com/witnet/designing-a-decentralized-oracle-network-cad5c5855ba2"
           >post</a
         >.
@@ -253,7 +259,7 @@
         without the owner of the computer having to actively do anything else
         than installing it.
       </p>
-      <h3 id="trust" ref="element" class="Subsection4">100% Truth, 0% Trust</h3>
+      <h3 id="trust" ref="element" class="subsection">100% Truth, 0% Trust</h3>
       <p class="p22">
         Data retrieved, attested and delivered using the Witnet protocol is
         reliable not because of authority but because it comes from anonymous
@@ -264,7 +270,8 @@
         algorithm that detects fraudsters, who are immediately punished.
       </p>
       <p class="p24">
-        The progressive <a href="#consensus">reputation protocol</a> plays a
+        The progressive
+        <a class="link" href="#consensus">reputation protocol</a> plays a
         central role in maintaining every participant active and honest by
         creating short, middle and long term incentives for them to abide by the
         protocol and not to tamper with the data they broker.
@@ -276,7 +283,7 @@
         its truthness—and the data that is eventually delivered the smart
         contracts.
       </p>
-      <h2 id="flow" ref="element" class="Section2">Flow of the protocol</h2>
+      <h2 id="flow" ref="element" class="section">Flow of the protocol</h2>
       <h3 id="witnet" ref="element" class="Subection5">
         Witnet as a blockchain
       </h3>
@@ -294,10 +301,11 @@
       </p>
       <p class="p29">
         In addition, the main key of Witnet is the
-        <a href="#consensus">reputation system</a>. Such a mechanism would not
-        only be hard but also expensive to implement in other smart contract
-        platforms. And finally and more important, mining rewards subsidize the
-        data request costs at the initial stage of the protocol.
+        <a class="link" href="#consensus">reputation system</a>. Such a
+        mechanism would not only be hard but also expensive to implement in
+        other smart contract platforms. And finally and more important, mining
+        rewards subsidize the data request costs at the initial stage of the
+        protocol.
       </p>
       <p class="p30">
         The nodes of the P2P network are called <i>witnesses</i>, and are
@@ -306,15 +314,16 @@
       <ul class="p31">
         <li>
           a computer network made up of nodes (computers running a specific
-          <a href="#rad">Retrive, Attest and Deliver</a>
+          <a class="link" href="#rad">Retrive, Attest and Deliver</a>
           data from a data request
         </li>
         <li>
-          <a href="#miners">Mine</a> a block to be added in the blockchain
+          <a class="link" href="#miners">Mine</a> a block to be added in the
+          blockchain
         </li>
         <li>
-          Be a <a href="#bridges">bridge-node</a> and connect the Witnet
-          protocol to a Smart-contract platform, for example Ethereum
+          Be a <a class="link" href="#bridges">bridge-node</a> and connect the
+          Witnet protocol to a Smart-contract platform, for example Ethereum
         </li>
       </ul>
       <p class="p32">
@@ -328,7 +337,8 @@
       </h3>
       <p class="p32">
         Once a Data Request is published, some nodes are selected (by Reputation
-        system proof of elegibility, see the <a href="#consensus">Consensus</a>
+        system proof of elegibility, see the
+        <a class="link" href="#consensus">Consensus</a>
         section for more details), to retrieve the data from the APIs specified
         in the DR, attest the result and deliver it. Meaning by this,
       </p>
@@ -347,13 +357,15 @@
         </li>
       </ul>
       <p class="p35">
-        <a href="https://docs.witnet.io/protocol/data-requests/radon/encoding/"
+        <a
+          class="link"
+          href="https://docs.witnet.io/protocol/data-requests/radon/encoding/"
           >Radon</a
         >
         is a declarative language in charge of coordinating retrieval,
         aggregation, tally and delivery of data strictly as specified in the
         requests. More details about the data requests can be found
-        <a href="#radon">here</a>.
+        <a class="link" href="#radon">here</a>.
       </p>
       <p class="p36">
         Each witness sends the hash of the claim as a commitment, the actual
@@ -368,12 +380,12 @@
       <p class="p38">
         As in any blockchain, the miners are nodes in charge of adding blocks to
         the blockchain. These nodes are selected by the Proof of Elegibility,
-        described <a href="#consensus">here</a>. Due to the
-        <a href="#consensus">Reputation system</a>, the barries to entry are
-        lower than in other Oracles since new nodes do not need to stake a
-        significant monetary amount nor invest in expensive hardware to become
-        eligible to resolve data requests or mining. This fact incentives new
-        nodes to join the network and thus helps the decentralization.
+        described <a class="link" href="#consensus">here</a>. Due to the
+        <a class="link" href="#consensus">Reputation system</a>, the barries to
+        entry are lower than in other Oracles since new nodes do not need to
+        stake a significant monetary amount nor invest in expensive hardware to
+        become eligible to resolve data requests or mining. This fact incentives
+        new nodes to join the network and thus helps the decentralization.
       </p>
       <h3 id="bridges" ref="element" class="Subection8">Bridges</h3>
       <p class="p39">
@@ -399,11 +411,13 @@
       </p>
       <p class="p43">
         Bridge nodes are explained in more detail in this article from our
-        <a href="https://medium.com/witnet/ethereum-loves-witnet-9a3fd21e6f5c"
+        <a
+          class="link"
+          href="https://medium.com/witnet/ethereum-loves-witnet-9a3fd21e6f5c"
           >blog</a
         >.
       </p>
-      <h2 id="consensus" ref="element" class="Section3">Consensus</h2>
+      <h2 id="consensus" ref="element" class="section">Consensus</h2>
       <p class="p44">
         The consensus mechanism is based on a reputation system. Instead of a
         <b>Proof of Work</b> (PoW) or <b>Proof of Stake</b> (PoS), a node is
@@ -420,46 +434,64 @@
         valid). More details about the importance of the Cryptographic sortition
         can be found
         <a
+          class="link"
           href="https://medium.com/witnet/cryptographic-sortition-in-blockchains-the-importance-of-vrfs-ad5c20a4e018"
           >here</a
         >.
       </p>
       <p class="p45">
         As described in the
-        <a href="https://witnet.io/static/witnet-whitepaper.pdf">Whitpaper</a>,
-        a node (math)M_i(math) in epoch *t* is ellected, so it will later
-        publish the PoE and it will finally mine the block (resolve a DR or
-        whatever it needs to do) depending on the reputation with respect to the
-        rest of the nodes that have been selected, if the following condition is
-        satisfied:
+        <a class="link" href="https://witnet.io/static/witnet-whitepaper.pdf">
+          Whitpaper
+        </a>
+        ,a node <MathjaxExample :formula="formulas.m_i" /> in epoch
+        <MathjaxExample :formula="formulas.t" />
+        is ellected, so it will later publish the PoE and it will finally mine
+        the block (resolve a DR or whatever it needs to do) depending on the
+        reputation with respect to the rest of the nodes that have been
+        selected, if the following condition is satisfied:
       </p>
+      <div class="p-padding">
+        <MathjaxExample :formula="formulas.reputation" />
+      </div>
       <ul class="p47">
         <li>
-          $rand(t)$ is a public randomness that can be extracted from the
-          blockchain at epoch $t$,
+          <MathjaxExample :formula="formulas.rand" />is a public randomness that
+          can be extracted from the blockchain at epoch
+          <MathjaxExample :formula="formulas.t" />,
         </li>
         <li>
-          $t||rand(t)_{M_i}$ is a signature of message $t||rand(t)$ produced
-          with private key $M_i$,
+          <MathjaxExample :formula="formulas.rand_mi" /> is a signature of
+          message <MathjaxExample :formula="formulas.t_rand" /> produced with
+          private key <MathjaxExample :formula="formulas.m_i" />,
         </li>
         <li>
-          $H$ is a deterministic, uniform and non-reversible hash function,
+          <MathjaxExample :formula="formulas.h" /> is a deterministic, uniform
+          and non-reversible hash function,
         </li>
         <li>
-          $L$ is the number of bits of the output size of the $H$ hash function,
+          <MathjaxExample :formula="formulas.l" /> is the number of bits of the
+          output size of the <MathjaxExample :formula="formulas.h" />
+          hash function,
         </li>
         <li>
-          $I_i^t$is the reputation of participant $M_i$ at epoch $t$, calculated
-          as <br />
-          $$I_i^t=\frac{r_i^t}{R^t},$$ <br />
-          being $r_i^t$ the reputation of $M_i$ at epoch $t$ and $R^t$ the total
-          reputation at the same epoch.
+          <MathjaxExample :formula="formulas.i_i" /> is the reputation of
+          participant <MathjaxExample :formula="formulas.m_i" /> at epoch
+          <MathjaxExample :formula="formulas.t" />, calculated as
+          <div class="p-padding">
+            <MathjaxExample :formula="formulas.i_reputation" />
+          </div>
+          being <MathjaxExample :formula="formulas.ri" /> the reputation of
+          <MathjaxExample :formula="formulas.m_i" /> at epoch
+          <MathjaxExample :formula="formulas.t" /> and
+          <MathjaxExample :formula="formulas.rt" /> the total reputation at the
+          same epoch.
         </li>
       </ul>
       <p class="p48">
         To clarify and have more details abot the reputation system, you can
         take a look to
-        <a href="https://witnet.io/static/witnet-whitepaper.pdf"
+        <a class="link" href="https://witnet.io/static/witnet-whitepaper.pdf"
           >sections 4 and 5 of the Whitepaper</a
         >.
       </p>
@@ -470,9 +502,9 @@
         The most frequent attacks in blockchains have been strongly analized in
         the last years for the cases of PoW and PoS consensus, but how does a
         reputation system based blockchain defends over these attacks? In our
-        <a href="https://medium.com/witnet">blog in Medium</a> you can find
-        specific explanations of how Witnet defends over attacks, but these are
-        in short the main ideas:
+        <a class="link" href="https://medium.com/witnet">blog in Medium</a> you
+        can find specific explanations of how Witnet defends over attacks, but
+        these are in short the main ideas:
       </p>
       <ul class="p50">
         <li>
@@ -486,6 +518,7 @@
           monopolized all the connections of a node it has been implemented a
           P2P bucketing system. More details can be found in the
           <a
+            class="link"
             href="https://medium.com/witnet/the-p2p-bucketing-system-in-witnet-d893dce4b8c5"
             >post in Medium</a
           >.
@@ -494,6 +527,7 @@
           <b>Bribery attacks</b>: The implementation of a Collateral fee highly
           increases the Bribe to pay, for more informations take a look to the
           <a
+            class="link"
             href="https://medium.com/witnet/deterring-bribery-attacks-on-decentralized-oracle-networks-5bcf87d2cb22"
             >post</a
           >.
@@ -508,7 +542,7 @@
           relation between IPs and Public keys.
         </li>
       </ul>
-      <h2 id="development" ref="element" class="Section4">Development</h2>
+      <h2 id="development" ref="element" class="section">Development</h2>
       <p class="p51">
         Ok, but how is Witnet built? <br />
         The Witnet Ecosystem consists of serveral parts and so it has different
@@ -528,7 +562,7 @@
       <p class="p53">
         Let's explain each of them.
       </p>
-      <h3 id="sheikah-radon" class="Subsection10">Sheikah and Radon</h3>
+      <h3 id="sheikah-radon" class="subsection">Sheikah and Radon</h3>
       <p class="p53">
         Creating Data Requests is one of the main actions in Witnet, as when
         they are published the hole Oracle protocol takes place, so how do you
@@ -543,11 +577,14 @@
       </p>
       <p class="p54">
         The development of Sheikah can be followed in the
-        <a href="https://github.com/witnet/sheikah">github repository</a>. Here
-        you can find instructions for installing and testing Sheikah.
+        <a class="link" href="https://github.com/witnet/sheikah">
+          github repository
+        </a>
+        . Here you can find instructions for installing and testing Sheikah.
       </p>
       <p class="p55">
-        As explained in the <a href="#introduction">Introduction</a>, the Witnet
+        As explained in the
+        <a class="link" href="#introduction">Introduction</a>, the Witnet
         protocol resolves the oracle problem since connects smart contracts to
         the real world, but how does Witnet read the data collected by the
         witnesses? Here is where the RAD Engine comes out.
@@ -561,6 +598,7 @@
         using RAD Object Notation (RADON), are interpreted by the RAD Engine.
         More information about RADON and data requests can be found
         <a
+          class="link"
           href="https://github.com/witnet/documentation/tree/master/docs/protocol/data-requests"
           >here</a
         >.
@@ -577,11 +615,12 @@
       <p class="p58">
         You can check what a Witnet data request looks like in this
         <a
+          class="link"
           href="https://witnet.github.io/documentation/protocol/data-requests/examples/"
           >example</a
         >.
       </p>
-      <h3 id="rust" ref="element" class="Subsection11">Rust</h3>
+      <h3 id="rust" ref="element" class="subsection">Rust</h3>
       <p class="p59">
         Another point of discussion was which lenguage we should use to build
         the nodes. Having its own underlying blockchain, Witnet requires code
@@ -618,8 +657,10 @@
       </ul>
       <p class="p62">
         The details about the choice of Rust can be found in the
-        <a href="https://docs.witnet.io/get-started/why-rust/">Documentation</a
-        >.
+        <a class="link" href="https://docs.witnet.io/get-started/why-rust/">
+          Documentation
+        </a>
+        .
       </p>
       <p class="p63">
         Once Rust was clear, we ceated Witnet-rust, an open-source
@@ -629,31 +670,34 @@
       </p>
       <p class="p64">
         There are intstallation guides to run a node for several operator
-        systems. You can find them <a href="https://docs.witnet.io/">here</a>.
+        systems. You can find them
+        <a class="link" href="https://docs.witnet.io/">here</a>.
       </p>
-      <h3 id="smart-contracts" ref="element" class="Subsection12">
+      <h3 id="smart-contracts" ref="element" class="subsection">
         Smart contracts
       </h3>
       <p class="p65">
         As Witnet is a decentralize oracle for smart contracts, the bridge nodes
         need to able to understand and interact with each smart contract
         lenguage is needed. As explained in the
-        <a href="#bridges">Bridges section</a>, for now it has only been
-        implemented a bridge with Ethereum wherefore it has been created a
+        <a class="link" href="#bridges">Bridges section</a>, for now it has only
+        been implemented a bridge with Ethereum wherefore it has been created a
         Witenet-Bridge contract in Solidity. <br />
         A guide for writing a Solidity contract that deploys a Witnet request
         can be found
-        <a href="https://witnet.github.io/documentation/try/use-from-ethereum/"
+        <a
+          class="link"
+          href="https://witnet.github.io/documentation/try/use-from-ethereum/"
           >here</a
         >.
       </p>
-      <h2 id="wit-token" ref="element" class="Section5">WIT token</h2>
+      <h2 id="wit-token" ref="element" class="section">WIT token</h2>
       <p class="p66">
         As mentioned in
-        <a href="#witnet as a blockchain">Witnet as blockchain</a>, Witnet runs
-        its own Blockchain and has a native token called WIT. The Wits are
-        earned by the witnesses when resolving a data request, and are used to
-        encourages fair and trustworthy behaviour in the network.
+        <a class="link" href="#witnet as a blockchain">Witnet as blockchain</a>,
+        Witnet runs its own Blockchain and has a native token called WIT. The
+        Wits are earned by the witnesses when resolving a data request, and are
+        used to encourages fair and trustworthy behaviour in the network.
       </p>
       <p class="p67">
         Some information about the distribution of the WITs is the following:
@@ -690,14 +734,14 @@
         issuance mechanism will never exceed 2,500,000,000 minus the 30% that
         has already been preassigned. This is represented in the next figure.
       </p>
-      <h2 id="sum-up" ref="element" class="Section6">To sum up</h2>
+      <h2 id="sum-up" ref="element" class="section">To sum up</h2>
       <h3 class="Subection13">
         The protocol at the moment (Current development status)
       </h3>
       <p class="p70">
         UNDER CONTRSTUCTION
       </p>
-      <h3 class="Subsection14">
+      <h3 class="subsection">
         Witnet different from other oracle projects
       </h3>
       <p class="p71">
@@ -745,20 +789,22 @@
         is only available on selected hardware, so it's a clear barrier to
         entry. Moreover, the SGX has recently been proven vulnerable to many
         attacks, including the widely known
-        <a href="https://spectreattack.com/spectre.pdf">Spectre attack</a>.
-        Those are the main reasons why Witnet focuses on data gathered by public
-        APIs.
+        <a class="link" href="https://spectreattack.com/spectre.pdf">
+          Spectre attack
+        </a>
+        .Those are the main reasons why Witnet focuses on data gathered by
+        public APIs.
       </p>
       <p class="p76">
         A big difference with respect to other Oracles is that Witnet Data
         Request are fully parameterizable through the
-        <a href="#radon">RADON</a> language. Not only the number of nodes can be
-        specified but also how they aggregate Data from different sources,
-        filter and achive consensus among them. More than that Witnet allows
-        smart contracts to define their own security guarantees by specifiying
-        the collateral that needs to be staked by the nodes to participate in
-        the report of the Data Request. This prevents many
-        <a href="#defense attacks">attack vectors</a>.
+        <a class="link" href="#radon">RADON</a> language. Not only the number of
+        nodes can be specified but also how they aggregate Data from different
+        sources, filter and achive consensus among them. More than that Witnet
+        allows smart contracts to define their own security guarantees by
+        specifiying the collateral that needs to be staked by the nodes to
+        participate in the report of the Data Request. This prevents many
+        <a class="link" href="#defense attacks">attack vectors</a>.
       </p>
       <p class="p77">
         In summary, our proposal has a "fairness principle" hard-written into
@@ -771,19 +817,19 @@
       <p class="p78">
         The Witnet community is open to everyone. Even if you are not a
         developer or node operator, there are
-        <a href="https://witnet.github.io/documentation/community/contributing/"
+        <a
+          class="link"
+          href="https://witnet.github.io/documentation/community/contributing/"
           >many things you can do</a
         >
         to spread the word!
       </p>
-      <A name="comentario">
-        <p class="p79">
-          [^1]: Otherwise, the contracts could have totally different output
-          values when executed across all the nodes maintaining the blockchain,
-          therefore causing inconsistencies that would lead to breaking the
-          network consensus.
-        </p>
-      </A>
+      <p id="comentario" class="p79">
+        [^1]: Otherwise, the contracts could have totally different output
+        values when executed across all the nodes maintaining the blockchain,
+        therefore causing inconsistencies that would lead to breaking the
+        network consensus.
+      </p>
     </div>
   </div>
 </template>
@@ -798,6 +844,21 @@ export default {
     return {
       lastScrollPosition: 0,
       fixTop: false,
+      formulas: {
+        m_i: '$M_i$',
+        t: '$t$',
+        reputation: '$$H(<t||rand(t)_{M_i}>)/2^L \\leq I_i^t$$',
+        rand: '$rand(t)$',
+        rand_mi: '$<t||rand(t)_{M_i}>$',
+        t_rand: '$t||rand(t)$',
+        h: '$H$',
+        l: '$L$',
+        i_i: '$I_i^t$',
+        i_reputation: '$$I_i^t=\\frac{r_i^t}{R^t},$$',
+        ri: '$r_i^t$',
+        rt: '$R^t$',
+      },
+      isMenuVisible: false,
     }
   },
   head() {
@@ -822,12 +883,14 @@ export default {
   },
   methods: {
     changeFixTop() {
-      console.log('heyehehyhe')
       if (this.lastScrollPosition > 100) {
         this.fixTop = true
       } else {
         this.fixTop = false
       }
+    },
+    toggleMenu() {
+      this.isMenuVisible = !this.isMenuVisible
     },
     onScroll(event) {
       const sections = document.querySelectorAll('#content-menu a')
@@ -858,22 +921,31 @@ export default {
 <style lang="scss" scoped>
 @import '@/styles/colors.scss';
 
+.label {
+  font-size: 26px;
+  color: $grey-2;
+  display: none;
+}
+
 .content-menu {
   font-size: 14px;
   position: fixed;
   left: 4vw;
   width: 20vw;
   top: 15vh;
+  & .visible {
+    display: block;
+  }
   ul {
     line-height: 1.5;
     list-style: none;
     .link-main {
       color: $purple;
+      font-weight: 550;
       list-style: none;
       text-decoration: none;
       &:hover {
-        color: $purple;
-        opacity: 0.75;
+        text-decoration: underline;
       }
     }
   }
@@ -882,31 +954,61 @@ export default {
     list-style: none;
     text-decoration: none;
     &:hover {
-      color: $purple;
-      opacity: 0.75;
+      text-decoration: underline;
     }
   }
   .active {
-    color: $purple;
-    opacity: 0.75;
+    text-decoration: underline;
   }
 }
 .fixed {
-  top: 5vh;
+  top: 1vh;
 }
 .content {
   color: rgb(61, 61, 61);
   line-height: 25px;
   width: 50%;
   margin-top: 5vw;
+  margin-bottom: 5vw;
   margin-left: 30vw;
+  .link {
+    text-decoration: none;
+    color: $purple;
+  }
+  .p-padding {
+    padding: 20px;
+  }
   .title {
+    color: $purple;
+    padding-bottom: 32px;
+  }
+  .section {
     color: $purple;
   }
 }
 @media screen and (max-width: 1200px) {
+  .label {
+    cursor: pointer;
+    display: block;
+    top: 15vh;
+    left: 5px;
+    color: $purple;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    position: fixed;
+    display: none;
+  }
+  .content-menu {
+    display: none;
+    &.visible {
+      display: none;
+    }
+  }
   .content {
+    margin-top: 10vw;
     width: 80%;
+    margin-left: 10vw;
   }
 }
 </style>

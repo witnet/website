@@ -101,7 +101,6 @@ export default {
 
 .navbar {
   display: flex;
-  padding: 8px;
   height: 10vh;
   justify-content: space-between;
   .logo-container {
@@ -219,6 +218,7 @@ export default {
 @media screen and (max-width: 1200px) {
   .drop {
     position: fixed;
+    top: 0px;
     overflow: hidden;
     height: 100%;
     background-color: white;
@@ -227,6 +227,7 @@ export default {
     display: block;
     position: relative;
     .logo-container {
+      margin: 14px;
       .logo {
         margin: 10px;
         width: 70px;
