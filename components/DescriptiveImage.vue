@@ -19,8 +19,8 @@ export default {
 @import '@/styles/colors.scss';
 .image {
   .image-img {
-    width: 250px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 30px;
   }
   .image-title {

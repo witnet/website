@@ -986,7 +986,8 @@ export default {
       }
     },
     changeFixBottom() {
-      if (this.lastScrollPosition > 11500) {
+      console.log('aqui', this.lastScrollPosition > 11500)
+      if (this.lastScrollPosition > 11300) {
         this.fixTop = false
         this.fixBottom = true
       } else {

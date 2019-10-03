@@ -123,12 +123,12 @@ export default {
         node: {
           img: require('~/assets/node-icon.svg'),
           title: this.$t('s2_node'),
-          url: 'https://docs.witnet.io',
+          url: 'https://docs.witnet.io/try/run-a-node/',
         },
         developers: {
           img: require('~/assets/developers-icon.svg'),
           title: this.$t('s2_developers'),
-          url: 'https://docs.witnet.io',
+          url: 'https://docs.witnet.io/try/use-from-ethereum/',
         },
         wallet: {
           img: require('~/assets/wallet-icon.svg'),
