@@ -1068,7 +1068,7 @@ export default {
   top: 1vh;
 }
 .adjustToFooter {
-  bottom: 55vh;
+  bottom: 70vh;
 }
 .content {
   color: rgb(61, 61, 61);
