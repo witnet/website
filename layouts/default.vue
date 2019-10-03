@@ -25,9 +25,15 @@ export default {
 html {
   h2 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
   }
   h3 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+  }
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
   }
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -40,8 +46,12 @@ html {
   -webkit-font-smoothing: antialiased;
   body {
     overflow-x: hidden;
+    overflow-y: hidden;
     padding: 0px;
     margin: 0px;
+    #MathJax_Message {
+      display: none;
+    }
   }
 }
 body {

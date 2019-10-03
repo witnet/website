@@ -111,8 +111,10 @@
       </ul>
     </div>
     <div class="content">
-      <h1 class="title">What is Witnet?</h1>
-      <h2 id="introduction" ref="element" class="section">Introduction</h2>
+      <h3 class="title">What is Witnet?</h3>
+      <a class="link-main" href="#introduction">
+        <h3 id="introduction" ref="element" class="section">Introduction</h3>
+      </a>
       <p class="p1">
         Witnet is a decentralized oracle network (DON) that connects smart
         contracts to the outer world. Generally speaking, it allows any piece of
@@ -127,9 +129,11 @@
         entity.
       </p>
       <p class="p3">Wait, what? Ok, lets go one step at a time.</p>
-      <h3 id="not-what-you-where-told" ref="element" class="subsection">
-        Smart Contracts Are Not What You Were Told
-      </h3>
+      <a class="link" href="#not-what-you-where-told">
+        <h4 id="not-what-you-where-told" ref="element" class="subsection">
+          Smart Contracts Are Not What You Were Told
+        </h4>
+      </a>
       <p class="p4">
         Over the last years, blockchain technology has promised to revolutionize
         business by allowing creation of "smart contracts" that, unlike paper
@@ -153,13 +157,21 @@
         then you have a contract that is capable of enforcing itself and leaves
         no room for contestation. Boom &#x1F4A3;.
       </p>
-      <h3 id="blockchain-oracles" ref="element" class="subsection">
-        Blockchain Oracles, And Their Problem
-      </h3>
-
+      <a class="link" href="#blockchain-oracles">
+        <h4 id="blockchain-oracles" ref="element" class="subsection">
+          Blockchain Oracles, And Their Problem
+        </h4>
+      </a>
+      <div class="image-container">
+        <img
+          class="pic a"
+          :src="images.pic1"
+          alt="blockchains and oracle problem"
+        />
+      </div>
       <p class="p9">
-        Given that smart contracts need to be completely
-        <a class="link" href="#comentario">deterministic</a> all nodes execute
+        Given that smart contracts need to be completely deterministic
+        <a class="link" href="#comentario"><sup>1</sup></a> all nodes execute
         the same code. Because of that they do not support input of data from
         non-deterministic sources such as APIs or websites.
       </p>
@@ -183,9 +195,11 @@
         to feed them information trustlessly.
       </p>
       <p class="p13">This is often called <i>"the oracle problem"</i>.</p>
-      <h3 id="don" ref="element" class="Subsection3">
-        The Solution: A Decentralized Oracle Network
-      </h3>
+      <a class="link" href="#solution">
+        <h4 id="don" ref="element" class="subsection">
+          The Solution: A Decentralized Oracle Network
+        </h4>
+      </a>
       <p class="p14">
         The Witnet protocol aims to create an overlay network that connects
         smart contracts to any online data source. Sport results, stock prices,
@@ -261,7 +275,11 @@
         (Witnet-rust) that automatically receive and execute a series of tasks
         than installing it.
       </p>
-      <h3 id="trust" ref="element" class="subsection">100% Truth, 0% Trust</h3>
+      <a class="link" href="#trust">
+        <h4 id="trust" ref="element" class="subsection">
+          100% Truth, 0% Trust
+        </h4>
+      </a>
       <p class="p22">
         Data retrieved, attested and delivered using the Witnet protocol is
         reliable not because of authority but because it comes from anonymous,
@@ -286,10 +304,17 @@
         its truthness—and the data that is eventually delivered the smart
         contracts.
       </p>
-      <h2 id="flow" ref="element" class="Section2">Flow of the protocol</h2>
-      <h3 id="witnet-as-a-blockchain" ref="element" class="Subection5">
-        Witnet as a blockchain
-      </h3>
+      <a class="link-main" href="#flow">
+        <h3 id="flow" ref="element" class="section">Flow of the protocol</h3>
+      </a>
+      <a class="link" href="#witnet-as-a-blockchain">
+        <h4 id="witnet-as-a-blockchain" ref="element" class="Subection5">
+          Witnet as a blockchain
+        </h4>
+      </a>
+      <div class="image-container">
+        <img class="pic c" :src="images.pic3" alt="Witnet as a blockchain" />
+      </div>
       <p class="p27">
         The Witnet Protocol runs on its own blockchain with a native token
         called WIT. Having it’s own blockchain guarantees that the fate of
@@ -329,15 +354,20 @@
           Witnet protocol to a Smart-contract platform, for example Ethereum
         </li>
       </ul>
+      <div class="image-container">
+        <img class="pic d" :src="images.pic4" alt="Witnet-Ethereum flow" />
+      </div>
       <p id="run-a-node" ref="element" class="p32">
         Because the Witnet blockchain is free, open, and neutral, [you can run
         your own node](https://witnet.github.io/documentation/try/run-a-node/)
         and mine blocks on the Witnet blockchain. Every node maintains the
         history of all the transactions on the blockchain.
       </p>
-      <h3 id="rad" ref="element" class="Subection6">
-        Retrieve-Attest-Deliver
-      </h3>
+      <a class="link" href="#retrieve-attest-deliver">
+        <h4 id="retrieve-attest-deliver" ref="element" class="Subection6">
+          Retrieve-Attest-Deliver
+        </h4>
+      </a>
       <p class="p32">
         Once a Data Request is published, some nodes are selected (by Reputation
         system proof of elegibility, see the
@@ -375,7 +405,12 @@
       <p class="p37">
         symbolize in the next figure:
       </p>
-      <h3 id="miners" ref="element" class="Subection7">Miners</h3>
+      <div class="image-container">
+        <img class="pic e" :src="images.pic5" alt="Witnet flow" />
+      </div>
+      <a class="link" href="#miners">
+        <h4 id="miners" ref="element" class="Subection7">Miners</h4>
+      </a>
       <p class="p38">
         As in any blockchain, the miners are nodes in charge of adding blocks to
         the blockchain. These nodes are selected by the Proof of Elegibility,
@@ -386,7 +421,9 @@
         become eligible to resolve data requests or mining. This fact incentives
         new nodes to join the network and thus helps the decentralization.
       </p>
-      <h3 id="bridges" ref="element" class="Subection8">Bridges</h3>
+      <a class="link" href="#bridges">
+        <h4 id="bridges" ref="element" class="Subection8">Bridges</h4>
+      </a>
       <p class="p39">
         The bridge nodes are the ones in charge to interact between Witnet and
         an external public Blockchain.
@@ -400,6 +437,9 @@
         contracts only need to interact with the Witnet Bridge Interface (WBI)
         for which the addresses can be found below:
       </p>
+      <div class="image-container">
+        <img class="pic f" :src="images.pic6" alt="Witnet-Ethereum bridge" />
+      </div>
       <ul class="p41">
         <li><b>Rinkeby</b> 0xf0C67374D08e72dd7424982F76870AE0D6F2055e</li>
         <li><b>Görli</b> 0x1053c33f1DcFF9c8F6F6DC07e3F8cb84e46232A1</li>
@@ -416,10 +456,14 @@
           >blog</a
         >.
       </p>
-      <h2 id="consensus" ref="element" class="section">Consensus</h2>
-      <h3 id="reputation-system" ref="element" class="section">
+      <a class="link-main" href="#consensus">
+        <h3 id="consensus" ref="element" class="section">Consensus</h3>
+      </a>
+      <a class="reputation-system" href="#consensus">
+      <h4 id="reputation-system" ref="element" class="section">
         Resputation System
-      </h3>
+      </h4>
+      </a>
       <p class="p44">
         The consensus mechanism is based on a reputation system. Instead of a
         <b>Proof of Work</b> (PoW) or <b>Proof of Stake</b> (PoS), a node is
@@ -506,9 +550,11 @@
           >sections 4 and 5 of the Whitepaper</a
         >.
       </p>
-      <h3 id="defense-attacks" ref="element" class="Subection9">
-        Defense over Attacks
-      </h3>
+      <a class="link" href="#defense-attacks">
+        <h4 id="defense-attacks" ref="element" class="Subection9">
+          Defense over Attacks
+        </h4>
+      </a>
       <p class="p49">
         The most frequent attacks in blockchains have been strongly analized in
         the last years for the cases of PoW and PoS consensus, but how does a
@@ -553,7 +599,9 @@
           relation between IPs and Public keys.
         </li>
       </ul>
-      <h2 id="development" ref="element" class="section">Development</h2>
+      <a class="link-main" href="#development">
+        <h3 id="development" ref="element" class="section">Development</h3>
+      </a>
       <p class="p51">
         Ok, but how is Witnet built? <br />
         The Witnet Ecosystem consists of serveral parts and so it has different
@@ -573,7 +621,9 @@
       <p class="p53">
         Let's explain each of them.
       </p>
-      <h3 id="sheikah-radon" class="subsection">Sheikah and Radon</h3>
+      <a class="link" href="#sheikah-radon">
+        <h4 id="sheikah-radon" class="subsection">Sheikah and Radon</h4>
+      </a>
       <p class="p53">
         Creating Data Requests is one of the main actions in Witnet, as when
         they are published the hole Oracle protocol takes place, so how do you
@@ -627,7 +677,9 @@
           >example</a
         >.
       </p>
-      <h3 id="rust" ref="element" class="subsection">Rust</h3>
+      <a class="link" href="#rust">
+        <h4 id="rust" ref="element" class="subsection">Rust</h4>
+      </a>
       <p class="p59">
         Another point of discussion was which lenguage we should use to build
         the nodes. Having its own underlying blockchain, Witnet requires code
@@ -680,9 +732,11 @@
         systems. You can find them
         <a class="link" href="https://docs.witnet.io/">here</a>.
       </p>
-      <h3 id="smart-contracts" ref="element" class="subsection">
-        Smart contracts
-      </h3>
+      <a class="link" href="#smart-contracts">
+        <h4 id="smart-contracts" ref="element" class="subsection">
+          Smart contracts
+        </h4>
+      </a>
       <p class="p65">
         As Witnet is a decentralize oracle for smart contracts, the bridge nodes
         need to able to understand and interact with each smart contract
@@ -698,7 +752,9 @@
           >here</a
         >.
       </p>
-      <h2 id="wit-token" ref="element" class="section">WIT token</h2>
+      <a class="link-main" href="#wit-token">
+        <h3 id="wit-token" ref="element" class="section">WIT token</h3>
+      </a>
       <p class="p66">
         As mentioned in
         <a class="link" href="#witnet as a blockchain">Witnet as blockchain</a>,
@@ -739,16 +795,22 @@
         issuance mechanism will never exceed 2,500,000,000 minus the 30% that
         has already been preassigned. This is represented in the next figure.
       </p>
-      <h2 id="sum-up" ref="element" class="Section6">To sum up</h2>
-      <h3 id="development-status" ref="element" class="Subection13">
-        The protocol at the moment (Current development status)
-      </h3>
+      <a class="link-main" href="#sum-up">
+        <h3 id="sum-up" ref="element" class="section">To sum up</h3>
+      </a>
+      <a class="link-main" href="#development-status">
+        <h4 id="development-status" ref="element" class="Subection13">
+          The protocol at the moment (Current development status)
+        </h4>
+      </a>
       <p class="p70">
         UNDER CONTRSTUCTION
       </p>
-      <h3 id="different-from-others" ref="different" class="Subsection14">
-        Witnet different from other oracle projects
-      </h3>
+      <a class="link-main" href="#different-from-others">
+        <h4 id="different-from-others" class="Subsection14">
+          Witnet different from other oracle projects
+        </h4>
+      </a>
       <p class="p71">
         To sum up, until this moment most oracle projects base their approach on
         specialized oracles. Each oracle is connected only to a certain set of
@@ -829,11 +891,11 @@
         >
         to spread the word!
       </p>
-      <p id="comentario" class="p79">
-        [^1]: Otherwise, the contracts could have totally different output
-        values when executed across all the nodes maintaining the blockchain,
-        therefore causing inconsistencies that would lead to breaking the
-        network consensus.
+      <p id="comentario" class="comentario">
+        <sup>1</sup> Otherwise, the contracts could have totally different
+        output values when executed across all the nodes maintaining the
+        blockchain, therefore causing inconsistencies that would lead to
+        breaking the network consensus.
       </p>
     </div>
   </div>
@@ -863,6 +925,15 @@ export default {
         rt: '$R^t$',
       },
       isMenuVisible: false,
+      images: {
+        pic0: require('@/assets/main-wiw.svg'),
+        pic1: require('@/assets/contract-separate .svg'),
+        pic2: require('@/assets/decentralize-net.svg'),
+        pic3: require('@/assets/blockchain.svg'),
+        pic4: require('@/assets/image-eht-with-flow.svg'),
+        pic5: require('@/assets/image-witnet-flow.svg'),
+        pic6: require('assets/image-bridge.svg'),
+      },
     }
   },
   head() {
@@ -935,6 +1006,7 @@ export default {
   left: 4vw;
   width: 20vw;
   top: 15vh;
+  z-index: -10;
   & .visible {
     display: block;
   }
@@ -977,6 +1049,9 @@ export default {
     text-decoration: none;
     color: $purple;
   }
+  .link-main {
+    text-decoration: none;
+  }
   .p-padding {
     padding: 20px;
   }
@@ -986,6 +1061,24 @@ export default {
   }
   .section {
     color: $purple;
+  }
+  .image-container {
+    text-align: center;
+    .pic {
+      width: 50vw;
+      padding: 20px;
+      &.b {
+        width: 20vw;
+      }
+      &.c {
+        width: 30vw;
+      }
+    }
+  }
+  .comentario {
+    font-size: 12px;
+    border-top: 1px solid #bdbdbd;
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 1200px) {

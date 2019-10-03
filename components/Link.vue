@@ -2,7 +2,7 @@
   <div class="link-container">
     <img class="link-img" src="~/assets/wit-dot.svg" alt="wit" />
     <nuxt-link :to="'about/' + link" class="link">
-      <h3 v-if="title" class="link-title">{{ title }}</h3>
+      <h4 v-if="title" class="link-title">{{ title }}</h4>
     </nuxt-link>
   </div>
 </template>

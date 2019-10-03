@@ -14,7 +14,7 @@
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="#participate" class="tab" @click.native="closeMenu">
+            <nuxt-link to="/#participate" class="tab" @click.native="closeMenu">
               {{ this.$t('tab2') }}
             </nuxt-link>
           </li>
@@ -157,17 +157,18 @@ export default {
     }
 
     .language-btn {
+      //until we have translations
+      display: none;
+      //
+      // display: flex;
       font-size: 16px;
       padding: 0 8px;
-      display: flex;
       height: 30px;
       margin-right: 1vw;
       align-items: center;
       text-justify: center;
-      // background-color: $purple;
       border: 1px solid $purple;
       color: $purple;
-      // border: none;
       cursor: pointer;
 
       &:active {
@@ -274,9 +275,12 @@ export default {
       }
 
       .language-btn {
+        //ultil we have translations
+        display: none;
+        //
+        // display: flex;
         background-color: white;
         color: rgb(61, 61, 61);
-        display: flex;
         justify-content: space-between;
         margin: 16px 50px 0px 50px;
         border: none;

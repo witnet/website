@@ -1,7 +1,7 @@
 <template>
   <div class="image">
     <img class="image-img" :src="img" alt="wit" />
-    <h3 v-if="title" class="image-title">{{ title }}</h3>
+    <h4 v-if="title" class="image-title">{{ title }}</h4>
   </div>
 </template>
 

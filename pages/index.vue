@@ -12,7 +12,7 @@
         </a>
       </div>
       <img
-        src="~/assets/witnet-ethereum.svg"
+        src="~/assets/APIs.svg"
         alt="witnet-ethereum"
         class="witnet-ethereum"
       />
@@ -36,9 +36,9 @@
       />
     </header>
     <section id="next" class="section1">
-      <h2 class="title-section">
+      <!-- <h3 class="title-section">
         {{ this.$t('title_section_1') }}
-      </h2>
+      </h3> -->
       <div class="items-container">
         <DescriptiveImage
           v-for="image in descriptiveImages"
@@ -52,7 +52,7 @@
       </nuxt-link>
     </section>
     <section id="participate" class="section2">
-      <h2>{{ this.$t('title_section_2') }}</h2>
+      <h3>{{ this.$t('title_section_2') }}</h3>
       <div class="items-container">
         <Card
           v-for="card in cards"
@@ -64,7 +64,7 @@
       </div>
     </section>
     <section class="section3">
-      <h2>{{ this.$t('title_section_3') }}</h2>
+      <h3>{{ this.$t('title_section_3') }}</h3>
       <div class="items-container">
         <Link
           v-for="question in questions"
@@ -193,6 +193,7 @@ export default {
 header {
   display: flex;
   min-height: 90vh;
+  align-items: center;
   .particles {
     position: absolute;
     z-index: -100;
@@ -202,7 +203,7 @@ header {
   }
   .witnet-ethereum {
     width: 65vw;
-    max-height: 90vh;
+    max-height: 65vh;
     position: absolute;
     z-index: 5;
     margin: 0vh 40vw;
@@ -212,7 +213,6 @@ header {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 8vw;
-    margin-top: 24vh;
     background-color: none;
     width: 400px;
     .title {
@@ -227,6 +227,7 @@ header {
     }
     .learn-more-btn {
       display: flex;
+      text-decoration: none;
       align-items: center;
       & img {
         padding-left: 10px;
@@ -240,27 +241,27 @@ header {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 5vh 0;
+  padding: 4vh 0;
 }
 .section1 {
   background-color: rgb(244, 244, 244);
   color: rgb(61, 61, 61);
   text-align: center;
-  padding: 5vh 0;
-  .title-section {
-    padding-bottom: 5vh;
-    display: inline-block;
-  }
+  padding: 8vh 0;
+  // .title-section {
+  //   padding-bottom: 5vh;
+  //   display: inline-block;
+  // }
 }
 .section2 {
   color: rgb(61, 61, 61);
   text-align: center;
-  padding: 40px;
+  padding: 8vh 0;
 }
 .section3 {
   background-color: rgb(244, 244, 244);
   text-align: center;
-  padding: 40px;
+  padding: 8vh 0;
 }
 @media screen and (max-width: 1200px) {
   .witnet-ethereum {
