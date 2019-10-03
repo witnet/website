@@ -44,6 +44,10 @@ html {
     margin: 0px;
   }
 }
+body {
+  padding: 0px;
+  margin: 0px;
+}
 
 @media screen and (prefers-reduced-motion: reduce) {
   html {

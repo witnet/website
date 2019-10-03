@@ -70,6 +70,7 @@
           v-for="question in questions"
           :key="question.title"
           :title="question.title"
+          :link="question.link"
         />
       </div>
     </section>
@@ -140,21 +141,43 @@ export default {
       return {
         question1: {
           title: this.$t('question1'),
+          link: '#development-status',
         },
         question2: {
           title: this.$t('question2'),
+          link: '#don',
         },
         question3: {
           title: this.$t('question3'),
+          link: '#consensus',
         },
         question4: {
           title: this.$t('question4'),
+          link: '#witnet-as-a-blockchain',
         },
         question5: {
           title: this.$t('question5'),
+          link: '#different-from-others',
         },
         question6: {
           title: this.$t('question6'),
+          link: '#wit-token',
+        },
+        question7: {
+          title: this.$t('question7'),
+          link: '#run-a-node',
+        },
+        question8: {
+          title: this.$t('question8'),
+          link: '#defense-attacks',
+        },
+        question9: {
+          title: this.$t('question9'),
+          link: '#sheikah-radon',
+        },
+        question10: {
+          title: this.$t('question10'),
+          link: '#bridges',
         },
       }
     },
@@ -164,7 +187,6 @@ export default {
 
 <style lang="scss">
 @import '@/styles/colors.scss';
-
 .container {
   margin: 0 auto;
 }

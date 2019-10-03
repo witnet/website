@@ -21,7 +21,7 @@
               </a>
             </li>
             <li>
-              <a class="link" href="#solution">
+              <a class="link" href="#don">
                 The Solution: A Decentralized Oracle Network
               </a>
             </li>
@@ -38,12 +38,12 @@
           </a>
           <ul>
             <li>
-              <a class="link" href="#witnet">
+              <a class="link" href="#witnet-as-a-blockchain">
                 Witnet as a blockchain
               </a>
             </li>
             <li>
-              <a class="link" href="#retrieve-attest-deliver">
+              <a class="link" href="#rad">
                 Retrieve-Attest-Deliver
               </a>
             </li>
@@ -65,7 +65,12 @@
           </a>
           <ul>
             <li>
-              <a class="link" href="#defense">
+              <a class="link" href="#reputation-system">
+                Reputation System
+              </a>
+            </li>
+            <li>
+              <a class="link" href="#defense-attacks">
                 Defense over Attacks
               </a>
             </li>
@@ -154,9 +159,9 @@
 
       <p class="p9">
         Given that smart contracts need to be completely
-        <a class="link" href="#comentario">deterministic</a>, they do not
-        support input of data from non-deterministic sources such as APIs or
-        websites.
+        <a class="link" href="#comentario">deterministic</a> all nodes execute
+        the same code. Because of that they do not support input of data from
+        non-deterministic sources such as APIs or websites.
       </p>
       <p class="p10">
         As a result, smart contracts are mostly isolated from the rest of the
@@ -178,7 +183,7 @@
         to feed them information trustlessly.
       </p>
       <p class="p13">This is often called <i>"the oracle problem"</i>.</p>
-      <h3 id="solution" ref="element" class="subsection">
+      <h3 id="don" ref="element" class="Subsection3">
         The Solution: A Decentralized Oracle Network
       </h3>
       <p class="p14">
@@ -186,6 +191,13 @@
         smart contracts to any online data source. Sport results, stock prices,
         weather forecasts or even other blockchains can be easily queried
         (preferably through APIs).
+      </p>
+      <p class="p14">
+        The protocol describes a distributed network of peer nodes -which we
+        fondly call <i>witnesses</i>- who earn WIT tokens as a reward for
+        retrieving web data and reporting it directly to the smart contracts.
+        That is, a Decentralized Oracle Network (DON). <br />
+        More precisely, we outline a Decentralized Oracle Network as:
       </p>
       <ul class="p14">
         <li>
@@ -210,7 +222,7 @@
       <p class="p15">
         In other words, the Witnet Protocol is Decentralized Oracle Network, a
         peer-to-peer (P2P) network capable of processing
-        <a class="link" href="rad">Retrieve-Attest-Deliver</a> requests.
+        <a href="#rad">Retrieve-Attest-Deliver</a> requests.
       </p>
       <p class="p16">
         You can find a deeper explanation of the DON in this
@@ -236,12 +248,6 @@
         validating transactions in the network and bundling them into blocks
         that get appended to the blockchain periodically.
       </p>
-      <p class="p19">
-        The process by which witnesses retrieve, attest and deliver data in
-        behalf of the smart contracts is in some way similar to mining in other
-        blockchains. However, fulfilling these tasks and collecting the rewards
-        is not that expensive in terms of computation.
-      </p>
       <p class="p20">
         The protocol has been conceived to ensure utmost decentralization and
         fairnes, so each witness' weight in the network is not aligned to their
@@ -250,20 +256,17 @@
         performance in terms of honesty: their reputation.
       </p>
       <p class="p21">
-        TIP: Of course, the so-called miners are not actual human beings sitting
-        in front of a computer, fulfilling assignments coming from an Internet
-        overlord that commands them to use their web browser to navigate to a
         certain website and take a snapshot or copy some text that they must
         report. Indeed, the miners are just computers running a software
         (Witnet-rust) that automatically receive and execute a series of tasks
-        without the owner of the computer having to actively do anything else
         than installing it.
       </p>
       <h3 id="trust" ref="element" class="subsection">100% Truth, 0% Trust</h3>
       <p class="p22">
         Data retrieved, attested and delivered using the Witnet protocol is
-        reliable not because of authority but because it comes from anonymous
-        snodes who are incentivized to remain honest and to compete for rewards.
+        reliable not because of authority but because it comes from anonymous,
+        randomly ellected, and so non-coordinated, nodes who are incentivized to
+        remain honest and to compete for rewards.
       </p>
       <p class="p23">
         In addition, integrity of this data is guaranteed by a consensus
@@ -283,8 +286,8 @@
         its truthness—and the data that is eventually delivered the smart
         contracts.
       </p>
-      <h2 id="flow" ref="element" class="section">Flow of the protocol</h2>
-      <h3 id="witnet" ref="element" class="Subection5">
+      <h2 id="flow" ref="element" class="Section2">Flow of the protocol</h2>
+      <h3 id="witnet-as-a-blockchain" ref="element" class="Subection5">
         Witnet as a blockchain
       </h3>
       <p class="p27">
@@ -326,13 +329,13 @@
           Witnet protocol to a Smart-contract platform, for example Ethereum
         </li>
       </ul>
-      <p class="p32">
+      <p id="run-a-node" ref="element" class="p32">
         Because the Witnet blockchain is free, open, and neutral, [you can run
         your own node](https://witnet.github.io/documentation/try/run-a-node/)
         and mine blocks on the Witnet blockchain. Every node maintains the
         history of all the transactions on the blockchain.
       </p>
-      <h3 id="retrieve-attest-deliver" ref="element" class="Subection6">
+      <h3 id="rad" ref="element" class="Subection6">
         Retrieve-Attest-Deliver
       </h3>
       <p class="p32">
@@ -369,20 +372,16 @@
       </p>
       <p class="p36">
         Each witness sends the hash of the claim as a commitment, the actual
-        claim will be publish when the rest of the designated witnesses have
-        also made their own commitments.
-      </p>
       <p class="p37">
-        The flow, given three APIs and two nodes resolving the data reques, is
         symbolize in the next figure:
       </p>
       <h3 id="miners" ref="element" class="Subection7">Miners</h3>
       <p class="p38">
         As in any blockchain, the miners are nodes in charge of adding blocks to
         the blockchain. These nodes are selected by the Proof of Elegibility,
-        described <a class="link" href="#consensus">here</a>. Due to the
-        <a class="link" href="#consensus">Reputation system</a>, the barries to
-        entry are lower than in other Oracles since new nodes do not need to
+        described <a class="link" href="#reputation-formula">here</a>. Due to
+        the <a class="link" href="#consensus">Reputation system</a>, the barries
+        to entry are lower than in other Oracles since new nodes do not need to
         stake a significant monetary amount nor invest in expensive hardware to
         become eligible to resolve data requests or mining. This fact incentives
         new nodes to join the network and thus helps the decentralization.
@@ -418,6 +417,9 @@
         >.
       </p>
       <h2 id="consensus" ref="element" class="section">Consensus</h2>
+      <h3 id="reputation-system" ref="element" class="section">
+        Resputation System
+      </h3>
       <p class="p44">
         The consensus mechanism is based on a reputation system. Instead of a
         <b>Proof of Work</b> (PoW) or <b>Proof of Stake</b> (PoS), a node is
@@ -439,7 +441,7 @@
           >here</a
         >.
       </p>
-      <p class="p45">
+      <p id="reputation-formula" ref="formula" class="p45">
         As described in the
         <a class="link" href="https://witnet.io/static/witnet-whitepaper.pdf">
           Whitpaper
@@ -447,13 +449,16 @@
         ,a node <MathjaxExample :formula="formulas.m_i" /> in epoch
         <MathjaxExample :formula="formulas.t" />
         is ellected, so it will later publish the PoE and it will finally mine
-        the block (resolve a DR or whatever it needs to do) depending on the
-        reputation with respect to the rest of the nodes that have been
-        selected, if the following condition is satisfied:
+        the block (resolve a DR or whatever it needs to do) depending on
+        reputation with respect to the rest of the nodes. <br />
+        In particular, the eligibility is calculated based on this equation:
       </p>
       <div class="p-padding">
         <MathjaxExample :formula="formulas.reputation" />
       </div>
+      <p class="p46">
+        Where,
+      </p>
       <ul class="p47">
         <li>
           <MathjaxExample :formula="formulas.rand" />is a public randomness that
@@ -461,9 +466,15 @@
           <MathjaxExample :formula="formulas.t" />,
         </li>
         <li>
-          <MathjaxExample :formula="formulas.rand_mi" /> is a signature of
-          message <MathjaxExample :formula="formulas.t_rand" /> produced with
-          private key <MathjaxExample :formula="formulas.m_i" />,
+          <MathjaxExample :formula="formulas.rand_mi" /> is a
+          <a
+            class="link"
+            href="https://medium.com/witnet/cryptographic-sortition-in-blockchains-the-importance-of-vrfs-ad5c20a4e018"
+          >
+            VRF function
+          </a>
+          of the message <MathjaxExample :formula="formulas.t_rand" /> produced
+          with private key <MathjaxExample :formula="formulas.m_i" />,
         </li>
         <li>
           <MathjaxExample :formula="formulas.h" /> is a deterministic, uniform
@@ -495,7 +506,7 @@
           >sections 4 and 5 of the Whitepaper</a
         >.
       </p>
-      <h3 id="defense" ref="element" class="Subection9">
+      <h3 id="defense-attacks" ref="element" class="Subection9">
         Defense over Attacks
       </h3>
       <p class="p49">
@@ -509,14 +520,14 @@
       <ul class="p50">
         <li>
           <b>Sybil attacks</b>: The reputation system works very well against
-          this attack since the proposed network is designed to not depend in
-          any way on the number of participants in the network. In addition to
-          the above, the Collateral makes the attack much more expensive.
+          this attack since it requiers the sybils to work on the network to
+          gain sufficient influence. In addition to the above, the Collateral
+          makes the attack much more expensive.
         </li>
         <li>
-          <b>Eclipse attacks</b>: In order to avoid an attacker getting
-          monopolized all the connections of a node it has been implemented a
-          P2P bucketing system. More details can be found in the
+          <b>Eclipse attacks</b>: In order to avoid an attacker monopolizing all
+          the connections of a node a P2P bucketing system has been implemented.
+          More details can be found in the
           <a
             class="link"
             href="https://medium.com/witnet/the-p2p-bucketing-system-in-witnet-d893dce4b8c5"
@@ -583,13 +594,9 @@
         . Here you can find instructions for installing and testing Sheikah.
       </p>
       <p class="p55">
-        As explained in the
-        <a class="link" href="#introduction">Introduction</a>, the Witnet
-        protocol resolves the oracle problem since connects smart contracts to
-        the real world, but how does Witnet read the data collected by the
-        witnesses? Here is where the RAD Engine comes out.
-      </p>
-      <p class="p56">
+        We have seen how to create data requests using Sheikah, but how does
+        Witnet read the data collected by the witnesses? Here is where the RAD
+        Engine comes out. <br />
         The RAD Engine is the component in charge of processing data requests
         coming from Witnet clients. That is, coordinating retrieval,
         aggregation, tally and delivery of data strictly as specified in the
@@ -696,13 +703,9 @@
         As mentioned in
         <a class="link" href="#witnet as a blockchain">Witnet as blockchain</a>,
         Witnet runs its own Blockchain and has a native token called WIT. The
-        Wits are earned by the witnesses when resolving a data request, and are
-        used to encourages fair and trustworthy behaviour in the network.
-      </p>
       <p class="p67">
         Some information about the distribution of the WITs is the following:
       </p>
-      <ul class="p68">
         <li>
           No more than 2,500,000,000 WITs will ever exist.
         </li>
@@ -713,15 +716,17 @@
         <li>
           30% will be minted in the early stage block (first block in the
           chain). These will be assigned as follows:
-        </li>
-        <li>
-          20% to Witnet Foundation for development, research and engineering
-          grants, community building and marketing actions; as well as rewarding
-          previous Stampery investors.
-        </li>
-        <li>
-          10% to Republic investors (max. $1.07M) and a separate private sale
-          limited to accredited investors (max. $28.93M).
+          <ul class="p68">
+            <li>
+              20% to Witnet Foundation for development, research and engineering
+              grants, community building and marketing actions; as well as
+              rewarding previous Stampery investors.
+            </li>
+            <li>
+              10% to Republic investors (max. $1.07M) and a separate private
+              sale limited to accredited investors (max. $28.93M).
+            </li>
+          </ul>
         </li>
       </ul>
       <p class="p69">
@@ -734,14 +739,14 @@
         issuance mechanism will never exceed 2,500,000,000 minus the 30% that
         has already been preassigned. This is represented in the next figure.
       </p>
-      <h2 id="sum-up" ref="element" class="section">To sum up</h2>
-      <h3 class="Subection13">
+      <h2 id="sum-up" ref="element" class="Section6">To sum up</h2>
+      <h3 id="development-status" ref="element" class="Subection13">
         The protocol at the moment (Current development status)
       </h3>
       <p class="p70">
         UNDER CONTRSTUCTION
       </p>
-      <h3 class="subsection">
+      <h3 id="different-from-others" ref="different" class="Subsection14">
         Witnet different from other oracle projects
       </h3>
       <p class="p71">
@@ -798,13 +803,13 @@
       <p class="p76">
         A big difference with respect to other Oracles is that Witnet Data
         Request are fully parameterizable through the
-        <a class="link" href="#radon">RADON</a> language. Not only the number of
+        <a href="#sheikah-radon">RADON</a> language. Not only the number of
         nodes can be specified but also how they aggregate Data from different
         sources, filter and achive consensus among them. More than that Witnet
         allows smart contracts to define their own security guarantees by
         specifiying the collateral that needs to be staked by the nodes to
         participate in the report of the Data Request. This prevents many
-        <a class="link" href="#defense attacks">attack vectors</a>.
+        <a href="#defense-attacks">attack vectors</a>.
       </p>
       <p class="p77">
         In summary, our proposal has a "fairness principle" hard-written into
@@ -835,7 +840,6 @@
 </template>
 <script>
 import MathjaxExample from '~/components/MathjaxExample.vue'
-
 export default {
   components: {
     MathjaxExample,
@@ -920,13 +924,11 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/styles/colors.scss';
-
 .label {
   font-size: 26px;
   color: $grey-2;
   display: none;
 }
-
 .content-menu {
   font-size: 14px;
   position: fixed;
