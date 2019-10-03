@@ -4,7 +4,11 @@
     <div
       id="content-menu"
       class="content-menu"
-      :class="{ fixed: fixTop, visible: isMenuVisible }"
+      :class="{
+        fixed: fixTop,
+        visible: isMenuVisible,
+        adjustToFooter: fixBottom,
+      }"
     >
       <ul>
         <li>
@@ -43,7 +47,7 @@
               </a>
             </li>
             <li>
-              <a class="link" href="#rad">
+              <a class="link" href="#retrieve-attest-deliver">
                 Retrieve-Attest-Deliver
               </a>
             </li>
@@ -107,6 +111,18 @@
           <a class="link-main" href="#sum-up">
             To sum up
           </a>
+          <ul>
+            <li>
+              <a class="link" href="#development-status">
+                The protocol at the moment
+              </a>
+            </li>
+            <li>
+              <a class="link" href="#different-from-others">
+                Witnet different from other oracle proyects
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -402,6 +418,7 @@
       </p>
       <p class="p36">
         Each witness sends the hash of the claim as a commitment, the actual
+      </p>
       <p class="p37">
         symbolize in the next figure:
       </p>
@@ -422,7 +439,7 @@
         new nodes to join the network and thus helps the decentralization.
       </p>
       <a class="link" href="#bridges">
-        <h4 id="bridges" ref="element" class="Subection8">Bridges</h4>
+        <h4 id="bridges" ref="element" class="subection">Bridges</h4>
       </a>
       <p class="p39">
         The bridge nodes are the ones in charge to interact between Witnet and
@@ -459,10 +476,10 @@
       <a class="link-main" href="#consensus">
         <h3 id="consensus" ref="element" class="section">Consensus</h3>
       </a>
-      <a class="reputation-system" href="#consensus">
-      <h4 id="reputation-system" ref="element" class="section">
-        Resputation System
-      </h4>
+      <a class="link" href="#reputation-system">
+        <h4 id="reputation-system" ref="element" class="subsection">
+          Resputation System
+        </h4>
       </a>
       <p class="p44">
         The consensus mechanism is based on a reputation system. Instead of a
@@ -551,7 +568,7 @@
         >.
       </p>
       <a class="link" href="#defense-attacks">
-        <h4 id="defense-attacks" ref="element" class="Subection9">
+        <h4 id="defense-attacks" ref="element" class="subection">
           Defense over Attacks
         </h4>
       </a>
@@ -759,9 +776,11 @@
         As mentioned in
         <a class="link" href="#witnet as a blockchain">Witnet as blockchain</a>,
         Witnet runs its own Blockchain and has a native token called WIT. The
+      </p>
       <p class="p67">
         Some information about the distribution of the WITs is the following:
       </p>
+      <ul>
         <li>
           No more than 2,500,000,000 WITs will ever exist.
         </li>
@@ -798,15 +817,15 @@
       <a class="link-main" href="#sum-up">
         <h3 id="sum-up" ref="element" class="section">To sum up</h3>
       </a>
-      <a class="link-main" href="#development-status">
-        <h4 id="development-status" ref="element" class="Subection13">
+      <a class="link" href="#development-status">
+        <h4 id="development-status" ref="element" class="subsection">
           The protocol at the moment (Current development status)
         </h4>
       </a>
       <p class="p70">
         UNDER CONTRSTUCTION
       </p>
-      <a class="link-main" href="#different-from-others">
+      <a class="link" href="#different-from-others">
         <h4 id="different-from-others" class="Subsection14">
           Witnet different from other oracle projects
         </h4>
@@ -828,7 +847,7 @@
           them,
         </li>
         <li>
-          trivially predictable and thus easily targetable by DoS attacks.
+          trivially predictable and thus easily targetable by DoS attacks,
         </li>
         <li>
           in the case of needing human intervention, slow to resolve.
@@ -865,13 +884,13 @@
       <p class="p76">
         A big difference with respect to other Oracles is that Witnet Data
         Request are fully parameterizable through the
-        <a href="#sheikah-radon">RADON</a> language. Not only the number of
-        nodes can be specified but also how they aggregate Data from different
-        sources, filter and achive consensus among them. More than that Witnet
-        allows smart contracts to define their own security guarantees by
-        specifiying the collateral that needs to be staked by the nodes to
-        participate in the report of the Data Request. This prevents many
-        <a href="#defense-attacks">attack vectors</a>.
+        <a class="link" href="#sheikah-radon">RADON</a> language. Not only the
+        number of nodes can be specified but also how they aggregate Data from
+        different sources, filter and achive consensus among them. More than
+        that Witnet allows smart contracts to define their own security
+        guarantees by specifiying the collateral that needs to be staked by the
+        nodes to participate in the report of the Data Request. This prevents
+        many <a class="link" href="#defense-attacks">attack vectors</a>.
       </p>
       <p class="p77">
         In summary, our proposal has a "fairness principle" hard-written into
@@ -910,6 +929,7 @@ export default {
     return {
       lastScrollPosition: 0,
       fixTop: false,
+      fixBottom: false,
       formulas: {
         m_i: '$M_i$',
         t: '$t$',
@@ -952,6 +972,7 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.onScroll)
     window.addEventListener('scroll', this.changeFixTop)
+    window.addEventListener('scroll', this.changeFixBottom)
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.onScroll)
@@ -962,6 +983,15 @@ export default {
         this.fixTop = true
       } else {
         this.fixTop = false
+      }
+    },
+    changeFixBottom() {
+      console.log(this.lastScrollPosition)
+      if (this.lastScrollPosition > 11500) {
+        this.fixTop = false
+        this.fixBottom = true
+      } else {
+        this.fixBottom = false
       }
     },
     toggleMenu() {
@@ -1005,8 +1035,6 @@ export default {
   position: fixed;
   left: 4vw;
   width: 20vw;
-  top: 15vh;
-  z-index: -10;
   & .visible {
     display: block;
   }
@@ -1018,6 +1046,7 @@ export default {
       font-weight: 550;
       list-style: none;
       text-decoration: none;
+      cursor: pointer;
       &:hover {
         text-decoration: underline;
       }
@@ -1027,6 +1056,7 @@ export default {
     color: $grey-2;
     list-style: none;
     text-decoration: none;
+    cursor: pointer;
     &:hover {
       text-decoration: underline;
     }
@@ -1037,6 +1067,9 @@ export default {
 }
 .fixed {
   top: 1vh;
+}
+.adjustToFooter {
+  bottom: 55vh;
 }
 .content {
   color: rgb(61, 61, 61);
