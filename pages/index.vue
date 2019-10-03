@@ -6,10 +6,9 @@
         <p class="description">
           {{ this.$t('hero_description') }}
         </p>
-        <a href="#next" class="seconday-purple learn-more-btn">
+        <nuxt-link to="/about" class="seconday-purple learn-more-btn">
           {{ this.$t('learn_more_btn') }}
-          <img src="~/assets/arrow.svg" alt="arrow" />
-        </a>
+        </nuxt-link>
       </div>
       <img
         src="~/assets/APIs.svg"
@@ -35,10 +34,10 @@
         click-mode="push"
       />
     </header>
-    <section id="next" class="section1">
-      <!-- <h3 class="title-section">
+    <!-- <section id="next" class="section1">
+      <h3 class="title-section">
         {{ this.$t('title_section_1') }}
-      </h3> -->
+      </h3>
       <div class="items-container">
         <DescriptiveImage
           v-for="image in descriptiveImages"
@@ -50,7 +49,7 @@
       <nuxt-link to="/about" class="primary">
         {{ this.$t('know_more_btn') }}
       </nuxt-link>
-    </section>
+    </section> -->
     <section id="participate" class="section2">
       <h3>{{ this.$t('title_section_2') }}</h3>
       <div class="items-container">
@@ -78,7 +77,7 @@
 </template>
 
 <script>
-import DescriptiveImage from '~/components/DescriptiveImage.vue'
+// import DescriptiveImage from '~/components/DescriptiveImage.vue'
 import Card from '~/components/Card.vue'
 import Link from '~/components/Link.vue'
 
@@ -97,7 +96,7 @@ export default {
     }
   },
   components: {
-    DescriptiveImage,
+    // DescriptiveImage,
     Card,
     Link,
   },
@@ -254,12 +253,12 @@ header {
   // }
 }
 .section2 {
+  background-color: rgb(244, 244, 244);
   color: rgb(61, 61, 61);
   text-align: center;
   padding: 8vh 0;
 }
 .section3 {
-  background-color: rgb(244, 244, 244);
   text-align: center;
   padding: 8vh 0;
 }
