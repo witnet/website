@@ -252,7 +252,10 @@
       <p>
         In other words, the Witnet Protocol is Decentralized Oracle Network, a
         peer-to-peer (P2P) network capable of processing
-        <a href="#rad" class="link">Retrieve-Attest-Deliver</a> requests.
+        <a href="#retrieve-attest-deliver" class="link"
+          >Retrieve-Attest-Deliver</a
+        >
+        requests.
       </p>
       <p>
         You can find a deeper explanation of the DON in this
@@ -304,7 +307,7 @@
       <p>
         Data retrieved, attested and delivered using the Witnet protocol is
         reliable not because of authority but because it comes from anonymous,
-        randomly ellected nodes, and so non-coordinated, who are incentivized to
+        randomly elected nodes, and so non-coordinated, who are incentivized to
         remain honest and to compete for rewards.
       </p>
       <p>
@@ -335,8 +338,9 @@
       </p>
       <ul>
         <li>
-          a computer network made up of nodes (computers running a specific
-          <a class="link" href="#rad">Retrive, Attest and Deliver</a>
+          <a class="link" href="#retrieve-attest-deliver"
+            >Retrive, Attest and Deliver</a
+          >
           data from a data request
         </li>
         <li>
@@ -352,8 +356,10 @@
         <img class="pic d" :src="images.pic4" alt="Witnet-Ethereum flow" />
       </div>
       <p id="run-a-node">
-        Because the Witnet blockchain is free, open, and neutral, [you can run
-        your own node](https://witnet.github.io/documentation/try/run-a-node/)
+        Because the Witnet blockchain is free, open, and neutral,
+        <a class="link" href="https://docs.witnet.io/try/run-a-node/"
+          >you can run your own node</a
+        >
         and mine blocks on the Witnet blockchain. Every node maintains the
         history of all the transactions on the blockchain.
       </p>
@@ -414,13 +420,13 @@
       <p>
         <a
           class="link"
-          href="https://docs.witnet.io/protocol/data-requests/radon/encoding/"
+          href="https://docs.witnet.io/protocol/data-requests/overview/"
           >Radon</a
         >
         is a declarative language in charge of coordinating the retrieval,
         aggregation, tally and delivery of data strictly as specified in the
         requests. More details about the data requests can be found
-        <a class="link" href="#radon">here</a>.
+        <a class="link" href="#sheikah-radon">here</a>.
       </p>
       <p>
         Each witness sends the hash of the claim as a commitment, the actual
@@ -451,8 +457,8 @@
         <h4 id="bridges" ref="element" class="subection">Bridges</h4>
       </a>
       <p>
-        The bridge nodes are the ones in charge to interact between Witnet and
-        an external public Blockchain.
+        The bridge nodes are the ones in charge of interacting between Witnet
+        and an external public Blockchain.
       </p>
       <p>
         So far the Witnet Protocol is been developed to interact with smart
@@ -493,7 +499,7 @@
       <p>
         The consensus mechanism is based on a reputation system. Instead of a
         <b>Proof of Work</b> (PoW) or <b>Proof of Stake</b> (PoS), a node is
-        probabilistically chosen depending on the *good reputation* it has
+        probabilistically chosen depending on the <i>good reputation</i> it has
         achieved resolving Data Requests. This way any node has a chance to earn
         WITs, and it does not depend on how much stake it has and neither on its
         hardware, as it happens for PoW and PoS. Witnet features a sort of
@@ -516,9 +522,9 @@
         <a class="link" href="https://witnet.io/static/witnet-whitepaper.pdf">
           Whitpaper
         </a>
-        ,a node <MathjaxExample :formula="formulas.m_i" /> in epoch
+        a node <MathjaxExample :formula="formulas.m_i" /> in epoch
         <MathjaxExample :formula="formulas.t" />
-        is ellected, so it will later publish the PoE and it will finally mine
+        is elected, so it will later publish the PoE and it will finally mine
         the block (resolve a DR or whatever it needs to do) depending on
         reputation with respect to the rest of the nodes. <br />
         In particular, the eligibility is calculated based on this equation:
@@ -591,17 +597,17 @@
         <li>
           <b>Sybil attacks</b>: The reputation system works very well against
           this attack since it requiers the sybils to work on the network to
-          gain sufficient influence. In addition to the above, the Collateral
-          makes the attack much more expensive.
+          gain sufficient influence. In addition, the Collateral makes the
+          attack much more expensive.
         </li>
         <li>
           <b>Eclipse attacks</b>: In order to avoid an attacker monopolizing all
           the connections of a node, a P2P bucketing system has been
-          implemented. More details can be found in the
+          implemented. More details can be found in this
           <a
             class="link"
             href="https://medium.com/witnet/the-p2p-bucketing-system-in-witnet-d893dce4b8c5"
-            >post in Medium</a
+            >post of Medium</a
           >.
         </li>
         <li>
@@ -665,12 +671,12 @@
         <a class="link" href="https://github.com/witnet/sheikah">
           github repository
         </a>
-        . Here you can find instructions for installing and testing Sheikah.
+        . Here you can find instructions for installing and testing it.
       </p>
       <p>
-        We have seen how to create data requests using Sheikah, but how does
-        Witnet read the data collected by the witnesses? Here is where the RAD
-        Engine comes out. <br />
+        We have seen that a user can create data requests using Sheikah, but how
+        does Witnet read the data collected by the witnesses? Here is where the
+        RAD Engine comes out. <br />
         The RAD Engine is the component in charge of processing data requests
         coming from Witnet clients. That is, coordinating retrieval,
         aggregation, tally and delivery of data strictly as specified in the
@@ -680,7 +686,7 @@
         More information about RADON and data requests can be found
         <a
           class="link"
-          href="https://github.com/witnet/documentation/tree/master/docs/protocol/data-requests"
+          href="https://docs.witnet.io/protocol/data-requests/overview/"
           >here</a
         >.
       </p>
@@ -697,7 +703,7 @@
         You can check what a Witnet data request looks like in this
         <a
           class="link"
-          href="https://witnet.github.io/documentation/protocol/data-requests/examples/"
+          href="https://docs.witnet.io/protocol/data-requests/examples/"
           >example</a
         >.
       </p>
@@ -739,9 +745,12 @@
         </li>
       </ul>
       <p>
-        The details about the choice of Rust can be found in the
-        <a class="link" href="https://docs.witnet.io/get-started/why-rust/">
-          Documentation
+        The details about the choice of Rust can be found in this
+        <a
+          class="link"
+          href="https://medium.com/witnet/8-reasons-why-witnet-will-make-the-most-of-the-rust-programming-language-c1cfdfca8ced"
+        >
+          Post
         </a>
         .
       </p>
@@ -754,7 +763,7 @@
       <p>
         There are intstallation guides to run a node for several operator
         systems. You can find them
-        <a class="link" href="https://docs.witnet.io/">here</a>.
+        <a class="link" href="https://docs.witnet.io/try/run-a-node/">here</a>.
       </p>
       <a class="link" href="#smart-contracts">
         <h4 id="smart-contracts" ref="element" class="subsection">
@@ -765,14 +774,14 @@
         As Witnet is a decentralize oracle for smart contracts, the bridge nodes
         need to be able to understand and interact with each smart contract
         lenguage is needed. As explained in the
-        <a class="link" href="#bridges">Bridge section</a>, for now it has only
+        <a class="link" href="#bridges">bridges section</a>, for now it has only
         been implemented a bridge with Ethereum wherefore it has been created a
         Witenet-Bridge contract in Solidity. <br />
         A guide for writing a Solidity contract that deploys a Witnet request
         can be found
         <a
           class="link"
-          href="https://witnet.github.io/documentation/try/use-from-ethereum/"
+          href="https://docs.witnet.io/tutorials/bitcoin-price-feed/contract/"
           >here</a
         >.
       </p>
@@ -781,10 +790,11 @@
       </a>
       <p>
         As mentioned in
-        <a class="link" href="#witnet as a blockchain">Witnet as blockchain</a>,
+        <a class="link" href="#witnet-as-a-blockchain">Witnet as blockchain</a>,
         Witnet runs its own Blockchain and has a native token called WIT. The
-        Wits are earned by the witnesses when resolving a data request, and are
-        used to encourages fair and trustworthy behaviour in the network.
+        Wits are earned by the witnesses when resolving a data request and
+        mining blocks, and are used to encourage fair and trustworthy behaviour
+        in the network.
       </p>
       <p>
         Some information about the WIT's distribution is the following:
@@ -879,10 +889,16 @@
       </ul>
       <p>
         For more information about the Witnet Protocol development areas please
-        take a look on the Development section. Contributions are more than
-        welcome, from people who contribute to Witnet-Rust or Sheikah to those
-        who want to connect their Ethereum smart contracts to external APIs!
-        <br />Just clik here to know how to participate &#128540;
+        take a look on the
+        <a class="link" href="#development">Development section</a>.
+      </p>
+      <p>
+        Contributions are more than welcome, from people who contribute to
+        Witnet-Rust or Sheikah to those who want to connect their Ethereum smart
+        contracts to external APIs! <br />
+        Just clik
+        <nuxt-link class="link" to="/#participate">here</nuxt-link>
+        to know how to participate &#128540;
       </p>
       <a class="link" href="#different-from-others">
         <h4 id="different-from-others" class="Subsection14">
@@ -914,16 +930,20 @@
       </ul>
       <p>
         Witnet approach is instead based on the most generalized form of
-        oracles.They perform "retrieve-attest-deliver" tasks without distinction
-        between the sources they query. In Witnet, the oracle nodes in the
-        network are called "witnesses", they are automated nodes that you can
-        hire to retrieve information from the Internet and deliver it to you or
-        your smart contracts. Although you can decide how many witnesses to
-        employ, the most important fact is that you can't choose who they are.
-        Tasks are randomly assigned to witnesses in proportion to their
-        reputation. This way, we get rid of any conflict of interests, given
-        that oracle nodes can't even predict which tasks will be assigned to
-        them.
+        oracles.They perform
+        <a class="link" href="#retrieve-attest-deliver">
+          retrieve-attest-deliver
+        </a>
+        tasks without distinction between the sources they query. In Witnet, the
+        oracle nodes in the network are called "witnesses", they are automated
+        nodes that you can hire to retrieve information from the Internet and
+        deliver it to you or your smart contracts. Although you can decide how
+        many witnesses to employ, the most important fact is that you can't
+        choose who they are. Tasks are randomly assigned to witnesses in
+        proportion to their
+        <a class="link" href="#consensus">reputation</a>. This way, we get rid
+        of any conflict of interests, given that oracle nodes can't even predict
+        which tasks will be assigned to them.
       </p>
       <p>
         The information for any Data Request is collected from any public API
@@ -962,9 +982,7 @@
       <p>
         The Witnet community is open to everyone. Even if you are not a
         developer or node operator, there are
-        <a
-          class="link"
-          href="https://witnet.github.io/documentation/community/contributing/"
+        <a class="link" href="https://docs.witnet.io/community/contributing/"
           >many things you can do</a
         >
         to spread the word!
