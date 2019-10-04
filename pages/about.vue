@@ -283,7 +283,7 @@
       </p>
       <p>
         The protocol has been conceived to ensure utmost decentralization and
-        fairnes, so each witness' weight in the network is not aligned to their
+        fairness, so each witness' weight in the network is not aligned to their
         computing power. Instead, the probability for every witness to be
         assigned tasks or mine new blocks is directly proportional to their past
         performance in terms of honesty: their reputation.
@@ -307,7 +307,7 @@
       <p>
         Data retrieved, attested and delivered using the Witnet protocol is
         reliable not because of authority but because it comes from anonymous,
-        randomly elected nodes, and so non-coordinated, who are incentivized to
+        randomly selected nodes, and so non-coordinated, who are incentivized to
         remain honest and to compete for rewards.
       </p>
       <p>
@@ -334,12 +334,12 @@
       <p>
         The Witnet protocol runs a single purpose blockchain with a token called
         WIT that relies on a P2P network. The nodes of the network are called
-        <i>witnesses</i>, and are incentivice by the WIT token to:
+        <i>witnesses</i>, and are incentivised by the WIT token to:
       </p>
       <ul>
         <li>
           <a class="link" href="#retrieve-attest-deliver"
-            >Retrive, Attest and Deliver</a
+            >Retrieve, Attest and Deliver</a
           >
           data from a data request
         </li>
@@ -373,9 +373,9 @@
       </div>
       <p>
         The Witnet Protocol runs on its own blockchain with a native token
-        called WIT. Having it’s own blockchain guarantees that the fate of
-        Witnet is not tied to any other Blockchain, making Witnet much more
-        independent and smart contract platform agnostic.
+        called WIT. Having its own blockchain guarantees that the fate of Witnet
+        is not tied to any other Blockchain, making Witnet much more independent
+        and smart contract platform agnostic.
       </p>
       <p>
         Other projects rely heavily on ERC-20 tokens in the Ethereum blockchain
@@ -398,7 +398,7 @@
       </a>
       <p>
         Once a Data Request is published, some nodes are selected (by Reputation
-        system proof of elegibility, see the
+        system proof of eligibility, see the
         <a class="link" href="#consensus">Consensus</a>
         section for more details), to retrieve the data from the APIs specified
         in the data request, attest the result and deliver it. Meaning by this,
@@ -445,13 +445,14 @@
       </a>
       <p>
         As in any blockchain, the miners are nodes in charge of adding blocks to
-        the blockchain. These nodes are selected by the Proof of Elegibility,
+        the blockchain. These nodes are selected by the Proof of Eligibility,
         described <a class="link" href="#reputation-formula">here</a>. Due to
-        the <a class="link" href="#consensus">Reputation system</a>, the barries
-        to entry are lower than in other Oracles since new nodes do not need to
-        stake a significant monetary amount nor invest in expensive hardware to
-        become eligible to resolve data requests or mining. This fact incentives
-        new nodes to join the network and thus helps the decentralization.
+        the <a class="link" href="#consensus">Reputation system</a>, the
+        barriers to entry are lower than in other Oracles since new nodes do not
+        need to stake a significant monetary amount nor invest in expensive
+        hardware to become eligible to resolve data requests or mining. This
+        fact incentives new nodes to join the network and thus helps the
+        decentralization.
       </p>
       <a class="link" href="#bridges">
         <h4 id="bridges" ref="element" class="subection">Bridges</h4>
@@ -520,7 +521,7 @@
       <p id="reputation-formula">
         As described in the
         <a class="link" href="https://witnet.io/static/witnet-whitepaper.pdf">
-          Whitpaper
+          Whitepaper
         </a>
         a node <MathjaxExample :formula="formulas.m_i" /> in epoch
         <MathjaxExample :formula="formulas.t" />
@@ -596,7 +597,7 @@
       <ul>
         <li>
           <b>Sybil attacks</b>: The reputation system works very well against
-          this attack since it requiers the sybils to work on the network to
+          this attack since it requires the sybils to work on the network to
           gain sufficient influence. In addition, the Collateral makes the
           attack much more expensive.
         </li>
@@ -620,7 +621,7 @@
           >.
         </li>
         <li>
-          <b>Majority attacks</b>: The implementation of Witnet garantees that
+          <b>Majority attacks</b>: The implementation of Witnet guarantees that
           in order to perform a Majority attack the attacker would need to hold
           51% of the total reputation.
         </li>
@@ -633,9 +634,9 @@
         <h3 id="development" ref="element" class="section">Development</h3>
       </a>
       <p>
-        So far we have seen a bit of the main ideas of Witnet's protocol and
-        it's architecture, but how is witnet really built?<br />
-        The Witnet Ecosystem consists of serveral parts and so it has different
+        So far we have seen a bit of the main ideas of Witnet's protocol and its
+        architecture, but how is witnet really built?<br />
+        The Witnet Ecosystem consists of several parts and so it has different
         development areas. Some of them are:
       </p>
       <ul>
@@ -646,7 +647,7 @@
           Rust, for nodes in the Network
         </li>
         <li>
-          Smart contract lenguages
+          Smart contract languages
         </li>
       </ul>
       <p>
@@ -661,7 +662,7 @@
         create them? First we need to talk about Sheikah. Sheikah is a Witnet
         compatible desktop wallet, data requests and smart contracts development
         environment. It can be thought as a friendly user wallet in which you
-        can easely create data requests (DR). A user can directly go to Sheikah
+        can easily create data requests (DR). A user can directly go to Sheikah
         and customize a template of a DR or just create a new one, as the
         Sheikah desktop app is intended to be used as an IDE for visually and
         safely composing and testing Witnet data requests.
@@ -693,9 +694,9 @@
       <p>
         Summarizing, Witnet Data Request are fully parameterizable through the
         RADON language. Not only the number of nodes can be specified but also
-        how they aggregate Data from different sources, filter and achive
+        how they aggregate Data from different sources, filter and achieve
         consensus among them. More than that Witnet allows smart contracts to
-        define their own security guarantees by specifiying the collateral that
+        define their own security guarantees by specifying the collateral that
         needs to be staked by the nodes to participate in the report of the Data
         Request.
       </p>
@@ -711,7 +712,7 @@
         <h4 id="rust" ref="element" class="subsection">Rust</h4>
       </a>
       <p>
-        A point of discussion was which lenguage we should use to build the
+        A point of discussion was which language we should use to build the
         nodes. Having its own underlying blockchain, Witnet requires code that
         is as fast as C or C++ but memory safe to prevent security
         vulnerabilities. At the same time, we wanted to produce concurrent code
@@ -755,13 +756,13 @@
         .
       </p>
       <p>
-        Once Rust was clear, we ceated Witnet-rust, an open-source
+        Once Rust was clear, we created Witnet-rust, an open-source
         implementation of the Witnet protocol written in Rust. It is a native
         app providing "full node" functionality of the Witnet Decentralized
         Oracle Network protocol.
       </p>
       <p>
-        There are intstallation guides to run a node for several operator
+        There are installation guides to run a node for several operator
         systems. You can find them
         <a class="link" href="https://docs.witnet.io/try/run-a-node/">here</a>.
       </p>
@@ -771,9 +772,9 @@
         </h4>
       </a>
       <p>
-        As Witnet is a decentralize oracle for smart contracts, the bridge nodes
-        need to be able to understand and interact with each smart contract
-        lenguage is needed. As explained in the
+        As Witnet is a decentralized oracle for smart contracts, the bridge
+        nodes need to be able to understand and interact with each smart
+        contract language is needed. As explained in the
         <a class="link" href="#bridges">bridges section</a>, for now it has only
         been implemented a bridge with Ethereum wherefore it has been created a
         Witenet-Bridge contract in Solidity. <br />
@@ -896,7 +897,7 @@
         Contributions are more than welcome, from people who contribute to
         Witnet-Rust or Sheikah to those who want to connect their Ethereum smart
         contracts to external APIs! <br />
-        Just clik
+        Just click
         <nuxt-link class="link" to="/#participate">here</nuxt-link>
         to know how to participate &#128540;
       </p>
@@ -965,9 +966,9 @@
         Request are fully parameterizable through the
         <a class="link" href="#sheikah-radon">RADON</a> language. Not only the
         number of nodes can be specified but also how they aggregate Data from
-        different sources, filter and achive consensus among them. More than
+        different sources, filter and achieve consensus among them. More than
         that Witnet allows smart contracts to define their own security
-        guarantees by specifiying the collateral that needs to be staked by the
+        guarantees by specifying the collateral that needs to be staked by the
         nodes to participate in the report of the Data Request. This prevents
         many <a class="link" href="#defense-attacks">attack vectors</a>.
       </p>
