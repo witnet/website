@@ -834,7 +834,7 @@
         </h4>
       </a>
       <p>
-        The Witnet ecosystem is an open source enviorment that is constantly
+        The Witnet ecosystem is an open source environment that is constantly
         under development. <br />
         In witnet-rust the status is the following:
       </p>
