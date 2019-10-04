@@ -133,41 +133,41 @@
       </a>
       <p>
         Witnet is a decentralized oracle network (DON) that connects smart
-        contracts to the outer world. Generally speaking, it allows any piece of
-        software to retrieve the contents published at any web address at a
-        certain point in time, with complete and verifiable proof of its
-        integrity and without blindly trusting any third party.
+        contracts to the real, off-chain world. Broadly speaking, it allows any
+        piece of software to retrieve information published at any web address
+        at any point in time, with complete and verifiable proof of the
+        information's integrity, without blindly trusting any third party.
       </p>
       <p>
-        In other words, the Witnet protocol allows a network of computers to act
-        as a "decentralized oracle" that retrieves, attests and delivers
-        information to smart contracts without having to place trust in a single
-        entity.
+        The Witnet protocol achieves this by permitting a network of computers
+        to act as a "decentralized oracle" that retrieves, attests and delivers
+        information to smart contracts, with no single point of trust.
       </p>
-      <p>Wait, what? Ok, lets go one step at a time.</p>
+      <p>Wait, what? Let's break it down.</p>
       <a class="link" href="#not-what-you-where-told">
         <h4 id="not-what-you-where-told" ref="element" class="subsection">
           Smart Contracts Are Not What You Were Told
         </h4>
       </a>
       <p>
-        Over the last years, blockchain technology has promised to revolutionize
-        business by allowing creation of "smart contracts" that, unlike paper
-        contracts, are impossible to breach.
+        In recent years, blockchain technology has promised to revolutionize
+        business through "smart contracts" that, unlike paper contracts, are
+        impossible to breach.
       </p>
       <p>
-        Actually, those smart contracts are nothing more than small programs
-        that can be run in a trustless manner. That is: once they are created,
-        no one can stop them from doing exactly what they were created for. They
-        just obey their own source code, and censorship is just impossible.
+        These smart contracts are simple programs, coded to automatically
+        control the transfer of assets between two or more parties, and can be
+        run in a trustless manner. Once they are deployed, no one can stop them
+        from doing exactly what they were programmed for. They obey their own
+        source code, and censorship is just impossible.
       </p>
       <p>
         This is a really powerful idea. If you can write a smart contract that:
       </p>
       <p class="p7">
         1. implements the logic of an agreement, and <br />
-        2. can execute the clauses of the contract on its own (like paying Alice
-        or Bob depending on the outcome of some event),
+        2. automatically executes the clauses of the contract (e.g. transfer an
+        asset from Alice to Bob depending on the outcome of an event);
       </p>
       <p>
         then you have a contract that is capable of enforcing itself and leaves
@@ -187,30 +187,30 @@
       </div>
       <p>
         Given that smart contracts need to be completely deterministic
-        <a class="link" href="#comentario"><sup>1</sup></a> and so all nodes
+        <a class="link" href="#comentario"><sup>1</sup></a> to ensure all nodes
         execute the same code, they do not support input of data from
         non-deterministic sources such as APIs or websites.
       </p>
       <p>
         As a result, smart contracts are mostly isolated from the rest of the
-        Internet, which dramatically reduces their transformative potential. At
-        the end of the day, the output of a program does not depend solely on
-        its source code, but also on the input data it operates upon.
+        Internet, which dramatically reduces their transformative potential.
+        After all, the output of a program does not depend solely on its source
+        code, but also on the input data it operates upon.
       </p>
       <p>
         Of course, as the creator of a smart contract, you can create a method
-        that allows you and only you to act as an "oracle" by introducing
-        information from the outside at will. But you would be completely
-        breaking the trustless nature of a smart contract. If trust is put in a
-        single entity, there you have a single point of failure that can easily
-        be hacked or corrupted.
+        that allows specific parties to act as an "oracle" by introducing
+        information from the outside when necessary. However, this undermines
+        breaking the trustless nature of a smart contract. If trust is put in
+        any single entity, then you have a single point of failure that can be
+        attacked or corrupted.
       </p>
       <p>
-        Smart contracts connected to the real world will not be completely
-        trustless and will not release their full potential until we have ways
-        to feed them information trustlessly.
+        Smart contracts connected to the real world will never be completely
+        trustless, nor release their full potential until we have ways to feed
+        them information in a trustless way.
       </p>
-      <p>This is often called <i>"the oracle problem"</i>.</p>
+      <p>This is often referred to <i>"the oracle problem"</i>.</p>
       <a class="link" href="#solution">
         <h4 id="don" ref="element" class="subsection">
           The Solution: A Decentralized Oracle Network
@@ -219,14 +219,13 @@
       <p>
         The Witnet protocol aims to create an overlay network that connects
         smart contracts to any online data source. Sport results, stock prices,
-        weather forecasts or even other blockchains can be easily queried
-        (preferably through APIs).
+        weather forecasts and other blockchains can be queried through APIs.
       </p>
       <p>
-        The protocol describes a distributed network of peer nodes -which we
-        fondly call <i>witnesses</i>- who earn WIT tokens as a reward for
-        retrieving web data and reporting it directly to the smart contracts.
-        That is, a Decentralized Oracle Network (DON). <br />
+        The protocol sees a distributed network of peer nodes -colloquially
+        referred to as <i>witnesses</i>- who earn WIT tokens as a reward for
+        retrieving web information and securely delivering it to the smart
+        contracts. That is, a Decentralized Oracle Network (DON). <br />
         More precisely, we outline a Decentralized Oracle Network as:
       </p>
       <ul>
@@ -341,7 +340,7 @@
           <a class="link" href="#retrieve-attest-deliver"
             >Retrieve, Attest and Deliver</a
           >
-          data from a data request
+          data from any open API
         </li>
         <li>
           <a class="link" href="#miners">Mine</a> a block to be added in the
@@ -349,7 +348,7 @@
         </li>
         <li>
           Be a <a class="link" href="#bridges">bridge-node</a> and connect the
-          Witnet protocol to a Smart-contract platform, for example Ethereum
+          Witnet protocol to other protocols, for example Ethereum
         </li>
       </ul>
       <div class="image-container">
@@ -380,8 +379,7 @@
       <p>
         Other projects rely heavily on ERC-20 tokens in the Ethereum blockchain
         to incentivize oracles to resolve tasks. This fact will hinder their
-        viability until Ethereum’s scalability challenges are solved or they
-        accept alternative means of payment.
+        viability until Ethereum’s scalability challenges are solved.
       </p>
       <p>
         In addition, the main key of Witnet is the
@@ -466,7 +464,7 @@
         contracts in Ethereum. These are able to send data requests to the
         Witnet network and get the responses back thanks to the bridge nodes
         that make Witnet act as a sidechain of Ethereum. For now the bridging
-        contracts are only deploy in Rinkeby and Görli networks. Client smart
+        contracts are only deployed in Rinkeby and Görli networks. Client smart
         contracts only need to interact with the Witnet Bridge Interface (WBI)
         for which the addresses can be found below:
       </p>
@@ -598,8 +596,8 @@
         <li>
           <b>Sybil attacks</b>: The reputation system works very well against
           this attack since it requires the sybils to work on the network to
-          gain sufficient influence. In addition, the Collateral makes the
-          attack much more expensive.
+          gain sufficient influence. In addition, a Collateral fee is required
+          when solving a data request, making the attack much more expensive.
         </li>
         <li>
           <b>Eclipse attacks</b>: In order to avoid an attacker monopolizing all
@@ -612,8 +610,9 @@
           >.
         </li>
         <li>
-          <b>Bribery attacks</b>: The implementation of a Collateral fee highly
-          increases the Bribe to pay, for more informations take a look on this
+          <b>Bribery attacks</b>: The implementation of the Collateral fee
+          highly increases the Bribe to pay, for more informations take a look
+          on this
           <a
             class="link"
             href="https://medium.com/witnet/deterring-bribery-attacks-on-decentralized-oracle-networks-5bcf87d2cb22"
@@ -635,7 +634,7 @@
       </a>
       <p>
         So far we have seen a bit of the main ideas of Witnet's protocol and its
-        architecture, but how is witnet really built?<br />
+        architecture, but how is Witnet really built?<br />
         The Witnet Ecosystem consists of several parts and so it has different
         development areas. Some of them are:
       </p>
@@ -658,7 +657,7 @@
       </a>
       <p>
         Creating Data Requests is one of the main actions in Witnet, as when
-        they are published the hole Oracle protocol takes place. So how do you
+        they are published the whole Oracle protocol takes place. So how do you
         create them? First we need to talk about Sheikah. Sheikah is a Witnet
         compatible desktop wallet, data requests and smart contracts development
         environment. It can be thought as a friendly user wallet in which you
@@ -712,15 +711,15 @@
         <h4 id="rust" ref="element" class="subsection">Rust</h4>
       </a>
       <p>
-        A point of discussion was which language we should use to build the
+        A point of discussion was which language should be used to build the
         nodes. Having its own underlying blockchain, Witnet requires code that
         is as fast as C or C++ but memory safe to prevent security
-        vulnerabilities. At the same time, we wanted to produce concurrent code
+        vulnerabilities. At the same time, there was a need for concurrent code
         that could take advantage of modern hardware.
       </p>
       <p>
-        After analyzing the possible languages to use, we decided to use Rust,
-        some of the reasons were:
+        After analyzing the possible languages to use, Rust was selected for the
+        following reasons:
       </p>
       <ul>
         <li>
@@ -756,10 +755,9 @@
         .
       </p>
       <p>
-        Once Rust was clear, we created Witnet-rust, an open-source
-        implementation of the Witnet protocol written in Rust. It is a native
-        app providing "full node" functionality of the Witnet Decentralized
-        Oracle Network protocol.
+        Witnet-rust is an open-source implementation of the Witnet protocol
+        written in Rust. It is a native app providing "full node" functionality
+        of the Witnet Decentralized Oracle Network protocol.
       </p>
       <p>
         There are installation guides to run a node for several operator
@@ -772,8 +770,8 @@
         </h4>
       </a>
       <p>
-        As Witnet is a decentralized oracle for smart contracts, the bridge
-        nodes need to be able to understand and interact with each smart
+        As Witnet is a decentralized oracle network for smart contracts, the
+        bridge nodes need to be able to understand and interact with each smart
         contract language is needed. As explained in the
         <a class="link" href="#bridges">bridges section</a>, for now it has only
         been implemented a bridge with Ethereum wherefore it has been created a
@@ -810,33 +808,23 @@
         </li>
         <li>
           30% will be minted in the early stage block (first block in the
-          chain). These will be assigned as follows:
-          <ul>
-            <li>
-              20% to Witnet Foundation for development, research and engineering
-              grants, community building and marketing actions; as well as
-              rewarding previous Stampery investors.
-            </li>
-            <li>
-              10% to Republic investors (max. $1.07M) and a separate private
-              sale limited to accredited investors (max. $28.93M).
-            </li>
-          </ul>
+          chain). These will be assigned to early contributors (participants in
+          the pre-sale conducted in 2017; the Witnet Foundation; and those who
+          helped to build Stampery<a class="link" href="#comentario2">
+            <sup>2</sup></a
+          >)
         </li>
       </ul>
       <p>
         The 70% that will be distributed through mining has the following
-        structure: <br />
-        The number of WITs generated per block starts at 500 and is set to
-        decrease geometrically, with a 50% reduction every 1,750,000 blocks, or
+        intended structure, subject to discussion and change: <br />
+        The number of WITs generated per block starts at 1000 and is set to
+        decrease geometrically, with a 50% reduction every 875,000 blocks, or
         approximately 5 years. Each of these periodic reductions is known as
         halving. The result is that the number of WITs ever created by the
         issuance mechanism will never exceed 2,500,000,000 minus the 30% that
-        has already been preassigned. This is represented in the next figure:
+        has already been preassigned.
       </p>
-      <div class="image-container">
-        <img class="pic g" :src="images.pic7" alt="wit graphic" />
-      </div>
       <a class="link-main" href="#sum-up">
         <h3 id="sum-up" ref="element" class="section">To sum up</h3>
       </a>
@@ -993,6 +981,11 @@
         output values when executed across all the nodes maintaining the
         blockchain, therefore causing inconsistencies that would lead to
         breaking the network consensus.
+      </p>
+      <p id="comentario2" class="comentario">
+        <sup>2</sup> The Stampery team envisioned the original protocol,
+        outlined its foundation in the original whitepaper, and kickstarted
+        development.
       </p>
     </div>
   </div>
