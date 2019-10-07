@@ -17,13 +17,13 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon2.ico' }],
     script: [
       {
         src:
           'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML',
-      }
-    ]
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
