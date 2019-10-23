@@ -187,7 +187,7 @@
       </div>
       <p>
         Given that smart contracts need to be completely deterministic
-        <a class="link" href="#comentario"><sup>1</sup></a> to ensure all nodes
+        <a class="link" href="#footnote1"><sup>1</sup></a> to ensure all nodes
         execute the same code, they do not support input of data from
         non-deterministic sources such as APIs or websites.
       </p>
@@ -492,7 +492,7 @@
       </a>
       <a class="link" href="#reputation-system">
         <h4 id="reputation-system" ref="element" class="subsection">
-          Resputation System
+          Reputation System
         </h4>
       </a>
       <p>
@@ -810,7 +810,7 @@
           30% will be minted in the early stage block (first block in the
           chain). These will be assigned to early contributors (participants in
           the pre-sale conducted in 2017; the Witnet Foundation; and those who
-          helped to build Stampery<a class="link" href="#comentario2">
+          helped to build Stampery<a class="link" href="#footnote2">
             <sup>2</sup></a
           >)
         </li>
@@ -976,13 +976,13 @@
         >
         to spread the word!
       </p>
-      <p id="comentario" class="comentario">
+      <p id="footnote1" class="first-footnote">
         <sup>1</sup> Otherwise, the contracts could have totally different
         output values when executed across all the nodes maintaining the
         blockchain, therefore causing inconsistencies that would lead to
         breaking the network consensus.
       </p>
-      <p id="comentario2" class="comentario">
+      <p id="footnote2" class="footnote">
         <sup>2</sup> The Stampery team envisioned the original protocol,
         outlined its foundation in the original whitepaper, and kickstarted
         development.
@@ -1161,10 +1161,11 @@ export default {
   }
   .title {
     color: $purple;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
   .section {
     color: $purple;
+    margin-top: 32px;
   }
   .image-container {
     text-align: center;
@@ -1179,9 +1180,13 @@ export default {
       }
     }
   }
-  .comentario {
+  .first-footnote {
     font-size: 12px;
     border-top: 1px solid #bdbdbd;
+    padding-top: 20px;
+  }
+  .footnote {
+    font-size: 12px;
     padding-top: 20px;
   }
 }

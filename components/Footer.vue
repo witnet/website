@@ -76,6 +76,7 @@
     }
   }
   .read-btn {
+    text-decoration: none;
     margin-top: 56px;
   }
   .column-right {
