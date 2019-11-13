@@ -17,7 +17,7 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon2.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: 'witnet.ico' }],
     script: [
       {
         src:
