@@ -449,8 +449,7 @@
         entry are lower than in other Oracles since new nodes do not need to
         stake a significant monetary amount, nor invest in expensive hardware to
         become eligible to resolve data requests or mining. This fact incentives
-        new nodes to join the network and thus helps encourages
-        decentralization.
+        new nodes to join the network and thus encourages decentralization.
       </p>
       <a class="link" href="#bridges">
         <h4 id="bridges" ref="element" class="subection">Bridges</h4>
