@@ -469,12 +469,13 @@
       </div>
       <p>
         At present, the bridging contracts are only deployed in Rinkeby and
-        Görli testing networks. Client smart contracts must interact with the
-        Witnet Requests Board (WRB), whose addresses can be found below:
+        Görli testing networks. Client smart contracts must interact, with the
+        Witnet Requests Board (WRB), through a Proxy contract whose addresses
+        can be found below:
       </p>
       <ul>
-        <li><b>Rinkeby</b> 0xf0C67374D08e72dd7424982F76870AE0D6F2055e</li>
-        <li><b>Görli</b> 0x1053c33f1DcFF9c8F6F6DC07e3F8cb84e46232A1</li>
+        <li><b>Rinkeby</b> 0x996Be500EBF09537EDde024f70fFdFA55089E939</li>
+        <li><b>Görli</b> 0xFBd67d672C12B130b61320026E5B681f9040bCd3</li>
       </ul>
       <p>
         Whilst Witnet currently only interacts with the Ethereum blockchain,
