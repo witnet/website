@@ -470,7 +470,7 @@
       <p>
         At present, the bridging contracts are only deployed in Rinkeby and
         Görli testing networks. Client smart contracts must interact with the
-        Witnet Bridge Interface (WBI), whose addresses can be found below:
+        Witnet Requests Board (WRB), whose addresses can be found below:
       </p>
       <ul>
         <li><b>Rinkeby</b> 0xf0C67374D08e72dd7424982F76870AE0D6F2055e</li>
@@ -862,14 +862,14 @@
           extend (contract MyContract is UsingWitnet { ... }).
         </li>
         <li>
-          the Witnet Bridge Interface (WBI): an Ethereum contract, upon which
-          data requests are publicly posted.
+          the Witnet Requests Board (WRB): an Ethereum contract, upon which data
+          requests are publicly posted.
         </li>
         <li>
           the bridge component inside
           <a class="link" href="https://github.com/witnet/witnet-rust">
             witnet-rust</a
-          >, which monitors the WBI for new requests.
+          >, which monitors the WRB for new requests.
         </li>
       </ul>
       <p>
