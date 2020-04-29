@@ -474,8 +474,8 @@
         can be found below:
       </p>
       <ul>
-        <li><b>Rinkeby</b> 0x996Be500EBF09537EDde024f70fFdFA55089E939</li>
-        <li><b>Görli</b> 0xFBd67d672C12B130b61320026E5B681f9040bCd3</li>
+        <li><b>Rinkeby</b> 0x9ad9386e6886957A50D30996e35749eC4566a5d9</li>
+        <li><b>Görli</b> 0x916B67a6D470aF09Fd9379d6C67f8552778346f9</li>
       </ul>
       <p>
         Whilst Witnet currently only interacts with the Ethereum blockchain,
