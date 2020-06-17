@@ -817,7 +817,8 @@
         known as "halving". As a result, the total number of WITs created by the
         issuance mechanism will never exceed 2,500,000,000 minus the preassigned
         30%. <br />
-        Note: these figures are open to debate within the community, and subject to change.
+        Note: these figures are open to debate within the community, and subject
+        to change.
       </p>
       <a class="link-main" href="#sum-up">
         <h3 id="sum-up" ref="element" class="section">To sum up</h3>
