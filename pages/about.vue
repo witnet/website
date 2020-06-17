@@ -813,8 +813,8 @@
         The mining schedule for tokens is as follows: <br />
         The number of WITs generated per block starts at 500 and is set to
         decrease geometrically, with a 50% reduction every 1,750,000 blocks, or
-        approximately every 5 years. Each of these periodic reductions is
-        known as "halving". As a result, the total number of WITs created by the
+        approximately every 5 years. Each of these periodic reductions is known
+        as "halving". As a result, the total number of WITs created by the
         issuance mechanism will never exceed 2,500,000,000 minus the preassigned
         30%. <br />
         Note: these figures are open to debate within the community, and subject
