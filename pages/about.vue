@@ -161,12 +161,12 @@
         code, and censorship is impossible.
       </p>
       <p>
-        This is a really powerful idea. If you can write a smart contract that:
+        If you can write a smart contract that:
       </p>
       <p class="p7">
         1. implements the logic of an agreement, and <br />
-        2. automatically executes the clauses of the contract (e.g. transfer an
-        asset from Alice to Bob depending on the outcome of an event);
+        2. automatically executes the clauses of the contract - e.g. transfer an
+        asset from Alice to Bob depending on the outcome of an event;
       </p>
       <p>
         then you have a contract that is capable of enforcing itself and leaves
@@ -228,7 +228,7 @@
         reward for retrieving and securely delivering web information to smart
         contracts. That is, a Decentralized Oracle Network (DON). <br />
         More precisely, we outline a Decentralized Oracle Network as a computer
-        network made up of nodes (computers running a specific software), which
+        network made up of nodes - computers running a specific software - which
         communicate and operate as peers in compliance with an agreed protocol:
       </p>
       <ul>
@@ -283,13 +283,9 @@
       <p class="tip">
         TIP: <br />
         Of course, the so-called miners are not actual human beings sitting in
-        front of a computer, fulfilling assignments coming from an Internet
-        overlord that commands them to use their web browser to navigate to a
-        certain website and take a snapshot or copy some text that they must
-        report. Indeed, the miners are just computers running a software
-        (Witnet-rust) that automatically receive and execute a series of tasks
-        without the owner of the computer having to actively do anything else
-        than installing it.
+        front of a computer, fulfilling assignments. Instead, the miners are
+        just computers running the witnet-rust software that automatically
+        receive and execute a series of tasks
       </p>
       <a class="link" href="#trust">
         <h4 id="trust" ref="element" class="subsection">
@@ -305,13 +301,13 @@
       </p>
       <p>
         Data retrieved, attested and delivered using the Witnet protocol is
-        reliable (without centralized verification) because it comes from
-        anonymous, randomly selected nodes, and so non-coordinated, who are
+        reliable without centralized verification because it comes from
+        anonymous, randomly selected and non-coordinated nodes, that are
         incentivized to remain honest and to compete for rewards.
       </p>
       <p>
         In addition, integrity of this data is guaranteed by a consensus
-        algorithm that detects fraudsters, who are punished.
+        algorithm that detects fraudsters, who are punished accordingly.
       </p>
       <p>
         The progressive
@@ -521,7 +517,7 @@
       </p>
       <p id="reputation-formula">
         As described in the
-        <a class="link" href="https://witnet.io/static/witnet-whitepaper.pdf">
+        <a class="link" href="https://witnet.io/witnet-whitepaper.pdf">
           Whitepaper</a
         >, a node <MathjaxExample :formula="formulas.m_i" /> in epoch
         <MathjaxExample :formula="formulas.t" />
@@ -578,7 +574,7 @@
       </ul>
       <p>
         Please refer to
-        <a class="link" href="https://witnet.io/static/witnet-whitepaper.pdf"
+        <a class="link" href="https://witnet.io/witnet-whitepaper.pdf"
           >sections 4 and 5 of the Whitepaper </a
         >for more information regarding the reputation system.
       </p>
@@ -625,7 +621,7 @@
           <b>Majority attacks</b>: The implementation of Witnet guarantees that
           in order to perform a majority attack, the attacker would need to hold
           51% of the total reputation. This is an extremely unlikely scenario,
-          even where reputation is pooled.
+          even when reputation is pooled.
         </li>
         <li>
           <b>DDoS attacks</b>: Witnet implements Dandelion to obfuscate the
@@ -805,30 +801,33 @@
           decrease over time.
         </li>
         <li>
-          30% will be minted in the early stage block (first block in the
-          chain). These will be assigned to early contributors (participants in
-          the pre-sale conducted in 2017; the Witnet Foundation; and those who
-          helped to build Stampery<a class="link" href="#footnote2">
+          30% will be minted in the Genesis Block: the first block in the chain.
+          These will be assigned to participants in the pre-sale conducted in
+          2017; the Witnet Foundation; and those who helped to build Stampery<a
+            class="link"
+            href="#footnote2"
+          >
             <sup>2</sup></a
           >)
         </li>
       </ul>
       <p>
-        The mined tokens will be released in the following way, subject to
-        change: <br />
-        The number of WITs generated per block starts at 1000 and is set to
-        decrease geometrically, with a 50% reduction every 875,000 blocks, or
-        approximately every 2.5 years. Each of these periodic reductions is
-        known as "halving". As a result, the total number of WITs created by the
+        The mining schedule for tokens is as follows: <br />
+        The number of WITs generated per block starts at 500 and is set to
+        decrease geometrically, with a 50% reduction every 1,750,000 blocks, or
+        approximately every 5 years. Each of these periodic reductions is known
+        as "halving". As a result, the total number of WITs created by the
         issuance mechanism will never exceed 2,500,000,000 minus the preassigned
-        30%.
+        30%. <br />
+        Note: these figures are open to debate within the community, and subject
+        to change.
       </p>
       <a class="link-main" href="#sum-up">
         <h3 id="sum-up" ref="element" class="section">To sum up</h3>
       </a>
       <a class="link" href="#development-status">
         <h4 id="development-status" ref="element" class="subsection">
-          The protocol at the moment (Current development status)
+          The protocol at the moment: Current development status
         </h4>
       </a>
       <p>
@@ -860,10 +859,10 @@
       <ul>
         <li>
           the UsingWitnet Solidity contract, which Ethereum developers can
-          extend (contract MyContract is UsingWitnet { ... }).
+          extend : contract MyContract is UsingWitnet { ... }.
         </li>
         <li>
-          the Witnet Requests Board (WRB): an Ethereum contract, upon which data
+          the Witnet Requests Board - WRB: an Ethereum contract, upon which data
           requests are publicly posted.
         </li>
         <li>
@@ -961,13 +960,13 @@
         Our proposal has a "fairness principle" hard-written into every detail.
         That's the main reason for refusing the use of TEEs or the SGX. Witnet
         gives everyone the possibility to spend the spare CPU and bandwidth of
-        their computers (or servers, or phones, or even fridges!) fulfilling
+        their computers (or servers, phones, and even fridges!) fulfilling
         retrieve-attest-deliver tasks and earning rewards in exchange.
       </p>
       <p>
         The Witnet community is open to everyone. Even if you are not a
         developer or node operator, there are
-        <a class="link" href="https://docs.witnet.io/community/contributing/"
+        <a class="link" href="https://docs.witnet.io/developer/contributing/"
           >many things you can do</a
         >
         to spread the word!
