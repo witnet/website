@@ -801,10 +801,12 @@
           decrease over time.
         </li>
         <li>
-          30% will be minted in the Genesis Block: the first block in the
-          chain. These will be assigned to participants in
-          the pre-sale conducted in 2017; the Witnet Foundation; and those who
-          helped to build Stampery<a class="link" href="#footnote2">
+          30% will be minted in the Genesis Block: the first block in the chain.
+          These will be assigned to participants in the pre-sale conducted in
+          2017; the Witnet Foundation; and those who helped to build Stampery<a
+            class="link"
+            href="#footnote2"
+          >
             <sup>2</sup></a
           >)
         </li>
