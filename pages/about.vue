@@ -283,9 +283,9 @@
       <p class="tip">
         TIP: <br />
         Of course, the so-called miners are not actual human beings sitting in
-        front of a computer, fulfilling assignments. Instead, 
-        the miners are just computers running the witnet-rust software
-        that automatically receive and execute a series of tasks
+        front of a computer, fulfilling assignments. Instead, the miners are
+        just computers running the witnet-rust software that automatically
+        receive and execute a series of tasks
       </p>
       <a class="link" href="#trust">
         <h4 id="trust" ref="element" class="subsection">
