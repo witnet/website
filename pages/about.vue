@@ -219,7 +219,7 @@
       <p>
         The Witnet protocol aims to create an overlay network that connects
         smart contracts to any online data source, in a trustless, decentralized
-        manner. Tese sources include, but are not limited to, sport results,
+        manner. These sources include, but are not limited to, sport results,
         stock prices, weather forecasts information and other blockchains.
       </p>
       <p>
