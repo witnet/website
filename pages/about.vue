@@ -119,7 +119,7 @@
             </li>
             <li>
               <a class="link" href="#different-from-others">
-                Witnet different from other oracle proyects
+                Witnet different from other oracle projects
               </a>
             </li>
           </ul>
@@ -193,7 +193,7 @@
       <p>
         As a result, smart contracts are mostly isolated from the rest of the
         Internet, which dramatically reduces their transformative potential.
-        After all, the effectiveness of a program reraly depends solely on its
+        After all, the effectiveness of a program rarely depends solely on its
         source code, but also upon the input data it receives from interacting
         with the outside world.
       </p>
@@ -223,7 +223,7 @@
         stock prices, weather forecasts information and other blockchains.
       </p>
       <p>
-        The protocol achives this by way of a distributed network of peer-nodes
+        The protocol achieves this by way of a distributed network of peer-nodes
         -colloquially referred to as <i>witnesses</i>- who earn WIT tokens as a
         reward for retrieving and securely delivering web information to smart
         contracts. That is, a Decentralized Oracle Network (DON). <br />
@@ -327,7 +327,7 @@
       <p>
         The Witnet protocol runs a single purpose blockchain with a token called
         WIT, which relies on a P2P network. The nodes on the network are called
-        <i>witnesses</i>, and are incentivised by the WIT token to:
+        <i>witnesses</i>, and are incentivized by the WIT token to:
       </p>
       <ul>
         <li>
@@ -448,7 +448,7 @@
         new nodes to join the network and thus encourages decentralization.
       </p>
       <a class="link" href="#bridges">
-        <h4 id="bridges" ref="element" class="subection">Bridges</h4>
+        <h4 id="bridges" ref="element" class="subsection">Bridges</h4>
       </a>
       <p>
         Bridge nodes are in charge of the interaction between Witnet and an
@@ -479,7 +479,7 @@
         are in the pipeline.
       </p>
       <p>
-        More information on bridge nodes can be foundin this article from our
+        More information on bridge nodes can be found in this article from our
         <a
           class="link"
           href="https://medium.com/witnet/ethereum-loves-witnet-9a3fd21e6f5c"
@@ -579,7 +579,7 @@
         >for more information regarding the reputation system.
       </p>
       <a class="link" href="#defense-attacks">
-        <h4 id="defense-attacks" ref="element" class="subection">
+        <h4 id="defense-attacks" ref="element" class="subsection">
           Defense over Attacks
         </h4>
       </a>

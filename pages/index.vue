@@ -6,7 +6,7 @@
         <p class="description">
           {{ this.$t('hero_description') }}
         </p>
-        <nuxt-link to="/about" class="seconday-purple learn-more-btn">
+        <nuxt-link to="/about" class="secondary-purple learn-more-btn">
           {{ this.$t('learn_more_btn') }}
         </nuxt-link>
       </div>

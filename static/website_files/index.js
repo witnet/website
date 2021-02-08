@@ -853,7 +853,7 @@ var render = function() {
           _c(
             "a",
             {
-              staticClass: "seconday-purple learn-more-btn",
+              staticClass: "secondary-purple learn-more-btn",
               attrs: { href: "#next" }
             },
             [
