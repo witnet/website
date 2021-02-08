@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Banner />
     <NavBar />
     <nuxt />
     <Footer />
@@ -8,13 +7,11 @@
 </template>
 
 <script>
-import Banner from '~/components/Banner.vue'
 import NavBar from '~/components/NavBar.vue'
 import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
-    Banner,
     NavBar,
     Footer,
   },
