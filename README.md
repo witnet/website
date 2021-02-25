@@ -1,10 +1,8 @@
-# witnet-protocol-website
-
-> A Witnet protocol static website
+# new-website
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 
