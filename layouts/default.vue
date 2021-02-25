@@ -1,67 +1,62 @@
 <template>
   <div>
-    <NavBar />
-    <nuxt />
-    <Footer />
+    <Nuxt />
   </div>
 </template>
 
 <script>
-import NavBar from '~/components/NavBar.vue'
-import Footer from '~/components/Footer.vue'
-
 export default {
-  components: {
-    NavBar,
-    Footer,
+  head() {
+    return this.$nuxtI18nHead({ addSeoAttributes: true })
   },
 }
 </script>
-
-<style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+<style>
 html {
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 34px;
-  }
-  h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-  }
-  h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-  }
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  body {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 0px;
-    margin: 0px;
-    #MathJax_Message {
-      display: none;
-    }
-  }
-}
-body {
-  padding: 0px;
-  margin: 0px;
+  box-sizing: border-box;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.button--green {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #3b8070;
+  color: #3b8070;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button--green:hover {
+  color: #fff;
+  background-color: #3b8070;
+}
+
+.button--grey {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #35495e;
+  color: #35495e;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-left: 15px;
+}
+
+.button--grey:hover {
+  color: #fff;
+  background-color: #35495e;
 }
 </style>
