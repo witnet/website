@@ -36,20 +36,6 @@ export default {
     Hero,
     Announcement,
   },
-  async asyncData({ app, params, $content }) {
-    const { slug } = params
-    const page = await $content(
-      app.i18n.locale,
-      'current_announcement',
-      slug
-    ).fetch()
-
-    console.dir(page, { depth: null })
-
-    return {
-      page,
-    }
-  },
 }
 </script>
 
