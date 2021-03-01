@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 .diagonal-box {
-  background-color: #5fbfae;
+  background-color: $green-1;
   transform: skewY(2deg);
   padding: 104px 48px;
 }

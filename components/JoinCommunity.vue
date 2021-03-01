@@ -10,8 +10,8 @@ export default {}
 
 <style lang="scss" scoped>
 .container {
-  background-color: #214060;
-  color: white;
+  background-color: $blue-4;
+  color: $white;
   justify-content: center;
   display: flex;
   padding: 32px;

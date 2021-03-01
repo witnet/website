@@ -40,22 +40,22 @@ export default {
   text-align: left;
   padding: 24px;
   &.border {
-    border: 1px solid #e4e4e4;
+    border: 1px solid $grey-1;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: $white;
   }
   .title {
     font-size: 20px;
-    color: #12243a;
+    color: $blue-5;
     font-weight: bold;
     &.border {
-      color: #5f5f5f;
+      color: $grey-3;
     }
   }
   .content {
     font-size: 14px;
     &.border {
-      color: #5f5f5f;
+      color: $grey-3;
     }
   }
 }

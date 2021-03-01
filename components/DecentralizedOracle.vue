@@ -66,7 +66,7 @@ export default {}
         justify-self: center;
         .illustration {
           border-radius: 50%;
-          background: #fff;
+          background: $white;
           width: 300px;
           height: 300px;
           align-items: center;
