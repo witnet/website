@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="announcement-content">
         <p class="tag">ANNOUNCEMENT</p>
-        <h2 class="subtitle">Witnet is now side-chanined to Ethereum</h2>
+        <h4 class="subtitle">Witnet is now side-chanined to Ethereum</h4>
       </div>
       <Button color="black" :font-size="16">
         > Learn how to use Witnet from a solidity contract
@@ -34,13 +34,8 @@ export default {
     .announcement-content {
       width: fit-content;
       .tag {
-        font-size: 12px;
         color: $grey-2;
         font-weight: bold;
-      }
-      .subtitle {
-        font-size: 14px;
-        font-size: 20px;
       }
     }
   }

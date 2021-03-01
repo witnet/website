@@ -4,7 +4,7 @@
       <nuxt-link to="/" class="logo-container" @click.native="closeMenu">
         <img class="logo" href="#" alt="Witnet logo" />
       </nuxt-link>
-      <label class="label" @click="toggleMenu">&#9776;</label>
+      <label class="responsive-menu" @click="toggleMenu">&#9776;</label>
       <transition name="dropdown" class="dropdown">
         <ul class="tab-container" :class="{ visible: isMenuVisible }">
           <li class="link">
@@ -104,10 +104,10 @@ export default {
       width: 80px;
     }
   }
-  .label {
-    font-size: 34px;
+  .responsive-menu {
     color: $white;
     display: none;
+    font-size: 34px;
   }
   .tab-container {
     list-style: none;
@@ -117,7 +117,7 @@ export default {
       display: block;
     }
     .tab {
-      font-size: 18px;
+      font-size: 1.12rem;
       display: flex;
       color: $white;
       align-items: center;
@@ -139,7 +139,6 @@ export default {
       display: none;
       //
       display: flex;
-      font-size: 16px;
       padding: 0 8px;
       height: 30px;
       margin-right: 1vw;
@@ -166,7 +165,6 @@ export default {
       // margin-top: 16px;
       flex-direction: column;
       & .drop-down-item {
-        font-size: 16px;
         cursor: pointer;
         border: none;
         background-color: none;
@@ -203,7 +201,7 @@ export default {
         width: 70px;
       }
     }
-    .label {
+    .responsive-menu {
       display: block;
       cursor: pointer;
       position: absolute;

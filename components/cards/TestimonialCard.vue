@@ -6,8 +6,8 @@
       'testimonial-card',
     ]"
   >
-    <p class="text">{{ text }}</p>
-    <p class="author">{{ author }}</p>
+    <p class="title text">{{ text }}</p>
+    <p class="subtitle author">{{ author }}</p>
   </div>
 </template>
 
@@ -40,14 +40,12 @@ export default {
     text-align: left;
   }
   .text {
-    font-size: 18px;
     font-style: italic;
     color: $blue-1;
   }
   .author {
     margin-top: 16px;
     color: $grey-2;
-    font-size: 12px;
   }
 }
 </style>

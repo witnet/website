@@ -1,8 +1,8 @@
 <template>
   <div :class="border ? 'card-container border' : 'card-container'">
     <img class="logo" :src="url" alt="logo" />
-    <p :class="border ? 'title border' : 'title'">{{ title }}</p>
-    <p :class="border ? 'content border' : 'content'">{{ content }}</p>
+    <h3 :class="border ? 'title border' : 'title'">{{ title }}</h3>
+    <p :class="border ? 'subtitle border' : 'subtitle'">{{ content }}</p>
   </div>
 </template>
 
@@ -35,7 +35,6 @@ export default {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr;
-  width: 200px;
   row-gap: 16px;
   text-align: left;
   padding: 24px;
@@ -45,15 +44,12 @@ export default {
     background-color: $white;
   }
   .title {
-    font-size: 20px;
     color: $blue-5;
-    font-weight: bold;
     &.border {
       color: $grey-3;
     }
   }
-  .content {
-    font-size: 14px;
+  .subtitle {
     &.border {
       color: $grey-3;
     }

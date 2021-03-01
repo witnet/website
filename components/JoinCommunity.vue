@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p class="text">Questions? Join the Telegram and Discord communities!</p>
+    <h4>Questions? Join the Telegram and Discord communities!</h4>
   </div>
 </template>
 
@@ -15,9 +15,5 @@ export default {}
   justify-content: center;
   display: flex;
   padding: 32px;
-  .text {
-    font-weight: bold;
-    font-size: 18px;
-  }
 }
 </style>
