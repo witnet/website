@@ -38,6 +38,7 @@ export default {
   row-gap: 16px;
   text-align: left;
   padding: 24px;
+  max-width: 250px;
   &.border {
     border: 1px solid $grey-1;
     border-radius: 4px;

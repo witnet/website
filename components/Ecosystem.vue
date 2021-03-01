@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <SectionLayout class="ecosystem-section">
     <h2 class="title">A nascent, yet thriving ecosystem</h2>
-    <p class="subtitle">
+    <p class="ecosystem-subtitle">
       Many pieces are already in place, and many others are being actively
       worked on by a broad community of BUIDLers.
     </p>
@@ -15,15 +15,17 @@
         :border="item.border"
       />
     </div>
-  </div>
+  </SectionLayout>
 </template>
 
 <script>
 import EcosystemCard from '@/components/cards/EcosystemCard.vue'
+import SectionLayout from '@/components/layouts/SectionLayout.vue'
 
 export default {
   components: {
     EcosystemCard,
+    SectionLayout,
   },
   data() {
     return {
@@ -77,14 +79,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  padding: 56px 180px;
+.ecosystem-section {
   text-align: justify;
   .title {
     margin-bottom: 16px;
     text-align: center;
   }
-  .subtitle {
+  .ecosystem-subtitle {
     padding-bottom: 40px;
     text-align: center;
     max-width: 500px;
@@ -92,14 +93,10 @@ export default {
   }
   .ecosystem-card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     row-gap: 24px;
+    column-gap: 56px;
     justify-items: center;
-  }
-}
-@media (max-width: 1200px) {
-  .container {
-    padding: 40px 40px;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <SectionLayout class="footer-section">
     <div class="top">
       <div class="links">
         <p class="title">Witnet</p>
@@ -40,18 +40,24 @@
       </div>
       <div>ENG ^</div>
     </div>
-  </div>
+  </SectionLayout>
 </template>
 
 <script>
-export default {}
+import SectionLayout from '@/components/layouts/SectionLayout.vue'
+
+export default {
+  name: 'Footer',
+  components: {
+    SectionLayout,
+  },
+}
 </script>
 
 <style lang="scss" scoped>
-.container {
+.footer-section {
   background-color: $blue-5;
   color: $white;
-  padding: 40px 180px;
   .top {
     border-bottom: 1px solid $white;
     display: grid;
@@ -87,11 +93,6 @@ export default {}
       line-height: 1.5;
       max-width: 350px;
     }
-  }
-}
-@media (max-width: 1200px) {
-  .container {
-    padding: 40px 40px;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="diagonal-box">
+  <SectionLayout class="wit-tokens-section">
     <div class="content">
       <h2 class="title">Incentivized by the wit token</h2>
       <BaseCard :padding="48">
@@ -17,26 +17,27 @@
         </div>
       </BaseCard>
     </div>
-  </div>
+  </SectionLayout>
 </template>
 
 <script>
 import BaseCard from '@/components/cards/BaseCard.vue'
 import Button from '@/components/Button.vue'
+import SectionLayout from '@/components/layouts/SectionLayout.vue'
 
 export default {
   components: {
     BaseCard,
     Button,
+    SectionLayout,
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.diagonal-box {
+.wit-tokens-section {
   background-color: $green-1;
   transform: skewY(2deg);
-  padding: 104px 48px;
 }
 .content {
   max-width: 600px;

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <SectionLayout class="get-involved-section">
     <div class="top">
       <div class="left">
         <h2 class="title">
@@ -30,15 +30,17 @@
         />
       </div>
     </div>
-  </div>
+  </SectionLayout>
 </template>
 
 <script>
 import SocialsCard from '@/components/cards/SocialsCard.vue'
+import SectionLayout from '@/components/layouts/SectionLayout.vue'
 
 export default {
   components: {
     SocialsCard,
+    SectionLayout,
   },
   data() {
     return {
@@ -84,10 +86,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  background-color: $white;
+.get-involved-section {
+  background-color: $grey-0;
   color: $grey-4;
-  padding: 56px 180px;
   .bottom {
     display: grid;
     grid-template-rows: auto auto;
@@ -98,6 +99,7 @@ export default {
     column-gap: 48px;
     .title {
       grid-column: 1/-1;
+      margin-bottom: 32px;
     }
   }
   .top {
@@ -118,8 +120,7 @@ export default {
   }
 }
 @media (max-width: 1200px) {
-  .container {
-    padding: 40px 40px;
+  .get-involved-section {
     .top {
       flex-wrap: wrap;
       .left {
