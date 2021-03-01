@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <SectionLayout class="testimonials-section">
     <TestimonialCard
       v-for="testimonial in testimonials"
       :key="testimonial.author"
@@ -8,16 +8,18 @@
       :text="testimonial.text"
       :align="testimonial.align"
     />
-  </div>
+  </SectionLayout>
 </template>
 
 <script>
 import TestimonialCard from '@/components/cards/TestimonialCard.vue'
+import SectionLayout from '@/components/layouts/SectionLayout.vue'
 
 export default {
   name: 'Testimonials',
   components: {
     TestimonialCard,
+    SectionLayout,
   },
   data() {
     return {
@@ -47,21 +49,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
+.testimonials-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto auto;
+  margin: 0 48px;
   column-gap: 48px;
   row-gap: 32px;
   justify-content: center;
-  padding: 56px 300px;
 }
 .testimonial:first-of-type {
   grid-row: span 2;
-}
-@media (max-width: 1200px) {
-  .container {
-    padding: 40px 40px;
-  }
 }
 </style>

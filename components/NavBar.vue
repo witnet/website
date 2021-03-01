@@ -96,6 +96,9 @@ export default {
   display: flex;
   height: 10vh;
   justify-content: space-between;
+  background: $blue-5;
+  padding: 0 15vw;
+
   .logo-container {
     display: flex;
     align-items: center;
@@ -195,6 +198,7 @@ export default {
     background-color: $blue-5;
     display: block;
     position: relative;
+    padding: 0 0;
     .logo-container {
       .logo {
         margin: 10px;

@@ -10,7 +10,7 @@ export default {
   props: {
     padding: {
       type: Number,
-      default: 24,
+      default: 32,
     },
   },
 }

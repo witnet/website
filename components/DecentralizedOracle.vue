@@ -1,5 +1,5 @@
 <template>
-  <div class="decentralized-oracle">
+  <SectionLayout class="decentralized-oracle-section">
     <div class="wrapper">
       <div class="content">
         <div class="text">
@@ -24,16 +24,21 @@
         >> Build with witnet</Button
       >
     </div>
-  </div>
+  </SectionLayout>
 </template>
 
 <script>
-export default {}
+import SectionLayout from '@/components/layouts/SectionLayout.vue'
+export default {
+  name: 'DecentralizedOracle',
+  components: {
+    SectionLayout,
+  },
+}
 </script>
 
 <style scoped lang="scss">
-.decentralized-oracle {
-  padding: 56px 180px;
+.decentralized-oracle-section {
   display: flex;
   justify-content: center;
 
@@ -76,11 +81,6 @@ export default {}
     .margin-top {
       margin-top: 16px;
     }
-  }
-}
-@media (max-width: 1200px) {
-  .decentralized-oracle {
-    padding: 40px 40px;
   }
 }
 </style>

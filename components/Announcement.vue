@@ -1,5 +1,5 @@
 <template>
-  <div class="announcement">
+  <SectionLayout class="announcement-section">
     <div class="wrapper">
       <div class="announcement-content">
         <p class="tag">ANNOUNCEMENT</p>
@@ -9,20 +9,22 @@
         > Learn how to use Witnet from a solidity contract
       </Button>
     </div>
-  </div>
+  </SectionLayout>
 </template>
 
 <script>
+import SectionLayout from '@/components/layouts/SectionLayout.vue'
 export default {
   name: 'Announcement',
+  components: {
+    SectionLayout,
+  },
 }
 </script>
 
 <style scoped lang="scss">
-.announcement {
-  padding: 0 180px;
-  height: 100px;
-  background: $white;
+.announcement-section {
+  background: $grey-0;
   display: flex;
   justify-content: center;
 
@@ -41,7 +43,7 @@ export default {
   }
 }
 @media (max-width: 1200px) {
-  .announcement {
+  .announcement-section {
     padding: 24px 40px;
     height: max-content;
     .announcement-content {
