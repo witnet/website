@@ -11,7 +11,7 @@ export default {
   },
 }
 </script>
-<style>
+<style lang="scss">
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -22,6 +22,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 *,
@@ -34,29 +39,29 @@ html {
 .button--green {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 1px solid $green-2;
+  color: $green-2;
   text-decoration: none;
   padding: 10px 30px;
 }
 
 .button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+  color: $white;
+  background-color: $green-2;
 }
 
 .button--grey {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  border: 1px solid $blue-3;
+  color: $blue-3;
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
 }
 
 .button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+  color: $white;
+  background-color: $blue-3;
 }
 </style>

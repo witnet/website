@@ -81,8 +81,8 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  background-color: #f9f9f9;
-  color: #4d4d4d;
+  background-color: $white;
+  color: $grey-4;
   padding: 56px 180px;
   .bottom {
     display: grid;
@@ -109,7 +109,7 @@ export default {
       .title {
         font-size: 32px;
         font-weight: bold;
-        color: #12243a;
+        color: $blue-5;
         margin-bottom: 16px;
       }
       .content {

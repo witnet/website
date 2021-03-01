@@ -49,11 +49,11 @@ export default {}
 
 <style lang="scss" scoped>
 .container {
-  background-color: #12243a;
-  color: white;
+  background-color: $blue-5;
+  color: $white;
   padding: 40px 180px;
   .top {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $white;
     display: grid;
     padding-bottom: 40px;
     column-gap: 40px;
@@ -66,7 +66,7 @@ export default {}
       font-size: 14px;
       a {
         text-decoration: none;
-        color: white;
+        color: $white;
         padding: 4px 0 4px 0;
       }
       .title {

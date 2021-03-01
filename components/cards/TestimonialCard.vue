@@ -42,11 +42,11 @@ export default {
   .text {
     font-size: 18px;
     font-style: italic;
-    color: #758ea9;
+    color: $blue-1;
   }
   .author {
     margin-top: 16px;
-    color: #929292;
+    color: $grey-2;
     font-size: 12px;
   }
 }

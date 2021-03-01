@@ -39,8 +39,8 @@ export default {
   height: 150px;
   padding: 16px;
   justify-content: left;
-  border: 2px solid white;
-  background-color: white;
+  border: 2px solid $white;
+  background-color: $white;
   position: relative;
   z-index: 10;
   border-radius: 4px;
@@ -55,7 +55,7 @@ export default {
   justify-content: left;
   .link {
     margin-right: 16px;
-    color: #5fbfae;
+    color: $green-1;
     padding: 4px 0 4px 0;
   }
 }
@@ -73,7 +73,7 @@ export default {
   left: -16px;
   right: 8px;
   bottom: 8px;
-  border: 2px solid #4d4d4d;
+  border: 2px solid $grey-4;
   border-radius: 4px;
 }
 </style>

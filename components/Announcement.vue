@@ -22,7 +22,7 @@ export default {
 .announcement {
   padding: 0 180px;
   height: 100px;
-  background: #f9f9f9;
+  background: $white;
   display: flex;
   justify-content: center;
 
@@ -35,7 +35,7 @@ export default {
       width: fit-content;
       .tag {
         font-size: 12px;
-        color: #999;
+        color: $grey-2;
         font-weight: bold;
       }
       .subtitle {

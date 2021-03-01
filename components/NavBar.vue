@@ -106,7 +106,7 @@ export default {
   }
   .label {
     font-size: 34px;
-    color: white;
+    color: $white;
     display: none;
   }
   .tab-container {
@@ -119,7 +119,7 @@ export default {
     .tab {
       font-size: 18px;
       display: flex;
-      color: white;
+      color: $white;
       align-items: center;
       text-decoration: none;
       padding: 24px 32px;
@@ -128,10 +128,10 @@ export default {
         margin: auto 8px;
       }
       .slash {
-        color: #5fbfae;
+        color: $green-1;
       }
       &:hover {
-        color: #5fbfae;
+        color: $green-1;
       }
     }
     .language-btn {
@@ -145,8 +145,8 @@ export default {
       margin-right: 1vw;
       align-items: center;
       text-justify: center;
-      border: 1px solid #5fbfae;
-      color: #5fbfae;
+      border: 1px solid $green-1;
+      color: $green-1;
       cursor: pointer;
       &:active {
         outline: none;
@@ -170,9 +170,9 @@ export default {
         cursor: pointer;
         border: none;
         background-color: none;
-        color: white;
+        color: $white;
         padding: 8px;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $white;
         &:hover {
           opacity: 0.75;
         }
@@ -194,7 +194,7 @@ export default {
     overflow-y: hidden;
   }
   .navbar {
-    background-color: #12243a;
+    background-color: $blue-5;
     display: block;
     position: relative;
     .logo-container {
@@ -211,7 +211,7 @@ export default {
       right: 10px;
     }
     .tab-container {
-      background-color: #12243a;
+      background-color: $blue-5;
       list-style: none;
       display: none;
       text-align: center;
@@ -223,9 +223,9 @@ export default {
         display: block;
       }
       .tab {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $white;
         display: block;
-        color: white;
+        color: $white;
         align-items: center;
         text-decoration: none;
         padding: 24px 32px;
@@ -235,13 +235,13 @@ export default {
       }
       .language-btn {
         display: none;
-        color: white;
+        color: $white;
         justify-content: space-between;
         margin: 16px 50px 0 50px;
         border: none;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $white;
         &:hover {
-          color: #5fbfae;
+          color: $green-1;
         }
         .arrow {
           display: block;
@@ -254,7 +254,7 @@ export default {
         padding: 0;
         width: 275px;
         .drop-down-item {
-          border-bottom: 1px solid white;
+          border-bottom: 1px solid $white;
           padding: 10px;
           text-align: left;
         }

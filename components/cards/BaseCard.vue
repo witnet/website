@@ -16,12 +16,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .card-border {
   height: max-content;
   justify-content: left;
-  border: 2px solid white;
-  background-color: white;
+  border: 2px solid $white;
+  background-color: $white;
   position: relative;
   z-index: 10;
   border-radius: 4px;
@@ -39,7 +39,7 @@ export default {
   left: -16px;
   right: 8px;
   bottom: 8px;
-  border: 2px solid #4d4d4d;
+  border: 2px solid $grey-4;
   border-radius: 4px;
 }
 </style>

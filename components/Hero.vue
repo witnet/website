@@ -35,8 +35,8 @@ export default {
 
 <style lang="scss" scoped>
 .section {
-  color: white;
-  background: #12243a;
+  color: $white;
+  background: $blue-5;
   padding: 0 180px;
   min-height: 100vh;
   display: grid;
@@ -59,12 +59,12 @@ export default {
           font-size: 54px;
           font-weight: bold;
           display: inline;
-          color: #12243a;
+          color: $blue-5;
           word-wrap: break-word;
-          background: white;
+          background: $white;
 
           .dot {
-            color: #5fbfae;
+            color: $green-1;
           }
         }
 
@@ -85,7 +85,7 @@ export default {
     }
 
     .right {
-      border: 2px solid white;
+      border: 2px solid $white;
       position: relative;
       z-index: 10;
       border-radius: 6px;
@@ -103,7 +103,7 @@ export default {
       left: -25px;
       right: 15px;
       bottom: 15px;
-      border: 2px solid #5fbfae;
+      border: 2px solid $green-1;
       border-radius: 6px;
     }
   }
