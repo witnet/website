@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div>
     <Hero />
     <Announcement />
     <DecentralizedOracle />
@@ -38,8 +38,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-// lightgreen = #5fbfae
-// background =#12243a
-</style>

@@ -52,13 +52,10 @@ export default {}
         max-width: 554px;
 
         .title {
-          font-size: 40px;
-          font-weight: bold;
           margin-bottom: 32px;
         }
 
         .paragraph {
-          font-size: 18px;
           margin-bottom: 16px;
         }
       }

@@ -2,7 +2,11 @@
   <div class="container">
     <div class="top">
       <div class="left">
-        <h2 class="title">Come for the tech, stay for the fun!</h2>
+        <h2 class="title">
+          Come for the tech,
+          <br />
+          stay for the fun!
+        </h2>
         <p class="content">
           From developers to miners and enthusiasts, the witnet community prouds
           itself on always being welcoming, discussing the things that really
@@ -17,7 +21,7 @@
       />
     </div>
     <div class="bottom">
-      <p class="title">Get involved now</p>
+      <h4 class="title">Get involved now</h4>
       <div v-for="social in socials" :key="social.title">
         <SocialsCard
           :title="social.title"
@@ -93,10 +97,7 @@ export default {
     row-gap: 32px;
     column-gap: 48px;
     .title {
-      margin-bottom: 32px;
       grid-column: 1/-1;
-      font-size: 18px;
-      font-weight: bold;
     }
   }
   .top {
@@ -107,13 +108,8 @@ export default {
     .left {
       max-width: 35vw;
       .title {
-        font-size: 32px;
-        font-weight: bold;
         color: $blue-5;
         margin-bottom: 16px;
-      }
-      .content {
-        font-size: 16px;
       }
     }
     .dragon-image {

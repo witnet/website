@@ -3,26 +3,26 @@
     <div class="top">
       <div class="links">
         <p class="title">Witnet</p>
-        <a href="/">Oracle</a>
-        <a href="/">Token</a>
-        <a href="/">Ecosystem</a>
-        <a href="/">Community</a>
+        <a class="link" href="/">Oracle</a>
+        <a class="link" href="/">Token</a>
+        <a class="link" href="/">Ecosystem</a>
+        <a class="link" href="/">Community</a>
       </div>
       <div class="links">
         <p class="title">Ecosystem</p>
-        <a href="/">Full node</a>
-        <a href="/">Wallet</a>
-        <a href="/">Block explorer</a>
-        <a href="/">Network monitor</a>
+        <a class="link" href="/">Full node</a>
+        <a class="link" href="/">Wallet</a>
+        <a class="link" href="/">Block explorer</a>
+        <a class="link" href="/">Network monitor</a>
       </div>
       <div class="links">
         <p class="title">Community</p>
-        <a href="/">Telegram</a>
-        <a href="/">Discord</a>
-        <a href="/">Twitter</a>
-        <a href="/">Reddit</a>
+        <a class="link" href="/">Telegram</a>
+        <a class="link" href="/">Discord</a>
+        <a class="link" href="/">Twitter</a>
+        <a class="link" href="/">Reddit</a>
       </div>
-      <p class="alliance-text">
+      <p class="alliance-text small-description">
         Witnet is part of the Alliance of Decentralized Oracles (ADO), a joint
         effort by leading decentralized oracle solutions to make the life of
         smart contract developers easier by creating oracle standards. Learn
@@ -63,9 +63,8 @@ export default {}
     .links {
       display: flex;
       flex-direction: column;
-      font-size: 14px;
-      a {
-        text-decoration: none;
+      .link {
+        font-size: 0.87rem;
         color: $white;
         padding: 4px 0 4px 0;
       }
@@ -76,7 +75,6 @@ export default {}
     }
     .alliance-text {
       grid-column: span 2;
-      font-size: 12px;
       line-height: 1.5;
     }
   }
@@ -88,7 +86,6 @@ export default {}
     .copyright {
       line-height: 1.5;
       max-width: 350px;
-      font-size: 10px;
     }
   }
 }

@@ -8,7 +8,7 @@
             Unleash de power of smart contracts<span class="dot">.</span>
           </h1>
         </div>
-        <p class="description">{{ $t('description') }}</p>
+        <h4 class="description">{{ $t('description') }}</h4>
         <div class="buttons">
           <Button color="white" :font-size="16">>Build with Witnet</Button>
           <Button class="card-button" color="white" :font-size="16">
@@ -56,8 +56,6 @@ export default {
         width: 100%;
 
         .title {
-          font-size: 54px;
-          font-weight: bold;
           display: inline;
           color: $blue-5;
           word-wrap: break-word;
@@ -72,8 +70,6 @@ export default {
       }
 
       .description {
-        font-size: 20px;
-        font-weight: bold;
         margin-bottom: 48px;
       }
 
