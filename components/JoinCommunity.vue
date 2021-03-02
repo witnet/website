@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p class="text">Questions? Join the Telegram and Discord communities!</p>
+    <p class="text">{{ $t('join_community.text') }}</p>
   </div>
 </template>
 

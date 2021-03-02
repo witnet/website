@@ -1,19 +1,19 @@
 <template>
   <div class="diagonal-box">
     <div class="content">
-      <h2 class="title">Incentivized by the wit token</h2>
+      <h2 class="title">{{ $t('wit_token.title') }}</h2>
       <BaseCard :padding="48">
-        <p class="text">
-          The Witnet decentralized oracle runs on its own blockchain and relies
-          on the token for incentivization of independently run nodes that
-          resolve the data requests and agree on the results.
-        </p>
+        <p class="text">{{ $t('wit_token.text') }}</p>
         <div class="btn-container">
-          <Button class="card-button" :font-size="12">> Tokenomics info</Button>
+          <Button class="card-button" :font-size="12">{{
+            $t('wit_token.buttons.tokenomics')
+          }}</Button>
           <Button class="card-button" :font-size="12">
-            > Download Sheikah wallet
+            {{ $t('wit_token.buttons.sheikah') }}
           </Button>
-          <Button class="card-button" :font-size="12">> Start mining</Button>
+          <Button class="card-button" :font-size="12">{{
+            $t('wit_token.buttons.mining')
+          }}</Button>
         </div>
       </BaseCard>
     </div>

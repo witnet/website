@@ -9,28 +9,38 @@
         <ul class="tab-container" :class="{ visible: isMenuVisible }">
           <li class="link">
             <nuxt-link to="/about" class="tab" @click.native="closeMenu">
-              <span class="slash">/</span>oracle
+              <span class="slash">/</span>{{ $t('nav_bar.route.oracle') }}
             </nuxt-link>
           </li>
           <li class="link">
             <nuxt-link to="/#participate" class="tab" @click.native="closeMenu">
-              <span class="slash">/</span>token
+              <span class="slash">/</span>{{ $t('nav_bar.route.token') }}
             </nuxt-link>
           </li>
           <li class="link">
             <nuxt-link to="/#participate" class="tab" @click.native="closeMenu">
-              <span class="slash">/</span>ecosystem
+              <span class="slash">/</span>{{ $t('nav_bar.route.ecosystem') }}
             </nuxt-link>
           </li>
           <li class="link">
             <nuxt-link to="/#participate" class="tab" @click.native="closeMenu">
-              <span class="slash">/</span>blog
+              <span class="slash">/</span>{{ $t('nav_bar.route.blog') }}
             </nuxt-link>
           </li>
           <li @mouseover="hover = true" @mouseleave="hover = false">
             <a class="tab" href="https://github.com/witnet" target="_blank">
-              <img v-if="hover" class="social" src="/" alt="github-logo" />
-              <img v-else class="social" src="/" alt="github-logo" />
+              <img
+                v-if="hover"
+                class="social"
+                src="/"
+                :alt="$t('nav_bar.social_image_alt')"
+              />
+              <img
+                v-else
+                class="social"
+                src="/"
+                :alt="$t('nav_bar.social_image_alt')"
+              />
             </a>
           </li>
           <!-- TODO: ADD LANGUAGE COMPONENT -->

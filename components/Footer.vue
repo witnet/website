@@ -2,41 +2,35 @@
   <div class="container">
     <div class="top">
       <div class="links">
-        <p class="title">Witnet</p>
-        <a href="/">Oracle</a>
-        <a href="/">Token</a>
-        <a href="/">Ecosystem</a>
-        <a href="/">Community</a>
+        <p class="title">{{ $t('footer.links.witnet.title') }}</p>
+        <a href="/">{{ $t('footer.links.witnet.oracle') }}</a>
+        <a href="/">{{ $t('footer.links.witnet.token') }}</a>
+        <a href="/">{{ $t('footer.links.witnet.ecosystem') }}</a>
+        <a href="/">{{ $t('footer.links.witnet.community') }}</a>
       </div>
       <div class="links">
-        <p class="title">Ecosystem</p>
-        <a href="/">Full node</a>
-        <a href="/">Wallet</a>
-        <a href="/">Block explorer</a>
-        <a href="/">Network monitor</a>
+        <p class="title">{{ $t('footer.links.ecosystem.title') }}</p>
+        <a href="/">{{ $t('footer.links.ecosystem.full_node') }}</a>
+        <a href="/">{{ $t('footer.links.ecosystem.wallet') }}</a>
+        <a href="/">{{ $t('footer.links.ecosystem.block_explorer') }}</a>
+        <a href="/">{{ $t('footer.links.ecosystem.monitor') }}</a>
       </div>
       <div class="links">
-        <p class="title">Community</p>
-        <a href="/">Telegram</a>
-        <a href="/">Discord</a>
-        <a href="/">Twitter</a>
-        <a href="/">Reddit</a>
+        <p class="title">{{ $t('footer.links.community.title') }}</p>
+        <a href="/">{{ $t('footer.links.community.telegram') }}</a>
+        <a href="/">{{ $t('footer.links.community.discord') }}</a>
+        <a href="/">{{ $t('footer.links.community.twitter') }}</a>
+        <a href="/">{{ $t('footer.links.community.reddit') }}</a>
       </div>
-      <p class="alliance-text">
-        Witnet is part of the Alliance of Decentralized Oracles (ADO), a joint
-        effort by leading decentralized oracle solutions to make the life of
-        smart contract developers easier by creating oracle standards. Learn
-        more about the ADO at theado.org
-      </p>
+      <p class="alliance-text">{{ $t('footer.ado_text') }}</p>
     </div>
     <div class="bottom">
       <p>WIT</p>
       <div>
-        <p class="copyright">
-          © 2018–2021 by <span>Witnet Foundation</span> and individual
-          contributors. Content available under a
-          <span>Creative Commons license</span>.
-        </p>
+        <i18n path="copyright.base" class="copyright" tag="p">
+          <span>{{ $t('footer.copyright.witnet_foundation') }}</span>
+          <span>{{ $t('footer.copyright.license') }}</span>
+        </i18n>
       </div>
       <div>ENG ^</div>
     </div>

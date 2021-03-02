@@ -23,21 +23,18 @@ export default {
     return {
       testimonials: [
         {
-          text:
-            '"Oracle price manipulation was a hot topic in 2020, causing many financial losses. We are confident that Witnet is able to withstand these issues and provide the security and decentralization we’re looking for"',
-          author: 'Mark Tan, Co-Founder of RiveX',
+          text: this.$t('testimonials.testimonial_1.text'),
+          author: this.$t('testimonials.testimonial_1.author'),
           align: 'right',
         },
         {
-          text:
-            '"The oracle that truly decentralized blockchains and the Web3 deserve"',
-          author: 'Luis Cuende, Co-Founder of Aragon',
+          text: this.$t('testimonials.testimonial_2.text'),
+          author: this.$t('testimonials.testimonial_2.author'),
           align: 'left',
         },
         {
-          text:
-            '"Witnet isanextgenerationcryptoOracle. You\'ll hear a lot more about it in 2021."',
-          author: 'Michael Arrington, Founder of TechCrunch',
+          text: this.$t('testimonials.testimonial_2.text'),
+          author: this.$t('testimonials.testimonial_2.author'),
           align: 'left',
         },
       ],

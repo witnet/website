@@ -4,25 +4,22 @@
       <div class="content">
         <div class="text">
           <h2 class="title">
-            The decentralized oracle that is true to the censorship resistant
-            nature of blockchains.
+            {{ $t('decentralized_oracle.title') }}
           </h2>
           <p class="paragraph">
-            Without a reliable oracle, smart contracts can be vulnerable to
-            hacks, corruption and monetary loss.
+            {{ $t('decentralized_oracle.paragraph_1') }}
           </p>
           <p class="paragraph">
-            Witnet leverages state-of-the-art cryptographic and economic
-            techniques to provide your smart contracts with secure datainput.
+            {{ $t('decentralized_oracle.paragraph_2') }}
           </p>
         </div>
         <div class="image">
           <p class="illustration">(Nice illustration here)</p>
         </div>
       </div>
-      <Button color="black" :font-size="16" class="margin-top"
-        >> Build with witnet</Button
-      >
+      <Button color="black" :font-size="16" class="margin-top">
+        > {{ $t('button_label') }}
+      </Button>
     </div>
   </div>
 </template>

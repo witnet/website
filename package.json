@@ -9,7 +9,8 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore --fix",
-    "lint": "yarn lint:js && yarn lint:style"
+    "lint": "yarn lint:js && yarn lint:style",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
