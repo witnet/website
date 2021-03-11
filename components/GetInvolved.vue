@@ -2,26 +2,17 @@
   <SectionLayout class="get-involved-section">
     <div class="top">
       <div class="left">
-        <h2 class="title">
-          Come for the tech,
-          <br />
-          stay for the fun!
-        </h2>
-        <p class="content">
-          From developers to miners and enthusiasts, the witnet community prouds
-          itself on always being welcoming, discussing the things that really
-          matter, and ensuring that witnet plays a key role in the foundations
-          of Web3.
-        </p>
+        <h2 class="title">{{ $t('get_involved.title') }}</h2>
+        <p class="content">{{ $t('get_involved.content') }}</p>
       </div>
       <img
         class="dragon-image"
         src="@/assets/svg/dragon.png"
-        alt="dragon-witnet"
+        :alt="$t('witnet_pet_image_alt')"
       />
     </div>
     <div class="bottom">
-      <h4 class="title">Get involved now</h4>
+      <p class="title">{{ $t('get_involved.subtitle') }}</p>
       <div v-for="social in socials" :key="social.title">
         <SocialsCard
           :title="social.title"
@@ -46,35 +37,35 @@ export default {
     return {
       socials: [
         {
-          title: 'Follow the project',
-          content: 'Keep up with the latest news on Twitter.',
+          title: this.$t('social.follow.title'),
+          content: this.$t('social.follow.content'),
           links: [
             {
-              text: '> @witnet_io on Twitter',
+              text: this.$t('social.follow.links.twitter'),
               url: 'https://',
             },
           ],
         },
         {
-          title: 'Join the discussion',
-          content: 'Help us shape the future of the project.',
+          title: this.$t('social.join_discussion.title'),
+          content: this.$t('social.join_discussion.content'),
           links: [
             {
-              text: '> Telegram',
+              text: this.$t('social.join_discussion.link.telegram'),
               url: 'https://',
             },
             {
-              text: '> Discord',
+              text: this.$t('social.join_discussion.link.discord'),
               url: 'https://',
             },
           ],
         },
         {
-          title: 'Find bugs, get tokens',
-          content: 'A bug bounty program will be announced soon.',
+          title: this.$t('social.find_bugs.title'),
+          content: this.$t('social.find_bugs.content'),
           links: [
             {
-              text: 'Stay tuned!',
+              text: this.$t('social.find_bugs.stay_tuned'),
               url: null,
             },
           ],

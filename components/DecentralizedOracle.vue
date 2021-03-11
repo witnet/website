@@ -2,37 +2,65 @@
   <SectionLayout class="decentralized-oracle-section">
     <div class="wrapper">
       <div class="content">
-        <div class="text">
+        <div class="left">
           <h2 class="title">
-            The decentralized oracle that is true to the censorship resistant
-            nature of blockchains.
+            {{ $t('decentralized_oracle.title') }}
           </h2>
           <p class="paragraph">
-            Without a reliable oracle, smart contracts can be vulnerable to
-            hacks, corruption and monetary loss.
+            {{ $t('decentralized_oracle.paragraph_1') }}
           </p>
           <p class="paragraph">
-            Witnet leverages state-of-the-art cryptographic and economic
-            techniques to provide your smart contracts with secure datainput.
+            {{ $t('decentralized_oracle.paragraph_2') }}
           </p>
         </div>
-        <div class="image">
-          <p class="illustration">(Nice illustration here)</p>
+        <div class="vertical-line"></div>
+        <div class="right">
+          <TestimonialCard
+            v-for="testimonial in testimonials"
+            :key="testimonial.author"
+            class="testimonial"
+            :class="{ short: testimonial.text.length < 160 }"
+            :author="testimonial.author"
+            :text="testimonial.text"
+            align="right"
+          />
         </div>
       </div>
-      <Button color="black" :font-size="16" class="margin-top"
-        >> Build with witnet</Button
-      >
+      <Button color="plain" :font-size="16" class="margin-top">
+        {{ $t('decentralized_oracle.button_label') }}
+      </Button>
     </div>
   </SectionLayout>
 </template>
 
 <script>
 import SectionLayout from '@/components/layouts/SectionLayout.vue'
+import TestimonialCard from '@/components/cards/TestimonialCard.vue'
+
 export default {
   name: 'DecentralizedOracle',
   components: {
     SectionLayout,
+    TestimonialCard,
+  },
+
+  data() {
+    return {
+      testimonials: [
+        {
+          text: this.$t('testimonials.testimonial_1.text'),
+          author: this.$t('testimonials.testimonial_1.author'),
+        },
+        {
+          text: this.$t('testimonials.testimonial_2.text'),
+          author: this.$t('testimonials.testimonial_2.author'),
+        },
+        {
+          text: this.$t('testimonials.testimonial_3.text'),
+          author: this.$t('testimonials.testimonial_3.author'),
+        },
+      ],
+    }
   },
 }
 </script>

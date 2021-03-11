@@ -9,28 +9,38 @@
         <ul class="tab-container" :class="{ visible: isMenuVisible }">
           <li class="link">
             <nuxt-link to="/about" class="tab" @click.native="closeMenu">
-              <span class="slash">/</span>oracle
+              <span class="slash">/</span>{{ $t('nav_bar.route.oracle') }}
             </nuxt-link>
           </li>
           <li class="link">
             <nuxt-link to="/#participate" class="tab" @click.native="closeMenu">
-              <span class="slash">/</span>token
+              <span class="slash">/</span>{{ $t('nav_bar.route.token') }}
             </nuxt-link>
           </li>
           <li class="link">
             <nuxt-link to="/#participate" class="tab" @click.native="closeMenu">
-              <span class="slash">/</span>ecosystem
+              <span class="slash">/</span>{{ $t('nav_bar.route.ecosystem') }}
             </nuxt-link>
           </li>
           <li class="link">
             <nuxt-link to="/#participate" class="tab" @click.native="closeMenu">
-              <span class="slash">/</span>blog
+              <span class="slash">/</span>{{ $t('nav_bar.route.blog') }}
             </nuxt-link>
           </li>
           <li @mouseover="hover = true" @mouseleave="hover = false">
             <a class="tab" href="https://github.com/witnet" target="_blank">
-              <img v-if="hover" class="social" src="/" alt="github-logo" />
-              <img v-else class="social" src="/" alt="github-logo" />
+              <img
+                v-if="hover"
+                class="social"
+                src="/"
+                :alt="$t('nav_bar.social_image_alt')"
+              />
+              <img
+                v-else
+                class="social"
+                src="/"
+                :alt="$t('nav_bar.social_image_alt')"
+              />
             </a>
           </li>
           <!-- TODO: ADD LANGUAGE COMPONENT -->
@@ -96,7 +106,6 @@ export default {
   display: flex;
   height: 10vh;
   justify-content: space-between;
-  background: $blue-5;
   padding: 0 15vw;
 
   .logo-container {
@@ -104,11 +113,11 @@ export default {
     align-items: center;
     text-decoration: none;
     .logo {
-      width: 80px;
+      height: 39px;
     }
   }
   .responsive-menu {
-    color: $white;
+    color: $black;
     display: none;
     font-size: 34px;
   }
@@ -122,12 +131,12 @@ export default {
     .tab {
       font-size: 1.12rem;
       display: flex;
-      color: $white;
+      color: black;
       align-items: center;
       text-decoration: none;
       padding: 24px 32px;
       .social {
-        width: 20px;
+        height: 23px;
         margin: auto 8px;
       }
       .slash {
@@ -195,14 +204,13 @@ export default {
     overflow-y: hidden;
   }
   .navbar {
-    background-color: $blue-5;
     display: block;
     position: relative;
     padding: 0 0;
     .logo-container {
       .logo {
         margin: 10px;
-        width: 70px;
+        height: 39px;
       }
     }
     .responsive-menu {

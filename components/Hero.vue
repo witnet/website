@@ -1,19 +1,26 @@
 <template>
-  <SectionLayout class="hero-section">
-    <div class="left">
-      <div class="title-wrapper">
-        <h1 class="title">
-          Unleash de power of smart contracts<span class="dot">.</span>
-        </h1>
+  <SectionLayout>
+    <div class="main">
+      <div class="info">
+        <div class="title-wrapper">
+          <i18n path="hero.title" class="title" tag="h1">
+            <span class="dot">.</span>
+          </i18n>
+        </div>
+        <p class="description">{{ $t('hero.description') }}</p>
+        <div class="buttons">
+          <Button color="plain" :font-size="16">Build with Witnet</Button>
+          <Button class="card-button" color="plain" :font-size="16">
+            <i18n
+              path="hero.buttons.start_mining.base"
+              class="title"
+              tag="null"
+            >
+              <span class="wit">{{ $t('hero.buttons.start_mining.wit') }}</span>
+            </i18n>
+          </Button>
+        </div>
       </div>
-      <h4 class="description">{{ $t('description') }}</h4>
-      <div class="buttons">
-        <Button color="white" :font-size="16">>Build with Witnet</Button>
-        <Button class="card-button" color="white" :font-size="16">
-          > Start mining <span class="wit">wit</span>
-        </Button>
-      </div>
-    </div>
 
     <div class="right">
       <p>(nice illustration here)</p>
@@ -22,10 +29,12 @@
 </template>
 
 <script>
+import Button from '@/components/Button.vue'
 import SectionLayout from '@/components/layouts/SectionLayout.vue'
 
 export default {
   components: {
+    Button,
     SectionLayout,
   },
 }
@@ -43,34 +52,34 @@ export default {
   column-gap: 48px;
 
   .left {
-    .title-wrapper {
-      display: block;
-      width: 100%;
+      .title-wrapper {
+        display: block;
+        width: 100%;
 
-      .title {
+        .title {
         display: inline;
         color: $blue-5;
         word-wrap: break-word;
         background: $white;
 
-        .dot {
-          color: $green-1;
+          .dot {
+            color: $green-1;
+          }
+        }
+
+      margin-bottom: 48px;
+      }
+
+      .description {
+        margin-bottom: 48px;
+      }
+
+      .buttons {
+        .card-button {
+          margin-top: 16px;
         }
       }
-
-      margin-bottom: 48px;
     }
-
-    .description {
-      margin-bottom: 48px;
-    }
-
-    .buttons {
-      .card-button {
-        margin-top: 16px;
-      }
-    }
-  }
 
   .right {
     border: 2px solid $white;
