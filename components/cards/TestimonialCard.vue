@@ -1,11 +1,5 @@
 <template>
-  <div
-    :class="[
-      { right: align === 'right' },
-      { left: align === 'left' },
-      'testimonial-card',
-    ]"
-  >
+  <div :class="[align, 'testimonial-card']">
     <p class="title text">{{ text }}</p>
     <p class="subtitle author">{{ author }}</p>
   </div>
@@ -41,11 +35,13 @@ export default {
   }
   .text {
     font-style: italic;
-    color: $blue-1;
+    color: $white;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
   }
   .author {
-    margin-top: 16px;
-    color: $grey-2;
+    font-size: 0.75rem;
+    color: $white;
   }
 }
 </style>

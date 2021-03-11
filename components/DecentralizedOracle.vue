@@ -70,6 +70,27 @@ export default {
 .decentralized-oracle-section {
   display: flex;
   justify-content: center;
+  background: #112338;
+  background-image: url('~@/assets/svg/circles.svg');
+  min-height: 800px;
+  background-size: 75%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 500px;
+  border-radius: 0 0 35% 35%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -400px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 99vw solid transparent;
+    border-bottom: 400px solid #13253a;
+    z-index: -1;
+  }
 
   .wrapper {
     display: flex;
@@ -79,10 +100,12 @@ export default {
     .content {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
+      color: white;
 
-      .text {
+      .left {
+        height: 100%;
         max-width: 554px;
 
         .title {
@@ -103,16 +126,23 @@ export default {
           margin-bottom: 16px;
         }
       }
-      .image {
+
+      .vertical-line {
+        height: 100%;
+        border-left: 1px solid white;
+        margin-right: 1rem;
+      }
+
+      .right {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
         justify-self: center;
-        .illustration {
-          border-radius: 50%;
-          background: $white;
-          width: 300px;
-          height: 300px;
-          align-items: center;
-          display: flex;
-          justify-content: center;
+        .testimonial {
+          margin-bottom: 1.75rem;
+          &.short {
+            max-width: 380px;
+          }
         }
       }
     }
@@ -120,6 +150,12 @@ export default {
     .margin-top {
       margin-top: 16px;
     }
+  }
+  .world {
+    width: 1000px;
+    bottom: -450px;
+    position: absolute;
+    z-index: 1;
   }
 }
 </style>

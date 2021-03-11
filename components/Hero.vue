@@ -15,9 +15,11 @@
           </i18n>
         </Button>
       </div>
-    </div>
-    <div class="right">
-      <p>(nice illustration here)</p>
+      <img
+        src="@/assets/svg/dragon_reading.svg"
+        alt="Witnet pet doing creating requests"
+        class="hero-image"
+      />
     </div>
   </SectionLayout>
 </template>
@@ -35,10 +37,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hero-section {
+.section {
   color: $white;
-  background: $blue-5;
-  min-height: 90vh;
+  padding: 0 180px;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-content: center;
@@ -75,10 +77,15 @@ export default {
     }
   }
 
+  .hero-image {
+    max-width: 77%;
+    position: relative;
+    right: 40px;
+  }
+
   .right {
     border: 2px solid $white;
     position: relative;
-    z-index: 10;
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -89,7 +96,6 @@ export default {
     content: '';
     display: block;
     position: absolute;
-    z-index: -1;
     top: -25px;
     left: -25px;
     right: 15px;

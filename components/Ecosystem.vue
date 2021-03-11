@@ -10,7 +10,7 @@
         :key="item.title"
         :title="item.title"
         :content="item.content"
-        :url="item.url"
+        :src="item.src"
         :border="item.border"
       />
     </div>
@@ -31,37 +31,37 @@ export default {
       items: [
         {
           title: this.$t('ecosystem.cards.node.title'),
-          url: '/',
+          src: require('@/assets/svg/full_node.svg'),
           border: false,
           content: this.$t('ecosystem.cards.node.content'),
         },
         {
           title: this.$t('ecosystem.cards.sheikah.title'),
-          url: '/',
+          src: require('@/assets/svg/sheikah.svg'),
           border: false,
           content: this.$t('ecosystem.cards.sheikah.content'),
         },
         {
           title: this.$t('ecosystem.cards.truffle_box.title'),
-          url: '/',
+          src: require('@/assets/svg/ethereum.svg'),
           border: false,
           content: this.$t('ecosystem.cards.truffle_box.content'),
         },
         {
           title: this.$t('ecosystem.cards.explorer.title'),
-          url: '/',
+          src: require('@/assets/svg/explorer.svg'),
           border: false,
           content: this.$t('ecosystem.cards.explorer.content'),
         },
         {
           title: this.$t('ecosystem.cards.monitor.title'),
-          url: '/',
+          src: require('@/assets/svg/monitor.svg'),
           border: false,
           content: this.$t('ecosystem.cards.monitor.content'),
         },
         {
           title: this.$t('ecosystem.cards.next.title'),
-          url: '/',
+          src: require('@/assets/svg/question_mark.svg'),
           border: true,
           content: this.$t('ecosystem.cards.next.content'),
         },
