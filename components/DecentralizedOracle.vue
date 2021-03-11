@@ -3,17 +3,22 @@
     <div class="wrapper">
       <div class="content">
         <div class="left">
-          <h2 class="title">
-            {{ $t('decentralized_oracle.title') }}
-          </h2>
+          <i18n path="decentralized_oracle.title.main" class="title" tag="h2">
+            <span class="gradient">{{
+              $t('decentralized_oracle.title.gradient')
+            }}</span>
+          </i18n>
           <p class="paragraph">
             {{ $t('decentralized_oracle.paragraph_1') }}
           </p>
           <p class="paragraph">
             {{ $t('decentralized_oracle.paragraph_2') }}
           </p>
+          <Button type="primary" :font-size="14" class="btn">{{
+            $t('decentralized_oracle.button_label')
+          }}</Button>
         </div>
-        <div class="vertical-line"></div>
+        <div class="vertical-line" />
         <div class="right">
           <TestimonialCard
             v-for="testimonial in testimonials"
@@ -26,9 +31,6 @@
           />
         </div>
       </div>
-      <Button color="plain" :font-size="16" class="margin-top">
-        {{ $t('decentralized_oracle.button_label') }}
-      </Button>
     </div>
     <img class="world" src="@/assets/world.png" />
   </SectionLayout>
@@ -97,13 +99,27 @@ export default {
       .left {
         height: 100%;
         max-width: 554px;
+        margin-right: 16px;
 
         .title {
           margin-bottom: 32px;
+          .gradient {
+            background: linear-gradient(
+              90deg,
+              $aquamarine-3 0%,
+              $aquamarine-3 43%,
+              $purple-3 100%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
         }
 
         .paragraph {
           margin-bottom: 16px;
+        }
+        .btn {
+          margin-top: 16px;
         }
       }
 
@@ -126,10 +142,6 @@ export default {
         }
       }
     }
-
-    .margin-top {
-      margin-top: 16px;
-    }
   }
   .world {
     width: 1000px;
@@ -142,8 +154,8 @@ export default {
 @media (max-width: 1200px) {
   .decentralized-oracle-section {
     .world {
-      width: 75vw;
-      bottom: -40vw;
+      width: 100vw;
+      bottom: -65vw;
     }
   }
 }
@@ -154,6 +166,9 @@ export default {
     .wrapper {
       .content {
         grid-template-columns: 1fr;
+        .right:first-of-type {
+          margin-top: 32px;
+        }
       }
       .vertical-line {
         display: none;

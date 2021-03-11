@@ -44,7 +44,7 @@
 
 <style lang="scss" scoped>
 .footer-section {
-  background-color: $blue-5;
+  background-color: $dark-blue;
   color: $white;
   .top {
     border-bottom: 1px solid $white;

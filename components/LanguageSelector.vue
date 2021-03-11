@@ -57,24 +57,24 @@ export default {
     background: transparent;
     border: none;
     box-shadow: none;
-    color: #394066;
+    color: $dark-blue;
     text-transform: lowercase;
     font-variant: small-caps;
     min-width: max-content;
   }
 
   .vs__dropdown-menu {
-    border: 1px solid #e2d7f4;
-    box-shadow: 1px 1px 10px 2px rgba(92, 52, 138, 0.17);
+    border: 1px solid $grey-1;
+    box-shadow: 1px 1px 10px 2px $alpha-purple;
     // background: red;
   }
   .vs__dropdown-option--highlight {
-    background: #ababf5;
+    background: $green-1;
   }
 
   .vs__clear,
   .vs__open-indicator {
-    fill: black;
+    fill: $black;
   }
 
   .image {

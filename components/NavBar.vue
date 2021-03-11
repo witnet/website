@@ -5,10 +5,25 @@
         <img
           class="logo"
           src="@/assets/svg/witnet_logo.svg"
-          alt="$t('nav_bar.witnet_logo_alt')"
+          :alt="$t('nav_bar.witnet_logo_alt')"
         />
       </nuxt-link>
-      <label class="responsive-menu" @click="toggleMenu">&#9776;</label>
+      <div class="responsive-nav">
+        <LanguageSelector v-if="!isMenuVisible" class="responsive-lng" />
+        <label
+          v-if="!isMenuVisible"
+          class="responsive-menu"
+          @click="toggleMenu"
+        >
+          &#9776;
+        </label>
+        <label
+          v-if="isMenuVisible"
+          class="responsive-menu cross"
+          @click="toggleMenu"
+          >&#x2715;</label
+        >
+      </div>
       <transition name="dropdown" class="dropdown">
         <ul class="tab-container" :class="{ visible: isMenuVisible }">
           <li class="link">
@@ -31,7 +46,11 @@
               <span class="slash">/</span>{{ $t('nav_bar.route.blog') }}
             </nuxt-link>
           </li>
-          <li @mouseover="hover = true" @mouseleave="hover = false">
+          <li
+            class="link"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+          >
             <a class="tab" href="https://github.com/witnet" target="_blank">
               <!-- FIXME(#62): Change icon color on hover -->
               <img
@@ -48,7 +67,7 @@
               />
             </a>
           </li>
-          <LanguageSelector />
+          <LanguageSelector class="language-component" />
         </ul>
       </transition>
     </nav>
@@ -84,6 +103,7 @@ export default {
   height: 10vh;
   justify-content: space-between;
   padding: 0 15vw;
+  background-color: $white;
 
   .logo-container {
     display: flex;
@@ -93,10 +113,8 @@ export default {
       height: 39px;
     }
   }
-  .responsive-menu {
-    color: $black;
+  .responsive-nav {
     display: none;
-    font-size: 34px;
   }
   .tab-container {
     list-style: none;
@@ -108,12 +126,11 @@ export default {
     .tab {
       font-size: 1.12rem;
       display: flex;
-      color: black;
+      color: $black;
       align-items: center;
       text-decoration: none;
       padding: 24px 32px;
       .social {
-        height: 23px;
         margin: auto 8px;
       }
       .slash {
@@ -144,15 +161,27 @@ export default {
         height: 39px;
       }
     }
-    .responsive-menu {
-      display: block;
-      cursor: pointer;
+    .language-component {
+      display: none;
+    }
+    .responsive-nav {
+      display: flex;
       position: absolute;
       top: 4px;
       right: 10px;
+      align-items: center;
+      .responsive-menu {
+        margin-left: 8px;
+        color: $black;
+        font-size: 34px;
+        cursor: pointer;
+        &.cross {
+          font-size: 38px;
+        }
+      }
     }
     .tab-container {
-      background-color: $blue-5;
+      background-color: $white;
       list-style: none;
       display: none;
       text-align: center;
@@ -160,27 +189,16 @@ export default {
       width: 100vw;
       padding: 0;
       margin: 0;
+      padding-top: 14vh;
       &.visible {
-        display: block;
-      }
-      .tab {
-        border-bottom: 1px solid $white;
-        display: block;
-        color: $white;
-        align-items: center;
-        text-decoration: none;
-        padding: 24px 32px;
-        .social {
-          display: none;
-        }
+        display: flex;
+        flex-direction: column;
       }
       .language-btn {
         display: none;
-        color: $white;
         justify-content: space-between;
         margin: 16px 50px 0 50px;
         border: none;
-        border-bottom: 1px solid $white;
         &:hover {
           color: $green-1;
         }

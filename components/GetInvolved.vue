@@ -1,15 +1,17 @@
 <template>
   <SectionLayout class="get-involved-section">
     <div class="top">
-      <div class="left">
-        <h2 class="title">{{ $t('get_involved.title') }}</h2>
-        <p class="content">{{ $t('get_involved.content') }}</p>
-      </div>
       <img
         class="dragon-image"
         src="@/assets/svg/dragon.png"
         :alt="$t('get_involved.witnet_pet_image_alt')"
       />
+      <div class="right">
+        <i18n path="get_involved.title.main" class="title" tag="h2">
+          <span class="gradient">{{ $t('get_involved.title.gradient') }}</span>
+        </i18n>
+        <p class="content">{{ $t('get_involved.content') }}</p>
+      </div>
     </div>
     <div class="bottom">
       <p class="title">{{ $t('get_involved.subtitle') }}</p>
@@ -77,28 +79,40 @@ export default {
 .get-involved-section {
   background-color: $grey-0;
   color: $grey-4;
+  .gradient {
+    background: linear-gradient(
+      90deg,
+      $purple-2 0%,
+      $purple-2 43%,
+      $coral 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .bottom {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 20vw));
     justify-items: center;
-    justify-content: space-between;
+    justify-content: center;
     row-gap: 32px;
     column-gap: 48px;
     .title {
+      font-weight: bold;
       grid-column: 1/-1;
-      margin-bottom: 32px;
+      justify-self: center;
+      align-self: center;
     }
   }
   .top {
     display: flex;
     margin-bottom: 40px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    .left {
+    .right {
       max-width: 35vw;
       .title {
-        color: $blue-5;
+        color: $dark-blue;
         margin-bottom: 16px;
       }
     }
@@ -111,9 +125,13 @@ export default {
   .get-involved-section {
     .top {
       flex-wrap: wrap;
-      .left {
+      .right {
+        margin-top: 16px;
         max-width: 100vw;
       }
+    }
+    .bottom {
+      grid-template-columns: auto;
     }
   }
 }

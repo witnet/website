@@ -1,5 +1,5 @@
 <template>
-  <BaseCard>
+  <BaseCard class="socials-container">
     <p class="title">{{ title }}</p>
     <p class="content">{{ content }}</p>
     <div class="links-container">
@@ -30,6 +30,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.socials-container {
+  max-width: 300px;
+}
 .links-container {
   display: flex;
   justify-content: left;

@@ -28,14 +28,14 @@ export default {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: $blue-3;
+  color: $black;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: $blue-2;
+  color: $grey-4;
   word-spacing: 5px;
   padding-bottom: 15px;
 }

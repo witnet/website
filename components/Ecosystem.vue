@@ -1,6 +1,8 @@
 <template>
   <SectionLayout class="ecosystem-section">
-    <h2 class="title">{{ $t('ecosystem.title') }}</h2>
+    <i18n path="ecosystem.title.main" class="title" tag="h2">
+      <span class="gradient">{{ $t('ecosystem.title.gradient') }}</span>
+    </i18n>
     <p class="ecosystem-subtitle">
       {{ $t('ecosystem.subtitle') }}
     </p>
@@ -70,6 +72,16 @@ export default {
   .title {
     margin-bottom: 16px;
     text-align: center;
+    .gradient {
+      background: linear-gradient(
+        90deg,
+        $pink 0%,
+        $pink 43%,
+        $electric-blue 100%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
   .ecosystem-subtitle {
     padding-bottom: 40px;
