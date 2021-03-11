@@ -1,22 +1,25 @@
 <template>
   <SectionLayout class="wit-tokens-section">
-    <div class="content">
+    <BaseCard :padding="48" class="card-container">
+      <img class="wit-image" src="@/assets/svg/dragon.png" alt="Wit image" />
       <h2 class="title">Incentivized by the wit token</h2>
-      <BaseCard :padding="48">
-        <p class="text">
-          The Witnet decentralized oracle runs on its own blockchain and relies
-          on the token for incentivization of independently run nodes that
-          resolve the data requests and agree on the results.
-        </p>
-        <div class="btn-container">
-          <Button class="card-button" :font-size="12">> Tokenomics info</Button>
-          <Button class="card-button" :font-size="12">
-            > Download Sheikah wallet
-          </Button>
-          <Button class="card-button" :font-size="12">> Start mining</Button>
-        </div>
-      </BaseCard>
-    </div>
+      <p class="text">
+        The Witnet decentralized oracle runs on its own blockchain and relies on
+        the token for incentivization of independently run nodes that resolve
+        the data requests and agree on the results.
+      </p>
+      <div class="btn-container">
+        <Button class="card-button" type="primary" :font-size="14"
+          >Tokenomics info</Button
+        >
+        <Button class="card-button" type="default" :font-size="14">
+          Download Sheikah wallet
+        </Button>
+        <Button class="card-button" type="default" :font-size="14"
+          >Start mining</Button
+        >
+      </div>
+    </BaseCard>
   </SectionLayout>
 </template>
 
@@ -36,25 +39,69 @@ export default {
 
 <style lang="scss" scoped>
 .wit-tokens-section {
-  background-color: $green-1;
-  transform: skewY(2deg);
+  background-color: $white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
 }
-.content {
-  max-width: 600px;
-  margin: 0 auto;
-  transform: skewY(-2deg);
-  .title {
-    color: $white;
-    margin-bottom: 32px;
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  background-color: $white;
+  position: relative;
+}
+.card-container::before {
+  content: '';
+  position: absolute;
+  transform: skewY(-7deg);
+  z-index: -1;
+  background-color: $green-1;
+  top: 25px;
+  left: -34px;
+  right: -34px;
+  bottom: 18px;
+  border-radius: 4px;
+}
+
+.card-container::after {
+  content: '';
+  position: absolute;
+  transform: skewY(-4deg);
+  z-index: -1;
+  background-color: $purple-1;
+  top: 14px;
+  left: -24px;
+  right: -24px;
+  bottom: 8px;
+  border-radius: 4px;
+}
+
+.wit-image {
+  width: 200px;
+  grid-row: span 3;
+  margin-right: 32px;
+}
+.title {
+  margin-bottom: 32px;
+}
+.text {
+  max-width: 400px;
+}
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  .card-button {
+    margin-top: 16px;
   }
-  .text {
-    max-width: 400px;
-  }
-  .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    .card-button {
-      margin-top: 16px;
+}
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: auto;
+    .wit-image {
+      margin-right: 0;
+      margin-bottom: 16px;
     }
   }
 }

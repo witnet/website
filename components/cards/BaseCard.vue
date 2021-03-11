@@ -20,26 +20,13 @@ export default {
 .card-border {
   height: max-content;
   justify-content: left;
-  border: 2px solid $white;
+  border: 1px solid $grey-1;
   background-color: $white;
-  position: relative;
-  z-index: 10;
+  box-shadow: 1px 1px 6px 1px $alpha-purple;
   border-radius: 4px;
   display: grid;
   grid-template-rows: auto auto;
   grid-auto-columns: 1fr;
   align-items: center;
-}
-.card-border::after {
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: -1;
-  top: -16px;
-  left: -16px;
-  right: 8px;
-  bottom: 8px;
-  border: 2px solid $grey-4;
-  border-radius: 4px;
 }
 </style>
