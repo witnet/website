@@ -1,11 +1,7 @@
 <template>
-  <button :class="[color, 'button']" :style="{ fontSize: fontSize + 'px' }">
+  <button :class="[type, 'button']" :style="{ fontSize: fontSize + 'px' }">
     <slot />
-    <img
-      class="angle-bracket"
-      src="@/assets/svg/angle_bracket_closed.svg"
-      alt="Angle bracket closed"
-    />
+    <span class="arrow">></span>
   </button>
 </template>
 
@@ -16,11 +12,11 @@ export default {
       type: Number,
       required: true,
     },
-    color: {
+    type: {
       type: String,
-      default: 'plain',
+      default: 'default',
       validator(value) {
-        return ['plain', 'gradient'].includes(value)
+        return ['default', 'secondary', 'primary'].includes(value)
       },
     },
   },
@@ -29,10 +25,10 @@ export default {
 
 <style lang="scss" scoped>
 .button {
-  border: 1px solid $white;
+  border: none;
   margin-right: 16px;
   background-color: transparent;
-  border-radius: 32px;
+  border-radius: 25px;
   padding: 12px 16px;
   outline: 0;
   text-decoration: none;
@@ -43,26 +39,54 @@ export default {
   height: fit-content;
   box-sizing: border-box;
 
-  &.plain {
-    color: black;
-    background: #e6e6f5;
+  .arrow {
+    margin-left: 8px;
   }
-
-  &.gradient {
-    background: #5fbfae;
-    color: white;
-  }
-
-  &:hover {
-    background: #468d80;
-  }
-
+}
+.secondary {
+  background: $grey-2;
+  color: $black;
   &:active {
-    background: #468d80;
+    background: $grey-3;
+    color: $black;
   }
+  &:hover {
+    background: $grey-1;
+    color: $black;
+  }
+}
 
-  .angle-bracket {
-    height: 10px;
+.default {
+  background: transparent;
+  color: $black;
+  border: 1px solid $black;
+  &:hover {
+    background: transparent;
+    color: $purple-1;
+    border: 1px solid $purple-1;
+  }
+  &:active {
+    background: $purple-1;
+    color: $white;
+    border: 1px solid $purple-1;
+  }
+}
+
+.primary {
+  background: linear-gradient(
+    90deg,
+    $aquamarine-1 0%,
+    $aquamarine-1 43%,
+    $green-2 100%
+  );
+  color: $white;
+  &:active {
+    background: $aquamarine-1;
+    color: $white;
+  }
+  &:hover {
+    background: $green-2;
+    color: $white;
   }
 }
 </style>
