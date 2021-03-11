@@ -1,11 +1,8 @@
 <template>
   <SectionLayout class="ecosystem-section">
-    <h2 class="title">
-      A nascent, <span class="gradient">yet thriving ecosystem</span>
-    </h2>
+    <h2 class="title">{{ $t('ecosystem.title') }}</h2>
     <p class="ecosystem-subtitle">
-      Many pieces are already in place, and many others are being actively
-      worked on by a broad community of BUIDLers.
+      {{ $t('ecosystem.subtitle') }}
     </p>
     <div class="ecosystem-card-container">
       <EcosystemCard
@@ -33,46 +30,40 @@ export default {
     return {
       items: [
         {
-          title: 'witnet-rust full archival node',
+          title: this.$t('ecosystem.cards.node.title'),
           url: '/',
           border: false,
-          content:
-            'Run your fully verifying node and start earning wit tokens for mining blocks and resolving data requests.',
+          content: this.$t('ecosystem.cards.node.content'),
         },
         {
-          title: 'Sheikah wallet for desktop',
+          title: this.$t('ecosystem.cards.sheikah.title'),
           url: '/',
           border: false,
-          content:
-            'Sheikah is a privacy and user friendly wallet app for managing your wit tokens on Windows, Mac OS and GNU/Linux.',
+          content: this.$t('ecosystem.cards.sheikah.content'),
         },
         {
-          title: 'Ethereum Truffle Box',
+          title: this.$t('ecosystem.cards.truffle_box.title'),
           url: '/',
           border: false,
-          content:
-            'Integrating witnet into your Solidity contracts is almost immediate with the Witnet Truffle Box.',
+          content: this.$t('ecosystem.cards.truffle_box.content'),
         },
         {
-          title: 'witnet.network block explorer',
+          title: this.$t('ecosystem.cards.explorer.title'),
           url: '/',
           border: false,
-          content:
-            'The witnet.network block explorer gives you a neutral view on what is going on in the Witnet block chain.',
+          content: this.$t('ecosystem.cards.explorer.content'),
         },
         {
-          title: 'witnet.live network monitor',
+          title: this.$t('ecosystem.cards.monitor.title'),
           url: '/',
           border: false,
-          content:
-            'The witnet.live network monitor keeps tracks of the health of the witnet network.',
+          content: this.$t('ecosystem.cards.monitor.content'),
         },
         {
-          title: 'What will you build next?',
+          title: this.$t('ecosystem.cards.next.title'),
           url: '/',
           border: true,
-          content:
-            'Do you have some exciting Witnet app in mind? Apply now for a grant from the Witnet Foundation.',
+          content: this.$t('ecosystem.cards.next.content'),
         },
       ],
     }

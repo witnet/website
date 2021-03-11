@@ -1,23 +1,18 @@
 <template>
   <SectionLayout class="wit-tokens-section">
+    <h2 class="title">{{ $t('wit_token.title') }}</h2>
     <BaseCard :padding="48" class="card-container">
-      <img class="wit-image" src="@/assets/svg/dragon.png" alt="Wit image" />
-      <h2 class="title">Incentivized by the wit token</h2>
-      <p class="text">
-        The Witnet decentralized oracle runs on its own blockchain and relies on
-        the token for incentivization of independently run nodes that resolve
-        the data requests and agree on the results.
-      </p>
+      <p class="text">{{ $t('wit_token.text') }}</p>
       <div class="btn-container">
-        <Button class="card-button" type="primary" :font-size="14"
-          >Tokenomics info</Button
-        >
+        <Button class="card-button" type="primary" :font-size="14">{{
+          $t('wit_token.buttons.tokenomics')
+        }}</Button>
         <Button class="card-button" type="default" :font-size="14">
-          Download Sheikah wallet
+          {{ $t('wit_token.buttons.sheikah') }}
         </Button>
-        <Button class="card-button" type="default" :font-size="14"
-          >Start mining</Button
-        >
+        <Button class="card-button" type="default" :font-size="14">{{
+          $t('wit_token.buttons.mining')
+        }}</Button>
       </div>
     </BaseCard>
   </SectionLayout>
