@@ -5,7 +5,7 @@
         <h2 class="title">
           Come for the tech,
           <br />
-          stay for the fun!
+          <span class="gradient">stay for the fun!</span>
         </h2>
         <p class="content">
           From developers to miners and enthusiasts, the witnet community prouds
@@ -89,6 +89,16 @@ export default {
 .get-involved-section {
   background-color: $grey-0;
   color: $grey-4;
+  .gradient {
+    background: linear-gradient(
+      90deg,
+      $purple-2 0%,
+      $purple-2 43%,
+      $coral 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .bottom {
     display: grid;
     grid-template-rows: auto auto;

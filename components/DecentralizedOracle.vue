@@ -4,7 +4,8 @@
       <div class="content">
         <div class="text">
           <h2 class="title">
-            The decentralized oracle that is true to the censorship resistant
+            The decentralized oracle that is true to the
+            <span class="gradient">censorship resistant</span>
             nature of blockchains.
           </h2>
           <p class="paragraph">
@@ -20,8 +21,8 @@
           <p class="illustration">(Nice illustration here)</p>
         </div>
       </div>
-      <Button color="black" :font-size="16" class="margin-top"
-        >> Build with witnet</Button
+      <Button type="primary" :font-size="14" class="margin-top"
+        >Build with witnet</Button
       >
     </div>
   </SectionLayout>
@@ -58,6 +59,16 @@ export default {
 
         .title {
           margin-bottom: 32px;
+          .gradient {
+            background: linear-gradient(
+              90deg,
+              $aquamarine-3 0%,
+              $aquamarine-3 43%,
+              $purple-3 100%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
         }
 
         .paragraph {

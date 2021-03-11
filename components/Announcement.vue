@@ -5,8 +5,8 @@
         <p class="tag">ANNOUNCEMENT</p>
         <h4 class="subtitle">Witnet is now side-chanined to Ethereum</h4>
       </div>
-      <Button color="black" :font-size="16">
-        > Learn how to use Witnet from a solidity contract
+      <Button type="primary" :font-size="14">
+        Learn how to use Witnet from a solidity contract
       </Button>
     </div>
   </SectionLayout>

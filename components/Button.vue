@@ -1,6 +1,7 @@
 <template>
-  <button :class="[color, 'button']" :style="{ fontSize: fontSize + 'px' }">
+  <button :class="[type, 'button']" :style="{ fontSize: fontSize + 'px' }">
     <slot />
+    <span class="arrow">></span>
   </button>
 </template>
 
@@ -12,11 +13,11 @@ export default {
       type: Number,
       required: true,
     },
-    color: {
+    type: {
       type: String,
-      default: 'black',
+      default: 'default',
       validator(value) {
-        return ['white', 'black'].includes(value)
+        return ['default', 'secondary', 'primary'].includes(value)
       },
     },
   },
@@ -25,10 +26,10 @@ export default {
 
 <style lang="scss" scoped>
 .button {
-  border: 1px solid $white;
+  border: none;
   margin-right: 16px;
   background-color: transparent;
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 12px 16px;
   outline: 0;
   text-decoration: none;
@@ -39,24 +40,54 @@ export default {
   height: fit-content;
   box-sizing: border-box;
 
-  &.white {
-    color: $white;
-    border-color: $white;
+  .arrow {
+    margin-left: 8px;
   }
-
-  &.black {
-    color: $black;
-    border-color: $black;
-  }
-
-  &:hover {
-    color: $green-1;
-    border-color: $green-1;
-  }
-
+}
+.secondary {
+  background: $grey-2;
+  color: $black;
   &:active {
-    color: $green-2;
-    border-color: $green-2;
+    background: $grey-3;
+    color: $black;
+  }
+  &:hover {
+    background: $grey-1;
+    color: $black;
+  }
+}
+
+.default {
+  background: transparent;
+  color: $black;
+  border: 1px solid $black;
+  &:hover {
+    background: transparent;
+    color: $purple-1;
+    border: 1px solid $purple-1;
+  }
+  &:active {
+    background: $purple-1;
+    color: $white;
+    border: 1px solid $purple-1;
+  }
+}
+
+.primary {
+  background: linear-gradient(
+    90deg,
+    $aquamarine-1 0%,
+    $aquamarine-1 43%,
+    $green-2 100%
+  );
+  color: $white;
+  &:active {
+    background: $aquamarine-1;
+    color: $white;
+  }
+  &:hover {
+    background: $green-2;
+    color: $white;
   }
 }
 </style>

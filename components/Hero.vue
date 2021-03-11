@@ -8,9 +8,9 @@
       </div>
       <h4 class="description">{{ $t('description') }}</h4>
       <div class="buttons">
-        <Button color="white" :font-size="16">>Build with Witnet</Button>
-        <Button class="card-button" color="white" :font-size="16">
-          > Start mining <span class="wit">wit</span>
+        <Button type="secondary" :font-size="14">Build with Witnet</Button>
+        <Button class="card-button" type="secondary" :font-size="14">
+          Start mining <span class="wit">wit</span>
         </Button>
       </div>
     </div>

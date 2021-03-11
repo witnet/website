@@ -1,6 +1,8 @@
 <template>
   <SectionLayout class="ecosystem-section">
-    <h2 class="title">A nascent, yet thriving ecosystem</h2>
+    <h2 class="title">
+      A nascent, <span class="gradient">yet thriving ecosystem</span>
+    </h2>
     <p class="ecosystem-subtitle">
       Many pieces are already in place, and many others are being actively
       worked on by a broad community of BUIDLers.
@@ -84,6 +86,16 @@ export default {
   .title {
     margin-bottom: 16px;
     text-align: center;
+    .gradient {
+      background: linear-gradient(
+        90deg,
+        $pink 0%,
+        $pink 43%,
+        $electric-blue 100%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
   .ecosystem-subtitle {
     padding-bottom: 40px;
