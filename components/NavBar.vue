@@ -48,26 +48,7 @@
             </a>
           </li>
           <!-- TODO: ADD LANGUAGE COMPONENT -->
-          <!-- <li>
-            <div ref="button" class="language-btn" @click="displayDropDown">
-              <p class="text">Language</p>
-              <img class="arrow" src="/" alt="drop-down-arrow" />
-            </div>
-            <transition tag="div" class="smooth-in" name="smooth-in">
-              <div
-                v-if="displayBox"
-                v-closable="{ exclude: ['button'], handler: 'displayDropDown' }"
-                class="drop-down"
-              >
-                <button class="drop-down-item" @click="changeLanguage('en')">
-                  English
-                </button>
-                <button class="drop-down-item" @click="changeLanguage('ch')">
-                  Chinese
-                </button>
-              </div>
-            </transition>
-          </li> -->
+          <LanguageSelector />
         </ul>
       </transition>
     </nav>
@@ -75,7 +56,12 @@
 </template>
 
 <script>
+import LanguageSelector from '@/components/LanguageSelector'
+
 export default {
+  components: {
+    LanguageSelector,
+  },
   data() {
     return {
       hover: false,
@@ -90,13 +76,6 @@ export default {
     },
     toggleMenu() {
       this.isMenuVisible = !this.isMenuVisible
-    },
-    displayDropDown() {
-      this.displayBox = !this.displayBox
-    },
-    changeLanguage(lang) {
-      this.$i18n.locale = lang
-      this.displayBox = !this.displayBox
     },
     onClose() {
       this.active = false
@@ -148,52 +127,6 @@ export default {
       }
       &:hover {
         color: $green-1;
-      }
-    }
-    .language-btn {
-      //until we have translations
-      display: none;
-      //
-      display: flex;
-      padding: 0 8px;
-      height: 30px;
-      margin-right: 1vw;
-      align-items: center;
-      text-justify: center;
-      border: 1px solid $green-1;
-      color: $green-1;
-      cursor: pointer;
-      &:active {
-        outline: none;
-      }
-      &:hover {
-        opacity: 0.75;
-      }
-      .arrow {
-        padding-left: 8px;
-        width: 8px;
-      }
-    }
-    .drop-down {
-      position: absolute;
-      display: block;
-      width: 100px;
-      // margin-top: 16px;
-      flex-direction: column;
-      & .drop-down-item {
-        cursor: pointer;
-        border: none;
-        background-color: none;
-        color: $white;
-        padding: 8px;
-        border-bottom: 1px solid $white;
-        &:hover {
-          opacity: 0.75;
-        }
-        &:active {
-          box-shadow: none;
-          outline: none;
-        }
       }
     }
   }
