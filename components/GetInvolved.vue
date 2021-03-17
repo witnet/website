@@ -8,7 +8,7 @@
       <img
         class="dragon-image"
         src="@/assets/svg/dragon.png"
-        :alt="$t('witnet_pet_image_alt')"
+        :alt="$t('get_involved.witnet_pet_image_alt')"
       />
     </div>
     <div class="bottom">
@@ -37,35 +37,39 @@ export default {
     return {
       socials: [
         {
-          title: this.$t('social.follow.title'),
-          content: this.$t('social.follow.content'),
+          title: this.$t('get_involved.social.follow.title'),
+          content: this.$t('get_involved.social.follow.content'),
           links: [
             {
-              text: this.$t('social.follow.links.twitter'),
+              text: this.$t('get_involved.social.follow.links.twitter'),
               url: 'https://',
             },
           ],
         },
         {
-          title: this.$t('social.join_discussion.title'),
-          content: this.$t('social.join_discussion.content'),
+          title: this.$t('get_involved.social.join_discussion.title'),
+          content: this.$t('get_involved.social.join_discussion.content'),
           links: [
             {
-              text: this.$t('social.join_discussion.link.telegram'),
+              text: this.$t(
+                'get_involved.social.join_discussion.links.telegram'
+              ),
               url: 'https://',
             },
             {
-              text: this.$t('social.join_discussion.link.discord'),
+              text: this.$t(
+                'get_involved.social.join_discussion.links.discord'
+              ),
               url: 'https://',
             },
           ],
         },
         {
-          title: this.$t('social.find_bugs.title'),
-          content: this.$t('social.find_bugs.content'),
+          title: this.$t('get_involved.social.find_bugs.title'),
+          content: this.$t('get_involved.social.find_bugs.content'),
           links: [
             {
-              text: this.$t('social.find_bugs.stay_tuned'),
+              text: this.$t('get_involved.social.find_bugs.stay_tuned'),
               url: null,
             },
           ],

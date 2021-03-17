@@ -31,7 +31,7 @@
     <div class="bottom">
       <p>WIT</p>
       <div>
-        <i18n path="copyright.base" class="copyright" tag="p">
+        <i18n path="footer.copyright.base" class="copyright" tag="p">
           <span>{{ $t('footer.copyright.witnet_foundation') }}</span>
           <span>{{ $t('footer.copyright.license') }}</span>
         </i18n>
