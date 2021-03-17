@@ -78,7 +78,6 @@ export default {
   background-repeat: no-repeat;
   position: relative;
   margin-bottom: 500px;
-  border-radius: 0 0 35% 35%;
 
   &::after {
     content: '';
@@ -87,7 +86,7 @@ export default {
     left: 0;
     width: 0;
     height: 0;
-    border-left: 99vw solid transparent;
+    border-left: 100vw solid transparent;
     border-bottom: 400px solid #13253a;
     z-index: -1;
   }
@@ -156,6 +155,29 @@ export default {
     bottom: -450px;
     position: absolute;
     z-index: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .decentralized-oracle-section {
+    .world {
+      width: 75vw;
+      bottom: -40vw;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .decentralized-oracle-section {
+    margin-bottom: 250px;
+    .wrapper {
+      .content {
+        grid-template-columns: 1fr;
+      }
+      .vertical-line {
+        display: none;
+      }
+    }
   }
 }
 </style>
