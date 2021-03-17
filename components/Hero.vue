@@ -1,5 +1,5 @@
 <template>
-  <SectionLayout>
+  <SectionLayout class="main-section">
     <div class="info">
       <div class="title-wrapper">
         <i18n path="hero.title" class="title" tag="h1">
@@ -15,12 +15,12 @@
           </i18n>
         </Button>
       </div>
-      <img
-        src="@/assets/svg/dragon_reading.svg"
-        alt="Witnet pet doing creating requests"
-        class="hero-image"
-      />
     </div>
+    <img
+      src="@/assets/svg/dragon_reading.svg"
+      alt="Witnet pet doing creating requests"
+      class="hero-image"
+    />
   </SectionLayout>
 </template>
 
@@ -37,9 +37,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.section {
-  color: $white;
-  padding: 0 180px;
+.main-section {
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -106,158 +104,22 @@ export default {
 }
 
 @media (max-width: 1200px) {
-  .section {
-    color: $white;
-    padding: 0 180px;
+  .main-section {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-content: center;
-    grid-column: span 2;
-    column-gap: 48px;
-
-    .main {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-
-      .info {
-        min-width: 400px;
-        .title-wrapper {
-          display: block;
-          width: 100%;
-
-          .title {
-            font-size: 52px;
-            font-weight: bold;
-            color: #12243a;
-            background: white;
-
-            .dot {
-              color: $green-1;
-            }
-          }
-        }
-
-        .description {
-          font-size: 21px;
-          margin-bottom: 48px;
-          // max-width: 364px;
-          color: #9797b0;
-        }
-
-        .buttons {
-          .card-button {
-            margin-top: 16px;
-          }
-        }
+  }
+  .info {
+    min-width: 0;
+    .buttons {
+      .button {
+        margin: 16px 0;
+        width: 100%;
       }
-
-      .hero-image {
-        max-width: none;
-        width: 70vw;
-        position: initial;
-      }
-    }
-
-    .right {
-      border: 2px solid $white;
-      position: relative;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .right::after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: -25px;
-      left: -25px;
-      right: 15px;
-      bottom: 15px;
-      border: 2px solid $green-1;
-      border-radius: 6px;
     }
   }
-}
-
-@media (max-width: 600px) {
-  .section {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
-    .main {
-      display: flex;
-      align-items: center;
-
-      .info {
-        min-width: 0;
-        .title-wrapper {
-          display: block;
-          width: 100%;
-
-          .title {
-            font-size: 52px;
-            font-weight: bold;
-            color: #12243a;
-            background: white;
-
-            .dot {
-              color: $green-1;
-            }
-          }
-        }
-
-        .description {
-          font-size: 21px;
-          margin-bottom: 48px;
-          // max-width: 364px;
-          color: #9797b0;
-        }
-
-        .buttons {
-          display: flex;
-          flex-direction: column;
-
-          .button {
-            width: 100%;
-          }
-          .card-button {
-            margin-top: 16px;
-          }
-        }
-      }
-
-      .hero-image {
-        margin-top: 16px;
-        max-width: none;
-        width: 70vw;
-        position: initial;
-      }
-    }
-
-    .right {
-      border: 2px solid $white;
-      position: relative;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .right::after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: -25px;
-      left: -25px;
-      right: 15px;
-      bottom: 15px;
-      border: 2px solid $green-1;
-      border-radius: 6px;
-    }
+  .hero-image {
+    max-width: 100%;
   }
 }
 </style>

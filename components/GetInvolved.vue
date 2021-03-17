@@ -97,14 +97,14 @@ export default {
   .bottom {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-between;
     row-gap: 32px;
     column-gap: 48px;
     .title {
       grid-column: 1/-1;
       margin-bottom: 32px;
+      justify-self: center;
     }
   }
   .top {

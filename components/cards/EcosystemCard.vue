@@ -34,11 +34,11 @@ export default {
 .card-container {
   display: grid;
   grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr;
+  grid-template-columns: 250px;
+  justify-items: center;
   row-gap: 16px;
   text-align: left;
   padding: 24px;
-  max-width: 250px;
   &.border {
     border: 1px solid $grey-1;
     border-radius: 4px;

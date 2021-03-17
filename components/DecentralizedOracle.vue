@@ -13,7 +13,7 @@
             {{ $t('decentralized_oracle.paragraph_2') }}
           </p>
         </div>
-        <div class="vertical-line"></div>
+        <div class="vertical-line" />
         <div class="right">
           <TestimonialCard
             v-for="testimonial in testimonials"
@@ -173,6 +173,9 @@ export default {
     .wrapper {
       .content {
         grid-template-columns: 1fr;
+        .right:first-of-type {
+          margin-top: 32px;
+        }
       }
       .vertical-line {
         display: none;
