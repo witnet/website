@@ -90,6 +90,7 @@ export default {
   height: 10vh;
   justify-content: space-between;
   padding: 0 15vw;
+  background-color: $white;
 
   .logo-container {
     display: flex;
@@ -114,7 +115,7 @@ export default {
     .tab {
       font-size: 1.12rem;
       display: flex;
-      color: black;
+      color: $black;
       align-items: center;
       text-decoration: none;
       padding: 24px 32px;
@@ -158,7 +159,7 @@ export default {
       right: 10px;
     }
     .tab-container {
-      background-color: $blue-5;
+      background-color: $white;
       list-style: none;
       display: none;
       text-align: center;
@@ -170,9 +171,8 @@ export default {
         display: block;
       }
       .tab {
-        border-bottom: 1px solid $white;
+        border-bottom: 2px solid $blue-5;
         display: block;
-        color: $white;
         align-items: center;
         text-decoration: none;
         padding: 24px 32px;
@@ -182,11 +182,9 @@ export default {
       }
       .language-btn {
         display: none;
-        color: $white;
         justify-content: space-between;
         margin: 16px 50px 0 50px;
         border: none;
-        border-bottom: 1px solid $white;
         &:hover {
           color: $green-1;
         }
