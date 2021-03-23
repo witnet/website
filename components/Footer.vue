@@ -6,7 +6,7 @@
         <a class="link" href="/">{{ $t('footer.links.witnet.oracle') }}</a>
         <a class="link" href="/">{{ $t('footer.links.witnet.token') }}</a>
         <a class="link" href="/">{{ $t('footer.links.witnet.ecosystem') }}</a>
-        <a href="/">{{ $t('footer.links.witnet.community') }}</a>
+        <a class="link" href="/">{{ $t('footer.links.witnet.community') }}</a>
       </div>
       <div class="links">
         <p class="title">{{ $t('footer.links.ecosystem.title') }}</p>

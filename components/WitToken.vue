@@ -1,16 +1,17 @@
 <template>
   <SectionLayout class="wit-tokens-section">
-    <h2 class="title">{{ $t('wit_token.title') }}</h2>
     <BaseCard :padding="48" class="card-container">
+      <img class="wit-image" src="@/assets/svg/dragon.png" alt="Wit image" />
+      <h2 class="title">{{ $t('wit_token.title') }}</h2>
       <p class="text">{{ $t('wit_token.text') }}</p>
       <div class="btn-container">
-        <Button class="card-button" type="primary" :font-size="14">{{
+        <Button class="btn" type="primary" :font-size="14">{{
           $t('wit_token.buttons.tokenomics')
         }}</Button>
-        <Button class="card-button" type="default" :font-size="14">
+        <Button class="btn" type="default" :font-size="14">
           {{ $t('wit_token.buttons.sheikah') }}
         </Button>
-        <Button class="card-button" type="default" :font-size="14">{{
+        <Button class="btn" type="default" :font-size="14">{{
           $t('wit_token.buttons.mining')
         }}</Button>
       </div>
@@ -44,6 +45,8 @@ export default {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
+  row-gap: 26px;
+  align-items: center;
   background-color: $white;
   position: relative;
 }
@@ -76,10 +79,8 @@ export default {
 .wit-image {
   width: 200px;
   grid-row: span 3;
+  justify-self: center;
   margin-right: 32px;
-}
-.title {
-  margin-bottom: 32px;
 }
 .text {
   max-width: 400px;
@@ -87,17 +88,37 @@ export default {
 .btn-container {
   display: flex;
   flex-wrap: wrap;
-  .card-button {
+  .btn {
     margin-top: 16px;
   }
 }
 @media (max-width: 1200px) {
   .card-container {
     grid-template-columns: auto;
+    justify-items: center;
     .wit-image {
       margin-right: 0;
       margin-bottom: 16px;
     }
+  }
+  .btn-container {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 200px;
+    justify-items: center;
+    .wit-image {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+  .btn-container {
+    margin-top: 16px;
   }
 }
 </style>

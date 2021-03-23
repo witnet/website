@@ -5,13 +5,19 @@
         "button": "Learn how to use Witnet from a solidity contract"
     },
     "decentralized_oracle": {
-       "title": "The decentralized oracle that is true to the censorship resistant nature of blockchains.",
+        "title": {
+            "main": "The decentralized oracle that is true to the {0} nature of blockchains.",
+            "gradient": "censorship resistant"
+        },
        "paragraph_1": "Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.",
        "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure datainput.",
         "button_label": "Build with witnet"
     },
     "ecosystem": {
-        "title": "A nascent, yet thriving ecosystem",
+        "title": {
+            "main": "A nascent, {0}",
+            "gradient": "yet thriving ecosystem"
+        },
         "subtitle": "Many pieces are already in place, and many others are being actively worked on by a broad community of BUIDLers.",
         "cards": {
             "node": {
@@ -74,7 +80,10 @@
         }
      },
      "get_involved": {
-         "title": "Come for the tech, stay for the fun!",
+        "title": {
+            "main": "Come for the tech, {0}",
+            "gradient": "stay for the fun!"
+         },
          "content": "From developers to miners and enthusiasts, the witnet community prouds itself on always being welcoming, discussing the things that really matter, and ensuring that witnet plays a key role in the foundations of Web3.",
          "witnet_pet_image_alt": "dragon-witnet",
          "subtitle": "Get involved now",
@@ -102,7 +111,10 @@
          }
     },
     "hero": {
-        "title": "Unleash the real power of smart contracts{0}",
+        "title": {
+            "main": "Unleash the {0} of smart contracts",
+            "gradient": "real power"
+        },
         "description": "Witnet enables your smart contracts to react to real world events with strong crypto-economic guarantees.",
         "buttons": {
             "build": "Build with Witnet",

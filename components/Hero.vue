@@ -2,8 +2,8 @@
   <SectionLayout class="main-section">
     <div class="info">
       <div class="title-wrapper">
-        <i18n path="hero.title" class="title" tag="h1">
-          <span class="dot">.</span>
+        <i18n path="hero.title.main" class="title" tag="h1">
+          <span class="gradient">{{ $t('hero.title.gradient') }}</span>
         </i18n>
       </div>
       <p class="description">{{ $t('hero.description') }}</p>
@@ -38,69 +38,54 @@ export default {
 
 <style lang="scss" scoped>
 .main-section {
+  display: flex;
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-content: center;
-  grid-column: span 2;
-  column-gap: 48px;
+}
+.info {
+  min-width: 400px;
 
-  .left {
-    .title-wrapper {
-      display: block;
-      width: 100%;
-
-      .title {
-        display: inline;
-        color: $blue-5;
-        word-wrap: break-word;
-        background: $white;
-
-        .dot {
-          color: $green-1;
-        }
-      }
-
-      margin-bottom: 48px;
-    }
-
-    .description {
-      margin-bottom: 48px;
-    }
-
-    .buttons {
-      .card-button {
-        margin-top: 16px;
-      }
+  .title {
+    color: $dark-blue;
+    .gradient {
+      background: linear-gradient(
+        90deg,
+        $aquamarine-1 0%,
+        $aquamarine-1 43%,
+        $green-2 100%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
-
-  .hero-image {
-    max-width: 77%;
-    position: relative;
-    right: 40px;
+  .description {
+    font-size: 1.4rem;
+    margin: 32px 0;
+    color: $grey-3;
   }
+}
 
-  .right {
-    border: 2px solid $white;
-    position: relative;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .right::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -25px;
-    left: -25px;
-    right: 15px;
-    bottom: 15px;
-    border: 2px solid $green-1;
-    border-radius: 6px;
-  }
+.hero-image {
+  max-width: 77%;
+  right: 40px;
+}
+.right {
+  border: 2px solid $white;
+  position: relative;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  right: 15px;
+  bottom: 15px;
+  border: 2px solid $green-1;
+  border-radius: 6px;
 }
 
 @media (max-width: 1200px) {
@@ -111,11 +96,12 @@ export default {
   }
   .info {
     min-width: 0;
-    .buttons {
-      .button {
-        margin: 16px 0;
-        width: 100%;
-      }
+    .buttons:first-child {
+      margin-top: 16px;
+    }
+    .button {
+      margin: 8px 0;
+      width: 100%;
     }
   }
   .hero-image {

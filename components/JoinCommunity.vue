@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .join-community-section {
-  background-color: $blue-4;
+  background-color: $green-1;
   color: $white;
   justify-content: center;
   display: flex;
