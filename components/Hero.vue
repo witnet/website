@@ -2,15 +2,21 @@
   <SectionLayout class="hero-section">
     <div class="left">
       <div class="title-wrapper">
-        <h1 class="title">
-          Unleash de power of smart contracts<span class="dot">.</span>
-        </h1>
+          <i18n path="hero.title" class="title" tag="h1">
+            <span class="dot">.</span>
+          </i18n>
       </div>
-      <h4 class="description">{{ $t('description') }}</h4>
+        <p class="description">{{ $t('hero.description') }}</p>
       <div class="buttons">
-        <Button color="white" :font-size="16">>Build with Witnet</Button>
-        <Button class="card-button" color="white" :font-size="16">
-          > Start mining <span class="wit">wit</span>
+          <Button color="plain" :font-size="16">Build with Witnet</Button>
+          <Button class="card-button" color="plain" :font-size="16">
+            <i18n
+              path="hero.buttons.start_mining.base"
+              class="title"
+              tag="null"
+            >
+              <span class="wit">{{ $t('hero.buttons.start_mining.wit') }}</span>
+            </i18n>
         </Button>
       </div>
     </div>
