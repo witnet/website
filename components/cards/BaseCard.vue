@@ -6,7 +6,6 @@
 
 <script>
 export default {
-  name: 'BaseCard',
   props: {
     padding: {
       type: Number,

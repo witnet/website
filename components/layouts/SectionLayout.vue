@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'SectionLayout',
-}
-</script>
-
 <style>
 .section {
   padding: 8vh 15vw;

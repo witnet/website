@@ -4,17 +4,6 @@
   </SectionLayout>
 </template>
 
-<script>
-import SectionLayout from '@/components/layouts/SectionLayout.vue'
-
-export default {
-  name: 'JoinCommunity',
-  components: {
-    SectionLayout,
-  },
-}
-</script>
-
 <style lang="scss" scoped>
 .join-community-section {
   background-color: $blue-4;

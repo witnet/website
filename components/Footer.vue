@@ -42,17 +42,6 @@
   </SectionLayout>
 </template>
 
-<script>
-import SectionLayout from '@/components/layouts/SectionLayout.vue'
-
-export default {
-  name: 'Footer',
-  components: {
-    SectionLayout,
-  },
-}
-</script>
-
 <style lang="scss" scoped>
 .footer-section {
   background-color: $blue-5;

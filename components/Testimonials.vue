@@ -12,13 +12,7 @@
 </template>
 
 <script>
-import TestimonialCard from '@/components/cards/TestimonialCard.vue'
-
 export default {
-  name: 'Testimonials',
-  components: {
-    TestimonialCard,
-  },
   data() {
     return {
       testimonials: [

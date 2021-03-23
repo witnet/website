@@ -25,7 +25,6 @@
 <script>
 // FIXME(#61): Change current language on click
 export default {
-  name: 'LanguageSelector',
   data() {
     return {
       displayBox: false,

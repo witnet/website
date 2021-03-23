@@ -11,12 +11,7 @@
 </template>
 
 <script>
-import BaseCard from '@/components/cards/BaseCard.vue'
-
 export default {
-  components: {
-    BaseCard,
-  },
   props: {
     title: {
       type: String,
