@@ -2,11 +2,11 @@
   <SectionLayout class="announcement-section">
     <div class="wrapper">
       <div class="announcement-content">
-        <p class="tag">ANNOUNCEMENT</p>
-        <h4 class="subtitle">Witnet is now side-chanined to Ethereum</h4>
+        <p class="tag">{{ $t('announcement.tag') }}</p>
+        <h4 class="subtitle">{{ $t('announcement.subtitle') }}</h4>
       </div>
-      <Button color="black" :font-size="16">
-        > Learn how to use Witnet from a solidity contract
+      <Button color="plain" :font-size="16">
+        {{ $t('announcement.button') }}
       </Button>
     </div>
   </SectionLayout>
