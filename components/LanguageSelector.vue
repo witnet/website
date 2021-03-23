@@ -9,18 +9,21 @@
     placeholder="Choose a Styling Option"
   >
     <template #selected-option-container="{ option }">
-      <img class="image" :src="option.img" />
+      <!-- FIXME(#60): Get flag images for each language 
+      <img class="image" :src="option.img" /> -->
       <span class="vs__selected">{{ option.locale }}</span>
     </template>
 
     <template #option="option">
-      <img class="image" :src="option.img" />
-      <span>{{ option.name }}</span>
+      <!-- FIXME(#60): Get flag images for each language 
+      <img class="image" :src="option.img" /> -->
+      <span>{{ option.locale }}</span>
     </template>
   </vSelect>
 </template>
 
 <script>
+// FIXME(#61): Change current language on click
 export default {
   name: 'LanguageSelector',
   data() {
@@ -76,7 +79,7 @@ export default {
   }
 
   .image {
-    width: 25px;
+    height: 25px;
     border-radius: 50%;
     vertical-align: middle;
   }

@@ -33,21 +33,21 @@
           </li>
           <li @mouseover="hover = true" @mouseleave="hover = false">
             <a class="tab" href="https://github.com/witnet" target="_blank">
+              <!-- FIXME(#62): Change icon color on hover -->
               <img
                 v-if="hover"
                 class="social"
-                src="/"
+                :src="require('@/assets/svg/github.svg')"
                 :alt="$t('nav_bar.social_image_alt')"
               />
               <img
                 v-else
                 class="social"
-                src="/"
+                :src="require('@/assets/svg/github.svg')"
                 :alt="$t('nav_bar.social_image_alt')"
               />
             </a>
           </li>
-          <!-- TODO: ADD LANGUAGE COMPONENT -->
           <LanguageSelector />
         </ul>
       </transition>
@@ -67,7 +67,6 @@ export default {
       hover: false,
       displayBox: false,
       isMenuVisible: false,
-      items: ['chinese', 'english'],
     }
   },
   methods: {
@@ -89,7 +88,6 @@ export default {
   display: flex;
   height: 10vh;
   justify-content: space-between;
-  background: $blue-5;
   padding: 0 15vw;
 
   .logo-container {
@@ -97,11 +95,11 @@ export default {
     align-items: center;
     text-decoration: none;
     .logo {
-      width: 80px;
+      height: 39px;
     }
   }
   .responsive-menu {
-    color: $white;
+    color: $black;
     display: none;
     font-size: 34px;
   }
@@ -115,12 +113,12 @@ export default {
     .tab {
       font-size: 1.12rem;
       display: flex;
-      color: $white;
+      color: black;
       align-items: center;
       text-decoration: none;
       padding: 24px 32px;
       .social {
-        width: 20px;
+        height: 23px;
         margin: auto 8px;
       }
       .slash {
@@ -128,52 +126,6 @@ export default {
       }
       &:hover {
         color: $green-1;
-      }
-    }
-    .language-btn {
-      //until we have translations
-      display: none;
-      //
-      display: flex;
-      padding: 0 8px;
-      height: 30px;
-      margin-right: 1vw;
-      align-items: center;
-      text-justify: center;
-      border: 1px solid $green-1;
-      color: $green-1;
-      cursor: pointer;
-      &:active {
-        outline: none;
-      }
-      &:hover {
-        opacity: 0.75;
-      }
-      .arrow {
-        padding-left: 8px;
-        width: 8px;
-      }
-    }
-    .drop-down {
-      position: absolute;
-      display: block;
-      width: 100px;
-      // margin-top: 16px;
-      flex-direction: column;
-      & .drop-down-item {
-        cursor: pointer;
-        border: none;
-        background-color: none;
-        color: $white;
-        padding: 8px;
-        border-bottom: 1px solid $white;
-        &:hover {
-          opacity: 0.75;
-        }
-        &:active {
-          box-shadow: none;
-          outline: none;
-        }
       }
     }
   }
@@ -188,14 +140,13 @@ export default {
     overflow-y: hidden;
   }
   .navbar {
-    background-color: $blue-5;
     display: block;
     position: relative;
     padding: 0 0;
     .logo-container {
       .logo {
         margin: 10px;
-        width: 70px;
+        height: 39px;
       }
     }
     .responsive-menu {

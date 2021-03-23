@@ -2,7 +2,7 @@
   <SectionLayout class="decentralized-oracle-section">
     <div class="wrapper">
       <div class="content">
-        <div class="text">
+        <div class="left">
           <h2 class="title">
             {{ $t('decentralized_oracle.title') }}
           </h2>
@@ -13,21 +13,55 @@
             {{ $t('decentralized_oracle.paragraph_2') }}
           </p>
         </div>
-        <div class="image">
-          <p class="illustration">(Nice illustration here)</p>
+        <div class="vertical-line"></div>
+        <div class="right">
+          <TestimonialCard
+            v-for="testimonial in testimonials"
+            :key="testimonial.author"
+            class="testimonial"
+            :class="{ short: testimonial.text.length < 160 }"
+            :author="testimonial.author"
+            :text="testimonial.text"
+            align="right"
+          />
         </div>
       </div>
+      <Button color="plain" :font-size="16" class="margin-top">
         {{ $t('decentralized_oracle.button_label') }}
+      </Button>
     </div>
+    <img class="world" src="@/assets/world.png" />
   </SectionLayout>
 </template>
 
 <script>
 import SectionLayout from '@/components/layouts/SectionLayout.vue'
+import TestimonialCard from '@/components/cards/TestimonialCard.vue'
+
 export default {
   name: 'DecentralizedOracle',
   components: {
     SectionLayout,
+    TestimonialCard,
+  },
+
+  data() {
+    return {
+      testimonials: [
+        {
+          text: this.$t('testimonials.testimonial_1.text'),
+          author: this.$t('testimonials.testimonial_1.author'),
+        },
+        {
+          text: this.$t('testimonials.testimonial_2.text'),
+          author: this.$t('testimonials.testimonial_2.author'),
+        },
+        {
+          text: this.$t('testimonials.testimonial_3.text'),
+          author: this.$t('testimonials.testimonial_3.author'),
+        },
+      ],
+    }
   },
 }
 </script>
@@ -36,6 +70,26 @@ export default {
 .decentralized-oracle-section {
   display: flex;
   justify-content: center;
+  background: #112338;
+  background-image: url('~@/assets/svg/circles.svg');
+  min-height: 800px;
+  background-size: 75%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 500px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -400px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 400px solid #13253a;
+    z-index: -1;
+  }
 
   .wrapper {
     display: flex;
@@ -45,10 +99,12 @@ export default {
     .content {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
+      color: white;
 
-      .text {
+      .left {
+        height: 100%;
         max-width: 554px;
 
         .title {
@@ -59,22 +115,58 @@ export default {
           margin-bottom: 16px;
         }
       }
-      .image {
+
+      .vertical-line {
+        height: 100%;
+        border-left: 1px solid white;
+        margin-right: 1rem;
+      }
+
+      .right {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
         justify-self: center;
-        .illustration {
-          border-radius: 50%;
-          background: $white;
-          width: 300px;
-          height: 300px;
-          align-items: center;
-          display: flex;
-          justify-content: center;
+        .testimonial {
+          margin-bottom: 1.75rem;
+          &.short {
+            max-width: 380px;
+          }
         }
       }
     }
 
     .margin-top {
       margin-top: 16px;
+    }
+  }
+  .world {
+    width: 1000px;
+    bottom: -450px;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .decentralized-oracle-section {
+    .world {
+      width: 75vw;
+      bottom: -40vw;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .decentralized-oracle-section {
+    margin-bottom: 250px;
+    .wrapper {
+      .content {
+        grid-template-columns: 1fr;
+      }
+      .vertical-line {
+        display: none;
+      }
     }
   }
 }

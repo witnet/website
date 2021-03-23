@@ -1,6 +1,11 @@
 <template>
   <button :class="[color, 'button']" :style="{ fontSize: fontSize + 'px' }">
     <slot />
+    <img
+      class="angle-bracket"
+      src="@/assets/svg/angle_bracket_closed.svg"
+      alt="Angle bracket closed"
+    />
   </button>
 </template>
 
@@ -14,9 +19,9 @@ export default {
     },
     color: {
       type: String,
-      default: 'black',
+      default: 'plain',
       validator(value) {
-        return ['white', 'black'].includes(value)
+        return ['plain', 'gradient'].includes(value)
       },
     },
   },
@@ -28,7 +33,7 @@ export default {
   border: 1px solid $white;
   margin-right: 16px;
   background-color: transparent;
-  border-radius: 5px;
+  border-radius: 32px;
   padding: 12px 16px;
   outline: 0;
   text-decoration: none;
@@ -39,24 +44,26 @@ export default {
   height: fit-content;
   box-sizing: border-box;
 
-  &.white {
-    color: $white;
-    border-color: $white;
+  &.plain {
+    color: black;
+    background: #e6e6f5;
   }
 
-  &.black {
-    color: $black;
-    border-color: $black;
+  &.gradient {
+    background: #5fbfae;
+    color: white;
   }
 
   &:hover {
-    color: $green-1;
-    border-color: $green-1;
+    background: #468d80;
   }
 
   &:active {
-    color: $green-2;
-    border-color: $green-2;
+    background: #468d80;
+  }
+
+  .angle-bracket {
+    height: 10px;
   }
 }
 </style>

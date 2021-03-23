@@ -19,4 +19,9 @@ export default {
     padding: 10vw 10vw;
   }
 }
+@media (max-width: 600px) {
+  .section {
+    padding: 0;
+  }
+}
 </style>

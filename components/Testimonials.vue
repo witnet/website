@@ -1,5 +1,5 @@
 <template>
-  <SectionLayout class="testimonials-section">
+  <div>
     <TestimonialCard
       v-for="testimonial in testimonials"
       :key="testimonial.author"
@@ -8,18 +8,16 @@
       :text="testimonial.text"
       :align="testimonial.align"
     />
-  </SectionLayout>
+  </div>
 </template>
 
 <script>
 import TestimonialCard from '@/components/cards/TestimonialCard.vue'
-import SectionLayout from '@/components/layouts/SectionLayout.vue'
 
 export default {
   name: 'Testimonials',
   components: {
     TestimonialCard,
-    SectionLayout,
   },
   data() {
     return {

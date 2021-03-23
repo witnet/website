@@ -1,6 +1,6 @@
 <template>
   <div :class="border ? 'card-container border' : 'card-container'">
-    <img class="logo" :src="url" alt="logo" />
+    <img class="logo" :src="src" alt="logo" />
     <h3 :class="border ? 'title border' : 'title'">{{ title }}</h3>
     <p :class="border ? 'subtitle border' : 'subtitle'">{{ content }}</p>
   </div>
@@ -22,7 +22,7 @@ export default {
       type: Boolean,
       required: true,
     },
-    url: {
+    src: {
       type: String,
       required: true,
     },

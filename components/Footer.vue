@@ -36,7 +36,8 @@
           <span>{{ $t('footer.copyright.license') }}</span>
         </i18n>
       </div>
-      <div>ENG ^</div>
+      <!-- FIXME(#63): Update selector to fit here
+      <LanguageSelector /> -->
     </div>
   </SectionLayout>
 </template>
