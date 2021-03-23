@@ -12,16 +12,6 @@
   </SectionLayout>
 </template>
 
-<script>
-import SectionLayout from '@/components/layouts/SectionLayout.vue'
-export default {
-  name: 'Announcement',
-  components: {
-    SectionLayout,
-  },
-}
-</script>
-
 <style scoped lang="scss">
 .announcement-section {
   background: $grey-0;

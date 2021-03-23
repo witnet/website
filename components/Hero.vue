@@ -30,18 +30,6 @@
   </SectionLayout>
 </template>
 
-<script>
-import Button from '@/components/Button.vue'
-import SectionLayout from '@/components/layouts/SectionLayout.vue'
-
-export default {
-  components: {
-    Button,
-    SectionLayout,
-  },
-}
-</script>
-
 <style lang="scss" scoped>
 .section {
   color: $white;

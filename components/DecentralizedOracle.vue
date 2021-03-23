@@ -35,16 +35,7 @@
 </template>
 
 <script>
-import SectionLayout from '@/components/layouts/SectionLayout.vue'
-import TestimonialCard from '@/components/cards/TestimonialCard.vue'
-
 export default {
-  name: 'DecentralizedOracle',
-  components: {
-    SectionLayout,
-    TestimonialCard,
-  },
-
   data() {
     return {
       testimonials: [

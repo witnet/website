@@ -7,7 +7,6 @@
 
 <script>
 export default {
-  name: 'TestimonialCard',
   props: {
     text: {
       type: String,

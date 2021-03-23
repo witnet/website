@@ -25,14 +25,7 @@
 </template>
 
 <script>
-import SocialsCard from '@/components/cards/SocialsCard.vue'
-import SectionLayout from '@/components/layouts/SectionLayout.vue'
-
 export default {
-  components: {
-    SocialsCard,
-    SectionLayout,
-  },
   data() {
     return {
       socials: [

@@ -11,7 +11,6 @@
 
 <script>
 export default {
-  name: 'Button',
   props: {
     fontSize: {
       type: Number,

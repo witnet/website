@@ -56,12 +56,7 @@
 </template>
 
 <script>
-import LanguageSelector from '@/components/LanguageSelector'
-
 export default {
-  components: {
-    LanguageSelector,
-  },
   data() {
     return {
       hover: false,

@@ -18,14 +18,7 @@
 </template>
 
 <script>
-import EcosystemCard from '@/components/cards/EcosystemCard.vue'
-import SectionLayout from '@/components/layouts/SectionLayout.vue'
-
 export default {
-  components: {
-    EcosystemCard,
-    SectionLayout,
-  },
   data() {
     return {
       items: [
