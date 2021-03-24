@@ -63,15 +63,13 @@ export default {
     border: none;
     box-shadow: none;
     color: $dark-blue;
-    text-transform: lowercase;
-    font-variant: small-caps;
     min-width: max-content;
+    font-size: 0.75rem;
   }
 
   .vs__dropdown-menu {
     border: 1px solid $grey-1;
     box-shadow: 1px 1px 10px 2px $alpha-purple;
-    // background: red;
   }
   .vs__dropdown-option--highlight {
     background: $green-1;
@@ -90,11 +88,22 @@ export default {
 
   .vs__selected {
     margin: 0;
+    padding: 4px 0 0 0;
   }
 
   // remove extra space
   .vs__search {
     padding: 0 !important;
+  }
+
+  &:hover {
+    .vs__selected {
+      margin: 0;
+      color: $green-1;
+    }
+    .vs__open-indicator {
+      fill: $green-1;
+    }
   }
 }
 
