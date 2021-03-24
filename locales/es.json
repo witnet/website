@@ -112,8 +112,8 @@
     },
     "hero": {
         "title": {
-            "main": "Unleash the {0} of smart contracts",
-            "gradient": "real power"
+            "main": "Descubre el {0} de los smart contracts",
+            "gradient": "auténtico poder"
         },
         "description": "Witnet enables your smart contracts to react to real world events with strong crypto-economic guarantees.",
         "buttons": {

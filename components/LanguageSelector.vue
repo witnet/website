@@ -11,41 +11,46 @@
     <template #selected-option-container="{ option }">
       <!-- FIXME(#60): Get flag images for each language 
       <img class="image" :src="option.img" /> -->
-      <span class="vs__selected">{{ option.locale }}</span>
+      <span class="vs__selected">{{ option.label }}</span>
     </template>
 
     <template #option="option">
       <!-- FIXME(#60): Get flag images for each language 
       <img class="image" :src="option.img" /> -->
-      <span>{{ option.locale }}</span>
+      <span>{{ option.label }}</span>
     </template>
   </vSelect>
 </template>
 
 <script>
-// FIXME(#61): Change current language on click
+import { defaultLocale } from '../default'
+import { languages } from '../constants'
+import { findLanguage } from '../utils'
+
 export default {
   data() {
+    const selectedLanguage = this.$route.path.replace('/', '') || defaultLocale
+    const expandedLanguages = languages.map((language) => ({
+      ...language,
+      img: require('@/assets/svg/dragon.png'),
+      label: language.code.toUpperCase(),
+    }))
+
     return {
       displayBox: false,
-      selected: {
-        name: 'english',
-        locale: 'EN',
-        img: require('@/assets/svg/dragon.png'),
-      },
-      options: [
-        {
-          name: 'english',
-          locale: 'EN',
-          img: require('@/assets/svg/dragon.png'),
-        },
-        {
-          name: 'spanish',
-          locale: 'ES',
-          img: require('@/assets/svg/dragon.png'),
-        },
-      ],
+      selected:
+        findLanguage(expandedLanguages, selectedLanguage) ||
+        findLanguage(expandedLanguages, defaultLocale),
+      options: expandedLanguages,
     }
+  },
+  watch: {
+    selected: {
+      handler(selected) {
+        this.$router.push(selected.code)
+      },
+      deep: true,
+    },
   },
 }
 </script>

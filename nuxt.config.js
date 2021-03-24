@@ -1,3 +1,6 @@
+import { languages } from './constants'
+import { defaultLocale } from './default'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -47,20 +50,10 @@ export default {
   i18n: {
     // add SEO attributes in layout head for better performance
     seo: false,
-    locales: [
-      {
-        code: 'en',
-        iso: 'en-US',
-        isCatchallLocale: true,
-      },
-      {
-        code: 'es',
-        iso: 'es-ES',
-      },
-    ],
-    defaultLocale: 'en',
+    locales: languages,
+    defaultLocale,
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: defaultLocale,
       messages: {
         en: require('./locales/en.json'),
         es: require('./locales/es.json'),
@@ -71,6 +64,7 @@ export default {
       cookieKey: 'i18n_redirected',
       onlyOnRoot: true,
     },
+    strategy: 'prefix_and_default',
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
