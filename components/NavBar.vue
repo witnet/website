@@ -4,8 +4,9 @@
       <nuxt-link to="/" class="logo-container" @click.native="closeMenu">
         <img
           class="logo"
-          src="@/assets/svg/witnet_logo.svg"
-          :alt="$t('nav_bar.witnet_logo_alt')"
+          src="@/assets/images/witnet_logo.svg"
+          alt=""
+          aria-hidden="true"
         />
       </nuxt-link>
       <div class="responsive-nav">
@@ -56,13 +57,13 @@
               <img
                 v-if="hover"
                 class="social"
-                :src="require('@/assets/svg/github.svg')"
+                :src="require('@/assets/images/github.svg')"
                 :alt="$t('nav_bar.social_image_alt')"
               />
               <img
                 v-else
                 class="social"
-                :src="require('@/assets/svg/github.svg')"
+                :src="require('@/assets/images/github.svg')"
                 :alt="$t('nav_bar.social_image_alt')"
               />
             </a>

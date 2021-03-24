@@ -17,9 +17,10 @@
       </div>
     </div>
     <img
-      src="@/assets/svg/dragon_reading.svg"
-      alt="Witnet pet doing creating requests"
+      src="@/assets/images/dragon_reading.png"
       class="hero-image"
+      alt=""
+      aria-hidden="true"
     />
   </SectionLayout>
 </template>

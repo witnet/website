@@ -3,8 +3,9 @@
     <div class="top">
       <img
         class="dragon-image"
-        src="@/assets/svg/dragon.png"
-        :alt="$t('get_involved.witnet_pet_image_alt')"
+        src="@/assets/images/dragon.png"
+        alt=""
+        aria-hidden="true"
       />
       <div class="right">
         <i18n path="get_involved.title.main" class="title" tag="h2">

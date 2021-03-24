@@ -1,7 +1,13 @@
 <template>
   <button :class="[type, 'button']" :style="{ fontSize: fontSize + 'px' }">
     <slot />
-    <span class="arrow">></span>
+    <img
+      class="arrow"
+      :class="{ white: isWhiteArrow }"
+      src="@/assets/images/angle_bracket_closed.svg"
+      alt=""
+      aria-hidden="true"
+    />
   </button>
 </template>
 
@@ -18,6 +24,11 @@ export default {
       validator(value) {
         return ['default', 'secondary', 'primary'].includes(value)
       },
+    },
+  },
+  computed: {
+    isWhiteArrow() {
+      return this.type === 'primary'
     },
   },
 }
@@ -41,6 +52,11 @@ export default {
 
   .arrow {
     margin-left: 8px;
+    height: 10px;
+
+    &.white {
+      filter: brightness(0) invert(1);
+    }
   }
 }
 .secondary {
