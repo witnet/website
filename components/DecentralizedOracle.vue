@@ -21,8 +21,8 @@
         <div class="vertical-line" />
         <div class="right">
           <TestimonialCard
-            v-for="testimonial in testimonials"
-            :key="testimonial.author"
+            v-for="(testimonial, index) in testimonials"
+            :key="index"
             class="testimonial"
             :class="{ short: testimonial.text.length < 160 }"
             :author="testimonial.author"

@@ -103,16 +103,6 @@ export default {
   .vs__search {
     padding: 0 !important;
   }
-
-  &:hover {
-    .vs__selected {
-      margin: 0;
-      color: $green-1;
-    }
-    .vs__open-indicator {
-      fill: $green-1;
-    }
-  }
 }
 
 // avoid decrease size on open
