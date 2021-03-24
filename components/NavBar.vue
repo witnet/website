@@ -47,6 +47,11 @@
               <span class="slash">/</span>{{ $t('nav_bar.route.blog') }}
             </nuxt-link>
           </li>
+          <li class="link">
+            <div class="tab">
+              <LanguageSelector class="language-component" />
+            </div>
+          </li>
           <li
             class="link"
             @mouseover="hover = true"
@@ -57,7 +62,7 @@
               <img
                 v-if="hover"
                 class="social"
-                :src="require('@/assets/images/github.svg')"
+                :src="require('@/assets/images/github-hover.svg')"
                 :alt="$t('nav_bar.social_image_alt')"
               />
               <img
@@ -68,7 +73,6 @@
               />
             </a>
           </li>
-          <LanguageSelector class="language-component" />
         </ul>
       </transition>
     </nav>
@@ -133,12 +137,16 @@ export default {
       padding: 24px 32px;
       .social {
         margin: auto 8px;
+        width: 25px;
       }
       .slash {
         color: $green-1;
       }
       &:hover {
         color: $green-1;
+        .slash {
+          color: $black;
+        }
       }
     }
   }
