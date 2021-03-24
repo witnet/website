@@ -1,7 +1,7 @@
 <template>
   <div :class="{ drop: isMenuVisible }">
     <nav class="navbar">
-      <nuxt-link to="/" class="logo-container" @click.native="closeMenu">
+      <nuxt-link to="/" class="logo-container" @click.native="handleClick">
         <img
           class="logo"
           src="@/assets/images/witnet_logo.svg"
@@ -9,8 +9,11 @@
           aria-hidden="true"
         />
       </nuxt-link>
+      <LanguageSelector
+        v-if="!isMenuVisible"
+        class="responsive-nav responsive-lng"
+      />
       <div class="responsive-nav">
-        <LanguageSelector v-if="!isMenuVisible" class="responsive-lng" />
         <label
           v-if="!isMenuVisible"
           class="responsive-menu"
@@ -28,28 +31,44 @@
       <transition name="dropdown" class="dropdown">
         <ul class="tab-container" :class="{ visible: isMenuVisible }">
           <li class="link">
-            <nuxt-link to="/about" class="tab" @click.native="closeMenu">
+            <nuxt-link
+              :to="{ path: localePath('/'), hash: '#oracle' }"
+              class="tab"
+              @click.native="handleClick('oracle')"
+            >
               <span class="slash">/</span>{{ $t('nav_bar.route.oracle') }}
             </nuxt-link>
           </li>
           <li class="link">
-            <nuxt-link to="/#participate" class="tab" @click.native="closeMenu">
+            <nuxt-link
+              :to="{ path: localePath('/'), hash: '#token' }"
+              class="tab"
+              @click.native="handleClick('token')"
+            >
               <span class="slash">/</span>{{ $t('nav_bar.route.token') }}
             </nuxt-link>
           </li>
           <li class="link">
-            <nuxt-link to="/#participate" class="tab" @click.native="closeMenu">
+            <nuxt-link
+              :to="{ path: localePath('/'), hash: '#ecosystem' }"
+              class="tab"
+              @click.native="handleClick('ecosystem')"
+            >
               <span class="slash">/</span>{{ $t('nav_bar.route.ecosystem') }}
             </nuxt-link>
           </li>
           <li class="link">
-            <nuxt-link to="/#participate" class="tab" @click.native="closeMenu">
+            <nuxt-link
+              :to="{ path: localePath('/'), hash: '#participate' }"
+              class="tab"
+              @click.native="handleClick('participate')"
+            >
               <span class="slash">/</span>{{ $t('nav_bar.route.blog') }}
             </nuxt-link>
           </li>
-          <li class="link">
+          <li class="link language-component">
             <div class="tab">
-              <LanguageSelector class="language-component" />
+              <LanguageSelector />
             </div>
           </li>
           <li
@@ -89,8 +108,16 @@ export default {
     }
   },
   methods: {
-    closeMenu() {
+    handleClick(anchorId) {
       this.isMenuVisible = false
+      if (this.$route.hash) {
+        const anchor = document.querySelector(`#${anchorId}`)
+        if (anchor) {
+          window.scrollTo({
+            top: anchor.getBoundingClientRect().top + window.pageYOffset,
+          })
+        }
+      }
     },
     toggleMenu() {
       this.isMenuVisible = !this.isMenuVisible
@@ -174,13 +201,11 @@ export default {
       display: none;
     }
     .responsive-nav {
-      display: flex;
+      display: block;
       position: absolute;
       top: 4px;
       right: 10px;
-      align-items: center;
       .responsive-menu {
-        margin-left: 8px;
         color: $black;
         font-size: 34px;
         cursor: pointer;
@@ -188,6 +213,10 @@ export default {
           font-size: 38px;
         }
       }
+    }
+    .responsive-lng {
+      top: 14px;
+      right: 60px;
     }
     .tab-container {
       background-color: $white;
@@ -202,18 +231,6 @@ export default {
       &.visible {
         display: flex;
         flex-direction: column;
-      }
-      .language-btn {
-        display: none;
-        justify-content: space-between;
-        margin: 16px 50px 0 50px;
-        border: none;
-        &:hover {
-          color: $green-1;
-        }
-        .arrow {
-          display: block;
-        }
       }
       .drop-down {
         position: relative;

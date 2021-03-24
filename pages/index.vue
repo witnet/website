@@ -1,12 +1,12 @@
 <template>
   <div>
     <Hero />
-    <DecentralizedOracle />
+    <DecentralizedOracle id="oracle" />
     <!-- <nuxt-content :document="page" /> -->
-    <WitToken />
-    <Ecosystem />
-    <GetInvolved />
-    <JoinCommunity />
+    <WitToken id="token" />
+    <Ecosystem id="ecosystem" />
+    <GetInvolved id="get_involved" />
+    <JoinCommunity id="community" />
     <Footer />
   </div>
 </template>
