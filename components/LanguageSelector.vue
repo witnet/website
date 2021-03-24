@@ -32,7 +32,7 @@ export default {
     const selectedLanguage = this.$route.path.replace('/', '') || defaultLocale
     const expandedLanguages = languages.map((language) => ({
       ...language,
-      img: require('@/assets/svg/dragon.png'),
+      img: require('@/assets/images/dragon.png'),
       label: language.code.toUpperCase(),
     }))
 

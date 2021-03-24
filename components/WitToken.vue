@@ -1,7 +1,12 @@
 <template>
   <SectionLayout class="wit-tokens-section">
     <BaseCard :padding="48" class="card-container">
-      <img class="wit-image" src="@/assets/svg/dragon.png" alt="Wit image" />
+      <img
+        class="wit-image"
+        src="@/assets/images/dragon.png"
+        alt=""
+        aria-hidden="true"
+      />
       <h2 class="title">{{ $t('wit_token.title') }}</h2>
       <p class="text">{{ $t('wit_token.text') }}</p>
       <div class="btn-container">

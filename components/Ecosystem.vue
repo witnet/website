@@ -26,37 +26,37 @@ export default {
       items: [
         {
           title: this.$t('ecosystem.cards.node.title'),
-          src: require('@/assets/svg/full_node.svg'),
+          src: require('@/assets/images/full_node.svg'),
           border: false,
           content: this.$t('ecosystem.cards.node.content'),
         },
         {
           title: this.$t('ecosystem.cards.sheikah.title'),
-          src: require('@/assets/svg/sheikah.svg'),
+          src: require('@/assets/images/sheikah.svg'),
           border: false,
           content: this.$t('ecosystem.cards.sheikah.content'),
         },
         {
           title: this.$t('ecosystem.cards.truffle_box.title'),
-          src: require('@/assets/svg/ethereum.svg'),
+          src: require('@/assets/images/truffle-box.png'),
           border: false,
           content: this.$t('ecosystem.cards.truffle_box.content'),
         },
         {
           title: this.$t('ecosystem.cards.explorer.title'),
-          src: require('@/assets/svg/explorer.svg'),
+          src: require('@/assets/images/explorer.svg'),
           border: false,
           content: this.$t('ecosystem.cards.explorer.content'),
         },
         {
           title: this.$t('ecosystem.cards.monitor.title'),
-          src: require('@/assets/svg/monitor.svg'),
+          src: require('@/assets/images/monitor.svg'),
           border: false,
           content: this.$t('ecosystem.cards.monitor.content'),
         },
         {
           title: this.$t('ecosystem.cards.next.title'),
-          src: require('@/assets/svg/question_mark.svg'),
+          src: require('@/assets/images/question_mark.svg'),
           border: true,
           content: this.$t('ecosystem.cards.next.content'),
         },

@@ -1,6 +1,12 @@
 <template>
   <div :class="border ? 'card-container border' : 'card-container'">
-    <img class="logo" :src="src" alt="logo" />
+    <img
+      class="logo"
+      :class="{ auto: border }"
+      :src="src"
+      alt=""
+      aria-hidden="true"
+    />
     <h3 :class="border ? 'title border' : 'title'">{{ title }}</h3>
     <p :class="border ? 'subtitle border' : 'subtitle'">{{ content }}</p>
   </div>
@@ -52,6 +58,14 @@ export default {
   .subtitle {
     &.border {
       color: $grey-3;
+    }
+  }
+
+  .logo {
+    height: 170px;
+
+    &.auto {
+      height: auto;
     }
   }
 }

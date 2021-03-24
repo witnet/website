@@ -32,7 +32,12 @@
         </div>
       </div>
     </div>
-    <img class="world" src="@/assets/world.png" />
+    <img
+      class="world"
+      src="@/assets/images/world.png"
+      aria-hidden="true"
+      alt=""
+    />
   </SectionLayout>
 </template>
 
@@ -64,7 +69,7 @@ export default {
   display: flex;
   justify-content: center;
   background: #112338;
-  background-image: url('~@/assets/svg/circles.svg');
+  background-image: url('~@/assets/images/circles.png');
   min-height: 800px;
   background-size: 75%;
   background-position-x: center;
