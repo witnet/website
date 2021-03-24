@@ -62,7 +62,9 @@ export default {
     font-variant: small-caps;
     min-width: max-content;
   }
-
+  .vs__open-indicator {
+    font-size: 12px;
+  }
   .vs__dropdown-menu {
     border: 1px solid $grey-1;
     box-shadow: 1px 1px 10px 2px $alpha-purple;
@@ -82,11 +84,17 @@ export default {
     border-radius: 50%;
     vertical-align: middle;
   }
-
   .vs__selected {
     margin: 0;
   }
-
+  &:hover {
+    .vs__selected {
+      color: $green-1;
+    }
+    .vs__open-indicator {
+      color: $black;
+    }
+  }
   // remove extra space
   .vs__search {
     padding: 0 !important;
