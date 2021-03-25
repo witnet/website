@@ -84,7 +84,6 @@
             "gradient": "stay for the fun!"
         },
         "content": "From developers to miners and enthusiasts, the witnet community prouds itself on always being welcoming, discussing the things that really matter, and ensuring that witnet plays a key role in the foundations of Web3.",
-        "witnet_pet_image_alt": "dragon-witnet",
         "subtitle": "Get involved now",
         "social": {
             "follow": {
@@ -127,14 +126,13 @@
         "text": "Questions? Join the Telegram and Discord communities!"
     },
     "nav_bar": {
-        "witnet_logo_alt": "Witnet logo",
         "route": {
             "oracle": "oracle",
             "token": "token",
             "ecosystem": "ecosystem",
             "blog": "blog"
         },
-        "social_image_alt": "Github logo"
+        "social_image_alt": "Open Witnet's Github on new window"
     },
     "testimonials": {
         "testimonial_1": {
