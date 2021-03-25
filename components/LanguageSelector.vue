@@ -93,6 +93,7 @@ export default {
   }
   &:hover {
     .vs__selected {
+      margin: 0;
       color: $green-1;
     }
     .vs__open-indicator {
@@ -104,15 +105,6 @@ export default {
     padding: 0 !important;
   }
 
-  &:hover {
-    .vs__selected {
-      margin: 0;
-      color: $green-1;
-    }
-    .vs__open-indicator {
-      fill: $green-1;
-    }
-  }
 }
 
 // avoid decrease size on open

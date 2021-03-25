@@ -56,6 +56,7 @@
 .hero-image {
   max-width: 77%;
   right: 40px;
+  height: 100%;
 }
 .right {
   border: 2px solid $white;

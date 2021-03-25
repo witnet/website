@@ -10,7 +10,8 @@
         />
       </nuxt-link>
       <div class="responsive-nav">
-        <LanguageSelector v-if="!isMenuVisible" class="responsive-lng" />
+        <!-- TODO: FIX open selector -->
+        <LanguageSelector v-if="!isMenuVisible" />
         <label
           v-if="!isMenuVisible"
           class="responsive-menu"
@@ -63,11 +64,6 @@
               <span class="slash">/</span>{{ $t('nav_bar.route.blog') }}
             </nuxt-link>
           </li>
-          <li class="link">
-            <div class="tab">
-              <LanguageSelector class="language-component" />
-            </div>
-          </li>
           <li
             class="link"
             @mouseover="hover = true"
@@ -104,6 +100,16 @@ export default {
       isMenuVisible: false,
     }
   },
+  watch: {
+    isMenuVisible(val, oldVal) {
+      if (val !== oldVal) {
+        document.getElementsByTagName('body')[0].style.overflow = this
+          .isMenuVisible
+          ? 'hidden'
+          : 'auto'
+      }
+    },
+  },
   methods: {
     handleClick(anchorId) {
       this.isMenuVisible = false
@@ -138,7 +144,9 @@ export default {
     display: flex;
     align-items: center;
     text-decoration: none;
+    width: fit-content;
     .logo {
+      user-select: none;
       height: 39px;
     }
   }
@@ -162,6 +170,7 @@ export default {
       .social {
         margin: auto 8px;
         width: 25px;
+        user-select: none;
       }
       .slash {
         color: $green-1;
@@ -169,7 +178,7 @@ export default {
       &:hover {
         color: $green-1;
         .slash {
-          color: $black;
+          // color: $black;
         }
       }
     }
@@ -183,7 +192,9 @@ export default {
     height: 100%;
     z-index: 15;
     overflow-y: hidden;
+    width: 100%;
   }
+
   .navbar {
     display: block;
     position: relative;
@@ -208,6 +219,8 @@ export default {
         color: $black;
         font-size: 34px;
         cursor: pointer;
+        user-select: none;
+
         &.cross {
           font-size: 38px;
         }
@@ -218,15 +231,28 @@ export default {
       list-style: none;
       display: none;
       text-align: center;
-      height: 100vh;
       width: 100vw;
+      height: 100vh;
       padding: 0;
       margin: 0;
-      padding-top: 14vh;
+      box-shadow: 0 5px 10px -2px $alpha-purple;
+
       &.visible {
         display: flex;
         flex-direction: column;
       }
+
+      .tab {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .link {
+        width: 100%;
+        border-bottom: 1px solid #e6e6f5;
+      }
+
       .language-btn {
         display: none;
         justify-content: space-between;
