@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'new-website',
+    title: 'Decentralized oracle network | Witnet',
     htmlAttrs: {
       lang: 'en',
     },
