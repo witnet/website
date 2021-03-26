@@ -3,7 +3,7 @@
     <div class="top">
       <img
         class="dragon-image"
-        src="@/assets/images/dragon.png"
+        src="@/assets/images/community.svg"
         alt=""
         aria-hidden="true"
       />
@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import { urls } from '../constants'
+
 export default {
   data() {
     return {
@@ -38,7 +40,7 @@ export default {
           links: [
             {
               text: this.$t('get_involved.social.follow.links.twitter'),
-              url: 'https://',
+              url: urls.twitter,
             },
           ],
         },
@@ -50,13 +52,13 @@ export default {
               text: this.$t(
                 'get_involved.social.join_discussion.links.telegram'
               ),
-              url: 'https://',
+              url: urls.telegram,
             },
             {
               text: this.$t(
                 'get_involved.social.join_discussion.links.discord'
               ),
-              url: 'https://',
+              url: urls.discord,
             },
           ],
         },
@@ -66,7 +68,7 @@ export default {
           links: [
             {
               text: this.$t('get_involved.social.find_bugs.stay_tuned'),
-              url: null,
+              url: urls.telegram,
             },
           ],
         },
@@ -118,6 +120,7 @@ export default {
       }
     }
     .dragon-image {
+      margin-right: 32px;
       width: 300px;
     }
   }
@@ -129,6 +132,9 @@ export default {
       .right {
         margin-top: 16px;
         max-width: 100vw;
+      }
+      .dragon-image {
+        margin-right: 0;
       }
     }
     .bottom {

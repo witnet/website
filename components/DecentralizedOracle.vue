@@ -14,15 +14,17 @@
           <p class="paragraph">
             {{ $t('decentralized_oracle.paragraph_2') }}
           </p>
-          <Button type="primary" :font-size="14" class="btn">{{
-            $t('decentralized_oracle.button_label')
-          }}</Button>
+          <a :href="urls.docs" target="_blank">
+            <Button type="primary" :font-size="14" class="btn">{{
+              $t('decentralized_oracle.button_label')
+            }}</Button>
+          </a>
         </div>
         <div class="vertical-line" />
         <div class="right">
           <TestimonialCard
-            v-for="(testimonial, index) in testimonials"
-            :key="index"
+            v-for="testimonial in testimonials"
+            :key="testimonial.author"
             class="testimonial"
             :class="{ short: testimonial.text.length < 160 }"
             :author="testimonial.author"
@@ -42,9 +44,12 @@
 </template>
 
 <script>
+import { urls } from '../constants'
+
 export default {
   data() {
     return {
+      urls,
       testimonials: [
         {
           text: this.$t('testimonials.testimonial_1.text'),

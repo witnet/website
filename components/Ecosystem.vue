@@ -10,6 +10,7 @@
       <EcosystemCard
         v-for="item in items"
         :key="item.title"
+        :link="item.link"
         :title="item.title"
         :content="item.content"
         :src="item.src"
@@ -20,6 +21,8 @@
 </template>
 
 <script>
+import { urls } from '../constants'
+
 export default {
   data() {
     return {
@@ -27,24 +30,28 @@ export default {
         {
           title: this.$t('ecosystem.cards.node.title'),
           src: require('@/assets/images/full_node.svg'),
+          link: urls.minning,
           border: false,
           content: this.$t('ecosystem.cards.node.content'),
         },
         {
           title: this.$t('ecosystem.cards.sheikah.title'),
           src: require('@/assets/images/sheikah.svg'),
+          link: urls.sheikah,
           border: false,
           content: this.$t('ecosystem.cards.sheikah.content'),
         },
         {
           title: this.$t('ecosystem.cards.truffle_box.title'),
           src: require('@/assets/images/truffle-box.png'),
+          link: urls.truffleBox,
           border: false,
           content: this.$t('ecosystem.cards.truffle_box.content'),
         },
         {
           title: this.$t('ecosystem.cards.explorer.title'),
           src: require('@/assets/images/explorer.svg'),
+          link: urls.blockExplorer,
           border: false,
           content: this.$t('ecosystem.cards.explorer.content'),
         },
@@ -56,7 +63,8 @@ export default {
         },
         {
           title: this.$t('ecosystem.cards.next.title'),
-          src: require('@/assets/images/question_mark.svg'),
+          src: require('@/assets/images/question_mark.png'),
+          link: urls.docs,
           border: true,
           content: this.$t('ecosystem.cards.next.content'),
         },

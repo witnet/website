@@ -1,18 +1,19 @@
 <template>
   <div :class="{ drop: isMenuVisible }">
     <nav class="navbar">
-      <nuxt-link to="/" class="logo-container" @click.native="handleClick">
+      <div class="logo-container">
         <img
           class="logo"
           src="@/assets/images/witnet_logo.svg"
           alt=""
           aria-hidden="true"
         />
-      </nuxt-link>
-      <LanguageSelector
+      </div>
+      <!-- FIX(#77): Fix select and translate website-->
+      <!-- <LanguageSelector
         v-if="!isMenuVisible"
         class="responsive-nav responsive-lng"
-      />
+      /> -->
       <div class="responsive-nav">
         <label
           v-if="!isMenuVisible"
@@ -30,54 +31,38 @@
       </div>
       <transition name="dropdown" class="dropdown">
         <ul class="tab-container" :class="{ visible: isMenuVisible }">
-          <li class="link">
-            <nuxt-link
-              :to="{ path: localePath('/'), hash: '#oracle' }"
-              class="tab"
-              @click.native="handleClick('oracle')"
-            >
+          <li class="link" @click="hideMenu">
+            <InnerLink class="tab" hash="oracle">
               <span class="slash">/</span>{{ $t('nav_bar.route.oracle') }}
-            </nuxt-link>
+            </InnerLink>
           </li>
-          <li class="link">
-            <nuxt-link
-              :to="{ path: localePath('/'), hash: '#token' }"
-              class="tab"
-              @click.native="handleClick('token')"
-            >
+          <li class="link" @click="hideMenu">
+            <InnerLink class="tab" hash="token">
               <span class="slash">/</span>{{ $t('nav_bar.route.token') }}
-            </nuxt-link>
+            </InnerLink>
           </li>
-          <li class="link">
-            <nuxt-link
-              :to="{ path: localePath('/'), hash: '#ecosystem' }"
-              class="tab"
-              @click.native="handleClick('ecosystem')"
-            >
+          <li class="link" @click="hideMenu">
+            <InnerLink class="tab" hash="ecosystem">
               <span class="slash">/</span>{{ $t('nav_bar.route.ecosystem') }}
-            </nuxt-link>
+            </InnerLink>
           </li>
           <li class="link">
-            <nuxt-link
-              :to="{ path: localePath('/'), hash: '#participate' }"
-              class="tab"
-              @click.native="handleClick('participate')"
-            >
+            <a :href="urls.medium" target="_blank" class="tab">
               <span class="slash">/</span>{{ $t('nav_bar.route.blog') }}
-            </nuxt-link>
+            </a>
           </li>
-          <li class="link language-component">
+          <!-- FIX(#77): Fix select and translate website-->
+          <!-- <li class="link language-component">
             <div class="tab">
               <LanguageSelector />
             </div>
-          </li>
+          </li> -->
           <li
             class="link"
             @mouseover="hover = true"
             @mouseleave="hover = false"
           >
-            <a class="tab" href="https://github.com/witnet" target="_blank">
-              <!-- FIXME(#62): Change icon color on hover -->
+            <a class="tab" :href="urls.github" target="_blank">
               <img
                 v-if="hover"
                 class="social"
@@ -99,25 +84,20 @@
 </template>
 
 <script>
+import { urls } from '../constants'
+
 export default {
   data() {
     return {
+      urls,
       hover: false,
       displayBox: false,
       isMenuVisible: false,
     }
   },
   methods: {
-    handleClick(anchorId) {
+    hideMenu() {
       this.isMenuVisible = false
-      if (this.$route.hash) {
-        const anchor = document.querySelector(`#${anchorId}`)
-        if (anchor) {
-          window.scrollTo({
-            top: anchor.getBoundingClientRect().top + window.pageYOffset,
-          })
-        }
-      }
     },
     toggleMenu() {
       this.isMenuVisible = !this.isMenuVisible
@@ -231,18 +211,6 @@ export default {
       &.visible {
         display: flex;
         flex-direction: column;
-      }
-      .drop-down {
-        position: relative;
-        border-top: none;
-        margin: 0 auto;
-        padding: 0;
-        width: 275px;
-        .drop-down-item {
-          border-bottom: 1px solid $white;
-          padding: 10px;
-          text-align: left;
-        }
       }
     }
   }

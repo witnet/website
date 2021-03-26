@@ -8,12 +8,20 @@
       </div>
       <p class="description">{{ $t('hero.description') }}</p>
       <div class="buttons">
-        <Button type="secondary" :font-size="14">Build with Witnet</Button>
-        <Button class="card-button" type="secondary" :font-size="14">
-          <i18n path="hero.buttons.start_mining.base" class="title" tag="null">
-            <span class="wit">{{ $t('hero.buttons.start_mining.wit') }}</span>
-          </i18n>
-        </Button>
+        <a :href="urls.docs" target="_blank">
+          <Button type="secondary" :font-size="14">Build with Witnet</Button>
+        </a>
+        <a :href="urls.minning" target="_blank">
+          <Button class="card-button" type="secondary" :font-size="14">
+            <i18n
+              path="hero.buttons.start_mining.base"
+              class="title"
+              tag="null"
+            >
+              <span class="wit">{{ $t('hero.buttons.start_mining.wit') }}</span>
+            </i18n>
+          </Button>
+        </a>
       </div>
     </div>
     <img
@@ -24,6 +32,18 @@
     />
   </SectionLayout>
 </template>
+
+<script>
+import { urls } from '../constants'
+
+export default {
+  data() {
+    return {
+      urls,
+    }
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .main-section {
@@ -56,6 +76,7 @@
 .hero-image {
   max-width: 77%;
   right: 40px;
+  height: 100%;
 }
 .right {
   border: 2px solid $white;
