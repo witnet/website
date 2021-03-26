@@ -1,20 +1,26 @@
 <template>
-  <div :class="border ? 'card-container border' : 'card-container'">
-    <img
-      class="logo"
-      :class="{ auto: border }"
-      :src="src"
-      alt=""
-      aria-hidden="true"
-    />
-    <h3 :class="border ? 'title border' : 'title'">{{ title }}</h3>
-    <p :class="border ? 'subtitle border' : 'subtitle'">{{ content }}</p>
-  </div>
+  <a :href="link" target="_blank">
+    <div :class="border ? 'card-container border' : 'card-container'">
+      <img
+        class="logo"
+        :class="{ auto: border }"
+        :src="src"
+        alt=""
+        aria-hidden="true"
+      />
+      <h3 class="title" :class="{ border }">{{ title }}</h3>
+      <p class="subtitle" :class="{ border }">{{ content }}</p>
+    </div>
+  </a>
 </template>
 
 <script>
 export default {
   props: {
+    link: {
+      type: String,
+      default: null,
+    },
     title: {
       type: String,
       required: true,
@@ -40,14 +46,13 @@ export default {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: 250px;
-  justify-items: center;
   row-gap: 16px;
   text-align: left;
   padding: 24px;
   &.border {
     border: 1px solid $grey-1;
     border-radius: 4px;
-    background-color: $white;
+    background-color: $grey-0;
   }
   .title {
     color: $dark-blue;
@@ -63,10 +68,7 @@ export default {
 
   .logo {
     height: 170px;
-
-    &.auto {
-      height: auto;
-    }
+    padding: 16px;
   }
 }
 </style>

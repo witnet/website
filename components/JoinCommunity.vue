@@ -1,8 +1,23 @@
 <template>
   <SectionLayout class="join-community-section">
-    <h4 class="text">{{ $t('join_community.text') }}</h4>
+    <i18n path="join_community.text" class="text" tag="h4">
+      <a class="underline" :href="urls.telegram" target="_blank"> Telegram </a>
+      <a class="underline" :href="urls.discord" target="_blank"> Discord </a>
+    </i18n>
   </SectionLayout>
 </template>
+
+<script>
+import { urls } from '../constants'
+
+export default {
+  data() {
+    return {
+      urls,
+    }
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .join-community-section {

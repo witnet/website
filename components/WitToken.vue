@@ -3,26 +3,43 @@
     <BaseCard :padding="48" class="card-container">
       <img
         class="wit-image"
-        src="@/assets/images/dragon.png"
+        src="@/assets/images/wit.png"
         alt=""
         aria-hidden="true"
       />
       <h2 class="title">{{ $t('wit_token.title') }}</h2>
       <p class="text">{{ $t('wit_token.text') }}</p>
       <div class="btn-container">
-        <Button class="btn" type="primary" :font-size="14">{{
-          $t('wit_token.buttons.tokenomics')
-        }}</Button>
-        <Button class="btn" type="default" :font-size="14">
-          {{ $t('wit_token.buttons.sheikah') }}
-        </Button>
-        <Button class="btn" type="default" :font-size="14">{{
-          $t('wit_token.buttons.mining')
-        }}</Button>
+        <a :href="urls.tokenomics" target="_blank">
+          <Button class="btn" type="primary" :font-size="14">{{
+            $t('wit_token.buttons.tokenomics')
+          }}</Button>
+        </a>
+        <a :href="urls.sheikah" target="_blank">
+          <Button class="btn" type="default" :font-size="14">
+            {{ $t('wit_token.buttons.sheikah') }}
+          </Button>
+        </a>
+        <a :href="urls.mining" target="_blank">
+          <Button class="btn" type="default" :font-size="14">{{
+            $t('wit_token.buttons.mining')
+          }}</Button>
+        </a>
       </div>
     </BaseCard>
   </SectionLayout>
 </template>
+
+<script>
+import { urls } from '../constants'
+export default {
+  data() {
+    return {
+      urls,
+    }
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .wit-tokens-section {
