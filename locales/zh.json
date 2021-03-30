@@ -73,7 +73,7 @@
                 "reddit": "Reddit"
             }
         },
-        "ado_text": "Witnet is part of the Alliance of Decentralized Oracles (ADO), a joint effort by leading decentralized oracle solutions to make the life of smart contract developers easier by creating oracle standards. Learn more about the ADO at theado.org",
+        "ado_text": "Witnet is part of the Alliance of Decentralized Oracles (ADO), a joint effort by leading decentralized oracle solutions to make the life of smart contract developers easier by creating oracle standards. Learn more about the ADO at {0}",
         "wit": "WIT",
         "copyright": {
             "base": "© 2018–2021 by {0} and individual contributors. Content available under a {1}.",
@@ -126,7 +126,7 @@
         }
     },
     "join_community": {
-        "text": "Questions? Join the Telegram and Discord communities!"
+        "text": "Questions? Join the {0} and {1} communities!"
     },
     "nav_bar": {
         "route": {
