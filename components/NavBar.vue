@@ -8,26 +8,25 @@
           alt=""
           aria-hidden="true"
         />
-      </div>
-      <!-- FIX(#77): Fix select and translate website-->
-      <!-- <LanguageSelector
-        v-if="!isMenuVisible"
-        class="responsive-nav responsive-lng"
-      /> -->
-      <div class="responsive-nav">
-        <label
-          v-if="!isMenuVisible"
-          class="responsive-menu"
-          @click="toggleMenu"
-        >
-          &#9776;
-        </label>
-        <label
-          v-if="isMenuVisible"
-          class="responsive-menu cross"
-          @click="toggleMenu"
-          >&#x2715;</label
-        >
+        <div class="responsive-nav">
+          <!-- This prevents the error: 'DOMException: Failed to execute 'insertBefore' on 'Node'' -->
+          <div v-show="!isMenuVisible" class="responsive-lng">
+            <LanguageSelector />
+          </div>
+          <label
+            v-if="!isMenuVisible"
+            class="responsive-menu"
+            @click="toggleMenu"
+          >
+            &#9776;
+          </label>
+          <label
+            v-if="isMenuVisible"
+            class="responsive-menu cross"
+            @click="toggleMenu"
+            >&#x2715;</label
+          >
+        </div>
       </div>
       <transition name="dropdown" class="dropdown">
         <ul class="tab-container" :class="{ visible: isMenuVisible }">
@@ -51,12 +50,11 @@
               <span class="slash">/</span>{{ $t('nav_bar.route.blog') }}
             </a>
           </li>
-          <!-- FIX(#77): Fix select and translate website-->
-          <!-- <li class="link language-component">
+          <li class="link language-component">
             <div class="tab">
               <LanguageSelector />
             </div>
-          </li> -->
+          </li>
           <li
             class="link"
             @mouseover="hover = true"
@@ -121,6 +119,7 @@ export default {
     display: flex;
     align-items: center;
     text-decoration: none;
+    background-color: $white;
     .logo {
       height: 39px;
     }
@@ -172,31 +171,31 @@ export default {
     position: relative;
     padding: 0 0;
     .logo-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 5vw;
       .logo {
-        margin: 10px;
         height: 39px;
+      }
+      .responsive-nav {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        .responsive-menu {
+          margin-left: 8px;
+          color: $black;
+          font-size: 34px;
+          cursor: pointer;
+
+          &.cross {
+            font-size: 38px;
+          }
+        }
       }
     }
     .language-component {
       display: none;
-    }
-    .responsive-nav {
-      display: block;
-      position: absolute;
-      top: 4px;
-      right: 10px;
-      .responsive-menu {
-        color: $black;
-        font-size: 34px;
-        cursor: pointer;
-        &.cross {
-          font-size: 38px;
-        }
-      }
-    }
-    .responsive-lng {
-      top: 14px;
-      right: 60px;
     }
     .tab-container {
       background-color: $white;
