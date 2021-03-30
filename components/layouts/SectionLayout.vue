@@ -1,21 +1,40 @@
 <template>
-  <div class="section">
-    <slot></slot>
+  <div :class="fullBackground ? 'wide-section' : 'section'">
+    <div
+      v-if="fullBackground"
+      class="section"
+      :style="{ background: backgroundColor }"
+    >
+      <slot></slot>
+    </div>
+    <slot v-else></slot>
   </div>
 </template>
 
+<script>
+export default {
+  // TODO: Improve naming and try to allow receive css variables
+  props: {
+    fullBackground: {
+      type: Boolean,
+    },
+    backgroundColor: {
+      type: String,
+      default: '',
+    },
+  },
+}
+</script>
+
 <style>
 .section {
-  padding: 8vh 15vw;
+  padding: 48px 32px;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
 }
-@media (max-width: 1200px) {
-  .section {
-    padding: 10vw 5vw;
-  }
-}
-@media (max-width: 600px) {
-  .section {
-    padding: 10vw 10vw;
-  }
+
+.wide-section {
+  width: 100%;
 }
 </style>

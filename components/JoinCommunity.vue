@@ -1,6 +1,10 @@
 <template>
-  <SectionLayout class="join-community-section">
-    <i18n path="join_community.text" class="text" tag="h4">
+  <SectionLayout
+    class="join-community-section"
+    :full-background="true"
+    background-color="#41bea5"
+  >
+    <i18n path="join_community.text" class="text header-4" tag="h3">
       <a class="underline" :href="urls.telegram" target="_blank"> Telegram </a>
       <a class="underline" :href="urls.discord" target="_blank"> Discord </a>
     </i18n>
@@ -23,8 +27,6 @@ export default {
 .join-community-section {
   background-color: $green-1;
   color: $white;
-  justify-content: center;
-  display: flex;
-  padding: 32px;
+  text-align: center;
 }
 </style>

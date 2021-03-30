@@ -110,9 +110,9 @@ export default {
 <style scoped lang="scss">
 .navbar {
   display: flex;
-  height: 10vh;
   justify-content: space-between;
-  padding: 0 15vw;
+  max-width: 1050px;
+  margin: 0 auto;
   background-color: $white;
 
   .logo-container {
@@ -120,6 +120,7 @@ export default {
     align-items: center;
     text-decoration: none;
     background-color: $white;
+
     .logo {
       height: 39px;
     }
@@ -169,12 +170,11 @@ export default {
   .navbar {
     display: block;
     position: relative;
-    padding: 0 0;
     .logo-container {
+      padding: 16px 32px 0 32px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 5vw;
       .logo {
         height: 39px;
       }

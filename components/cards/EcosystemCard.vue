@@ -8,7 +8,7 @@
         alt=""
         aria-hidden="true"
       />
-      <h3 class="title" :class="{ border }">{{ title }}</h3>
+      <h2 class="title header-3" :class="{ border }">{{ title }}</h2>
       <p class="subtitle" :class="{ border }">{{ content }}</p>
     </div>
   </a>
@@ -49,6 +49,7 @@ export default {
   row-gap: 16px;
   text-align: left;
   padding: 24px;
+  justify-items: center;
   &.border {
     border: 1px solid $grey-1;
     border-radius: 4px;
@@ -68,7 +69,10 @@ export default {
 
   .logo {
     height: 170px;
-    padding: 16px;
+
+    &.auto {
+      justify-self: flex-start;
+    }
   }
 }
 </style>
