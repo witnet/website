@@ -1,46 +1,56 @@
 <template>
-  <SectionLayout class="decentralized-oracle-section">
-    <div class="wrapper">
-      <div class="content">
-        <div class="left">
-          <i18n path="decentralized_oracle.title.main" class="title" tag="h2">
-            <span class="gradient">{{
-              $t('decentralized_oracle.title.gradient')
-            }}</span>
-          </i18n>
-          <p class="paragraph">
-            {{ $t('decentralized_oracle.paragraph_1') }}
-          </p>
-          <p class="paragraph">
-            {{ $t('decentralized_oracle.paragraph_2') }}
-          </p>
-          <a :href="urls.docs" target="_blank">
-            <Button type="primary" :font-size="14" class="btn">{{
-              $t('decentralized_oracle.button_label')
-            }}</Button>
-          </a>
-        </div>
-        <div class="vertical-line" />
-        <div class="right">
-          <TestimonialCard
-            v-for="testimonial in testimonials"
-            :key="testimonial.author"
-            class="testimonial"
-            :class="{ short: testimonial.text.length < 160 }"
-            :author="testimonial.author"
-            :text="testimonial.text"
-            align="right"
-          />
+  <div class="container">
+    <SectionLayout
+      class="decentralized-oracle-section"
+      :full-background="true"
+      background-color="#13253a"
+    >
+      <div class="wrapper">
+        <div class="content">
+          <div class="left">
+            <i18n
+              path="decentralized_oracle.title.main"
+              class="title header-2"
+              tag="h1"
+            >
+              <span class="gradient">{{
+                $t('decentralized_oracle.title.gradient')
+              }}</span>
+            </i18n>
+            <p class="paragraph">
+              {{ $t('decentralized_oracle.paragraph_1') }}
+            </p>
+            <p class="paragraph">
+              {{ $t('decentralized_oracle.paragraph_2') }}
+            </p>
+            <a :href="urls.docs" target="_blank">
+              <Button type="primary" :font-size="14" class="btn">{{
+                $t('decentralized_oracle.button_label')
+              }}</Button>
+            </a>
+          </div>
+          <div class="vertical-line" />
+          <div class="right">
+            <TestimonialCard
+              v-for="testimonial in testimonials"
+              :key="testimonial.author"
+              class="testimonial"
+              :class="{ short: testimonial.text.length < 160 }"
+              :author="testimonial.author"
+              :text="testimonial.text"
+              align="right"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </SectionLayout>
     <img
       class="world"
       src="@/assets/images/world.png"
       aria-hidden="true"
       alt=""
     />
-  </SectionLayout>
+  </div>
 </template>
 
 <script>
@@ -70,17 +80,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.container {
+  text-align: center;
+}
+
 .decentralized-oracle-section {
+  text-align: initial;
   display: flex;
   justify-content: center;
-  background: #112338;
-  background-image: url('~@/assets/images/circles.png');
+  // background: #112338;
+  background: url('~@/assets/images/circles.png') #13253a;
   min-height: 800px;
   background-size: 75%;
   background-position-x: center;
   background-repeat: no-repeat;
   position: relative;
-  margin-bottom: 500px;
 
   &::after {
     content: '';
@@ -97,7 +111,7 @@ export default {
   .wrapper {
     display: flex;
     flex-direction: column;
-    width: 1280px;
+    // width: 1280px;
 
     .content {
       width: 100%;
@@ -153,26 +167,41 @@ export default {
       }
     }
   }
-  .world {
-    width: 1000px;
-    bottom: -450px;
-    position: absolute;
-    z-index: 1;
-  }
+}
+
+.world {
+  width: 60%;
+  margin-top: -350px;
+  // max-width: 1000px;
+  // bottom: -450px;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
+  .world {
+    margin-top: -200px;
+  }
+
   .decentralized-oracle-section {
-    .world {
-      width: 100vw;
-      bottom: -65vw;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 100vw solid transparent;
+      border-bottom: 50px solid #13253a;
+      z-index: -1;
     }
   }
 }
 
 @media (max-width: 600px) {
+  .world {
+    margin-top: -50px;
+  }
   .decentralized-oracle-section {
-    margin-bottom: 250px;
     .wrapper {
       .content {
         grid-template-columns: 1fr;

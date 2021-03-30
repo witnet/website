@@ -1,5 +1,9 @@
 <template>
-  <SectionLayout class="footer-section">
+  <SectionLayout
+    class="footer-section"
+    :full-background="true"
+    background-color="#112338"
+  >
     <div class="top">
       <div class="links">
         <p class="title">{{ $t('footer.links.witnet.title') }}</p>

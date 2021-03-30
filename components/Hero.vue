@@ -2,14 +2,14 @@
   <SectionLayout class="main-section">
     <div class="info">
       <div class="title-wrapper">
-        <i18n path="hero.title.main" class="title" tag="h1">
+        <i18n path="hero.title.main" class="title header-1" tag="h1">
           <span class="gradient">{{ $t('hero.title.gradient') }}</span>
         </i18n>
       </div>
       <p class="description">{{ $t('hero.description') }}</p>
       <div class="buttons">
         <a :href="urls.docs" target="_blank">
-          <Button type="secondary" :font-size="14">Build with Witnet</Button>
+          <Button type="primary" :font-size="14">Build with Witnet</Button>
         </a>
         <a :href="urls.minning" target="_blank">
           <Button class="card-button" type="secondary" :font-size="14">
@@ -48,10 +48,10 @@ export default {
 <style lang="scss" scoped>
 .main-section {
   display: flex;
-  min-height: 100vh;
 }
 .info {
   min-width: 400px;
+  width: 400px;
 
   .title {
     color: $dark-blue;
@@ -78,44 +78,34 @@ export default {
   right: 40px;
   height: 100%;
 }
-.right {
-  border: 2px solid $white;
-  position: relative;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.right::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -25px;
-  left: -25px;
-  right: 15px;
-  bottom: 15px;
-  border: 2px solid $green-1;
-  border-radius: 6px;
-}
 
 @media (max-width: 1200px) {
   .main-section {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
   }
   .info {
-    min-width: 0;
+    width: auto;
+    min-width: auto;
     .buttons:first-child {
       margin-top: 16px;
     }
     .button {
       margin: 8px 0;
-      width: 100%;
     }
   }
   .hero-image {
-    max-width: 100%;
+    margin-top: 16px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 426px) {
+  .main-section {
+    margin-bottom: 32px;
+    .hero-image {
+      display: none;
+    }
   }
 }
 </style>

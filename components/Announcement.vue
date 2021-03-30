@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="announcement-content">
         <p class="tag">{{ $t('announcement.tag') }}</p>
-        <h4 class="subtitle">{{ $t('announcement.subtitle') }}</h4>
+        <h3 class="subtitle header-3">{{ $t('announcement.subtitle') }}</h3>
       </div>
       <Button type="primary" :font-size="14">
         {{ $t('announcement.button') }}

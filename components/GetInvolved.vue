@@ -1,5 +1,9 @@
 <template>
-  <SectionLayout class="get-involved-section">
+  <SectionLayout
+    class="get-involved-section"
+    :full-background="true"
+    background-color="#f9f9f9"
+  >
     <div class="top">
       <img
         class="dragon-image"
@@ -8,7 +12,7 @@
         aria-hidden="true"
       />
       <div class="right">
-        <i18n path="get_involved.title.main" class="title" tag="h2">
+        <i18n path="get_involved.title.main" class="title header-2" tag="h1">
           <span class="gradient">{{ $t('get_involved.title.gradient') }}</span>
         </i18n>
         <p class="content">{{ $t('get_involved.content') }}</p>
@@ -135,6 +139,7 @@ export default {
       }
       .dragon-image {
         margin-right: 0;
+        margin-bottom: 16px;
       }
     }
     .bottom {
