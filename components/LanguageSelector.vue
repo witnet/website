@@ -65,6 +65,7 @@ export default {
     color: $dark-blue;
     min-width: max-content;
     font-size: 0.75rem;
+    font-weight: 600;
   }
   .vs__open-indicator {
     font-size: 12px;

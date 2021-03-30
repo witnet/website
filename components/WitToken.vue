@@ -43,7 +43,6 @@ export default {
 
 <style lang="scss" scoped>
 .wit-tokens-section {
-  background-color: $white;
   position: relative;
   display: flex;
   justify-content: center;
