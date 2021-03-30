@@ -1,10 +1,15 @@
 <template>
-  <button :class="[type, 'button']" :style="{ fontSize: fontSize + 'px' }">
+  <button
+    :class="[type, 'button']"
+    :style="{ fontSize: fontSize + 'px' }"
+    @mouseover="angle = type === 'default' ? anglePurple : angle"
+    @mouseleave="angle = angleBlack"
+  >
     <slot />
     <img
       class="arrow"
       :class="{ white: isWhiteArrow }"
-      src="@/assets/images/angle_bracket_closed.svg"
+      :src="angle"
       alt=""
       aria-hidden="true"
     />
@@ -25,6 +30,13 @@ export default {
         return ['default', 'secondary', 'primary'].includes(value)
       },
     },
+  },
+  data() {
+    return {
+      angleBlack: require('@/assets/images/angle_bracket_closed.svg'),
+      anglePurple: require('@/assets/images/angle_bracket_closed_purple.svg'),
+      angle: require('@/assets/images/angle_bracket_closed.svg'),
+    }
   },
   computed: {
     isWhiteArrow() {

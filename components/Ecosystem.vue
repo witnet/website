@@ -1,6 +1,6 @@
 <template>
   <SectionLayout class="ecosystem-section">
-    <i18n path="ecosystem.title.main" class="title" tag="h2">
+    <i18n path="ecosystem.title.main" class="title header-2" tag="h1">
       <span class="gradient">{{ $t('ecosystem.title.gradient') }}</span>
     </i18n>
     <p class="ecosystem-subtitle">
@@ -92,7 +92,7 @@ export default {
     }
   }
   .ecosystem-subtitle {
-    padding-bottom: 40px;
+    padding-bottom: 16px;
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
@@ -103,6 +103,39 @@ export default {
     row-gap: 24px;
     column-gap: 56px;
     justify-items: center;
+  }
+}
+
+@media (max-width: 690px) {
+  .ecosystem-section {
+    text-align: justify;
+    .title {
+      margin-bottom: 16px;
+      text-align: center;
+      .gradient {
+        background: linear-gradient(
+          90deg,
+          $pink 0%,
+          $pink 43%,
+          $electric-blue 100%
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .ecosystem-subtitle {
+      padding-bottom: 40px;
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .ecosystem-card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      row-gap: 0;
+      column-gap: 0;
+      justify-items: center;
+    }
   }
 }
 </style>

@@ -8,11 +8,16 @@
           alt=""
           aria-hidden="true"
         />
-        <h2 class="title">{{ $t('wit_token.title') }}</h2>
+        <h1 class="title header-2">{{ $t('wit_token.title') }}</h1>
         <p class="text">{{ $t('wit_token.text') }}</p>
         <div class="btn-container">
-          <a :href="urls.tokenomics" target="_blank">
+          <a :href="urls.mining" target="_blank">
             <Button class="btn" type="primary" :font-size="14">{{
+              $t('wit_token.buttons.mining')
+            }}</Button>
+          </a>
+          <a :href="urls.tokenomics" target="_blank">
+            <Button class="btn" type="default" :font-size="14">{{
               $t('wit_token.buttons.tokenomics')
             }}</Button>
           </a>
@@ -20,11 +25,6 @@
             <Button class="btn" type="default" :font-size="14">
               {{ $t('wit_token.buttons.sheikah') }}
             </Button>
-          </a>
-          <a :href="urls.mining" target="_blank">
-            <Button class="btn" type="default" :font-size="14">{{
-              $t('wit_token.buttons.mining')
-            }}</Button>
           </a>
         </div>
       </BaseCard>
@@ -59,6 +59,10 @@ export default {
   display: flex;
   justify-content: center;
   z-index: 1;
+
+  .title {
+    text-align: center;
+  }
 }
 .card-container {
   margin: 48px;

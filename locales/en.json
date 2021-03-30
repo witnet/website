@@ -156,8 +156,8 @@
         "title": "Incentivized by the wit token",
         "text": "The Witnet decentralized oracle runs on its own blockchain and relies on the token for incentivization of independently run nodes that resolve the data requests and agree on the results.",
         "buttons": {
-            "tokenomics": "Tokenomics info",
-            "sheikah": "Download Sheikah wallet",
+            "tokenomics": "Tokenomics",
+            "sheikah": "Sheikah wallet",
             "mining": "Start mining"
         }
     }

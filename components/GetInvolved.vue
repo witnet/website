@@ -1,5 +1,9 @@
 <template>
-  <SectionLayout class="get-involved-section">
+  <SectionLayout
+    class="get-involved-section"
+    :full-background="true"
+    background-color="#f9f9f9"
+  >
     <div class="top">
       <img
         v-scrollanimation
@@ -9,7 +13,7 @@
         aria-hidden="true"
       />
       <div v-scrollanimation class="right">
-        <i18n path="get_involved.title.main" class="title" tag="h2">
+        <i18n path="get_involved.title.main" class="title header-2" tag="h1">
           <span class="gradient">{{ $t('get_involved.title.gradient') }}</span>
         </i18n>
         <p class="content">{{ $t('get_involved.content') }}</p>
@@ -96,7 +100,7 @@ export default {
   .bottom {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 20vw));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     justify-content: center;
     row-gap: 32px;
@@ -156,6 +160,7 @@ export default {
       }
       .dragon-image {
         margin-right: 0;
+        margin-bottom: 16px;
       }
     }
     .bottom {
