@@ -2,12 +2,13 @@
   <SectionLayout class="get-involved-section">
     <div class="top">
       <img
+        v-scrollanimation
         class="dragon-image"
         src="@/assets/images/community.svg"
         alt=""
         aria-hidden="true"
       />
-      <div class="right">
+      <div v-scrollanimation class="right">
         <i18n path="get_involved.title.main" class="title" tag="h2">
           <span class="gradient">{{ $t('get_involved.title.gradient') }}</span>
         </i18n>
@@ -118,10 +119,30 @@ export default {
         color: $dark-blue;
         margin-bottom: 16px;
       }
+      &.before-enter {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: all 1s ease-out;
+      }
+
+      &.enter {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
     .dragon-image {
       margin-right: 32px;
       width: 300px;
+      &.before-enter {
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: all 1s ease-out;
+      }
+
+      &.enter {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
   }
 }
