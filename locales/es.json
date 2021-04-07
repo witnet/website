@@ -139,20 +139,20 @@
     },
     "testimonials": {
         "testimonial_1": {
-            "text": "\"Witnet is a next generation crypto Oracle. You'll hear a lot more about it in 2021.\"",
-            "author": "Michael Arrington, Founder of TechCrunch"
+            "text": "\"Witnet es un oráculo blockchain de nueva generación. En 2021 oirás mucho más sobre el tema.\"",
+            "author": "Michael Arrington, Fundador de TechCrunch"
         },
         "testimonial_2": {
-            "text": "\"The oracle that truly decentralized blockchains and the Web3 deserve\"",
-            "author": "Luis Cuende, Co-Founder of Aragon"
+            "text": "\"El oráculo que verdaderamente descentraliza las blockchains y el que Web3 merece\"",
+            "author": "Luis Cuende, cofundador de Aragon"
         },
         "testimonial_3": {
-            "text": "\"Oracle price manipulation was a hot topic in 2020, causing many financial losses. We are confident that Witnet is able to withstand these issues and provide the security and decentralization we’re looking for\"",
-            "author": "Mark Tan, Co-Founder of RiveX"
+            "text": "\"La manipulación de los precios por parte de oráculos fue un tema candente en 2020, causando muchas pérdidas financieras. Estamos seguros de que Witnet es capaz de resistir estos problemas y proporcionar la seguridad y descentralización que estamos buscando\"",
+            "author": "Marcar Tan, cofundador de RiveX"
         }
     },
     "wit_token": {
-        "title": "Incentivized by the wit token",
+        "title": "Incentivizado por el Wit token",
         "text": "The Witnet decentralized oracle runs on its own blockchain and relies on the token for incentivization of independently run nodes that resolve the data requests and agree on the results.",
         "buttons": {
             "tokenomics": "Tokenomics info",
