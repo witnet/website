@@ -9,11 +9,11 @@
     },
     "decentralized_oracle": {
         "title": {
-            "main": "The decentralized oracle that is true to the {0} nature of blockchains.",
-            "gradient": "censorship resistant"
+            "main": "El oráculo descentralizado es intrínseco a la naturaleza {0} de las blockchains.",
+            "gradient": "resistente a la censura"
         },
-        "paragraph_1": "Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.",
-        "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure datainput.",
+        "paragraph_1": "Sin un oráculo fiable, los contratos inteligentes pueden ser vulnerables a los hacks, la corrupción y la pérdida monetaria.",
+        "paragraph_2": "Witnet aprovecha las últimas técnicas criptográficas y económicas para proporcionar contratos inteligentes con datos seguros.",
         "button_label": "Build with witnet"
     },
     "ecosystem": {
