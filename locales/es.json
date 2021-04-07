@@ -98,23 +98,23 @@
             },
             "join_discussion": {
                 "title": "Únete al debate",
-                "content": "Help us shape the future of the project.",
+                "content": "Ayúdanos a dar forma al futuro del proyecto.",
                 "links": {
                     "telegram": "> Telegram",
                     "discord": "> Discord"
                 }
             },
             "find_bugs": {
-                "title": "Find bugs, get tokens",
-                "content": "A bug bounty program will be announced soon.",
-                "stay_tuned": "Stay tuned!"
+                "title": "Encuentra errores, obtén tokens",
+                "content": "Pronto se anunciará un programa de recompensas por ayudarnos a encontrar errores.",
+                "stay_tuned": "¡Estad atentos!"
             }
         }
     },
     "hero": {
         "title": {
-            "main": "Unleash the {0} of smart contracts",
-            "gradient": "real power"
+            "main": "Libera el {0} de los contratos inteligentes",
+            "gradient": "poder"
         },
         "description": "Witnet enables your smart contracts to react to real world events with strong crypto-economic guarantees.",
         "buttons": {
