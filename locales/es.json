@@ -116,26 +116,26 @@
             "main": "Libera el {0} de los contratos inteligentes",
             "gradient": "poder"
         },
-        "description": "Witnet enables your smart contracts to react to real world events with strong crypto-economic guarantees.",
+        "description": "Witnet permite a tus contratos inteligentes reaccionar ante eventos del mundo real con sólidas garantías criptoeconómicas.",
         "buttons": {
-            "build": "Build with Witnet",
+            "build": "Construye con Witnet",
             "start_mining": {
-                "base": "Start mining {0}",
-                "wit": "wit"
+                "base": "Empieza a minar {0}",
+                "wit": "Wit"
             }
         }
     },
     "join_community": {
-        "text": "Questions? Join the {0} and {1} communities!"
+        "text": "¿Preguntas? ¡Únete a las comunidades de {0} y {1}!"
     },
     "nav_bar": {
         "route": {
-            "oracle": "oracle",
+            "oracle": "oráculo",
             "token": "token",
-            "ecosystem": "ecosystem",
+            "ecosystem": "ecosistema",
             "blog": "blog"
         },
-        "social_image_alt": "Open Witnet's Github on new window"
+        "social_image_alt": "Abrir el Github de Witnet en una ventana nueva"
     },
     "testimonials": {
         "testimonial_1": {
