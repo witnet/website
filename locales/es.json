@@ -9,7 +9,7 @@
     },
     "decentralized_oracle": {
         "title": {
-            "main": "El oráculo descentralizado es intrínseco a la naturaleza {0} de las blockchains.",
+            "main": "Un oráculo descentralizado es intrínseco a la naturaleza {0} de las blockchains.",
             "gradient": "resistente a la censura"
         },
         "paragraph_1": "Sin un oráculo fiable, los smart contracts pueden ser vulnerables a los hacks, la corrupción y la pérdida monetaria.",
@@ -19,7 +19,7 @@
     "ecosystem": {
         "title": {
             "main": "Un ecosistema incipiente, {0}",
-            "gradient": "y sin embargo, pujante"
+            "gradient": "pero pujante"
         },
         "subtitle": "Muchas piezas ya están en su sitio, y muchas otras están siendo trabajadas activamente por una amplia comunidad de BUIDLers.",
         "cards": {
@@ -113,10 +113,10 @@
     },
     "hero": {
         "title": {
-            "main": "Libera el {0} de los contratos inteligentes",
-            "gradient": "poder"
+            "main": "Libera el {0} de los smart contracts",
+            "gradient": "auténtico poder"
         },
-        "description": "Witnet permite a tus contratos inteligentes reaccionar ante eventos del mundo real con sólidas garantías criptoeconómicas.",
+        "description": "Witnet permite a tus smart contracts reaccionar ante eventos del mundo real con sólidas garantías criptoeconómicas.",
         "buttons": {
             "build": "Construye con Witnet",
             "start_mining": {
