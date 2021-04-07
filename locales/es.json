@@ -105,7 +105,7 @@
                 }
             },
             "find_bugs": {
-                "title": "Encuentra errores, obtén tokens",
+                "title": "Encuentra errores",
                 "content": "Pronto se anunciará un programa de recompensas por ayudarnos a encontrar errores.",
                 "stay_tuned": "¡Estad atentos!"
             }
