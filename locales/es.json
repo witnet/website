@@ -12,8 +12,8 @@
             "main": "El oráculo descentralizado es intrínseco a la naturaleza {0} de las blockchains.",
             "gradient": "resistente a la censura"
         },
-        "paragraph_1": "Sin un oráculo fiable, los contratos inteligentes pueden ser vulnerables a los hacks, la corrupción y la pérdida monetaria.",
-        "paragraph_2": "Witnet aprovecha las últimas técnicas criptográficas y económicas para proporcionar contratos inteligentes con datos seguros.",
+        "paragraph_1": "Sin un oráculo fiable, los smart contracts pueden ser vulnerables a los hacks, la corrupción y la pérdida monetaria.",
+        "paragraph_2": "Witnet aprovecha las últimas técnicas criptográficas y económicas para proporcionar smart contracts con datos seguros.",
         "button_label": "Construye con Witnet"
     },
     "ecosystem": {
@@ -73,7 +73,7 @@
                 "reddit": "Reddit"
             }
         },
-        "ado_text": "El Witnet es parte de la Alianza de Oráculos Descentralizados (ADO), un esfuerzo conjunto liderando soluciones de oráculos descentralizados para facilitar la vida de los desarrolladores de contratos inteligentes mediante la creación de estándares de oráculo. Más información sobre el ADO en {0}",
+        "ado_text": "El Witnet es parte de la Alianza de Oráculos Descentralizados (ADO), un esfuerzo conjunto liderando soluciones de oráculos descentralizados para facilitar la vida de los desarrolladores de smart contracts mediante la creación de estándares de oráculo. Más información sobre el ADO en {0}",
         "wit": "WIT",
         "copyright": {
             "base": "© 2018–2021 por {0} y colaboradores individuales. Contenido disponible en {1}.",
