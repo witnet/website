@@ -44,8 +44,8 @@
                 "content": "El monitor de red witnet.live mantiene un seguimiento de la salud de la red de Witnet."
             },
             "next": {
-                "title": "What will you build next?",
-                "content": "Do you have some exciting Witnet app in mind? Apply now for a grant from the Witnet Foundation."
+                "title": "¿Qué podrías construir?",
+                "content": "¿Tienes en mente alguna aplicación Witnet? Solicita ahora una subvención de Witnet Foundation."
             }
         }
     },
@@ -53,51 +53,51 @@
         "links": {
             "witnet": {
                 "title": "Witnet",
-                "oracle": "Oracle",
+                "oracle": "Oráculo",
                 "token": "Token",
-                "ecosystem": "Ecosystem",
-                "community": "Community"
+                "ecosystem": "Ecosistema",
+                "community": "Comunidad"
             },
             "ecosystem": {
-                "title": "Ecosystem",
-                "full_node": "Full node",
+                "title": "Ecosistema",
+                "full_node": "Nodo completo",
                 "wallet": "Wallet",
-                "block_explorer": "Block explorer",
-                "monitor": "Network monitor"
+                "block_explorer": "Explorador de bloques",
+                "monitor": "Monitor de red"
             },
             "community": {
-                "title": "Community",
+                "title": "Comunidad",
                 "telegram": "Telegram",
                 "discord": "Discord",
                 "twitter": "Twitter",
                 "reddit": "Reddit"
             }
         },
-        "ado_text": "Witnet is part of the Alliance of Decentralized Oracles (ADO), a joint effort by leading decentralized oracle solutions to make the life of smart contract developers easier by creating oracle standards. Learn more about the ADO at {0}",
+        "ado_text": "El Witnet es parte de la Alianza de Oráculos Descentralizados (ADO), un esfuerzo conjunto liderando soluciones de oráculos descentralizados para facilitar la vida de los desarrolladores de contratos inteligentes mediante la creación de estándares de oráculo. Más información sobre el ADO en {0}",
         "wit": "WIT",
         "copyright": {
-            "base": "© 2018–2021 by {0} and individual contributors. Content available under a {1}.",
+            "base": "© 2018–2021 por {0} y colaboradores individuales. Contenido disponible en {1}.",
             "witnet_foundation": "Witnet Foundation",
-            "license": "Creative Commons License"
+            "license": "Licencia Creative Commons"
         }
     },
     "get_involved": {
         "title": {
-            "main": "Come for the tech, {0}",
-            "gradient": "stay for the fun!"
+            "main": "Ven por la tecnología, {0}",
+            "gradient": "¡quédate por la diversión!"
         },
-        "content": "From developers to miners and enthusiasts, the witnet community prouds itself on always being welcoming, discussing the things that really matter, and ensuring that witnet plays a key role in the foundations of Web3.",
-        "subtitle": "Get involved now",
+        "content": "Desde desarrolladores hasta mineros y el entusiastas, la comunidad de Witnet se enorgullece de ser acogedora, discutir las cosas que realmente importan, y asegurar que Witnet juegue un papel clave en los cimientos de Web3.",
+        "subtitle": "Participa ahora",
         "social": {
             "follow": {
-                "title": "Follow the project",
-                "content": "Keep up with the latest news on Twitter",
+                "title": "Sigue el proyecto",
+                "content": "Mantente al día con las últimas noticias en Twitter",
                 "links": {
-                    "twitter": "> @witnet_io on Twitter"
+                    "twitter": "> @witnet_io en Twitter"
                 }
             },
             "join_discussion": {
-                "title": "Join the discussion",
+                "title": "Únete al debate",
                 "content": "Help us shape the future of the project.",
                 "links": {
                     "telegram": "> Telegram",
