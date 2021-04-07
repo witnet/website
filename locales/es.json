@@ -28,8 +28,8 @@
                 "content": "Ejecute su nodo verificando y comience a ganar tokens wit por minar bloques y resolver data requests."
             },
             "sheikah": {
-                "title": "Wallet Sheikah para escritorio",
-                "content": "Sheikah es una wallet app privada y fácil de usar para administrar tus tokens en Windows, Mac OS y GNU/Linux."
+                "title": "Sheikah Witnet wallet para escritorio",
+                "content": "Sheikah es una wallet app, privada y fácil de usar para administrar tus tokens en Windows, Mac OS y GNU/Linux."
             },
             "truffle_box": {
                 "title": "Ethereum Truffle Box",
@@ -153,11 +153,11 @@
     },
     "wit_token": {
         "title": "Incentivizado por el Wit token",
-        "text": "The Witnet decentralized oracle runs on its own blockchain and relies on the token for incentivization of independently run nodes that resolve the data requests and agree on the results.",
+        "text": "El oráculo descentralizado Witnet se ejecuta en su propia blockchain y se basa en el Wit token para incentivar la independencia en la ejecución de nodos, que resuelven las data requests y generan consenso en los resultados.",
         "buttons": {
-            "tokenomics": "Tokenomics info",
-            "sheikah": "Download Sheikah wallet",
-            "mining": "Start mining"
+            "tokenomics": "Información de Tokenomics",
+            "sheikah": "Descargar Sheikah Witnet wallet",
+            "mining": "Empieza a minar"
         }
     }
 }
