@@ -73,7 +73,7 @@
                 "reddit": "Reddit"
             }
         },
-        "ado_text": "El Witnet es parte de la Alianza de Oráculos Descentralizados (ADO), un esfuerzo conjunto liderando soluciones de oráculos descentralizados para facilitar la vida de los desarrolladores de smart contracts mediante la creación de estándares de oráculo. Más información sobre el ADO en {0}",
+        "ado_text": "Witnet es parte de la Alianza de Oráculos Descentralizados (ADO), un esfuerzo conjunto que lidera soluciones de oráculos descentralizados para facilitar la vida de los desarrolladores de smart contracts mediante la creación de estándares de oráculo. Más información sobre ADO en {0}",
         "wit": "WIT",
         "copyright": {
             "base": "© 2018–2021 por {0} y colaboradores individuales. Contenido disponible en {1}.",
@@ -139,7 +139,7 @@
     },
     "testimonials": {
         "testimonial_1": {
-            "text": "\"Witnet es un oráculo blockchain de nueva generación. En 2021 oirás mucho más sobre el tema.\"",
+            "text": "\"Witnet es un oráculo blockchain de nueva generación. En 2021 oirás mucho más sobre él.\"",
             "author": "Michael Arrington, Fundador de TechCrunch"
         },
         "testimonial_2": {
