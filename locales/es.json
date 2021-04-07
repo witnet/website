@@ -19,29 +19,29 @@
     "ecosystem": {
         "title": {
             "main": "Un ecosistema incipiente, {0}",
-            "gradient": "yet thriving ecosystem"
+            "gradient": "y sin embargo, pujante"
         },
-        "subtitle": "Many pieces are already in place, and many others are being actively worked on by a broad community of BUIDLers.",
+        "subtitle": "Muchas piezas ya están en su sitio, y muchas otras están siendo trabajadas activamente por una amplia comunidad de BUIDLers.",
         "cards": {
             "node": {
-                "title": "witnet-rust full archival node",
-                "content": "Run your fully verifying node and start earning wit tokens for mining blocks and resolving data requests."
+                "title": "nodo de archivo completo witnet-rust",
+                "content": "Ejecute su nodo verificando y comience a ganar tokens wit por minar bloques y resolver data requests."
             },
             "sheikah": {
-                "title": "Sheikah wallet for desktop",
-                "content": "Sheikah is a privacy and user friendly wallet app for managing your wit tokens on Windows, Mac OS and GNU/Linux."
+                "title": "Wallet Sheikah para escritorio",
+                "content": "Sheikah es una wallet app privada y fácil de usar para administrar tus tokens en Windows, Mac OS y GNU/Linux."
             },
             "truffle_box": {
                 "title": "Ethereum Truffle Box",
-                "content": "Integrating witnet into your Solidity contracts is almost immediate with the Witnet Truffle Box."
+                "content": "Integrar Witnet en tus contratos de Solidity es casi inmediato con Witnet Truffle Box."
             },
             "explorer": {
-                "title": "witnet.network block explorer",
-                "content": "The witnet.network block explorer gives you a neutral view on what is going on in the Witnet block chain."
+                "title": "Explorador de bloques witnet.network",
+                "content": "El explorador de bloques witnet.network te da una visión neutral de lo que está sucediendo en la blockchain de Witnet."
             },
             "monitor": {
-                "title": "witnet.live network monitor",
-                "content": "The witnet.live network monitor keeps tracks of the health of the witnet network."
+                "title": "Monitor de red witnet.live",
+                "content": "El monitor de red witnet.live mantiene un seguimiento de la salud de la red de Witnet."
             },
             "next": {
                 "title": "What will you build next?",
