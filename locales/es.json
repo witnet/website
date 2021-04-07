@@ -1,11 +1,11 @@
 {
     "head": {
-        "title": "Decentralized oracle network | Witnet"
+        "title": "Red oráculo descentralizada | Witnet"
     },
     "announcement": {
-        "tag": "ANNOUNCEMENT",
-        "subtitle": "Witnet is now side-chanined to Ethereum",
-        "button": "Learn how to use Witnet from a solidity contract"
+        "tag": "ANUNCIO",
+        "subtitle": "Witnet es una cadena paralela a Ethereum",
+        "button": "Aprende cómo utilizar Witnet desde un contrato de Solidity"
     },
     "decentralized_oracle": {
         "title": {
