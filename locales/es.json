@@ -14,11 +14,11 @@
         },
         "paragraph_1": "Sin un oráculo fiable, los contratos inteligentes pueden ser vulnerables a los hacks, la corrupción y la pérdida monetaria.",
         "paragraph_2": "Witnet aprovecha las últimas técnicas criptográficas y económicas para proporcionar contratos inteligentes con datos seguros.",
-        "button_label": "Build with witnet"
+        "button_label": "Construye con Witnet"
     },
     "ecosystem": {
         "title": {
-            "main": "A nascent, {0}",
+            "main": "Un ecosistema incipiente, {0}",
             "gradient": "yet thriving ecosystem"
         },
         "subtitle": "Many pieces are already in place, and many others are being actively worked on by a broad community of BUIDLers.",
