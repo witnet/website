@@ -24,8 +24,8 @@
         "subtitle": "Muchas piezas ya están en su sitio, y muchas otras están siendo trabajadas activamente por una amplia comunidad de BUIDLers.",
         "cards": {
             "node": {
-                "title": "nodo de archivo completo witnet-rust",
-                "content": "Ejecute su nodo verificando y comience a ganar tokens wit por minar bloques y resolver data requests."
+                "title": "Nodo de archivo completo witnet-rust",
+                "content": "Ejecuta tu nodo verificado y comienza a ganar wit tokens por minar bloques y resolver data requests."
             },
             "sheikah": {
                 "title": "Sheikah Witnet wallet para escritorio",
