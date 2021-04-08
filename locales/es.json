@@ -21,7 +21,7 @@
             "main": "Un ecosistema incipiente, {0}",
             "gradient": "pero prometedor"
         },
-        "subtitle": "Muchas piezas ya están en su sitio, y muchas otras están siendo trabajadas activamente por una amplia comunidad de BUIDLers.",
+        "subtitle": "Muchas piezas ya están en su sitio, y muchas otras están siendo trabajadas activamente por una amplia comunidad de builders.",
         "cards": {
             "node": {
                 "title": "Nodo de archivo completo witnet-rust",
@@ -106,7 +106,7 @@
             },
             "find_bugs": {
                 "title": "Encuentra errores",
-                "content": "Pronto se anunciará un programa de recompensas por ayudarnos a encontrar errores.",
+                "content": "Pronto se anunciará un programa de recompensas.",
                 "stay_tuned": "¡Estad atentos!"
             }
         }
@@ -152,11 +152,11 @@
         }
     },
     "wit_token": {
-        "title": "Incentivizado por el Wit token",
+        "title": "Incentivizado por Wit tokens",
         "text": "El oráculo descentralizado Witnet se ejecuta en su propia blockchain y se basa en el Wit token para incentivar la independencia en la ejecución de nodos, que resuelven las data requests y generan consenso en los resultados.",
         "buttons": {
-            "tokenomics": "Información de Tokenomics",
-            "sheikah": "Descarga Sheikah wallet",
+            "tokenomics": "Tokenomics",
+            "sheikah": "Descarga Sheikah Witnet wallet",
             "mining": "Empieza a minar"
         }
     }
