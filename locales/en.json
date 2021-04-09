@@ -8,12 +8,12 @@
         "button": "Learn how to use Witnet from a solidity contract"
     },
     "decentralized_oracle": {
-       "title": {
-           "main": "The decentralized oracle that is true to the {0} nature of blockchains.",
-           "gradient": "censorship resistant"
-       },
-       "paragraph_1": "Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.",
-       "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure datainput.",
+        "title": {
+            "main": "The decentralized oracle that is true to the {0} nature of blockchains.",
+            "gradient": "censorship resistant"
+        },
+        "paragraph_1": "Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.",
+        "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure datainput.",
         "button_label": "Build with witnet"
     },
     "ecosystem": {
@@ -31,7 +31,6 @@
                 "title": "Sheikah wallet for desktop",
                 "content": "Sheikah is a privacy and user friendly wallet app for managing your wit tokens on Windows, Mac OS and GNU/Linux."
             },
-
             "truffle_box": {
                 "title": "Ethereum Truffle Box",
                 "content": "Integrating witnet into your Solidity contracts is almost immediate with the Witnet Truffle Box."
@@ -48,7 +47,7 @@
                 "title": "What will you build next?",
                 "content": "Do you have some exciting Witnet app in mind? Apply now for a grant from the Witnet Foundation."
             }
-         }
+        }
     },
     "footer": {
         "links": {
@@ -81,15 +80,15 @@
             "witnet_foundation": "Witnet Foundation",
             "license": "Creative Commons License"
         }
-     },
-     "get_involved": {
-         "title": {
+    },
+    "get_involved": {
+        "title": {
             "main": "Come for the tech, {0}",
             "gradient": "stay for the fun!"
-         },
-         "content": "From developers to miners and enthusiasts, the witnet community prouds itself on always being welcoming, discussing the things that really matter, and ensuring that witnet plays a key role in the foundations of Web3.",
-         "subtitle": "Get involved now",
-         "social": {
+        },
+        "content": "From developers to miners and enthusiasts, the witnet community prouds itself on always being welcoming, discussing the things that really matter, and ensuring that witnet plays a key role in the foundations of Web3.",
+        "subtitle": "Get involved now",
+        "social": {
             "follow": {
                 "title": "Follow the project",
                 "content": "Keep up with the latest news on Twitter",
@@ -117,7 +116,7 @@
             "main": "Unleash the {0} of smart contracts",
             "gradient": "real power"
         },
-        "description": "Witnet enables your smart contracts to react to real world events with strong crypto-economic guarantees.", 
+        "description": "Witnet enables your smart contracts to react to real world events with strong crypto-economic guarantees.",
         "buttons": {
             "build": "Build with Witnet",
             "start_mining": {
