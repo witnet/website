@@ -1,5 +1,5 @@
 import { languages } from './constants'
-import { defaultLocale } from './default'
+import { fallbackLocale, defaultLocale } from './default'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -29,6 +29,10 @@ export default {
           'https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap',
       },
     ],
+  },
+
+  router: {
+    base: '/',
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -66,9 +70,8 @@ export default {
     // add SEO attributes in layout head for better performance
     seo: false,
     locales: languages,
-    defaultLocale,
     vueI18n: {
-      fallbackLocale: defaultLocale,
+      fallbackLocale,
       messages: {
         en: require('./locales/en.json'),
         es: require('./locales/es.json'),
@@ -78,8 +81,8 @@ export default {
       useCookie: true,
       cookieKey: 'i18n_redirected',
       onlyOnRoot: true,
+      alwaysRedirect: true,
     },
-    strategy: 'prefix_and_default',
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

@@ -1,12 +1,4 @@
-<template>
-  <div>
-    <Hero />
-    <DecentralizedOracle id="oracle" />
-    <!-- <nuxt-content :document="page" /> -->
-    <WitToken id="token" />
-    <Ecosystem id="ecosystem" />
-    <GetInvolved id="get_involved" />
-    <JoinCommunity id="community" />
-    <Footer />
-  </div>
-</template>
+<script>
+import Index from '~/pages/_lang/index.vue'
+export default Index
+</script>
