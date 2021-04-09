@@ -55,12 +55,13 @@ export default {
           border: false,
           content: this.$t('ecosystem.cards.explorer.content'),
         },
-        {
-          title: this.$t('ecosystem.cards.monitor.title'),
-          src: require('@/assets/images/monitor.svg'),
-          border: false,
-          content: this.$t('ecosystem.cards.monitor.content'),
-        },
+        // TODO: Add item when the witnet.live monitor is ready
+        // {
+        //   title: this.$t('ecosystem.cards.monitor.title'),
+        //   src: require('@/assets/images/monitor.svg'),
+        //   border: false,
+        //   content: this.$t('ecosystem.cards.monitor.content'),
+        // },
         {
           title: this.$t('ecosystem.cards.next.title'),
           src: require('@/assets/images/question_mark.png'),
