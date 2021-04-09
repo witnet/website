@@ -1,6 +1,7 @@
 {
     "head": {
-        "title": "Red oráculo descentralizada | Witnet"
+        "title": "Witnet: la red de oráculos descentralizada",
+        "description": "Witnet da poder real a los smart contracts. Witnet es un oráculo de nueva generación que utiliza técnicas criptoeconómicas de vanguardia para proporcionar datos de entrada y salida a smart contracts de manera segura. La red de Witnet tiene su propia blockchain y se basa en el token Wit para incentivar que nodos autónomos resuelvan data requests, lleguen a consenso sobre el resultado y lo entreguen a los smart contracts."
     },
     "announcement": {
         "tag": "ANUNCIO",
