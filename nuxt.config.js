@@ -7,14 +7,19 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Decentralized oracle network | Witnet',
+    title: 'Witnet: the decentralized oracle network',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Witnet brings real power to smart contracts. Witnet is a next-generation decentralized oracle that leverages state-of-the-art cryptoeconomic techniques to provide smart contracts with secure data input and output. The Witnet network runs its own blockchain and relies on the WIT token for incentivization of autonomous nodes that resolve data requests, agree on the results and deliver the results back to smart contracts.',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
