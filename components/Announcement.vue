@@ -5,7 +5,7 @@
         <p class="tag">{{ $t('announcement.tag') }}</p>
         <h3 class="subtitle header-3">{{ $t('announcement.subtitle') }}</h3>
       </div>
-      <Button type="primary" :font-size="14">
+      <Button type="primary">
         {{ $t('announcement.button') }}
       </Button>
     </div>

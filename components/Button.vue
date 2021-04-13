@@ -1,7 +1,6 @@
 <template>
   <button
     :class="[type, 'button']"
-    :style="{ fontSize: fontSize + 'px' }"
     @mouseover="angle = type === 'default' ? anglePurple : angle"
     @mouseleave="angle = angleBlack"
   >
@@ -19,10 +18,6 @@
 <script>
 export default {
   props: {
-    fontSize: {
-      type: Number,
-      required: true,
-    },
     type: {
       type: String,
       default: 'default',
@@ -48,6 +43,8 @@ export default {
 
 <style lang="scss" scoped>
 .button {
+  font-size: 1rem;
+  font-weight: bold;
   border: none;
   margin-right: 16px;
   background-color: transparent;
@@ -57,7 +54,6 @@ export default {
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
-  font-weight: bold;
   width: fit-content;
   height: fit-content;
   box-sizing: border-box;

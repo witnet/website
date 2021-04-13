@@ -16,7 +16,7 @@
         <i18n path="get_involved.title.main" class="title header-2" tag="h1">
           <span class="gradient">{{ $t('get_involved.title.gradient') }}</span>
         </i18n>
-        <p class="content">{{ $t('get_involved.content') }}</p>
+        <p class="subtitle">{{ $t('get_involved.content') }}</p>
       </div>
     </div>
     <div class="bottom">
@@ -109,6 +109,7 @@ export default {
       font-weight: bold;
       grid-column: 1/-1;
       justify-self: center;
+      font-size: 1.3125rem;
       align-self: center;
     }
   }
@@ -119,6 +120,7 @@ export default {
     align-items: center;
     .right {
       max-width: 35vw;
+
       .title {
         color: $dark-blue;
         margin-bottom: 16px;

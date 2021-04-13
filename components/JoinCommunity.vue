@@ -28,5 +28,8 @@ export default {
   background-color: $green-1;
   color: $white;
   text-align: center;
+  .text {
+    font-size: 1.125rem;
+  }
 }
 </style>

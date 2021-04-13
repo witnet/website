@@ -1,25 +1,22 @@
 .header-1 {
   font-size: 4rem;
-  font-weight: bold;
 }
 .header-2 {
   font-size: 2rem;
-  font-weight: bold;
 }
 .header-3 {
   font-size: 1.8rem;
-  font-weight: bold;
 }
 .header-4 {
   font-size: 1.4rem;
-  font-weight: bold;
 }
 p {
+  font-family: Almarai, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 
   &.subtitle {
-    font-size: 0.87rem;
+    font-size: 1.125rem;
   }
   &.title {
     font-size: 1.12rem;
@@ -36,6 +33,7 @@ a {
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
+  font-family: Almarai, sans-serif;
 }
 
 a:visited {

@@ -9,20 +9,20 @@
           aria-hidden="true"
         />
         <h1 class="title header-2">{{ $t('wit_token.title') }}</h1>
-        <p class="text">{{ $t('wit_token.text') }}</p>
+        <p class="text subtitle">{{ $t('wit_token.text') }}</p>
         <div class="btn-container">
           <a :href="urls.mining" target="_blank">
-            <Button class="btn" type="primary" :font-size="14">{{
+            <Button class="btn" type="primary">{{
               $t('wit_token.buttons.mining')
             }}</Button>
           </a>
           <a :href="urls.tokenomics" target="_blank">
-            <Button class="btn" type="default" :font-size="14">{{
+            <Button class="btn" type="default">{{
               $t('wit_token.buttons.tokenomics')
             }}</Button>
           </a>
           <a :href="urls.sheikah" target="_blank">
-            <Button class="btn" type="default" :font-size="14">
+            <Button class="btn" type="default">
               {{ $t('wit_token.buttons.sheikah') }}
             </Button>
           </a>
@@ -108,6 +108,8 @@ export default {
 }
 .text {
   max-width: 400px;
+  justify-self: center;
+  font-weight: lighter;
 }
 .btn-container {
   display: flex;
