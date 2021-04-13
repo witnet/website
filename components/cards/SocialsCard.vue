@@ -33,10 +33,14 @@ export default {
 .socials-container {
   max-width: 300px;
 }
+.content {
+  font-size: 0.9375rem;
+}
 .links-container {
   display: flex;
   justify-content: left;
   .link {
+    font-size: 0.9375rem;
     margin-right: 16px;
     color: $green-1;
     padding: 4px 0 4px 0;

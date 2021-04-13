@@ -17,14 +17,14 @@
                 $t('decentralized_oracle.title.gradient')
               }}</span>
             </i18n>
-            <p class="paragraph">
+            <p class="paragraph subtitle">
               {{ $t('decentralized_oracle.paragraph_1') }}
             </p>
-            <p class="paragraph">
+            <p class="paragraph subtitle">
               {{ $t('decentralized_oracle.paragraph_2') }}
             </p>
             <a :href="urls.docs" target="_blank">
-              <Button type="primary" :font-size="14" class="btn">{{
+              <Button type="primary" class="btn">{{
                 $t('decentralized_oracle.button_label')
               }}</Button>
             </a>

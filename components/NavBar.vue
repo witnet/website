@@ -136,7 +136,7 @@ export default {
       display: block;
     }
     .tab {
-      font-size: 1.12rem;
+      font-size: 1rem;
       display: flex;
       color: $black;
       align-items: center;

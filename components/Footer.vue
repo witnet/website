@@ -102,6 +102,7 @@ export default {
   }
   .copyright {
     line-height: 1.5;
+    font-size: 0.75rem;
     max-width: 350px;
   }
 }
@@ -125,6 +126,7 @@ export default {
         padding: 4px 0 4px 0;
       }
       .title {
+        font-size: 0.9375rem;
         font-weight: bold;
         padding: 8px 0 8px 0;
       }

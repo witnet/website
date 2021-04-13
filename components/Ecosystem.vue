@@ -3,7 +3,7 @@
     <i18n path="ecosystem.title.main" class="title header-2" tag="h1">
       <span class="gradient">{{ $t('ecosystem.title.gradient') }}</span>
     </i18n>
-    <p class="ecosystem-subtitle">
+    <p class="ecosystem-subtitle subtitle">
       {{ $t('ecosystem.subtitle') }}
     </p>
     <div class="ecosystem-card-container">
@@ -97,6 +97,7 @@ export default {
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
+    font-weight: lighter;
   }
   .ecosystem-card-container {
     display: grid;
