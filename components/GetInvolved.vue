@@ -14,7 +14,10 @@
       />
       <div v-scrollanimation class="right">
         <i18n path="get_involved.title.main" class="title header-2" tag="h1">
-          <span class="gradient">{{ $t('get_involved.title.gradient') }}</span>
+          <span class="gradient">
+            <br />
+            {{ $t('get_involved.title.gradient') }}
+          </span>
         </i18n>
         <p class="subtitle">{{ $t('get_involved.content') }}</p>
       </div>
@@ -119,8 +122,7 @@ export default {
     justify-content: center;
     align-items: center;
     .right {
-      max-width: 35vw;
-
+      max-width: 500px;
       .title {
         color: $dark-blue;
         margin-bottom: 16px;
@@ -156,9 +158,13 @@ export default {
   .get-involved-section {
     .top {
       flex-wrap: wrap;
+      max-width: 500px;
+      margin: 0 auto;
+      margin-bottom: 48px;
+      justify-content: left;
       .right {
         margin-top: 16px;
-        max-width: 100vw;
+        align-items: flex-start;
       }
       .dragon-image {
         margin-right: 0;
