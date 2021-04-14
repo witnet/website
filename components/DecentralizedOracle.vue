@@ -104,7 +104,7 @@ export default {
     height: 0;
     border-left: 100vw solid transparent;
     border-bottom: 300px solid #13253a;
-    z-index: -1;
+    z-index: -100;
   }
 
   .wrapper {
@@ -189,7 +189,7 @@ export default {
       height: 0;
       border-left: 100vw solid transparent;
       border-bottom: 50px solid #13253a;
-      z-index: -1;
+      z-index: -100;
     }
   }
 }
