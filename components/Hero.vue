@@ -54,7 +54,7 @@ export default {
   align-items: center;
 }
 .info {
-  min-width: 450px;
+  min-width: 480px;
 
   .title {
     color: $dark-blue;
