@@ -137,6 +137,7 @@ export default {
             );
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            display: inline-block;
           }
         }
 

@@ -52,8 +52,8 @@ export default {
   justify-items: left;
   .logo {
     height: 170px;
-    margin-bottom: 25px;
-    max-width: 200px;
+    margin-bottom: 5px;
+    max-width: 220px;
 
     &.auto {
       justify-self: flex-start;
