@@ -59,10 +59,6 @@ export default {
   display: flex;
   justify-content: center;
   z-index: 1;
-
-  .title {
-    text-align: center;
-  }
 }
 .card-container {
   margin: 48px;
@@ -108,14 +104,15 @@ export default {
 }
 .text {
   max-width: 400px;
-  justify-self: center;
   font-weight: lighter;
 }
 .btn-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   .btn {
     margin-top: 16px;
+    margin-right: 8px;
   }
 }
 @media (max-width: 1200px) {
@@ -127,9 +124,12 @@ export default {
       margin-bottom: 16px;
     }
   }
+  .text {
+    text-align: center;
+  }
   .btn-container {
     .btn {
-      width: 100%;
+      width: max-content;
     }
   }
 }
@@ -143,8 +143,13 @@ export default {
       margin-bottom: 16px;
     }
   }
+  .text {
+    text-align: center;
+  }
   .btn-container {
-    margin-top: 16px;
+    .btn {
+      width: 100%;
+    }
   }
 }
 </style>
