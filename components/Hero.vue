@@ -57,6 +57,7 @@ export default {
       background: linear-gradient(90deg, $aquamarine-1 43%, $green-2 100%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      display: inline-block;
     }
     &::after {
       content: ' ';

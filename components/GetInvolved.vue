@@ -96,6 +96,7 @@ export default {
     background: linear-gradient(90deg, $purple-2 43%, $coral 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline-block;
   }
   .bottom {
     display: grid;

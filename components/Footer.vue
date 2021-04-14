@@ -50,7 +50,7 @@
       <div class="alliance-text">
         <img
           class="logo"
-          src="@/assets/images/ado_member.png"
+          src="@/assets/images/ado_member.svg"
           alt="Witnet is an ADO member"
           aria-hidden="true"
         />

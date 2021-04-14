@@ -10,31 +10,31 @@
     },
     "decentralized_oracle": {
         "title": {
-            "main": "Un oráculo descentralizado es intrínseco a la naturaleza {0} de las blockchains.",
+            "main": "El oráculo descentralizado que va acorde a la naturaleza {0} de las blockchains.",
             "gradient": "resistente a la censura"
         },
-        "paragraph_1": "Sin un oráculo fiable, los smart contracts pueden ser vulnerables a los hacks, la corrupción y la pérdida monetaria.",
-        "paragraph_2": "Witnet aprovecha las últimas técnicas criptográficas y económicas para proporcionar smart contracts con datos seguros.",
+        "paragraph_1": "Sin un oráculo fiable, los smart contracts pueden ser vulnerables a hacks, manipulación y pérdidas monetarias.",
+        "paragraph_2": "Witnet aprovecha las últimas técnicas criptoeconómicas para proporcionar datos a smart contracts de forma segura.",
         "button_label": "Construye con Witnet"
     },
     "ecosystem": {
         "title": {
-            "main": "Un ecosistema incipiente, {0}",
-            "gradient": "pero prometedor"
+            "main": "Un ecosistema incipiente que {0}",
+            "gradient": "prolifera rápidamente"
         },
         "subtitle": "Muchas piezas ya están en su sitio, y muchas otras están siendo trabajadas activamente por una amplia comunidad de builders.",
         "cards": {
             "node": {
-                "title": "Nodo de archivo completo witnet-rust",
-                "content": "Ejecuta tu nodo verificado y comienza a ganar wit tokens por minar bloques y resolver data requests."
+                "title": "Nodo completo witnet-rust",
+                "content": "Ejecuta un \"full archival node\" de Witnet y comienza a ganar wit tokens por minar bloques y resolver data requests."
             },
             "sheikah": {
                 "title": "Sheikah Witnet wallet para escritorio",
-                "content": "Sheikah es una wallet app, privada y fácil de usar para administrar tus tokens en Windows, Mac OS y GNU/Linux."
+                "content": "Sheikah es una aplicación de wallet privada y fácil de usar para administrar tus tokens en Windows, Mac OS y GNU/Linux."
             },
             "truffle_box": {
                 "title": "Ethereum Truffle Box",
-                "content": "Integrar Witnet en tus contratos de Solidity es casi inmediato con Witnet Truffle Box."
+                "content": "Integrar Witnet en tus contratos de Solidity es casi inmediato con la Witnet Truffle Box."
             },
             "explorer": {
                 "title": "Explorador de bloques witnet.network",
@@ -45,8 +45,8 @@
                 "content": "El monitor de red witnet.live mantiene un seguimiento de la salud de la red de Witnet."
             },
             "next": {
-                "title": "¿Cómo puedes contribuir?",
-                "content": "¿Tienes en mente alguna aplicación Witnet? Solicita ahora una subvención de Witnet Foundation."
+                "title": "Y tú, ¿qué vas a crear?",
+                "content": "¿Tienes en mente alguna aplicación basada en Witnet? Muy pronto se anunciará un programa de grants, así que estate pendiente ;)"
             }
         }
     },
@@ -140,21 +140,21 @@
     },
     "testimonials": {
         "testimonial_1": {
-            "text": "\"Witnet es un oráculo blockchain de nueva generación. En 2021 oirás mucho más sobre él.\"",
-            "author": "Michael Arrington, Fundador de TechCrunch"
+            "text": "\"Witnet es un oráculo blockchain de nueva generación. En 2021 oiréis mucho más sobre él.\"",
+            "author": "Michael Arrington, fundador de TechCrunch"
         },
         "testimonial_2": {
-            "text": "\"El oráculo que verdaderamente descentraliza las blockchains y el que Web3 merece\"",
+            "text": "\"El oráculo que las blockchains verdaderamente descentralizadas y la Web3 merecen\"",
             "author": "Luis Cuende, cofundador de Aragon"
         },
         "testimonial_3": {
-            "text": "\"La manipulación de los precios por parte de oráculos fue un tema candente en 2020, causando muchas pérdidas financieras. Estamos seguros de que Witnet es capaz de resistir estos problemas y proporcionar la seguridad y descentralización que estamos buscando\"",
+            "text": "\"La manipulación de precios por parte de oráculos fue un tema candente en 2020, causando muchas pérdidas financieras. Estamos seguros de que Witnet es capaz de resistir estos problemas y proporcionar la seguridad y descentralización que estamos buscando\"",
             "author": "Marcar Tan, cofundador de RiveX"
         }
     },
     "wit_token": {
-        "title": "Incentivado por Wit tokens",
-        "text": "El oráculo descentralizado Witnet se ejecuta en su propia blockchain y se basa en el Wit token para incentivar la independencia en la ejecución de nodos, que resuelven las data requests y generan consenso en los resultados.",
+        "title": "Incentivado por el token Wit",
+        "text": "El oráculo descentralizado de Witnet se ejecuta en su propia blockchain y se basa en el Wit token para incentivar a nodos completamente independientes y autónomos a que resuelvan data requests, lleguen a un consenso sobre los resultados y entreguen esa información a los smart contracts.",
         "buttons": {
             "tokenomics": "Tokenomics",
             "sheikah": "Descarga Sheikah wallet",

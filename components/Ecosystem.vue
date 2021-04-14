@@ -29,7 +29,7 @@ export default {
       items: [
         {
           title: this.$t('ecosystem.cards.node.title'),
-          src: require('@/assets/images/full_node.svg'),
+          src: require('@/assets/images/witnet-rust.svg'),
           link: urls.minning,
           border: false,
           content: this.$t('ecosystem.cards.node.content'),
@@ -43,14 +43,14 @@ export default {
         },
         {
           title: this.$t('ecosystem.cards.truffle_box.title'),
-          src: require('@/assets/images/truffle-box.png'),
+          src: require('@/assets/images/truffle-box.svg'),
           link: urls.truffleBox,
           border: false,
           content: this.$t('ecosystem.cards.truffle_box.content'),
         },
         {
           title: this.$t('ecosystem.cards.explorer.title'),
-          src: require('@/assets/images/explorer.svg'),
+          src: require('@/assets/images/block-explorer.svg'),
           link: urls.blockExplorer,
           border: false,
           content: this.$t('ecosystem.cards.explorer.content'),
@@ -58,13 +58,13 @@ export default {
         // TODO: Add item when the witnet.live monitor is ready
         // {
         //   title: this.$t('ecosystem.cards.monitor.title'),
-        //   src: require('@/assets/images/monitor.svg'),
+        //   src: require('@/assets/images/network-monitor.svg'),
         //   border: false,
         //   content: this.$t('ecosystem.cards.monitor.content'),
         // },
         {
           title: this.$t('ecosystem.cards.next.title'),
-          src: require('@/assets/images/question_mark.png'),
+          src: require('@/assets/images/question_mark.svg'),
           link: urls.docs,
           border: true,
           content: this.$t('ecosystem.cards.next.content'),
@@ -120,6 +120,7 @@ export default {
         );
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        display: inline-block;
       }
     }
     .ecosystem-subtitle {
@@ -132,7 +133,7 @@ export default {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       row-gap: 0;
-      column-gap: 0;
+      column-gap: 25px;
       justify-items: center;
     }
   }

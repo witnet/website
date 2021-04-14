@@ -4,7 +4,7 @@
       <BaseCard :padding="48" class="card-container">
         <img
           class="wit-image"
-          src="@/assets/images/wit.png"
+          src="@/assets/images/wit.svg"
           alt=""
           aria-hidden="true"
         />
