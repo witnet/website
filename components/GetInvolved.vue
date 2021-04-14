@@ -90,13 +90,10 @@ export default {
 .get-involved-section {
   background-color: $grey-0;
   color: $grey-4;
+  font-weight: lighter;
+  padding: 40px 0 40px 0;
   .gradient {
-    background: linear-gradient(
-      90deg,
-      $purple-2 0%,
-      $purple-2 43%,
-      $coral 100%
-    );
+    background: linear-gradient(90deg, $purple-2 43%, $coral 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -107,7 +104,7 @@ export default {
     justify-items: center;
     justify-content: center;
     row-gap: 32px;
-    column-gap: 48px;
+    column-gap: 25px;
     .title {
       font-weight: bold;
       grid-column: 1/-1;
@@ -121,8 +118,10 @@ export default {
     margin-bottom: 40px;
     justify-content: center;
     align-items: center;
+    column-gap: 50px;
     .right {
-      max-width: 500px;
+      max-width: 600px;
+
       .title {
         color: $dark-blue;
         margin-bottom: 16px;
@@ -139,8 +138,7 @@ export default {
       }
     }
     .dragon-image {
-      margin-right: 32px;
-      width: 300px;
+      width: 350px;
       &.before-enter {
         opacity: 0;
         transform: translateX(-100px);
@@ -165,6 +163,7 @@ export default {
       .right {
         margin-top: 16px;
         align-items: flex-start;
+        width: 100vw;
       }
       .dragon-image {
         margin-right: 0;

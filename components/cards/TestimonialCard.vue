@@ -1,7 +1,13 @@
 <template>
   <div :class="[align, 'testimonial-card']">
     <p class="title text">{{ text }}</p>
-    <p class="subtitle author">{{ author }}</p>
+    <a
+      :href="reference"
+      :target="reference ? '_blank' : undefined"
+      class="subtitle author"
+    >
+      {{ author }}
+    </a>
   </div>
 </template>
 
@@ -15,6 +21,11 @@ export default {
     author: {
       type: String,
       required: true,
+    },
+    reference: {
+      type: String,
+      required: false,
+      default: undefined,
     },
     align: {
       type: String,
@@ -35,11 +46,11 @@ export default {
   .text {
     font-style: italic;
     color: $white;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin-bottom: 0.75rem;
   }
   .author {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: $white;
   }
 }

@@ -82,12 +82,7 @@ export default {
     margin-bottom: 16px;
     text-align: center;
     .gradient {
-      background: linear-gradient(
-        90deg,
-        $pink 0%,
-        $pink 43%,
-        $electric-blue 100%
-      );
+      background: linear-gradient(90deg, $pink 43%, $electric-blue 100%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -105,6 +100,8 @@ export default {
     row-gap: 24px;
     column-gap: 56px;
     justify-items: center;
+    margin-bottom: 25px;
+    margin-top: 50px;
   }
 }
 

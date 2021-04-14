@@ -29,7 +29,7 @@ export default {
   color: $white;
   text-align: center;
   .text {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 }
 </style>

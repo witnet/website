@@ -142,6 +142,7 @@ export default {
       align-items: center;
       text-decoration: none;
       padding: 24px 32px;
+      transition: color 0.1s ease;
       .social {
         margin: auto 8px;
         width: 25px;
