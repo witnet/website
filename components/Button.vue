@@ -46,10 +46,11 @@ export default {
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  margin-right: 16px;
+  margin-right: 10px;
+  margin-bottom: 5px;
   background-color: transparent;
-  border-radius: 25px;
-  padding: 12px 16px;
+  border-radius: 55px;
+  padding: 16px 38px 16px 22px;
   outline: 0;
   text-decoration: none;
   cursor: pointer;
@@ -57,8 +58,15 @@ export default {
   width: fit-content;
   height: fit-content;
   box-sizing: border-box;
+  min-width: 180px;
+  position: relative;
+  text-align: left;
+  letter-spacing: -0.02em;
 
   .arrow {
+    position: absolute;
+    right: 20px;
+    top: 24px;
     margin-left: 8px;
     height: 10px;
 
@@ -70,12 +78,12 @@ export default {
 .secondary {
   background: $grey-2;
   color: $black;
-  &:active {
-    background: $grey-3;
-    color: $black;
-  }
   &:hover {
     background: $grey-1;
+    color: $black;
+  }
+  &:active {
+    background: $grey-3;
     color: $black;
   }
 }
@@ -83,16 +91,20 @@ export default {
 .default {
   background: transparent;
   color: $black;
-  border: 1px solid $black;
+  border: 2px solid $black;
+  padding: 14px 20px;
   &:hover {
     background: transparent;
     color: $purple-1;
-    border: 1px solid $purple-1;
+    border: 2px solid $purple-1;
   }
   &:active {
     background: $purple-1;
     color: $white;
-    border: 1px solid $purple-1;
+    border: 2px solid $purple-1;
+  }
+  .arrow {
+    top: 22px;
   }
 }
 
@@ -104,12 +116,12 @@ export default {
     $green-2 100%
   );
   color: $white;
-  &:active {
-    background: $aquamarine-1;
-    color: $white;
-  }
   &:hover {
     background: $green-2;
+    color: $white;
+  }
+  &:active {
+    background: $aquamarine-1;
     color: $white;
   }
 }

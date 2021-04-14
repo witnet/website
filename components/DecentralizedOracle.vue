@@ -37,6 +37,7 @@
               class="testimonial"
               :class="{ short: testimonial.text.length < 160 }"
               :author="testimonial.author"
+              :reference="testimonial.reference"
               :text="testimonial.text"
               align="right"
             />
@@ -64,6 +65,7 @@ export default {
         {
           text: this.$t('testimonials.testimonial_1.text'),
           author: this.$t('testimonials.testimonial_1.author'),
+          reference: 'https://twitter.com/arrington/status/1334932934202048512',
         },
         {
           text: this.$t('testimonials.testimonial_2.text'),
@@ -72,6 +74,8 @@ export default {
         {
           text: this.$t('testimonials.testimonial_3.text'),
           author: this.$t('testimonials.testimonial_3.author'),
+          reference:
+            'https://rivexofficial.medium.com/rivex-teams-up-with-witnet-decentralized-oracle-network-94de8a806163',
         },
       ],
     }
@@ -121,14 +125,13 @@ export default {
       .left {
         height: 100%;
         max-width: 554px;
-        margin-right: 16px;
+        margin-right: 25px;
 
         .title {
           margin-bottom: 32px;
           .gradient {
             background: linear-gradient(
               90deg,
-              $aquamarine-3 0%,
               $aquamarine-3 43%,
               $purple-3 100%
             );
@@ -147,7 +150,7 @@ export default {
 
       .vertical-line {
         height: 100%;
-        border-left: 1px solid white;
+        border-left: 1px solid $alpha-white;
         margin-right: 1rem;
       }
 
@@ -172,6 +175,7 @@ export default {
   margin-top: -350px;
   max-width: 1100px;
   position: relative;
+  pointer-events: none;
 }
 
 @media (max-width: 1200px) {

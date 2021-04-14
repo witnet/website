@@ -1,11 +1,9 @@
 <template>
   <SectionLayout class="main-section">
     <div class="info">
-      <div class="title-wrapper">
-        <i18n path="hero.title.main" class="title header-1" tag="h1">
-          <span class="gradient">{{ $t('hero.title.gradient') }}</span>
-        </i18n>
-      </div>
+      <i18n path="hero.title.main" class="title header-1" tag="h1">
+        <span class="gradient">{{ $t('hero.title.gradient') }}</span>
+      </i18n>
       <p class="description">{{ $t('hero.description') }}</p>
       <div class="buttons">
         <a :href="urls.docs" target="_blank">
@@ -15,11 +13,7 @@
         </a>
         <a :href="urls.minning" target="_blank">
           <Button class="card-button" type="secondary">
-            <i18n
-              path="hero.buttons.start_mining.base"
-              class="title"
-              tag="null"
-            >
+            <i18n path="hero.buttons.start_mining.base">
               <span class="wit">{{ $t('hero.buttons.start_mining.wit') }}</span>
             </i18n>
           </Button>
@@ -58,15 +52,20 @@ export default {
 
   .title {
     color: $dark-blue;
+    line-height: 1em;
     .gradient {
-      background: linear-gradient(
-        90deg,
-        $aquamarine-1 0%,
-        $aquamarine-1 43%,
-        $green-2 100%
-      );
+      background: linear-gradient(90deg, $aquamarine-1 43%, $green-2 100%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+    &::after {
+      content: ' ';
+      background-color: $green-2;
+      display: inline-block;
+      height: 0.15em;
+      margin-bottom: -0.01em;
+      margin-left: 0.08em;
+      width: 0.15em;
     }
   }
   .description {

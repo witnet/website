@@ -8,8 +8,8 @@
         alt=""
         aria-hidden="true"
       />
-      <h2 class="title header-3" :class="{ border }">{{ title }}</h2>
-      <p class="subtitle" :class="{ border }">{{ content }}</p>
+      <h2 class="title header-3">{{ title }}</h2>
+      <p class="subtitle">{{ content }}</p>
     </div>
   </a>
 </template>
@@ -49,30 +49,36 @@ export default {
   row-gap: 16px;
   text-align: left;
   padding: 24px;
-  justify-items: center;
-  &.border {
-    border: 1px solid $grey-1;
-    border-radius: 4px;
-    background-color: $grey-0;
-  }
-  .title {
-    color: $dark-blue;
-    &.border {
-      color: $grey-3;
-    }
-  }
-  .subtitle {
-    &.border {
-      color: $grey-3;
-    }
-  }
-
+  justify-items: left;
   .logo {
     height: 170px;
+    margin-bottom: 25px;
+    max-width: 200px;
 
     &.auto {
       justify-self: flex-start;
     }
+  }
+  .title {
+    color: $dark-blue;
+    line-height: 1.2em;
+  }
+  .subtitle {
+    color: $grey-5;
+  }
+  &.border {
+    border: 1px solid $grey-1;
+    border-radius: 4px;
+    background-color: $grey-0;
+    .title {
+      color: $grey-3;
+      font-size: 1.2rem;
+      text-align: left !important;
+    }
+  }
+  &:not(.border) .title {
+    font-family: 'Avenir Next', sans-serif;
+    letter-spacing: -0.02em;
   }
 }
 </style>

@@ -69,8 +69,14 @@
         aria-hidden="true"
       />
       <i18n path="footer.copyright.base" class="copyright" tag="p">
-        <span>{{ $t('footer.copyright.witnet_foundation') }}</span>
-        <span>{{ $t('footer.copyright.license') }}</span>
+        <a href="https://witnet.foundation" target="_blank">{{
+          $t('footer.copyright.witnet_foundation')
+        }}</a>
+        <a
+          href="https://creativecommons.org/publicdomain/zero/1.0/"
+          target="_blank"
+          >{{ $t('footer.copyright.license') }}</a
+        >
       </i18n>
       <!-- FIXME(#63): Update selector to fit here
       <LanguageSelector /> -->
@@ -102,15 +108,18 @@ export default {
   }
   .copyright {
     line-height: 1.5;
-    font-size: 0.75rem;
     max-width: 350px;
+    a {
+      font-size: inherit;
+      text-decoration: underline;
+    }
   }
 }
 .footer-section {
   background-color: $dark-blue;
   color: $white;
   .top {
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $alpha-white;
     display: grid;
     padding-bottom: 40px;
     column-gap: 40px;
@@ -121,12 +130,12 @@ export default {
       display: flex;
       flex-direction: column;
       .link {
-        font-size: 0.87rem;
+        font-size: 0.9rem;
         color: $white;
         padding: 4px 0 4px 0;
       }
       .title {
-        font-size: 0.9375rem;
+        font-size: 0.95rem;
         font-weight: bold;
         padding: 8px 0 8px 0;
       }
