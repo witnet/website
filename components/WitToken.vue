@@ -127,6 +127,9 @@ export default {
   .text {
     text-align: center;
   }
+  .title {
+    text-align: center;
+  }
   .btn-container {
     .btn {
       width: max-content;
@@ -144,6 +147,9 @@ export default {
     }
   }
   .text {
+    text-align: center;
+  }
+  .title {
     text-align: center;
   }
   .btn-container {
