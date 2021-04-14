@@ -50,7 +50,7 @@ export default {
   margin-bottom: 5px;
   background-color: transparent;
   border-radius: 55px;
-  padding: 16px 38px 16px 22px;
+  padding: 18px 38px 18px 22px;
   outline: 0;
   text-decoration: none;
   cursor: pointer;
@@ -62,11 +62,12 @@ export default {
   position: relative;
   text-align: left;
   letter-spacing: -0.02em;
+  line-height: 1rem;
 
   .arrow {
     position: absolute;
     right: 20px;
-    top: 24px;
+    top: 21px;
     margin-left: 8px;
     height: 10px;
 
@@ -92,7 +93,7 @@ export default {
   background: transparent;
   color: $black;
   border: 2px solid $black;
-  padding: 14px 20px;
+  padding: 16px 38px 16px 22px;
   &:hover {
     background: transparent;
     color: $purple-1;
@@ -104,7 +105,7 @@ export default {
     border: 2px solid $purple-1;
   }
   .arrow {
-    top: 22px;
+    top: 20px;
   }
 }
 
