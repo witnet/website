@@ -153,7 +153,7 @@
         }
     },
     "wit_token": {
-        "title": "Incentivizado por Wit tokens",
+        "title": "Incentivado por Wit tokens",
         "text": "El oráculo descentralizado Witnet se ejecuta en su propia blockchain y se basa en el Wit token para incentivar la independencia en la ejecución de nodos, que resuelven las data requests y generan consenso en los resultados.",
         "buttons": {
             "tokenomics": "Tokenomics",
