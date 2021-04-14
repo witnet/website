@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ drop: isMenuVisible }">
+  <div :class="{ drop: isMenuVisible }" class="navbar-container">
     <nav class="navbar">
       <div class="logo-container">
         <img
@@ -170,6 +170,7 @@ export default {
   .navbar {
     display: block;
     position: relative;
+    max-width: 100%;
     .logo-container {
       padding: 16px 32px 0 32px;
       display: flex;

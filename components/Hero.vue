@@ -85,6 +85,21 @@ export default {
 @media (max-width: 1200px) {
   .main-section {
     display: flex;
+    min-height: max-content;
+  }
+  .hero-image {
+    position: relative;
+    max-width: 99%;
+    right: 200px;
+    height: 100%;
+    z-index: -50;
+    top: 60px;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-section {
+    display: flex;
     flex-direction: column;
   }
   .info {
@@ -98,17 +113,7 @@ export default {
     }
   }
   .hero-image {
-    margin-top: 16px;
-    align-self: center;
-  }
-}
-
-@media (max-width: 426px) {
-  .main-section {
-    margin-bottom: 32px;
-    .hero-image {
-      display: none;
-    }
+    display: none;
   }
 }
 </style>
