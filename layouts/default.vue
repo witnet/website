@@ -9,55 +9,7 @@
 export default {
   head() {
     return {
-      title: this.$t('head.title'),
       ...this.$nuxtI18nHead({ addSeoAttributes: true }),
-      meta: [
-        {
-          hid: 'twitter:title',
-          name: 'twitter:title',
-          content: this.$t('head.title'),
-        },
-        {
-          hid: 'twitter:description',
-          name: 'twitter:description',
-          content: this.$t('head.description'),
-        },
-        {
-          hid: 'twitter:image',
-          name: 'twitter:image',
-          content: require('@/assets/images/witnet_green.png'),
-        },
-        {
-          hid: 'twitter:image:alt',
-          name: 'twitter:image:alt',
-          content: this.$t('head.title'),
-        },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: this.$t('head.title'),
-        },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: this.$t('head.description'),
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: require('@/assets/images/witnet_green.png'),
-        },
-        {
-          hid: 'og:image:secure_url',
-          property: 'og:image:secure_url',
-          content: require('@/assets/images/witnet_green.png'),
-        },
-        {
-          hid: 'og:image:alt',
-          property: 'og:image:alt',
-          content: this.$t('head.title'),
-        },
-      ],
     }
   },
 }
