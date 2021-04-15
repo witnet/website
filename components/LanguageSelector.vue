@@ -72,6 +72,8 @@ export default {
     font-size: 12px;
   }
   .vs__dropdown-menu {
+    background: $white;
+    top: 24px;
     border: 1px solid $grey-1;
     box-shadow: 1px 1px 10px 2px $alpha-purple;
   }

@@ -11,7 +11,7 @@
             $t('hero.buttons.build')
           }}</Button>
         </a>
-        <a :href="urls.minning" target="_blank">
+        <a :href="urls.mining" target="_blank">
           <Button class="card-button" type="secondary">
             <i18n path="hero.buttons.start_mining.base">
               <span class="wit">{{ $t('hero.buttons.start_mining.wit') }}</span>

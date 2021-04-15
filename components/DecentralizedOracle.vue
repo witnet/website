@@ -137,7 +137,6 @@ export default {
             );
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            display: inline-block;
           }
         }
 
@@ -188,7 +187,7 @@ export default {
     &::after {
       content: '';
       position: absolute;
-      top: -50px;
+      top: -49px;
       left: 0;
       width: 0;
       height: 0;

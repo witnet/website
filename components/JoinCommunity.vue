@@ -29,6 +29,7 @@ export default {
   color: $white;
   text-align: center;
   .text {
+    font-family: Almarai, sans-serif;
     font-size: 1.2rem;
   }
 }

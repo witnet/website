@@ -153,7 +153,7 @@
         "text": "El oráculo descentralizado de Witnet se ejecuta en su propia blockchain y se basa en el Wit token para incentivar a nodos completamente independientes y autónomos a que resuelvan data requests, lleguen a un consenso sobre los resultados y entreguen esa información a los smart contracts.",
         "buttons": {
             "tokenomics": "Tokenomics",
-            "sheikah": "Descarga Sheikah wallet",
+            "sheikah": "Descarga Sheikah",
             "mining": "Empieza a minar"
         }
     }

@@ -36,23 +36,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
-  font-size: 1rem;
-  padding-right: 25px;
-  margin: 10px 0 10px 0;
-}
-.links-container {
-  display: flex;
-  justify-content: left;
-  .link {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-right: 16px;
-    color: $green-1;
-    padding: 4px 0 4px 0;
+.socials-container {
+  max-width: 300px;
+  .title {
+    font-family: Almarai, sans-serif;
+    font-weight: bold;
   }
-}
-.title {
-  font-weight: bold;
+  .content {
+    font-size: 1rem;
+    padding-right: 25px;
+    margin: 10px 0 10px 0;
+  }
+  .links-container {
+    display: flex;
+    justify-content: left;
+    .link {
+      font-size: 1rem;
+      font-weight: normal;
+      margin-right: 16px;
+      color: $green-1;
+      padding: 4px 0 4px 0;
+    }
+  }
 }
 </style>

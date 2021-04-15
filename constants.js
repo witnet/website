@@ -15,7 +15,7 @@ export const languages = [
 export const urls = {
   docs: 'https://docs.witnet.io/',
   ado: 'https://twitter.com/adoracles',
-  minning: 'https://docs.witnet.io/try/run-a-node/',
+  mining: 'https://docs.witnet.io/try/run-a-node/',
   tokenomics:
     'https://medium.com/witnet/wit-witnet-blockchains-native-tokenomics-4559084073c5',
   sheikah: 'https://sheikah.app/',

@@ -44,12 +44,13 @@ export default {
     text-align: left;
   }
   .text {
-    font-style: italic;
+    font-family: 'Nunito Sans Italic', sans-serif;
     color: $white;
     font-size: 1.1rem;
     margin-bottom: 0.75rem;
   }
   .author {
+    font-family: 'Nunito Sans Regular', sans-serif;
     font-size: 0.8rem;
     color: $white;
   }

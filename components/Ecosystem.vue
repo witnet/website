@@ -30,7 +30,7 @@ export default {
         {
           title: this.$t('ecosystem.cards.node.title'),
           src: require('@/assets/images/witnet-rust.svg'),
-          link: urls.minning,
+          link: urls.mining,
           border: false,
           content: this.$t('ecosystem.cards.node.content'),
         },

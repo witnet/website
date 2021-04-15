@@ -22,7 +22,7 @@
       </div>
       <div class="links">
         <p class="title">{{ $t('footer.links.ecosystem.title') }}</p>
-        <a class="link" :href="urls.minning" target="_blank">
+        <a class="link" :href="urls.mining" target="_blank">
           {{ $t('footer.links.ecosystem.full_node') }}</a
         >
         <a class="link" :href="urls.sheikah" target="_blank">{{
@@ -135,6 +135,7 @@ export default {
         padding: 4px 0 4px 0;
       }
       .title {
+        font-family: Almarai, sans-serif;
         font-size: 0.95rem;
         font-weight: bold;
         padding: 8px 0 8px 0;

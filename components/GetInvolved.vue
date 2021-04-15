@@ -96,7 +96,6 @@ export default {
     background: linear-gradient(90deg, $purple-2 43%, $coral 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block;
   }
   .bottom {
     display: grid;
@@ -107,6 +106,7 @@ export default {
     row-gap: 32px;
     column-gap: 25px;
     .title {
+      font-family: Almarai, sans-serif;
       font-weight: bold;
       grid-column: 1/-1;
       justify-self: center;

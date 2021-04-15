@@ -103,7 +103,7 @@ export default {
   margin-right: 32px;
 }
 .text {
-  max-width: 400px;
+  max-width: 500px;
   font-weight: lighter;
 }
 .btn-container {

@@ -77,7 +77,6 @@ export default {
     }
   }
   &:not(.border) .title {
-    font-family: 'Avenir Next', sans-serif;
     letter-spacing: -0.02em;
   }
 }

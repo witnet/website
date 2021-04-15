@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Nunito Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Sans Regular'), url('Nunito-Sans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito Sans Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Nunito Sans Bold'), url('Nunito-Sans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito Sans Italic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Nunito Sans Italic'), url('Nunito-Sans-Italic.ttf') format('truetype');
+}
