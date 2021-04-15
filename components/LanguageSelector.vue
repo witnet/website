@@ -29,7 +29,8 @@ import { findLanguage } from '../utils'
 
 export default {
   data() {
-    const selectedLanguage = this.$route.path.replace('/', '') || defaultLocale
+    const selectedLanguage =
+      this.$route.path.split('/').join('') || defaultLocale
     const expandedLanguages = languages.map((language) => ({
       ...language,
       img: require('@/assets/images/dragon.png'),
@@ -47,7 +48,7 @@ export default {
   watch: {
     selected: {
       handler(selected) {
-        this.$router.push(selected.code)
+        this.$router.push(`/${selected.code}`)
       },
       deep: true,
     },
