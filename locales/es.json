@@ -19,8 +19,8 @@
     },
     "ecosystem": {
         "title": {
-            "main": "Un ecosistema incipiente, {0}",
-            "gradient": "pero prometedor"
+            "main": "A nascent, yet {0}",
+            "gradient": "thriving ecosystem"
         },
         "subtitle": "Muchas piezas ya están en su sitio, y muchas otras están siendo trabajadas activamente por una amplia comunidad de builders.",
         "cards": {
@@ -46,7 +46,7 @@
             },
             "next": {
                 "title": "¿Cómo puedes contribuir?",
-                "content": "¿Tienes en mente alguna aplicación Witnet? Solicita ahora una subvención de Witnet Foundation."
+                "content": "Do you have some exciting Witnet app in mind? A grant program will be announced soon, so stay tuned!"
             }
         }
     },
