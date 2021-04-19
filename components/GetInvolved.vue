@@ -129,7 +129,7 @@ export default {
       }
       &.before-enter {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(50px);
         transition: all 1s ease-out;
       }
 
@@ -142,7 +142,7 @@ export default {
       width: 350px;
       &.before-enter {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-50px);
         transition: all 1s ease-out;
       }
 

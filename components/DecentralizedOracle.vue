@@ -46,6 +46,7 @@
       </div>
     </SectionLayout>
     <img
+      v-scrollanimation
       class="world"
       src="@/assets/images/world.png"
       aria-hidden="true"
@@ -176,6 +177,17 @@ export default {
   max-width: 1100px;
   position: relative;
   pointer-events: none;
+
+  &.before-enter {
+    opacity: 1;
+    transform: translateY(-100px);
+    transition: all 1s ease-out;
+  }
+
+  &.enter {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 1200px) {
