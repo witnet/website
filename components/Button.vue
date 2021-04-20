@@ -55,8 +55,6 @@ export default {
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
-  width: fit-content;
-  height: fit-content;
   box-sizing: border-box;
   min-width: 180px;
   position: relative;
