@@ -79,7 +79,6 @@ export default {
 .hero-image {
   max-width: 77%;
   right: 40px;
-  height: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -91,7 +90,6 @@ export default {
     position: relative;
     max-width: 99%;
     right: 200px;
-    height: 100%;
     z-index: -50;
     top: 60px;
   }
