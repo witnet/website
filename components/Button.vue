@@ -110,7 +110,7 @@ export default {
 }
 
 .primary {
-  background: linear-gradient(
+  background: -webkit-linear-gradient(
     90deg,
     $aquamarine-1 0%,
     $aquamarine-1 43%,

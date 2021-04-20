@@ -120,7 +120,6 @@ export default {
       width: 100%;
       display: grid;
       grid-template-columns: 1fr auto 1fr;
-      align-items: center;
       color: white;
 
       .left {
@@ -129,8 +128,10 @@ export default {
         margin-right: 25px;
 
         .title {
+          display: inline-block;
           margin-bottom: 32px;
           .gradient {
+            display: inline-block;
             background: linear-gradient(
               90deg,
               $aquamarine-3 43%,
@@ -159,7 +160,6 @@ export default {
         display: flex;
         align-items: flex-end;
         flex-direction: column;
-        justify-self: center;
         .testimonial {
           margin-bottom: 1.75rem;
           &.short {
