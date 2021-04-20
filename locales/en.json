@@ -10,8 +10,8 @@
             "gradient": "censorship resistant"
         },
         "paragraph_1": "Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.",
-        "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure datainput.",
-        "button_label": "Build with witnet"
+        "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure data input.",
+        "button_label": "Build with Witnet"
     },
     "ecosystem": {
         "title": {
@@ -30,7 +30,7 @@
             },
             "truffle_box": {
                 "title": "Ethereum Truffle Box",
-                "content": "Integrating witnet into your Solidity contracts is almost immediate with the Witnet Truffle Box."
+                "content": "Integrating Witnet into your Solidity contracts is almost immediate with the Witnet Truffle Box."
             },
             "explorer": {
                 "title": "witnet.network block explorer",
@@ -38,7 +38,7 @@
             },
             "monitor": {
                 "title": "witnet.live network monitor",
-                "content": "The witnet.live network monitor keeps tracks of the health of the witnet network."
+                "content": "The witnet.live network monitor keeps tracks of the health of the Witnet network."
             },
             "next": {
                 "title": "What will you build next?",
@@ -83,7 +83,7 @@
             "main": "Come for the tech, {0}",
             "gradient": "stay for the fun!"
         },
-        "content": "From developers to miners and enthusiasts, the witnet community prouds itself on always being welcoming, discussing the things that really matter, and ensuring that witnet plays a key role in the foundations of Web3.",
+        "content": "From developers to miners and enthusiasts, the Witnet community prides itself on always being welcoming, discussing the things that really matter, and ensuring that Witnet plays a key role in the foundations of Web3.",
         "subtitle": "Get involved now",
         "social": {
             "follow": {
@@ -102,8 +102,8 @@
                 }
             },
             "find_bugs": {
-                "title": "Find bugs, get tokens",
-                "content": "A bug bounty program will be announced soon.",
+                "title": "Community Incentive Program",
+                "content": "Details for a community incentive program will be released soon.",
                 "stay_tuned": "Stay tuned!"
             }
         }

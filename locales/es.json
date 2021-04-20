@@ -21,7 +21,7 @@
         "subtitle": "Muchas piezas ya están en su sitio, y muchas otras están siendo trabajadas activamente por una amplia comunidad de builders.",
         "cards": {
             "node": {
-                "title": "Nodo completo witnet-rust",
+                "title": "Full node witnet-rust",
                 "content": "Ejecuta un \"full archival node\" de Witnet y comienza a ganar wit tokens por minar bloques y resolver data requests."
             },
             "sheikah": {
@@ -57,7 +57,7 @@
             },
             "ecosystem": {
                 "title": "Ecosistema",
-                "full_node": "Nodo completo",
+                "full_node": "Full node",
                 "wallet": "Wallet",
                 "block_explorer": "Explorador de bloques",
                 "monitor": "Monitor de red"
@@ -102,8 +102,8 @@
                 }
             },
             "find_bugs": {
-                "title": "Encuentra errores",
-                "content": "Pronto se anunciará un programa de recompensas.",
+                "title": "Programa de incentivos",
+                "content": "Pronto se anunciará un programa de incentivos.",
                 "stay_tuned": "¡Estad atentos!"
             }
         }
@@ -140,7 +140,7 @@
             "author": "Michael Arrington, fundador de TechCrunch"
         },
         "testimonial_2": {
-            "text": "\"El oráculo que las blockchains verdaderamente descentralizadas y la Web3 merecen\"",
+            "text": "\"El oráculo que las blockchains descentralizadas y la Web3 merecen\"",
             "author": "Luis Cuende, cofundador de Aragon"
         },
         "testimonial_3": {
