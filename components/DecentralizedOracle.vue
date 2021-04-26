@@ -172,7 +172,7 @@ export default {
 }
 
 .world {
-  width: 60%;
+  width: 90vw;
   margin-top: -350px;
   max-width: 1100px;
   position: relative;

@@ -72,7 +72,6 @@ export default {
     background-color: $grey-0;
     .title {
       color: $grey-3;
-      font-size: 1.2rem;
       text-align: left !important;
     }
   }

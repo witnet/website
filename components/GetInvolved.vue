@@ -15,7 +15,6 @@
       <div v-scrollanimation class="right">
         <i18n path="get_involved.title.main" class="title header-2" tag="h1">
           <span class="gradient">
-            <br />
             {{ $t('get_involved.title.gradient') }}
           </span>
         </i18n>
@@ -92,10 +91,14 @@ export default {
   color: $grey-4;
   font-weight: lighter;
   padding: 40px 0 40px 0;
-  .gradient {
-    background: linear-gradient(90deg, $purple-2 43%, $coral 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .title {
+    display: inline-block;
+    .gradient {
+      display: inline-block;
+      background: linear-gradient(90deg, $purple-2 43%, $coral 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
   .bottom {
     display: grid;

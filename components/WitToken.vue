@@ -1,6 +1,6 @@
 <template>
-  <SectionLayout class="wit-tokens-section">
-    <div v-scrollanimation>
+  <div v-scrollanimation>
+    <SectionLayout class="wit-tokens-section">
       <BaseCard :padding="48" class="card-container">
         <img
           class="wit-image"
@@ -28,8 +28,8 @@
           </a>
         </div>
       </BaseCard>
-    </div>
-  </SectionLayout>
+    </SectionLayout>
+  </div>
 </template>
 
 <script>

@@ -82,6 +82,7 @@ export default {
     margin-bottom: 16px;
     text-align: center;
     .gradient {
+      display: inline-block;
       background: linear-gradient(90deg, $pink 43%, $electric-blue 100%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
