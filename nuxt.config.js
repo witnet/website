@@ -8,70 +8,44 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Witnet: the decentralized oracle network',
-    htmlAttrs: {
-      lang: 'en',
-    },
     meta: [
       { charset: 'utf-8' },
       { name: 'theme-color', content: '#0094a8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'title',
-        name: 'title',
-        content: 'Witnet: the decentralized oracle network',
-      },
-      {
-        hid: 'description',
         name: 'description',
         content:
           'Witnet brings real power to smart contracts. Witnet is a next-generation decentralized oracle that leverages state-of-the-art cryptoeconomic techniques to provide smart contracts with secure data input and output. The Witnet network runs its own blockchain and relies on the WIT token for incentivization of autonomous nodes that resolve data requests, agree on the results and deliver the results back to smart contracts.',
       },
       {
-        hid: 'twitter:title',
-        name: 'twitter:title',
-        content: 'Witnet: the decentralized oracle network',
+        property: 'thumbnail',
+        content: '/witnet_green.png',
       },
       {
-        hid: 'twitter:description',
-        name: 'twitter:description',
-        content:
-          'Witnet brings real power to smart contracts. Witnet is a next-generation decentralized oracle that leverages state-of-the-art cryptoeconomic techniques to provide smart contracts with secure data input and output. The Witnet network runs its own blockchain and relies on the WIT token for incentivization of autonomous nodes that resolve data requests, agree on the results and deliver the results back to smart contracts.',
+        property: 'twitter:card',
+        content: 'summary',
       },
       {
-        hid: 'twitter:image',
-        name: 'twitter:image',
-        content: 'images/witnet_green.png',
+        property: 'twitter:site',
+        content: '@witnet_io',
       },
       {
-        hid: 'twitter:image:alt',
-        name: 'twitter:image:alt',
-        content: 'Witnet: the decentralized oracle network',
-      },
-      {
-        hid: 'og:title',
         property: 'og:title',
         content: 'Witnet: the decentralized oracle network',
       },
       {
-        hid: 'og:description',
+        property: 'og:type',
+        content: 'website',
+      },
+      {
         property: 'og:description',
         content:
           'Witnet brings real power to smart contracts. Witnet is a next-generation decentralized oracle that leverages state-of-the-art cryptoeconomic techniques to provide smart contracts with secure data input and output. The Witnet network runs its own blockchain and relies on the WIT token for incentivization of autonomous nodes that resolve data requests, agree on the results and deliver the results back to smart contracts.',
       },
+      { name: 'og:url', content: 'https://witnet.io' },
       {
-        hid: 'og:image',
         property: 'og:image',
-        content: '~/assets/images/witnet_green.png',
-      },
-      {
-        hid: 'og:image:secure_url',
-        property: 'og:image:secure_url',
-        content: '~/assets/images/witnet_green.png',
-      },
-      {
-        hid: 'og:image:alt',
-        property: 'og:image:alt',
-        content: 'Witnet: the decentralized oracle network',
+        content: '/witnet_green.png',
       },
     ],
     link: [
