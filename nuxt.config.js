@@ -13,6 +13,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
+      { name: 'theme-color', content: '#0094a8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'title',
@@ -25,13 +26,6 @@ export default {
         content:
           'Witnet brings real power to smart contracts. Witnet is a next-generation decentralized oracle that leverages state-of-the-art cryptoeconomic techniques to provide smart contracts with secure data input and output. The Witnet network runs its own blockchain and relies on the WIT token for incentivization of autonomous nodes that resolve data requests, agree on the results and deliver the results back to smart contracts.',
       },
-      {
-        hid: 'description',
-        name: 'description',
-        content:
-          'Witnet brings real power to smart contracts. Witnet is a next-generation decentralized oracle that leverages state-of-the-art cryptoeconomic techniques to provide smart contracts with secure data input and output. The Witnet network runs its own blockchain and relies on the WIT token for incentivization of autonomous nodes that resolve data requests, agree on the results and deliver the results back to smart contracts.',
-      },
-
       {
         hid: 'twitter:title',
         name: 'twitter:title',
@@ -67,12 +61,12 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'images/witnet_green.png',
+        content: '~/assets/images/witnet_green.png',
       },
       {
         hid: 'og:image:secure_url',
         property: 'og:image:secure_url',
-        content: 'images/witnet_green.png',
+        content: '~/assets/images/witnet_green.png',
       },
       {
         hid: 'og:image:alt',
@@ -81,7 +75,8 @@ export default {
       },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'shortcut icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
         href:
