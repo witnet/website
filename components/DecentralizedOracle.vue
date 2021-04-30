@@ -172,7 +172,7 @@ export default {
 }
 
 .world {
-  width: 90vw;
+  width: 70vw;
   margin-top: -350px;
   max-width: 1100px;
   position: relative;
@@ -180,7 +180,7 @@ export default {
 
   &.before-enter {
     opacity: 1;
-    transform: translateY(-100px);
+    transform: translateY(-50px);
     transition: all 1s ease-out;
   }
 
@@ -192,7 +192,7 @@ export default {
 
 @media (max-width: 1200px) {
   .world {
-    margin-top: -200px;
+    margin-top: -150px;
   }
 
   .decentralized-oracle-section {
@@ -212,7 +212,7 @@ export default {
 
 @media (max-width: 600px) {
   .world {
-    margin-top: -50px;
+    display: none;
   }
   .decentralized-oracle-section {
     .wrapper {
