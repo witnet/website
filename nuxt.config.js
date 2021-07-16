@@ -93,7 +93,7 @@ export default {
   css: [
     '~/assets/styles/colors.scss',
     '~/assets/styles/main.scss',
-    '~/assets/fonts/Nunito-Sans/style.css',
+    '~/assets/fonts/style.css',
   ],
   // You will have to add this new object if it doesn't exist already
   styleResources: {

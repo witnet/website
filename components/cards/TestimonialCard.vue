@@ -44,13 +44,13 @@ export default {
     text-align: left;
   }
   .text {
-    font-family: 'Nunito Sans Italic', sans-serif;
+    font-family: 'Avenir Next Variable W05 Itali', sans-serif;
     color: $white;
     font-size: 1.1rem;
     margin-bottom: 0.75rem;
   }
   .author {
-    font-family: 'Nunito Sans Regular', sans-serif;
+    font-family: 'Avenir Next Variable W05835004', sans-serif;
     font-size: 0.8rem;
     color: $white;
   }
