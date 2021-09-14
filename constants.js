@@ -13,6 +13,7 @@ export const languages = [
 ]
 
 export const urls = {
+  youtube: 'https://www.youtube.com/channel/UCCS143kLVAH7oHZKvNNNxKQ',
   docs: 'https://docs.witnet.io/',
   ado: 'https://twitter.com/adoracles',
   mining: 'https://docs.witnet.io/try/run-a-node/',

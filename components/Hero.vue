@@ -5,6 +5,7 @@
         <span class="gradient">{{ $t('hero.title.gradient') }}</span>
       </i18n>
       <p class="description">{{ $t('hero.description') }}</p>
+      <Socials />
       <div class="buttons">
         <a :href="urls.docs" target="_blank">
           <Button type="primary" :font-size="14">{{
@@ -71,7 +72,7 @@ export default {
   }
   .description {
     font-size: 1.3125rem;
-    margin: 32px 0;
+    margin: 32px 0 24px 0;
     color: $grey-3;
   }
 }
