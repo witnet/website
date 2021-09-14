@@ -33,8 +33,7 @@ export default {
       this.$route.path.split('/').join('') || defaultLocale
     const expandedLanguages = languages.map((language) => ({
       ...language,
-      img: require('@/assets/images/dragon.png'),
-      label: language.code.toUpperCase(),
+      label: language.name,
     }))
 
     return {
@@ -62,35 +61,36 @@ export default {
   .vs__dropdown-menu {
     background: transparent;
     border: none;
+    border-bottom: 1px solid $white;
     box-shadow: none;
-    color: $dark-blue;
+    border-radius: 0;
+    color: $white;
     min-width: max-content;
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-size: 1rem;
   }
   .vs__open-indicator {
-    font-size: 12px;
+    font-size: 8px;
   }
   .vs__dropdown-menu {
     background: $white;
-    top: 24px;
-    border: 1px solid $grey-1;
-    box-shadow: 1px 1px 10px 2px $alpha-purple;
+    top: -80px;
+    border: 2px solid $white;
   }
 
   .vs__dropdown-option {
-    font-family: Almarai, sans-serif;
-    font-size: 0.75rem;
-    font-weight: 400;
+    font-family: 'NeueMachina-Regular', sans-serif;
+    font-size: 1rem;
+    color: $darkest-blue;
   }
 
   .vs__dropdown-option--highlight {
-    background: $green-1;
+    color: $white;
+    background: $dark-blue;
   }
 
   .vs__clear,
   .vs__open-indicator {
-    fill: $black;
+    fill: $darkest-blue;
   }
 
   .image {
@@ -99,18 +99,17 @@ export default {
     vertical-align: middle;
   }
   .vs__selected {
-    color: $black;
-    font-family: Almarai, sans-serif;
-    font-weight: 400;
+    color: $white;
+    font-family: 'NeueMachina-Regular', sans-serif;
     margin: 0;
     padding: 4px 0 0 0;
   }
   &:hover {
     .vs__selected {
-      color: $green-1;
+      color: $white;
     }
     .vs__open-indicator {
-      color: $black;
+      color: $white;
     }
   }
   // remove extra space

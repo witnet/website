@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="[type, 'button']"
+    :class="[type, size, 'button']"
     @mouseover="angle = type === 'default' ? anglePurple : angle"
     @mouseleave="angle = angleBlack"
   >
@@ -23,6 +23,13 @@ export default {
       default: 'default',
       validator(value) {
         return ['default', 'secondary', 'primary'].includes(value)
+      },
+    },
+    size: {
+      type: String,
+      default: 'normal',
+      validator(value) {
+        return ['small', 'normal'].includes(value)
       },
     },
   },
@@ -74,33 +81,43 @@ export default {
     }
   }
 }
+.small {
+  min-width: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  padding: 14px 22px 14px 22px;
+  .arrow {
+    display: none;
+  }
+}
 .secondary {
   background: $grey-2;
-  color: $black;
+  color: $darkest-blue;
   &:hover {
     background: $grey-1;
-    color: $black;
+    color: $darkest-blue;
   }
   &:active {
     background: $grey-3;
-    color: $black;
+    color: $darkest-blue;
   }
 }
 
 .default {
   background: transparent;
-  color: $black;
-  border: 2px solid $black;
+  color: $darkest-blue;
+  border: 1px solid $darkest-blue;
   padding: 16px 38px 16px 22px;
   &:hover {
     background: transparent;
     color: $purple-1;
-    border: 2px solid $purple-1;
+    border: 1px solid $purple-1;
   }
   &:active {
     background: $purple-1;
     color: $white;
-    border: 2px solid $purple-1;
+    border: 1px solid $purple-1;
   }
   .arrow {
     top: 20px;

@@ -78,8 +78,7 @@
           >{{ $t('footer.copyright.license') }}</a
         >
       </i18n>
-      <!-- FIXME(#63): Update selector to fit here
-      <LanguageSelector /> -->
+      <LanguageSelector class="language-selector" />
     </div>
   </SectionLayout>
 </template>
