@@ -130,29 +130,9 @@ export default {
         color: $dark-blue;
         margin-bottom: 16px;
       }
-      &.before-enter {
-        opacity: 0;
-        transform: translateX(50px);
-        transition: all 1s ease-out;
-      }
-
-      &.enter {
-        opacity: 1;
-        transform: translateX(0);
-      }
     }
     .dragon-image {
       width: 350px;
-      &.before-enter {
-        opacity: 0;
-        transform: translateX(-50px);
-        transition: all 1s ease-out;
-      }
-
-      &.enter {
-        opacity: 1;
-        transform: translateX(0);
-      }
     }
   }
 }

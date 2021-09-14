@@ -1,10 +1,6 @@
 <template>
   <div class="container">
-    <SectionLayout
-      class="decentralized-oracle-section"
-      :full-background="true"
-      background-color="#13253a"
-    >
+    <SectionLayout class="decentralized-oracle-section" :full-background="true">
       <div class="wrapper">
         <div class="content">
           <div class="left">
@@ -92,9 +88,9 @@ export default {
   text-align: initial;
   display: flex;
   justify-content: center;
-  background: url('~@/assets/images/circles.png') #13253a;
+  background: url('@/assets/images/circles.svg') #13253a;
   min-height: 800px;
-  background-size: 75%;
+  background-size: contain;
   background-position-x: center;
   background-repeat: no-repeat;
   position: relative;
@@ -184,6 +180,7 @@ export default {
   }
 
   .decentralized-oracle-section {
+    background-size: cover;
     &::after {
       content: '';
       position: absolute;
