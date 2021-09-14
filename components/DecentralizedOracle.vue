@@ -107,6 +107,18 @@ export default {
     z-index: -100;
   }
 
+  &::before {
+    content: '';
+    z-index: -100;
+    left: 0;
+    right: 0;
+    bottom: -100px;
+    height: 200px;
+    background-color: $dark-blue;
+    position: absolute;
+    clip-path: ellipse(60% 100% at 50% 0%);
+  }
+
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -210,6 +222,10 @@ export default {
       .vertical-line {
         display: none;
       }
+    }
+    &::before {
+      bottom: -60px;
+      clip-path: ellipse(80% 100% at 50% 0%);
     }
   }
 }
