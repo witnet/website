@@ -1,6 +1,6 @@
 <template>
   <div class="nav-container" :class="{ drop: isMenuVisible }">
-    <nav class="navbar">
+    <nav class="navbar" :class="{ open: isMenuVisible }">
       <img
         class="logo"
         src="@/assets/images/witnet_logo.svg"
@@ -33,7 +33,7 @@
             </InnerLink>
           </li>
           <li class="tab" @click="closeMenu">
-            <a :href="urls.medium" target="_blank" class="tab">
+            <a :href="urls.medium" target="_blank">
               <span class="slash">/</span>{{ $t('nav_bar.route.blog') }}
             </a>
           </li>
@@ -98,8 +98,11 @@ export default {
     list-style: none;
     display: flex;
     align-items: center;
-    & .visible {
+    &.visible {
+      background: white;
       display: block;
+      padding: 0;
+      margin-left: -24px;
     }
     .tab {
       font-size: 1rem;
@@ -110,6 +113,12 @@ export default {
       text-decoration: none;
       padding: 16px 24px;
       transition: color 0.1s ease;
+
+      .btn {
+        box-sizing: content-box;
+        margin: 0;
+      }
+
       .slash {
         color: $green-1;
       }
@@ -120,12 +129,31 @@ export default {
         }
       }
     }
+
+    :last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    padding: 0 24px;
+    margin: 0;
+
+    &.open {
+      height: 100vh;
+    }
+    .logo {
+      margin: 0;
+    }
   }
   .drop {
     position: absolute;
   }
 }
-@media screen and (max-width: 720px) {
+
+@media screen and (max-width: 950px) {
   .drop {
     position: fixed;
     top: 0;
@@ -134,19 +162,20 @@ export default {
     z-index: 15;
     overflow-y: hidden;
   }
+
   .navbar {
     display: block;
     position: relative;
     padding: 0;
-    .logo {
-      margin: 16px;
-    }
+    padding-left: 24px;
+    padding-top: 22px;
     .responsive-menu {
       display: block;
       cursor: pointer;
       position: absolute;
       top: 8px;
-      left: 88vw;
+      width: 32px;
+      right: 24px;
     }
     .tab-container {
       list-style: none;
@@ -155,10 +184,12 @@ export default {
       height: 100vh;
       width: 100vw;
       margin: 0;
-      padding: 48px;
       cursor: pointer;
       &.visible {
+        box-sizing: border-box;
         display: block;
+        padding: 0;
+        padding-top: 32px;
       }
       .tab {
         cursor: pointer;
@@ -185,6 +216,8 @@ export default {
   }
   &.visible {
     ul.buns {
+      width: 32px;
+      height: 32px;
       li.bun {
         -webkit-transform: rotate(45deg) translateZ(0);
         transform: rotate(45deg) translateZ(0);
@@ -196,13 +229,11 @@ export default {
     }
   }
   .buns {
-    width: 2em;
-    height: 2em;
+    width: 32px;
+    height: 32px;
     list-style: none;
     padding: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
     -webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1),
       color 1s cubic-bezier(0.23, 1, 0.32, 1);
     transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1),
