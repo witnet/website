@@ -13,6 +13,12 @@
         "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure data input.",
         "button_label": "Build with Witnet"
     },
+    "integrations": {
+        "title": {
+            "main": "Integrations and {0}",
+            "gradient": "partners"
+        }
+    },
     "ecosystem": {
         "title": {
             "main": "A nascent, yet {0}",

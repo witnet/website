@@ -13,6 +13,12 @@
         "paragraph_2": "Witnet aprovecha las últimas técnicas criptoeconómicas para proporcionar datos a smart contracts de forma segura.",
         "button_label": "Construye con Witnet"
     },
+    "integrations": {
+        "title": {
+            "main": "Integraciones y {0}",
+            "gradient": "colaboraciones"
+        }
+    },
     "ecosystem": {
         "title": {
             "main": "Un ecosistema incipiente que {0}",
