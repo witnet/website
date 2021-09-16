@@ -49,7 +49,7 @@ export default {
   align-items: center;
 }
 .info {
-  min-width: 480px;
+  min-width: 479px;
 
   .title {
     color: $dark-blue;
@@ -58,7 +58,7 @@ export default {
       background: linear-gradient(90deg, $aquamarine-1 43%, $green-2 100%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      display: inline-block;
+      display: inline;
     }
     &::after {
       content: ' ';
