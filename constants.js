@@ -15,7 +15,7 @@ export const languages = [
 export const urls = {
   youtube: 'https://www.youtube.com/channel/UCCS143kLVAH7oHZKvNNNxKQ',
   docs: 'https://docs.witnet.io/',
-  ado: 'https://twitter.com/adoracles',
+  ado: 'https://github.com/adoracles/',
   mining: 'https://docs.witnet.io/try/run-a-node/',
   tokenomics:
     'https://medium.com/witnet/wit-witnet-blockchains-native-tokenomics-4559084073c5',
