@@ -113,25 +113,22 @@ export default {
       text-decoration: none;
       padding: 16px 24px;
       transition: color 0.1s ease;
-
       .btn {
-        box-sizing: content-box;
         margin: 0;
       }
-
       .slash {
         color: $green-1;
       }
+
       &:hover {
         color: $green-1;
         .slash {
           color: $darkest-blue;
         }
       }
-    }
-
-    :last-child {
-      padding-right: 0;
+      &:last-child {
+        padding-right: 0;
+      }
     }
   }
 }
