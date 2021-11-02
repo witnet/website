@@ -53,7 +53,8 @@
                 "oracle": "Oracle",
                 "token": "Token",
                 "ecosystem": "Ecosystem",
-                "community": "Community"
+                "community": "Community",
+                "whitepaper": "Whitepaper"
             },
             "ecosystem": {
                 "title": "Ecosystem",

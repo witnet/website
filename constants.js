@@ -28,4 +28,5 @@ export const urls = {
   reddit: 'https://reddit.com/r/witnet',
   github: 'https://github.com/witnet',
   medium: 'https://medium.com/witnet',
+  whitepaper: 'https://witnet.io/witnet-whitepaper.pdf',
 }
