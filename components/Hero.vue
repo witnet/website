@@ -59,8 +59,9 @@ export default {
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      display: inline-block;
-      padding-bottom: 8px;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      display: inline;
     }
     &::after {
       content: ' ';
