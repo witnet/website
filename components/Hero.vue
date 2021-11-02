@@ -53,13 +53,14 @@ export default {
 
   .title {
     color: $dark-blue;
-    line-height: 1em;
-    vertical-align: top;
+    line-height: 1.1em;
     .gradient {
       background: linear-gradient(90deg, $aquamarine-1 43%, $green-2 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      display: inline-block;
+      padding-bottom: 8px;
     }
     &::after {
       content: ' ';
