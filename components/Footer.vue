@@ -78,6 +78,11 @@
           >{{ $t('footer.copyright.license') }}</a
         >
       </i18n>
+      <a target="blank" href="https://witnet.io/witnet-whitepaper.pdf">
+        <Button class="white-paper" :font-size="14" type="dark"
+          >Whitepaper</Button
+        >
+      </a>
       <LanguageSelector class="language-selector" />
     </div>
   </SectionLayout>
@@ -100,12 +105,24 @@ export default {
   padding-top: 40px;
   display: grid;
   grid-template-columns: max-content 1fr max-content;
+  grid-template-rows: max-content max-content;
+  row-gap: 16px;
   align-items: center;
-  column-gap: 24px;
+  column-gap: 16px;
   .logo {
+    grid-row: 1 / span 2;
     width: 40px;
   }
+  .language-selector {
+    width: min-content;
+    justify-self: center;
+    align-self: flex-start;
+  }
+  .white-paper {
+    width: min-content;
+  }
   .copyright {
+    grid-row: 1 / span 2;
     line-height: 1.5;
     max-width: 350px;
     a {
@@ -147,6 +164,13 @@ export default {
         width: 50px;
         margin-bottom: 8px;
       }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .bottom {
+    .logo {
+      align-self: flex-start;
     }
   }
 }

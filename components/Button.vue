@@ -22,7 +22,7 @@ export default {
       type: String,
       default: 'default',
       validator(value) {
-        return ['default', 'secondary', 'primary'].includes(value)
+        return ['default', 'secondary', 'primary', 'dark'].includes(value)
       },
     },
     size: {
@@ -42,7 +42,7 @@ export default {
   },
   computed: {
     isWhiteArrow() {
-      return this.type === 'primary'
+      return this.type === 'primary' || this.type === 'dark'
     },
   },
 }
@@ -63,7 +63,7 @@ export default {
   cursor: pointer;
   white-space: nowrap;
   box-sizing: border-box;
-  min-width: 180px;
+  min-width: min-content;
   position: relative;
   text-align: left;
   letter-spacing: -0.02em;
@@ -101,6 +101,26 @@ export default {
   &:active {
     background: $grey-3;
     color: $darkest-blue;
+  }
+}
+
+.dark {
+  background: transparent;
+  color: $white;
+  border: 1px solid $white;
+  padding: 16px 38px 16px 22px;
+  &:hover {
+    background: transparent;
+    color: $white;
+    border: 1px solid $white;
+  }
+  &:active {
+    background: $white;
+    color: $white;
+    border: 1px solid $white;
+  }
+  .arrow {
+    top: 20px;
   }
 }
 
