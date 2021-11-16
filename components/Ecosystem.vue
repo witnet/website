@@ -55,6 +55,13 @@ export default {
           border: false,
           content: this.$t('ecosystem.cards.explorer.content'),
         },
+        {
+          title: this.$t('ecosystem.cards.data_feed_explorer.title'),
+          src: require('@/assets/images/data-feed-explorer.svg'),
+          link: urls.dataFeedExplorer,
+          border: false,
+          content: this.$t('ecosystem.cards.data_feed_explorer.content'),
+        },
         // TODO: Add item when the witnet.live monitor is ready
         // {
         //   title: this.$t('ecosystem.cards.monitor.title'),

@@ -29,4 +29,5 @@ export const urls = {
   github: 'https://github.com/witnet',
   medium: 'https://medium.com/witnet',
   whitepaper: 'https://witnet.io/witnet-whitepaper.pdf',
+  dataFeedExplorer: 'https://feeds.witnet.io',
 }

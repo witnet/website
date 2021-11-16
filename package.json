@@ -15,11 +15,12 @@
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.8.3",
-    "node-sass": "^5.0.0",
     "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.20.2",
-    "sass-loader": "^10.1.1",
-    "vue-select": "^3.11.2"
+    "sass": "^1.43.4",
+    "sass-loader": "^10",
+    "vue-select": "^3.11.2",
+    "webpack": "^5.64.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",

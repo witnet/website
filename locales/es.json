@@ -36,6 +36,10 @@
                 "title": "Explorador de bloques witnet.network",
                 "content": "El explorador de bloques witnet.network te da una visión neutral de lo que está sucediendo en la blockchain de Witnet."
             },
+            "data_feed_explorer": {
+                "title": "Witnet Data Feeds Explorer",
+                "content": "El explorador de Data Feeds lista todos los feeds públicos que la Witnet Foundation opera y mantiene en las diferentes blockchains"
+            },
             "monitor": {
                 "title": "Monitor de red witnet.live",
                 "content": "El monitor de red witnet.live mantiene un seguimiento de la salud de la red de Witnet."
