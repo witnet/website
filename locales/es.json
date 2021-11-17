@@ -41,7 +41,7 @@
                 "content": "El monitor de red witnet.live mantiene un seguimiento de la salud de la red de Witnet."
             },
             "next": {
-                "title": "¿Cómo puedes contribuir?",
+                "title": "Y tú, ¿qué vas a crear?",
                 "content": "¿Tienes en mente alguna aplicación basada en Witnet? Muy pronto se anunciará un programa de grants, así que ¡estate pendiente!"
             }
         }
@@ -103,7 +103,7 @@
             },
             "find_bugs": {
                 "title": "Encuentra errores",
-                "content": "Pronto se anunciará un programa de recompensas.",
+                "content": "Pronto se anunciarán los detalles.",
                 "stay_tuned": "¡Estad atentos!"
             }
         }
