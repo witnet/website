@@ -140,7 +140,7 @@
             "author": "Michael Arrington, Fundador de TechCrunch"
         },
         "testimonial_2": {
-            "text": "\"El oráculo que verdaderamente descentraliza las blockchains y el que Web3 merece\"",
+            "text": "\"El oráculo que las blockchains descentralizadas y la Web3 merecen\"",
             "author": "Luis Cuende, cofundador de Aragon"
         },
         "testimonial_3": {
@@ -149,11 +149,11 @@
         }
     },
     "wit_token": {
-        "title": "Incentivizado por Wit tokens",
-        "text": "El oráculo descentralizado Witnet se ejecuta en su propia blockchain y se basa en el Wit token para incentivar la independencia en la ejecución de nodos, que resuelven las data requests y generan consenso en los resultados.",
+        "title": "Incentivado por el Wit token",
+        "text": "El oráculo descentralizado de Witnet se ejecuta en su propia blockchain y se basa en el Wit token para incentivar a nodos completamente independientes y autónomos a que resuelvan data requests, lleguen a un consenso sobre los resultados y entreguen esa información a los smart contracts.",
         "buttons": {
             "tokenomics": "Tokenomics",
-            "sheikah": "Sheikah wallet",
+            "sheikah": "Descarga Sheikah",
             "mining": "Empieza a minar"
         }
     }
