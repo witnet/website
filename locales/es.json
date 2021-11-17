@@ -15,22 +15,22 @@
     },
     "ecosystem": {
         "title": {
-            "main": "A nascent, yet {0}",
-            "gradient": "thriving ecosystem"
+            "main": "Un ecosistema incipiente {0}",
+            "gradient": "que prolifera rápidamente"
         },
         "subtitle": "Muchas piezas ya están en su sitio, y muchas otras están siendo trabajadas activamente por una amplia comunidad de builders.",
         "cards": {
             "node": {
-                "title": "Nodo de archivo completo witnet-rust",
-                "content": "Ejecuta tu nodo verificado y comienza a ganar wit tokens por minar bloques y resolver data requests."
+                "title": "Full node witnet-rust",
+                "content": "Ejecuta un \"full archival node\" de Witnet y comienza a ganar wit tokens por minar bloques y resolver data requests."
             },
             "sheikah": {
                 "title": "Sheikah Witnet wallet para escritorio",
-                "content": "Sheikah es una wallet app, privada y fácil de usar para administrar tus tokens en Windows, Mac OS y GNU/Linux."
+                "content": "Sheikah es una aplicación de wallet privada y fácil de usar para administrar tus tokens en Windows, Mac OS y GNU/Linux."
             },
             "truffle_box": {
                 "title": "Ethereum Truffle Box",
-                "content": "Integrar Witnet en tus contratos de Solidity es casi inmediato con Witnet Truffle Box."
+                "content": "Integrar Witnet en tus contratos de Solidity es casi inmediato con la Witnet Truffle Box."
             },
             "explorer": {
                 "title": "Explorador de bloques witnet.network",
@@ -42,7 +42,7 @@
             },
             "next": {
                 "title": "¿Cómo puedes contribuir?",
-                "content": "Do you have some exciting Witnet app in mind? A grant program will be announced soon, so stay tuned!"
+                "content": "¿Tienes en mente alguna aplicación basada en Witnet? Muy pronto se anunciará un programa de grants, así que ¡estate pendiente!"
             }
         }
     },
