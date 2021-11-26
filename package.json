@@ -16,7 +16,7 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
-    "nuxt-i18n": "^6.20.2",
+    "nuxt-i18n": "^6.28.1",
     "sass": "^1.43.4",
     "sass-loader": "^10",
     "vue-select": "^3.11.2",
