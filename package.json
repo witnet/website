@@ -1,6 +1,9 @@
 {
   "name": "new-website",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=16 <17"
+  },
   "private": true,
   "scripts": {
     "dev": "nuxt",
