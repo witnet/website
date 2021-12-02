@@ -30,4 +30,5 @@ export const urls = {
   medium: 'https://medium.com/witnet',
   whitepaper: 'https://witnet.io/witnet-whitepaper.pdf',
   dataFeedExplorer: 'https://feeds.witnet.io',
+  gate: 'https://www.gate.io/trade/WIT_USDT',
 }

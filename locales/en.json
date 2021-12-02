@@ -159,7 +159,8 @@
         "buttons": {
             "tokenomics": "Tokenomics",
             "sheikah": "Sheikah wallet",
-            "mining": "Start mining"
+            "mining": "Start mining",
+            "buy": "Buy on Gate.io"
         }
     }
 }

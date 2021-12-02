@@ -21,11 +21,16 @@
               $t('wit_token.buttons.tokenomics')
             }}</Button>
           </a>
-          <a :href="urls.sheikah" target="_blank">
+          <a :href="urls.gate" target="_blank">
+            <Button class="btn" type="default">{{
+              $t('wit_token.buttons.buy')
+            }}</Button>
+          </a>
+          <!--<a :href="urls.sheikah" target="_blank">
             <Button class="btn" type="default">
               {{ $t('wit_token.buttons.sheikah') }}
             </Button>
-          </a>
+          </a>-->
         </div>
       </BaseCard>
     </SectionLayout>
