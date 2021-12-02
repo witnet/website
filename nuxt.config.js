@@ -79,8 +79,7 @@ export default {
       { rel: 'shortcut icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap',
       },
     ],
   },
