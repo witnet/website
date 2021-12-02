@@ -1,5 +1,5 @@
 <template>
-  <div v-scrollanimation>
+  <div>
     <SectionLayout class="wit-tokens-section">
       <BaseCard :padding="48" class="card-container">
         <img

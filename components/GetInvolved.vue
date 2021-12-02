@@ -6,13 +6,12 @@
   >
     <div class="top">
       <img
-        v-scrollanimation
         class="dragon-image"
         src="@/assets/images/community.svg"
         alt=""
         aria-hidden="true"
       />
-      <div v-scrollanimation class="right">
+      <div class="right">
         <i18n path="get_involved.title.main" class="title header-2" tag="h1">
           <span class="gradient">
             {{ $t('get_involved.title.gradient') }}
