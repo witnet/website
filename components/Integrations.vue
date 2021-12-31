@@ -1,8 +1,5 @@
 <template>
   <SectionLayout class="integrations-section" :full-background="true">
-    <i18n path="integrations.title.main" class="title header-2" tag="h1">
-      <span class="gradient">{{ $t('integrations.title.gradient') }}</span>
-    </i18n>
     <div class="integrations-card-container">
       <IntegrationsCard
         v-for="integration in integrations"
@@ -10,59 +7,98 @@
         :link="integration.link"
         :title="integration.title"
         :src="integration.src"
+        :brightness="integration.brightness"
+        :scale="integration.scale"
       />
     </div>
   </SectionLayout>
 </template>
 
 <script>
-import { urls } from '../constants'
-
 export default {
   data() {
     return {
       integrations: [
         {
-          title: 'Boba',
-          src: require('@/assets/images/question_mark.svg'),
-          link: urls.mining,
+          title: 'Boba Network',
+          src: require('@/assets/images/partners/boba.svg'),
+          link: 'https://boba.network',
+          scale: 0.8,
         },
         {
           title: 'Aragon',
-          src: require('@/assets/images/question_mark.svg'),
-          link: urls.sheikah,
+          src: require('@/assets/images/partners/aragon.svg'),
+          link: 'https://aragon.org/',
+          brightness: 0.4,
         },
         {
-          title: 'Loren ipsum',
-          src: require('@/assets/images/question_mark.svg'),
-          link: urls.truffleBox,
+          title: 'Conflux Network',
+          src: require('@/assets/images/partners/conflux.svg'),
+          link: 'https://confluxnetwork.org/',
+          scale: 0.8,
         },
         {
-          title: 'Loren ipsum',
-          src: require('@/assets/images/question_mark.svg'),
-          link: urls.blockExplorer,
+          title: 'TriAngle DAO',
+          src: require('@/assets/images/partners/triangle.svg'),
+          link: 'https://www.triangledao.finance/',
+          brightness: 0.7,
         },
         {
-          title: 'Loren ipsum',
-          src: require('@/assets/images/question_mark.svg'),
-          link: urls.docs,
+          title: 'Agora Space',
+          src: require('@/assets/images/partners/agora.svg'),
+          link: 'https://agora.space/',
+          scale: 0.7,
+          brightness: 1.4,
         },
         {
-          title: 'Loren ipsum',
-          src: require('@/assets/images/question_mark.svg'),
-          link: urls.docs,
+          title: 'Gate.io',
+          src: require('@/assets/images/partners/gate.svg'),
+          link: 'https://gate.io/',
+          scale: 0.8,
+          brightness: 0.4,
         },
         {
-          title: 'Loren ipsum',
-          src: require('@/assets/images/question_mark.svg'),
-          link: urls.docs,
+          title: 'Metis',
+          src: require('@/assets/images/partners/metis.svg'),
+          link: 'https://metis.io/',
+          scale: 0.8,
+          brightness: 0.3,
         },
         {
-          title: 'Loren ipsum',
-          src: require('@/assets/images/question_mark.svg'),
-          link: urls.docs,
+          title: 'Celo',
+          src: require('@/assets/images/partners/celo.svg'),
+          link: 'https://celo.org/',
+          scale: 0.8,
+          brightness: 0.5,
         },
-      ],
+        {
+          title: 'KuCoin Community Chain',
+          src: require('@/assets/images/partners/kcc.svg'),
+          link: 'https://kcc.io/',
+          scale: 0.75,
+          brightness: 0.3,
+        },
+        {
+          title: 'Harmony',
+          src: require('@/assets/images/partners/harmony.svg'),
+          link: 'https://harmony.one/',
+          scale: 0.8,
+          brightness: 0.3,
+        },
+        {
+          title: 'Polygon',
+          src: require('@/assets/images/partners/polygon.svg'),
+          link: 'https://polygon.technology/',
+          scale: 1.2,
+        },
+        {
+          title: 'RiveX',
+          src: require('@/assets/images/partners/rivex.svg'),
+          link: 'https://rivex.io/',
+          scale: 0.8,
+          brightness: 0.5,
+        },
+      ].sort(() => 0.5 - Math.random()),
     }
   },
 }
@@ -70,37 +106,13 @@ export default {
 
 <style lang="scss" scoped>
 .integrations-section {
-  text-align: justify;
-  position: relative;
-  &::before {
-    content: '';
-    left: 0;
-    right: 0;
-    bottom: -100px;
-    height: 100px;
-    margin-bottom: 32px;
-    background-color: $white;
-    position: absolute;
-    clip-path: ellipse(60% 100% at 50% 0%);
-  }
-  .title {
-    margin-bottom: 16px;
-    text-align: center;
-    .gradient {
-      display: inline-block;
-      background: linear-gradient(90deg, $pink 43%, $electric-blue 100%);
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
   .integrations-card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    row-gap: 24px;
-    column-gap: 56px;
+    row-gap: 30px;
+    column-gap: 40px;
     justify-items: center;
-    margin-bottom: 25px;
     margin-top: 60px;
   }
 }

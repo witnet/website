@@ -1,9 +1,12 @@
 <template>
-  <a :href="link" target="_blank">
-    <div class="card-container">
-      <img class="logo" :src="src" alt="" aria-hidden="true" />
-      <p class="title">{{ title }}</p>
-    </div>
+  <a :href="link" :title="title" :style="customizable" target="_blank">
+    <img
+      class="logo"
+      :src="src"
+      :alt="title"
+      :style="customizable"
+      aria-hidden="true"
+    />
   </a>
 </template>
 
@@ -22,22 +25,49 @@ export default {
       type: String,
       required: true,
     },
+    brightness: {
+      type: Number,
+      default: 1,
+    },
+    scale: {
+      type: Number,
+      default: 1,
+    },
+  },
+  computed: {
+    customizable() {
+      return {
+        '--brightness': this.brightness,
+        '--scale': this.scale,
+      }
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.card-container {
-  display: grid;
+a {
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr;
-  row-gap: 16px;
   text-align: center;
   justify-items: center;
+  padding: 20px 0;
+  height: 100px;
+  width: 220px;
+  opacity: 0.7;
+  transition: all 0.2s ease;
   .logo {
-    height: 80px;
-    margin-bottom: 5px;
-    max-width: 220px;
+    height: 100%;
+    max-width: 100%;
+    transform: scale(var(--scale));
+    filter: brightness(var(--brightness)) grayscale(100%);
+    transition: all 0.2s ease;
+  }
+  &:hover {
+    opacity: 1;
+    .logo {
+      filter: brightness(1) grayscale(0%);
+    }
   }
 }
 </style>
