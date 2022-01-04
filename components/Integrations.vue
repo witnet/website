@@ -125,29 +125,27 @@ export default {
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 790px) {
   .integrations-section {
     text-align: justify;
-    .title {
-      margin-bottom: 16px;
-      text-align: center;
-      .gradient {
-        background: linear-gradient(
-          90deg,
-          $pink 0%,
-          $pink 43%,
-          $electric-blue 100%
-        );
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        display: inline-block;
-      }
-    }
     .integrations-card-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 25px;
       justify-items: center;
+    }
+  }
+}
+
+@media (max-width: 494px) {
+  .integrations-section {
+    .integrations-card-container {
+      grid-template-columns: 1fr;
+
+      /* In the 1-column version, show only 10 logos */
+      a:nth-of-type(n + 10) ~ a {
+        display: none;
+      }
     }
   }
 }
