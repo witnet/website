@@ -108,7 +108,9 @@ export default {
       ]
         // This sorting algorithm is far for perfect (somehow biased), but it simply does the job here
         .sort(() => 0.5 - Math.random())
-        .slice(0, 16),
+        // Limit the number of integrations shown, so they don't take too much space once we have dozens of them
+        // TODO: raise limit to 16 or 20
+        .slice(0, 12),
     }
   },
 }
