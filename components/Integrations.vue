@@ -106,6 +106,7 @@ export default {
           brightness: 0.5,
         },
       ]
+        // This sorting algorithm is far for perfect (somehow biased), but it simply does the job here
         .sort(() => 0.5 - Math.random())
         .slice(0, 16),
     }
