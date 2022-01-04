@@ -98,6 +98,13 @@ export default {
           scale: 0.8,
           brightness: 0.5,
         },
+        {
+          title: 'MojitoSwap',
+          src: require('@/assets/images/partners/mojitoswap.svg'),
+          link: 'https://www.mojitoswap.finance/',
+          scale: 0.9,
+          brightness: 0.5,
+        },
       ]
         .sort(() => 0.5 - Math.random())
         .slice(0, 16),
