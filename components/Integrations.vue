@@ -98,7 +98,9 @@ export default {
           scale: 0.8,
           brightness: 0.5,
         },
-      ].sort(() => 0.5 - Math.random()),
+      ]
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 16),
     }
   },
 }
