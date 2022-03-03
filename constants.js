@@ -31,4 +31,6 @@ export const urls = {
   whitepaper: 'https://witnet.io/witnet-whitepaper.pdf',
   dataFeedExplorer: 'https://feeds.witnet.io',
   gate: 'https://www.gate.io/trade/WIT_USDT',
+  grantProgram:
+    'https://ripple-snarl-211.notion.site/About-the-Witnet-Grant-Program-WGP-c037b8fbeae143b0a15ea5ab60d3f24c',
 }

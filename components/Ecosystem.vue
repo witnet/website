@@ -72,7 +72,7 @@ export default {
         {
           title: this.$t('ecosystem.cards.next.title'),
           src: require('@/assets/images/question_mark.svg'),
-          link: urls.docs,
+          link: urls.grantProgram,
           border: true,
           content: this.$t('ecosystem.cards.next.content'),
         },
