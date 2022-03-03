@@ -1,20 +1,22 @@
 <template>
   <div class="nav-container" :class="{ drop: isMenuVisible }">
     <nav class="navbar" :class="{ open: isMenuVisible }">
-      <img
-        class="logo"
-        src="@/assets/images/witnet_logo.svg"
-        alt=""
-        aria-hidden="true"
-      />
-      <label class="responsive-menu" @click="toggleMenu">
-        <a class="target-burger" :class="{ visible: isMenuVisible }">
-          <ul class="buns">
-            <li class="bun"></li>
-            <li class="bun"></li>
-          </ul>
-        </a>
-      </label>
+      <div class="menu-container">
+        <img
+          class="logo"
+          src="@/assets/images/witnet_logo.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <label class="responsive-menu" @click="toggleMenu">
+          <a class="target-burger" :class="{ visible: isMenuVisible }">
+            <ul class="buns">
+              <li class="bun"></li>
+              <li class="bun"></li>
+            </ul>
+          </a>
+        </label>
+      </div>
       <transition name="dropdown" class="dropdown">
         <ul class="tab-container" :class="{ visible: isMenuVisible }">
           <li class="tab" @click="closeMenu">
@@ -92,7 +94,6 @@ export default {
   }
   .responsive-menu {
     display: none;
-    font-size: 34px;
   }
   .tab-container {
     list-style: none;
@@ -102,7 +103,6 @@ export default {
       background: white;
       display: block;
       padding: 0;
-      margin-left: -24px;
     }
     .tab {
       font-size: 1rem;
@@ -135,11 +135,9 @@ export default {
 
 @media screen and (max-width: 1100px) {
   .navbar {
-    padding: 0 24px;
-    margin: 0;
-
     &.open {
       height: 100vh;
+      width: 100vw;
     }
     .logo {
       margin: 0;
@@ -163,16 +161,17 @@ export default {
   .navbar {
     display: block;
     position: relative;
-    padding: 0;
-    padding-left: 24px;
-    padding-top: 22px;
+    .menu-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 16px 0 16px;
+    }
     .responsive-menu {
-      display: block;
+      font-size: 34px;
       cursor: pointer;
-      position: absolute;
-      top: 8px;
       width: 32px;
-      right: 24px;
+      display: flex;
+      align-items: center;
     }
     .tab-container {
       list-style: none;
@@ -206,7 +205,6 @@ export default {
 .target-burger {
   display: block;
   transition: 0.5s;
-  margin-top: 16px;
   &:hover {
     cursor: pointer;
     opacity: opacity(0.45);
@@ -230,7 +228,6 @@ export default {
     height: 32px;
     list-style: none;
     padding: 0;
-    position: absolute;
     -webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1),
       color 1s cubic-bezier(0.23, 1, 0.32, 1);
     transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1),

@@ -158,4 +158,13 @@ export default {
     }
   }
 }
+@media (max-width: 300px) {
+  .get-involved-section {
+    .top {
+      .dragon-image {
+        width: 250px;
+      }
+    }
+  }
+}
 </style>

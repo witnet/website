@@ -66,12 +66,21 @@ export default {
 <style lang="scss" scoped>
 .links {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 24px;
   .link {
     margin-right: 24px;
     .logo {
       width: 22px;
     }
+  }
+}
+@media (max-width: 300px) {
+  .links {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 8px;
   }
 }
 </style>
