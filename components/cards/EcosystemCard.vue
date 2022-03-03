@@ -79,4 +79,9 @@ export default {
     letter-spacing: -0.02em;
   }
 }
+@media (max-width: 300px) {
+  .card-container {
+    grid-template-columns: 200px;
+  }
+}
 </style>

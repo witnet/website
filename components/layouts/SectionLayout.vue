@@ -37,4 +37,10 @@ export default {
 .wide-section {
   width: 100%;
 }
+
+@media (max-width: 300px) {
+  .section {
+    padding: 32px 24px;
+  }
+}
 </style>

@@ -105,8 +105,8 @@ export default {
     flex-direction: column;
   }
   .info {
-    width: auto;
-    min-width: auto;
+    width: 100%;
+    min-width: 100%;
     .buttons:first-child {
       margin-top: 16px;
     }

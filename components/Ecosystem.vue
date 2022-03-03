@@ -146,4 +146,12 @@ export default {
     }
   }
 }
+
+@media (max-width: 300px) {
+  .ecosystem-section {
+    .ecosystem-card-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+}
 </style>
