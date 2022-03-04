@@ -107,6 +107,9 @@ export default {
   .info {
     width: 100%;
     min-width: 100%;
+    .title {
+      font-size: 3.9rem;
+    }
     .buttons:first-child {
       margin-top: 16px;
     }
@@ -116,6 +119,13 @@ export default {
   }
   .hero-image {
     display: none;
+  }
+}
+@media (max-width: 300px) {
+  .info {
+    .title {
+      font-size: 3.5rem;
+    }
   }
 }
 </style>

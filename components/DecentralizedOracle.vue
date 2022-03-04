@@ -229,4 +229,13 @@ export default {
     }
   }
 }
+@media (max-width: 300px) {
+  .decentralized-oracle-section {
+    .wrapper {
+      .right {
+        margin-right: 16px;
+      }
+    }
+  }
+}
 </style>

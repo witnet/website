@@ -40,7 +40,7 @@ export default {
 
 @media (max-width: 300px) {
   .section {
-    padding: 32px 24px;
+    padding: 32px 16px;
   }
 }
 </style>
