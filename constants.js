@@ -40,7 +40,7 @@ export const urls = {
   gate: 'https://www.gate.io/trade/WIT_USDT',
   grantProgram:
     'https://ripple-snarl-211.notion.site/About-the-Witnet-Grant-Program-WGP-c037b8fbeae143b0a15ea5ab60d3f24c',
-  token: 'https://witnet.io/#token',
+  token: 'https://witnet.io/#coin',
   oracle: 'https://witnet.io/#oracle',
   ecosystem: 'https://witnet.io/#ecosystem',
   community: 'https://witnet.io/#community',

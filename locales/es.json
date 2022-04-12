@@ -22,7 +22,7 @@
         "cards": {
             "node": {
                 "title": "Full node witnet-rust",
-                "content": "Ejecuta un \"full archival node\" de Witnet y comienza a ganar wit tokens por minar bloques y resolver data requests."
+                "content": "Ejecuta un \"full archival node\" de Witnet y comienza a ganar WIT tokens por minar bloques y resolver data requests."
             },
             "sheikah": {
                 "title": "Sheikah Witnet wallet para escritorio",
@@ -58,7 +58,7 @@
             "witnet": {
                 "title": "Witnet",
                 "oracle": "Oráculo",
-                "token": "Token",
+                "token": "WIT coin",
                 "ecosystem": "Ecosistema",
                 "community": "Comunidad",
                 "whitepaper": "Whitepaper"
@@ -144,7 +144,7 @@
     "nav_bar": {
         "route": {
             "oracle": "oráculo",
-            "token": "token",
+            "token": "coin",
             "ecosystem": "ecosistema",
             "blog": "blog"
         },
@@ -165,8 +165,8 @@
         }
     },
     "wit_token": {
-        "title": "Incentivado por el token Wit",
-        "text": "El oráculo descentralizado de Witnet se ejecuta en su propia blockchain y se basa en el Wit token para incentivar a nodos completamente independientes y autónomos a que resuelvan data requests, lleguen a un consenso sobre los resultados y entreguen esa información a los smart contracts.",
+        "title": "Incentivado por el WIT coin",
+        "text": "El oráculo descentralizado de Witnet se ejecuta en su propia blockchain y se basa en el WIT coin para incentivar a nodos completamente independientes y autónomos a que resuelvan data requests, lleguen a un consenso sobre los resultados y entreguen esa información a los smart contracts.",
         "buttons": {
             "tokenomics": "Tokenomics",
             "sheikah": "Descarga Sheikah",

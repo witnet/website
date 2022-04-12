@@ -22,11 +22,11 @@
         "cards": {
             "node": {
                 "title": "witnet-rust full archival node",
-                "content": "Run your fully verifying node and start earning wit tokens for mining blocks and resolving data requests."
+                "content": "Run your fully verifying node and start earning WIT tokens for mining blocks and resolving data requests."
             },
             "sheikah": {
                 "title": "Sheikah wallet for desktop",
-                "content": "Sheikah is a privacy and user friendly wallet app for managing your wit tokens on Windows, Mac OS and GNU/Linux."
+                "content": "Sheikah is a privacy and user friendly wallet app for managing your WIT tokens on Windows, Mac OS and GNU/Linux."
             },
             "truffle_box": {
                 "title": "Ethereum Truffle Box",
@@ -58,7 +58,7 @@
             "witnet": {
             "title": "Witnet",
             "oracle": "Oracle",
-            "token": "Token",
+            "token": "WIT Coin",
             "ecosystem": "Ecosystem",
             "community": "Community",
             "whitepaper": "Whitepaper"
@@ -134,7 +134,7 @@
             "build": "Build with Witnet",
             "start_mining": {
                 "base": "Start mining {0}",
-                "wit": "wit"
+                "wit": "Wit"
             }
         }
     },
@@ -144,7 +144,7 @@
     "nav_bar": {
         "route": {
             "oracle": "oracle",
-            "token": "token",
+            "token": "coin",
             "ecosystem": "ecosystem",
             "blog": "blog"
         },
@@ -165,8 +165,8 @@
         }
     },
     "wit_token": {
-        "title": "Incentivized by the wit token",
-        "text": "The Witnet decentralized oracle runs on its own blockchain and relies on the token for incentivization of independently run nodes that resolve the data requests and agree on the results.",
+        "title": "Incentivized by the WIT coin",
+        "text": "The Witnet decentralized oracle runs on its own blockchain and relies on the WIT coin for incentivization of independently run nodes that resolve the data requests and agree on the results.",
         "buttons": {
             "tokenomics": "Tokenomics",
             "sheikah": "Sheikah wallet",

@@ -25,7 +25,7 @@
             </InnerLink>
           </li>
           <li class="tab" @click="closeMenu">
-            <InnerLink hash="token">
+            <InnerLink hash="coin">
               <span class="slash">/</span>{{ $t('nav_bar.route.token') }}
             </InnerLink>
           </li>

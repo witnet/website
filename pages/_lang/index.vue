@@ -3,7 +3,7 @@
     <Hero />
     <DecentralizedOracle id="oracle" />
     <Integrations id="integrations" />
-    <WitToken id="token" />
+    <WitToken id="coin" />
     <Ecosystem id="ecosystem" />
     <GetInvolved id="get_involved" />
     <JoinCommunity id="community" />
