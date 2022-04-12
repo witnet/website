@@ -51,6 +51,9 @@
         }
     },
     "footer": {
+        "documentation": "Documentación",
+        "request_data_feed": "Solicita un nuevo price feed",
+        "about_witnet": "Sobre Witnet",
         "links": {
             "witnet": {
                 "title": "Witnet",
@@ -65,7 +68,8 @@
                 "full_node": "Full node",
                 "wallet": "Wallet",
                 "block_explorer": "Explorador de bloques",
-                "monitor": "Monitor de red"
+                "monitor": "Monitor de red",
+                "data_feeds_explorer": "Data Feeds Explorer"
             },
             "community": {
                 "title": "Comunidad",
@@ -73,6 +77,13 @@
                 "discord": "Discord",
                 "twitter": "Twitter",
                 "reddit": "Reddit"
+            },
+            "developers": {
+                "title": "Desarrolladores",
+                "documentation": "Documentación",
+                "price_feeds": "Price Feeds",
+                "randomness": "Randomness",
+                "get_post_request": "Data Requests"
             }
         },
         "ado_text": "Witnet es parte de la Alianza de Oráculos Descentralizados (ADO), un esfuerzo conjunto que lidera soluciones de oráculos descentralizados para facilitar la vida de los desarrolladores de smart contracts mediante la creación de estándares de oráculo. Más información sobre ADO en {0}",

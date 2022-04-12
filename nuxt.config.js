@@ -123,7 +123,12 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: {
-    dirs: ['~/components', '~/components/cards', '~/components/layouts'],
+    dirs: [
+      '~/components',
+      '~/components/cards',
+      '~/components/layouts',
+      { path: '~/components/footer', extensions: ['vue', 'js'] },
+    ],
   },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
@@ -132,6 +137,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/svg',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
