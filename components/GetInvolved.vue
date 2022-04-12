@@ -22,13 +22,13 @@
     </div>
     <div class="bottom">
       <p class="title">{{ $t('get_involved.subtitle') }}</p>
-      <div v-for="social in socials" :key="social.title">
-        <SocialsCard
-          :title="social.title"
-          :content="social.content"
-          :links="social.links"
-        />
-      </div>
+      <SocialsCard
+        v-for="social in socials"
+        :key="social.title"
+        :title="social.title"
+        :content="social.content"
+        :links="social.links"
+      />
     </div>
   </SectionLayout>
 </template>
@@ -78,6 +78,16 @@ export default {
             },
           ],
         },
+        {
+          title: this.$t('get_involved.social.we_are_hiring.title'),
+          content: this.$t('get_involved.social.we_are_hiring.content'),
+          links: [
+            {
+              text: this.$t('get_involved.social.we_are_hiring.link'),
+              url: urls.angelList,
+            },
+          ],
+        },
       ],
     }
   },
@@ -102,7 +112,7 @@ export default {
   .bottom {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     justify-items: center;
     justify-content: center;
     row-gap: 32px;

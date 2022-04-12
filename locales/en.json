@@ -119,8 +119,13 @@
             },
             "find_bugs": {
                 "title": "Grant program",
-                "content": "Foster Witnet ecosystem growth & improvement.",
-                "stay_tuned": "> Witnet Grant Program"
+                "content": "Foster Witnet ecosystem growth.",
+                "stay_tuned": "> Grant Program"
+            },
+            "we_are_hiring": {
+                "title": "We are hiring!",
+                "content": "Check out job offers and join our team!",
+                "link": "> Apply on AngelList"
             }
         }
     },

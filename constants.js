@@ -53,4 +53,5 @@ export const urls = {
     'https://docs.witnet.io/smart-contracts/witnet-data-feeds/using-witnet-data-feeds#reading-last-price-and-timestamp-from-a-price-feed-contract-serving-a-specific-pair',
   integrateThroughProxy:
     'https://docs.witnet.io/smart-contracts/witnet-data-feeds/using-witnet-data-feeds#reading-multiple-currency-pairs-from-the-router',
+  angelList: 'https://angel.co/company/witnet-foundation-1',
 }

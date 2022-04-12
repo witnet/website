@@ -118,9 +118,14 @@
                 }
             },
             "find_bugs": {
-                "title": "Programa de incentivos",
-                "content": "Fomenta y mejora el ecosistema de Witnet",
-                "stay_tuned": "> Witnet Grant Program"
+                "title": "Grant program",
+                "content": "Fomenta el ecosistema de Witnet.",
+                "stay_tuned": "> Grant Program"
+            },
+            "we_are_hiring": {
+                "title": "Estamos contratando!",
+                "content": "Únete al equipo de Witnet!",
+                "link": "> Aplica en AngelList"
             }
         }
     },
