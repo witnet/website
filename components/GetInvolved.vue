@@ -74,7 +74,7 @@ export default {
           links: [
             {
               text: this.$t('get_involved.social.find_bugs.stay_tuned'),
-              url: urls.telegram,
+              url: urls.grantProgram,
             },
           ],
         },
