@@ -144,17 +144,17 @@
             "author": "Aragon 的联合创始人Luis Cuende"
         },
         "testimonial_3": {
-            "text": "\"Oracle price manipulation was a hot topic in 2020, causing many financial losses. We are confident that Witnet is able to withstand these issues and provide the security and decentralization we’re looking for\"",
-            "author": "Mark Tan, Co-Founder of RiveX"
+            "text": "“Oracle价格操纵是2020年的热门话题，造成许多资金损失。 我们相信，Witnet能够经受住这些问题的考验，并提供我们所期待的安全和去中心化。”",
+            "author": "Mark Tan，RiveX的联合创始人"
         }
     },
     "wit_token": {
-        "title": "Incentivized by the wit token",
-        "text": "The Witnet decentralized oracle runs on its own blockchain and relies on the token for incentivization of independently run nodes that resolve the data requests and agree on the results.",
+        "title": "被wit代币而激励",
+        "text": "Witnet 去中心化预言机在其自己的区块链上运行，并依靠代币来激励独立运行的节点，这些节点解决数据请求并就结果达成一致。",
         "buttons": {
-            "tokenomics": "Tokenomics",
-            "sheikah": "Sheikah wallet",
-            "mining": "Start mining"
+            "tokenomics": "代币经济学",
+            "sheikah": "Sheikah钱包",
+            "mining": "开始挖矿"
         }
     }
 }
