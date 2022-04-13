@@ -18,31 +18,31 @@
             "main": "一个新生的{0}",
             "gradient": "朝气蓬勃的生态系统"
         },
-        "subtitle": "Many pieces are already in place, and many others are being actively worked on by a broad community of BUIDLers.",
+        "subtitle": "许多部分已经到位，许多其他部分正在由广大的社区建设者积极“施工”。",
         "cards": {
             "node": {
-                "title": "witnet-rust full archival node",
-                "content": "Run your fully verifying node and start earning wit tokens for mining blocks and resolving data requests."
+                "title": "witnet-rust完整归档节点",
+                "content": "运行您的完全验证节点并开始赚取用于挖掘块和解决数据请求的wit代币。"
             },
             "sheikah": {
-                "title": "Sheikah wallet for desktop",
-                "content": "Sheikah is a privacy and user friendly wallet app for managing your wit tokens on Windows, Mac OS and GNU/Linux."
+                "title": "Sheikah钱包（桌面版）",
+                "content": "Sheikah 是一款高隐私且用户友好的钱包应用，用于在 Windows、Mac OS 和 GNU/Linux 上管理您的wit代币。"
             },
             "truffle_box": {
-                "title": "Ethereum Truffle Box",
-                "content": "Integrating witnet into your Solidity contracts is almost immediate with the Witnet Truffle Box."
+                "title": "Ethereum Truffle工具箱",
+                "content": "使用 Witnet Truffle工具箱 几乎可以立即将 witnet 集成到您的 Solidity 合约中。"
             },
             "explorer": {
-                "title": "witnet.network block explorer",
-                "content": "The witnet.network block explorer gives you a neutral view on what is going on in the Witnet block chain."
+                "title": "witnet网络区块浏览器",
+                "content": "Witnet网络区块浏览器让您对 Witnet 区块链中发生的事情有一个中立的看法。"
             },
             "monitor": {
-                "title": "witnet.live network monitor",
-                "content": "The witnet.live network monitor keeps tracks of the health of the witnet network."
+                "title": "witnet.live网络监控器",
+                "content": "Witnet.live网络监控器跟踪 witnet 网络的运行状况。"
             },
             "next": {
-                "title": "What will you build next?",
-                "content": "Do you have some exciting Witnet app in mind? A grant program will be announced soon, so stay tuned!"
+                "title": "您下一步创建什么？",
+                "content": "您闹钟是否有一些令人兴奋的 Witnet 应用？资助计划即将公布，敬请期待！"
             }
         }
     },
@@ -50,9 +50,9 @@
         "links": {
             "witnet": {
                 "title": "Witnet",
-                "oracle": "Oracle",
-                "token": "Token",
-                "ecosystem": "Ecosystem",
+                "oracle": "预言机",
+                "token": "代币",
+                "ecosystem": "生态系统",
                 "community": "Community"
             },
             "ecosystem": {
