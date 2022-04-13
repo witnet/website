@@ -2,21 +2,21 @@
     "announcement": {
         "tag": "公告",
         "subtitle": "Witnet现在是以太坊的侧链",
-        "button": "Learn how to use Witnet from a solidity contract"
+        "button": "从solidity智能合约学习如何使用Witnet"
     },
     "decentralized_oracle": {
         "title": {
-            "main": "The decentralized oracle that is true to the {0} nature of blockchains.",
-            "gradient": "censorship resistant"
+            "main": "与{0} 个区块链特征相吻合的去中心化预言机",
+            "gradient": "抗审查性"
         },
-        "paragraph_1": "Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.",
-        "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure datainput.",
-        "button_label": "Build with witnet"
+        "paragraph_1": "如果没有可靠的预言机，智能合约很容易受到黑客攻击、走向腐败和造成金钱损失。",
+        "paragraph_2": "Witnet 利用最先进的加密和经济技术为您的智能合约提供安全的数据输入。",
+        "button_label": "用witbet来构建"
     },
     "ecosystem": {
         "title": {
-            "main": "A nascent, yet {0}",
-            "gradient": "thriving ecosystem"
+            "main": "一个新生的{0}",
+            "gradient": "朝气蓬勃的生态系统"
         },
         "subtitle": "Many pieces are already in place, and many others are being actively worked on by a broad community of BUIDLers.",
         "cards": {
