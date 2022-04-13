@@ -1,7 +1,7 @@
 {
     "announcement": {
-        "tag": "ANNOUNCEMENT",
-        "subtitle": "Witnet is now side-chanined to Ethereum",
+        "tag": "公告",
+        "subtitle": "Witnet现在是以太坊的侧链",
         "button": "Learn how to use Witnet from a solidity contract"
     },
     "decentralized_oracle": {
