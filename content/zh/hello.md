@@ -1,18 +1,18 @@
 ---
 title: 准备开始
-description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+description: '使用@nuxt/content 模块为您的 NuxtJS 应用程序赋能：写入 content/ 目录并通过类似 MongoDB 的 API 获取您的 Markdown、JSON、YAML 和 CSV 文件，充当基于 Git 的 Headless CMS。'
 ---
 
-Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.
+使用 `@nuxtjs/content` 模块为您的 NuxtJS 应用程序赋能：写入 `content/` 目录并通过类似 MongoDB 的 API 获取您的 Markdown、JSON、YAML 和 CSV 文件，充当**基于 Git 的 Headless CMS**。
 
-## Writing content
+## 写入内容
 
-Learn how to write your `content/`, supporting Markdown, YAML, CSV and JSON: https://content.nuxtjs.org/writing.
+了解如何编写您的 `content/`，支持 Markdown、YAML、CSV 和 JSON：https://content.nuxtjs.org/writing。
 
-## Fetching content
+## 获取内容
 
-Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetching.
+了解如何使用 `$content` 获取您的内容：https://content.nuxtjs.org/fetching。
 
-## Displaying content
+## 显示内容
 
-Learn how to display your Markdown content with the `<nuxt-content>` component directly in your template: https://content.nuxtjs.org/displaying.
+了解如何使用 `<nuxt-content>` 组件，直接在您的模板中显示您的 Markdown 内容：https://content.nuxtjs.org/displaying。
