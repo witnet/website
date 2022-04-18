@@ -12,7 +12,8 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore --fix",
-    "lint": "yarn lint:js && yarn lint:style"
+    "lint": "yarn lint:js && yarn lint:style",
+    "test": "yarn jest"
   },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
@@ -27,6 +28,7 @@
     "lodash.snakecase": "^4.1.1"
   },
   "devDependencies": {
+    "@nuxt/test-utils": "^0.2.2",
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/stylelint-module": "^4.0.0",
@@ -37,6 +39,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.5.0",
+    "jest": "^27.0.6",
     "prettier": "^2.2.1",
     "stylelint": "^13.9.0",
     "stylelint-config-prettier": "^8.0.2",
