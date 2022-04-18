@@ -79,7 +79,7 @@ export default {
     width: min-content;
   }
   .copyright {
-    font-size: var(--text-size-small);
+    font-size: var(--footer-size-small);
     line-height: 1.5;
     max-width: 350px;
     a {
@@ -89,7 +89,7 @@ export default {
   }
 }
 .link {
-  font-size: var(--text-size-medium);
+  font-size: var(--footer-text-size-medium);
   color: var(--white-text);
   padding: 4px 0 4px 0;
   &.underline {
@@ -113,14 +113,14 @@ export default {
       flex-direction: column;
       .title {
         font-family: Almarai, sans-serif;
-        font-size: var(--text-size);
+        font-size: var(--footer-text-size);
         font-weight: bold;
         padding: 8px 0 8px 0;
       }
     }
     .alliance-text {
       grid-column: span 2;
-      font-size: var(--text-size-medium);
+      font-size: var(--footer-text-size-medium);
       line-height: 1.5;
       .logo {
         width: 50px;
