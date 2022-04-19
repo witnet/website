@@ -37,6 +37,7 @@
             >{{ $t('footer.copyright.license') }}</a
           >
         </i18n>
+        <LanguageSelector class="language-selector" />
       </div>
     </div>
   </div>
@@ -79,7 +80,7 @@ export default {
     width: min-content;
   }
   .copyright {
-    font-size: var(--footer-size-small);
+    font-size: var(--footer-text-size-small);
     line-height: 1.5;
     max-width: 350px;
     a {
@@ -126,6 +127,23 @@ export default {
         width: 50px;
         margin-bottom: 8px;
       }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .bottom {
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: max-content;
+    .copyright {
+      grid-row: 2;
+      grid-column: 2;
+    }
+    .logo {
+      grid-row: 2;
+      grid-column: 1;
+    }
+    .language-selector {
+      grid-column: 2;
     }
   }
 }

@@ -89,7 +89,7 @@
         "ado_text": "Witnet es parte de la Alianza de Oráculos Descentralizados (ADO), un esfuerzo conjunto que lidera soluciones de oráculos descentralizados para facilitar la vida de los desarrolladores de smart contracts mediante la creación de estándares de oráculo. Más información sobre ADO en {0}",
         "wit": "WIT",
         "copyright": {
-            "base": "© 2018–2021 por {0} y colaboradores individuales. Contenido disponible en {1}.",
+            "base": "© {0} por {1} y colaboradores individuales. Contenido disponible en {2}.",
             "witnet_foundation": "Witnet Foundation",
             "license": "Licencia Creative Commons"
         }

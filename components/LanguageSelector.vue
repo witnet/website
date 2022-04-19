@@ -66,7 +66,7 @@ export default {
     border-radius: 0;
     color: $white;
     min-width: max-content;
-    font-size: 1rem;
+    font-size: var(--footer-text-size);
   }
   .vs__open-indicator {
     font-size: 8px;
@@ -79,7 +79,7 @@ export default {
 
   .vs__dropdown-option {
     font-family: 'NeueMachina-Regular', sans-serif;
-    font-size: 1rem;
+    font-size: var(--footer-text-size);
     color: $darkest-blue;
   }
 
@@ -103,6 +103,7 @@ export default {
     font-family: 'NeueMachina-Regular', sans-serif;
     margin: 0;
     padding: 4px 0 0 0;
+    font-size: var(--footer-text-size);
   }
   &:hover {
     .vs__selected {
