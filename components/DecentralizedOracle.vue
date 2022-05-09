@@ -19,7 +19,7 @@
             <p class="paragraph subtitle">
               {{ $t('decentralized_oracle.paragraph_2') }}
             </p>
-            <a :href="urls.docs" target="_blank">
+            <a :href="urls.documentation" target="_blank">
               <Button type="primary" class="btn">{{
                 $t('decentralized_oracle.button_label')
               }}</Button>

@@ -54,4 +54,5 @@ export const urls = {
   integrateThroughProxy:
     'https://docs.witnet.io/smart-contracts/witnet-data-feeds/using-witnet-data-feeds#reading-multiple-currency-pairs-from-the-router',
   angelList: 'https://angel.co/company/witnet-foundation-1',
+  mining: 'https://docs.witnet.io/node-operators/requirements',
 }

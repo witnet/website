@@ -7,7 +7,7 @@
       <p class="description">{{ $t('hero.description') }}</p>
       <Socials />
       <div class="buttons">
-        <a :href="urls.docs" target="_blank">
+        <a :href="urls.documentation" target="_blank">
           <Button type="primary" :font-size="14">{{
             $t('hero.buttons.build')
           }}</Button>

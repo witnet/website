@@ -40,7 +40,7 @@
             </a>
           </li>
           <li class="tab" @click="closeMenu">
-            <a :href="urls.docs" target="_blank">
+            <a :href="urls.documentation" target="_blank">
               <Button class="btn" :font-size="14">{{
                 $t('hero.buttons.build')
               }}</Button>

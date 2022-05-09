@@ -37,7 +37,7 @@ export default {
         {
           title: this.$t('ecosystem.cards.sheikah.title'),
           src: require('@/assets/images/sheikah.svg'),
-          link: urls.sheikah,
+          link: urls.wallet,
           border: false,
           content: this.$t('ecosystem.cards.sheikah.content'),
         },
@@ -58,7 +58,7 @@ export default {
         {
           title: this.$t('ecosystem.cards.data_feed_explorer.title'),
           src: require('@/assets/images/data-feed-explorer.svg'),
-          link: urls.dataFeedExplorer,
+          link: urls.dataFeedsExplorer,
           border: false,
           content: this.$t('ecosystem.cards.data_feed_explorer.content'),
         },
