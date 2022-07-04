@@ -104,7 +104,7 @@
         "social": {
             "follow": {
                 "title": "Sigue el proyecto",
-                "content": "Mantente al día con las últimas noticias en Twitter",
+                "content": "Mantente al día con las últimas noticias en Twitter.",
                 "links": {
                     "twitter": "> @witnet_io en Twitter"
                 }
@@ -123,8 +123,8 @@
                 "stay_tuned": "> Grant Program"
             },
             "we_are_hiring": {
-                "title": "Estamos contratando!",
-                "content": "Únete al equipo de Witnet!",
+                "title": "¡Estamos contratando!",
+                "content": "Únete al equipo de Witnet.",
                 "link": "> Aplica en AngelList"
             }
         }
