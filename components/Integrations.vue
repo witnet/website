@@ -155,7 +155,7 @@ export default {
           brightness: 0.5,
         },
         {
-          title: 'Smart BCH',
+          title: 'SmartBCH',
           src: require('@/assets/images/partners/smart-bch.svg'),
           link: 'https://smartbch.org/',
           scale: 0.9,
