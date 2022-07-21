@@ -148,6 +148,13 @@ export default {
           brightness: 0.5,
         },
         {
+          title: 'OKC',
+          src: require('@/assets/images/partners/okc.svg'),
+          link: 'https://www.okx.com/okc',
+          scale: 0.9,
+          brightness: 0.5,
+        },
+        {
           title: 'OKX',
           src: require('@/assets/images/partners/okx.svg'),
           link: 'https://www.okx.com/',
