@@ -1,5 +1,5 @@
 <template>
-  <SectionLayout class="main-section">
+  <SectionLayout id="main" class="main-section">
     <div class="info">
       <i18n path="hero.title.main" class="title header-1" tag="h1">
         <span class="gradient">{{ $t('hero.title.gradient') }}</span>

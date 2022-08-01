@@ -1,5 +1,6 @@
 <template>
   <div class="nav-container" :class="{ drop: isMenuVisible }">
+    <a class="skip-to-content-link" href="#main">Skip to content</a>
     <nav class="navbar" :class="{ open: isMenuVisible }">
       <div class="menu-container">
         <nuxt-link :to="localePath('/')">
@@ -84,6 +85,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.skip-to-content-link {
+  background: $aquamarine-1;
+  left: 50%;
+  padding: 4px 8px 8px 8px;
+  color: $white !important;
+  font-family: 'Avenir Next Variable W05835004', Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  transform: translateY(-100%);
+  z-index: 100;
+  transition: transform 0.3s;
+  &:focus {
+    transform: translateY(0%);
+  }
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -91,7 +107,7 @@ export default {
   max-width: 1050px;
   margin: 0 auto;
   background-color: $white;
-  button,
+  .responsive-menu,
   input[type='submit'],
   input[type='reset'] {
     background: none;
