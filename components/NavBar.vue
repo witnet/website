@@ -1,21 +1,24 @@
 <template>
   <div class="nav-container" :class="{ drop: isMenuVisible }">
+    <a class="skip-to-content-link" href="#main">Skip to content</a>
     <nav class="navbar" :class="{ open: isMenuVisible }">
       <div class="menu-container">
-        <img
-          class="logo"
-          src="@/assets/images/witnet_logo.svg"
-          alt=""
-          aria-hidden="true"
-        />
-        <label class="responsive-menu" @click="toggleMenu">
+        <nuxt-link :to="localePath('/')">
+          <img
+            class="logo"
+            src="@/assets/images/witnet_logo.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </nuxt-link>
+        <button class="responsive-menu" @click="toggleMenu">
           <a class="target-burger" :class="{ visible: isMenuVisible }">
             <ul class="buns">
               <li class="bun"></li>
               <li class="bun"></li>
             </ul>
           </a>
-        </label>
+        </button>
       </div>
       <transition name="dropdown" class="dropdown">
         <ul class="tab-container" :class="{ visible: isMenuVisible }">
@@ -82,6 +85,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.skip-to-content-link {
+  background: $aquamarine-1;
+  left: 50%;
+  padding: 4px 8px 8px 8px;
+  color: $white !important;
+  font-family: 'Avenir Next Variable W05835004', Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  transform: translateY(-100%);
+  z-index: 100;
+  transition: transform 0.3s;
+  &:focus {
+    transform: translateY(0%);
+  }
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -89,6 +107,17 @@ export default {
   max-width: 1050px;
   margin: 0 auto;
   background-color: $white;
+  .responsive-menu,
+  input[type='submit'],
+  input[type='reset'] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    opacity: 1;
+    font: inherit;
+    cursor: pointer;
+  }
   .logo {
     height: 39px;
   }

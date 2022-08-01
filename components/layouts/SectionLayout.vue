@@ -1,5 +1,5 @@
 <template>
-  <div :class="fullBackground ? 'wide-section' : 'section'">
+  <section :class="fullBackground ? 'wide-section' : 'section'">
     <div
       v-if="fullBackground"
       class="section"
@@ -8,7 +8,7 @@
       <slot></slot>
     </div>
     <slot v-else></slot>
-  </div>
+  </section>
 </template>
 
 <script>
