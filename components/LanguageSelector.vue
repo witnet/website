@@ -25,21 +25,20 @@
 <script>
 import { defaultLocale } from '../default'
 import { languages } from '../constants'
-import { findLanguage } from '../utils'
+import {
+  findLanguage,
+  getLanguageFromUrl,
+  getExpandedLanguages,
+} from '../utils'
 
 export default {
   data() {
-    const selectedLanguage =
-      this.$route.path.split('/').join('') || defaultLocale
-    const expandedLanguages = languages.map((language) => ({
-      ...language,
-      label: language.name,
-    }))
+    const expandedLanguages = getExpandedLanguages(languages)
 
     return {
       displayBox: false,
       selected:
-        findLanguage(expandedLanguages, selectedLanguage) ||
+        findLanguage(expandedLanguages, getLanguageFromUrl(this.$route.path)) ||
         findLanguage(expandedLanguages, defaultLocale),
       options: expandedLanguages,
     }
