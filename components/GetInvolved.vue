@@ -69,12 +69,22 @@ export default {
           ],
         },
         {
-          title: this.$t('get_involved.social.find_bugs.title'),
-          content: this.$t('get_involved.social.find_bugs.content'),
+          title: this.$t('get_involved.social.grant_program.title'),
+          content: this.$t('get_involved.social.grant_program.content'),
           links: [
             {
-              text: this.$t('get_involved.social.find_bugs.stay_tuned'),
+              text: this.$t('get_involved.social.grant_program.link'),
               url: urls.grantProgram,
+            },
+          ],
+        },
+        {
+          title: this.$t('get_involved.social.advocate_program.title'),
+          content: this.$t('get_involved.social.advocate_program.content'),
+          links: [
+            {
+              text: this.$t('get_involved.social.advocate_program.link'),
+              url: urls.advocateProgram,
             },
           ],
         },
@@ -112,7 +122,7 @@ export default {
   .bottom {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     justify-content: center;
     row-gap: 32px;

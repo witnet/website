@@ -20,39 +20,41 @@ export const footerSections = {
 }
 
 export const urls = {
-  youtube: 'https://www.youtube.com/channel/UCCS143kLVAH7oHZKvNNNxKQ',
-  documentation: 'https://docs.witnet.io/',
   ado: 'https://github.com/adoracles/',
-  fullNode: 'https://docs.witnet.io/try/run-a-node/',
-  tokenomics:
-    'https://medium.com/witnet/wit-witnet-blockchains-native-tokenomics-4559084073c5',
-  wallet: 'https://sheikah.app/',
-  truffleBox: 'https://docs.witnet.io/try/use-from-ethereum/',
+  advocateProgram:
+    'https://witnet.site/The-Witnet-Advocate-Program-f572baff6b1d49a69d4db785a924fc61',
+  angelList: 'https://angel.co/company/witnet-foundation-1',
   blockExplorer: 'https://witnet.network/search',
-  twitter: 'https://twitter.com/witnet_io',
-  telegram: 'https://t.me/witnetio',
-  discord: 'https://discord.gg/X4uurfP',
-  reddit: 'https://reddit.com/r/witnet',
-  github: 'https://github.com/witnet',
-  medium: 'https://medium.com/witnet',
-  whitepaper: 'https://witnet.io/witnet-whitepaper.pdf',
-  dataFeedsExplorer: 'https://feeds.witnet.io',
-  gate: 'https://www.gate.io/trade/WIT_USDT',
-  grantProgram:
-    'https://ripple-snarl-211.notion.site/About-the-Witnet-Grant-Program-WGP-c037b8fbeae143b0a15ea5ab60d3f24c',
-  token: 'https://witnet.io/#coin',
-  oracle: 'https://witnet.io/#oracle',
-  ecosystem: 'https://witnet.io/#ecosystem',
   community: 'https://witnet.io/#community',
-  priceFeeds: 'https://docs.witnet.io/smart-contracts/witnet-data-feeds',
-  randomness: 'https://docs.witnet.io/smart-contracts/witnet-randomness-oracle',
+  dataFeedsExplorer: 'https://feeds.witnet.io',
+  discord: 'https://discord.gg/X4uurfP',
+  documentation: 'https://docs.witnet.io/',
+  ecosystem: 'https://witnet.io/#ecosystem',
+  fullNode: 'https://docs.witnet.io/try/run-a-node/',
+  gate: 'https://www.gate.io/trade/WIT_USDT',
   getPostRequest:
     'https://docs.witnet.io/smart-contracts/apis-and-http-get-post-oracle',
-  requestDataFeed: 'https://tally.so/r/wMZDAn',
+  github: 'https://github.com/witnet',
+  grantProgram:
+    'https://witnet.notion.site/The-Witnet-Grant-Program-0e6bc5ddbe4a4bf8a22c262dedfe268f',
   integrateDirectly:
     'https://docs.witnet.io/smart-contracts/witnet-data-feeds/using-witnet-data-feeds#reading-last-price-and-timestamp-from-a-price-feed-contract-serving-a-specific-pair',
   integrateThroughProxy:
     'https://docs.witnet.io/smart-contracts/witnet-data-feeds/using-witnet-data-feeds#reading-multiple-currency-pairs-from-the-router',
-  angelList: 'https://angel.co/company/witnet-foundation-1',
+  medium: 'https://medium.com/witnet',
   mining: 'https://docs.witnet.io/node-operators/requirements',
+  oracle: 'https://witnet.io/#oracle',
+  priceFeeds: 'https://docs.witnet.io/smart-contracts/witnet-data-feeds',
+  randomness: 'https://docs.witnet.io/smart-contracts/witnet-randomness-oracle',
+  reddit: 'https://reddit.com/r/witnet',
+  requestDataFeed: 'https://tally.so/r/wMZDAn',
+  telegram: 'https://t.me/witnetio',
+  token: 'https://witnet.io/#coin',
+  tokenomics:
+    'https://medium.com/witnet/wit-witnet-blockchains-native-tokenomics-4559084073c5',
+  truffleBox: 'https://docs.witnet.io/try/use-from-ethereum/',
+  twitter: 'https://twitter.com/witnet_io',
+  wallet: 'https://sheikah.app/',
+  whitepaper: 'https://witnet.io/witnet-whitepaper.pdf',
+  youtube: 'https://www.youtube.com/channel/UCCS143kLVAH7oHZKvNNNxKQ',
 }

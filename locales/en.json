@@ -104,7 +104,7 @@
         "social": {
             "follow": {
                 "title": "Follow the project",
-                "content": "Keep up with the latest news on Twitter",
+                "content": "Keep up with the latest news on Twitter.",
                 "links": {
                     "twitter": "> @witnet_io on Twitter"
                 }
@@ -117,10 +117,15 @@
                     "discord": "> Discord"
                 }
             },
-            "find_bugs": {
+            "grant_program": {
                 "title": "Grant program",
-                "content": "Foster Witnet ecosystem growth.",
-                "stay_tuned": "> Grant Program"
+                "content": "Foster the Witnet ecosystem growth.",
+                "link": "> Grant Program"
+            },
+            "advocate_program": {
+                "title": "Advocate program",
+                "content": "Grow awareness of the Witnet project.",
+                "link": "> Advocate Program"
             },
             "we_are_hiring": {
                 "title": "We are hiring!",

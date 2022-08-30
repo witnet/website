@@ -38,6 +38,7 @@ export default {
 <style lang="scss" scoped>
 .socials-container {
   width: 100%;
+  height: 100%;
   .title {
     font-family: Almarai, sans-serif;
     font-weight: bold;

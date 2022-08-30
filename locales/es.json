@@ -117,10 +117,15 @@
                     "discord": "> Discord"
                 }
             },
-            "find_bugs": {
+            "grant_program": {
                 "title": "Grant program",
-                "content": "Fomenta el ecosistema de Witnet.",
-                "stay_tuned": "> Grant Program"
+                "content": "Apoya el ecosistema de Witnet.",
+                "link": "> Grant Program"
+            },
+            "advocate_program": {
+                "title": "Advocate program",
+                "content": "Da visibilidad al proyecto de Witnet.",
+                "link": "> Advocate Program"
             },
             "we_are_hiring": {
                 "title": "¡Estamos contratando!",
