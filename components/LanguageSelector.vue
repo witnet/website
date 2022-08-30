@@ -23,13 +23,8 @@
 </template>
 
 <script>
-import { defaultLocale } from '../default'
 import { languages } from '../constants'
-import {
-  findLanguage,
-  getLanguageFromUrl,
-  getExpandedLanguages,
-} from '../utils'
+import { getCurrentLanguage, getExpandedLanguages } from '../utils'
 
 export default {
   data() {
@@ -37,9 +32,7 @@ export default {
 
     return {
       displayBox: false,
-      selected:
-        findLanguage(expandedLanguages, getLanguageFromUrl(this.$route.path)) ||
-        findLanguage(expandedLanguages, defaultLocale),
+      selected: getCurrentLanguage(this.$route.path),
       options: expandedLanguages,
     }
   },

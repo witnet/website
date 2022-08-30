@@ -6,7 +6,7 @@ export function findLanguage(locale) {
 }
 
 export function getLanguageFromUrl(url) {
-  return url.split('/')[1]
+  return url.split('/')[1] || defaultLocale
 }
 export function getExpandedLanguages() {
   return languages.map((language) => ({

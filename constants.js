@@ -22,7 +22,7 @@ export const footerSections = {
 export const urls = {
   ado: 'https://github.com/adoracles/',
   advocateProgram:
-    'https://witnet.site/The-Witnet-Advocate-Program-f572baff6b1d49a69d4db785a924fc61',
+    'https://witnet.notion.site/The-Witnet-Advocate-Program-f572baff6b1d49a69d4db785a924fc61',
   angelList: 'https://angel.co/company/witnet-foundation-1',
   blockExplorer: 'https://witnet.network/search',
   community: 'https://witnet.io/#community',
