@@ -24,7 +24,7 @@ export const urls = {
   advocateProgram:
     'https://witnet.notion.site/The-Witnet-Advocate-Program-f572baff6b1d49a69d4db785a924fc61',
   angelList: 'https://angel.co/company/witnet-foundation-1',
-  blockExplorer: 'https://witnet.network/search',
+  blockExplorer: 'https://witnet.network/',
   community: 'https://witnet.io/#community',
   dataFeedsExplorer: 'https://feeds.witnet.io',
   discord: 'https://discord.gg/X4uurfP',
