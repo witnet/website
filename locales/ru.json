@@ -25,8 +25,8 @@
                 "content": "Run your fully verifying node and start earning wit tokens for mining blocks and resolving data requests."
             },
             "sheikah": {
-                "title": "Sheikah wallet for desktop",
-                "content": "Sheikah is a privacy and user friendly wallet app for managing your wit tokens on Windows, Mac OS and GNU/Linux."
+                "title": "Sheikah кошелек для компьютера",
+                "content": "Sheikah — это удобное и конфиденциальное приложение-кошелек для управления вашими Wit токенами на Windows, Mac OS и GNU/Linux."
             },
             "truffle_box": {
                 "title": "Ethereum Truffle Box",
@@ -50,20 +50,20 @@
         "links": {
             "witnet": {
                 "title": "Witnet",
-                "oracle": "Oracle",
-                "token": "Token",
-                "ecosystem": "Ecosystem",
-                "community": "Community"
+                "oracle": "Оракул",
+                "token": "Токен",
+                "ecosystem": "Экосистема",
+                "community": "Сообщество"
             },
             "ecosystem": {
-                "title": "Ecosystem",
+                "title": "Экосистема",
                 "full_node": "Full node",
                 "wallet": "Wallet",
                 "block_explorer": "Block explorer",
                 "monitor": "Network monitor"
             },
             "community": {
-                "title": "Community",
+                "title": "Сообщество",
                 "telegram": "Telegram",
                 "discord": "Discord",
                 "twitter": "Twitter",
