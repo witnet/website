@@ -11,7 +11,7 @@
         },
         "paragraph_1": "Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.",
         "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure datainput.",
-        "button_label": "Build with witnet"
+        "button_label": "Создавайте с Witnet"
     },
     "ecosystem": {
         "title": {
@@ -74,7 +74,7 @@
         "wit": "WIT",
         "copyright": {
             "base": "© 2018–2021 by {0} and individual contributors. Content available under a {1}.",
-            "witnet_foundation": "Witnet Foundation",
+            "witnet_foundation": "Организация Witnet",
             "license": "Creative Commons License"
         }
     },
@@ -87,10 +87,10 @@
         "subtitle": "Get involved now",
         "social": {
             "follow": {
-                "title": "Follow the project",
-                "content": "Keep up with the latest news on Twitter",
+                "title": "Следить за проектом",
+                "content": "Будьте в курсе последних новостей в Twitter",
                 "links": {
-                    "twitter": "> @witnet_io on Twitter"
+                    "twitter": "> @witnet_io в Twitter"
                 }
             },
             "join_discussion": {
@@ -127,33 +127,33 @@
     },
     "nav_bar": {
         "route": {
-            "oracle": "oracle",
-            "token": "token",
+            "oracle": "оракул",
+            "token": "токен",
             "ecosystem": "ecosystem",
             "blog": "blog"
         },
-        "social_image_alt": "Open Witnet's Github on new window"
+        "social_image_alt": "Открыть репозиторий Witnet на GitHub"
     },
     "testimonials": {
         "testimonial_1": {
-            "text": "\"Witnet is a next generation crypto Oracle. You'll hear a lot more about it in 2021.\"",
-            "author": "Michael Arrington, Founder of TechCrunch"
+            "text": "«Witnet — это крипто-оракул следующего поколения. Вы услышите о нем больше в 2021 году»",
+            "author": "Michael Arrington, основатель компании TechCrunch"
         },
         "testimonial_2": {
-            "text": "\"The oracle that truly decentralized blockchains and the Web3 deserve\"",
-            "author": "Luis Cuende, Co-Founder of Aragon"
+            "text": "\"Оракул, которого действительно заслуживают децентрализованные блокчейны и Web3\"",
+            "author": "Luis Cuende, соучредитель проекта Aragon"
         },
         "testimonial_3": {
-            "text": "\"Oracle price manipulation was a hot topic in 2020, causing many financial losses. We are confident that Witnet is able to withstand these issues and provide the security and decentralization we’re looking for\"",
-            "author": "Mark Tan, Co-Founder of RiveX"
+            "text": "«Манипулирование ценами при помощи оракулов привело к многочисленным финансовым потерям и было горячей темой обсуждений в 2020 году. Мы уверены, что Witnet сможет противостоять этим проблемам и обеспечить безопасность и децентрализацию, которые мы все так ищем»",
+            "author": "Mark Tan, соучредитель проекта RiveX"
         }
     },
     "wit_token": {
         "title": "Incentivized by the wit token",
         "text": "The Witnet decentralized oracle runs on its own blockchain and relies on the token for incentivization of independently run nodes that resolve the data requests and agree on the results.",
         "buttons": {
-            "tokenomics": "Tokenomics",
-            "sheikah": "Sheikah wallet",
+            "tokenomics": "Токеномика",
+            "sheikah": "Sheikah кошелек",
             "mining": "Start mining"
         }
     }
