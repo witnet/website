@@ -57,10 +57,10 @@
             },
             "ecosystem": {
                 "title": "Экосистема",
-                "full_node": "Full node",
-                "wallet": "Wallet",
-                "block_explorer": "Block explorer",
-                "monitor": "Network monitor"
+                "full_node": "Полный узел сети",
+                "wallet": "Кошелек",
+                "block_explorer": "Обозреватель блоков",
+                "monitor": "Сетевой монитор"
             },
             "community": {
                 "title": "Сообщество",
@@ -75,7 +75,7 @@
         "copyright": {
             "base": "© 2018–2021 by {0} and individual contributors. Content available under a {1}.",
             "witnet_foundation": "Организация Witnet",
-            "license": "Creative Commons License"
+            "license": "Лицензия Creative Commons"
         }
     },
     "get_involved": {
@@ -129,8 +129,8 @@
         "route": {
             "oracle": "оракул",
             "token": "токен",
-            "ecosystem": "ecosystem",
-            "blog": "blog"
+            "ecosystem": "экосистема",
+            "blog": "блог"
         },
         "social_image_alt": "Открыть репозиторий Witnet на GitHub"
     },
