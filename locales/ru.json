@@ -21,7 +21,7 @@
         "subtitle": "Many pieces are already in place, and many others are being actively worked on by a broad community of BUIDLers.",
         "cards": {
             "node": {
-                "title": "witnet-rust full archival node",
+                "title": "полный архивный узел witnet-rust",
                 "content": "Run your fully verifying node and start earning wit tokens for mining blocks and resolving data requests."
             },
             "sheikah": {
