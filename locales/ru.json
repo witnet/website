@@ -1,7 +1,7 @@
 {
     "announcement": {
         "tag": "ОБЪЯВЛЕНИЕ",
-        "subtitle": "Witnet is now side-chanined to Ethereum",
+        "subtitle": "Witnet теперь садчейн Ethereum",
         "button": "Learn how to use Witnet from a solidity contract"
     },
     "decentralized_oracle": {
@@ -10,7 +10,7 @@
             "gradient": "censorship resistant"
         },
         "paragraph_1": "Без надежного оракула смарт-контракты могут быть уязвимы для взлома, подлога данных и финансовых убытков.",
-        "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure datainput.",
+        "paragraph_2": "Witnet использует самые современные криптографические и экономические методы, чтобы обеспечить вашим смарт-контрактам безопасную передачу данных.",
         "button_label": "Создавайте с Witnet"
     },
     "ecosystem": {
@@ -42,7 +42,7 @@
             },
             "next": {
                 "title": "What will you build next?",
-                "content": "У вас есть идея или интересное приложение на сети Witnet? Программа грантов будет объявлена в ближайшее время, так что следите за обновлениями!"
+                "content": "У вас есть идея или интересное приложение в блокчейне Witnet? Программа грантов будет объявлена в ближайшее время, так что следите за обновлениями!"
             }
         }
     },
@@ -123,7 +123,7 @@
         }
     },
     "join_community": {
-        "text": "Questions? Join the {0} and {1} communities!"
+        "text": "Остались вопросы? Присоединяйтесь к сообществам {0} и {1}!"
     },
     "nav_bar": {
         "route": {
