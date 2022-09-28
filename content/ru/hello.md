@@ -1,18 +1,18 @@
 ---
 title: Начало работы
-description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+description: 'Расширьте возможности своего приложения NuxtJS с помощью модуля @nuxt/content: напишите в каталоге content/ и извлеките файлы Markdown, JSON, YAML и CSV через API, подобный MongoDB, действующий как безголовая CMS на основе Git.'
 ---
 
-Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.
+Расширьте возможности своего приложения NuxtJS с помощью модуля `@nuxtjs/content`: напишите в каталоге `content/` и получите файлы Markdown, JSON, YAML и CSV через API, подобный MongoDB, действуя как **безголовая CMS на основе Git**.
 
-## Writing content
+## Написание контента
 
-Learn how to write your `content/`, supporting Markdown, YAML, CSV and JSON: https://content.nuxtjs.org/writing.
+Узнайте, как написать свой `content/`, поддерживающий Markdown, YAML, CSV и JSON: https://content.nuxtjs.org/writing.
 
-## Fetching content
+## Загрузка содержимого
 
-Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetching.
+Узнайте, как получить контент с помощью `$content`: https://content.nuxtjs.org/fetching.
 
 ## Отображаемый контент
 
-Learn how to display your Markdown content with the `<nuxt-content>` component directly in your template: https://content.nuxtjs.org/displaying.
+Узнайте, как отображать контент Markdown с помощью компонента `<nuxt-content>` непосредственно в шаблоне: https://content.nuxtjs.org/displaying.
