@@ -2,12 +2,12 @@
     "announcement": {
         "tag": "ОБЪЯВЛЕНИЕ",
         "subtitle": "Witnet теперь садчейн Ethereum",
-        "button": "Learn how to use Witnet from a solidity contract"
+        "button": "Узнайте, как использовать Witnet в solidity контрактах"
     },
     "decentralized_oracle": {
         "title": {
             "main": "Децентрализованный оракул, верный {0} природе блокчейнов.",
-            "gradient": "censorship resistant"
+            "gradient": "устойчивость к цензуре"
         },
         "paragraph_1": "Без надежного оракула смарт-контракты могут быть уязвимы для взлома, подлога данных и финансовых убытков.",
         "paragraph_2": "Witnet использует самые современные криптографические и экономические методы, чтобы обеспечить вашим смарт-контрактам безопасную передачу данных.",
@@ -15,7 +15,7 @@
     },
     "ecosystem": {
         "title": {
-            "main": "A nascent, yet {0}",
+            "main": "Зарождающаяся, но уже {0}",
             "gradient": "процветающая экосистема"
         },
         "subtitle": "Многие элементы уже созданы, а над многими другими активно работают участники сообщества witnet.",
@@ -41,7 +41,7 @@
                 "content": "Сетевой монитор witnet.live следит за состоянием сети witnet."
             },
             "next": {
-                "title": "What will you build next?",
+                "title": "Вы готовы создавать новое?",
                 "content": "У вас есть идея или интересное приложение в блокчейне Witnet? Программа грантов будет объявлена в ближайшее время, так что следите за обновлениями!"
             }
         }
@@ -73,18 +73,18 @@
         "ado_text": "Witnet является частью альянса децентрализованных оракулов (ADO), совместными усилиями ведущих децентрализованных решений оракулов, направленных на облегчение жизни разработчиков смарт-контрактов путем создания стандартов оракулов. Узнайте больше об ADO на странице {0}",
         "wit": "WIT",
         "copyright": {
-            "base": "© 2018–2021 by {0} and individual contributors. Content available under a {1}.",
+            "base": "© 2018–2021 {0} и отдельные участники. Контент доступен {1}.",
             "witnet_foundation": "Организация Witnet",
             "license": "Лицензия Creative Commons"
         }
     },
     "get_involved": {
         "title": {
-            "main": "Come for the tech, {0}",
+            "main": "Приходите за технологией, {0}",
             "gradient": "оставайтесь для удовольствия!"
         },
         "content": "От разработчиков до майнеров и энтузиастов, сообщество witnet гордится тем, что всегда приветливо, обсуждает вещи, которые действительно важны, и гарантирует, что witnet играет ключевую роль в фундаменте Web3.",
-        "subtitle": "Get involved now",
+        "subtitle": "Примите участие",
         "social": {
             "follow": {
                 "title": "Следить за проектом",
@@ -94,7 +94,7 @@
                 }
             },
             "join_discussion": {
-                "title": "Join the discussion",
+                "title": "Присоединиться к обсуждению",
                 "content": "Помогите нам определить будущее проекта.",
                 "links": {
                     "telegram": "> Telegram",
@@ -103,21 +103,21 @@
             },
             "find_bugs": {
                 "title": "Программа стимулирования",
-                "content": "Details will be announced soon.",
+                "content": "Подробности будут объявлены в ближайшее время.",
                 "stay_tuned": "Следите за обновлениями!"
             }
         }
     },
     "hero": {
         "title": {
-            "main": "Unleash the {0} of smart contracts",
-            "gradient": "real power"
+            "main": "Раскройте {0} смарт-контрактов",
+            "gradient": "реальная мощь"
         },
-        "description": "Witnet enables your smart contracts to react to real world events with strong crypto-economic guarantees.",
+        "description": "Witnet позволяет вашим смарт-контрактам реагировать на события реального мира с надежными криптоэкономическими гарантиями.",
         "buttons": {
-            "build": "Build with Witnet",
+            "build": "Создавайте с Witnet",
             "start_mining": {
-                "base": "Start mining {0}",
+                "base": "Начать майнить",
                 "wit": "wit"
             }
         }
@@ -149,12 +149,12 @@
         }
     },
     "wit_token": {
-        "title": "Incentivized by the wit token",
-        "text": "The Witnet decentralized oracle runs on its own blockchain and relies on the token for incentivization of independently run nodes that resolve the data requests and agree on the results.",
+        "title": "Стимулирование с помощью токена wit",
+        "text": "Децентрализованный оракул Witnet работает на собственном блокчейне и использует собственный токен для стимулирования независимо работающих узлов, которые решают запросы данных и согласовывают результаты.",
         "buttons": {
             "tokenomics": "Токеномика",
             "sheikah": "Sheikah кошелек",
-            "mining": "Start mining"
+            "mining": "Начать майнить"
         }
     }
 }
