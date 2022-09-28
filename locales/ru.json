@@ -9,7 +9,7 @@
             "main": "Децентрализованный оракул, верный {0} природе блокчейнов.",
             "gradient": "censorship resistant"
         },
-        "paragraph_1": "Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.",
+        "paragraph_1": "Без надежного оракула смарт-контракты могут быть уязвимы для взлома, подлога данных и финансовых убытков.",
         "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure datainput.",
         "button_label": "Создавайте с Witnet"
     },
@@ -33,16 +33,16 @@
                 "content": "Интеграция witnet в ваши solidity контракты практически мгновенная с Witnet Truffle Box."
             },
             "explorer": {
-                "title": "witnet.network block explorer",
-                "content": "The witnet.network block explorer gives you a neutral view on what is going on in the Witnet block chain."
+                "title": "обозреватель блоков witnet.network ",
+                "content": "Обозреватель блоков Witnet.network наглядно показывает, что происходит в блокчейне Witnet."
             },
             "monitor": {
-                "title": "witnet.live network monitor",
-                "content": "The witnet.live network monitor keeps tracks of the health of the witnet network."
+                "title": "монитор сети witnet.live",
+                "content": "Сетевой монитор witnet.live следит за состоянием сети witnet."
             },
             "next": {
                 "title": "What will you build next?",
-                "content": "Do you have some exciting Witnet app in mind? A grant program will be announced soon, so stay tuned!"
+                "content": "У вас есть идея или интересное приложение на сети Witnet? Программа грантов будет объявлена в ближайшее время, так что следите за обновлениями!"
             }
         }
     },
@@ -70,7 +70,7 @@
                 "reddit": "Reddit"
             }
         },
-        "ado_text": "Witnet is part of the Alliance of Decentralized Oracles (ADO), a joint effort by leading decentralized oracle solutions to make the life of smart contract developers easier by creating oracle standards. Learn more about the ADO at {0}",
+        "ado_text": "Witnet является частью альянса децентрализованных оракулов (ADO), совместными усилиями ведущих децентрализованных решений оракулов, направленных на облегчение жизни разработчиков смарт-контрактов путем создания стандартов оракулов. Узнайте больше об ADO на странице {0}",
         "wit": "WIT",
         "copyright": {
             "base": "© 2018–2021 by {0} and individual contributors. Content available under a {1}.",
@@ -81,9 +81,9 @@
     "get_involved": {
         "title": {
             "main": "Come for the tech, {0}",
-            "gradient": "stay for the fun!"
+            "gradient": "оставайтесь для удовольствия!"
         },
-        "content": "From developers to miners and enthusiasts, the witnet community prouds itself on always being welcoming, discussing the things that really matter, and ensuring that witnet plays a key role in the foundations of Web3.",
+        "content": "От разработчиков до майнеров и энтузиастов, сообщество witnet гордится тем, что всегда приветливо, обсуждает вещи, которые действительно важны, и гарантирует, что witnet играет ключевую роль в фундаменте Web3.",
         "subtitle": "Get involved now",
         "social": {
             "follow": {
@@ -95,16 +95,16 @@
             },
             "join_discussion": {
                 "title": "Join the discussion",
-                "content": "Help us shape the future of the project.",
+                "content": "Помогите нам определить будущее проекта.",
                 "links": {
                     "telegram": "> Telegram",
                     "discord": "> Discord"
                 }
             },
             "find_bugs": {
-                "title": "Incentive Program",
+                "title": "Программа стимулирования",
                 "content": "Details will be announced soon.",
-                "stay_tuned": "Stay tuned!"
+                "stay_tuned": "Следите за обновлениями!"
             }
         }
     },
