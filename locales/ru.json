@@ -1,12 +1,12 @@
 {
     "announcement": {
-        "tag": "ANNOUNCEMENT",
+        "tag": "ОБЪЯВЛЕНИЕ",
         "subtitle": "Witnet is now side-chanined to Ethereum",
         "button": "Learn how to use Witnet from a solidity contract"
     },
     "decentralized_oracle": {
         "title": {
-            "main": "The decentralized oracle that is true to the {0} nature of blockchains.",
+            "main": "Децентрализованный оракул, верный {0} природе блокчейнов.",
             "gradient": "censorship resistant"
         },
         "paragraph_1": "Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.",
@@ -16,21 +16,21 @@
     "ecosystem": {
         "title": {
             "main": "A nascent, yet {0}",
-            "gradient": "thriving ecosystem"
+            "gradient": "процветающая экосистема"
         },
-        "subtitle": "Many pieces are already in place, and many others are being actively worked on by a broad community of BUIDLers.",
+        "subtitle": "Многие элементы уже созданы, а над многими другими активно работают участники сообщества witnet.",
         "cards": {
             "node": {
                 "title": "полный архивный узел witnet-rust",
-                "content": "Run your fully verifying node and start earning wit tokens for mining blocks and resolving data requests."
+                "content": "Запустите свой полный узел сети и начните зарабатывать wit токены, добывая блоки и обрабатывая запросы данных."
             },
             "sheikah": {
                 "title": "Sheikah кошелек для компьютера",
                 "content": "Sheikah — это удобное и конфиденциальное приложение-кошелек для управления вашими Wit токенами на Windows, Mac OS и GNU/Linux."
             },
             "truffle_box": {
-                "title": "Ethereum Truffle Box",
-                "content": "Integrating witnet into your Solidity contracts is almost immediate with the Witnet Truffle Box."
+                "title": "Ethereum Truffle Box\n",
+                "content": "Интеграция witnet в ваши solidity контракты практически мгновенная с Witnet Truffle Box."
             },
             "explorer": {
                 "title": "witnet.network block explorer",
