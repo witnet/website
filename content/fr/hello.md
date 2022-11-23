@@ -1,6 +1,6 @@
 ---
-title: Getting started
-description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+title: Commencer
+description: "Donner du pouvoir à votre application avec le contenu du module @nuxt:\nInscrivez un contenu, aller chercher et répertorier votre remise et les fichier json, yaml et csv via un mongoDB comme API qui agit comme un CMS basé-git sans tête."
 ---
 
 Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.
