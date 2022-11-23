@@ -1,48 +1,48 @@
 {
     "announcement": {
-        "tag": "Annoncement",
+        "tag": "ANNONCEMENT",
         "subtitle": "Witnet is now side-chanined to Ethereum",
-        "button": "Learn how to use Witnet from a solidity contract"
+        "button": "Apprenez comment utiliser Witnet à partir d'un contrat Solidity"
     },
     "decentralized_oracle": {
         "title": {
-            "main": "The decentralized oracle that is true to the {0} nature of blockchains.",
-            "gradient": "censorship resistant"
+            "main": "L'oracle décentralisé qui est fidèle à la nature de {0} des blockchains.",
+            "gradient": "résistant à la censure"
         },
-        "paragraph_1": "Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.",
-        "paragraph_2": "Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure datainput.",
-        "button_label": "Build with witnet"
+        "paragraph_1": "Sans un oracle fiable, les contrats intelligents peuvent être vulnérables aux hacks, à la corruption et aux pertes monétaires.",
+        "paragraph_2": "Witnet met à profit les techniques cryptographiques et économiques les plus récentes pour fournir à vos contrats intelligents des données sécurisées.",
+        "button_label": "Construire avec witnet"
     },
     "ecosystem": {
         "title": {
             "main": "A nascent, yet {0}",
-            "gradient": "thriving ecosystem"
+            "gradient": "écosystème prospère"
         },
-        "subtitle": "Many pieces are already in place, and many others are being actively worked on by a broad community of BUIDLers.",
+        "subtitle": "De nombreuses fonction sont déjà en place, et de nombreuses autres sont en cours de réalisation grâce une vaste communauté de builders.",
         "cards": {
             "node": {
-                "title": "witnet-rust full archival node",
-                "content": "Run your fully verifying node and start earning wit tokens for mining blocks and resolving data requests."
+                "title": "nœud d'archivage complet witnet-Rust",
+                "content": "Exécutez votre et commencez à gagner des jetons wit pour les blocs de minage et la résolution des requêtes de données."
             },
             "sheikah": {
-                "title": "Sheikah wallet for desktop",
-                "content": "Sheikah is a privacy and user friendly wallet app for managing your wit tokens on Windows, Mac OS and GNU/Linux."
+                "title": "Portefeuille Sheikah pour ordinateur",
+                "content": "Sheikah est une application de portefeuille conviviale pour la gestion de vos jetons wit sur Windows, Mac OS et GNU/Linux."
             },
             "truffle_box": {
                 "title": "Ethereum Truffle Box",
-                "content": "Integrating witnet into your Solidity contracts is almost immediate with the Witnet Truffle Box."
+                "content": "Intégrer witnet à vos contrats Solidity est presque immédiat avec la Witnet Truffle Box."
             },
             "explorer": {
                 "title": "witnet.network block explorer",
-                "content": "The witnet.network block explorer gives you a neutral view on what is going on in the Witnet block chain."
+                "content": "L'explorateur de blocs witnet.network vous donne une vue neutre de ce qui se passe dans la chaîne de blocs Witnet."
             },
             "monitor": {
-                "title": "witnet.live network monitor",
-                "content": "The witnet.live network monitor keeps tracks of the health of the witnet network."
+                "title": "moniteur réseau witnet.live",
+                "content": "Le moniteur de réseau witnet.live surveille la santé du réseau witnet."
             },
             "next": {
-                "title": "What will you build next?",
-                "content": "Do you have some exciting Witnet app in mind? A grant program will be announced soon, so stay tuned!"
+                "title": "Que comptez-vous construire ensuite?",
+                "content": "Avez-vous une application Witnet excitante en tête ? Un programme de subvention sera bientôt annoncé, alors restez à l'écoute !"
             }
         }
     },
@@ -51,110 +51,110 @@
             "witnet": {
                 "title": "Witnet",
                 "oracle": "Oracle",
-                "token": "Token",
-                "ecosystem": "Ecosystem",
-                "community": "Community"
+                "token": "Jeton",
+                "ecosystem": "Écosystème",
+                "community": "Communauté"
             },
             "ecosystem": {
-                "title": "Ecosystem",
-                "full_node": "Full node",
+                "title": "Écosystème",
+                "full_node": "Nœud complet",
                 "wallet": "Wallet",
-                "block_explorer": "Block explorer",
-                "monitor": "Network monitor"
+                "block_explorer": "Explorateur de blocs",
+                "monitor": "Surveillance du réseau"
             },
             "community": {
-                "title": "Community",
+                "title": "Communauté",
                 "telegram": "Telegram",
                 "discord": "Discord",
                 "twitter": "Twitter",
                 "reddit": "Reddit"
             }
         },
-        "ado_text": "Witnet is part of the Alliance of Decentralized Oracles (ADO), a joint effort by leading decentralized oracle solutions to make the life of smart contract developers easier by creating oracle standards. Learn more about the ADO at {0}",
+        "ado_text": "Witnet fait partie de l'Alliance des Oracles décentralisés (ADO), un effort conjoint en menant des solutions oracle décentralisées pour faciliter la vie des développeurs de contrats intelligents en créant des standards oracle. En savoir plus sur l'ADO à {0}",
         "wit": "WIT",
         "copyright": {
-            "base": "© 2018–2021 by {0} and individual contributors. Content available under a {1}.",
-            "witnet_foundation": "Witnet Foundation",
+            "base": "© 2018-2021 par {0} et les contributeurs individuels. Contenu disponible sous un {1}.",
+            "witnet_foundation": "Witnet Fondation",
             "license": "Creative Commons License"
         }
     },
     "get_involved": {
         "title": {
-            "main": "Come for the tech, {0}",
-            "gradient": "stay for the fun!"
+            "main": "Venez pour la technologie, {0}",
+            "gradient": "restez pour le plaisir!"
         },
-        "content": "From developers to miners and enthusiasts, the witnet community prouds itself on always being welcoming, discussing the things that really matter, and ensuring that witnet plays a key role in the foundations of Web3.",
-        "subtitle": "Get involved now",
+        "content": "Des développeurs aux mineurs et aux enthousiastes, la communauté witnet est fière de toujours être accueillante, discuter des choses qui comptent vraiment, et s'assurer que witnet joue un rôle clé dans les fondations de Web3.",
+        "subtitle": "Impliquez-vous dès maintenant",
         "social": {
             "follow": {
-                "title": "Follow the project",
-                "content": "Keep up with the latest news on Twitter",
+                "title": "Suivez le projet",
+                "content": "Suivez les dernières actualités sur Twitter",
                 "links": {
-                    "twitter": "> @witnet_io on Twitter"
+                    "twitter": "> @witnet_io sur Twitter"
                 }
             },
             "join_discussion": {
-                "title": "Join the discussion",
-                "content": "Help us shape the future of the project.",
+                "title": "Rejoignez la discussion",
+                "content": "Aidez-nous à façonner l'avenir du projet.",
                 "links": {
                     "telegram": "> Telegram",
                     "discord": "> Discord"
                 }
             },
             "find_bugs": {
-                "title": "Incentive Program",
-                "content": "Details will be announced soon.",
-                "stay_tuned": "Stay tuned!"
+                "title": "Programme d'incitation",
+                "content": "Les détails seront bientôt annoncés.",
+                "stay_tuned": "Restez à l'écoute!"
             }
         }
     },
     "hero": {
         "title": {
-            "main": "Unleash the {0} of smart contracts",
-            "gradient": "real power"
+            "main": "Libérer les {0} contrats intelligents",
+            "gradient": "puissance réelle"
         },
-        "description": "Witnet enables your smart contracts to react to real world events with strong crypto-economic guarantees.",
+        "description": "Witnet permet à vos contrats intelligents de réagir aux événements du monde réel avec de fortes garanties crypto-économiques.",
         "buttons": {
-            "build": "Build with Witnet",
+            "build": "Construire avec witnet",
             "start_mining": {
-                "base": "Start mining {0}",
+                "base": "Commencez à miner {0}",
                 "wit": "wit"
             }
         }
     },
     "join_community": {
-        "text": "Questions? Join the {0} and {1} communities!"
+        "text": "Des questions ? Rejoignez la communautés {0} et {1}!"
     },
     "nav_bar": {
         "route": {
             "oracle": "oracle",
-            "token": "token",
-            "ecosystem": "ecosystem",
+            "token": "jeton",
+            "ecosystem": "écosystème",
             "blog": "blog"
         },
-        "social_image_alt": "Open Witnet's Github on new window"
+        "social_image_alt": "Ouvrez le Github de Witnet dans une nouvelle fenêtre"
     },
     "testimonials": {
         "testimonial_1": {
-            "text": "\"Witnet is a next generation crypto Oracle. You'll hear a lot more about it in 2021.\"",
-            "author": "Michael Arrington, Founder of TechCrunch"
+            "text": "« Witnet est une nouvelle génération de crypto Oracle. Vous en apprendrez beaucoup plus en 2021.»",
+            "author": "Michael Arrington, Fondateur de TechCrunch"
         },
         "testimonial_2": {
-            "text": "\"The oracle that truly decentralized blockchains and the Web3 deserve\"",
-            "author": "Luis Cuende, Co-Founder of Aragon"
+            "text": "« L'oracle qui a vraiment décentralisé et que le Web3 mérite»",
+            "author": "Luis Cuende, co-fondateur de d'Aragon"
         },
         "testimonial_3": {
-            "text": "\"Oracle price manipulation was a hot topic in 2020, causing many financial losses. We are confident that Witnet is able to withstand these issues and provide the security and decentralization we’re looking for\"",
-            "author": "Mark Tan, Co-Founder of RiveX"
+            "text": "« La manipulation des prix Oracle a été un sujet brûlant en 2020, causant de nombreuses pertes financières. Nous sommes convaincus que Witnet est en mesure de résister à ces problèmes et de fournir la sécurité et la décentralisation que nous recherchons\"",
+            "author": "Marque Tan, co-fondateur de RiveX"
         }
     },
     "wit_token": {
-        "title": "Incentivized by the wit token",
-        "text": "The Witnet decentralized oracle runs on its own blockchain and relies on the token for incentivization of independently run nodes that resolve the data requests and agree on the results.",
+        "title": "Incitée par le jeton wit",
+        "text": "L'oracle décentralisé Witnet fonctionne sur sa propre blockchain et s'appuie sur le jeton wit pour exécuter des nœuds indépendants qui résolvent les demandes de données et s'accordent sur les résultats.",
         "buttons": {
-            "tokenomics": "Tokenomics",
-            "sheikah": "Sheikah wallet",
-            "mining": "Start mining"
+            "tokenomics": "Tokénomiques",
+            "sheikah": "Portefeuille Sheikah",
+            "mining": "Commencez à miner"
         }
     }
 }
