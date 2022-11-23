@@ -1,6 +1,6 @@
 {
     "announcement": {
-        "tag": "ANNOUNCEMENT",
+        "tag": "Annoncement",
         "subtitle": "Witnet is now side-chanined to Ethereum",
         "button": "Learn how to use Witnet from a solidity contract"
     },
