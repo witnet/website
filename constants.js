@@ -42,6 +42,7 @@ export const urls = {
   integrateThroughProxy:
     'https://docs.witnet.io/smart-contracts/witnet-data-feeds/using-witnet-data-feeds#reading-multiple-currency-pairs-from-the-router',
   medium: 'https://medium.com/witnet',
+  mexc: 'https://www.mexc.com/exchange/WIT_USDT',
   mining: 'https://docs.witnet.io/node-operators/requirements',
   oracle: 'https://witnet.io/#oracle',
   priceFeeds: 'https://docs.witnet.io/smart-contracts/witnet-data-feeds',

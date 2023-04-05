@@ -181,7 +181,8 @@
             "tokenomics": "Tokenomics",
             "sheikah": "Sheikah wallet",
             "mining": "Start mining",
-            "buy": "Buy on Gate.io"
+            "buy_gate": "Buy on Gate.io",
+            "buy_mexc": "Buy on MEXC"
         }
     }
 }
