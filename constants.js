@@ -25,6 +25,7 @@ export const urls = {
     'https://witnet.notion.site/The-Witnet-Advocate-Program-f572baff6b1d49a69d4db785a924fc61',
   angelList: 'https://angel.co/company/witnet-foundation-1',
   blockExplorer: 'https://witnet.network/',
+  coin: '#coin',
   community: 'https://witnet.io/#community',
   dataFeedsExplorer: 'https://feeds.witnet.io',
   discord: 'https://discord.gg/X4uurfP',
@@ -43,8 +44,8 @@ export const urls = {
     'https://docs.witnet.io/smart-contracts/witnet-data-feeds/using-witnet-data-feeds#reading-multiple-currency-pairs-from-the-router',
   medium: 'https://medium.com/witnet',
   mexc: 'https://www.mexc.com/exchange/WIT_USDT',
-  mining: 'https://docs.witnet.io/node-operators/requirements',
-  oracle: 'https://witnet.io/#oracle',
+  mining: 'https://docs.witnet.io/node-operators/docker-quick-start-guide',
+  oracle: '#oracle',
   priceFeeds: 'https://docs.witnet.io/smart-contracts/witnet-data-feeds',
   randomness: 'https://docs.witnet.io/smart-contracts/witnet-randomness-oracle',
   reddit: 'https://reddit.com/r/witnet',
@@ -53,7 +54,8 @@ export const urls = {
   token: 'https://witnet.io/#coin',
   tokenomics:
     'https://medium.com/witnet/wit-witnet-blockchains-native-tokenomics-4559084073c5',
-  truffleBox: 'https://docs.witnet.io/try/use-from-ethereum/',
+  truffleBox:
+    'https://docs.witnet.io/smart-contracts/witnet-web-oracle/make-a-get-request',
   twitter: 'https://twitter.com/witnet_io',
   wallet: 'https://sheikah.app/',
   whitepaper: 'https://witnet.io/witnet-whitepaper.pdf',

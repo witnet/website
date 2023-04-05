@@ -7,17 +7,17 @@
       <p class="description">{{ $t('hero.description') }}</p>
       <Socials />
       <div class="buttons">
-        <a :href="urls.documentation" target="_blank">
-          <Button type="primary" :font-size="14">{{
-            $t('hero.buttons.build')
-          }}</Button>
-        </a>
         <a :href="urls.mining" target="_blank">
-          <Button class="card-button" type="secondary">
+          <Button type="primary">
             <i18n path="hero.buttons.start_mining.base">
               <span class="wit">{{ $t('hero.buttons.start_mining.wit') }}</span>
             </i18n>
           </Button>
+        </a>
+        <a :href="urls.coin">
+          <Button type="secondary" :font-size="14">{{
+            $t('hero.buttons.buy')
+          }}</Button>
         </a>
       </div>
     </div>

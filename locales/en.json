@@ -142,9 +142,10 @@
         "description": "Witnet enables your smart contracts to react to real world events with strong crypto-economic guarantees.",
         "buttons": {
             "build": "Build with Witnet",
+            "buy": "Buy $WIT",
             "start_mining": {
                 "base": "Start mining {0}",
-                "wit": "Wit"
+                "wit": "$WIT"
             }
         }
     },
@@ -175,7 +176,7 @@
         }
     },
     "wit_token": {
-        "title": "Incentivized by the WIT coin",
+        "title": "Incentivized by the $WIT coin",
         "text": "The Witnet decentralized oracle runs on its own blockchain and relies on the WIT coin for incentivization of independently run nodes that resolve the data requests and agree on the results.",
         "buttons": {
             "tokenomics": "Tokenomics",
