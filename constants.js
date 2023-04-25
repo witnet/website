@@ -13,7 +13,7 @@ export const languages = [
 ]
 
 export const footerSections = {
-  witnet: ['oracle', 'ecosystem', 'community', 'whitepaper'],
+  witnet: ['oracle', 'ecosystem', 'community', 'whitepaper', 'mediaKit'],
   ecosystem: ['fullNode', 'wallet', 'dataFeedsExplorer'],
   developers: ['documentation', 'priceFeeds', 'randomness', 'getPostRequest'],
   community: ['telegram', 'discord', 'twitter', 'reddit', 'youtube'],
@@ -32,6 +32,8 @@ export const urls = {
   documentation: 'https://docs.witnet.io/',
   ecosystem: 'https://witnet.io/#ecosystem',
   fullNode: 'https://docs.witnet.io/try/run-a-node/',
+  mediaKit:
+    'https://drive.google.com/drive/u/1/folders/1z9dSts64xyaIZqRvniMPDib7UWOE2P3z',
   gate: 'https://www.gate.io/trade/WIT_USDT',
   getPostRequest:
     'https://docs.witnet.io/smart-contracts/apis-and-http-get-post-oracle',
