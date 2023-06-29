@@ -2,12 +2,15 @@
   <div class="nav-container" :class="{ drop: isMenuVisible }">
     <nav class="navbar" :class="{ open: isMenuVisible }">
       <div class="menu-container">
-        <img
-          class="logo"
-          src="@/assets/images/witnet_logo.svg"
-          alt=""
-          aria-hidden="true"
-        />
+        <h1>
+          <a href="https://witnet.io/">
+            <img
+              class="logo"
+              src="@/assets/images/witnet_logo.svg"
+              alt="Witnet logo"
+            />
+          </a>
+        </h1>
         <label class="responsive-menu" @click="toggleMenu">
           <a class="target-burger" :class="{ visible: isMenuVisible }">
             <ul class="buns">
