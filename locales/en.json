@@ -44,6 +44,10 @@
                 "title": "witnet.live network monitor",
                 "content": "The witnet.live network monitor keeps tracks of the health of the Witnet network."
             },
+            "my_wit_wallet": {
+                "title": "myWitWallet",
+                "content": "myWitWallet allows you to send and receive Wit immediately. Bye bye synchronization!"
+            },
             "next": {
                 "title": "What will you build next?",
                 "content": "Do you have some exciting Witnet app in mind? Check out the Witnet Grant Program!"

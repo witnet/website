@@ -44,6 +44,10 @@
                 "title": "Monitor de red witnet.live",
                 "content": "El monitor de red witnet.live mantiene un seguimiento de la salud de la red de Witnet."
             },
+            "my_wit_wallet": {
+                "title": "myWitWallet",
+                "content": "myWitWallet te permite enviar y recibir Wit inmediatamente. ¡Adiós sincronización!"
+            },
             "next": {
                 "title": "Y tú, ¿qué vas a crear?",
                 "content": "¿Tienes en mente alguna aplicación basada en Witnet? Participa en el Witnet Grant Program!"

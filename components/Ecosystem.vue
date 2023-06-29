@@ -62,13 +62,13 @@ export default {
           border: false,
           content: this.$t('ecosystem.cards.data_feed_explorer.content'),
         },
-        // TODO: Add item when the witnet.live monitor is ready
-        // {
-        //   title: this.$t('ecosystem.cards.monitor.title'),
-        //   src: require('@/assets/images/network-monitor.svg'),
-        //   border: false,
-        //   content: this.$t('ecosystem.cards.monitor.content'),
-        // },
+        {
+          title: this.$t('ecosystem.cards.my_wit_wallet.title'),
+          src: require('@/assets/images/my-wit-wallet.svg'),
+          link: urls.myWitWallet,
+          border: false,
+          content: this.$t('ecosystem.cards.my_wit_wallet.content'),
+        },
         {
           title: this.$t('ecosystem.cards.next.title'),
           src: require('@/assets/images/question_mark.svg'),

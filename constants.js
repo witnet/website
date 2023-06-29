@@ -62,4 +62,5 @@ export const urls = {
   wallet: 'https://sheikah.app/',
   whitepaper: 'https://witnet.io/witnet-whitepaper.pdf',
   youtube: 'https://www.youtube.com/channel/UCCS143kLVAH7oHZKvNNNxKQ',
+  myWitWallet: 'https://mywitwallet.com/',
 }
