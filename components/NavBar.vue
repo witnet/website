@@ -7,7 +7,7 @@
             <img
               class="logo"
               src="@/assets/images/witnet_logo.svg"
-              alt="Witnet logo"
+              alt="Witnet oracle"
             />
           </a>
         </h1>
