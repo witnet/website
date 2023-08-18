@@ -116,7 +116,7 @@ export default {
     scss: ['~/assets/styles/main.scss', '~/assets/styles/colors.scss'],
   },
   // ...
-  modules: ['@nuxtjs/style-resources', '@nuxt/content', 'nuxt-i18n'],
+  modules: ['@nuxtjs/style-resources', 'nuxt-i18n'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: '~/plugins/vueSelect.js', ssr: false }],
