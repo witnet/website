@@ -196,6 +196,13 @@ export default {
           scale: 1.1,
           brightness: 1,
         },
+        {
+          title: 'SimpleSwap',
+          src: require('@/assets/images/partners/simple-swap.svg'),
+          link: 'https://simpleswap.io/',
+          scale: 1.5,
+          brightness: 1,
+        },
       ]
         // This sorting algorithm is far for perfect (somehow biased), but it simply does the job here
         .sort(() => 0.5 - Math.random())
