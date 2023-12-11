@@ -80,7 +80,7 @@
                 "title": "Comunidad",
                 "telegram": "Telegram",
                 "discord": "Discord",
-                "twitter": "Twitter",
+                "twitter": "X",
                 "reddit": "Reddit"
             },
             "developers": {
@@ -109,9 +109,9 @@
         "social": {
             "follow": {
                 "title": "Sigue el proyecto",
-                "content": "Mantente al día con las últimas noticias en Twitter.",
+                "content": "Mantente al día con las últimas noticias en X.",
                 "links": {
-                    "twitter": "> @witnet_io en Twitter"
+                    "twitter": "> @witnet_io en X"
                 }
             },
             "join_discussion": {

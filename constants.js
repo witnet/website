@@ -28,7 +28,7 @@ export const urls = {
   coin: '#coin',
   community: 'https://witnet.io/#community',
   dataFeedsExplorer: 'https://feeds.witnet.io',
-  discord: 'https://discord.gg/X4uurfP',
+  discord: 'https://discord.gg/witnet',
   documentation: 'https://docs.witnet.io/',
   ecosystem: 'https://witnet.io/#ecosystem',
   fullNode: 'https://docs.witnet.io/try/run-a-node/',
