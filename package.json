@@ -1,47 +1,34 @@
 {
-  "name": "new-website",
-  "version": "1.0.0",
-  "engines": {
-    "node": ">=16 <17"
-  },
+  "name": "witnet.io",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
-    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore --fix",
-    "lint": "yarn lint:js && yarn lint:style",
-    "test": "yarn jest"
-  },
-  "dependencies": {
-    "@nuxtjs/style-resources": "^1.0.0",
-    "core-js": "^3.8.3",
-    "nuxt": "^2.14.12",
-    "nuxt-i18n": "^6.20.2",
-    "sass": "^1.43.4",
-    "sass-loader": "^10",
-    "vue-select": "^3.11.2",
-    "webpack": "^5.64.1",
-    "lodash.snakecase": "^4.1.1"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "pnpm lint:js && pnpm lint:prettier",
+    "lintfix": "prettier --write --list-different . && pnpm lint:js --fix"
   },
   "devDependencies": {
-    "@nuxt/test-utils": "^0.2.2",
-    "@nuxtjs/eslint-config": "^5.0.0",
-    "@nuxtjs/eslint-module": "^3.0.2",
-    "@nuxtjs/stylelint-module": "^4.0.0",
-    "@nuxtjs/svg": "^0.1.12",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.18.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^9.1.0",
-    "jest": "^27.0.6",
-    "prettier": "^2.2.1",
-    "stylelint": "^13.9.0",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-standard": "^20.0.0"
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "nuxt": "^3.8.2",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "sass": "^1.69.5",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.3",
+    "vue": "^3.3.10",
+    "vue-i18n": "^9.8.0",
+    "vue-router": "^4.2.5"
   }
 }
