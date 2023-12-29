@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import svgLoader from 'vite-svg-loader'
+import { languageLocales } from './constants'
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
   postcss: {
@@ -18,24 +21,28 @@ export default defineNuxtConfig({
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
     },
-    locales: [
-      {
-        code: 'en-US',
-        iso: 'en-US',
-        name: 'English(US)',
-        file: 'en-US.json',
-      },
-      {
-        code: 'es-ES',
-        iso: 'es-ES',
-        name: 'Español',
-        file: 'es-ES.json',
-      },
-    ],
+    locales: Object.values(languageLocales),
   },
   css: ['~/assets/styles/tailwind.css'],
   components: true,
   vite: {
+    plugins: [
+      svgLoader({
+        svgoConfig: {
+          plugins: [
+            {
+              name: 'preset-default',
+              params: {
+                overrides: {
+                  removeViewBox: false,
+                  cleanupIds: false,
+                },
+              },
+            },
+          ],
+        },
+      }),
+    ],
     css: {
       preprocessorOptions: {
         scss: {
