@@ -20,3 +20,12 @@ export interface LanguageDictionary {
   [localeCodes.en]: Locale
   [localeCodes.es]: Locale
 }
+
+export type TutorialLink = {
+  name: string
+  url: string
+}
+export type TutorialList = {
+  title: string
+  tutorialLinks: Array<TutorialLink>
+}
