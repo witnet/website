@@ -17,7 +17,7 @@
     "description": "Secure the network, earn rewards. Witnet 2.0 is unstoppable."
   },
   "build-section": {
-    "title": "Why is Witnet great for building?",
+    "title": "Build with Witnet",
     "title-1": "Easy Access to Real-World Data",
     "description-1": "Witnet provides a straightforward way for smart contracts to interact with external data sources. This is crucial for applications that need to process real-world information, like prices, weather reports, or the results of events.",
     "title-2": "Decentralization and Security",
@@ -53,5 +53,30 @@
     "title": "Newsletter",
     "subtitle": "Stay up to date",
     "action": "Subscribe"
+  },
+  "tutorials": {
+    "title": "Tutorials",
+    "description": "These tutorials are designed to empower developers with the tools and knowledge needed to harness Witnet's decentralized oracle network for diverse blockchain applications.",
+    "web": {
+      "title": "Web",
+      "tutorial-1": "Http Requests",
+      "tutorial-2": "GraphQL",
+      "tutorial-3": "Dynamic Requests",
+      "tutorial-4": "Api Reference"
+    },
+    "price": {
+      "title": "Price",
+      "tutorial-1": "Price Feeds Router",
+      "tutorial-2": "Reading Price Pairs",
+      "tutorial-3": "Api Reference",
+      "tutorial-4": "Multi-chain Addresses"
+    },
+    "randomness": {
+      "title": "Randomness",
+      "tutorial-1": "Generating RNG",
+      "tutorial-2": "Low-level Requests",
+      "tutorial-3": "Solidity API",
+      "tutorial-4": "Multi-chain Addresses"
+    }
   }
 }
