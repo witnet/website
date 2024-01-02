@@ -10,6 +10,12 @@ export type Locale = {
   file: string
 }
 
+export enum ButtonType {
+  primary = 'primary',
+  secondary = 'secondary',
+  disabled = 'disabled',
+}
+
 export interface LanguageDictionary {
   [localeCodes.en]: Locale
   [localeCodes.es]: Locale

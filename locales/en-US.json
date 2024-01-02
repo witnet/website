@@ -2,5 +2,10 @@
   "title": "Witnet 2.0 en-US",
   "buy": "Buy",
   "stake": "Stake",
-  "build": "Build"
+  "build": "Build",
+  "hero": {
+    "title": "The most powerful oracle, provably",
+    "description": "Enjoy Smart, Neutral and Secure Data",
+    "action": "Learn"
+  }
 }
