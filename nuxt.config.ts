@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     locales: Object.values(languageLocales),
   },
   css: ['~/assets/styles/tailwind.css'],
-  components: true,
+  components: [{ path: '~/components', pathPrefix: false }],
   vite: {
     plugins: [
       svgLoader({
