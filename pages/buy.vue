@@ -1,1 +1,6 @@
-<template><h2>Buy</h2></template>
+<template>
+  <div>
+    <BuyWit />
+    <StoreWit />
+  </div>
+</template>

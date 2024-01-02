@@ -78,5 +78,23 @@
       "tutorial-3": "Solidity API",
       "tutorial-4": "Multi-chain Addresses"
     }
+  },
+  "buy-wit": {
+    "title": "Buy $WIT",
+    "description": "$WIT, the native coin of Witnet, is available on trusted and well-known crypto exchanges. By acquiring and staking $WIT, you become a valuable part of the Witnet Community, contributing to the security, growth, and success of the decentralized future with Witnet."
+  },
+  "store-wit": {
+    "title": "Secure the Your $WIT",
+    "description": "Explore our wallet offerings for seamless management and transfer of your WIT coins."
+  },
+  "sheikah": {
+    "title": "Sheikah",
+    "description": "Choose Sheikah for a privacy-focused experience on Windows, macOS, and GNU/Linux, ideal for users who prioritize security and user-friendly interfaces.",
+    "action": "Download Sheikah"
+  },
+  "my-wit-wallet": {
+    "title": "myWitWallet",
+    "description": "Opt for myWitWallet for instant transactions without the wait for synchronization, perfect for quick and easy sending and receiving of WIT.",
+    "action": "Download myWitWallet"
   }
 }

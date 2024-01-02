@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/no-v-html -->
 <template>
   <vSelect
     v-model="language"
@@ -9,18 +8,17 @@
     class="language-selector"
   >
     <template #selected-option-container="{ option }">
-      <span
-        class="vs__selected"
-        v-html="iconMap[(option as Option).label]"
-      ></span>
+      <span class="vs__selected">
+        <component :is="iconMap[(option as Option).label]" />
+      </span>
     </template>
 
     <template #option="option">
       <div class="option">
-        <span
+        <component
+          :is="iconMap[(option as Option).label]"
           class="dropdown-items"
-          v-html="iconMap[(option as Option).label]"
-        ></span>
+        />
         <span>{{ languageLocales[(option as Option).label].name }}</span>
       </div>
     </template>
@@ -30,8 +28,8 @@
 import vSelect from 'vue-select'
 import { languageLocales } from '@/constants'
 import { localeCodes, type Locale } from '@/types'
-import esESIcon from '@/assets/svg/sp-flags.svg?raw'
-import enUSIcon from '@/assets/svg/flag-eeuu.svg?raw'
+import esESIcon from '@/assets/svg/sp-flags.svg?component'
+import enUSIcon from '@/assets/svg/flag-eeuu.svg?component'
 import 'vue-select/dist/vue-select.css'
 const { locale, setLocale } = useI18n()
 
