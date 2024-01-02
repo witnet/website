@@ -12,6 +12,11 @@ export const URLS: Record<string, string> = {
   grantProgram:
     'https://witnet.notion.site/The-Witnet-Grant-Program-0e6bc5ddbe4a4bf8a22c262dedfe268f',
   newsletter: 'http://eepurl.com/iDxYzs',
+  bitmart: '',
+  changelly: '',
+  gateio: '',
+  mexc: '',
+  simpleSwap: '',
 }
 
 export const languageLocales: LanguageDictionary = {
