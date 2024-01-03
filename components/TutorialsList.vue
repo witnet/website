@@ -11,7 +11,7 @@ import type { TutorialList } from '@/types'
 const { t } = useI18n()
 
 // TODO: add urls
-const tutorials: Ref<Array<TutorialList>> = ref([
+const tutorials: Array<TutorialList> = [
   {
     title: t('tutorials.web.title'),
     tutorialLinks: [
@@ -75,5 +75,5 @@ const tutorials: Ref<Array<TutorialList>> = ref([
       },
     ],
   },
-])
+]
 </script>

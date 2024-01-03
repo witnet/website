@@ -19,7 +19,7 @@ type Exchange = {
   url: string
   icon: FunctionalComponent
 }
-const exchanges: Ref<Array<Exchange>> = shallowRef([
+const exchanges: Array<Exchange> = [
   {
     name: 'Gate.io',
     url: URLS.bitmart,
@@ -45,5 +45,5 @@ const exchanges: Ref<Array<Exchange>> = shallowRef([
     url: URLS.simpleSwap,
     icon: bitmart,
   },
-])
+]
 </script>

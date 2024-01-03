@@ -20,7 +20,7 @@ type Explorer = {
   description: string
   url: string
 }
-const explorers: Ref<Array<Explorer>> = ref([
+const explorers: Array<Explorer> = [
   {
     title: t('explore.explorer-1.title'),
     description: t('explore.explorer-1.description'),
@@ -31,5 +31,5 @@ const explorers: Ref<Array<Explorer>> = ref([
     description: t('explore.explorer-2.description'),
     url: URLS.blockExplorer,
   },
-])
+]
 </script>

@@ -24,7 +24,7 @@ type WalletLink = {
   description: string
   icon: FunctionalComponent
 }
-const wallets: Ref<Array<WalletLink>> = shallowRef([
+const wallets: Array<WalletLink> = [
   {
     name: 'Sheikah',
     title: t('sheikah.title'),
@@ -39,5 +39,5 @@ const wallets: Ref<Array<WalletLink>> = shallowRef([
     url: URLS.mexc,
     icon,
   },
-])
+]
 </script>

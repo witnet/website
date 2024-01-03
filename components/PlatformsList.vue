@@ -20,7 +20,7 @@ type Platform = {
   url: string
   icon: FunctionalComponent
 }
-const platforms: Ref<Array<Platform>> = shallowRef([
+const platforms: Array<Platform> = [
   {
     name: 'Docker',
     url: URLS.dockerNode,
@@ -46,5 +46,5 @@ const platforms: Ref<Array<Platform>> = shallowRef([
     url: URLS.rasberrypiNode,
     icon,
   },
-])
+]
 </script>
