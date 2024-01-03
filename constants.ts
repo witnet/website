@@ -17,6 +17,12 @@ export const URLS: Record<string, string> = {
   gateio: '',
   mexc: '',
   simpleSwap: '',
+  stakeTutorial: '',
+  dockerNode: '',
+  windowsNode: '',
+  macosNode: '',
+  linuxNode: '',
+  rasberrypiNode: '',
 }
 
 export const languageLocales: LanguageDictionary = {

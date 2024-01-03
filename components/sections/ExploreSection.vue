@@ -2,7 +2,7 @@
   <div>
     <h2>{{ $t('explore.title') }}</h2>
     <p>{{ $t('explore.description') }}</p>
-    <ExplorerCard
+    <ExplorerLink
       v-for="explorer in explorers"
       :key="explorer.title"
       :title="explorer.title"

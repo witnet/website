@@ -1,7 +1,7 @@
 <template>
   <div class="landing-container">
     <HeroSection />
-    <WhatIsWitnet />
+    <WhatIsWitnetSection />
     <CoinSection />
     <BuildSection />
     <ExploreSection />
