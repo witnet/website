@@ -2,28 +2,14 @@
   <button class="btn" :class="[type]">
     <div class="btn-content">
       <slot> </slot>
-      <svg
-        class="arrow-right"
-        width="25"
-        height="25"
-        viewBox="0 0 25 25"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          class="arrow"
-          d="M18.6192 6.13623H11.5485M18.6192 6.13623L18.6188 13.2073M18.6192 6.13623L5.89124 18.8642"
-          stroke="white"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
+      <ArrowIcon />
     </div>
   </button>
 </template>
 
 <script setup>
 import { ButtonType } from '@/types'
+import ArrowIcon from '@/assets/svg/arrow.svg?component'
 
 defineProps({
   type: {
