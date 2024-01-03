@@ -6,7 +6,9 @@
     <input id="side-menu" ref="checkbox" class="checkbox" type="checkbox" />
     <nav class="navbar-tabs">
       <ul class="navbar-links animated zoomIn">
-        <div class="close-menu-container" @click="closeMenu"><CloseNav /></div>
+        <div class="close-menu-container" @click="closeMenu">
+          <CloseNavIcon />
+        </div>
         <li class="yellow">
           <NuxtLink class="link yellow" to="/build" rel="about">{{
             $t('build')
@@ -28,7 +30,7 @@
       </ul>
     </nav>
     <label ref="menu" for="side-menu" class="hamburguer-container">
-      <Hamburger class="hamburguer" />
+      <HamburgerIcon class="hamburguer" />
     </label>
   </header>
 </template>
@@ -36,8 +38,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import WitnetLogo from '@/assets/svg/witnet-logo.svg'
-import Hamburger from '@/assets/svg/hamburguer.svg'
-import CloseNav from '@/assets/svg/close-nav.svg'
+import HamburgerIcon from '@/assets/svg/hamburguer.svg'
+import CloseNavIcon from '@/assets/svg/close-nav.svg'
 const menu = ref()
 const checkbox = ref()
 const route = useRoute()

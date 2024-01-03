@@ -16,7 +16,7 @@ type Reason = {
   title: string
   description: string
 }
-const reasons: Ref<Array<Reason>> = ref([
+const reasons: Array<Reason> = [
   {
     title: t('build-section.title-1'),
     description: t('build-section.description-1'),
@@ -41,5 +41,5 @@ const reasons: Ref<Array<Reason>> = ref([
     title: t('build-section.title-6'),
     description: t('build-section.description-6'),
   },
-])
+]
 </script>
