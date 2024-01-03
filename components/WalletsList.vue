@@ -1,6 +1,6 @@
 <template>
   <div>
-    <WalletCard
+    <WalletLink
       v-for="wallet in wallets"
       :key="wallet.name"
       :title="wallet.title"
@@ -12,7 +12,7 @@
 </template>
 <script setup lang="ts">
 import type { FunctionalComponent } from 'vue'
-import bitmart from '@/assets/svg/flag-eeuu.svg?component'
+import icon from '@/assets/svg/flag-eeuu.svg?component'
 import { URLS } from '@/constants'
 
 const { t } = useI18n()
@@ -30,14 +30,14 @@ const wallets: Ref<Array<WalletLink>> = shallowRef([
     title: t('sheikah.title'),
     description: t('sheikah.description'),
     url: URLS.bitmart,
-    icon: bitmart,
+    icon,
   },
   {
     name: 'myWitWallet',
     title: t('my-wit-wallet.title'),
     description: t('my-wit-wallet.description'),
     url: URLS.mexc,
-    icon: bitmart,
+    icon,
   },
 ])
 </script>

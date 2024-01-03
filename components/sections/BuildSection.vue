@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>{{ $t('build-section.title') }}</h2>
-    <BuildCard
+    <BuildWithWitnet
       v-for="reason in reasons"
       :key="reason.title"
       :title="reason.title"

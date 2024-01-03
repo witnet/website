@@ -96,5 +96,14 @@
     "title": "myWitWallet",
     "description": "Opt for myWitWallet for instant transactions without the wait for synchronization, perfect for quick and easy sending and receiving of WIT.",
     "action": "Download myWitWallet"
+  },
+  "stake-page": {
+    "title": "Stake! Secure the Network and Earn Rewards!",
+    "description": "Secure the network, earn rewards, and be part of a censorship-resistant oracle. Witnet 2.0 is unstoppable.",
+    "action": "Run a Witnet Node and Stake on {0}",
+    "action-description": "To participate in the Witnet network, run a Witnet node and stake some $WIT. Stakers can earn rewards while contributing to data retrieval, verification, and network security!",
+    "available-platforms-title": "Need Another Version?",
+    "action-2": "Get Started",
+    "action-2-description": "Start Staking Now and earn rewards!"
   }
 }

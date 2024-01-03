@@ -1,6 +1,109 @@
 {
   "title": "Witnet 2.0 es-ES",
-  "buy": "Comprar",
+  "buy": "Buy",
   "stake": "Stake",
-  "build": "Con"
+  "build": "Build",
+  "hero": {
+    "title": "The most powerful oracle, provably",
+    "description": "Enjoy Smart, Neutral and Secure Data",
+    "action": "Learn"
+  },
+  "what-is-witnet": {
+    "title": "Witnet 2.0, the Oracle for a Censorship-Resistant Future",
+    "description": "Without a dependable oracle, smart contracts are susceptible to security breaches, manipulation, and financial losses. Witnet employs advanced cryptographic and Proof of Stake (PoS) economic mechanisms, ensuring that your smart contracts receive secure and trustworthy data inputs."
+  },
+  "coin": {
+    "title": "Stake! Secure the Network, Earn Rewards!",
+    "description": "Secure the network, earn rewards. Witnet 2.0 is unstoppable."
+  },
+  "build-section": {
+    "title": "Build with Witnet",
+    "title-1": "Easy Access to Real-World Data",
+    "description-1": "Witnet provides a straightforward way for smart contracts to interact with external data sources. This is crucial for applications that need to process real-world information, like prices, weather reports, or the results of events.",
+    "title-2": "Decentralization and Security",
+    "description-2": "The decentralized nature of Witnet ensures that data is not in control of a single entity, reducing the risks of manipulation or single points of failure. This increases the security and reliability of the applications built on it.",
+    "title-3": "Blockchain Agnosticism",
+    "description-3": "Witnet’s compatibility with multiple blockchain platforms means that builders are not restricted to a single blockchain. This allows for the creation of cross-chain applications and services.",
+    "title-4": "Flexibility in Data Sources",
+    "description-4": "Builders can source data from a variety of external sources, giving them the flexibility to choose the most relevant and reliable data for their applications.",
+    "title-5": "Token Incentives for Data Accuracy",
+    "description-5": "The tokenomics of Witnet incentivize nodes to provide accurate data, as they are rewarded for their honest services and penalized for dishonesty. This mechanism promotes a high level of data integrity.",
+    "title-6": "Community and Support",
+    "description-6": "Builders benefit from the community and resources provided by Witnet, including documentation, developer tools, and support from other community members."
+  },
+  "explore": {
+    "title": "Explore the Power of Witnet",
+    "description": "Dive into datasets and detailed insights by navigating through transparent data effortlessly.",
+    "explorer-1": {
+      "title": "Data Feeds",
+      "description": "The Data Feeds Explorer showcases a range of public data feeds, freely accessible to all developers and maintained by the Witnet Foundation on multiple blockchains."
+    },
+    "explorer-2": {
+      "title": "Block Explorer",
+      "description": "The witnet.network block explorer gives you a transparent view into all the transactions and data requests in the Witnet blockchain."
+    }
+  },
+  "community": {
+    "title": "Community",
+    "description": "From developers to miners and enthusiasts, the Witnet community prides itself on always being welcoming, discussing the things that really matter, and ensuring that Witnet plays a key role in the foundations of Web3.",
+    "advocate-program": "Advocate program",
+    "grant-program": "Grant program"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "subtitle": "Stay up to date",
+    "action": "Subscribe"
+  },
+  "tutorials": {
+    "title": "Tutorials",
+    "description": "These tutorials are designed to empower developers with the tools and knowledge needed to harness Witnet's decentralized oracle network for diverse blockchain applications.",
+    "web": {
+      "title": "Web",
+      "tutorial-1": "Http Requests",
+      "tutorial-2": "GraphQL",
+      "tutorial-3": "Dynamic Requests",
+      "tutorial-4": "Api Reference"
+    },
+    "price": {
+      "title": "Price",
+      "tutorial-1": "Price Feeds Router",
+      "tutorial-2": "Reading Price Pairs",
+      "tutorial-3": "Api Reference",
+      "tutorial-4": "Multi-chain Addresses"
+    },
+    "randomness": {
+      "title": "Randomness",
+      "tutorial-1": "Generating RNG",
+      "tutorial-2": "Low-level Requests",
+      "tutorial-3": "Solidity API",
+      "tutorial-4": "Multi-chain Addresses"
+    }
+  },
+  "buy-wit": {
+    "title": "Buy $WIT",
+    "description": "$WIT, the native coin of Witnet, is available on trusted and well-known crypto exchanges. By acquiring and staking $WIT, you become a valuable part of the Witnet Community, contributing to the security, growth, and success of the decentralized future with Witnet."
+  },
+  "store-wit": {
+    "title": "Secure the Your $WIT",
+    "description": "Explore our wallet offerings for seamless management and transfer of your WIT coins."
+  },
+  "sheikah": {
+    "title": "Sheikah",
+    "description": "Choose Sheikah for a privacy-focused experience on Windows, macOS, and GNU/Linux, ideal for users who prioritize security and user-friendly interfaces.",
+    "action": "Download Sheikah"
+  },
+  "my-wit-wallet": {
+    "title": "myWitWallet",
+    "description": "Opt for myWitWallet for instant transactions without the wait for synchronization, perfect for quick and easy sending and receiving of WIT.",
+    "action": "Download myWitWallet"
+  },
+  "stake-page": {
+    "title": "Stake! Secure the Network and Earn Rewards!",
+    "description": "Secure the network, earn rewards, and be part of a censorship-resistant oracle. Witnet 2.0 is unstoppable.",
+    "action": "Run a Witnet Node and Stake on {0}",
+    "action-description": "To participate in the Witnet network, run a Witnet node and stake some $WIT. Stakers can earn rewards while contributing to data retrieval, verification, and network security!",
+    "available-platforms-title": "Need Another Version?",
+    "action-2": "Get Started",
+    "action-2-description": "Start Staking Now and earn rewards!"
+  }
 }
