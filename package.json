@@ -17,7 +17,7 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@types/vue-select": "^3.16.8",
-    "@typescript-eslint/parser": "^6.16.0",
+    "@typescript-eslint/parser": "^6.17.0",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
@@ -25,11 +25,11 @@
     "nuxt": "^3.9.0",
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",
-    "sass": "^1.69.5",
+    "sass": "^1.69.7",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.3.3",
-    "vite-svg-loader": "^4.0.0",
-    "vue": "^3.3.13",
+    "vite-svg-loader": "^5.1.0",
+    "vue": "^3.4.5",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
