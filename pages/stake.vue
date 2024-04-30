@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ $t('stake-page.title') }}</h2>
+    <h2 class="title-h2">{{ $t('stake-page.title') }}</h2>
     <p>{{ $t('stake-page.description') }}</p>
     <CustomButton>{{ $t('stake-page.action') }}</CustomButton>
     <p>{{ $t('stake-page.action-description') }}</p>

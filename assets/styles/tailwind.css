@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* Titles */
+  .title-h1 {
+    @apply font-title text-4xl;
+  }
+  .title-h2 {
+    @apply font-title text-2xl;
+  }
+  /* Button */
+  .btn {
+    @apply w-full py-sm px-md cursor-pointer;
+  }
+  .btn-primary {
+    @apply font-semibold rounded-full shadow-md bg-wit-blue-500 hover:bg-wit-blue-400 text-black-950 focus:outline-none focus:ring focus:ring-wit-blue-500 focus:ring-opacity-80;
+  }
+  .btn-secondary {
+    @apply font-semibold rounded-full shadow-md bg-black-950 hover:bg-black-900 text-white-50 focus:outline-none focus:ring focus:ring-black-500 focus:ring-opacity-80 border-2;
+  }
+  .btn-disabled {
+    @apply cursor-not-allowed font-semibold rounded-full shadow-md bg-wit-blue-500 text-black-950 bg-opacity-80;
+  }
+  /* Navbar */
+}

@@ -35,7 +35,7 @@ export const languageLocales: LanguageDictionary = {
   [localeCodes.es]: {
     code: 'es-ES',
     iso: 'es-ES',
-    name: 'Español',
+    name: 'Español(ES)',
     file: 'es-ES.json',
   },
 }

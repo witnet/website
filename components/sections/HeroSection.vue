@@ -1,7 +1,7 @@
 <template>
   <div class="hero-container">
     <SocialLinks />
-    <h1>{{ $t('hero.title') }}</h1>
+    <h1 class="title-h1">{{ $t('hero.title') }}</h1>
     <p>{{ $t('hero.description') }}</p>
     <CustomButton :type="ButtonType.primary">
       {{ $t('hero.action') }}

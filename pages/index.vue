@@ -1,5 +1,5 @@
 <template>
-  <div class="landing-container">
+  <div class="grid grid-flow-row gap-xl">
     <HeroSection />
     <WhatIsWitnetSection />
     <CoinSection />
@@ -9,9 +9,3 @@
     <NewsletterSection />
   </div>
 </template>
-<style lang="scss">
-.landing-container {
-  display: grid;
-  grid-gap: 4rem;
-}
-</style>
