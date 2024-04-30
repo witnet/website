@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ $t('what-is-witnet.title') }}</h2>
+    <h2 class="title-h2">{{ $t('what-is-witnet.title') }}</h2>
     <p>{{ $t('what-is-witnet.description') }}</p>
   </div>
 </template>

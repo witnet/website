@@ -6,10 +6,14 @@
     :filterable="false"
     :searchable="false"
     class="language-selector"
+    :class="{ flag: flag }"
   >
     <template #selected-option-container="{ option }">
-      <span class="vs__selected">
+      <span v-if="flag" class="vs__selected">
         <component :is="iconMap[(option as Option).label]" />
+      </span>
+      <span v-else class="vs__selected">
+        {{ languageLocales[(option as Option).label].name }}
       </span>
     </template>
 
@@ -17,6 +21,7 @@
       <div class="option">
         <component
           :is="iconMap[(option as Option).label]"
+          v-if="flag"
           class="dropdown-items"
         />
         <span>{{ languageLocales[(option as Option).label].name }}</span>
@@ -32,6 +37,13 @@ import esESIcon from '@/assets/svg/sp-flags.svg?component'
 import enUSIcon from '@/assets/svg/flag-eeuu.svg?component'
 import 'vue-select/dist/vue-select.css'
 const { locale, setLocale } = useI18n()
+
+defineProps({
+  flag: {
+    type: Boolean,
+    default: false,
+  },
+})
 
 type Option = {
   label: localeCodes
@@ -89,7 +101,14 @@ const iconMap: Dictionary = computed(() => {
   .vs__dropdown-menu {
     width: 80px;
     top: -90px;
-    left: -110px;
+    left: -16px;
+  }
+  &.flag {
+    .vs__dropdown-menu {
+      width: 80px;
+      top: -90px;
+      left: -110px;
+    }
   }
   .vs__open-indicator {
     font-size: 8px;
@@ -130,6 +149,7 @@ const iconMap: Dictionary = computed(() => {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 16px;
   }
   &:hover {
     .vs__selected {

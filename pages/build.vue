@@ -1,5 +1,5 @@
 <template>
-  <div class="build-content">
+  <div class="grid gap-xl">
     <BuildSection />
     <div>
       <h3>{{ $t('tutorials.title') }}</h3>
@@ -8,9 +8,3 @@
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-.build-content {
-  display: grid;
-  grid-gap: 2rem;
-}
-</style>

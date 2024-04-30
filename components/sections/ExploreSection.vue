@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ $t('explore.title') }}</h2>
+    <h2 class="title-h2">{{ $t('explore.title') }}</h2>
     <p>{{ $t('explore.description') }}</p>
     <ExplorerLink
       v-for="explorer in explorers"

@@ -159,7 +159,7 @@ watch(
       align-items: center;
     }
     .yellow {
-      background-color: $green;
+      background-color: $blue;
     }
     .navbar-links {
       padding: 0;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ $t('build-section.title') }}</h2>
+    <h2 class="title-h2">{{ $t('build-section.title') }}</h2>
     <BuildWithWitnet
       v-for="reason in reasons"
       :key="reason.title"
