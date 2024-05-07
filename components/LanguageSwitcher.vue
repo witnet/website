@@ -54,7 +54,7 @@ interface Dictionary {
 
 const language = computed({
   get: () => locale.value,
-  set: (value) => {
+  set: (value: any) => {
     setLocale(value)
   },
 })
