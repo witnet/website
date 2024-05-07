@@ -29,3 +29,19 @@ export type TutorialList = {
   title: string
   tutorialLinks: Array<TutorialLink>
 }
+
+export enum ThemeKey {
+  light = 'light',
+  dark = 'dark',
+}
+
+export interface Themes {
+  [ThemeKey.dark]: {
+    icon: string
+    key: string
+  }
+  [ThemeKey.light]: {
+    icon: string
+    key: string
+  }
+}
