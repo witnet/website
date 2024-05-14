@@ -4,15 +4,13 @@
   </a>
 </template>
 <script setup lang="ts">
-import type { PropType } from 'vue'
-
 defineProps({
   url: {
     type: String,
     required: true,
   },
   icon: {
-    type: Object as PropType<String>,
+    type: Object,
     required: true,
   },
 })
