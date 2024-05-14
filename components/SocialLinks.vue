@@ -7,9 +7,9 @@
   </div>
 </template>
 <script setup lang="ts">
-import Twitter from '@/assets/svg/socials/twitter.svg'
-import Telegram from '@/assets/svg/socials/telegram.svg'
-import Discord from '@/assets/svg/socials/discord.svg'
-import Github from '@/assets/svg/socials/github.svg'
+import Twitter from '@/assets/svg/socials/twitter.svg?component'
+import Telegram from '@/assets/svg/socials/telegram.svg?component'
+import Discord from '@/assets/svg/socials/discord.svg?component'
+import Github from '@/assets/svg/socials/github.svg?component'
 import { URLS } from '@/constants'
 </script>

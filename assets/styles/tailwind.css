@@ -24,4 +24,10 @@
     @apply cursor-not-allowed font-semibold rounded-full shadow-md bg-wit-blue-500 text-black-950 bg-opacity-80;
   }
   /* Navbar */
+  .navbar-links {
+    @apply bg-black-950;
+  }
+  .nav-link {
+    @apply text-white-50 hover:text-gray-500;
+  }
 }

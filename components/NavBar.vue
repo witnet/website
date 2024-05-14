@@ -1,30 +1,18 @@
 <template>
   <header class="navbar">
-    <NuxtLink class="logo-link" to="/" rel="home"
-      ><WitnetLogo class="logo"
-    /></NuxtLink>
+    <div class="logo-link">
+      <slot class="logo-link" name="logo"></slot>
+    </div>
     <input id="side-menu" ref="checkbox" class="checkbox" type="checkbox" />
     <nav class="navbar-tabs">
       <ul class="navbar-links animated zoomIn">
         <div class="close-menu-container" @click="closeMenu">
           <CloseNavIcon />
         </div>
-        <li class="yellow">
-          <NuxtLink class="link yellow" to="/build" rel="about">{{
-            $t('build')
-          }}</NuxtLink>
+        <li v-for="link in navLinks" :key="link.key" class="nav-link">
+          <slot :name="link.key" />
         </li>
-        <li>
-          <NuxtLink class="link" to="/buy" rel="contact">{{
-            $t('buy')
-          }}</NuxtLink>
-        </li>
-        <li class="yellow">
-          <NuxtLink class="link" to="/stake" rel="contact">{{
-            $t('stake')
-          }}</NuxtLink>
-        </li>
-        <li class="link language-select">
+        <li class="nav-link language-select">
           <LanguageSwitcher />
         </li>
       </ul>
@@ -35,15 +23,21 @@
   </header>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup generic="T extends any">
 import { ref } from 'vue'
-import WitnetLogo from '@/assets/svg/witnet-logo.svg'
-import HamburgerIcon from '@/assets/svg/hamburguer.svg'
-import CloseNavIcon from '@/assets/svg/close-nav.svg'
+import HamburgerIcon from '@/assets/svg/hamburguer.svg?component'
+import CloseNavIcon from '@/assets/svg/close-nav.svg?component'
 const menu = ref()
 const checkbox = ref()
 const route = useRoute()
 const routePath = computed(() => route.path)
+
+defineProps({
+  navLinks: {
+    type: Object as PropType<Array<{ key: string }>>,
+    required: true,
+  },
+})
 
 function closeMenu() {
   menu.value.click()
@@ -60,20 +54,23 @@ watch(
 )
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .navbar {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   top: -16px;
   z-index: 500;
+
   .logo-link {
-    color: $white;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .logo {
+    a {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    svg {
       width: 200px;
       height: auto;
     }
@@ -89,17 +86,13 @@ watch(
     grid-template-columns: repeat(4, max-content);
     align-items: flex-start;
     justify-content: space-between;
-    .link {
+    .nav-link {
       padding: 0 16px;
       text-decoration: none;
       font-size: 16px;
       text-decoration: none;
       width: max-content;
       display: block;
-      color: $white;
-      &:hover {
-        color: $grey;
-      }
       &.language-select {
         padding: 16px;
         justify-self: flex-end;
@@ -158,9 +151,6 @@ watch(
       justify-content: center;
       align-items: center;
     }
-    .yellow {
-      background-color: $blue;
-    }
     .navbar-links {
       padding: 0;
       display: grid;
@@ -173,8 +163,7 @@ watch(
       left: 0;
       bottom: 0;
       gap: 0;
-      background-color: $black;
-      .link {
+      .nav-link {
         padding: 8px 16px 8px 16px;
         width: 100%;
         &.language-select {

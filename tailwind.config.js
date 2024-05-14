@@ -12,10 +12,8 @@ export default {
   safelist: ['btn-primary', 'btn-secondary', 'btn-disabled'],
   theme: {
     screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      sm: { min: '0px', max: '706px' },
+      md: '706px',
     },
     extend: {
       fontFamily: {
