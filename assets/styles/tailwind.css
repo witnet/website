@@ -5,10 +5,10 @@
 @layer components {
   /* Titles */
   .title-h1 {
-    @apply font-title text-4xl;
+    @apply font-title text-7xl;
   }
   .title-h2 {
-    @apply font-title text-2xl;
+    @apply font-normal text-xl;
   }
   /* Button */
   .btn {

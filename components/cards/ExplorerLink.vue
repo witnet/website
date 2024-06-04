@@ -1,9 +1,11 @@
 <template>
-  <a :href="url" target="_blank">
-    <h3>{{ title }}</h3>
+  <div class="border rounded-lg px-xl py-md m-sm">
+    <h3 class="title-h2">{{ title }}</h3>
+    <hr class="hr my-md">
     <p>{{ description }}</p>
-  </a>
+  </div>
 </template>
+
 <script setup lang="ts">
 defineProps({
   title: {
@@ -14,9 +16,26 @@ defineProps({
     type: String,
     required: true,
   },
-  url: {
-    type: String,
-    required: true,
-  },
 })
 </script>
+
+<style scoped>
+.title-h2 {
+  font-weight: bold;
+}
+
+/* TODO */
+.border {
+  border: 1px solid black;
+}
+
+/* TODO */
+.rounded-lg {
+  border-radius: 1rem;
+}
+.hr {
+  height: 4px;
+  background-color: black;  /* Modern Browsers */
+
+}
+</style>
