@@ -1,5 +1,5 @@
 <template>
-  <button class="btn" :class="`btn-${type}`">
+  <button class="btn w-fit px-xl py-md" :class="`btn-${type}`">
     <slot> </slot>
   </button>
 </template>
@@ -17,3 +17,10 @@ defineProps({
   },
 })
 </script>
+
+<style scoped>
+.btn {
+  font-size: 1rem;
+  box-shadow: 3px 7px 0px rgb(0, 0, 0);
+}
+</style>

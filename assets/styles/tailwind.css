@@ -5,11 +5,40 @@
 @layer components {
   /* Titles */
   .title-h1 {
-    @apply font-title text-4xl;
+    @apply font-title text-7xl;
+    font-weight: 600;
+    /* line-height: 1; */
+    line-height: 0.9;
+    color: #232323;
   }
   .title-h2 {
-    @apply font-title text-2xl;
+    @apply font-title text-5xl;
+    font-weight: 600;
+    line-height: 1;
+    color: #232323;
   }
+
+
+  .title-h3 {
+    @apply font-title text-5xl;
+    font-weight: 600;
+    line-height: 1;
+    color: #232323;
+  }
+
+  .title-h4 {
+    @apply font-title text-2xl;
+    font-weight: 600;
+    line-height: 1;
+    color: #232323;
+  }
+
+  .text {
+    @apply text-lg;
+    line-height: 1;
+    color: #333;
+  }
+  
   /* Button */
   .btn {
     @apply w-full py-sm px-md cursor-pointer;
@@ -28,6 +57,7 @@
     @apply bg-black-950;
   }
   .nav-link {
-    @apply text-white-50 hover:text-gray-500;
+    @apply text-black-950 hover:text-gray-500;
+    background: white;
   }
 }

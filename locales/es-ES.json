@@ -4,9 +4,9 @@
   "stake": "Stake",
   "build": "Build",
   "hero": {
-    "title": "The most powerful oracle, provably",
-    "description": "Enjoy Smart, Neutral and Secure Data",
-    "action": "Learn"
+    "title": "The most powerful oracle, provably.",
+    "description": "The Wit oracle pairs a state-of-the-art Proof of Stake algorithm with its own native coin $WIT to deliver unparalleled security for all your Web3 data needs.",
+    "action": "Join the WIT gang today"
   },
   "what-is-witnet": {
     "title": "Witnet 2.0, the Oracle for a Censorship-Resistant Future",
@@ -18,6 +18,7 @@
   },
   "build-section": {
     "title": "Build with Witnet",
+    "description": "Learn about the uniques features that make Witnet the ultimate solution to sourcing data into smart contracts and blockchains reliably.",
     "title-1": "Easy Access to Real-World Data",
     "description-1": "Witnet provides a straightforward way for smart contracts to interact with external data sources. This is crucial for applications that need to process real-world information, like prices, weather reports, or the results of events.",
     "title-2": "Decentralization and Security",

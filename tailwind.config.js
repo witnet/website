@@ -20,6 +20,12 @@ export default {
         title: ['Outfit', 'sans-serif'],
         mono: ['NimbusMono', 'mono'],
       },
+      // fontSize: {
+      //   "9xl": "6.875rem",
+      //   "8xl": "5.625rem",
+      //   "4xl": "2.5rem",
+      //   "3xl": "1.75rem"
+      // }
     },
     colors: {
       white: {

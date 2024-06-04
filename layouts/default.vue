@@ -1,23 +1,17 @@
 <template>
   <div
-    class="p-6 w-full grid grid-rows-[max-content_1fr_max-content] bg-black-950 text-white-50 dark:text-wit-blue-500 min-h-screen"
+    class="p-6 w-full grid grid-rows-[max-content_1fr_max-content] bg-white dark:text-wit-blue-500 min-h-screen flex"
   >
-    <NavBar :nav-links="navLinks">
-      <template #logo>
-        <NuxtLink to="/" rel="home">
-          <WitnetLogo />
-        </NuxtLink>
-      </template>
-      <template #build>
-        <NuxtLink to="/build" rel="about">{{ $t('build') }}</NuxtLink>
-      </template>
-      <template #buy>
-        <NuxtLink to="/buy" rel="contact">{{ $t('buy') }}</NuxtLink>
-      </template>
-      <template #stake>
-        <NuxtLink to="/stake" rel="contact">{{ $t('stake') }}</NuxtLink>
-      </template>
-    </NavBar>
+  <!-- TODO: adjust the size
+  <div class="max-w-6xl px-10 pt-40 mx-auto  dark:text-wit-blue-500 min-h-screen"> -->
+  <div class="flex items-center justify-between">
+    <div class="logo-link">
+      <NuxtLink to="/" rel="home">
+        <WitnetLogo />
+      </NuxtLink>
+    </div>
+    <NavBar :nav-links="navLinks" />
+  </div>
     <!-- <Compoennt /> -->
     <client-only>
       <ThemeSwitch class="theme-switch" />
@@ -32,15 +26,41 @@
 <script lang="ts" setup>
 import WitnetLogo from '@/assets/svg/witnet-logo.svg?component'
 
-const navLinks: Array<{ key: string }> = [
+const navLinks: Array<{ key: string, to: string, rel: string }> = [
   {
-    key: 'build',
+    key: 'oracle',
+    to: '/oracle',
+    rel: 'oracle',
   },
   {
-    key: 'buy',
+    key: 'coin',
+    to: '/coin',
+    rel: 'coin'
   },
   {
-    key: 'stake',
+    key: 'apps',
+    to: '/apps',
+    rel: 'apps'
   },
+  {
+    key: 'community',
+    to: '/community',
+    rel: 'community'
+  }
 ]
 </script>
+
+<style lang="scss">
+  .logo-link {
+    a {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    svg {
+      width: 200px;
+      height: auto;
+    }
+  }
+</style>
