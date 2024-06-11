@@ -14,7 +14,7 @@
   "what-is-witnet": {
     "title": {
       "witnet": "Witnet 2.0",
-      "main": "{0} the Oracle for a Censorship-Resistant Future",
+      "main": "{0} the Oracle for a Censorship-Resistant Future"
     },
     "description": "Without a dependable oracle, smart contracts are susceptible to security breaches, manipulation, and financial losses. Witnet employs advanced cryptographic and Proof of Stake (PoS) economic mechanisms, ensuring that your smart contracts receive secure and trustworthy data inputs."
   },
@@ -24,7 +24,10 @@
     "description2": "Witnet 2.0 is unstoppable"
   },
   "build-section": {
-    "title": "Key Features.",
+    "title":{
+      "key_features": "Key Features{0}",
+      "dot": "."
+    },
     "description": "Learn about the unique features that make Witnet the ultimate solution to sourcing data into smart contracts and blockchains reliably.",
     "title-1": "Easy Access to Real-World Data",
     "description-1": "Witnet provides a straightforward way for smart contracts to interact with external data sources. This is crucial for applications that need to process real-world information, like prices, weather reports, or the results of events.",
@@ -40,7 +43,10 @@
     "description-6": "Builders benefit from the community and resources provided by Witnet, including documentation, developer tools, and support from other community members."
   },
   "explore": {
-    "title": "Explore the Power of Witnet",
+    "title": {
+       "main":"Explore the Power of {0}.",
+       "witnet": "Witnet"
+    },
     "description": "Dive into datasets and detailed insights by navigating through transparent data effortlessly.",
     "explorer-1": {
       "title": "Data Feeds",
@@ -63,10 +69,13 @@
     "action": "Subscribe"
   },
   "tutorials": {
-    "title": "Tutorials",
+    "title": {
+      "text": "Tutorials{0}",
+      "dot": "."
+    },
     "description": "These tutorials are designed to empower developers with the tools and knowledge needed to harness Witnet's decentralized oracle network for diverse blockchain applications.",
     "web": {
-      "title": "Web",
+      "title": "Web & Apis",
       "tutorial-1": "Http Requests",
       "tutorial-2": "GraphQL",
       "tutorial-3": "Dynamic Requests",

@@ -1,11 +1,16 @@
 <template>
 <div class="flex flex-col">
   <div class="flex flex-col items-center">
-    <h3 class="title-h1 mb-lg">{{ t('build-section.title') }}</h3>
-    <p class="description text mb-lg max-w-xl text-center">{{ t('build-section.description') }}</p>
+    <!-- <h3 class="title-h1 mb-lg">{{ t('build-section.title') }}</h3> -->
+
+    <i18n-t keypath="build-section.title.key_features" class="title-h1 mb-lg" tag="h3">
+      <span class="blue">{{ $t('build-section.title.dot') }}</span>
+    </i18n-t>
+
+    <p class="description text mb-lg max-w-2xl text-center">{{ t('build-section.description') }}</p>
   </div>
 
-  <div class="grid grid-cols-2 p-xl">
+  <div class="grid grid-cols-2 p-xl gap-xl">
     <!-- <h2 class="title-h2">{{ $t('build-section.title') }}</h2> -->
     <BuildWithWitnet
       v-for="(reason, index) in reasons"
@@ -52,6 +57,8 @@ const reasons: Array<Reason> = [
 ]
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+.blue {
+  color: $blue;
+}
 </style>

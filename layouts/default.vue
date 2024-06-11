@@ -4,7 +4,7 @@
   >
   <!-- TODO: adjust the size
   <div class="max-w-6xl px-10 pt-40 mx-auto  dark:text-wit-blue-500 min-h-screen"> -->
-  <div class="flex">
+  <div class="flex items-center justify-between">
     <div class="logo-link">
       <NuxtLink to="/" rel="home">
         <WitnetLogo />

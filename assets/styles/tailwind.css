@@ -57,6 +57,7 @@
     @apply bg-black-950;
   }
   .nav-link {
-    @apply text-white-50 hover:text-gray-500;
+    @apply text-black-950 hover:text-gray-500;
+    background: white;
   }
 }

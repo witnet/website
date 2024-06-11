@@ -1,7 +1,7 @@
 <template>
-  <div class="border-2 border-black-950 rounded-lg px-xl py-md m-sm">
+  <div class="card border-2 border-black-950 rounded-lg px-xl py-lg">
     <div class="flex items-center">
-      <div class="circle border border-black-950 rounded-full h-fit p-sm mr-md">{{ formattedIndex }}</div>
+      <div class="circle border border-black-950 rounded-full h-fit p-sm mr-md text-black-950">{{ formattedIndex }}</div>
       <h3 class="title-h4">{{ title }}</h3>
     </div>
     <hr class="hr my-md">
@@ -34,12 +34,16 @@ return props.index.toLocaleString('en-US', {
 </script>
 
 <style scoped lang="scss">
+.card {
+  box-shadow: 7px 10px 0px rgb(0, 0, 0);
+}
+
 .title-h2 {
   font-weight: bold;
 }
 
 .hr {
-  height: 4px;
+  height: 3px;
   background-color: black;  /* Modern Browsers */
 }
 

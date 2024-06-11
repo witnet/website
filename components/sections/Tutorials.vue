@@ -1,8 +1,11 @@
 <template>
   <div class="flex flex-col items-center">
-    <h3 class="title-h1 mb-lg">{{ t('tutorials.title') }}</h3>
+    <i18n-t keypath="tutorials.title.text" class="title-h1 mb-lg" tag="h3">
+      <span class="text-wit-blue-500">{{ $t('tutorials.title.dot') }}</span>
+    </i18n-t>
+
     <p class="description text mb-lg max-w-xl text-center">{{ t('tutorials.description') }}</p>
-    <div class="grid grid-cols-3 max-w-5xl">
+    <div class="grid grid-cols-3 max-w-5xl text-black-950">
       <TutorialsSubList
         v-for="tutorialList in tutorials"
         :key="tutorialList.title"
