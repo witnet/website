@@ -2,7 +2,7 @@
   <div class="border rounded-lg px-xl py-md m-sm">
     <h3 class="title-h2">{{ title }}</h3>
     <hr class="hr my-md">
-    <p>{{ description }}</p>
+    <p class="text">{{ description }}</p>
   </div>
 </template>
 

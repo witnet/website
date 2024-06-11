@@ -8,6 +8,9 @@ dependencies:
   '@nuxtjs/i18n':
     specifier: ^8.0.0
     version: 8.0.0(rollup@3.29.4)(vue-router@4.2.5)(vue@3.4.5)
+  lodash.snakecase:
+    specifier: ^4.1.1
+    version: 4.1.1
   vue-select:
     specifier: ^4.0.0-beta.3
     version: 4.0.0-beta.6(vue@3.4.5)
@@ -5312,6 +5315,10 @@ packages:
   /lodash.pick@4.4.0:
     resolution: {integrity: sha512-hXt6Ul/5yWjfklSGvLQl8vM//l3FtyHZeuelpzK6mm99pNvN9yTDruNZPEJZD1oWrqo+izBmB7oUfWgcCX7s4Q==}
     dev: true
+
+  /lodash.snakecase@4.1.1:
+    resolution: {integrity: sha512-QZ1d4xoBHYUeuouhEq3lk3Uq7ldgyFXGBhg04+oRLnIz8o9T65Eh+8YdroUwn846zchkA9yDsDl5CVVaV2nqYw==}
+    dev: false
 
   /lodash.uniq@4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}

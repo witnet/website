@@ -4,12 +4,18 @@
   "stake": "Stake",
   "build": "Build",
   "hero": {
-    "title": "The most powerful oracle, provably.",
+    "title": {
+      "main": "The most powerful oracle, {0}",
+      "gradient": "provably."
+    },
     "description": "The Wit oracle pairs a state-of-the-art Proof of Stake algorithm with its own native coin $WIT to deliver unparalleled security for all your Web3 data needs.",
     "action": "Join the WIT gang today"
   },
   "what-is-witnet": {
-    "title": "Witnet 2.0, the Oracle for a Censorship-Resistant Future",
+    "title": {
+      "witnet": "Witnet 2.0",
+      "main": "{0} the Oracle for a Censorship-Resistant Future",
+    },
     "description": "Without a dependable oracle, smart contracts are susceptible to security breaches, manipulation, and financial losses. Witnet employs advanced cryptographic and Proof of Stake (PoS) economic mechanisms, ensuring that your smart contracts receive secure and trustworthy data inputs."
   },
   "coin": {
@@ -18,7 +24,8 @@
     "description2": "Witnet 2.0 is unstoppable"
   },
   "build-section": {
-    "title": "Build with Witnet",
+    "title": "Key Features.",
+    "description": "Learn about the unique features that make Witnet the ultimate solution to sourcing data into smart contracts and blockchains reliably.",
     "title-1": "Easy Access to Real-World Data",
     "description-1": "Witnet provides a straightforward way for smart contracts to interact with external data sources. This is crucial for applications that need to process real-world information, like prices, weather reports, or the results of events.",
     "title-2": "Decentralization and Security",
@@ -106,5 +113,50 @@
     "available-platforms-title": "Need Another Version?",
     "action-2": "Get Started",
     "action-2-description": "Start Staking Now and earn rewards!"
-  }
+  },
+  "footer": {
+        "documentation": "Documentation",
+        "request_data_feed": "Request new price feed",
+        "about_witnet": "About Witnet",
+        "links": {
+            "witnet": {
+            "title": "Witnet",
+            "oracle": "Oracle",
+            "token": "WIT Coin",
+            "ecosystem": "Ecosystem",
+            "community": "Community",
+            "whitepaper": "Whitepaper",
+            "media_kit": "Media Kit"
+            },
+            "ecosystem": {
+            "title": "Ecosystem",
+            "full_node": "Full node",
+            "wallet": "Wallet",
+            "block_explorer": "Block explorer",
+            "monitor": "Network monitor",
+            "data_feeds_explorer": "Data Feeds Explorer"
+            },
+            "community": {
+            "title": "Community",
+            "telegram": "Telegram",
+            "discord": "Discord",
+            "twitter": "X",
+            "reddit": "Reddit",
+            "youtube": "Youtube"
+            },
+            "developers": {
+            "title": "Developers",
+            "documentation": "Documentation",
+            "price_feeds": "Price Feeds",
+            "randomness": "Randomness",
+            "get_post_request": "Data Requests"
+            }
+        },
+        "ado_text": "Witnet is part of the Alliance of Decentralized Oracles (ADO), a joint effort by leading decentralized oracle solutions to make the life of smart contract developers easier by creating oracle standards. Learn more about the ADO at {0}",
+        "copyright": {
+            "base": "© {0} by {1} and individual contributors. Content available under a {2}.",
+            "witnet_foundation": "Witnet Foundation",
+            "license": "Creative Commons License"
+        }
+    }
 }

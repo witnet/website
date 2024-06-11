@@ -41,7 +41,7 @@ const explorers: Array<Explorer> = [
 }
 
 .section {
-  background: aqua;
+  background: #00E2ED;
 }
 
 .content {

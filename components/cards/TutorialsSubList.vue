@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="border-2 border-black-950 rounded-lg px-xl py-md m-sm">
     <h4>{{ title }}</h4>
     <TutorialLink
       v-for="tutorial in tutorials"
@@ -24,3 +24,18 @@ defineProps({
   },
 })
 </script>
+
+<style>
+.title-h2 {
+  font-weight: bold;
+}
+
+/* TODO */
+.rounded-lg {
+  border-radius: 1rem;
+}
+.hr {
+  height: 4px;
+  background-color: black;  /* Modern Browsers */
+}
+</style>
