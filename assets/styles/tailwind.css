@@ -38,6 +38,10 @@
     line-height: 1;
     color: #333;
   }
+
+  .subtitle {
+    @apply text-sm text-white-300;
+  }
   
   /* Button */
   .btn {
