@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'class',
+  extend: {
+    rotate: {
+      75: '75deg',
+    },
+  },
   content: [
     './components/**/*.{js,vue,ts}',
     './layouts/**/*.vue',
@@ -96,6 +101,11 @@ export default {
       md: '16px',
       lg: '32px',
       xl: '40px',
+      '2xl': '140px',
+      'sm-screen': '10vw',
+      'md-screen': '50vw',
+      'lg-screen': '90vw',
+      'xl-screen': '100vw',
     },
     opacity: {
       0: '0',

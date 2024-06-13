@@ -1,9 +1,19 @@
 <template>
-  <div class="socials-container">
+  <div
+    class="h-screen grid gap-y-4 auto-rows-min content-center gap-y-md ml-sm-screen justify-items-end"
+  >
     <IconExternalLink :url="URLS.twitter" :icon="Twitter" />
     <IconExternalLink :url="URLS.telegram" :icon="Telegram" />
     <IconExternalLink :url="URLS.discord" :icon="Discord" />
     <IconExternalLink :url="URLS.github" :icon="Github" />
+    <div class="flex mt-2xl">
+      <p class="text-white-300 [writing-mode:vertical-lr] -rotate-180 subtitle">
+        {{ $t('socials-title-1') }}
+      </p>
+      <p class="text-white-300 [writing-mode:vertical-lr] -rotate-180 subtitle">
+        {{ $t('socials-title-2') }}
+      </p>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
