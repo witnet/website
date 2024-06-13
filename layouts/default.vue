@@ -2,18 +2,20 @@
   <div
     class="p-6 w-full grid grid-rows-[max-content_1fr_max-content] bg-white dark:text-wit-blue-500 min-h-screen flex"
   >
-    <TopBar :nav-links="navLinks">
-      <template #logo>
-        <NuxtLink to="/" rel="home">
-          <WitnetLogo />
-        </NuxtLink>
-      </template>
-      <template v-for="link in navLinks" :key="link.key" #[link.key]>
-        <InnerLink :hash="link.key">
-          <span class="slash">/</span>{{ link.locale }}
-        </InnerLink>
-      </template>
-    </TopBar>
+    <NuxtLayout name="navbar">
+      <TopBar :nav-links="navLinks">
+        <template #logo>
+          <NuxtLink to="/" rel="home">
+            <WitnetLogo />
+          </NuxtLink>
+        </template>
+        <template v-for="link in navLinks" :key="link.key" #[link.key]>
+          <InnerLink :hash="link.key">
+            <span class="slash">/</span>{{ link.locale }}
+          </InnerLink>
+        </template>
+      </TopBar>
+    </NuxtLayout>
     <SocialLinks class="fixed" />
     <!-- <Compoennt /> -->
     <!-- <client-only>
