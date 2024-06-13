@@ -1,13 +1,20 @@
 <template>
-  <div :class="fullBackground ? 'wide-section' : 'section'">
+  <div class="wide-section relative">
     <div
-      v-if="fullBackground"
-      class="section"
-      :style="{ background: backgroundColor }"
+      :class="fullBackground ? `wide-section ${height}` : `section ${height}`"
     >
-      <slot></slot>
+      <div
+        v-if="fullBackground"
+        class="section"
+        :style="{ background: backgroundColor }"
+      >
+        <slot name="content"></slot>
+      </div>
+      <slot v-else name="content"></slot>
     </div>
-    <slot v-else></slot>
+    <div class="absolute top-[0px] left-[32px]">
+      <slot name="left"></slot>
+    </div>
   </div>
 </template>
 
@@ -22,15 +29,28 @@ export default {
       type: String,
       default: '',
     },
+    height: {
+      type: String,
+      default: null,
+    },
   },
 }
 </script>
 
 <style scoped>
 .section {
-  padding: 48px 32px;
+  padding: 48px;
   margin: 0 auto;
   max-width: 1100px;
+  width: 100%;
+}
+
+.socials {
+  max-width: 1300px;
+  justify-content: center;
+}
+
+.wide-section {
   width: 100%;
 }
 
@@ -38,7 +58,7 @@ export default {
   width: 100%;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .section {
     padding: 32px 16px;
   }
