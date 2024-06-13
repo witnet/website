@@ -102,7 +102,7 @@ export default {
       lg: '32px',
       xl: '40px',
       '2xl': '140px',
-      'sm-screen': '10vw',
+      'sm-screen': '15vw',
       'md-screen': '50vw',
       'lg-screen': '90vw',
       'xl-screen': '100vw',
