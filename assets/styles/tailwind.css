@@ -14,7 +14,7 @@
   .title-h2 {
     @apply font-title text-5xl;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.5;
     color: #232323;
   }
 
@@ -22,20 +22,20 @@
   .title-h3 {
     @apply font-title text-5xl;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.5;
     color: #232323;
   }
 
   .title-h4 {
     @apply font-title text-2xl;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.5;
     color: #232323;
   }
 
   .text {
     @apply text-lg;
-    line-height: 1;
+    line-height: 1.5;
     color: #333;
   }
 
