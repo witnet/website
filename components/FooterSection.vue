@@ -1,5 +1,8 @@
 <template>
-  <div class="footer-background">
+  <div>Footer</div>
+</template>
+
+<!-- <div class="footer-background">
     <div class="footer">
       <div class="top">
         <div v-for="section in footerLinks" :key="section.title" class="links">
@@ -208,4 +211,4 @@ const footerLinks = getFooterLinks(footerSections)
     }
   }
 }
-</style>
+</style> -->
