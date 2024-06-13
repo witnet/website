@@ -15,8 +15,8 @@
           </InnerLink>
         </template>
       </TopBar>
+      <SocialLinks class="fixed sm:hidden" />
     </NuxtLayout>
-    <SocialLinks class="fixed" />
     <!-- <Compoennt /> -->
     <!-- <client-only>
       <ThemeSwitch class="theme-switch" />
@@ -24,7 +24,7 @@
     <div class="grid grid-auto mt-16">
       <slot></slot>
     </div>
-    <FooterSection />
+    <!-- <FooterSection /> -->
   </div>
 </template>
 
