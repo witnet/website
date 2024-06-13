@@ -2,11 +2,15 @@
   <div class="section grid grid-cols-[repeat(3,1fr)] items-center py-xl">
       <PalmBlueIcon class="col-start-1 col-span-1 palm"/>
       <div class="col-start-2 col-span-2 flex items-center">
-        <h2 class="title-h1">{{ $t('coin.title') }}</h2>
+
+        <i18n-t keypath="coin.title.main" class="title-h1 text-white-50" tag="h3">
+          <span class="text-wit-blue-500">{{ $t('coin.title.mark') }}</span>
+        </i18n-t>
+
         <p class="mx-xl line"></p>
-        <div>
-          <h4 class="title-h4">{{ $t('coin.description1') }}</h4>
-          <p class="text">{{ $t('coin.description2') }}</p>
+        <div class="max-w-md">
+          <h4 class="title-h3 text-white-50 mb-md">{{ $t('coin.description1') }}</h4>
+          <p class="text text-white-50">{{ $t('coin.description2') }}</p>
         </div>
     </div>
     <!-- <div>
@@ -17,11 +21,10 @@
 </template>
 
 <script setup lang="ts">
-import { ButtonType } from '@/types'
 import PalmBlueIcon from '@/assets/svg/palmBlue.svg?component'
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .palm {
   /* position: ; */
 }
@@ -32,7 +35,8 @@ import PalmBlueIcon from '@/assets/svg/palmBlue.svg?component'
 }
 
 .line {
-  border: 2px solid #00E2ED;
-  height: 80px;
+  border: 2px solid $blue;
+  height: 150px;
 }
+
 </style>

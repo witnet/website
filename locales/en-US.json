@@ -19,8 +19,11 @@
     "description": "Without a dependable oracle, smart contracts are susceptible to security breaches, manipulation, and financial losses. Witnet employs advanced cryptographic and Proof of Stake (PoS) economic mechanisms, ensuring that your smart contracts receive secure and trustworthy data inputs."
   },
   "coin": {
-    "title": "Stake!",
-    "description1": "Secure the network, earn rewards!",
+    "title": {
+      "main": "Stake{0}",
+      "mark": "!"
+    },
+    "description1": "Secure the Network, Earn Rewards!",
     "description2": "Witnet 2.0 is unstoppable"
   },
   "build-section": {
