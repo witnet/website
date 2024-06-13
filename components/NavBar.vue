@@ -1,8 +1,8 @@
 <template>
   <header class="navbar">
-    <!-- <div class="logo-link">
+    <div class="logo-link">
       <slot class="logo-link" name="logo"></slot>
-    </div> -->
+    </div>
     <input id="side-menu" ref="checkbox" class="checkbox" type="checkbox" />
     <nav class="navbar-tabs">
       <ul class="navbar-links animated zoomIn">
@@ -10,7 +10,7 @@
           <CloseNavIcon />
         </div>
         <li v-for="link in navLinks" :key="link.key" class="nav-link">
-          <NuxtLink :to="link.to" :rel="link.rel">{{ $t(link.key) }}</NuxtLink>
+          <slot :name="link.key" />
         </li>
         <li class="nav-link language-select">
           <LanguageSwitcher />
@@ -34,7 +34,7 @@ const routePath = computed(() => route.path)
 
 defineProps({
   navLinks: {
-    type: Object as PropType<Array<{ key: string, to: string, rel: string }>>,
+    type: Object as PropType<Array<{ key: string }>>,
     required: true,
   },
 })
@@ -63,6 +63,18 @@ watch(
   top: -16px;
   z-index: 500;
 
+  .logo-link {
+    a {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    svg {
+      width: 200px;
+      height: auto;
+    }
+  }
   .close-menu-container {
     display: none;
   }

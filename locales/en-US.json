@@ -3,6 +3,14 @@
   "buy": "Buy",
   "stake": "Stake",
   "build": "Build",
+  "nav_bar": {
+    "route": {
+      "oracle": "oracle",
+      "coin": "coin",
+      "apps": "apps",
+      "community": "community"
+    }
+  },
   "hero": {
     "title": {
       "main": "The most powerful oracle, {0}",

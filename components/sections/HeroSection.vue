@@ -2,9 +2,9 @@
   <div class="hero-container flex flex-col items-center">
     <!-- <SocialLinks class="fixed"/> -->
 
-     <i18n-t keypath="hero.title.main" class="title-h1 text-center" tag="h1">
-        <span class="blue">{{ $t('hero.title.gradient') }}</span>
-      </i18n-t>
+    <i18n-t keypath="hero.title.main" class="title-h1 text-center" tag="h1">
+      <span class="blue">{{ $t('hero.title.gradient') }}</span>
+    </i18n-t>
 
     <h2 class="text text-center">{{ $t('hero.description') }}</h2>
 
@@ -12,8 +12,7 @@
       {{ $t('hero.action') }}
     </CustomButton>
 
-    <ArrowDownIcon class="m-xl"/>
-
+    <ArrowDownIcon class="m-xl" />
   </div>
 </template>
 
