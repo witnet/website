@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-6 w-full grid grid-rows-[max-content_1fr_max-content] bg-white dark:text-wit-blue-500 min-h-screen flex"
+    class="p-6 w-full grid grid-rows-[max-content_1fr_max-content] bg-white dark:text-wit-blue-500 min-h-screen"
   >
     <NuxtLayout name="navbar">
       <TopBar :nav-links="navLinks">
@@ -11,17 +11,17 @@
         </template>
         <template v-for="link in navLinks" :key="link.key" #[link.key]>
           <InnerLink :hash="link.key">
-            <span class="slash">/</span>{{ link.locale }}
+            <span class="slash text-wit-blue-500">/</span>{{ link.locale }}
           </InnerLink>
         </template>
       </TopBar>
-      <SocialLinks class="fixed sm:hidden" />
+      <!-- <SocialLinks class="fixed sm:hidden" /> -->
     </NuxtLayout>
     <!-- <Compoennt /> -->
     <!-- <client-only>
       <ThemeSwitch class="theme-switch" />
     </client-only> -->
-    <div class="grid grid-auto mt-16">
+    <div class="grid grid-auto mt-8">
       <slot></slot>
     </div>
     <!-- <FooterSection /> -->
@@ -35,28 +35,22 @@ const { t } = useI18n()
 
 const navLinks: Array<{ key: string }> = [
   {
-    key: 'oracle',
-    to: '/oracle',
-    rel: 'oracle',
-    locale: t('nav_bar.route.oracle'),
+    key: 'stake',
+    to: '/stake',
+    rel: 'stake',
+    locale: t('nav_bar.route.stake'),
   },
   {
-    key: 'coin',
-    to: '/coin',
-    rel: 'coin',
-    locale: t('nav_bar.route.coin'),
+    key: 'buy',
+    to: '/buy',
+    rel: 'buy',
+    locale: t('nav_bar.route.buy'),
   },
   {
-    key: 'apps',
-    to: '/apps',
-    rel: 'apps',
-    locale: t('nav_bar.route.apps'),
-  },
-  {
-    key: 'community',
-    to: '/community',
-    rel: 'community',
-    locale: t('nav_bar.route.community'),
+    key: 'build',
+    to: '/build',
+    rel: 'build',
+    locale: t('nav_bar.route.build'),
   },
 ]
 </script>
