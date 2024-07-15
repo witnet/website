@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-6 w-full grid grid-rows-[max-content_1fr_max-content] bg-white dark:text-wit-blue-500 min-h-screen"
+    class="p-6 w-full grid grid-rows-[max-content_1fr_max-content] bg-white dark:text-wit-blue-500 min-h-screen relative"
   >
     <NuxtLayout name="navbar">
       <TopBar :nav-links="navLinks">
@@ -15,12 +15,11 @@
           </InnerLink>
         </template>
       </TopBar>
-      <!-- <SocialLinks class="fixed sm:hidden" /> -->
     </NuxtLayout>
     <!-- <Compoennt /> -->
     <!-- <client-only>
       <ThemeSwitch class="theme-switch" />
-    </client-only> -->
+      </client-only> -->
     <div class="grid grid-auto mt-8">
       <slot></slot>
     </div>

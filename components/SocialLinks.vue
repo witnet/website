@@ -2,7 +2,7 @@
   <div
     class="h-screen max-h-[900px] grid gap-y-4 auto-rows-min content-center gap-y-md justify-items-end"
   >
-    <IconExternalLink :url="URLS.twitter" :icon="Twitter" />
+    <IconExternalLink :url="URLS.x" :icon="Twitter" />
     <IconExternalLink :url="URLS.telegram" :icon="Telegram" />
     <IconExternalLink :url="URLS.discord" :icon="Discord" />
     <IconExternalLink :url="URLS.github" :icon="Github" />
