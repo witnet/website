@@ -1,16 +1,9 @@
 <template>
-  <div class="wide-section relative">
-    <div
-      :class="fullBackground ? `wide-section ${height}` : `section ${height}`"
-    >
-      <div
-        v-if="fullBackground"
-        class="section"
-        :style="{ background: backgroundColor }"
-      >
+  <div class="relative">
+    <div :class="`frame ${frameClasses}`">
+      <div :class="`section ${height} ${contentClasses}`">
         <slot name="content"></slot>
       </div>
-      <slot v-else name="content"></slot>
     </div>
     <div class="absolute top-[0px] left-[32px]">
       <slot name="left"></slot>
@@ -25,7 +18,11 @@ export default {
     fullBackground: {
       type: Boolean,
     },
-    backgroundColor: {
+    frameClasses: {
+      type: String,
+      default: '',
+    },
+    contentClasses: {
       type: String,
       default: '',
     },
@@ -45,17 +42,14 @@ export default {
   width: 100%;
 }
 
-.socials {
-  max-width: 1300px;
-  justify-content: center;
-}
-
-.wide-section {
+.frame {
   width: 100%;
 }
 
-.wide-section {
-  width: 100%;
+@media (max-width: 600px) {
+  .section {
+    padding: 48px 32px;
+  }
 }
 
 @media (max-width: 350px) {
