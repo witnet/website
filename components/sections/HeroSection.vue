@@ -39,7 +39,7 @@
           {{ $t('hero.action') }}
         </CustomButton>
 
-        <ArrowDownIcon class="m-xl z-20" />
+        <ArrowDownIcon class="arrow m-xl z-20" />
       </div>
     </template>
   </NuxtLayout>
@@ -54,4 +54,20 @@ import Zigzag from '@/assets/svg/zigzag.svg?component'
 import SquareDots from '@/assets/svg/square-dots.svg?component'
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.arrow {
+  width: 40px;
+  height: auto;
+  animation: down 1s infinite alternate;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+</style>
