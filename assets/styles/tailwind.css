@@ -5,30 +5,25 @@
 @layer components {
   /* Titles */
   .title-h1 {
-    @apply font-title text-7xl;
-    font-weight: 600;
-    /* line-height: 1; */
+    @apply font-title text-7xl font-semibold;
     line-height: 0.9;
     color: #232323;
   }
   .title-h2 {
-    @apply font-title text-5xl;
-    font-weight: 600;
+    @apply font-title text-5xl font-semibold;
     line-height: 1.5;
     color: #232323;
   }
 
 
   .title-h3 {
-    @apply font-title text-5xl;
-    font-weight: 600;
+    @apply font-title text-5xl font-semibold;
     line-height: 1.5;
     color: #232323;
   }
 
   .title-h4 {
-    @apply font-title text-2xl;
-    font-weight: 600;
+    @apply font-title text-2xl font-semibold;
     line-height: 1.5;
     color: #232323;
   }

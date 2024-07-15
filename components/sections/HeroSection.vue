@@ -27,9 +27,11 @@
           class="absolute right-xl top-xl z-10 overflow-hidden rotate-90 sm:hidden"
         />
         <SquareDots class="absolute right-xl bottom-xl z-10 sm:hidden" />
-        <div class="grid auto-rows-min gap-y-lg max-w-c-3xl z-20">
+        <div class="grid auto-rows-min gap-y-lg z-20 max-w-c-3xl">
           <i18n-t keypath="hero.title.main" class="title-h1 text-center" tag="h1">
-            <span class="blue">{{ $t('hero.title.gradient') }}</span>
+            <br />
+            {{ $t('hero.title.main2') }}
+            <span class="text-wit-blue-500">{{ $t('hero.title.gradient') }}</span>
           </i18n-t>
 
           <h2 class="text text-center">{{ $t('hero.description') }}</h2>
