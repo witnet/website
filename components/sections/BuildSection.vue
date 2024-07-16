@@ -1,26 +1,34 @@
 <template>
-<div class="flex flex-col">
-  <div class="flex flex-col items-center">
-    <!-- <h3 class="title-h1 mb-lg">{{ t('build-section.title') }}</h3> -->
-
-    <i18n-t keypath="build-section.title.key_features" class="title-h1 mb-lg" tag="h3">
-      <span class="blue">{{ $t('build-section.title.dot') }}</span>
-    </i18n-t>
-
-    <p class="description text mb-lg max-w-2xl text-center">{{ t('build-section.description') }}</p>
-  </div>
-
-  <div class="grid grid-cols-2 p-xl gap-xl">
-    <!-- <h2 class="title-h2">{{ $t('build-section.title') }}</h2> -->
-    <BuildWithWitnet
-      v-for="(reason, index) in reasons"
-      :index="index + 1"
-      :key="reason.title"
-      :title="reason.title"
-      :description="reason.description"
-    />
-  </div>
-</div>
+  <NuxtLayout
+    name="section"
+    :content-classes="'grid justify-items-center gap-md'"
+  >
+    <template #left>
+      <SocialLinks class="sm:hidden" />
+    </template>
+    <template #content>
+      <i18n-t
+        id="build"
+        keypath="build-section.title.key_features"
+        class="title-h2 text-center max-w-screen-md"
+        tag="h2"
+      >
+        <span class="text-wit-blue-500">{{
+          $t('build-section.title.dot')
+        }}</span>
+      </i18n-t>
+      <p class="text text-center max-w-screen-md">{{ t('build-section.description') }}</p>
+      <div class="mt-md grid grid-cols-2 gap-md sm:grid-cols-1">
+        <BuildWithWitnet
+          v-for="(reason, index) in reasons"
+          :key="reason.title"
+          :index="index + 1"
+          :title="reason.title"
+          :description="reason.description"
+        />
+      </div>
+    </template>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
@@ -56,9 +64,3 @@ const reasons: Array<Reason> = [
   },
 ]
 </script>
-
-<style scoped lang="scss">
-.blue {
-  color: $blue;
-}
-</style>

@@ -33,8 +33,14 @@
     color: #232323;
   }
 
+  .title-h5 {
+    @apply text-2xl font-semibold;
+    line-height: 1.1;
+    color: #232323;
+  }
+
   .text {
-    @apply text-lg;
+    @apply text-base;
     line-height: 1.5;
     color: #333;
   }

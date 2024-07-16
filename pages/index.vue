@@ -5,7 +5,7 @@
     <CoinSection />
     <BuySection />
     <SecureSection />
-    <!-- <BuildSection class="pt-28 pb-28 px-4" /> -->
+    <BuildSection />
 
     <!-- <ExploreSection class="pt-28 pb-28 px-4" />
     <TutorialsSection class="pt-28 pb-28 px-4" />
