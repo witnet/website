@@ -103,8 +103,10 @@ export default {
       full: '9999px',
     },
     spacing: {
+      xs: '4px',
       sm: '8px',
       md: '16px',
+      l: '24px',
       lg: '32px',
       xl: '40px',
       '2xl': '80px',

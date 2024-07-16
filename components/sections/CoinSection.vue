@@ -4,9 +4,11 @@
     :frame-classes="'bg-black-950'"
     :content-classes="'grid justify-items-center'"
   >
-    <!-- <PalmBlueIcon class="col-start-1 col-span-1 palm"/> -->
+    <template #left>
+      <PalmBlueIcon class="sm:hidden" />
+    </template>
     <template #content>
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center gap-md">
         <div class="flex justify-center items-center mb-xl flex-col md:flex-row">
           <i18n-t
             keypath="coin.title.main"
@@ -27,7 +29,7 @@
           </div>
         </div>
 
-        <CustomButton :type="ButtonType.dark" class="mb-md">
+        <CustomButton :type="ButtonType.dark">
           <i18n-t
             keypath="coin.run_in_platform.main"
             class="flex flex-row"
@@ -36,12 +38,12 @@
             <span class="ml-[4px]">{{ release.platform }}</span>
           </i18n-t>
         </CustomButton>
-
-        <p class="text text-wit-blue-500">
-          {{ release.platform }} • x86_64 • {{ size }} MB ⓘ
+        <p class="text text-wit-blue-500 mt-md">
+          {{ release.platform }} • x86_64 • {{ size }} MB <span class="text-xs ml-xs">ⓘ</span>
         </p>
+        <Tooltip />
 
-        <p class="text-large text-white-50 text-center max-w-4xl mb-xl"></p>
+        <p class="text-large text-white-50 text-center max-w-screen-md mb-xl">{{ t('coin.participate') }}</p>
 
         <div class="grid w-max h-max grid-flow-col sm:grid-flow-row gap-lg items-end">
           <div class="grid justify-items-center justify-center gap-sm h-max">
@@ -61,7 +63,7 @@
 
           <div class="grid justify-items-center justify-center gap-sm h-max">
             <LinuxIcon class="icon" />
-            <p class="text-link-dark">Docker</p>
+            <p class="text-link-dark">Linux</p>
           </div>
 
           <div class="grid justify-items-center justify-center gap-sm h-max">
@@ -95,6 +97,8 @@ import WindowsIcon from '@/assets/svg/windows.svg?component'
 import AppleIcon from '@/assets/svg/apple.svg?component'
 import LinuxIcon from '@/assets/svg/linux.svg?component'
 import RaspberryIcon from '@/assets/svg/raspberry.svg?component'
+import PalmBlueIcon from '@/assets/svg/palmBlue.svg?component'
+
 
 import { ButtonType } from '~/types'
 
@@ -143,6 +147,10 @@ const explorers: Array<Explorer> = [
 </script>
 
 <style scoped lang="scss">
+.icon {
+  width: auto;
+  height: 48px;
+}
 .title-h3 {
   line-height: 1;
 }

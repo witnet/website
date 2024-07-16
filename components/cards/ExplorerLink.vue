@@ -6,13 +6,13 @@
       :class="['shadow-' + shadowColor]"
     >
       <div class="flex justify-between items-center">
-        <h3 class="text-2xl text-black-950 font-semibold leading-4">
+        <h3 class="text-xl text-black-950 font-semibold leading-4">
           {{ title }}
         </h3>
         <ArrowRightIcon class="arrow" />
       </div>
       <hr class="hr my-md" />
-      <p class="text-base text-black-950">{{ description }}</p>
+      <p class="text-sm text-black-950">{{ description }}</p>
     </div>
   </div>
 </template>

@@ -16,11 +16,17 @@
           </span>
         </i18n-t>
 
-        <h3 class="title-h3 font-normal text-center max-w-screen-md">
-          {{ $t('what-is-witnet.subtitle') }}
-        </h3>
+        <i18n-t
+          keypath="what-is-witnet.subtitle"
+          class="title-h3 font-normal text-center max-w-screen-md"
+          tag="h2"
+        >
+          <span class="title-h3 font-normal text-center max-w-screen-md">
+            <br />{{ $t('what-is-witnet.subtitle2') }}
+          </span>
+        </i18n-t>
 
-        <DashesIcon class="m-xl dashes" />
+        <DashesIcon class="m-xl dashes w-2xl" />
 
         <p class="text text-center max-w-screen-md">
           {{ $t('what-is-witnet.description') }}
@@ -29,14 +35,13 @@
       <div
         class="grid grid-cols-6 justify-center relative w-min-content gap-sm w-max mt-lg"
       >
-        <CircleIcon class="w-2xl h-auto sm:w-xl absolute z-0 left-[-40px] top-[16px]" />
-        <BashIcon class="w-2xl h-auto sm:w-xl z-10" />
-        <StorageIcon class="w-2xl h-auto sm:w-xl z-10" />
-        <SlashIcon class="w-2xl h-auto sm:w-xl z-10" />
-        <LockIcon class="w-2xl h-auto sm:w-xl z-10" />
-        <BulbIcon class="w-2xl h-auto sm:w-xl z-10" />
-        <KeyIcon class="w-2xl h-auto sm:w-xl z-10" />
-        <CircleIcon class="w-2xl h-auto sm:w-xl absolute z-0 right-[-40px] bottom-[16px]" />
+        <CircleIcon class="w-[70px] h-auto sm:w-xl absolute z-0 left-[-40px] top-[16px]" />
+        <BashIcon class="w-[70px] h-auto sm:w-xl z-10" />
+        <StorageIcon class="w-[70px] h-auto sm:w-xl z-10" />
+        <SlashIcon class="w-[70px] h-auto sm:w-xl z-10" />
+        <LockIcon class="w-[70px] h-auto sm:w-xl z-10" />
+        <BulbIcon class="w-[70px] h-auto sm:w-xl z-10" />
+        <KeyIcon class="w-[70px] h-auto sm:w-xl z-10" />
       </div>
     </template>
   </NuxtLayout>
