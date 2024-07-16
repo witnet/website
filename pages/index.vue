@@ -4,7 +4,7 @@
     <WhatIsWitnetSection />
     <CoinSection />
     <BuySection />
-    <!-- <SecureSection class="pt-28 pb-28 px-4" /> -->
+    <SecureSection />
     <!-- <BuildSection class="pt-28 pb-28 px-4" /> -->
 
     <!-- <ExploreSection class="pt-28 pb-28 px-4" />
