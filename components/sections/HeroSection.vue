@@ -1,6 +1,7 @@
 <template>
   <NuxtLayout
     name="section"
+    :center-left-content="false"
     :height="'h-lg-y-screen sm:h-[max-content] max-h-[900px]'"
   >
     <template #left>

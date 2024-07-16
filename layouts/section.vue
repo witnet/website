@@ -5,7 +5,13 @@
         <slot name="content"></slot>
       </div>
     </div>
-    <div class="absolute top-[0px] left-[32px]">
+    <div
+      :class="
+        centerLeftContent
+          ? 'absolute top-[200px] left-[0px]'
+          : 'absolute top-[0px] left-sm-x-screen'
+      "
+    >
       <slot name="left"></slot>
     </div>
   </div>
@@ -21,6 +27,10 @@ export default {
     frameClasses: {
       type: String,
       default: '',
+    },
+    centerLeftContent: {
+      type: Boolean,
+      default: true,
     },
     contentClasses: {
       type: String,

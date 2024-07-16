@@ -13,6 +13,7 @@
       >
         <br />
         <span class="font-bold">{{ $t('secure-section.title2') }}</span>
+        <span class="text-white-50 font-bold">.</span>
       </i18n-t>
 
       <p class="text text-center max-w-screen-md">{{ t('secure-section.description') }}</p>

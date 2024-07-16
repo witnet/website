@@ -2,7 +2,7 @@
   <div class="card border-2 border-black-950 rounded-lg px-xl py-lg">
     <div class="flex items-center">
       <div
-        class="text-xl circle border border-black-950 rounded-full h-fit p-sm mr-md text-black-950"
+        class="text-md font-mono circle border border-black-950 rounded-full h-fit p-sm mr-md text-black-950"
       >
         {{ formattedIndex }}
       </div>
@@ -56,8 +56,8 @@ return props.index.toLocaleString('en-US', {
 .circle {
   line-height: 1;
   // font-size: 24px;
-  height: 48px;
-  min-width: 48px;
+  height: 40px;
+  min-width: 40px;
   align-content: center;
   text-align: center;
   background-color: $blue;

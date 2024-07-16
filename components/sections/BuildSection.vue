@@ -1,6 +1,7 @@
 <template>
   <NuxtLayout
     name="section"
+    :center-left-content="false"
     :content-classes="'grid justify-items-center gap-md'"
   >
     <template #left>

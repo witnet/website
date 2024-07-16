@@ -26,7 +26,8 @@
       "main": "Buidl with confidence: {0}",
       "witnet": "Witnet 2.0"
     },
-    "subtitle": "the Oracle for a Censorship-Resistant Future",
+    "subtitle": "the Oracle for a {0} {1}",
+    "subtitle2": "Censorship-Resistant Future",
     "description": "Without a dependable oracle, smart contracts are susceptible to security breaches, manipulation, and financial losses. Witnet employs advanced cryptographic and Proof of Stake (PoS) economic mechanisms, ensuring that your smart contracts receive secure and trustworthy data inputs."
   },
   "coin": {
@@ -44,15 +45,18 @@
     "cards": {
       "get_started": {
         "title": "Get Started",
-        "description": "Start Staking Now and earn rewards!"
+        "description": "Start {0} and earn rewards!",
+        "boldText1": "Staking Now"
       },
       "tutorials": {
         "title": "Tutorials",
-        "description": "Learn the basics about taking with the comprehensive tutorials!"
+        "description": "Learn the basics about taking with the {0}",
+        "boldText1": "comprehensive tutorials!"
       },
       "contribute": {
         "title": "Contribute",
-        "description": "Help make Witnet even better. Submit code, examples, libraries, or help us fix bugs."
+        "description": "Help make {0}. Submit code, examples, libraries, or help us fix bugs.",
+        "boldText1": "Witnet even better"
       }
     }
   },
@@ -69,7 +73,7 @@
     }
   },
   "secure-section": {
-    "title1": "Secure {0} {1}",
+    "title1": "Secure {0} {1} {2}",
     "title2": "Your $WIT",
     "description": "$WIT, the native coin of Witnet, is available on trusted and well-known crypto exchanges. By acquiring and staking $WIT, you become a valuable part of the Witnet Community, contributing to the security, growth, and success of the decentralized future with Witnet."
   },

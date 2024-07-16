@@ -4,9 +4,11 @@
     :frame-classes="'bg-black-950'"
     :content-classes="'grid justify-items-center'"
   >
-    <!-- <PalmBlueIcon class="col-start-1 col-span-1 palm"/> -->
+    <template #left>
+      <PalmBlueIcon class="sm:hidden" />
+    </template>
     <template #content>
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center gap-md">
         <div class="flex justify-center items-center mb-xl flex-col md:flex-row">
           <i18n-t
             keypath="coin.title.main"
@@ -27,7 +29,7 @@
           </div>
         </div>
 
-        <CustomButton :type="ButtonType.dark" class="mb-md">
+        <CustomButton :type="ButtonType.dark">
           <i18n-t
             keypath="coin.run_in_platform.main"
             class="flex flex-row"
@@ -36,12 +38,19 @@
             <span class="ml-[4px]">{{ release.platform }}</span>
           </i18n-t>
         </CustomButton>
-
-        <p class="text text-wit-blue-500">
-          {{ release.platform }} • x86_64 • {{ size }} MB ⓘ
+        <p class="text text-wit-blue-500 mt-md">
+          {{ release.platform }} • x86_64 • {{ size }} MB
+          <!-- TODO: update tooltip info -->
+          <Tooltip
+            bg-color="bg-white-50"
+            text-color="text-black-950"
+            tooltip-text="Lorenipsum dsesrwersedre"
+          >
+          <span class="text-xs ml-xs">ⓘ</span>
+        </Tooltip>
         </p>
 
-        <p class="text-large text-white-50 text-center max-w-4xl mb-xl"></p>
+        <p class="text-large text-white-50 text-center max-w-screen-md mb-xl">{{ t('coin.participate') }}</p>
 
         <div class="grid w-max h-max grid-flow-col sm:grid-flow-row gap-lg items-end">
           <div class="grid justify-items-center justify-center gap-sm h-max">
@@ -61,7 +70,7 @@
 
           <div class="grid justify-items-center justify-center gap-sm h-max">
             <LinuxIcon class="icon" />
-            <p class="text-link-dark">Docker</p>
+            <p class="text-link-dark">Linux</p>
           </div>
 
           <div class="grid justify-items-center justify-center gap-sm h-max">
@@ -79,7 +88,23 @@
             :title="explorer.title"
             :description="explorer.description"
             :url="explorer.url"
-          />
+          >
+            <template #description>
+              <i18n-t
+                :keypath="explorer.description"
+                tag="p"
+                class="text-sm text-black-950"
+              >
+                <span
+                  v-for="text in explorer.highlightedText"
+                  :key="text"
+                  class="text-black-950 font-[700]"
+                >
+                  {{ t(text) }}
+                </span>
+              </i18n-t>
+            </template>
+          </ExplorerLink>
         </div>
       </div>
     </template>
@@ -95,6 +120,8 @@ import WindowsIcon from '@/assets/svg/windows.svg?component'
 import AppleIcon from '@/assets/svg/apple.svg?component'
 import LinuxIcon from '@/assets/svg/linux.svg?component'
 import RaspberryIcon from '@/assets/svg/raspberry.svg?component'
+import PalmBlueIcon from '@/assets/svg/palmBlue.svg?component'
+
 
 import { ButtonType } from '~/types'
 
@@ -126,23 +153,30 @@ type Explorer = {
 const explorers: Array<Explorer> = [
   {
     title: t('coin.cards.get_started.title'),
-    description: t('coin.cards.get_started.description'),
+    description: 'coin.cards.get_started.description',
+    highlightedText: ['coin.cards.get_started.boldText1'],
     url: "",
   },
   {
     title: t('coin.cards.tutorials.title'),
-    description: t('coin.cards.tutorials.description'),
+    description: 'coin.cards.tutorials.description',
+    highlightedText: ['coin.cards.tutorials.boldText1'],
     url: "",
   },
   {
     title: t('coin.cards.contribute.title'),
-    description: t('coin.cards.contribute.description'),
+    description: 'coin.cards.contribute.description',
+    highlightedText: ['coin.cards.contribute.boldText1'],
     url: "",
   },
 ]
 </script>
 
 <style scoped lang="scss">
+.icon {
+  width: auto;
+  height: 48px;
+}
 .title-h3 {
   line-height: 1;
 }

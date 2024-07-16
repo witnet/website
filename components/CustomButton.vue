@@ -1,5 +1,5 @@
 <template>
-  <button class="btn w-fit px-lg py-md" :class="`btn-${type}`">
+  <button class="btn w-fit" :class="`btn-${type}`">
     <slot> </slot>
   </button>
 </template>
