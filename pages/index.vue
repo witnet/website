@@ -3,7 +3,7 @@
     <HeroSection />
     <WhatIsWitnetSection />
     <CoinSection />
-    <!-- <BuySection class="pt-28 pb-28 px-4" /> -->
+    <BuySection />
     <!-- <SecureSection class="pt-28 pb-28 px-4" /> -->
     <!-- <BuildSection class="pt-28 pb-28 px-4" /> -->
 
