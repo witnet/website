@@ -14,7 +14,7 @@ export default {
     './app.vue',
     './error.vue',
   ],
-  safelist: ['btn-primary', 'btn-secondary', 'btn-disabled'],
+  safelist: ['btn-primary', 'btn-secondary', 'btn-terciary', 'btn-disabled'],
   theme: {
     screens: {
       sm: { min: '0px', max: '706px' },

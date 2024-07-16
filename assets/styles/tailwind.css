@@ -48,6 +48,11 @@
   .btn-secondary {
     @apply font-semibold rounded-full shadow-md bg-black-950 hover:bg-black-900 text-white-50 focus:outline-none focus:ring focus:ring-black-500 focus:ring-opacity-80 border-2;
   }
+  .btn-terciary {
+    @apply font-semibold rounded-full border-white-50 bg-black-950 hover:bg-black-900 text-white-50 focus:outline-none focus:ring focus:ring-black-500 focus:ring-opacity-80 border-2;
+    box-shadow: none !important;
+    white-space: nowrap;
+  }
   .btn-disabled {
     @apply cursor-not-allowed font-semibold rounded-full shadow-md bg-wit-blue-500 text-black-950 bg-opacity-80;
   }
