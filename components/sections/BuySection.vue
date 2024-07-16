@@ -2,11 +2,11 @@
   <NuxtLayout
     name="section"
     :content-classes="'grid justify-items-center h-max gap-md'"
-    :height="'h-lg-y-screen sm:h-[max-content] max-h-[900px]'"
+    :height="'h-lg-y-screen sm:h-[max-content]'"
   >
     <template #content>
       <h2 class="title-h2 text-center">{{ t('buy-section.title') }}</h2>
-      <p class="text text-center">{{ t('buy-section.description') }}</p>
+      <p class="text text-center max-w-screen-md">{{ t('buy-section.description') }}</p>
       <div
         class="grid grid-cols-3 gap-xl mt-xl sm:grid-cols-1 justify-items-left"
       >

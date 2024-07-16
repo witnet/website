@@ -1,10 +1,14 @@
 <template>
   <div class="card border-2 border-black-950 rounded-lg px-xl py-lg">
     <div class="flex items-center">
-      <div class="circle border border-black-950 rounded-full h-fit p-sm mr-md text-black-950">{{ formattedIndex }}</div>
-      <h3 class="title-h4">{{ title }}</h3>
+      <div
+        class="text-xl circle border border-black-950 rounded-full h-fit p-sm mr-md text-black-950"
+      >
+        {{ formattedIndex }}
+      </div>
+      <h3 class="title-h5">{{ title }}</h3>
     </div>
-    <hr class="hr my-md">
+    <hr class="hr my-md" />
     <p class="text">{{ description }}</p>
   </div>
 </template>
@@ -28,7 +32,7 @@ const props = defineProps({
 const formattedIndex = computed(() => {
 return props.index.toLocaleString('en-US', {
     minimumIntegerDigits: 2,
-    useGrouping: false
+    useGrouping: false,
   })
 })
 </script>
@@ -36,6 +40,8 @@ return props.index.toLocaleString('en-US', {
 <style scoped lang="scss">
 .card {
   box-shadow: 7px 10px 0px rgb(0, 0, 0);
+  margin-bottom: 10px;
+  margin-right: 7px;;
 }
 
 .title-h2 {
@@ -49,7 +55,7 @@ return props.index.toLocaleString('en-US', {
 
 .circle {
   line-height: 1;
-  font-size: 24px;
+  // font-size: 24px;
   height: 48px;
   min-width: 48px;
   align-content: center;

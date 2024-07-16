@@ -37,7 +37,7 @@
           </i18n-t>
         </CustomButton>
 
-        <p class="text-lg text-wit-blue-500">
+        <p class="text text-wit-blue-500">
           {{ release.platform }} • x86_64 • {{ size }} MB ⓘ
         </p>
 

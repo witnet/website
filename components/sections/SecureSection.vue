@@ -3,7 +3,7 @@
     name="section"
     :frame-classes="'bg-wit-blue-500'"
     :content-classes="'grid justify-items-center gap-md h-max'"
-    :height="'h-lg-y-screen sm:h-[max-content] max-h-[900px]'"
+    :height="'h-lg-y-screen sm:h-[max-content]'"
   >
     <template #content>
       <i18n-t
@@ -15,7 +15,7 @@
         <span class="font-bold">{{ $t('secure-section.title2') }}</span>
       </i18n-t>
 
-      <p class="text text-center">{{ t('secure-section.description') }}</p>
+      <p class="text text-center max-w-screen-md">{{ t('secure-section.description') }}</p>
       <div class="grid grid-cols-2 sm:grid-cols-1 mt-lg">
         <OutOfBoundariesCard
           title="Sheikah"
