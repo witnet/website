@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 .section {
-  padding: 48px;
+  padding: 100px;
   margin: 0 auto;
   max-width: 1100px;
   width: 100%;
