@@ -2,16 +2,22 @@
   <div class="grid grid-flow-row overflow-hidden">
     <HeroSection />
     <WhatIsWitnetSection />
-    <!-- <CoinSection class="py-16"/>
-    <BuildSection class="py-16" />
-    <ExploreSection class="py-16" />
-    <Tutorials class="py-16" />
-    <Newsletter class="py-16"/> -->
+    <CoinSection />
+    <!-- <BuySection class="pt-28 pb-28 px-4" /> -->
+    <!-- <SecureSection class="pt-28 pb-28 px-4" /> -->
+    <!-- <BuildSection class="pt-28 pb-28 px-4" /> -->
+
+    <!-- <ExploreSection class="pt-28 pb-28 px-4" />
+    <TutorialsSection class="pt-28 pb-28 px-4" />
+    <CommunitySection class="pt-28 pb-28 px-4" />
+    <Newsletter class="pt-28 pb-28 px-4" />
+    <FooterSection class="pt-28 pb-28 px-4" /> -->
   </div>
 </template>
 
 <style scoped>
-.py-16 {
-  padding: 96px 0;
-}
+/* .pt-28 pb-28 {
+  padding-top: 96px;
+  padding-bottom: 96px;
+} */
 </style>

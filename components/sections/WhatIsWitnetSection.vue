@@ -5,7 +5,7 @@
     :content-classes="'grid justify-items-center'"
   >
     <template #content>
-      <div class="grid justify-items-center my-lg">
+      <div class="grid justify-items-center mb-lg">
         <i18n-t
           keypath="what-is-witnet.title.main"
           class="title-h2 font-normal text-center max-w-screen-md"
@@ -27,7 +27,7 @@
         </p>
       </div>
       <div
-        class="grid grid-cols-6 justify-center relative w-min-content gap-sm w-max my-lg"
+        class="grid grid-cols-6 justify-center relative w-min-content gap-sm w-max mt-lg"
       >
         <CircleIcon class="w-2xl h-auto sm:w-xl absolute z-0 left-[-40px] top-[16px]" />
         <BashIcon class="w-2xl h-auto sm:w-xl z-10" />

@@ -1,5 +1,5 @@
 <template>
-  <button class="btn w-fit px-xl py-md" :class="`btn-${type}`">
+  <button class="btn w-fit px-lg py-md" :class="`btn-${type}`">
     <slot> </slot>
   </button>
 </template>
@@ -21,6 +21,10 @@ defineProps({
 <style scoped>
 .btn {
   font-size: 1rem;
-  box-shadow: 3px 7px 0px rgb(0, 0, 0);
+}
+
+.btn-terciary {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 </style>

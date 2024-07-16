@@ -11,20 +11,25 @@
   }
   .title-h2 {
     @apply font-title text-5xl font-semibold;
-    line-height: 1.5;
+    line-height: 1.1;
     color: #232323;
   }
 
+  .title-h2-xl {
+    @apply font-title text-7xl font-semibold;
+    line-height: 1.1;
+    color: #232323;
+  }
 
   .title-h3 {
     @apply font-title text-5xl font-semibold;
-    line-height: 1.5;
+    line-height: 1.1;
     color: #232323;
   }
 
   .title-h4 {
-    @apply font-title text-2xl font-semibold;
-    line-height: 1.5;
+    @apply font-title text-4xl font-semibold;
+    line-height: 1.1;
     color: #232323;
   }
 
@@ -32,6 +37,22 @@
     @apply text-lg;
     line-height: 1.5;
     color: #333;
+  }
+
+  .text-dark {
+    @apply text-lg text-white-50;
+    line-height: 1.5;
+  }
+
+  .text-link {
+    @apply text-sm;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .text-link-dark {
+    @apply text-sm text-white-50;
+    line-height: 1.5;
   }
 
   .subtitle {
@@ -43,14 +64,16 @@
     @apply w-full py-sm px-md cursor-pointer;
   }
   .btn-primary {
-    @apply font-semibold rounded-full shadow-md bg-wit-blue-500 hover:bg-wit-blue-400 text-black-950 focus:outline-none focus:ring focus:ring-wit-blue-500 focus:ring-opacity-80;
+    @apply font-semibold rounded-full shadow-md bg-wit-blue-500 hover:bg-wit-blue-400 text-black-950 focus:outline-none focus:ring focus:ring-wit-blue-500 focus:ring-opacity-80 shadow-[3px_7px_0px] shadow-black-950;
+  }
+  .btn-dark {
+    @apply font-semibold rounded-full shadow-md bg-white-50 hover:bg-white-100 text-black-950 focus:outline-none focus:ring focus:ring-wit-blue-500 focus:ring-opacity-80 shadow-[3px_7px_0px] shadow-wit-blue-500;
   }
   .btn-secondary {
-    @apply font-semibold rounded-full shadow-md bg-black-950 hover:bg-black-900 text-white-50 focus:outline-none focus:ring focus:ring-black-500 focus:ring-opacity-80 border-2;
+    @apply font-semibold rounded-full shadow-md bg-black-950 hover:bg-black-900 text-white-50 focus:outline-none focus:ring focus:ring-black-500 focus:ring-opacity-80 border-2 shadow-[3px_7px_0px] shadow-black-950;
   }
   .btn-terciary {
     @apply font-semibold rounded-full border-white-50 bg-black-950 hover:bg-black-900 text-white-50 focus:outline-none focus:ring focus:ring-black-500 focus:ring-opacity-80 border-2;
-    box-shadow: none !important;
     white-space: nowrap;
   }
   .btn-disabled {
