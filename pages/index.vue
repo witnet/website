@@ -7,10 +7,10 @@
     <SecureSection />
     <BuildSection />
 
-    <ExploreSection class="pt-28 pb-28 px-4" />
-    <TutorialsSection class="pt-28 pb-28 px-4" />
-    <CommunitySection class="pt-28 pb-28 px-4" />
-    <!-- <Newsletter class="pt-28 pb-28 px-4" /> -->
+    <ExploreSection />
+    <TutorialsSection />
+    <CommunitySection />
+    <Newsletter />
     <!-- <FooterSection class="pt-28 pb-28 px-4" /> -->
   </div>
 </template>
