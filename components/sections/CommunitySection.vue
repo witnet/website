@@ -1,12 +1,40 @@
 <template>
-  <div>
-    <h2 class="title-h2">{{ $t('community.title') }}</h2>
-    <p>{{ $t('community.description') }}</p>
-    <a :href="URLS.advocateProgram">{{ $t('community.advocate-program') }}</a>
-    <a :href="URLS.grantProgram">{{ $t('community.grant-program') }}</a>
-  </div>
+  <NuxtLayout
+    name="section"
+    :frame-classes="'bg-black-950'"
+    :content-classes="'grid justify-items-center gap-lg'"
+  >
+    <template #content>
+      <i18n-t
+        keypath="community.title.text"
+        class="title-h2 text-white-50"
+        tag="h2"
+      >
+        <span class="text-wit-blue-500">{{ $t('community.title.dot') }}</span>
+      </i18n-t>
+      <p class="text text-center text-white-50">{{ t('secure-section.description') }}</p>
+      <div class="grid grid-cols-2 gap-2xl mt-lg sm:grid-cols-1">
+        <IconWithText :text-color="'text-link-dark'" class="w-72 mb-4 sm:mb-0 cursor-pointer" :text="$t('community.advocate-program')">
+          <MegaphoneIcon class="icon" />
+        </IconWithText>
+        <IconWithText :text-color="'text-link-dark'" class="w-72 cursor-pointer" :text="$t('community.grant-program')">
+          <BadgeIcon class="icon" />
+        </IconWithText>
+      </div>
+    </template>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import { URLS } from '@/constants'
+const { t } = useI18n()
+
+import MegaphoneIcon from '@/assets/svg/megaphone.svg?component'
+import BadgeIcon from '@/assets/svg/badge.svg?component'
 </script>
+
+<style scoped>
+.icon {
+  width: 45px;
+  height: 45px;
+}
+</style>
