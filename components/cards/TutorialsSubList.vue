@@ -1,13 +1,11 @@
 <template>
-  <div class="border-2 border-black-950 rounded-lg px-xl py-md m-sm">
-    <h3 class="title-h4">{{ title }}</h3>
+  <div class="border-2 border-black-950 rounded-lg px-lg py-lg m-sm w-72">
+    <h3 class="title-h5">{{ title }}</h3>
 
-    <hr class="hr my-md">
+    <hr class="hr my-md" />
 
-    <ul>
-      <li v-for="tutorial in tutorials"
-      class="list-disc list-inside"
-      >
+    <ul class="marker:text-wit-blue-500 grid gap-md">
+      <li v-for="tutorial in tutorials" class="list-disc list-inside">
         <TutorialLink
           class="block"
           :key="tutorial.name"
@@ -45,6 +43,6 @@ defineProps({
 }
 .hr {
   height: 3px;
-  background-color: black;  /* Modern Browsers */
+  background-color: black; /* Modern Browsers */
 }
 </style>
