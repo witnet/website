@@ -4,7 +4,7 @@
       <RoundedIcon class="mr-md">
         <slot></slot>
       </RoundedIcon>
-      <p class="text-link font-bold">{{ text }}</p>
+      <p class="text-link font-bold" :class="textColor">{{ text }}</p>
     </div>
   </a>
 </template>
@@ -12,6 +12,10 @@
 <script setup>
 defineProps({
   text: {
+    type: String,
+    required: true,
+  },
+  textColor: {
     type: String,
     required: true,
   },

@@ -1,29 +1,28 @@
 <template>
-  <SectionBase
-    :description="t('secure-section.description')"
-    background="black"
+  <NuxtLayout
+    name="section"
+    :frame-classes="'bg-black-950'"
+    :content-classes="'grid justify-items-center gap-lg'"
   >
-    <template v-slot:title>
+    <template #content>
       <i18n-t
         keypath="community.title.text"
-        class="title-h2 mb-lg text-white-50"
-        tag="span"
+        class="title-h2 text-white-50"
+        tag="h2"
       >
         <span class="text-wit-blue-500">{{ $t('community.title.dot') }}</span>
       </i18n-t>
-    </template>
-
-    <template v-slot:content>
-      <div class="flex w-full items-center flex-col justify-between sm:flex-row">
-        <IconWithText class="w-72 mb-4 sm:mb-0" :text="$t('community.advocate-program')">
+      <p class="text text-center text-white-50">{{ t('secure-section.description') }}</p>
+      <div class="grid grid-cols-2 gap-2xl mt-lg sm:grid-cols-1">
+        <IconWithText :text-color="'text-link-dark'" class="w-72 mb-4 sm:mb-0 cursor-pointer" :text="$t('community.advocate-program')">
           <MegaphoneIcon class="icon" />
         </IconWithText>
-        <IconWithText class="w-72" :text="$t('community.grant-program')">
+        <IconWithText :text-color="'text-link-dark'" class="w-72 cursor-pointer" :text="$t('community.grant-program')">
           <BadgeIcon class="icon" />
         </IconWithText>
       </div>
     </template>
-  </SectionBase>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
