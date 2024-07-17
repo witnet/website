@@ -12,7 +12,7 @@
         </h3>
         <hr class="hr my-md ml-14" />
       </div>
-      <p class="text-base text-black-950 mb-xl">
+      <p class="text text-black-950 mb-xl">
         {{ description }}
       </p>
 
