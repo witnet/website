@@ -10,7 +10,7 @@
         <p class="text">{{ $t('newsletter.subtitle') }}</p>
         <DashesIcon class="col-start-2 col-span-2 dashes" />
       </div>
-
+      <!-- 
       <div>
         <label for="subscribe_buttom" class="sr-only">Label</label>
         <div class="flex rounded-lg shadow-sm">
@@ -28,10 +28,12 @@
            Subscribe 
           </button>
         </div>
-      </div>
+      </div> -->
+      <Mailchimp />
+ 
     </div>
 
-    <PalmBlackIcon class="col-start-2 col-span-2 palm" />
+    <PalmBlackIcon class="col-start-2 col-span-2 palm hidden" />
   </div>
 </template>
 
