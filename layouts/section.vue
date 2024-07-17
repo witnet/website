@@ -6,10 +6,11 @@
       </div>
     </div>
     <div
+      class="sm:hidden"
       :class="
         centerLeftContent
-          ? 'absolute top-[200px] left-[0px]'
-          : 'absolute top-[0px] left-sm-x-screen'
+          ? 'absolute top-[200px] left-[0px] md:hidden'
+          : 'absolute top-[0px] left-sm-x-screen lg:left-lg md:left-md'
       "
     >
       <slot name="left"></slot>
@@ -58,13 +59,13 @@ export default {
 
 @media (max-width: 600px) {
   .section {
-    padding: 48px 32px;
+    padding: 70px 32px;
   }
 }
 
 @media (max-width: 350px) {
   .section {
-    padding: 32px 16px;
+    padding: 70px 16px;
   }
 }
 </style>

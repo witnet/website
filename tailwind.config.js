@@ -24,7 +24,8 @@ export default {
   theme: {
     screens: {
       sm: { min: '0px', max: '706px' },
-      md: '706px',
+      md: { min: '706px', max: '1200px' },
+      lg: { min: '1200px', max: '1600px' },
     },
     extend: {
       fontFamily: {

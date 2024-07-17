@@ -5,11 +5,11 @@
     :content-classes="'grid justify-items-center'"
   >
     <template #left>
-      <PalmBlueIcon class="sm:hidden" />
+      <PalmBlueIcon class="sm:hidden lg:w-[250px] lg:h-autho" />
     </template>
     <template #content>
       <div class="flex flex-col items-center gap-md">
-        <div class="flex justify-center items-center mb-xl flex-col md:flex-row">
+        <div class="flex justify-center items-center mb-xl flex-row md:flex-col sm:flex-col">
           <i18n-t
             keypath="coin.title.main"
             class="title-h2-xl sm:text-7xl lg:text-8xl font-bold text-white-50"
@@ -19,7 +19,7 @@
             <span class="text-wit-blue-500">{{ $t('coin.title.mark') }}</span>
           </i18n-t>
 
-          <p class="mx-xl line transform rotate-90 md:transform-none"></p>
+          <p class="mx-xl line transform md:rotate-90 sm:rotate-90"></p>
           <div class="max-w-md sm:text-center">
             <h4 class="title-h4 text-white-50 mb-md">
               {{ $t('coin.description1') }}
