@@ -12,7 +12,7 @@
         <ArrowRightIcon class="arrow" />
       </div>
       <hr class="hr my-md" />
-      <p class="text-sm text-black-950">{{ description }}</p>
+      <slot name="description" class="text-sm text-black-950"></slot>
     </div>
   </div>
 </template>
@@ -22,10 +22,6 @@ import ArrowRightIcon from '@/assets/svg/arrow_right.svg?component'
 
 defineProps({
   title: {
-    type: String,
-    required: true,
-  },
-  description: {
     type: String,
     required: true,
   },

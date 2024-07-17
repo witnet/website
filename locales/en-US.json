@@ -45,15 +45,18 @@
     "cards": {
       "get_started": {
         "title": "Get Started",
-        "description": "Start Staking Now and earn rewards!"
+        "description": "Start {0} and earn rewards!",
+        "boldText1": "Staking Now"
       },
       "tutorials": {
         "title": "Tutorials",
-        "description": "Learn the basics about taking with the comprehensive tutorials!"
+        "description": "Learn the basics about taking with the {0}",
+        "boldText1": "comprehensive tutorials!"
       },
       "contribute": {
         "title": "Contribute",
-        "description": "Help make Witnet even better. Submit code, examples, libraries, or help us fix bugs."
+        "description": "Help make {0}. Submit code, examples, libraries, or help us fix bugs.",
+        "boldText1": "Witnet even better"
       }
     }
   },

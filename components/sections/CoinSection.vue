@@ -39,9 +39,16 @@
           </i18n-t>
         </CustomButton>
         <p class="text text-wit-blue-500 mt-md">
-          {{ release.platform }} • x86_64 • {{ size }} MB <span class="text-xs ml-xs">ⓘ</span>
+          {{ release.platform }} • x86_64 • {{ size }} MB
+          <!-- TODO: update tooltip info -->
+          <Tooltip
+            bg-color="bg-white-50"
+            text-color="text-black-950"
+            tooltip-text="Lorenipsum dsesrwersedre"
+          >
+          <span class="text-xs ml-xs">ⓘ</span>
+        </Tooltip>
         </p>
-        <Tooltip />
 
         <p class="text-large text-white-50 text-center max-w-screen-md mb-xl">{{ t('coin.participate') }}</p>
 
@@ -81,7 +88,23 @@
             :title="explorer.title"
             :description="explorer.description"
             :url="explorer.url"
-          />
+          >
+            <template #description>
+              <i18n-t
+                :keypath="explorer.description"
+                tag="p"
+                class="text-sm text-black-950"
+              >
+                <span
+                  v-for="text in explorer.highlightedText"
+                  :key="text"
+                  class="text-black-950 font-[700]"
+                >
+                  {{ t(text) }}
+                </span>
+              </i18n-t>
+            </template>
+          </ExplorerLink>
         </div>
       </div>
     </template>
@@ -130,17 +153,20 @@ type Explorer = {
 const explorers: Array<Explorer> = [
   {
     title: t('coin.cards.get_started.title'),
-    description: t('coin.cards.get_started.description'),
+    description: 'coin.cards.get_started.description',
+    highlightedText: ['coin.cards.get_started.boldText1'],
     url: "",
   },
   {
     title: t('coin.cards.tutorials.title'),
-    description: t('coin.cards.tutorials.description'),
+    description: 'coin.cards.tutorials.description',
+    highlightedText: ['coin.cards.tutorials.boldText1'],
     url: "",
   },
   {
     title: t('coin.cards.contribute.title'),
-    description: t('coin.cards.contribute.description'),
+    description: 'coin.cards.contribute.description',
+    highlightedText: ['coin.cards.contribute.boldText1'],
     url: "",
   },
 ]

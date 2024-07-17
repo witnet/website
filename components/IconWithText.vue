@@ -4,7 +4,7 @@
       <RoundedIcon class="mr-md">
         <slot></slot>
       </RoundedIcon>
-      <p class="text-link">{{ text }}</p>
+      <p class="text-link font-bold">{{ text }}</p>
     </div>
   </a>
 </template>
