@@ -1,25 +1,29 @@
 <template>
-  <CenteredSection background="black">
-    <div class="text-white-50 flex justify-center">
-      <div class="footer p-4">
+  <NuxtLayout
+    name="section"
+    :frame-classes="'bg-black-950'"
+    :content-classes="'grid justify-items-center'"
+  >
+    <template #content>
+      <div class="footer grid gap-xl">
         <div
-          class="top flex flex-col md:flex-row justify-between border-b border-white-50 pb-10 gap-x-10 gap-y-7"
+          class="grid grid-cols-[max-content_1fr] md:grid-cols-1 gap-xl"
         >
           <div
-            class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] md:grid-cols-[repeat(3,150px)]"
+            class="grid grid-cols-[130px_130px_130px] gap-2xl sm:gap-md sm:grid-cols-2 justify-items-center"
           >
             <div
               v-for="section in footerLinks"
               :key="section.title"
-              class="py-2 flex flex-col"
+              class="py-2 flex flex-col gap-sm"
             >
-              <p class="title font-bold text-sm">
+              <p class="title font-bold footer-text mb-sm">
                 {{ $t(`footer.links.${section.title}.title`) }}
               </p>
               <a
                 v-for="link in section.links"
                 :key="link.text"
-                class="py-1 text-sm"
+                class="footer-text footer-hover-style cursor-pointer"
                 :href="link.url"
                 target="_blank"
               >
@@ -27,11 +31,11 @@
               </a>
             </div>
           </div>
-          <div class="text-sm col-span-3">
-            <AdoIcon class="mb-2 w-14" />
-            <i18n-t keypath="footer.ado_text" tag="p" class="text-sm">
+          <div class="w-full grid gap-md xs:mt-lg">
+            <AdoIcon class="mb-2 w-[50px] h-auto" />
+            <i18n-t keypath="footer.ado_text" tag="p" class="footer-text">
               <a
-                class="py-1 underline text-sm"
+                class="py-1 underline footer-text"
                 :href="URLS.ado"
                 target="_blank"
               >
@@ -40,23 +44,23 @@
             </i18n-t>
           </div>
         </div>
-        <div class="flex items-center gap-4 pt-10">
+        <div class="flex items-center gap-lg pt-10">
           <Wit2Icon class="w-2xl white" name="witnet_dark" />
           <div>
             <i18n-t
               keypath="footer.copyright.base1"
-              class="copyright max-w-100 text-sm"
+              class="copyright max-w-100 footer-text"
               tag="p"
             >
               <span>2018-{{ new Date().getFullYear() }}</span>
               <a
-                class="underline py-1 text-sm"
+                class="underline py-1 footer-text"
                 :href="URLS.witnet_foundation"
                 target="_blank"
                 >{{ $t('footer.copyright.witnet_foundation') }}</a
               >
               <a
-                class="underline py-1 text-sm"
+                class="underline py-1 footer-text"
                 href="https://creativecommons.org/publicdomain/zero/1.0/"
                 target="_blank"
                 >{{ $t('footer.copyright.license') }}</a
@@ -64,11 +68,11 @@
             </i18n-t>
             <i18n-t
               keypath="footer.copyright.base2"
-              class="copyright max-w-100 text-sm"
+              class="copyright max-w-100 footer-text"
               tag="p"
             >
               <a
-                class="underline py-1 text-sm"
+                class="underline py-1 footer-text"
                 href="https://creativecommons.org/publicdomain/zero/1.0/"
                 target="_blank"
                 >{{ $t('footer.copyright.license') }}</a
@@ -77,8 +81,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </CenteredSection>
+    </template>
+  </NuxtLayout>
 </template>
 
 <script setup>

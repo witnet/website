@@ -65,6 +65,19 @@
   .subtitle {
     @apply text-sm text-white-300;
   }
+
+  .footer-text {
+    @apply text-xs text-white-50;
+    line-height: 1.5;
+  }
+
+  .link-hover-style {
+    @apply hover:-mr-[5px] hover:font-semibold;
+  }
+
+  .footer-hover-style {
+    @apply hover:-mr-[2.5px] hover:font-semibold;
+  }
   
   /* Button */
   .btn {
