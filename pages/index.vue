@@ -11,7 +11,7 @@
     <TutorialsSection />
     <CommunitySection />
     <Newsletter />
-    <!-- <FooterSection class="pt-28 pb-28 px-4" /> -->
+    <FooterSection />
   </div>
 </template>
 

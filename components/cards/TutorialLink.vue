@@ -1,5 +1,5 @@
 <template>
-  <a :href="url" class="inline-block hover:underline decoration-wit-blue-500">
+  <a :href="url" class="inline-block text-link link-hover-style">
     <h5>{{ name }}</h5>
   </a>
 </template>
