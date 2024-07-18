@@ -17,13 +17,13 @@
       </i18n-t>
 
       <p class="text text-center max-w-screen-md">{{ t('secure-section.description') }}</p>
-      <div class="grid grid-cols-2 sm:grid-cols-1 mt-lg">
+      <div class="grid grid-cols-2 md:grid-cols-1 mt-lg">
         <OutOfBoundariesCard
           title="Sheikah"
           description="Choose Sheikah for a privacy-focused experience on Windows, macOS, and GNU/Linux, ideal for users who prioritize security and user-friendly interfaces."
           action="Download Sheikah"
         >
-          <template v-slot:icon>
+          <template #icon>
             <SheikahIcon class="icon"></SheikahIcon>
           </template>
         </OutOfBoundariesCard>
@@ -33,7 +33,7 @@
           description="Opt for myWitWallet for instant transactions without the wait for synchronization, perfect for quick and easy sending and receiving of WIT."
           action="Download myWitWallet"
         >
-          <template v-slot:icon>
+          <template #icon>
             <MywitwalletIcon class="icon"></MywitwalletIcon>
           </template>
         </OutOfBoundariesCard>

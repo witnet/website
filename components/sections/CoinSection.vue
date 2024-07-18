@@ -79,7 +79,7 @@
           </div>
         </div>
 
-        <div class="grid grid-flow-col sm:grid-flow-row gap-md mt-xl">
+        <div class="grid grid-flow-col md:grid-flow-row gap-md mt-xl">
           <ExplorerLink
             v-for="explorer in explorers"
             class="mb-md 2xl:mr-md"

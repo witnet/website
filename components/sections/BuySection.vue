@@ -8,7 +8,7 @@
       <h2 class="title-h2 text-center">{{ t('buy-section.title') }}</h2>
       <p class="text text-center max-w-screen-md">{{ t('buy-section.description') }}</p>
       <div
-        class="grid grid-cols-3 gap-xl mt-xl sm:grid-cols-1 justify-items-left"
+        class="grid grid-cols-3 gap-xl mt-xl sm:grid-cols-1 md:grid-cols-2 justify-items-left"
       >
         <IconWithText
           v-for="exchange in exchanges"

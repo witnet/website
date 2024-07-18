@@ -23,9 +23,10 @@ export default {
   ],
   theme: {
     screens: {
-      sm: { min: '0px', max: '706px' },
-      md: { min: '706px', max: '1200px' },
-      lg: { min: '1200px', max: '1600px' },
+      lg: { max: '1600px' },
+      md: { max: '1200px' },
+      sm: { max: '706px' },
+      xs: { max: '350px' },
     },
     extend: {
       fontFamily: {

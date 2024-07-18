@@ -2,7 +2,7 @@
   <NuxtLayout
     name="section"
     :frame-classes="'bg-wit-blue-500'"
-    :content-classes="'grid justify-start gap-sm'"
+    :content-classes="'grid justify-start gap-sm py-[200px]'"
   >
     <template #content>
       <h2 class="title-h2">{{ t('newsletter.title') }}</h2>
@@ -14,13 +14,13 @@
       </div>
       <div class="mt-lg">
         <label for="subscribe_buttom" class="sr-only">Label</label>
-        <div class="flex rounded-lg shadow-sm">
+        <div class="flex shadow-sm">
           <input
             id="subscribe_buttom"
             type="text"
             name="subscribe_buttom"
             placeholder="name@domain.com"
-            class="rounded-l-full min-w-[300px] sm:min-w-max py-sm px-md block w-full border-gray-200 shadow-sm rounded-s-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+            class="rounded-l-full min-w-[300px] sm:min-w-max py-sm px-md block w-full border-gray-200 shadow-sm text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
           />
           <button
             type="button"
@@ -30,8 +30,10 @@
           </button>
         </div>
       </div>
-        <!-- <Mailchimp /> -->
-      <PalmBlackIcon class="col-start-2 col-span-2 palm hidden" />
+      <!-- <Mailchimp /> -->
+    </template>
+    <template #right>
+      <PalmBlackIcon class="sm:hidden lg:w-[250px] lg:h-autho rotate-180" />
     </template>
   </NuxtLayout>
 </template>
