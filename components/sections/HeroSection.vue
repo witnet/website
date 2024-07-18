@@ -2,7 +2,7 @@
   <NuxtLayout
     name="section"
     :center-left-content="false"
-    :content-classes="'p-[0px_100px_100px_100px] sm:p-[0px_32px_70px_32px] xs:p-[0px_16px_70px_16px]'"
+    :content-classes="'p-[24px_100px] sm:p-[0px_32px] xs:p-[0px_16px]'"
     :height="'h-lg-y-screen sm:h-[max-content] max-h-[900px]'"
   >
     <template #left>
