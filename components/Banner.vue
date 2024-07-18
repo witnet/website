@@ -1,9 +1,8 @@
 <template>
-    <div class="w-full bg-dotted h-xl" :class="[`bg-dotted-${color}`]" />
+  <div class="w-full bg-dotted h-xl" :class="[`bg-dotted-${color}`]" />
 </template>
 
 <script setup lang="ts">
-
 enum BannerColor {
   blue = 'blue',
   black = 'black',
@@ -26,14 +25,12 @@ defineProps({
 }
 
 .bg-dotted-blue {
-    background-image: url('/assets/svg/dots.svg');
-    background-size: contain;
+  background-image: url('/assets/svg/dots.svg');
+  background-size: contain;
 }
 
 .bg-dotted-black {
-    background-image: url('/assets/svg/dots-black.svg');
-    background-size: contain;
+  background-image: url('/assets/svg/dots-black.svg');
+  background-size: contain;
 }
-
-
 </style>
