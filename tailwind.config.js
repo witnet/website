@@ -113,7 +113,7 @@ export default {
       xl: '40px',
       '2xl': '80px',
       '3xl': '140px',
-      'c-3xl': '550px',
+      'c-3xl': '600px',
       'c-4xl': '900px',
       'sm-x-screen': '15vw',
       'md-x-screen': '50vw',
