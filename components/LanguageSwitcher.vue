@@ -93,7 +93,7 @@ const iconMap: Dictionary = computed(() => {
     color: $black;
     min-width: max-content;
     border-radius: 16px;
-    font-size: 16px;
+    font-size: 14px;
     .dropdown-items {
       margin-right: 8px;
     }
@@ -142,14 +142,12 @@ const iconMap: Dictionary = computed(() => {
   }
   .vs__selected {
     color: $white;
-    font-family: 'NeueMachina-Regular', sans-serif;
     margin: 0;
     padding: 4px 0 0 0;
-    font-size: 20px;
+    font-size: 14px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 16px;
   }
   &:hover {
     .vs__selected {

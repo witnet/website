@@ -37,13 +37,13 @@ export const languageLocales: LanguageDictionary = {
   [localeCodes.en]: {
     code: 'en-US',
     iso: 'en-US',
-    name: 'English(US)',
+    name: 'ENGLISH',
     file: 'en-US.json',
   },
   [localeCodes.es]: {
     code: 'es-ES',
     iso: 'es-ES',
-    name: 'Español(ES)',
+    name: 'ESPAÑOL',
     file: 'es-ES.json',
   },
 }
