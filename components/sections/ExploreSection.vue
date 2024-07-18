@@ -2,7 +2,7 @@
   <NuxtLayout
     name="section"
     :frame-classes="'bg-wit-blue-500 px-[0px]'"
-    :content-classes="'grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1 justify-items-center'"
+    :content-classes="'grid justify-items-center'"
   >
     <template #content>
       <div class="flex self-center sm:w-96 justify-self-center">
@@ -17,7 +17,7 @@
         </i18n-t>
       </div>
 
-      <div class="grid gap-md mt-lg">
+      <div class="grid grid-cols-2 sm:grid-cols-1 gap-md mt-lg">
         <ExplorerLink
           v-for="explorer in explorers"
           :key="explorer.title"
