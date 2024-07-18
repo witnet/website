@@ -44,9 +44,9 @@
             </i18n-t>
           </div>
         </div>
-        <div class="flex items-center gap-lg pt-10">
+        <div class="grid grid-cols-[max-content_max-content_1fr] sm:grid-cols-1 align-middle gap-lg pt-10">
           <Wit2Icon class="w-2xl white" name="witnet_dark" />
-          <div>
+          <div class="h-max self-center">
             <i18n-t
               keypath="footer.copyright.base1"
               class="copyright max-w-100 footer-text"
@@ -79,6 +79,7 @@
               >
             </i18n-t>
           </div>
+          <LanguageSwitcher class="justify-self-end self-center" />
         </div>
       </div>
     </template>
