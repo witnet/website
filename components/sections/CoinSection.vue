@@ -1,5 +1,6 @@
 <template>
   <NuxtLayout
+    id="stake"
     name="section"
     :frame-classes="'bg-black-950'"
     :content-classes="'grid justify-items-center'"
@@ -9,11 +10,12 @@
     </template>
     <template #content>
       <div class="flex flex-col items-center gap-md">
-        <div class="flex justify-center items-center mb-xl flex-row md:flex-col sm:flex-col">
+        <div
+          class="flex justify-center items-center mb-xl flex-row md:flex-col sm:flex-col"
+        >
           <i18n-t
             keypath="coin.title.main"
             class="title-h2-xl sm:text-7xl lg:text-8xl font-bold text-white-50"
-            id="stake"
             tag="h3"
           >
             <span class="text-wit-blue-500">{{ $t('coin.title.mark') }}</span>
@@ -30,11 +32,7 @@
         </div>
 
         <CustomButton :type="ButtonType.dark">
-          <i18n-t
-            keypath="coin.run_in_platform.main"
-            class="flex flex-row"
-            tag="p"
-          >
+          <i18n-t keypath="coin.run_in_platform.main" tag="p">
             <span class="ml-[4px]">{{ release.platform }}</span>
           </i18n-t>
         </CustomButton>

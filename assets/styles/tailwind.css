@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  html {
+    @apply scroll-smooth
+  }
   /* Titles */
   .title-h1 {
     @apply font-title text-7xl font-semibold sm:text-6xl;
@@ -101,10 +104,9 @@
   }
   /* Navbar */
   .navbar-links {
-    @apply bg-black-950;
+    @apply text-white-50 sm:bg-black-950;
   }
   .nav-link {
-    @apply text-black-950 hover:text-gray-500;
-    background: white;
+    @apply text-black-950 sm:text-white-50;
   }
 }

@@ -9,7 +9,7 @@
         <div class="close-menu-container" @click="closeMenu">
           <CloseNavIcon />
         </div>
-        <li v-for="link in navLinks" :key="link.key" class="nav-link">
+        <li v-for="link in navLinks" :key="link.key" class="nav-link" @click="closeMenu">
           <slot :name="link.key" />
         </li>
         <li class="nav-link language-select">
@@ -69,10 +69,6 @@ watch(
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-    svg {
-      width: 200px;
-      height: auto;
     }
   }
   .close-menu-container {

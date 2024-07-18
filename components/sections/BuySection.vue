@@ -1,5 +1,6 @@
 <template>
   <NuxtLayout
+    id="buy"
     name="section"
     :content-classes="'grid justify-items-center h-max gap-md'"
     :height="'h-lg-y-screen sm:h-[max-content]'"

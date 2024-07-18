@@ -30,6 +30,7 @@ export default {
 .section {
   padding: 16px;
   margin: 0 auto;
+  margin-top: 32px;
   max-width: 1300px;
   width: 100%;
 }
@@ -38,8 +39,22 @@ export default {
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .section {
+    margin-top: 0px;
+    padding: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    margin-top: 0px;
+  }
+}
+
 @media (max-width: 300px) {
   .section {
+    margin-top: 0px;
     padding: 32px 16px;
   }
 }

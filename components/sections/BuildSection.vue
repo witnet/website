@@ -1,5 +1,6 @@
 <template>
   <NuxtLayout
+    id="build"
     name="section"
     :center-left-content="false"
     :content-classes="'grid justify-items-center gap-md'"
@@ -9,7 +10,6 @@
     </template>
     <template #content>
       <i18n-t
-        id="build"
         keypath="build-section.title.key_features"
         class="title-h2 text-center max-w-screen-md"
         tag="h2"
