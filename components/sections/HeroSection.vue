@@ -16,7 +16,7 @@
           class="absolute z-0 h-2-md-y-screen max-h-[700px] overflow-hidden"
         />
         <Plus
-          class="absolute left-xl top-[450px] z-10 overflow-hidden sm:hidden lg:top-[280px] md:top-[350px] md:right-lg"
+          class="absolute left-xl top-[450px] z-10 overflow-hidden sm:hidden lg:top-[280px] md:top-[550px] md:right-lg"
         />
         <Zigzag
           class="absolute left-xl bottom-xl z-10 overflow-hidden sm:hidden md:bottom-sm"
