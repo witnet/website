@@ -91,7 +91,7 @@ import AdoIcon from '@/assets/svg/ado.svg?component'
 import Wit2Icon from '@/assets/svg/wit2.svg?component'
 
 const footerSections = {
-  developers: ['reference', 'libraries', 'tools'],
+  developers: ['reference', 'randomness', 'supported_chains'],
   ecosystem: [
     'block_explorer',
     'data_feeds_explorer',

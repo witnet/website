@@ -37,6 +37,6 @@ export async function getLatestRelease(navigator: any) {
         size: linuxRelease.size,
       },
     }
-    return (release as any)[os] as String
+    return (release as any)[os] as any
   })
 }

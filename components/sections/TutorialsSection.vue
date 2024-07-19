@@ -25,6 +25,7 @@
 <script setup lang="ts">
 import type { TutorialList } from '@/types'
 const { t } = useI18n()
+import { URLS } from '@/constants'
 
 // TODO: add urls
 const tutorials: Array<TutorialList> = [
@@ -33,19 +34,19 @@ const tutorials: Array<TutorialList> = [
     tutorialLinks: [
       {
         name: t('tutorials.web.tutorial-1'),
-        url: '',
+        url: URLS.http_requests,
       },
       {
         name: t('tutorials.web.tutorial-2'),
-        url: '',
+        url: URLS.graph_ql,
       },
       {
         name: t('tutorials.web.tutorial-3'),
-        url: '',
+        url: URLS.dynamic_requests,
       },
       {
         name: t('tutorials.web.tutorial-4'),
-        url: '',
+        url: URLS.api_reference,
       },
     ],
   },
@@ -54,19 +55,19 @@ const tutorials: Array<TutorialList> = [
     tutorialLinks: [
       {
         name: t('tutorials.price.tutorial-1'),
-        url: '',
+        url: URLS.price_feed_routes,
       },
       {
         name: t('tutorials.price.tutorial-2'),
-        url: '',
+        url: URLS.reading_price_pairs,
       },
       {
         name: t('tutorials.price.tutorial-3'),
-        url: '',
+        url: URLS.price_api_reference,
       },
       {
         name: t('tutorials.price.tutorial-4'),
-        url: '',
+        url: URLS.multichain_addresses,
       },
     ],
   },
@@ -75,19 +76,19 @@ const tutorials: Array<TutorialList> = [
     tutorialLinks: [
       {
         name: t('tutorials.randomness.tutorial-1'),
-        url: '',
+        url: URLS.generating_rng,
       },
       {
         name: t('tutorials.randomness.tutorial-2'),
-        url: '',
+        url: URLS.low_level_request,
       },
       {
         name: t('tutorials.randomness.tutorial-3'),
-        url: '',
+        url: URLS.solidity_api,
       },
       {
         name: t('tutorials.randomness.tutorial-4'),
-        url: '',
+        url: URLS.randomness_addresses,
       },
     ],
   },

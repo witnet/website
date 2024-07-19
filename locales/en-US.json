@@ -179,8 +179,8 @@
       "developers": {
         "title": "Developers",
         "reference": "Reference",
-        "libraries": "Libraries",
-        "tools": "tools"
+        "supported_chains": "Supported chains",
+        "randomness": "Randomness"
       },
       "ecosystem": {
         "title": "Ecosystem",

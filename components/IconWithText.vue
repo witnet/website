@@ -1,5 +1,5 @@
 <template>
-  <a :href="link">
+  <a :href="link" target="_blank">
     <div class="flex items-center">
       <RoundedIcon class="mr-md">
         <slot></slot>
@@ -17,7 +17,7 @@ defineProps({
   },
   textColor: {
     type: String,
-    required: true,
+    default: 'text-black-950',
   },
   link: {
     type: String,

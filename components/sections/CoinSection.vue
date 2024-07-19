@@ -32,7 +32,7 @@
         </div>
 
         <CustomButton :type="ButtonType.dark">
-          <a :href="getLatestRelease" target="_blank">
+          <a :href="release.releaseUrl" target="_blank">
             <i18n-t keypath="coin.run_in_platform.main" tag="p">
               <span class="ml-[4px]">{{ release.platform }}</span>
             </i18n-t>
@@ -40,14 +40,15 @@
         </CustomButton>
         <p class="text text-wit-blue-500 mt-md">
           {{ release.platform }} • x86_64 • {{ size }} MB
-          <!-- TODO: update tooltip info -->
-          <Tooltip
+          <span class="text-xs ml-xs">ⓘ</span>
+          <!-- In case the info icon is works as a tooltip, set content and uncomment the component -->
+          <!-- <Tooltip
             bg-color="bg-white-50"
             text-color="text-black-950"
             tooltip-text="Lorenipsum dsesrwersedre"
           >
           <span class="text-xs ml-xs">ⓘ</span>
-        </Tooltip>
+        </Tooltip> -->
         </p>
 
         <p class="text-large text-white-50 text-center max-w-screen-md mb-xl">{{ t('coin.participate') }}</p>
@@ -82,9 +83,9 @@
         <div class="grid grid-flow-col md:grid-flow-row gap-md mt-xl">
           <ExplorerLink
             v-for="explorer in explorers"
+            :key="explorer.title"
             class="mb-md 2xl:mr-md"
             shadow-color="blue"
-            :key="explorer.title"
             :title="explorer.title"
             :description="explorer.description"
             :url="explorer.url"
@@ -122,7 +123,7 @@ import LinuxIcon from '@/assets/svg/linux.svg?component'
 import RaspberryIcon from '@/assets/svg/raspberry.svg?component'
 import PalmBlueIcon from '@/assets/svg/palmBlue.svg?component'
 
-
+import { URLS } from '@/constants'
 import { ButtonType } from '~/types'
 
 import { getLatestRelease } from '../../utils/getLatestRelease'
@@ -155,19 +156,19 @@ const explorers: Array<Explorer> = [
     title: t('coin.cards.get_started.title'),
     description: 'coin.cards.get_started.description',
     highlightedText: ['coin.cards.get_started.boldText1'],
-    url: "",
+    url: URLS.get_started,
   },
   {
     title: t('coin.cards.tutorials.title'),
     description: 'coin.cards.tutorials.description',
     highlightedText: ['coin.cards.tutorials.boldText1'],
-    url: "",
+    url: URLS.tutorials,
   },
   {
     title: t('coin.cards.contribute.title'),
     description: 'coin.cards.contribute.description',
     highlightedText: ['coin.cards.contribute.boldText1'],
-    url: "",
+    url: URLS.github_contribute,
   },
 ]
 </script>

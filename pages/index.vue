@@ -4,9 +4,9 @@
     <WhatIsWitnetSection />
     <CoinSection />
     <BuySection />
+
     <SecureSection />
     <BuildSection />
-
     <ExploreSection />
     <TutorialsSection />
     <CommunitySection />
