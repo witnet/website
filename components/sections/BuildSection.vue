@@ -18,7 +18,9 @@
           $t('build-section.title.dot')
         }}</span>
       </i18n-t>
-      <p class="text text-center max-w-screen-md">{{ t('build-section.description') }}</p>
+      <p class="text text-center max-w-screen-md">
+        {{ t('build-section.description') }}
+      </p>
       <div class="mt-md grid grid-cols-2 gap-md sm:grid-cols-1 md:grid-cols-1">
         <BuildWithWitnet
           v-for="(reason, index) in reasons"

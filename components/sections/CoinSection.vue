@@ -42,39 +42,63 @@
           {{ release.platform }} • x86_64 • {{ size }} MB
           <span class="text-xs ml-xs">ⓘ</span>
           <!-- In case the info icon is works as a tooltip, set content and uncomment the component -->
-          <!-- <Tooltip
+          <!-- <TooltipBase
             bg-color="bg-white-50"
             text-color="text-black-950"
             tooltip-text="Lorenipsum dsesrwersedre"
           >
           <span class="text-xs ml-xs">ⓘ</span>
-        </Tooltip> -->
+        </TooltipBase> -->
         </p>
 
-        <p class="text-large text-white-50 text-center max-w-screen-md mb-xl">{{ t('coin.participate') }}</p>
+        <p class="text-large text-white-50 text-center max-w-screen-md mb-xl">
+          {{ t('coin.participate') }}
+        </p>
 
-        <div class="grid w-max h-max grid-flow-col sm:grid-flow-row gap-lg items-end">
-          <a :href="URLS.docker_node" target="_blank" class="grid justify-items-center justify-center gap-sm h-max cursor-pointer">
+        <div
+          class="grid w-max h-max grid-flow-col sm:grid-flow-row gap-lg items-end"
+        >
+          <a
+            :href="URLS.docker_node"
+            target="_blank"
+            class="grid justify-items-center justify-center gap-sm h-max cursor-pointer"
+          >
             <DockerIcon class="icon" />
             <p class="text-link-dark">Docker</p>
           </a>
 
-          <a :href="URLS.windows_node" target="_blank" class="grid justify-items-center justify-center gap-sm h-max cursor-pointer">
+          <a
+            :href="URLS.windows_node"
+            target="_blank"
+            class="grid justify-items-center justify-center gap-sm h-max cursor-pointer"
+          >
             <WindowsIcon class="icon" />
             <p class="text-link-dark">Windows</p>
           </a>
 
-          <a :href="URLS.macos_node" target="_blank" class="grid justify-items-center justify-center gap-sm h-max cursor-pointer">
+          <a
+            :href="URLS.macos_node"
+            target="_blank"
+            class="grid justify-items-center justify-center gap-sm h-max cursor-pointer"
+          >
             <AppleIcon class="icon" />
             <p class="text-link-dark">Apple</p>
           </a>
 
-          <a :href="URLS.linux_node" target="_blank" class="grid justify-items-center justify-center gap-sm h-max cursor-pointer">
+          <a
+            :href="URLS.linux_node"
+            target="_blank"
+            class="grid justify-items-center justify-center gap-sm h-max cursor-pointer"
+          >
             <LinuxIcon class="icon" />
             <p class="text-link-dark">Linux</p>
           </a>
 
-          <a :href="URLS.rasberrypi_node" target="_blank" class="grid justify-items-center justify-center gap-sm h-max cursor-pointer">
+          <a
+            :href="URLS.rasberrypi_node"
+            target="_blank"
+            class="grid justify-items-center justify-center gap-sm h-max cursor-pointer"
+          >
             <RaspberryIcon class="icon" />
             <p class="text-link-dark">Raspberry</p>
           </a>
@@ -113,9 +137,8 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
-
 // import { URLS } from '@/constants'
+import { getLatestRelease } from '../../utils/getLatestRelease'
 import DockerIcon from '@/assets/svg/docker.svg?component'
 import WindowsIcon from '@/assets/svg/windows.svg?component'
 import AppleIcon from '@/assets/svg/apple.svg?component'
@@ -126,7 +149,7 @@ import PalmBlueIcon from '@/assets/svg/palmBlue.svg?component'
 import { URLS } from '@/constants'
 import { ButtonType } from '~/types'
 
-import { getLatestRelease } from '../../utils/getLatestRelease'
+const { t } = useI18n()
 
 const release = ref({
   platform: '',
@@ -148,6 +171,7 @@ type Explorer = {
   title: string
   description: string
   url: string
+  highlightedText: string[]
 }
 
 // TODO: add urls

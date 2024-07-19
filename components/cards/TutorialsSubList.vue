@@ -5,10 +5,14 @@
     <hr class="hr my-md" />
 
     <ul class="marker:text-wit-blue-500 grid gap-md">
-      <li v-for="tutorial in tutorials" class="list-disc list-inside">
+      <li
+        v-for="tutorial in tutorials"
+        :key="tutorial.name"
+        class="list-disc list-inside"
+      >
         <TutorialLink
-          class="block"
           :key="tutorial.name"
+          class="block"
           :name="tutorial.name"
           :url="tutorial.url"
         />

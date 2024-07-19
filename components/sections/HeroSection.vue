@@ -28,12 +28,22 @@
         <Zigzag
           class="absolute right-xl top-xl z-10 overflow-hidden rotate-90 sm:hidden md:top-sm"
         />
-        <SquareDots class="absolute right-xl bottom-xl z-10 sm:hidden md:bottom-sm" />
-        <div class="grid auto-rows-min gap-y-lg z-20 max-w-c-3xl mt-[160px] sm:mt-[68px]">
-          <i18n-t keypath="hero.title.main" class="title-h1 text-center" tag="h1">
+        <SquareDots
+          class="absolute right-xl bottom-xl z-10 sm:hidden md:bottom-sm"
+        />
+        <div
+          class="grid auto-rows-min gap-y-lg z-20 max-w-c-3xl mt-[160px] sm:mt-[68px]"
+        >
+          <i18n-t
+            keypath="hero.title.main"
+            class="title-h1 text-center"
+            tag="h1"
+          >
             <br />
             {{ $t('hero.title.main2') }}
-            <span class="text-wit-blue-500">{{ $t('hero.title.gradient') }}</span>
+            <span class="text-wit-blue-500">{{
+              $t('hero.title.gradient')
+            }}</span>
           </i18n-t>
 
           <h2 class="text text-center">{{ $t('hero.description') }}</h2>
@@ -50,7 +60,7 @@
 </template>
 
 <script setup>
-import { ButtonType } from '@/types'
+// import { ButtonType } from '@/types'
 import ArrowDownIcon from '@/assets/svg/arrow_down.svg?component'
 import DottedBg from '@/assets/svg/dotted_background.svg?component'
 import Plus from '@/assets/svg/plus.svg?component'

@@ -9,7 +9,12 @@
         <div class="close-menu-container" @click="closeMenu">
           <CloseNavIcon />
         </div>
-        <li v-for="link in navLinks" :key="link.key" class="nav-link" @click="closeMenu">
+        <li
+          v-for="link in navLinks"
+          :key="link.key"
+          class="nav-link"
+          @click="closeMenu"
+        >
           <slot :name="link.key" />
         </li>
         <li class="nav-link language-select">

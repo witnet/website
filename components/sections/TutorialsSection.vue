@@ -3,29 +3,31 @@
     name="section"
     :content-classes="'grid justify-items-center gap-md'"
   >
-  <template #content>
-    <i18n-t keypath="tutorials.title.text" class="title-h2" tag="h2">
-      <span class="text-wit-blue-500">{{ $t('tutorials.title.dot') }}</span>
-    </i18n-t>
-    <p class="text text-center max-w-screen-md">{{ t('tutorials.description') }}</p>
+    <template #content>
+      <i18n-t keypath="tutorials.title.text" class="title-h2" tag="h2">
+        <span class="text-wit-blue-500">{{ $t('tutorials.title.dot') }}</span>
+      </i18n-t>
+      <p class="text text-center max-w-screen-md">
+        {{ t('tutorials.description') }}
+      </p>
       <div
         class="grid grid-cols-3 text-black-950 justify-items-center gap-md mt-lg lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1"
       >
         <TutorialsSubList
           v-for="tutorialList in tutorials"
-          class="w-full"
           :key="tutorialList.title"
+          class="w-full"
           :tutorials="tutorialList.tutorialLinks"
           :title="tutorialList.title"
         />
       </div>
-  </template>
+    </template>
   </NuxtLayout>
 </template>
 <script setup lang="ts">
 import type { TutorialList } from '@/types'
-const { t } = useI18n()
 import { URLS } from '@/constants'
+const { t } = useI18n()
 
 // TODO: add urls
 const tutorials: Array<TutorialList> = [

@@ -6,9 +6,7 @@
   >
     <template #content>
       <div class="footer grid gap-xl">
-        <div
-          class="grid grid-cols-[max-content_1fr] md:grid-cols-1 gap-xl"
-        >
+        <div class="grid grid-cols-[max-content_1fr] md:grid-cols-1 gap-xl">
           <div
             class="grid grid-cols-[130px_130px_130px] gap-2xl sm:gap-md sm:grid-cols-2 justify-items-center"
           >
@@ -44,7 +42,9 @@
             </i18n-t>
           </div>
         </div>
-        <div class="grid grid-cols-[max-content_max-content_1fr] sm:grid-cols-1 align-middle gap-lg pt-10">
+        <div
+          class="grid grid-cols-[max-content_max-content_1fr] sm:grid-cols-1 align-middle gap-lg pt-10"
+        >
           <Wit2Icon class="w-2xl white" name="witnet_dark" />
           <div class="h-max self-center">
             <i18n-t
@@ -87,6 +87,8 @@
 </template>
 
 <script setup>
+import snakeCase from 'lodash.snakecase'
+import { URLS } from '../constants'
 import AdoIcon from '@/assets/svg/ado.svg?component'
 import Wit2Icon from '@/assets/svg/wit2.svg?component'
 
@@ -101,9 +103,6 @@ const footerSections = {
   learn: ['whitepaper', 'medium', 'tutorials'],
   // community: ['telegram', 'discord', 'x', 'reddit', 'youtube'],
 }
-
-import snakeCase from 'lodash.snakecase'
-import { URLS } from '../constants'
 
 function getFooterLinks(sections) {
   return Object.entries(sections).map(([sectionName, sectionItems]) => ({

@@ -30,7 +30,7 @@ const props = defineProps({
 })
 
 const formattedIndex = computed(() => {
-return props.index.toLocaleString('en-US', {
+  return props.index.toLocaleString('en-US', {
     minimumIntegerDigits: 2,
     useGrouping: false,
   })
@@ -41,7 +41,7 @@ return props.index.toLocaleString('en-US', {
 .card {
   box-shadow: 7px 10px 0px rgb(0, 0, 0);
   margin-bottom: 10px;
-  margin-right: 7px;;
+  margin-right: 7px;
 }
 
 .title-h2 {
@@ -50,7 +50,7 @@ return props.index.toLocaleString('en-US', {
 
 .hr {
   height: 3px;
-  background-color: black;  /* Modern Browsers */
+  background-color: black; /* Modern Browsers */
 }
 
 .circle {

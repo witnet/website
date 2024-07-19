@@ -16,7 +16,9 @@
         <span class="text-white-50 font-bold">.</span>
       </i18n-t>
 
-      <p class="text text-center max-w-screen-md">{{ t('secure-section.description') }}</p>
+      <p class="text text-center max-w-screen-md">
+        {{ t('secure-section.description') }}
+      </p>
       <div class="grid grid-cols-2 md:grid-cols-1 mt-lg">
         <OutOfBoundariesCard
           v-for="wallet in wallets"
