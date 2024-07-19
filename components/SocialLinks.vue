@@ -7,10 +7,14 @@
     <IconExternalLink :url="URLS.discord" :icon="Discord" />
     <IconExternalLink :url="URLS.github" :icon="Github" />
     <div class="flex mt-2xl">
-      <p class="text-white-300 font-mono [writing-mode:vertical-lr] -rotate-180 subtitle">
+      <p
+        class="text-white-300 font-mono [writing-mode:vertical-lr] -rotate-180 subtitle"
+      >
         {{ $t('socials-title-1') }}
       </p>
-      <p class="text-white-300 font-mono [writing-mode:vertical-lr] -rotate-180 subtitle">
+      <p
+        class="text-white-300 font-mono [writing-mode:vertical-lr] -rotate-180 subtitle"
+      >
         {{ $t('socials-title-2') }}
       </p>
     </div>

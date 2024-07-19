@@ -35,7 +35,9 @@
       <div
         class="grid grid-cols-6 justify-center relative w-min-content gap-sm w-max mt-lg"
       >
-        <CircleIcon class="w-[70px] h-auto sm:w-xl absolute z-0 left-[-40px] top-[16px]" />
+        <CircleIcon
+          class="w-[70px] h-auto sm:w-xl absolute z-0 left-[-40px] top-[16px]"
+        />
         <BashIcon class="w-[70px] h-auto sm:w-xl z-10" />
         <StorageIcon class="w-[70px] h-auto sm:w-xl z-10" />
         <SlashIcon class="w-[70px] h-auto sm:w-xl z-10" />

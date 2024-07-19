@@ -4,7 +4,7 @@
 
 @layer components {
   html {
-    @apply scroll-smooth
+    @apply scroll-smooth;
   }
   /* Titles */
   .title-h1 {
@@ -81,7 +81,7 @@
   .footer-hover-style {
     @apply hover:-mr-[2.5px] hover:font-semibold;
   }
-  
+
   /* Button */
   .btn {
     @apply w-full py-sm px-l cursor-pointer border-2 border-black-950;

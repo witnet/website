@@ -12,12 +12,24 @@
       >
         <span class="text-wit-blue-500">{{ $t('community.title.dot') }}</span>
       </i18n-t>
-      <p class="text text-center text-white-50">{{ t('secure-section.description') }}</p>
+      <p class="text text-center text-white-50">
+        {{ t('secure-section.description') }}
+      </p>
       <div class="grid grid-cols-2 gap-2xl mt-lg sm:grid-cols-1">
-        <IconWithText :text-color="'text-link-dark'" class="w-72 mb-4 sm:mb-0 cursor-pointer" :text="$t('community.advocate-program')" :link="URLS.advocateProgram">
+        <IconWithText
+          :text-color="'text-link-dark'"
+          class="w-72 mb-4 sm:mb-0 cursor-pointer"
+          :text="$t('community.advocate-program')"
+          :link="URLS.advocateProgram"
+        >
           <MegaphoneIcon class="icon" />
         </IconWithText>
-        <IconWithText :text-color="'text-link-dark'" class="w-72 cursor-pointer" :text="$t('community.grant-program')" :link="URLS.grantProgram">
+        <IconWithText
+          :text-color="'text-link-dark'"
+          class="w-72 cursor-pointer"
+          :text="$t('community.grant-program')"
+          :link="URLS.grantProgram"
+        >
           <BadgeIcon class="icon" />
         </IconWithText>
       </div>
@@ -26,11 +38,11 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
-
 import MegaphoneIcon from '@/assets/svg/megaphone.svg?component'
 import BadgeIcon from '@/assets/svg/badge.svg?component'
 import { URLS } from '@/constants'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

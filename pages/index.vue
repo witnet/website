@@ -10,7 +10,7 @@
     <ExploreSection />
     <TutorialsSection />
     <CommunitySection />
-    <Newsletter />
+    <NewsletterSection />
     <FooterSection />
   </div>
 </template>
