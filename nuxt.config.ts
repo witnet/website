@@ -71,6 +71,12 @@ export default defineNuxtConfig({
           content: 'Wit/Oracle',
         },
       ],
+      script: [
+        {
+          type: 'text/javascript',
+          src: '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',
+        },
+      ],
       link: [
         { rel: 'apple-touch-icon', type: 'image/x-icon', href: '/favicon.ico' },
         {
