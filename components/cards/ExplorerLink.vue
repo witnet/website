@@ -1,19 +1,21 @@
 <template>
   <!-- extra div to be able to style margins from parent without collision with inner styles -->
   <div>
-    <div
-      class="card border rounded-lg px-xl py-xl mr-sm mb-sm max-w-md h-full"
-      :class="['shadow-' + shadowColor]"
-    >
-      <div class="flex justify-between items-center">
-        <h3 class="text-xl text-black-950 font-semibold leading-4">
-          {{ title }}
-        </h3>
-        <ArrowRightIcon class="arrow" />
+    <a :href="url" target="_blank" class="cursor-pointer">
+      <div
+        class="card border rounded-lg px-xl py-xl mr-sm mb-sm max-w-md h-full"
+        :class="['shadow-' + shadowColor]"
+      >
+        <div class="flex justify-between items-center">
+          <h3 class="text-xl text-black-950 font-semibold leading-4">
+            {{ title }}
+          </h3>
+          <ArrowRightIcon class="arrow" />
+        </div>
+        <hr class="hr my-md" />
+        <slot name="description" class="text-sm text-black-950"></slot>
       </div>
-      <hr class="hr my-md" />
-      <slot name="description" class="text-sm text-black-950"></slot>
-    </div>
+    </a>
   </div>
 </template>
 
@@ -26,6 +28,10 @@ defineProps({
     required: true,
   },
   shadowColor: {
+    type: String,
+    required: true,
+  },
+  url: {
     type: String,
     required: true,
   },

@@ -38,10 +38,10 @@
 
           <h2 class="text text-center">{{ $t('hero.description') }}</h2>
         </div>
-
-        <CustomButton :type="ButtonType.primary" class="z-20">
+        <!-- TODO: Uncomment when url or action is provided -->
+        <!-- <CustomButton :type="ButtonType.primary" class="z-20">
           {{ $t('hero.action') }}
-        </CustomButton>
+        </CustomButton> -->
 
         <ArrowDownIcon class="arrow m-xl z-20" />
       </div>

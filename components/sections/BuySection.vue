@@ -67,7 +67,7 @@ const exchanges: Array<any> = [
   {
     name: t('buy-section.exchanges.simpleswap'),
     logo: 'simpleswap',
-    link: URLS.simpleswap,
+    link: URLS.simpleSwap,
   },
   {
     name: t('buy-section.exchanges.letsexchange'),

@@ -19,22 +19,15 @@
       <p class="text text-center max-w-screen-md">{{ t('secure-section.description') }}</p>
       <div class="grid grid-cols-2 md:grid-cols-1 mt-lg">
         <OutOfBoundariesCard
-          title="Sheikah"
-          description="Choose Sheikah for a privacy-focused experience on Windows, macOS, and GNU/Linux, ideal for users who prioritize security and user-friendly interfaces."
-          action="Download Sheikah"
+          v-for="wallet in wallets"
+          :key="wallet.title"
+          :title="wallet.title"
+          :description="wallet.description"
+          :action="wallet.action"
+          :url="wallet.url"
         >
           <template #icon>
-            <SheikahIcon class="icon"></SheikahIcon>
-          </template>
-        </OutOfBoundariesCard>
-
-        <OutOfBoundariesCard
-          title="myWitWallet"
-          description="Opt for myWitWallet for instant transactions without the wait for synchronization, perfect for quick and easy sending and receiving of WIT."
-          action="Download myWitWallet"
-        >
-          <template #icon>
-            <MywitwalletIcon class="icon"></MywitwalletIcon>
+            <component :is="wallet.icon" class="icon" />
           </template>
         </OutOfBoundariesCard>
       </div>
@@ -48,21 +41,27 @@ import MywitwalletIcon from '@/assets/svg/mywitwallet.svg?component'
 import { URLS } from '@/constants'
 
 const { t } = useI18n()
-type Explorer = {
+type WalletInfo = {
   title: string
   description: string
   url: string
+  action: string
+  icon: any
 }
-const explorers: Array<Explorer> = [
+const wallets: Array<WalletInfo> = [
   {
-    title: t('explore.explorer-1.title'),
-    description: t('explore.explorer-1.description'),
-    url: URLS.data_feeds_explorer,
+    title: t('sheikah.title'),
+    description: t('sheikah.description'),
+    url: URLS.sheikah,
+    action: t('sheikah.action'),
+    icon: SheikahIcon,
   },
   {
-    title: t('explore.explorer-2.title'),
-    description: t('explore.explorer-2.description'),
-    url: URLS.block_explorer,
+    title: t('my-wit-wallet.title'),
+    description: t('my-wit-wallet.description'),
+    url: URLS.my_wit_wallet,
+    action: t('sheikah.action'),
+    icon: MywitwalletIcon,
   },
 ]
 </script>

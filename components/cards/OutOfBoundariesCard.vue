@@ -18,7 +18,9 @@
 
       <div class="flex items-center">
         <SlashesIcon class="slashes w-[68px] sm:hidden"></SlashesIcon>
-        <ArrowButton class="action">{{ action }}</ArrowButton>
+        <a :href="url" target="_blank">
+          <ArrowButton class="action">{{ action }}</ArrowButton>
+        </a>
       </div>
     </div>
   </div>
@@ -36,6 +38,10 @@ defineProps({
     required: true,
   },
   action: {
+    type: String,
+    required: true,
+  },
+  url: {
     type: String,
     required: true,
   },
