@@ -54,30 +54,30 @@
         <p class="text-large text-white-50 text-center max-w-screen-md mb-xl">{{ t('coin.participate') }}</p>
 
         <div class="grid w-max h-max grid-flow-col sm:grid-flow-row gap-lg items-end">
-          <div class="grid justify-items-center justify-center gap-sm h-max">
+          <a :href="URLS.docker_node" target="_blank" class="grid justify-items-center justify-center gap-sm h-max cursor-pointer">
             <DockerIcon class="icon" />
             <p class="text-link-dark">Docker</p>
-          </div>
+          </a>
 
-          <div class="grid justify-items-center justify-center gap-sm h-max">
+          <a :href="URLS.windows_node" target="_blank" class="grid justify-items-center justify-center gap-sm h-max cursor-pointer">
             <WindowsIcon class="icon" />
             <p class="text-link-dark">Windows</p>
-          </div>
+          </a>
 
-          <div class="grid justify-items-center justify-center gap-sm h-max">
+          <a :href="URLS.macos_node" target="_blank" class="grid justify-items-center justify-center gap-sm h-max cursor-pointer">
             <AppleIcon class="icon" />
             <p class="text-link-dark">Apple</p>
-          </div>
+          </a>
 
-          <div class="grid justify-items-center justify-center gap-sm h-max">
+          <a :href="URLS.linux_node" target="_blank" class="grid justify-items-center justify-center gap-sm h-max cursor-pointer">
             <LinuxIcon class="icon" />
             <p class="text-link-dark">Linux</p>
-          </div>
+          </a>
 
-          <div class="grid justify-items-center justify-center gap-sm h-max">
+          <a :href="URLS.rasberrypi_node" target="_blank" class="grid justify-items-center justify-center gap-sm h-max cursor-pointer">
             <RaspberryIcon class="icon" />
             <p class="text-link-dark">Raspberry</p>
-          </div>
+          </a>
         </div>
 
         <div class="grid grid-flow-col md:grid-flow-row gap-md mt-xl">
