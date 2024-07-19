@@ -21,7 +21,7 @@ export default defineNuxtConfig({
           hid: 'description',
           name: 'description',
           content:
-            'Secure your smart contracts and dApps with the Wit/Oracle: Its Proof-of-Stake (PoS) algorithm offers unmatched reliability and censorship resistance.',
+            'Secure your smart contracts and dApps with the Wit/oracle: powered by Proof-of-Stake, and offering unrivalled reliability and censorship resistance.',
         },
         {
           hid: 'twitter:title',
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
           hid: 'twitter:description',
           name: 'twitter:description',
           content:
-            'Secure your smart contracts and dApps with the Wit/Oracle: Its Proof-of-Stake (PoS) algorithm offers unmatched reliability and censorship resistance.',
+            'Secure your smart contracts and dApps with the Wit/oracle: powered by Proof-of-Stake, and offering unrivalled reliability and censorship resistance.',
         },
         {
           hid: 'twitter:image',
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
           hid: 'og:description',
           property: 'og:description',
           content:
-            'Secure your smart contracts and dApps with the Wit/Oracle: Its Proof-of-Stake (PoS) algorithm offers unmatched reliability and censorship resistance.',
+            'Secure your smart contracts and dApps with the Wit/oracle: powered by Proof-of-Stake, and offering unrivalled reliability and censorship resistance.',
         },
         {
           hid: 'og:image',
