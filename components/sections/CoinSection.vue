@@ -32,9 +32,11 @@
         </div>
 
         <CustomButton :type="ButtonType.dark">
-          <i18n-t keypath="coin.run_in_platform.main" tag="p">
-            <span class="ml-[4px]">{{ release.platform }}</span>
-          </i18n-t>
+          <a :href="getLatestRelease" target="_blank">
+            <i18n-t keypath="coin.run_in_platform.main" tag="p">
+              <span class="ml-[4px]">{{ release.platform }}</span>
+            </i18n-t>
+          </a>
         </CustomButton>
         <p class="text text-wit-blue-500 mt-md">
           {{ release.platform }} • x86_64 • {{ size }} MB
