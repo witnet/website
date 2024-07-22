@@ -38,6 +38,8 @@
     "description1": "Secure the Network, Earn Rewards!",
     "description2": "Secure the network, earn rewards, and be part of a censorship-resistant oracle.",
     "description3": "Witnet 2.0 is unstoppable.",
+    "participate1": "Wit/2 development is in the final phase, get ready for staking by running a 1.8 node now",
+    "participate2": "Wit/2 development is in the final phase, get ready for staking by joining the public testnet",
     "participate": "To participate in the Witnet network, run a Witnet node and stake some $WIT. Stakers can earn rewards while contributing to data retrieval, verification, and network security!",
     "run_in_platform": {
       "main": "Run a Witnet Node and Stake on {0}"
@@ -75,7 +77,7 @@
   "secure-section": {
     "title1": "Secure {0} {1}{2}",
     "title2": "Your $WIT",
-    "description": "$WIT, the native coin of Witnet, is available on trusted and well-known crypto exchanges. By acquiring and staking $WIT, you become a valuable part of the Witnet Community, contributing to the security, growth, and success of the decentralized future with Witnet."
+    "description": "Protecting your $WIT has never been easier. Whether you prioritize privacy, speed, or a seamless experience across different operating systems, we have the right wallet for you."
   },
   "build-section": {
     "title": {
@@ -158,7 +160,7 @@
     "description": "$WIT, the native coin of Witnet, is available on trusted and well-known crypto exchanges. By acquiring and staking $WIT, you become a valuable part of the Witnet Community, contributing to the security, growth, and success of the decentralized future with Witnet."
   },
   "store-wit": {
-    "title": "Secure the Your $WIT",
+    "title": "Secure Your $WIT",
     "description": "Explore our wallet offerings for seamless management and transfer of your WIT coins."
   },
   "sheikah": {

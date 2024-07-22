@@ -3,7 +3,9 @@ import svgLoader from 'vite-svg-loader'
 import { languageLocales } from './constants'
 
 export default defineNuxtConfig({
+  ssr: true,
   app: {
+    baseURL: '/website/',
     head: {
       title: 'Wit/Oracle: The most powerful oracle, provably.',
       meta: [
@@ -78,6 +80,18 @@ export default defineNuxtConfig({
         },
       ],
       link: [
+        {
+          rel: 'preload',
+          href: 'fonts/nimbusmono-regular.woff',
+          as: 'font',
+          type: 'font/woff',
+        },
+        {
+          rel: 'preload',
+          href: 'fonts/nimbusmono-bold.woff',
+          as: 'font',
+          type: 'font/woff',
+        },
         { rel: 'apple-touch-icon', type: 'image/x-icon', href: '/favicon.ico' },
         {
           rel: 'icon',
@@ -134,7 +148,7 @@ export default defineNuxtConfig({
     },
     locales: Object.values(languageLocales),
   },
-  css: ['~/assets/styles/tailwind.css'],
+  css: ['~/assets/styles/tailwind.css', '~/assets/styles/main.scss'],
   components: [{ path: '~/components', pathPrefix: false }],
   vite: {
     plugins: [
@@ -157,7 +171,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "~/assets/styles/main.scss" as *;',
+          additionalData: '@use "~/assets/styles/colors.scss" as *;',
         },
       },
     },

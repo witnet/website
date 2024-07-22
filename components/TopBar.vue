@@ -18,7 +18,9 @@
           <slot :name="link.key" />
         </li>
         <li class="nav-link language-select">
-          <LanguageSwitcher />
+          <client-only>
+            <LanguageSwitcher />
+          </client-only>
         </li>
       </ul>
     </nav>

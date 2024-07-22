@@ -3,10 +3,10 @@
     id="stake"
     name="section"
     :frame-classes="'bg-black-950'"
-    :content-classes="'grid justify-items-center'"
+    :content-classes="'grid justify-items-center py-[200px]'"
   >
     <template #left>
-      <PalmBlueIcon class="sm:hidden lg:w-[250px] lg:h-autho" />
+      <PalmBlueIcon class="sm:hidden lg:w-[250px] lg:h-auto" />
     </template>
     <template #content>
       <div class="flex flex-col items-center gap-md">
@@ -58,7 +58,11 @@
         </p>
 
         <p class="text-large text-white-50 text-center max-w-screen-md mb-xl">
-          {{ t('coin.participate') }}
+          {{ t('coin.participate1') }}
+          <!--TODO: uncomment when public testnet is live
+          {{ t('coin.participate2') }}
+          TODO: uncomment when wit/2 is live
+          {{ t('coin.participate') }} -->
         </p>
 
         <div
@@ -109,7 +113,7 @@
             <p class="text-link-dark">Raspberry</p>
           </a>
         </div>
-
+        <!-- TODO: uncomment when wit/2 is live
         <div class="grid grid-flow-col md:grid-flow-row gap-md mt-xl">
           <ExplorerLink
             v-for="explorer in explorers"
@@ -137,7 +141,7 @@
               </i18n-t>
             </template>
           </ExplorerLink>
-        </div>
+        </div> -->
       </div>
     </template>
   </NuxtLayout>
@@ -174,34 +178,35 @@ onMounted(async () => {
 })
 
 // const { t } = useI18n()
-type Explorer = {
-  title: string
-  description: string
-  url: string
-  highlightedText: string[]
-}
+// TODO uncomment when wit/2 is live
+// type Card = {
+//   title: string
+//   description: string
+//   url: string
+//   highlightedText: string[]
+// }
 
 // TODO: add urls
-const explorers: Array<Explorer> = [
-  {
-    title: t('coin.cards.get_started.title'),
-    description: 'coin.cards.get_started.description',
-    highlightedText: ['coin.cards.get_started.boldText1'],
-    url: URLS.get_started,
-  },
-  {
-    title: t('coin.cards.tutorials.title'),
-    description: 'coin.cards.tutorials.description',
-    highlightedText: ['coin.cards.tutorials.boldText1'],
-    url: URLS.tutorials,
-  },
-  {
-    title: t('coin.cards.contribute.title'),
-    description: 'coin.cards.contribute.description',
-    highlightedText: ['coin.cards.contribute.boldText1'],
-    url: URLS.github_contribute,
-  },
-]
+// const cards: Array<Card> = [
+//   {
+//     title: t('coin.cards.get_started.title'),
+//     description: 'coin.cards.get_started.description',
+//     highlightedText: ['coin.cards.get_started.boldText1'],
+//     url: URLS.get_started,
+//   },
+//   {
+//     title: t('coin.cards.tutorials.title'),
+//     description: 'coin.cards.tutorials.description',
+//     highlightedText: ['coin.cards.tutorials.boldText1'],
+//     url: URLS.tutorials,
+//   },
+//   {
+//     title: t('coin.cards.contribute.title'),
+//     description: 'coin.cards.contribute.description',
+//     highlightedText: ['coin.cards.contribute.boldText1'],
+//     url: URLS.github_contribute,
+//   },
+// ]
 </script>
 
 <style scoped lang="scss">

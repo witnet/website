@@ -86,7 +86,9 @@
               >
             </i18n-t>
           </div>
-          <LanguageSwitcher class="justify-self-end self-center" />
+          <client-only>
+            <LanguageSwitcher class="justify-self-end self-center" />
+          </client-only>
         </div>
       </div>
     </template>
