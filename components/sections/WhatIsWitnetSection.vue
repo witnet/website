@@ -10,6 +10,7 @@
           keypath="what-is-witnet.title.main"
           class="title-h2 font-normal text-center max-w-screen-md"
           tag="h2"
+          scope="global"
         >
           <span class="title-h2">
             <br />{{ $t('what-is-witnet.title.witnet') }}
@@ -20,6 +21,7 @@
           keypath="what-is-witnet.subtitle"
           class="title-h3 font-normal text-center max-w-screen-md"
           tag="h2"
+          scope="global"
         >
           <span class="title-h3 font-normal text-center max-w-screen-md">
             <br />{{ $t('what-is-witnet.subtitle2') }}

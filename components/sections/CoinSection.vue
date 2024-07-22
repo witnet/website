@@ -17,6 +17,7 @@
             keypath="coin.title.main"
             class="title-h2-xl sm:text-7xl lg:text-8xl font-bold text-white-50"
             tag="h3"
+            scope="global"
           >
             <span class="text-wit-blue-500">{{ $t('coin.title.mark') }}</span>
           </i18n-t>
@@ -33,7 +34,7 @@
 
         <CustomButton :type="ButtonType.dark">
           <a :href="release.releaseUrl" target="_blank">
-            <i18n-t keypath="coin.run_in_platform.main" tag="p">
+            <i18n-t keypath="coin.run_in_platform.main" tag="p" scope="global">
               <span class="ml-[4px]">{{ release.platform }}</span>
             </i18n-t>
           </a>
@@ -119,6 +120,7 @@
                 :keypath="explorer.description"
                 tag="p"
                 class="text-sm text-black-950"
+                scope="global"
               >
                 <span
                   v-for="text in explorer.highlightedText"

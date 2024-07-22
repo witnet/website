@@ -9,6 +9,7 @@
         keypath="community.title.text"
         class="title-h2 text-white-50"
         tag="h2"
+        scope="global"
       >
         <span class="text-wit-blue-500">{{ $t('community.title.dot') }}</span>
       </i18n-t>

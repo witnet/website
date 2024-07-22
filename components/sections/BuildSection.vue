@@ -13,6 +13,7 @@
         keypath="build-section.title.key_features"
         class="title-h2 text-center max-w-screen-md"
         tag="h2"
+        scope="global"
       >
         <span class="text-wit-blue-500">{{
           $t('build-section.title.dot')

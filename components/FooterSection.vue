@@ -31,7 +31,7 @@
           </div>
           <div class="w-full grid gap-md xs:mt-lg">
             <AdoIcon class="mb-2 w-[50px] h-auto" />
-            <i18n-t keypath="footer.ado_text" tag="p" class="footer-text">
+            <i18n-t keypath="footer.ado_text" tag="p" class="footer-text" scope="global">
               <a
                 class="py-1 underline footer-text"
                 :href="URLS.ado"
@@ -51,6 +51,7 @@
               keypath="footer.copyright.base1"
               class="copyright max-w-100 footer-text"
               tag="p"
+              scope="global"
             >
               <span>2018-{{ new Date().getFullYear() }}</span>
               <a
@@ -70,6 +71,7 @@
               keypath="footer.copyright.base2"
               class="copyright max-w-100 footer-text"
               tag="p"
+              scope="global"
             >
               <a
                 class="underline py-1 footer-text"

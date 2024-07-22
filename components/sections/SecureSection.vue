@@ -10,6 +10,7 @@
         keypath="secure-section.title1"
         class="title-h2 font-normal text-center"
         tag="h2"
+        scope="global"
       >
         <br />
         <span class="font-bold">{{ $t('secure-section.title2') }}</span>

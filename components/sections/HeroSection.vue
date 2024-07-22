@@ -32,12 +32,13 @@
           class="absolute right-xl bottom-xl z-10 sm:hidden md:bottom-sm"
         />
         <div
-          class="grid auto-rows-min gap-y-lg z-20 max-w-c-3xl mt-[160px] sm:mt-[68px]"
+          class="grid auto-rows-min gap-y-lg z-20 max-w-c-3xl"
         >
           <i18n-t
             keypath="hero.title.main"
             class="title-h1 text-center"
             tag="h1"
+            scope="global"
           >
             <br />
             {{ $t('hero.title.main2') }}

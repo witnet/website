@@ -12,6 +12,7 @@
           keypath="explore.title.main"
           class="title-h2 font-bold mr-0 sm:mr-sm text-white-50"
           tag="h2"
+          scope="global"
         >
           <span class="text-black-950">{{ $t('explore.title.witnet') }}</span>
         </i18n-t>
