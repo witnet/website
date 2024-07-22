@@ -20,8 +20,7 @@ export enum ButtonType {
 
 export interface LanguageDictionary {
   [localeCodes.en]: Locale
-  // TODO: uncomment when spanish is supported
-  // [localeCodes.es]: Locale
+  [localeCodes.es]: Locale
 }
 
 export type TutorialLink = {

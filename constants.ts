@@ -78,11 +78,10 @@ export const languageLocales: LanguageDictionary = {
     name: 'ENGLISH',
     file: 'en-US.json',
   },
-  // TODO: uncomment when spanish is supported
-  // [localeCodes.es]: {
-  //   code: 'es-ES',
-  //   iso: 'es-ES',
-  //   name: 'ESPAÑOL',
-  //   file: 'es-ES.json',
-  // },
+  [localeCodes.es]: {
+    code: 'es-ES',
+    iso: 'es-ES',
+    name: 'ESPAÑOL',
+    file: 'es-ES.json',
+  },
 }

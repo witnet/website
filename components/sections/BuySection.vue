@@ -6,7 +6,14 @@
     :height="'h-lg-y-screen sm:h-[max-content]'"
   >
     <template #content>
-      <h2 class="title-h2 text-center">{{ t('buy-section.title') }}</h2>
+      <i18n-t
+        keypath="buy-section.title"
+        class="title-h2"
+        tag="h2"
+        scope="global"
+      >
+        <span class="text-wit-blue-500">.</span>
+      </i18n-t>
       <p class="text text-center max-w-screen-md">
         {{ t('buy-section.description') }}
       </p>

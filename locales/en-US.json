@@ -18,7 +18,7 @@
       "main2": "powerful oracle,",
       "gradient": "provably."
     },
-    "description": "The Wit oracle pairs a state-of-the-art Proof of Stake algorithm with its own native coin $WIT to deliver unparalleled security for all your Web3 data needs.",
+    "description": "The Wit/Oracle pairs a state-of-the-art Proof of Stake algorithm with its own native coin $WIT to deliver unparalleled security for all your Web3 data needs.",
     "action": "Join the WIT gang today"
   },
   "what-is-witnet": {
@@ -61,7 +61,7 @@
     }
   },
   "buy-section": {
-    "title": "Buy $WIT",
+    "title": "Buy $WIT{0}",
     "description": "$WIT, the native coin of Witnet, is available on trusted and well-known crypto exchanges. By acquiring and staking $WIT, you become a valuable part of the Witnet Community, contributing to the security, growth, and success of the decentralized future with Witnet.",
     "exchanges": {
       "gate": "Gate.io",
@@ -73,7 +73,7 @@
     }
   },
   "secure-section": {
-    "title1": "Secure {0} {1} {2}",
+    "title1": "Secure {0} {1}{2}",
     "title2": "Your $WIT",
     "description": "$WIT, the native coin of Witnet, is available on trusted and well-known crypto exchanges. By acquiring and staking $WIT, you become a valuable part of the Witnet Community, contributing to the security, growth, and success of the decentralized future with Witnet."
   },

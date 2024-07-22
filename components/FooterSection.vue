@@ -8,7 +8,7 @@
       <div class="footer grid gap-xl">
         <div class="grid grid-cols-[max-content_1fr] md:grid-cols-1 gap-xl">
           <div
-            class="grid grid-cols-[130px_130px_130px] gap-2xl sm:gap-md sm:grid-cols-2 justify-items-center"
+            class="grid grid-cols-[130px_130px_130px] gap-2xl sm:gap-md sm:grid-cols-2 justify-items-start"
           >
             <div
               v-for="section in footerLinks"
@@ -31,7 +31,12 @@
           </div>
           <div class="w-full grid gap-md xs:mt-lg">
             <AdoIcon class="mb-2 w-[50px] h-auto" />
-            <i18n-t keypath="footer.ado_text" tag="p" class="footer-text" scope="global">
+            <i18n-t
+              keypath="footer.ado_text"
+              tag="p"
+              class="footer-text"
+              scope="global"
+            >
               <a
                 class="py-1 underline footer-text"
                 :href="URLS.ado"

@@ -4,7 +4,12 @@
     :content-classes="'grid justify-items-center gap-md'"
   >
     <template #content>
-      <i18n-t keypath="tutorials.title.text" class="title-h2" tag="h2" scope="global">
+      <i18n-t
+        keypath="tutorials.title.text"
+        class="title-h2"
+        tag="h2"
+        scope="global"
+      >
         <span class="text-wit-blue-500">{{ $t('tutorials.title.dot') }}</span>
       </i18n-t>
       <p class="text text-center max-w-screen-md">

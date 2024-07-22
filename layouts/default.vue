@@ -19,7 +19,7 @@
             <NavigationCursor v-if="link.active" class="w-sm h-auto" /><span
               class="slash text-wit-blue-500"
               >/</span
-            >{{ link.locale }}
+            >{{ t(link.locale) }}
           </InnerLink>
         </template>
       </TopBar>
@@ -40,31 +40,38 @@ import { useI18n } from 'vue-i18n'
 import WitnetLogo from '@/assets/svg/witnet-logo.svg?component'
 import NavigationCursor from '@/assets/svg/navigation-cursor.svg?component'
 const { t } = useI18n()
+type NavLink = {
+  key: string
+  active: boolean
+  to: string
+  rel: string
+  locale: string
+}
 
-const navLinks: Array<{ key: string }> = ref([
+const navLinks: Ref<Array<NavLink>> = ref([
   {
     key: 'stake',
     active: false,
     to: '/stake',
     rel: 'stake',
-    locale: t('nav_bar.route.stake'),
+    locale: 'nav_bar.route.stake',
   },
   {
     key: 'buy',
     active: false,
     to: '/buy',
     rel: 'buy',
-    locale: t('nav_bar.route.buy'),
+    locale: 'nav_bar.route.buy',
   },
   {
     key: 'build',
     active: false,
     to: '/build',
     rel: 'build',
-    locale: t('nav_bar.route.build'),
+    locale: 'nav_bar.route.build',
   },
 ])
-function activateLink(link) {
+function activateLink(link: NavLink) {
   link.active = true
 }
 function clearActiveLinks() {

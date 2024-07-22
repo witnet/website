@@ -1,110 +1,224 @@
 {
   "title": "Witnet 2.0 es-ES",
-  "buy": "Buy",
+  "buy": "Compra",
   "stake": "Stake",
-  "build": "Build",
+  "build": "Construye",
+  "socials-title-1": "Disfruta de Datos Inteligentes,",
+  "socials-title-2": "Neutrales, y Seguros",
+  "nav_bar": {
+    "route": {
+      "stake": "stake",
+      "buy": "compra",
+      "build": "construye"
+    }
+  },
   "hero": {
-    "title": "The most powerful oracle, provably.",
-    "description": "The Wit oracle pairs a state-of-the-art Proof of Stake algorithm with its own native coin $WIT to deliver unparalleled security for all your Web3 data needs.",
-    "action": "Join the WIT gang today"
+    "title": {
+      "main": "El oráculo {0} {1} {2}",
+      "main2": "más poderoso,",
+      "gradient": "probable{0}mente."
+    },
+    "description": "Wit Oracle combina un algoritmo de Prueba de Participación de última generación con su propia moneda nativa $WIT. Ofrece una seguridad inigualable para tus datos en la Web3.",
+    "action": "Únete a la WIT comunidad"
   },
   "what-is-witnet": {
-    "title": "Witnet 2.0, the Oracle for a Censorship-Resistant Future",
-    "description": "Without a dependable oracle, smart contracts are susceptible to security breaches, manipulation, and financial losses. Witnet employs advanced cryptographic and Proof of Stake (PoS) economic mechanisms, ensuring that your smart contracts receive secure and trustworthy data inputs."
+    "title": {
+      "main": "Construye con confianza: {0}",
+      "witnet": "Witnet 2.0"
+    },
+    "subtitle": "el Oráculo para un {0} {1}",
+    "subtitle2": "Futuro Resistente a la Censura",
+    "description": "Sin un oráculo fiable, los contratos inteligentes son susceptibles a brechas de seguridad, manipulación y pérdidas financieras. Witnet emplea mecanismos económicos avanzados de criptografía y Prueba de Participación (PoS), asegurando que tus contratos inteligentes reciban datos seguros y fiables."
   },
   "coin": {
-    "title": "Stake! Secure the Network, Earn Rewards!",
-    "description": "Secure the network, earn rewards. Witnet 2.0 is unstoppable."
+    "title": {
+      "main": "Stake{0}",
+      "mark": "!"
+    },
+    "description1": "¡Asegura la Red, Gana Recompensas!",
+    "description2": "Asegura la red, gana recompensas y sé parte de un oráculo resistente a la censura.",
+    "description3": "Witnet 2.0 es imparable.",
+    "participate": "Para participar en la red de Witnet, ejecuta un nodo de Witnet y haz staking de $WIT. ¡Los stakers pueden ganar recompensas mientras contribuyen a la recuperación de datos, verificación y seguridad de la red!",
+    "run_in_platform": {
+      "main": "Ejecuta un Nodo de Witnet y haz staking en {0}"
+    },
+    "cards": {
+      "get_started": {
+        "title": "Empezar",
+        "description": "¡Comienza {0} y gana recompensas!",
+        "boldText1": "a hacer Staking ahora"
+      },
+      "tutorials": {
+        "title": "Tutoriales",
+        "description": "Aprende lo básico sobre staking con los {0}",
+        "boldText1": "tutoriales completos!"
+      },
+      "contribute": {
+        "title": "Contribuye",
+        "description": "Ayuda a hacer {0}. Envía código, ejemplos, bibliotecas o ayúdanos a arreglar errores.",
+        "boldText1": "Witnet mejor aún"
+      }
+    }
+  },
+  "buy-section": {
+    "title": "Comprar $WIT",
+    "description": "$WIT, la moneda nativa de Witnet, está disponible en intercambios de criptomonedas fiables y reconocidos. Al adquirir y apostar $WIT, te conviertes en una parte valiosa de la Comunidad de Witnet, contribuyendo a la seguridad, crecimiento y éxito del futuro descentralizado con Witnet.",
+    "exchanges": {
+      "gate": "Gate.io",
+      "mexc": "MEXC",
+      "bitmart": "Bitmart",
+      "changelly": "Changelly",
+      "simpleswap": "Simpleswap",
+      "letsexchange": "LetsExchange"
+    }
+  },
+  "secure-section": {
+    "title1": "Asegura {0} {1}{2}",
+    "title2": "Tus $WIT",
+    "description": "$WIT, la moneda nativa de Witnet, está disponible en intercambios de criptomonedas fiables y reconocidos. Al adquirir y apostar $WIT, te conviertes en una parte valiosa de la Comunidad de Witnet, contribuyendo a la seguridad, crecimiento y éxito del futuro descentralizado con Witnet."
   },
   "build-section": {
-    "title": "Build with Witnet",
-    "description": "Learn about the uniques features that make Witnet the ultimate solution to sourcing data into smart contracts and blockchains reliably.",
-    "title-1": "Easy Access to Real-World Data",
-    "description-1": "Witnet provides a straightforward way for smart contracts to interact with external data sources. This is crucial for applications that need to process real-world information, like prices, weather reports, or the results of events.",
-    "title-2": "Decentralization and Security",
-    "description-2": "The decentralized nature of Witnet ensures that data is not in control of a single entity, reducing the risks of manipulation or single points of failure. This increases the security and reliability of the applications built on it.",
-    "title-3": "Blockchain Agnosticism",
-    "description-3": "Witnet’s compatibility with multiple blockchain platforms means that builders are not restricted to a single blockchain. This allows for the creation of cross-chain applications and services.",
-    "title-4": "Flexibility in Data Sources",
-    "description-4": "Builders can source data from a variety of external sources, giving them the flexibility to choose the most relevant and reliable data for their applications.",
-    "title-5": "Token Incentives for Data Accuracy",
-    "description-5": "The tokenomics of Witnet incentivize nodes to provide accurate data, as they are rewarded for their honest services and penalized for dishonesty. This mechanism promotes a high level of data integrity.",
-    "title-6": "Community and Support",
-    "description-6": "Builders benefit from the community and resources provided by Witnet, including documentation, developer tools, and support from other community members."
+    "title": {
+      "key_features": "¿Por qué Witnet es perfecto para desarrolladores{0}",
+      "dot": "?"
+    },
+    "description": "Conoce las características únicas que hacen de Witnet la solución definitiva para obtener datos en contratos inteligentes y blockchains de manera fiable.",
+    "title-1": "Acceso Fácil a Datos del Mundo Real",
+    "description-1": "Witnet proporciona una forma sencilla para que los contratos inteligentes interactúen con fuentes de datos externas. Esto es crucial para aplicaciones que necesitan procesar información del mundo real, como precios, informes meteorológicos o resultados de eventos.",
+    "title-2": "Descentralización y Seguridad",
+    "description-2": "La naturaleza descentralizada de Witnet asegura que los datos no estén controlados por una sola entidad, reduciendo los riesgos de manipulación o puntos únicos de fallo. Esto incrementa la seguridad y fiabilidad de las aplicaciones construidas sobre Witnet.",
+    "title-3": "Agnosticismo Blockchain",
+    "description-3": "La compatibilidad de Witnet con múltiples plataformas blockchain significa que los desarrolladores no están restringidos a una sola blockchain. Esto permite la creación de aplicaciones y servicios entre cadenas.",
+    "title-4": "Flexibilidad en las Fuentes de Datos",
+    "description-4": "Los desarrolladores pueden obtener datos de una variedad de fuentes externas, ofrece la flexibilidad de elegir los datos más relevantes y fiables para sus aplicaciones.",
+    "title-5": "Incentivos con Tokens para obtener Datos Precisos",
+    "description-5": "La tokenómica de Witnet incentiva a los nodos a proporcionar datos precisos, ya que son recompensados por ofrecer servicio de manera honesta y penalizados si actúan de manera deshonesta. Este mecanismo promueve un alto nivel de integridad de datos.",
+    "title-6": "Comunidad y Soporte",
+    "description-6": "Los desarrolladores se benefician de la comunidad y de los recursos proporcionados por Witnet: documentación, herramientas y apoyo a miembros de la comunidad."
   },
   "explore": {
-    "title": "Explore the Power of Witnet",
-    "description": "Dive into datasets and detailed insights by navigating through transparent data effortlessly.",
+    "title": {
+      "main": "Explora el Poder de {0}.",
+      "witnet": "Witnet"
+    },
+    "description": "Investiga conjuntos de datos e información detallada a través de los datos proporcionados con transparencia y sin esfuerzo.",
     "explorer-1": {
       "title": "Data Feeds",
-      "description": "The Data Feeds Explorer showcases a range of public data feeds, freely accessible to all developers and maintained by the Witnet Foundation on multiple blockchains."
+      "description": "El Explorador de Data Feeds muestra una gama de data feeds públicos, de libre acceso para todos los desarrolladores y mantenidas por la Fundación Witnet en múltiples blockchains."
     },
     "explorer-2": {
-      "title": "Block Explorer",
-      "description": "The witnet.network block explorer gives you a transparent view into all the transactions and data requests in the Witnet blockchain."
+      "title": "Explorador de Bloques",
+      "description": "El explorador de bloques de witnet.network te ofrece una visión detallada y transparente de todas las transacciones y solicitudes de datos en la blockchain de Witnet."
     }
   },
   "community": {
-    "title": "Community",
-    "description": "From developers to miners and enthusiasts, the Witnet community prides itself on always being welcoming, discussing the things that really matter, and ensuring that Witnet plays a key role in the foundations of Web3.",
-    "advocate-program": "Advocate program",
-    "grant-program": "Grant program"
+    "title": {
+      "text": "Comunidad{0}",
+      "dot": "."
+    },
+    "description": "Desde desarrolladores hasta mineros y entusiastas, la comunidad de Witnet se enorgullece de ser acogedora, discutiendo las cosas que realmente importan y asegurando que Witnet juegue un papel clave en los fundamentos de la Web3.",
+    "advocate-program": "Programa para Advocates",
+    "grant-program": "Programa de Subvenciones"
   },
   "newsletter": {
     "title": "Newsletter",
-    "subtitle": "Stay up to date",
-    "action": "Subscribe"
+    "subtitle": "Mantente al día",
+    "action": "Suscribirse"
   },
   "tutorials": {
-    "title": "Tutorials",
-    "description": "These tutorials are designed to empower developers with the tools and knowledge needed to harness Witnet's decentralized oracle network for diverse blockchain applications.",
+    "title": {
+      "text": "Tutoriales{0}",
+      "dot": "."
+    },
+    "description": "Estos tutoriales están diseñados para ofrecer a los desarrolladores las herramientas y el conocimiento necesario para usar la red oráculo descentralizada de Witnet en aplicaciones blockchain.",
     "web": {
-      "title": "Web",
-      "tutorial-1": "Http Requests",
+      "title": "Web y APIs",
+      "tutorial-1": "Solicitudes Http",
       "tutorial-2": "GraphQL",
-      "tutorial-3": "Dynamic Requests",
-      "tutorial-4": "Api Reference"
+      "tutorial-3": "Solicitudes Dinámicas",
+      "tutorial-4": "API de RADON"
     },
     "price": {
-      "title": "Price",
-      "tutorial-1": "Price Feeds Router",
-      "tutorial-2": "Reading Price Pairs",
-      "tutorial-3": "Api Reference",
-      "tutorial-4": "Multi-chain Addresses"
+      "title": "Precio",
+      "tutorial-1": "Enrutador de Price Feeds",
+      "tutorial-2": "Lectura de Pares de Precios",
+      "tutorial-3": "API para precios",
+      "tutorial-4": "Direcciones Multi-cadena"
     },
     "randomness": {
-      "title": "Randomness",
-      "tutorial-1": "Generating RNG",
-      "tutorial-2": "Low-level Requests",
-      "tutorial-3": "Solidity API",
-      "tutorial-4": "Multi-chain Addresses"
+      "title": "Aleatoriedad",
+      "tutorial-1": "Generación de RNG",
+      "tutorial-2": "Solicitudes de Bajo Nivel",
+      "tutorial-3": "API de Solidity",
+      "tutorial-4": "Direcciones Multi-cadena"
     }
   },
   "buy-wit": {
-    "title": "Buy $WIT",
-    "description": "$WIT, the native coin of Witnet, is available on trusted and well-known crypto exchanges. By acquiring and staking $WIT, you become a valuable part of the Witnet Community, contributing to the security, growth, and success of the decentralized future with Witnet."
+    "title": "Comprar $WIT{0}",
+    "description": "$WIT, la moneda nativa de Witnet, está disponible en intercambios de criptomonedas fiables y reconocidos. Al adquirir y apostar $WIT, te conviertes en una parte valiosa de la Comunidad de Witnet, contribuyendo a la seguridad, crecimiento y éxito del futuro descentralizado con Witnet."
   },
   "store-wit": {
-    "title": "Secure the Your $WIT",
-    "description": "Explore our wallet offerings for seamless management and transfer of your WIT coins."
+    "title": "Asegura Tus $WIT",
+    "description": "Explora nuestra oferta de wallets para gestionar y transferir $WIT sin problemas."
   },
   "sheikah": {
     "title": "Sheikah",
-    "description": "Choose Sheikah for a privacy-focused experience on Windows, macOS, and GNU/Linux, ideal for users who prioritize security and user-friendly interfaces.",
-    "action": "Download Sheikah"
+    "description": "Elige Sheikah para una experiencia centrada en la privacidad (Windows, macOS y GNU/Linux), ideal para usuarios que priorizan la seguridad y las interfaces fáciles de usar.",
+    "action": "Descargar Sheikah"
   },
   "my-wit-wallet": {
     "title": "myWitWallet",
-    "description": "Opt for myWitWallet for instant transactions without the wait for synchronization, perfect for quick and easy sending and receiving of WIT.",
-    "action": "Download myWitWallet"
+    "description": "Opta por myWitWallet para transacciones instantáneas sin la espera de sincronización, perfecto para enviar y recibir $WIT de manera rápida y fácil.",
+    "action": "Descargar myWitWallet"
   },
-  "stake-page": {
-    "title": "Stake! Secure the Network and Earn Rewards!",
-    "description": "Secure the network, earn rewards, and be part of a censorship-resistant oracle. Witnet 2.0 is unstoppable.",
-    "action": "Run a Witnet Node and Stake on {0}",
-    "action-description": "To participate in the Witnet network, run a Witnet node and stake some $WIT. Stakers can earn rewards while contributing to data retrieval, verification, and network security!",
-    "available-platforms-title": "Need Another Version?",
-    "action-2": "Get Started",
-    "action-2-description": "Start Staking Now and earn rewards!"
+  "footer": {
+    "documentation": "Documentación",
+    "request_data_feed": "Solicitar nuevo price feed",
+    "about_witnet": "Acerca de Witnet",
+    "links": {
+      "developers": {
+        "title": "Desarrolladores",
+        "reference": "Referencia",
+        "supported_chains": "Cadenas soportadas",
+        "randomness": "Aleatoriedad"
+      },
+      "ecosystem": {
+        "title": "Ecosistema",
+        "block_explorer": "Explorador de bloques",
+        "data_feeds_explorer": "Explorador de Data Feeds",
+        "sheikah": "Sheikah",
+        "my_wit_wallet": "myWitWallet"
+      },
+      "learn": {
+        "title": "Aprender",
+        "whitepaper": "Libro Blanco",
+        "medium": "Medium",
+        "tutorials": "Tutoriales"
+      },
+      "community": {
+        "title": "Comunidad",
+        "telegram": "Telegram",
+        "discord": "Discord",
+        "x": "X",
+        "reddit": "Reddit",
+        "youtube": "Youtube"
+      },
+      "witnet": {
+        "title": "Witnet",
+        "oracle": "Oráculo",
+        "token": "Moneda WIT",
+        "ecosystem": "Ecosistema",
+        "community": "Comunidad",
+        "whitepaper": "Libro Blanco",
+        "media_kit": "Media Kit"
+      }
+    },
+    "ado_text": "Witnet es parte de la Alianza de Oráculos Descentralizados (ADO), un esfuerzo conjunto de oráculos descentralizados líderes para facilitar la vida de los desarrolladores de contratos inteligentes creando estándares. Aprende más sobre la ADO en {0}",
+    "copyright": {
+      "base1": "© {0} por {1} y colaboradores individuales.",
+      "witnet_foundation": "Fundación Witnet",
+      "base2": "Contenido disponible bajo una {0}.",
+      "license": "Licencia Creative Commons"
+    }
   }
 }

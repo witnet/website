@@ -31,9 +31,7 @@
         <SquareDots
           class="absolute right-xl bottom-xl z-10 sm:hidden md:bottom-sm"
         />
-        <div
-          class="grid auto-rows-min gap-y-lg z-20 max-w-c-3xl"
-        >
+        <div class="grid auto-rows-min gap-y-lg z-20 max-w-c-3xl">
           <i18n-t
             keypath="hero.title.main"
             class="title-h1 text-center"
@@ -42,9 +40,14 @@
           >
             <br />
             {{ $t('hero.title.main2') }}
-            <span class="text-wit-blue-500">{{
-              $t('hero.title.gradient')
-            }}</span>
+            <i18n-t
+              keypath="hero.title.gradient"
+              class="text-wit-blue-500 gradient"
+              tag="span"
+              scope="global"
+            >
+              <span class="break">-</span>
+            </i18n-t>
           </i18n-t>
 
           <h2 class="text text-center">{{ $t('hero.description') }}</h2>
@@ -76,6 +79,15 @@ import SquareDots from '@/assets/svg/square-dots.svg?component'
   animation: down 1s infinite alternate;
 }
 
+.break {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .break {
+    display: inline-block;
+  }
+}
 @keyframes down {
   0% {
     transform: translateY(0px);

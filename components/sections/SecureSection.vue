@@ -63,7 +63,7 @@ const wallets: Array<WalletInfo> = [
     title: t('my-wit-wallet.title'),
     description: t('my-wit-wallet.description'),
     url: URLS.my_wit_wallet,
-    action: t('sheikah.action'),
+    action: t('my-wit-wallet.action'),
     icon: MywitwalletIcon,
   },
 ]
