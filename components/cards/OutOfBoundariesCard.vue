@@ -16,12 +16,10 @@
         {{ description }}
       </p>
 
-      <div class="flex items-center">
-        <SlashesIcon class="slashes w-[68px] sm:hidden"></SlashesIcon>
-        <a :href="url" target="_blank">
-          <ArrowButton class="action">{{ action }}</ArrowButton>
-        </a>
-      </div>
+      <SlashesIcon class="slashes w-[68px] sm:hidden"></SlashesIcon>
+      <a :href="url" target="_blank">
+        <ArrowButton class="action">{{ action }}</ArrowButton>
+      </a>
     </div>
   </div>
 </template>
@@ -53,6 +51,7 @@ defineProps({
   width: 60px;
   height: 60px;
 }
+
 .out-of-boundaries {
   // add margin equal to out of boundaries
   margin: 15px 30px 25px 15px;
@@ -67,6 +66,12 @@ defineProps({
 .action {
   position: absolute;
   right: -30px;
+  bottom: 16px;
+}
+
+.slashes {
+  position: absolute;
+  bottom: 32px;
 }
 
 .card {

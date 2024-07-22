@@ -31,14 +31,19 @@
             <p class="text text-white-50">{{ $t('coin.description3') }}</p>
           </div>
         </div>
-
-        <CustomButton :type="ButtonType.dark">
-          <a :href="release.releaseUrl" target="_blank">
-            <i18n-t keypath="coin.run_in_platform.main" tag="p" scope="global">
-              <span class="ml-[4px]">{{ release.platform }}</span>
-            </i18n-t>
-          </a>
-        </CustomButton>
+        <client-only>
+          <CustomButton :type="ButtonType.dark">
+            <a :href="release.releaseUrl" target="_blank">
+              <i18n-t
+                keypath="coin.run_in_platform.main"
+                tag="p"
+                scope="global"
+              >
+                <span class="ml-[4px]">{{ release.platform }}</span>
+              </i18n-t>
+            </a>
+          </CustomButton>
+        </client-only>
         <p class="text text-wit-blue-500 mt-md">
           {{ release.platform }} • x86_64 • {{ size }} MB
           <span class="text-xs ml-xs">ⓘ</span>

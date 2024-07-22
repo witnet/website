@@ -37,7 +37,7 @@ export default defineNuxtConfig({
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: 'https://feeds.witnet.io/meta-image.png',
+          content: '/meta-image.png',
         },
         {
           hid: 'twitter:image:alt',
@@ -58,12 +58,12 @@ export default defineNuxtConfig({
         {
           hid: 'og:image',
           property: 'og:image',
-          content: 'https://witnet.io/meta-image.png',
+          content: '/meta-image.png',
         },
         {
           hid: 'og:image:secure_url',
           property: 'og:image:secure_url',
-          content: 'https://witnet.io/meta-image.png',
+          content: '/meta-image.png',
         },
         {
           hid: 'og:image:alt',

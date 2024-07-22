@@ -54,7 +54,7 @@
           id="mc-embedded-subscribe"
           type="submit"
           name="subscribe"
-          class="margin rounded-r-full py-sm px-md inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-e-md border border-black-950 bg-black-950 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
+          class="text-wit-blue-500 margin rounded-r-full py-sm px-md inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-e-md border border-black-950 bg-black-950 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
           :value="subscribeLocale"
         />
       </div>
