@@ -56,8 +56,13 @@
         <!-- <CustomButton :type="ButtonType.primary" class="z-20">
           {{ $t('hero.action') }}
         </CustomButton> -->
-
-        <ArrowDownIcon class="arrow m-xl z-20" />
+        <NuxtLink
+          to="#WhatIsWitnet"
+          rel="home"
+          class="arrow flex justify-items-center"
+        >
+          <ArrowDownIcon class="m-xl z-20 w-[40px]" />
+        </NuxtLink>
       </div>
     </template>
   </NuxtLayout>
@@ -74,7 +79,8 @@ import SquareDots from '@/assets/svg/square-dots.svg?component'
 
 <style scoped lang="scss">
 .arrow {
-  width: 40px;
+  padding: 40px;
+  margin: -40px;
   height: auto;
   animation: down 1s infinite alternate;
 }

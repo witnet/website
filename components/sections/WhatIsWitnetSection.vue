@@ -1,5 +1,6 @@
 <template>
   <NuxtLayout
+    id="WhatIsWitnet"
     name="section"
     :frame-classes="'bg-wit-blue-500'"
     :content-classes="'grid justify-items-center'"
