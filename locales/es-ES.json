@@ -36,13 +36,16 @@
       "mark": "!"
     },
     "description1": "¡Asegura la Red, Gana Recompensas!",
+    "description1-alt": "Asegura la Red, Apoya a la Comunidad!",
     "description2": "Asegura la red, gana recompensas y sé parte de un oráculo resistente a la censura.",
-    "description3": "Witnet 2.0 es imparable.",
-    "participate1": "Wit/2 development is in the final phase, get ready for staking by running a 1.8 node now.",
-    "participate2": "Wit/2 development is in the final phase, get ready for staking by joining the public testnet.",
-    "participate": "Para participar en la red de Witnet, ejecuta un nodo de Witnet y haz staking de $WIT. ¡Los stakers pueden ganar recompensas mientras contribuyen a la recuperación de datos, verificación y seguridad de la red!",
+    "description2-alt": "Asegura la red y sé parte de un oráculo resistente a la censura.",
+    "description3": "Witnet 2.0 is unstoppable.",
+    "participate-alt-1": "Wit/2 development is in the final phase, get ready for staking by running a 1.8 node now.",
+    "participate-alt-2": "Wit/2 development is in the final phase, get ready for staking by joining the public testnet.",
+    "participate": "To participate in the Witnet network, run a Witnet node and stake some $WIT. Stakers can earn rewards while contributing to data retrieval, verification, and network security!",
     "run_in_platform": {
-      "main": "Ejecuta un Nodo de Witnet y haz staking en {0}"
+      "main": "Ejecuta un Nodo de Witnet y haz staking en {0}",
+      "main-alt": "Ejecuta un Nodo de Witnet en{0}"
     },
     "cards": {
       "get_started": {

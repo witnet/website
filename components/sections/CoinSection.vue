@@ -25,9 +25,9 @@
           <p class="mx-xl line transform md:rotate-90 sm:rotate-90"></p>
           <div class="max-w-md sm:text-center">
             <h4 class="title-h4 text-white-50 mb-md">
-              {{ $t('coin.description1') }}
+              {{ $t('coin.description1-alt') }}
             </h4>
-            <p class="text text-white-50">{{ $t('coin.description2') }}</p>
+            <p class="text text-white-50">{{ $t('coin.description2-alt') }}</p>
             <p class="text text-white-50">{{ $t('coin.description3') }}</p>
           </div>
         </div>
@@ -35,7 +35,7 @@
           <CustomButton :type="ButtonType.dark">
             <a :href="release.releaseUrl" target="_blank">
               <i18n-t
-                keypath="coin.run_in_platform.main"
+                keypath="coin.run_in_platform.main-alt"
                 tag="p"
                 scope="global"
               >
@@ -58,7 +58,7 @@
         </p>
 
         <p class="text-large text-white-50 text-center max-w-screen-md mb-xl">
-          {{ t('coin.participate1') }}
+          {{ t('coin.participate-alt-1') }}
           <!--TODO: uncomment when public testnet is live
           {{ t('coin.participate2') }}
           TODO: uncomment when wit/2 is live
