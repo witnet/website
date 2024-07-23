@@ -31,7 +31,7 @@
         <SquareDots
           class="absolute right-xl bottom-xl z-10 sm:hidden md:bottom-sm"
         />
-        <div class="grid auto-rows-min gap-y-lg z-20 max-w-c-3xl">
+        <div class="grid auto-rows-min gap-y-lg z-20 max-w-[600px]">
           <i18n-t
             keypath="hero.title.main"
             class="title-h1 text-center"

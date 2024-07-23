@@ -6,7 +6,7 @@
     <IconExternalLink :url="URLS.telegram" :icon="Telegram" />
     <IconExternalLink :url="URLS.discord" :icon="Discord" />
     <IconExternalLink :url="URLS.github" :icon="Github" />
-    <div class="flex mt-2xl">
+    <div class="flex mt-3xl">
       <p
         class="text-sm font-light text-white-300 [writing-mode:vertical-lr] -rotate-180 subtitle"
       >

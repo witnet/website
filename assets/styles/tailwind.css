@@ -115,4 +115,7 @@
   .nav-link {
     @apply text-black-950 sm:text-white-50;
   }
+  .section-description-max-w {
+    @apply max-w-md-x-screen sm:max-w-max md:max-w-lg-x-screen lg:max-w-lg-x-screen;
+  }
 }

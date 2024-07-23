@@ -16,7 +16,7 @@
       <p class="text text-center text-white-50">
         {{ t('community.description') }}
       </p>
-      <div class="grid grid-cols-2 gap-2xl mt-lg sm:grid-cols-1">
+      <div class="grid grid-cols-2 gap-3xl mt-lg sm:grid-cols-1">
         <IconWithText
           :text-color="'text-link-dark'"
           class="w-72 mb-4 sm:mb-0 cursor-pointer"

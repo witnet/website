@@ -8,7 +8,7 @@
       <div class="footer grid gap-xl">
         <div class="grid grid-cols-[max-content_1fr] md:grid-cols-1 gap-xl">
           <div
-            class="grid grid-cols-[130px_130px_130px] gap-2xl sm:gap-md sm:grid-cols-2 justify-items-start"
+            class="grid grid-cols-[130px_130px_130px] gap-3xl sm:gap-md sm:grid-cols-2 justify-items-start"
           >
             <div
               v-for="section in footerLinks"
@@ -50,7 +50,7 @@
         <div
           class="grid grid-cols-[max-content_max-content_1fr] sm:grid-cols-1 align-middle gap-lg pt-10"
         >
-          <Wit2Icon class="w-2xl white" name="witnet_dark" />
+          <Wit2Icon class="w-3xl white" name="witnet_dark" />
           <div class="h-max self-center">
             <i18n-t
               keypath="footer.copyright.base1"

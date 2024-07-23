@@ -11,7 +11,7 @@
     <template #content>
       <i18n-t
         keypath="build-section.title.key_features"
-        class="title-h2 text-center max-w-screen-md"
+        class="title-h2 text-center section-description-max-w"
         tag="h2"
         scope="global"
       >
@@ -19,7 +19,7 @@
           $t('build-section.title.dot')
         }}</span>
       </i18n-t>
-      <p class="text text-center max-w-screen-md">
+      <p class="text text-center section-description-max-w">
         {{ t('build-section.description') }}
       </p>
       <div class="mt-md grid grid-cols-2 gap-md sm:grid-cols-1 md:grid-cols-1">

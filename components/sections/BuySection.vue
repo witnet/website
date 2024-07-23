@@ -14,7 +14,7 @@
       >
         <span class="text-wit-blue-500">.</span>
       </i18n-t>
-      <p class="text text-center max-w-screen-md">
+      <p class="text text-center section-description-max-w">
         {{ t('buy-section.description') }}
       </p>
       <div

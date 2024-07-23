@@ -17,7 +17,7 @@
         <span class="text-white-50 font-bold">.</span>
       </i18n-t>
 
-      <p class="text text-center max-w-screen-md">
+      <p class="text text-center section-description-max-w">
         {{ t('secure-section.description') }}
       </p>
       <div class="grid grid-cols-2 md:grid-cols-1 mt-lg">

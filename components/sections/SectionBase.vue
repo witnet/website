@@ -23,7 +23,7 @@
 
         <DashesIcon v-if="separator" class="m-xl dashes" />
 
-        <p class="description text mb-lg max-w-2xl text-center px-md">
+        <p class="description text mb-lg max-w-3xl text-center px-md">
           {{ description }}
         </p>
       </div>

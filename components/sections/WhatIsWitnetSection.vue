@@ -6,10 +6,10 @@
     :content-classes="'grid justify-items-center'"
   >
     <template #content>
-      <div class="grid justify-items-center mb-lg">
+      <div class="grid justify-items-center">
         <i18n-t
           keypath="what-is-witnet.title.main"
-          class="title-h2-light text-center max-w-screen-md"
+          class="title-h2-light text-center section-description-max-w"
           tag="h2"
           scope="global"
         >
@@ -20,23 +20,25 @@
 
         <i18n-t
           keypath="what-is-witnet.subtitle"
-          class="title-h3 font-normal text-center max-w-screen-md"
+          class="title-h3 font-normal text-center section-description-max-w"
           tag="h2"
           scope="global"
         >
-          <span class="title-h3 font-normal text-center max-w-screen-md">
+          <span
+            class="title-h3 font-normal text-center section-description-max-w"
+          >
             <br />{{ $t('what-is-witnet.subtitle2') }}
           </span>
         </i18n-t>
 
-        <DashesIcon class="m-xl dashes w-2xl" />
+        <DashesIcon class="m-xl dashes w-3xl" />
 
-        <p class="text text-center max-w-screen-md">
+        <p class="text text-center section-description-max-w">
           {{ $t('what-is-witnet.description') }}
         </p>
       </div>
       <div
-        class="grid grid-cols-6 justify-center relative w-min-content gap-sm w-max mt-lg"
+        class="grid grid-cols-6 justify-center relative w-min-content gap-sm w-max mt-2xl"
       >
         <CircleIcon
           class="w-[70px] h-auto sm:w-xl absolute z-0 left-[-40px] top-[16px]"

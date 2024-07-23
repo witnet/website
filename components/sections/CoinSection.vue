@@ -23,7 +23,7 @@
           </i18n-t>
 
           <p class="mx-xl line transform md:rotate-90 sm:rotate-90"></p>
-          <div class="max-w-md sm:text-center">
+          <div class="max-w-md md:text-center">
             <h4 class="title-h4 text-white-50 mb-md">
               {{ $t('coin.description1-alt') }}
             </h4>
@@ -57,7 +57,9 @@
         </TooltipBase> -->
         </p>
 
-        <p class="text-large text-white-50 text-center max-w-screen-md mb-xl">
+        <p
+          class="text-large text-white-50 text-center section-description-max-w mb-xl"
+        >
           {{ t('coin.participate-alt-1') }}
           <!--TODO: uncomment when public testnet is live
           {{ t('coin.participate2') }}
