@@ -9,7 +9,7 @@
       <div class="grid justify-items-center mb-lg">
         <i18n-t
           keypath="what-is-witnet.title.main"
-          class="title-h2 font-normal text-center max-w-screen-md"
+          class="title-h2-light text-center max-w-screen-md"
           tag="h2"
           scope="global"
         >
