@@ -3,10 +3,10 @@
     id="stake"
     name="section"
     :frame-classes="'bg-black-950'"
-    :content-classes="'grid justify-items-center py-[200px]'"
+    :content-classes="'grid justify-items-center pt-[240px]'"
   >
-    <template #left>
-      <PalmBlueIcon class="sm:hidden lg:w-[250px] lg:h-auto" />
+    <template #top>
+      <BlueStarIcon class="lg:w-auto lg:h-[200px]" />
     </template>
     <template #content>
       <div class="flex flex-col items-center gap-md">
@@ -157,7 +157,7 @@ import WindowsIcon from '@/assets/svg/windows.svg?component'
 import AppleIcon from '@/assets/svg/apple.svg?component'
 import LinuxIcon from '@/assets/svg/linux.svg?component'
 import RaspberryIcon from '@/assets/svg/raspberry.svg?component'
-import PalmBlueIcon from '@/assets/svg/palmBlue.svg?component'
+import BlueStarIcon from '@/assets/svg/blue-horizontal-star.svg?component'
 
 import { URLS } from '@/constants'
 import { ButtonType } from '~/types'

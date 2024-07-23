@@ -8,12 +8,12 @@
     <IconExternalLink :url="URLS.github" :icon="Github" />
     <div class="flex mt-3xl">
       <p
-        class="text-sm font-light text-white-300 [writing-mode:vertical-lr] -rotate-180 subtitle"
+        class="text-sm font-light text-white-400 [writing-mode:vertical-lr] -rotate-180 subtitle"
       >
         {{ $t('socials-title-1') }}
       </p>
       <p
-        class="text-sm font-light text-white-300 [writing-mode:vertical-lr] -rotate-180 subtitle"
+        class="text-sm font-light text-white-400 [writing-mode:vertical-lr] -rotate-180 subtitle"
       >
         {{ $t('socials-title-2') }}
       </p>

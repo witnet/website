@@ -23,7 +23,7 @@ defineProps({
 <style lang="scss">
 .icon {
   .social-icon {
-    @apply fill-white-300;
+    @apply fill-white-400;
   }
 }
 .icon:hover > .social-icon {

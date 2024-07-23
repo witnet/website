@@ -5,9 +5,6 @@
     :center-left-content="false"
     :content-classes="'grid justify-items-center gap-md'"
   >
-    <template #left>
-      <SocialLinks class="sm:hidden" />
-    </template>
     <template #content>
       <i18n-t
         keypath="build-section.title.key_features"

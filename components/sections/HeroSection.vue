@@ -5,9 +5,6 @@
     :content-classes="'p-[24px_100px] sm:p-[0px_32px] xs:p-[0px_16px]'"
     :height="'h-lg-y-screen sm:h-[max-content] max-h-[900px]'"
   >
-    <template #left>
-      <SocialLinks class="sm:hidden" />
-    </template>
     <template #content>
       <div
         class="h-full grid auto-rows-min content-center gap-y-lg justify-items-center relative"

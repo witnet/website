@@ -11,11 +11,17 @@
       class="sm:hidden"
       :class="
         centerLeftContent
-          ? 'absolute top-[200px] left-[0px] md:hidden'
+          ? 'absolute top-[0px] left-[0px] md:hidden'
           : 'absolute top-[0px] left-sm-x-screen lg:left-lg md:left-md'
       "
     >
       <slot name="left"></slot>
+    </div>
+    <div
+      class="sm:hidden"
+      :class="'absolute top-[-16px] left-auto md:hidden w-screen flex justify-center'"
+    >
+      <slot name="top"></slot>
     </div>
     <div
       class="sm:hidden"
