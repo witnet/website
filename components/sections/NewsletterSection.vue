@@ -17,7 +17,7 @@
       </div>
     </template>
     <template #right>
-      <PalmBlackIcon class="sm:hidden lg:w-[250px] lg:h-autho rotate-180" />
+      <PalmBlackIcon class="sm:hidden w-[250px] h-auto rotate-180" />
     </template>
   </NuxtLayout>
 </template>

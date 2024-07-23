@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-[90vh] max-h-[900px] grid gap-y-4 auto-rows-min content-center gap-y-md justify-items-end opacity-60 hover:opacity-100"
+    class="h-[90vh] max-h-[900px] grid gap-y-4 grid-flow-row content-center gap-y-md justify-items-end opacity-60 hover:opacity-100"
   >
     <IconExternalLink :url="URLS.x" :icon="Twitter" />
     <IconExternalLink :url="URLS.telegram" :icon="Telegram" />

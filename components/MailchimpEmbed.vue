@@ -24,7 +24,7 @@
           type="email"
           placeholder="name@domain.com"
           name="EMAIL"
-          class="text-black-950 required email rounded-l-full min-w-[300px] sm:min-w-max py-sm px-md block w-full border-gray-200 shadow-sm text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+          class="text-black-950 outline-none required email rounded-l-full min-w-[300px] sm:min-w-max py-sm px-md block w-full border-gray-200 shadow-sm text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
           required=""
           value=""
         />
