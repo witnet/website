@@ -14,7 +14,7 @@
         <span class="text-wit-blue-500">{{ $t('community.title.dot') }}</span>
       </i18n-t>
       <p class="text text-center text-white-50">
-        {{ t('secure-section.description') }}
+        {{ t('community.description') }}
       </p>
       <div class="grid grid-cols-2 gap-2xl mt-lg sm:grid-cols-1">
         <IconWithText

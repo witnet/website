@@ -20,7 +20,7 @@ export enum ButtonType {
 
 export interface LanguageDictionary {
   [localeCodes.en]: Locale
-  [localeCodes.es]: Locale
+  // [localeCodes.es]: Locale
 }
 
 export type TutorialLink = {

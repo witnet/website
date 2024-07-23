@@ -17,11 +17,11 @@
         >
           <slot :name="link.key" />
         </li>
-        <li class="nav-link language-select">
+        <!-- <li class="nav-link language-select">
           <client-only>
             <LanguageSwitcher />
           </client-only>
-        </li>
+        </li> -->
       </ul>
     </nav>
     <label ref="menu" for="side-menu" class="hamburguer-container">
