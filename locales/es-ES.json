@@ -18,7 +18,7 @@
       "main2": "más poderoso,",
       "gradient": "probable{0}mente."
     },
-    "description": "Wit/Oracle combina un algoritmo de Prueba de Participación de última generación con su propia moneda nativa $WIT. Ofrece una seguridad inigualable para tus datos en la Web3.",
+    "description": "Wit/Oracle combina un algoritmo de Proof of Stake de última generación con su propia moneda nativa $WIT. Ofrece una seguridad inigualable para tus datos en la Web3.",
     "action": "Únete a la WIT comunidad"
   },
   "what-is-witnet": {
@@ -28,7 +28,7 @@
     },
     "subtitle": "el Oráculo para un {0} {1}",
     "subtitle2": "Futuro Resistente a la Censura",
-    "description": "Sin un oráculo fiable, los contratos inteligentes son susceptibles a brechas de seguridad, manipulación y pérdidas financieras. Witnet emplea mecanismos económicos avanzados de criptografía y Prueba de Participación (PoS), asegurando que tus contratos inteligentes reciban datos seguros y fiables."
+    "description": "Sin un oráculo fiable, los contratos inteligentes son susceptibles a brechas de seguridad, manipulación y pérdidas financieras. Witnet emplea mecanismos económicos avanzados de criptografía y Proof of Stake (PoS), asegurando que tus contratos inteligentes reciban datos seguros y fiables."
   },
   "coin": {
     "title": {
@@ -38,8 +38,8 @@
     "description1": "¡Asegura la Red, Gana Recompensas!",
     "description2": "Asegura la red, gana recompensas y sé parte de un oráculo resistente a la censura.",
     "description3": "Witnet 2.0 es imparable.",
-    "participate1": "Wit/2 está en su fase final, prepárate para hacer staking de $WIT corriendo un nodo de Witnet v1.8",
-    "participate2": "Wit/2 está en su fase final, prepárate para hacer staking de $WIT participando en la testnet pública",
+    "participate1": "Wit/2 development is in the final phase, get ready for staking by running a 1.8 node now.",
+    "participate2": "Wit/2 development is in the final phase, get ready for staking by joining the public testnet.",
     "participate": "Para participar en la red de Witnet, ejecuta un nodo de Witnet y haz staking de $WIT. ¡Los stakers pueden ganar recompensas mientras contribuyen a la recuperación de datos, verificación y seguridad de la red!",
     "run_in_platform": {
       "main": "Ejecuta un Nodo de Witnet y haz staking en {0}"
@@ -64,7 +64,7 @@
   },
   "buy-section": {
     "title": "Comprar $WIT",
-    "description": "$WIT, la moneda nativa de Witnet, está disponible en intercambios de criptomonedas fiables y reconocidos. Al adquirir y apostar $WIT, te conviertes en una parte valiosa de la Comunidad de Witnet, contribuyendo a la seguridad, crecimiento y éxito del futuro descentralizado con Witnet.",
+    "description": "$WIT, la moneda nativa de Witnet, está disponible en exchange fiables y reconocidos. Al adquirir y apostar $WIT, te conviertes en una parte valiosa de la Comunidad de Witnet, contribuyendo a la seguridad, crecimiento y éxito del futuro descentralizado con Witnet.",
     "exchanges": {
       "gate": "Gate.io",
       "mexc": "MEXC",
@@ -110,7 +110,7 @@
     },
     "explorer-2": {
       "title": "Explorador de Bloques",
-      "description": "El explorador de bloques de witnet.network te ofrece una visión detallada y transparente de todas las transacciones y solicitudes de datos en la blockchain de Witnet."
+      "description": "El explorador de bloques de witnet.network te ofrece una visión detallada y transparente de todas las transacciones y peticiones de datos en la blockchain de Witnet."
     }
   },
   "community": {
@@ -135,29 +135,29 @@
     "description": "Estos tutoriales están diseñados para ofrecer a los desarrolladores las herramientas y el conocimiento necesario para usar la red oráculo descentralizada de Witnet en aplicaciones blockchain.",
     "web": {
       "title": "Web y APIs",
-      "tutorial-1": "Solicitudes Http",
+      "tutorial-1": "Peticiones Http",
       "tutorial-2": "GraphQL",
-      "tutorial-3": "Solicitudes Dinámicas",
+      "tutorial-3": "Peticiones Dinámicas",
       "tutorial-4": "API de RADON"
     },
     "price": {
-      "title": "Precio",
+      "title": "Price Feeds",
       "tutorial-1": "Enrutador de Price Feeds",
       "tutorial-2": "Lectura de Pares de Precios",
-      "tutorial-3": "API para precios",
+      "tutorial-3": "API de pricefeeds",
       "tutorial-4": "Direcciones Multi-cadena"
     },
     "randomness": {
-      "title": "Aleatoriedad",
+      "title": "Randomness",
       "tutorial-1": "Generación de RNG",
-      "tutorial-2": "Solicitudes de Bajo Nivel",
+      "tutorial-2": "Peticiones de Bajo Nivel",
       "tutorial-3": "API de Solidity",
       "tutorial-4": "Direcciones Multi-cadena"
     }
   },
   "buy-wit": {
     "title": "Comprar $WIT{0}",
-    "description": "$WIT, la moneda nativa de Witnet, está disponible en intercambios de criptomonedas fiables y reconocidos. Al adquirir y apostar $WIT, te conviertes en una parte valiosa de la Comunidad de Witnet, contribuyendo a la seguridad, crecimiento y éxito del futuro descentralizado con Witnet."
+    "description": "$WIT, la moneda nativa de Witnet, está disponible en exchange fiables y reconocidos. Al adquirir y apostar $WIT, te conviertes en una parte valiosa de la Comunidad de Witnet, contribuyendo a la seguridad, crecimiento y éxito del futuro descentralizado con Witnet."
   },
   "store-wit": {
     "title": "Asegura Tus $WIT",
@@ -182,7 +182,7 @@
         "title": "Desarrolladores",
         "reference": "Referencia",
         "supported_chains": "Cadenas soportadas",
-        "randomness": "Aleatoriedad"
+        "randomness": "Randomness"
       },
       "ecosystem": {
         "title": "Ecosistema",
@@ -193,7 +193,7 @@
       },
       "learn": {
         "title": "Aprender",
-        "whitepaper": "Libro Blanco",
+        "whitepaper": "Whitepaper",
         "medium": "Medium",
         "tutorials": "Tutoriales"
       },
@@ -211,7 +211,7 @@
         "token": "Moneda WIT",
         "ecosystem": "Ecosistema",
         "community": "Comunidad",
-        "whitepaper": "Libro Blanco",
+        "whitepaper": "Whitepaper",
         "media_kit": "Media Kit"
       }
     },
