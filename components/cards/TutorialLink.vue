@@ -2,7 +2,7 @@
   <a
     :href="url"
     target="_blank"
-    class="inline-block text-link link-hover-style p-[8px] -m-[8px] -ml-[14px]"
+    class="inline-block text-link link-hover-style"
   >
     <h5>{{ name }}</h5>
   </a>
