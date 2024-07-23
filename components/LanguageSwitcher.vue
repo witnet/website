@@ -101,7 +101,7 @@ const iconMap: Dictionary = computed(() => {
   .vs__dropdown-menu {
     width: 80px;
     top: -90px;
-    left: -16px;
+    left: -24px;
   }
   &.flag {
     .vs__dropdown-menu {
@@ -177,7 +177,7 @@ const iconMap: Dictionary = computed(() => {
     }
     .vs__dropdown-menu {
       top: -80px;
-      left: -4px;
+      left: 24px;
     }
   }
 }

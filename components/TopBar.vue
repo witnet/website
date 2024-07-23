@@ -165,6 +165,7 @@ watch(
       right: 0;
       left: 0;
       bottom: 0;
+      top: 0;
       gap: 0;
       .nav-link {
         padding: 8px 16px 8px 16px;
@@ -172,6 +173,7 @@ watch(
         &.language-select {
           display: block;
           padding: 0px;
+          margin-right: 8px;
           justify-self: flex-end;
         }
       }
