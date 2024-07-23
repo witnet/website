@@ -63,7 +63,7 @@
     }
   },
   "buy-section": {
-    "title": "Comprar $WIT",
+    "title": "Comprar $WIT{0}",
     "description": "$WIT, la moneda nativa de Witnet, está disponible en exchange fiables y reconocidos. Al adquirir y apostar $WIT, te conviertes en una parte valiosa de la Comunidad de Witnet, contribuyendo a la seguridad, crecimiento y éxito del futuro descentralizado con Witnet.",
     "exchanges": {
       "gate": "Gate.io",

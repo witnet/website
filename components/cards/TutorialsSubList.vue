@@ -1,5 +1,7 @@
 <template>
-  <div class="border-2 border-black-950 rounded-lg px-lg py-lg m-sm w-72">
+  <div
+    class="border-2 border-black-950 rounded-lg px-lg py-lg m-sm w-72 shadow-black-950 shadow-[7px_10px_0px]"
+  >
     <h3 class="title-h5">{{ title }}</h3>
 
     <hr class="hr my-md" />

@@ -12,13 +12,14 @@
         <template v-for="link in navLinks" :key="link.key" #[link.key]>
           <InnerLink
             :hash="link.key"
-            class="text font-[500] flex cursor-pointer sm:text-white-50"
+            class="text font-[500] flex cursor-pointer sm:text-white-50 relative p-[8px] m-[-8px] pl-[16px]"
             @mouseover="activateLink(link)"
             @mouseleave="clearActiveLinks"
           >
-            <NavigationCursor v-if="link.active" class="w-sm h-auto" /><span
-              class="slash text-wit-blue-500"
-              >/</span
+            <NavigationCursor
+              v-if="link.active"
+              class="w-sm h-auto absolute top-[16px] left-[4px]"
+            /><span /><span class="slash text-wit-blue-500">/</span
             >{{ t(link.locale) }}
           </InnerLink>
         </template>
