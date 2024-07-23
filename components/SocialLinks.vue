@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen max-h-[900px] grid gap-y-4 auto-rows-min content-center gap-y-md justify-items-end"
+    class="h-[90vh] max-h-[900px] grid gap-y-4 auto-rows-min content-center gap-y-md justify-items-end"
   >
     <IconExternalLink :url="URLS.x" :icon="Twitter" />
     <IconExternalLink :url="URLS.telegram" :icon="Telegram" />
@@ -8,12 +8,12 @@
     <IconExternalLink :url="URLS.github" :icon="Github" />
     <div class="flex mt-2xl">
       <p
-        class="text-white-300 font-mono [writing-mode:vertical-lr] -rotate-180 subtitle"
+        class="text-sm font-light text-white-300 [writing-mode:vertical-lr] -rotate-180 subtitle"
       >
         {{ $t('socials-title-1') }}
       </p>
       <p
-        class="text-white-300 font-mono [writing-mode:vertical-lr] -rotate-180 subtitle"
+        class="text-sm font-light text-white-300 [writing-mode:vertical-lr] -rotate-180 subtitle"
       >
         {{ $t('socials-title-2') }}
       </p>

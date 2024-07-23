@@ -2,7 +2,7 @@
   <div class="card border-2 border-black-950 rounded-lg px-xl py-lg">
     <div class="flex items-center">
       <div
-        class="text-md font-mono circle border border-black-950 rounded-full h-fit p-sm mr-md text-black-950"
+        class="text-md circle border border-black-950 rounded-full h-fit p-sm mr-md text-black-950"
       >
         {{ formattedIndex }}
       </div>
