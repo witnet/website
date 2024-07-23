@@ -1,6 +1,6 @@
 <template>
   <a class="link" :href="url" target="_blank">
-    <icon :class="`h-auto w-lg ${color} ${width}`" />
+    <icon :class="`icon h-auto ${width} p-[16px] -m-[16px]`" />
   </a>
 </template>
 <script setup lang="ts">
@@ -9,13 +9,9 @@ defineProps({
     type: String,
     required: true,
   },
-  color: {
-    type: String,
-    default: 'fill-white-300',
-  },
   width: {
     type: String,
-    default: 'w-md',
+    default: 'w-[50px]',
   },
   icon: {
     type: Object,
@@ -23,3 +19,14 @@ defineProps({
   },
 })
 </script>
+
+<style lang="scss">
+.icon {
+  .social-icon {
+    @apply fill-white-300;
+  }
+}
+.icon:hover > .social-icon {
+  @apply fill-white-500;
+}
+</style>
