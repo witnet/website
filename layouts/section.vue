@@ -19,7 +19,7 @@
     </div>
     <div
       class="sm:hidden"
-      :class="'absolute top-[-16px] left-auto md:hidden w-screen flex justify-center'"
+      :class="'absolute top-[-16px] left-auto w-screen flex justify-center'"
     >
       <slot name="top"></slot>
     </div>
@@ -27,7 +27,7 @@
       class="sm:hidden"
       :class="
         centerLeftContent
-          ? 'absolute top-[50px] right-[0px] md:hidden'
+          ? 'sm:hidden absolute top-[0px] right-[-1px] h-full w-auto flex align-center md:hidden'
           : 'absolute top-[0px] right-sm-x-screen lg:left-lg md:left-md'
       "
     >

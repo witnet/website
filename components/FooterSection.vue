@@ -48,9 +48,9 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-[max-content_max-content_1fr] sm:grid-cols-1 align-middle gap-lg pt-10"
+          class="grid grid-cols-[max-content_max-content_1fr] sm:grid-cols-1 align-middle gap-lg pt-10 items-center"
         >
-          <Wit2Icon class="w-3xl white" name="witnet_dark" />
+          <WitOracleIcon class="w-[140px] h-auto white" name="witnet_dark" />
           <div class="h-max self-center">
             <i18n-t
               keypath="footer.copyright.base1"
@@ -99,7 +99,7 @@
 import snakeCase from 'lodash.snakecase'
 import { URLS } from '../constants'
 import AdoIcon from '@/assets/svg/ado.svg?component'
-import Wit2Icon from '@/assets/svg/wit2.svg?component'
+import WitOracleIcon from '@/assets/svg/witnet-logo-dark.svg?component'
 
 const footerSections = {
   developers: ['reference', 'randomness', 'supported_chains'],

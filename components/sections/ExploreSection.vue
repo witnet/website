@@ -5,12 +5,12 @@
     :content-classes="'grid justify-items-center'"
   >
     <template #content>
-      <div class="flex self-center sm:w-96 justify-self-center">
+      <div class="flex self-center sm:w-96 justify-self-center items-center">
         <ArrowTurnRightIcon class="arrow m-md" />
 
         <i18n-t
           keypath="explore.title.main"
-          class="title-h2 font-bold mr-0 sm:mr-sm text-white-50"
+          class="title-h2 font-bold mr-0 sm:mr-sm text-white-50 h-max"
           tag="h2"
           scope="global"
         >
@@ -18,11 +18,11 @@
         </i18n-t>
       </div>
 
-      <div class="grid grid-cols-2 sm:grid-cols-1 gap-md mt-lg">
+      <div class="grid grid-cols-2 sm:grid-cols-1 gap-lg mt-lg">
         <ExplorerLink
           v-for="explorer in explorers"
           :key="explorer.title"
-          class="m-sm min-w-80"
+          class="min-w-80"
           shadow-color="black"
           :title="explorer.title"
           :url="explorer.url"

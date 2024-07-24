@@ -3,7 +3,7 @@
     class="p-6 w-full grid grid-rows-[max-content_1fr_max-content] bg-white dark:text-wit-blue-500 min-h-screen relative"
   >
     <SocialLinks
-      class="fixed bottom-2xl left-sm-x-screen lg:left-lg md:left-md z-50 h-max w-auto"
+      class="fixed bottom-2xl left-sm-x-screen lg:left-lg md:left-md z-50 h-max w-auto sm:hidden"
     />
     <NuxtLayout name="navbar">
       <TopBar :nav-links="navLinks">

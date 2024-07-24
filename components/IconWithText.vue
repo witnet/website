@@ -1,7 +1,7 @@
 <template>
   <a :href="link" target="_blank">
-    <div class="flex items-center">
-      <RoundedIcon class="mr-md">
+    <div class="flex items-center icon-container">
+      <RoundedIcon class="rounded-icon mr-md">
         <slot></slot>
       </RoundedIcon>
       <p class="text-link font-bold" :class="textColor">{{ text }}</p>
@@ -25,3 +25,12 @@ defineProps({
   },
 })
 </script>
+
+<style lang="scss">
+.rounded-icon {
+  @apply bg-wit-blue-500;
+}
+.icon-container:hover > .rounded-icon {
+  @apply bg-wit-blue-300;
+}
+</style>

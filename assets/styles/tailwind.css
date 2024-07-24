@@ -90,7 +90,7 @@
 
   /* Button */
   .btn {
-    @apply w-full py-sm px-l cursor-pointer border-2 border-black-950;
+    @apply w-full py-sm px-md-alt cursor-pointer border-2 border-black-950;
   }
   .btn-primary {
     @apply font-semibold rounded-full shadow-md bg-wit-blue-500 hover:bg-wit-blue-400 text-black-950 focus:outline-none focus:ring focus:ring-wit-blue-500 focus:ring-opacity-80 shadow-[3px_7px_0px] shadow-black-950;

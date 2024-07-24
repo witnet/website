@@ -20,7 +20,9 @@
       <p class="text text-center section-description-max-w">
         {{ t('secure-section.description') }}
       </p>
-      <div class="grid grid-cols-2 md:grid-cols-1 mt-lg">
+      <div
+        class="grid grid-cols-2 md:grid-cols-1 w-full justify-between md:justify-itemscenter"
+      >
         <OutOfBoundariesCard
           v-for="wallet in wallets"
           :key="wallet.title"

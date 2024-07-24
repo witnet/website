@@ -2,10 +2,10 @@
   <NuxtLayout
     name="section"
     :frame-classes="'bg-wit-blue-500'"
-    :content-classes="'grid justify-start gap-sm py-[200px]'"
+    :content-classes="'grid justify-start gap-sm py-[184px]'"
   >
     <template #content>
-      <h2 class="title-h2">{{ t('newsletter.title') }}</h2>
+      <h2 class="title-h2-xl">{{ t('newsletter.title') }}</h2>
       <div
         class="grid grid-cols-[max-content_1fr] gap-md justify-items-start items-center"
       >

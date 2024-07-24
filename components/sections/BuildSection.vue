@@ -19,7 +19,7 @@
       <p class="text text-center section-description-max-w">
         {{ t('build-section.description') }}
       </p>
-      <div class="mt-md grid grid-cols-2 gap-md sm:grid-cols-1 md:grid-cols-1">
+      <div class="mt-md grid grid-cols-2 gap-lg sm:grid-cols-1 md:grid-cols-1">
         <BuildWithWitnet
           v-for="(reason, index) in reasons"
           :key="reason.title"

@@ -16,7 +16,7 @@
         {{ t('tutorials.description') }}
       </p>
       <div
-        class="grid grid-cols-3 text-black-950 justify-items-center gap-md mt-lg lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1"
+        class="grid grid-cols-3 text-black-950 justify-between gap-lg w-full mt-lg lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1"
       >
         <TutorialsSubList
           v-for="tutorialList in tutorials"

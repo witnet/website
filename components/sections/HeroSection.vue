@@ -3,7 +3,7 @@
     name="section"
     :center-left-content="false"
     :content-classes="'p-[24px_100px] sm:p-[0px_32px] xs:p-[0px_16px]'"
-    :height="'h-lg-y-screen sm:h-[max-content] max-h-[900px]'"
+    :height="'h-lg-y-screen max-h-[900px]'"
   >
     <template #content>
       <div

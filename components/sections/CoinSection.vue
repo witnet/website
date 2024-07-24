@@ -6,7 +6,7 @@
     :content-classes="'grid justify-items-center pt-[240px]'"
   >
     <template #top>
-      <BlueStarIcon class="lg:w-auto lg:h-[200px]" />
+      <BlueStarIcon class="w-auto h-[200px]" />
     </template>
     <template #content>
       <div class="flex flex-col items-center gap-md">
@@ -24,9 +24,15 @@
 
           <p class="mx-xl line transform md:rotate-90 sm:rotate-90"></p>
           <div class="max-w-md md:text-center">
-            <h4 class="title-h4 text-white-50 mb-md">
-              {{ $t('coin.description1-alt') }}
-            </h4>
+            <i18n-t
+              keypath="coin.description1-alt"
+              class="title-h4 text-white-50 mb-md"
+              tag="h4"
+              scope="global"
+            >
+              <br />
+              <span>{{ $t('coin.description1-1-alt') }}</span>
+            </i18n-t>
             <p class="text text-white-50">{{ $t('coin.description2-alt') }}</p>
             <p class="text text-white-50">{{ $t('coin.description3') }}</p>
           </div>

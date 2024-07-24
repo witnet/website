@@ -1,5 +1,5 @@
 {
-  "title": "Witnet 2.0 es-ES",
+  "title": "Wit/Oracle",
   "buy": "Compra",
   "stake": "Stake",
   "build": "Construye",
@@ -24,7 +24,7 @@
   "what-is-witnet": {
     "title": {
       "main": "Construye con confianza: {0}",
-      "witnet": "Witnet 2.0"
+      "witnet": "Wit/Oracle"
     },
     "subtitle": "el Oráculo para un {0} {1}",
     "subtitle2": "Futuro Resistente a la Censura",
@@ -39,7 +39,7 @@
     "description1-alt": "Asegura la Red, Apoya a la Comunidad!",
     "description2": "Asegura la red, gana recompensas y sé parte de un oráculo resistente a la censura.",
     "description2-alt": "Asegura la red y sé parte de un oráculo resistente a la censura.",
-    "description3": "Witnet 2.0 is unstoppable.",
+    "description3": "Wit/Oracle is unstoppable.",
     "participate-alt-1": "Wit/2 development is in the final phase, get ready for staking by running a 1.8 node now.",
     "participate-alt-2": "Wit/2 development is in the final phase, get ready for staking by joining the public testnet.",
     "participate": "To participate in the Witnet network, run a Witnet node and stake some $WIT. Stakers can earn rewards while contributing to data retrieval, verification, and network security!",
