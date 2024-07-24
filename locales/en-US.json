@@ -37,14 +37,11 @@
     },
     "description1": "Secure the Network,{0}{1}",
     "description1-1": "Earn Rewards!",
-    "description1-alt": "Secure the Network,{0}{1}",
-    "description1-1-alt": "Support the Community!",
     "description2": "Secure the network, earn rewards, and be part of a censorship-resistant oracle.",
-    "description2-alt": "Contribute the network, be part of a censorship-resistant oracle.",
     "description3": "Wit/Oracle is unstoppable.",
+    "participate": "To participate in the Witnet network, run a Witnet node and stake some $WIT. Stakers can earn rewards while contributing to data retrieval, verification, and network security!",
     "participate-alt-1": "Wit/2 development is in the final phase, get ready for staking by running a 1.8 node now.",
     "participate-alt-2": "Wit/2 development is in the final phase, get ready for staking by joining the public testnet.",
-    "participate": "To participate in the Witnet network, run a Witnet node and stake some $WIT. Stakers can earn rewards while contributing to data retrieval, verification, and network security!",
     "run_in_platform": {
       "main": "Run a Witnet Node and Stake on{0}",
       "main-alt": "Run a Witnet Node on{0}"

@@ -25,15 +25,15 @@
           <p class="mx-xl line transform md:rotate-90 sm:rotate-90"></p>
           <div class="max-w-md md:text-center">
             <i18n-t
-              keypath="coin.description1-alt"
+              keypath="coin.description1"
               class="title-h4 text-white-50 mb-md"
               tag="h4"
               scope="global"
             >
               <br />
-              <span>{{ $t('coin.description1-1-alt') }}</span>
+              <span>{{ $t('coin.description1-1') }}</span>
             </i18n-t>
-            <p class="text text-white-50">{{ $t('coin.description2-alt') }}</p>
+            <p class="text text-white-50">{{ $t('coin.description2') }}</p>
             <p class="text text-white-50">{{ $t('coin.description3') }}</p>
           </div>
         </div>
