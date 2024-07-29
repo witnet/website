@@ -1,26 +1,24 @@
 <template>
-  <div>
-    <div
-      class="out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
-    >
-      <RoundedIcon class="rounded-icon">
-        <slot name="icon"></slot>
-      </RoundedIcon>
-      <div class="ml-xl px-sm">
-        <h3 class="text-2xl text-black-950 font-semibold leading-4 pl-14">
-          {{ title }}
-        </h3>
-        <hr class="hr my-md ml-14" />
-      </div>
-      <p class="text text-black-950 mb-xl">
-        {{ description }}
-      </p>
-
-      <SlashesIcon class="slashes w-[68px] sm:hidden"></SlashesIcon>
-      <a :href="url" target="_blank">
-        <ArrowButton class="action">{{ action }}</ArrowButton>
-      </a>
+  <div
+    class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
+  >
+    <RoundedIcon class="rounded-icon">
+      <slot name="icon"></slot>
+    </RoundedIcon>
+    <div class="ml-xl px-sm">
+      <h3 class="text-2xl text-black-950 font-semibold leading-4 pl-14">
+        {{ title }}
+      </h3>
+      <hr class="hr my-md ml-14" />
     </div>
+    <p class="text text-black-950 mb-md">
+      {{ description }}
+    </p>
+
+    <SlashesIcon class="slashes w-[68px] sm:hidden"></SlashesIcon>
+    <a :href="url" target="_blank">
+      <ArrowButton class="action">{{ action }}</ArrowButton>
+    </a>
   </div>
 </template>
 
