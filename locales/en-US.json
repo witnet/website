@@ -36,8 +36,8 @@
       "main": "Stake{0}",
       "mark": "!"
     },
-    "learn-more-link": "Learn more",
-    "learn_more": "{0} about running a Witnet Node, including system requirements and setup instructions.",
+    "learn-more-link": "running a Witnet Node",
+    "learn_more": "Learn more about {0}, including system requirements and setup instructions.",
     "description1": "Secure the Network,{0}{1}",
     "description1-1": "Earn Rewards!",
     "description2": "Secure the network, earn rewards, and be part of a censorship-resistant oracle.",

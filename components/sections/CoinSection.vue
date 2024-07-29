@@ -52,7 +52,8 @@
         </client-only>
         <p class="text text-wit-blue-500 mt-md">
           {{ release.platform }} • x86_64 • {{ size }} MB
-          <TooltipBase
+          <!-- TODO: uncomment if tooltip is needed -->
+          <!-- <TooltipBase
             bg-color="bg-white-50"
             text-color="text-black-950"
             :tooltip-text="t('coin.learn_more')"
@@ -70,13 +71,21 @@
             <template #main>
               <span class="text-xs ml-xs">ⓘ</span>
             </template>
-          </TooltipBase>
+          </TooltipBase> -->
         </p>
 
         <p
           class="text-large text-white-50 text-center section-description-max-w mb-xl"
         >
           {{ t('coin.participate-alt-1') }}
+          <i18n-t keypath="coin.learn_more" tag="span" scope="global">
+            <a
+              href="https://docs.witnet.io/node-operators/requirements"
+              target="_blanc"
+              class="underline"
+              >{{ t('coin.learn-more-link') }}</a
+            >
+          </i18n-t>
           <!--TODO: uncomment when public testnet is live
           {{ t('coin.participate2') }}
           TODO: uncomment when wit/2 is live

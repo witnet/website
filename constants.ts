@@ -6,7 +6,7 @@ export const URLS: Record<string, string> = {
     'https://witnet.notion.site/The-Witnet-Advocate-Program-f572baff6b1d49a69d4db785a924fc61',
   bitmart: 'https://www.bitmart.com/trade/en-US?symbol=WIT_USDT',
   block_explorer: 'https://witnet.network/',
-  changelly: 'https://changelly.com/es/buy/wit',
+  changelly: 'https://changelly.com/buy/wit',
   data_feeds_explorer: 'https://feeds.witnet.io',
   discord: 'https://discord.gg/witnet',
   docker_node: 'https://hub.docker.com/r/witnet/witnet-rust/tags',
