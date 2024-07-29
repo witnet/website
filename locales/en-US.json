@@ -15,6 +15,7 @@
   "hero": {
     "title": {
       "main": "The most {0} {1} {2}",
+      "main2-init": "reliable oracle,",
       "main2": "powerful oracle,",
       "gradient": "provably."
     },
@@ -35,6 +36,8 @@
       "main": "Stake{0}",
       "mark": "!"
     },
+    "learn-more-link": "Learn more",
+    "learn_more": "{0} about running a Witnet Node, including system requirements and setup instructions.",
     "description1": "Secure the Network,{0}{1}",
     "description1-1": "Earn Rewards!",
     "description2": "Secure the network, earn rewards, and be part of a censorship-resistant oracle.",

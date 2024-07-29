@@ -1,11 +1,12 @@
 <template>
-  <div class="group inline relative">
-    <slot></slot>
-    <span
+  <div class="group inline relative p-[4px] -p-[4px]">
+    <slot name="main"></slot>
+    <div
       :class="`${bgColor} ${textColor}`"
-      class="py-sm px-sm rounded-lg group-hover:opacity-100 transition-opacity text-sm rounded-md absolute bottom-full -translate-x-1/2 mb-sm opacity-0"
-      >{{ tooltipText }}</span
+      class="hidden min-w-[240px] py-md px-md rounded-lg group-hover:inline hover:inline transition-opacity text-sm rounded-md absolute bottom-[16px] translate-x-[-90%] mb-sm"
     >
+      <slot name="tooltip"></slot>
+    </div>
   </div>
 </template>
 

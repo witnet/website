@@ -52,15 +52,25 @@
         </client-only>
         <p class="text text-wit-blue-500 mt-md">
           {{ release.platform }} • x86_64 • {{ size }} MB
-          <span class="text-xs ml-xs">ⓘ</span>
-          <!-- In case the info icon is works as a tooltip, set content and uncomment the component -->
-          <!-- <TooltipBase
+          <TooltipBase
             bg-color="bg-white-50"
             text-color="text-black-950"
-            tooltip-text="Lorenipsum dsesrwersedre"
+            :tooltip-text="t('coin.learn_more')"
           >
-          <span class="text-xs ml-xs">ⓘ</span>
-        </TooltipBase> -->
+            <template #tooltip>
+              <i18n-t keypath="coin.learn_more" tag="span" scope="global">
+                <a
+                  href="https://docs.witnet.io/node-operators/requirements"
+                  target="_blanc"
+                  class="underline"
+                  >{{ t('coin.learn-more-link') }}</a
+                >
+              </i18n-t>
+            </template>
+            <template #main>
+              <span class="text-xs ml-xs">ⓘ</span>
+            </template>
+          </TooltipBase>
         </p>
 
         <p
