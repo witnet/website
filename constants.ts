@@ -68,7 +68,8 @@ export const URLS: Record<string, string> = {
   reference:
     'https://docs.witnet.io/smart-contracts/witnet-data-feeds/api-reference',
   supported_chains: 'https://docs.witnet.io/smart-contracts/supported-chains',
-  randomness: 'https://docs.witnet.io/smart-contracts/witnet-randomness-oracle',
+  randomness:
+    'https://docs.witnet.io/smart-contracts/witnet-randomness-oracle/generating-randomness',
 }
 
 export const languageLocales: LanguageDictionary = {
