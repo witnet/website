@@ -21,7 +21,7 @@
         {{ t('secure-section.description') }}
       </p>
       <div
-        class="grid grid-cols-2 md:grid-cols-1 w-full justify-between md:justify-itemscenter"
+        class="grid grid-cols-2 md:grid-cols-1 w-full justify-between md:justify-items-center"
       >
         <OutOfBoundariesCard
           v-for="wallet in wallets"

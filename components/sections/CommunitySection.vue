@@ -18,20 +18,14 @@
       </p>
       <div class="grid grid-cols-2 gap-3xl mt-lg sm:grid-cols-1">
         <IconWithText
+          v-for="social in socials"
+          :key="social.name"
           :text-color="'text-link-dark'"
           class="w-72 mb-4 sm:mb-0 cursor-pointer"
-          :text="$t('community.advocate-program')"
-          :link="URLS.advocateProgram"
+          :text="social.name"
+          :link="social.url"
         >
-          <MegaphoneIcon class="icon" />
-        </IconWithText>
-        <IconWithText
-          :text-color="'text-link-dark'"
-          class="w-72 cursor-pointer"
-          :text="$t('community.grant-program')"
-          :link="URLS.grantProgram"
-        >
-          <BadgeIcon class="icon" />
+          <component :is="social.icon" class="community-icon" />
         </IconWithText>
       </div>
     </template>
@@ -39,16 +33,44 @@
 </template>
 
 <script setup lang="ts">
-import MegaphoneIcon from '@/assets/svg/megaphone.svg?component'
-import BadgeIcon from '@/assets/svg/badge.svg?component'
+import Twitter from '@/assets/svg/socials/twitter.svg?component'
+import Telegram from '@/assets/svg/socials/telegram.svg?component'
+import Discord from '@/assets/svg/socials/discord.svg?component'
+import Github from '@/assets/svg/socials/github.svg?component'
 import { URLS } from '@/constants'
 
 const { t } = useI18n()
+
+const socials = [
+  {
+    name: 'Twitter',
+    icon: Twitter,
+    url: URLS.x,
+  },
+  {
+    name: 'Telegram',
+    icon: Telegram,
+    url: URLS.telegram,
+  },
+  {
+    name: 'Discord',
+    icon: Discord,
+    url: URLS.discord,
+  },
+  {
+    name: 'Github',
+    icon: Github,
+    url: URLS.github,
+  },
+]
 </script>
 
-<style scoped>
-.icon {
+<style lang="scss">
+.community-icon {
   width: 45px;
   height: 45px;
+  .social-icon {
+    @apply fill-black-950 !important;
+  }
 }
 </style>
