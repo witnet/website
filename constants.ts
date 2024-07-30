@@ -32,7 +32,7 @@ export const URLS: Record<string, string> = {
   windows_node: 'https://github.com/witnet/witnet-rust/releases',
   witnet_foundation: 'https://witnet.foundation',
   x: 'https://twitter.com/witnet_io',
-  whitepaper: 'witnet.io/witnet-whitepaper.pdf',
+  whitepaper: 'https://witnet.io/witnet-whitepaper.pdf',
 
   tutorials: 'https://docs.witnet.io/intro/tutorials',
   // TODO: Stake is not available yet so change the copy and link to the docs

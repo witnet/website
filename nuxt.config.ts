@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/',
     head: {
+      htmlAttrs: {
+        lang: 'en-US',
+      },
       title: 'Wit/Oracle: The most powerful oracle, provably.',
       meta: [
         { charset: 'utf-8' },
