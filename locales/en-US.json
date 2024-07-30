@@ -75,7 +75,7 @@
       "mexc": "MEXC",
       "bitmart": "Bitmart",
       "changelly": "Changelly",
-      "simpleswap": "Simpleswap",
+      "simpleswap": "SimpleSwap",
       "letsexchange": "LetsExchange"
     }
   },
@@ -105,8 +105,8 @@
   },
   "explore": {
     "title": {
-      "main": "Explore the Power of {0}.",
-      "witnet": "Witnet"
+      "main": "Explore the Power of the {0}.",
+      "witnet": "Wit/Oracle"
     },
     "description": "Dive into datasets and detailed insights by navigating through transparent data effortlessly.",
     "explorer-1": {
