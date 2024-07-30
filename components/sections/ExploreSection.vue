@@ -16,8 +16,9 @@
           tag="h2"
           scope="global"
         >
-          <br />
-          <span class="text-black-950">{{ $t('explore.title.witnet') }}</span>
+          <span class="text-black-950 break-keep inline-block">{{
+            $t('explore.title.witnet')
+          }}</span>
         </i18n-t>
       </div>
 
