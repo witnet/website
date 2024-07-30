@@ -200,8 +200,10 @@ const size = computed(() => {
 })
 
 onMounted(async () => {
-  const latestRelease = await getLatestRelease(window.navigator)
-  release.value = latestRelease
+  if (import.meta.client) {
+    const latestRelease = await getLatestRelease(window.navigator)
+    release.value = latestRelease
+  }
 })
 
 // const { t } = useI18n()
