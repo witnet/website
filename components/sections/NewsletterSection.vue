@@ -1,5 +1,6 @@
 <template>
   <NuxtLayout
+    id="newsletter"
     name="section"
     :frame-classes="'bg-wit-blue-500'"
     :content-classes="'grid justify-start gap-sm py-[184px]'"
@@ -17,16 +18,43 @@
       </div>
     </template>
     <template #right>
-      <PalmBlackIcon class="sm:hidden w-[250px] h-auto rotate-180" />
+      <div ref="blackStar" class="h-max w-auto">
+        <BlackStarIcon ref="blackStar" class="sm:hidden w-[460px] h-auto" />
+      </div>
     </template>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import PalmBlackIcon from '@/assets/svg/palmBlack.svg?component'
+import BlackStarIcon from '@/assets/svg/black-star.svg?component'
 import DashesIcon from '@/assets/svg/dashes.svg?component'
 
 const { t } = useI18n()
+const { gsap } = useGsap()
+
+const blackStar = ref(null)
+
+onMounted(() => {
+  startAnimation()
+})
+
+function startAnimation() {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: '#newsletter',
+        pin: true,
+        scrub: 0.5,
+        start: 'top top',
+        end: '0',
+      },
+    })
+    .to(blackStar.value, {
+      rotation: 360 * 5,
+      duration: 1,
+      ease: 'none',
+    })
+}
 </script>
 
 <style scoped lang="scss">

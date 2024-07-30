@@ -1,8 +1,12 @@
 <template>
-  <CustomButton :type="ButtonType.terciary">
+  <CustomButton
+    :type="ButtonType.terciary"
+    @mouseenter="toggleHover()"
+    @mouseleave="toggleHover()"
+  >
     <span class="flex items-center">
       <slot></slot>
-      <ArrowRightIcon class="arrow ml-md"></ArrowRightIcon>
+      <AnimatedArrow :hover="hover" />
     </span>
   </CustomButton>
 </template>
@@ -10,7 +14,11 @@
 <script setup>
 import { ButtonType } from '@/types'
 
-import ArrowRightIcon from '@/assets/svg/arrow_right.svg?component'
+const hover = ref(false)
+
+function toggleHover() {
+  hover.value = !hover.value
+}
 defineProps({
   type: {
     type: String,
@@ -25,9 +33,5 @@ defineProps({
 <style scoped>
 .btn {
   font-size: 1rem;
-}
-
-.arrow {
-  height: 14px;
 }
 </style>

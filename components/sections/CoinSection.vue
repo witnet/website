@@ -6,7 +6,9 @@
     :content-classes="'grid justify-items-center pt-[240px]'"
   >
     <template #top>
-      <BlueStarIcon class="w-auto h-[200px]" />
+      <div ref="blueStar">
+        <BlueStarIcon class="w-auto h-[400px]" />
+      </div>
     </template>
     <template #content>
       <div class="flex flex-col items-center gap-md">
@@ -194,6 +196,31 @@ const release = ref({
   releaseUrl: '',
   size: 0,
 })
+const { gsap } = useGsap()
+
+const blueStar = ref(null)
+
+onMounted(() => {
+  startAnimation()
+})
+
+function startAnimation() {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: '#stake',
+        pin: true,
+        scrub: 0.2,
+        start: 'top top',
+        end: '+=200',
+      },
+    })
+    .to(blueStar.value, {
+      rotation: 360 * 5,
+      duration: 1,
+      ease: 'none',
+    })
+}
 
 const size = computed(() => {
   return (release.value.size / 1024 / 1024).toFixed(1)

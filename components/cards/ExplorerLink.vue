@@ -1,7 +1,13 @@
 <template>
   <!-- extra div to be able to style margins from parent without collision with inner styles -->
   <div>
-    <a :href="url" target="_blank" class="cursor-pointer">
+    <a
+      :href="url"
+      target="_blank"
+      class="cursor-pointer"
+      @mouseenter="toggleHover"
+      @mouseleave="toggleHover"
+    >
       <div
         class="card border rounded-lg px-xl py-xl mr-sm mb-sm max-w-md h-full"
         :class="['shadow-' + shadowColor]"
@@ -10,7 +16,7 @@
           <h3 class="text-xl text-black-950 font-semibold leading-4">
             {{ title }}
           </h3>
-          <ArrowRightIcon class="arrow" />
+          <AnimatedArrow :hover="hover" />
         </div>
         <hr class="hr my-md" />
         <slot name="description" class="text-sm text-black-950"></slot>
@@ -20,8 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import ArrowRightIcon from '@/assets/svg/arrow_right.svg?component'
-
+const hover = ref(false)
 defineProps({
   title: {
     type: String,
@@ -36,6 +41,10 @@ defineProps({
     required: true,
   },
 })
+
+function toggleHover() {
+  hover.value = !hover.value
+}
 </script>
 
 <style scoped>

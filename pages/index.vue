@@ -4,7 +4,6 @@
     <WhatIsWitnetSection />
     <CoinSection />
     <BuySection />
-
     <SecureSection />
     <BuildSection />
     <ExploreSection />
@@ -14,10 +13,3 @@
     <FooterSection />
   </div>
 </template>
-
-<style scoped>
-/* .pt-28 pb-28 {
-  padding-top: 96px;
-  padding-bottom: 96px;
-} */
-</style>

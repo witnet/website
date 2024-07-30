@@ -11,9 +11,18 @@ importers:
       '@nuxtjs/i18n':
         specifier: ^8.3.3
         version: 8.3.3(magicast@0.3.4)(rollup@4.18.1)(vue@3.4.35(typescript@5.5.4))
+      '@studio-freight/lenis':
+        specifier: ^1.0.42
+        version: 1.0.42
+      gsap:
+        specifier: ^3.12.5
+        version: 3.12.5
       lodash.snakecase:
         specifier: ^4.1.1
         version: 4.1.1
+      vue-scrollmagic:
+        specifier: ^1.2.0
+        version: 1.2.0
       vue-select:
         specifier: ^4.0.0-beta.3
         version: 4.0.0-beta.6(vue@3.4.35(typescript@5.5.4))
@@ -1180,6 +1189,10 @@ packages:
   '@sindresorhus/merge-streams@2.3.0':
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
+
+  '@studio-freight/lenis@1.0.42':
+    resolution: {integrity: sha512-HJAGf2DeM+BTvKzHv752z6Z7zy6bA643nZM7W88Ft9tnw2GsJSp6iJ+3cekjyMIWH+cloL2U9X82dKXgdU8kPg==}
+    deprecated: '''@studio-freight/lenis'' has been renamed to just ''lenis'', run ''npx @darkroom.engineering/codemods'' to update your dependecies accordingly.'
 
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -2510,6 +2523,12 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
+  gsap@2.1.3:
+    resolution: {integrity: sha512-8RFASCqi2FOCBuv7X4o7M6bLdy+1hbR0azg+MG7zz+EVsI+OmJblYsTk0GEepQd2Jg/ItMPiVTibF7r3EVxjZQ==}
+
+  gsap@3.12.5:
+    resolution: {integrity: sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==}
+
   gzip-size@7.0.0:
     resolution: {integrity: sha512-O1Ld7Dr+nqPnmGpdhzLmMTQ4vAsD+rHwMm1NLUmoUFFymBOMKxCCrtDxqdBRYXdeEPEi3SyoR4TizJLQrnKBNA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -3710,6 +3729,10 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  scrollmagic@2.0.8:
+    resolution: {integrity: sha512-UYXEGBPVLziovXl3FjHGkY9c4UXKUKopIdXwWR2JapWxCo0U345wYegi7rcsv5vHf/ktc1bSNWy4QRFiV+Yccw==}
+    engines: {node: '>=0.10.x'}
+
   scule@1.3.0:
     resolution: {integrity: sha512-6FtHJEvt+pVMIB9IBY+IcCJ6Z5f1iQnytgyfKMhDKgmzYG+TeH/wx1y3l27rshSbLiSanrR9ffZDrEsmjlQF2g==}
 
@@ -4333,6 +4356,9 @@ packages:
     resolution: {integrity: sha512-HB+t2p611aIZraV2aPSRNXf0Z/oLZFrlygJm+sZbdJaW6lcFqEDQwnzUBXn+DApw+/QzDU/I9TeWx9izEjTmsA==}
     peerDependencies:
       vue: ^3.2.0
+
+  vue-scrollmagic@1.2.0:
+    resolution: {integrity: sha512-4n+c35mHzEJeNdPShhXFVE9CY0e0318deAQtIF09Dglj4NKcYJXThTKic3gMMLCtyPwEj3derHlGg2Nsquzaaw==}
 
   vue-select@4.0.0-beta.6:
     resolution: {integrity: sha512-K+zrNBSpwMPhAxYLTCl56gaMrWZGgayoWCLqe5rWwkB8aUbAUh7u6sXjIR7v4ckp2WKC7zEEUY27g6h1MRsIHw==}
@@ -5619,6 +5645,8 @@ snapshots:
     optional: true
 
   '@sindresorhus/merge-streams@2.3.0': {}
+
+  '@studio-freight/lenis@1.0.42': {}
 
   '@trysound/sax@0.2.0': {}
 
@@ -7314,6 +7342,10 @@ snapshots:
 
   graphemer@1.4.0: {}
 
+  gsap@2.1.3: {}
+
+  gsap@3.12.5: {}
+
   gzip-size@7.0.0:
     dependencies:
       duplexer: 0.1.2
@@ -8619,6 +8651,8 @@ snapshots:
       immutable: 4.3.6
       source-map-js: 1.2.0
 
+  scrollmagic@2.0.8: {}
+
   scule@1.3.0: {}
 
   semver@5.7.2: {}
@@ -9326,7 +9360,17 @@ snapshots:
       '@vue/devtools-api': 6.6.3
       vue: 3.4.35(typescript@5.5.4)
 
+<<<<<<< HEAD
   vue-select@4.0.0-beta.6(vue@3.4.35(typescript@5.5.4)):
+=======
+  vue-scrollmagic@1.2.0:
+    dependencies:
+      gsap: 2.1.3
+      scrollmagic: 2.0.8
+      vue: 2.7.16
+
+  vue-select@4.0.0-beta.6(vue@3.4.32(typescript@5.5.3)):
+>>>>>>> daea6b1 (feat(Animations): implement animations)
     dependencies:
       vue: 3.4.35(typescript@5.5.4)
 

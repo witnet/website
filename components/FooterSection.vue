@@ -3,6 +3,7 @@
     name="section"
     :frame-classes="'bg-black-950'"
     :content-classes="'grid justify-items-center'"
+    :section-animation="false"
   >
     <template #content>
       <div class="footer grid gap-xl">
