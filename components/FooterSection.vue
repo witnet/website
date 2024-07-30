@@ -102,7 +102,7 @@ import AdoIcon from '@/assets/svg/ado.svg?component'
 import WitOracleIcon from '@/assets/svg/witnet-logo-dark.svg?component'
 
 const footerSections = {
-  developers: ['reference', 'randomness', 'supported_chains'],
+  developers: ['reference', 'randomness', 'supported_chains', 'solidity_sdk'],
   ecosystem: [
     'block_explorer',
     'data_feeds_explorer',

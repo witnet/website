@@ -187,6 +187,7 @@
         "title": "Developers",
         "reference": "Reference",
         "supported_chains": "Supported chains",
+        "solidity_sdk": "Solidity SDK",
         "randomness": "Randomness"
       },
       "ecosystem": {

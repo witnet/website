@@ -70,6 +70,7 @@ export const URLS: Record<string, string> = {
   supported_chains: 'https://docs.witnet.io/smart-contracts/supported-chains',
   randomness:
     'https://docs.witnet.io/smart-contracts/witnet-randomness-oracle/generating-randomness',
+  solidity_sdk: 'https://www.npmjs.com/package/witnet-solidity',
 }
 
 export const languageLocales: LanguageDictionary = {
