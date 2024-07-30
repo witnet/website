@@ -5,7 +5,7 @@ import { languageLocales } from './constants'
 export default defineNuxtConfig({
   ssr: true,
   app: {
-    baseURL: '/website/',
+    baseURL: '/',
     head: {
       title: 'Wit/Oracle: The most powerful oracle, provably.',
       meta: [
