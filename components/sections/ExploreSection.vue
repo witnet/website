@@ -5,7 +5,9 @@
     :content-classes="'grid justify-items-center'"
   >
     <template #content>
-      <div class="flex self-center sm:w-96 justify-self-center items-center">
+      <div
+        class="flex self-center sm:w-96 justify-self-center items-center section-description-max-w"
+      >
         <ArrowTurnRightIcon class="arrow m-md" />
 
         <i18n-t
