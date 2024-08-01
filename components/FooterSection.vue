@@ -7,9 +7,9 @@
   >
     <template #content>
       <div class="footer grid gap-xl">
-        <div class="grid grid-cols-[max-content_1fr] md:grid-cols-1 gap-xl">
+        <div class="grid grid-cols-[max-content_1fr] md:grid-cols-1 gap-3xl">
           <div
-            class="grid grid-cols-[130px_130px_130px] gap-3xl sm:gap-md sm:grid-cols-2 justify-items-start"
+            class="grid grid-cols-[max-content_max-content_max-content] gap-3xl sm:gap-xl sm:grid-cols-2 justify-items-start"
           >
             <div
               v-for="section in footerLinks"
@@ -19,15 +19,22 @@
               <p class="title font-bold footer-text mb-sm">
                 {{ $t(`footer.links.${section.title}.title`) }}
               </p>
-              <a
-                v-for="link in section.links"
-                :key="link.text"
-                class="footer-text footer-hover-style cursor-pointer"
-                :href="link.url"
-                target="_blank"
-              >
-                {{ $t(link.text) }}
-              </a>
+              <ul class="py-2 flex flex-col gap-sm">
+                <li
+                  v-for="link in section.links"
+                  :key="link.text"
+                  class="link-list-item"
+                >
+                  <a
+                    class="link footer-text"
+                    :href="link.url"
+                    :data-text="$t(link.text)"
+                    target="_blank"
+                  >
+                    {{ $t(link.text) }}
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="w-full grid gap-md xs:mt-lg">
@@ -49,7 +56,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-[max-content_max-content_1fr] sm:grid-cols-1 align-middle gap-lg pt-10 items-center"
+          class="grid grid-cols-[max-content_max-content_1fr] sm:grid-cols-1 align-middle gap-lg pt-xl items-center"
         >
           <WitOracleIcon class="w-[140px] h-auto white" name="witnet_dark" />
           <div class="h-max self-center">

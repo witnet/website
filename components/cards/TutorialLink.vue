@@ -1,10 +1,6 @@
 <template>
-  <a
-    :href="url"
-    target="_blank"
-    class="inline-block text-link link-hover-style"
-  >
-    <h5>{{ name }}</h5>
+  <a :href="url" target="_blank" class="link">
+    <p>{{ name }}</p>
   </a>
 </template>
 <script setup lang="ts">

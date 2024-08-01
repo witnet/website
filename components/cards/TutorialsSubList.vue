@@ -10,7 +10,7 @@
       <li
         v-for="tutorial in tutorials"
         :key="tutorial.name"
-        class="list-disc list-inside"
+        class="list-disc link-list-item ml-md"
       >
         <TutorialLink
           :key="tutorial.name"
