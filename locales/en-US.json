@@ -46,6 +46,7 @@
     "participate-alt-1": "Wit/2 development is in the final phase, get ready for staking by running a 1.8 node now.",
     "participate-alt-2": "Wit/2 development is in the final phase, get ready for staking by joining the public testnet.",
     "run_in_platform": {
+      "main-mobile": "Run a Witnet Node",
       "main": "Run a Witnet Node and Stake on{0}",
       "main-alt": "Run a Witnet Node on{0}"
     },
