@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden">
+  <div :class="`relative overflow-hidden`">
     <div id="animation-container" :class="`w-full ${frameClasses}`">
       <div
         ref="content"

@@ -18,8 +18,14 @@
       </div>
     </template>
     <template #right>
-      <div ref="blackStar" class="h-max w-auto">
-        <BlackStarIcon ref="blackStar" class="sm:hidden w-[460px] h-auto" />
+      <div class="h-max w-auto">
+        <RotateOnScroll
+          section-id="newsletter"
+          start-position="-=100% top"
+          end-position="+=190%"
+        >
+          <BlackStarIcon ref="blackStar" class="sm:hidden w-[460px] h-auto" />
+        </RotateOnScroll>
       </div>
     </template>
   </NuxtLayout>
@@ -30,31 +36,6 @@ import BlackStarIcon from '@/assets/svg/black-star.svg?component'
 import DashesIcon from '@/assets/svg/dashes.svg?component'
 
 const { t } = useI18n()
-const { gsap } = useGsap()
-
-const blackStar = ref(null)
-
-onMounted(() => {
-  startAnimation()
-})
-
-function startAnimation() {
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: '#newsletter',
-        pin: true,
-        scrub: 0.5,
-        start: 'top top',
-        end: '0',
-      },
-    })
-    .to(blackStar.value, {
-      rotation: 360 * 5,
-      duration: 1,
-      ease: 'none',
-    })
-}
 </script>
 
 <style scoped lang="scss">
