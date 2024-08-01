@@ -9,7 +9,7 @@
   /* Titles */
   .title-h1 {
     @apply font-title text-7xl font-semibold sm:text-6xl;
-    line-height: 0.9;
+    line-height: 1;
     color: #232323;
   }
 

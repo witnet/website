@@ -52,7 +52,10 @@
         >
           <SquareDots />
         </div>
-        <div class="grid auto-rows-min gap-y-lg z-20 max-w-[600px]">
+        <div
+          ref="textTarget"
+          class="grid auto-rows-min gap-y-lg z-20 max-w-[600px]"
+        >
           <i18n-t
             keypath="hero.title.main"
             class="title-h1 text-center"
@@ -60,10 +63,12 @@
             scope="global"
           >
             <br />
-            <span ref="myText">{{ $t('hero.title.main2-init') }}</span>
-            <span ref="myText2" class="text-wit-blue-500 gradient"
-              >probably</span
-            >
+            <span ref="myText">{{ $t('hero.title.main-key-1') }}</span>
+            <span>{{ $t('hero.title.oracle') }}</span>
+            <br />
+            <span ref="myText2" class="text-wit-blue-500 gradient">{{
+              $t('hero.title.gradient')
+            }}</span>
             <!-- TODO: uncomment when translation requires it -->
             <!-- <i18n-t
               keypath="hero.title.gradient"
@@ -95,6 +100,7 @@
 
 <script setup lang="ts">
 // import { ButtonType } from '@/types'
+import { useElementVisibility } from '@vueuse/core'
 import ArrowDownIcon from '@/assets/svg/arrow_down.svg?component'
 import DottedBg from '@/assets/svg/dotted_background.svg?component'
 import Plus from '@/assets/svg/plus.svg?component'
@@ -102,7 +108,15 @@ import Zigzag from '@/assets/svg/zigzag.svg?component'
 import SquareDots from '@/assets/svg/square-dots.svg?component'
 const { gsap } = useGsap()
 const { t } = useI18n()
-
+const textTarget = ref(null)
+const targetIsVisible = useElementVisibility(textTarget)
+const interval: Ref<NodeJS.Timeout | null> = ref(null)
+const heroKeyWords = [
+  t('hero.title.main-key-1'),
+  t('hero.title.main-key-2'),
+  t('hero.title.main-key-3'),
+  t('hero.title.main-key-4'),
+]
 const zigzagIcon = ref(null)
 const zigzagIcon2 = ref(null)
 const plusIcon = ref(null)
@@ -111,6 +125,7 @@ const plusIcon2 = ref(null)
 const squareIcon2 = ref(null)
 const myText = ref(null)
 const myText2 = ref(null)
+const textKeyIndex = ref(0)
 const svgElm: { elm: any }[] = [
   {
     elm: zigzagIcon,
@@ -175,6 +190,15 @@ function startInitialAnimation() {
   })
 }
 
+watch(targetIsVisible, () => {
+  if (!targetIsVisible.value && interval.value) {
+    textKeyIndex.value = 0
+    clearInterval(interval.value)
+  } else {
+    setTextAnimationInterval()
+  }
+})
+
 function startMoveAnimation(e: any) {
   svgElm.forEach((icon, index) => {
     gsap.killTweensOf(icon.elm.value)
@@ -199,18 +223,25 @@ function stopMoveAnimation() {
     }, 2000)
   })
 }
-onMounted(() => {
+function changeHeroKeyWordIndex() {
+  if (textKeyIndex.value < heroKeyWords.length - 1) {
+    textKeyIndex.value += 1
+  } else {
+    textKeyIndex.value = 0
+  }
+}
+function changeTextAnimation() {
   gsap.to(myText.value, {
     duration: 2,
-    text: t('hero.title.main2'),
+    text: heroKeyWords[textKeyIndex.value],
     delay: 1,
   })
-  gsap.to(myText2.value, {
-    duration: 2,
-    text: t('hero.title.gradient'),
-    delay: 1,
-  })
-})
+  changeHeroKeyWordIndex()
+}
+function setTextAnimationInterval() {
+  changeTextAnimation()
+  interval.value = setInterval(() => changeTextAnimation(), 3000)
+}
 </script>
 
 <style scoped lang="scss">

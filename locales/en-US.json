@@ -14,9 +14,12 @@
   },
   "hero": {
     "title": {
-      "main": "The most {0} {1} {2}",
-      "main2-init": "reliable oracle,",
-      "main2": "powerful oracle,",
+      "main": "The most {0} {1} {2} {3} {4}",
+      "main-key-1": "powerful",
+      "main-key-2": "reliable",
+      "main-key-3": "trusted",
+      "main-key-4": "seamless",
+      "oracle": "oracle,",
       "gradient": "provably."
     },
     "description": "The Wit/Oracle pairs a state-of-the-art Proof of Stake algorithm with its own native coin $WIT to deliver unparalleled security for all your Web3 data needs.",
