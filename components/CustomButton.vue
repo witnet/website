@@ -18,9 +18,12 @@ defineProps({
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .btn {
   font-size: 1rem;
+  &:hover {
+    transform: translate(3, 7px);
+  }
 }
 
 .btn-terciary {
