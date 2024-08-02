@@ -22,7 +22,7 @@
         <RotateOnScroll
           section-id="newsletter"
           start-position="-=100% top"
-          end-position="+=190%"
+          end-position="+=100%"
         >
           <BlackStarIcon ref="blackStar" class="sm:hidden w-[460px] h-auto" />
         </RotateOnScroll>

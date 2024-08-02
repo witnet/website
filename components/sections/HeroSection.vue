@@ -2,9 +2,9 @@
   <NuxtLayout
     name="section"
     :center-left-content="false"
-    :content-classes="'p-[24px_100px] sm:p-[0px_32px] xs:p-[0px_16px]'"
+    :content-classes="'hero p-[24px_100px] sm:[&.hero]:p-[0px_32px] xs:p-[0px_16px]'"
     :section-animation="false"
-    :height="'h-lg-y-screen max-h-[900px]'"
+    :height="'h-lg-y-screen max-h-[900px] md:max-h-[100vh]'"
   >
     <template #content>
       <div
@@ -14,47 +14,47 @@
         @mouseout="stopMoveAnimation"
       >
         <DottedBg
-          class="absolute z-0 h-2-md-y-screen max-h-[700px] overflow-hidden"
+          class="absolute z-0 h-2-md-y-screen max-h-[700px] md:max-h-full md:top-lg sm:w-max sm:h-auto sm:top-auto sm:bottom-lg overflow-hidden"
         />
         <div
           ref="plusIcon"
-          class="animation1 absolute left-xl top-[450px] z-10 overflow-hidden sm:hidden lg:top-[280px] md:top-[550px] md:right-lg"
+          class="animation1 absolute h-max w-max left-xl top-[450px] z-10 overflow-hidden sm:hidden lg:top-[280px] md:bottom-[30vh] md:top-auto md:right-md"
         >
           <Plus />
         </div>
         <div
           ref="zigzagIcon"
-          class="animation1 absolute left-xl bottom-xl z-10 overflow-hidden sm:hidden md:bottom-sm"
+          class="animation1 absolute left-xl bottom-xl z-10 overflow-hidden sm:hidden md:bottom-[15vh] md:left-[3vw]"
         >
           <Zigzag />
         </div>
         <div
           ref="squareIcon"
-          class="animation1 absolute left-xl top-xl z-10 sm:hidden md:top-sm"
+          class="animation1 absolute left-xl top-xl z-10 sm:hidden md:top-[8vh] md:left-[3vw]"
         >
           <SquareDots />
         </div>
         <div
           ref="plusIcon2"
-          class="animation1 absolute right-xl top-[300px] z-10 overflow-hidden rotate-90 sm:hidden md:top-sm"
+          class="animation1 absolute right-xl top-[300px] z-10 overflow-hidden rotate-90 sm:hidden md:top-[25vh] md:right-[3vw]"
         >
           <Plus />
         </div>
         <div
           ref="zigzagIcon2"
-          class="animation1 absolute right-xl top-xl z-10 overflow-hidden rotate-90 sm:hidden md:top-sm"
+          class="animation1 absolute right-xl top-xl z-10 overflow-hidden rotate-90 sm:hidden md:top-[8vh] md:right-[3vw]"
         >
           <Zigzag />
         </div>
         <div
           ref="squareIcon2"
-          class="animation1 absolute right-xl bottom-xl z-10 sm:hidden md:bottom-sm"
+          class="animation1 absolute right-xl bottom-xl z-10 sm:hidden md:bottom-[15vh]"
         >
           <SquareDots />
         </div>
         <div
           ref="textTarget"
-          class="grid auto-rows-min gap-y-lg z-20 max-w-[600px]"
+          class="grid auto-rows-min gap-y-lg z-20 max-w-[600px] sm:mt-xl"
         >
           <i18n-t
             keypath="hero.title.main"

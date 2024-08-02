@@ -19,10 +19,13 @@
             @mouseover="activateLink(link)"
             @mouseleave="clearActiveLinks"
           >
-            <NavigationCursor
-              v-if="link.active"
-              class="w-sm h-auto absolute top-[16px] left-[4px]"
-            /><span /><span class="slash text-wit-blue-500">/</span
+            <Transition name="fade">
+              <NavigationCursor
+                v-if="link.active"
+                class="w-sm h-auto absolute top-[16px] left-[4px]"
+              />
+            </Transition>
+            <span /><span class="slash text-wit-blue-500">/</span
             >{{ t(link.locale) }}
           </InnerLink>
         </template>
@@ -84,6 +87,13 @@ function clearActiveLinks() {
 </script>
 
 <style lang="scss">
+.fade-enter-active {
+  transition: opacity 0.3s;
+}
+.fade-enter-from {
+  opacity: 0;
+}
+
 .logo-link {
   a {
     text-decoration: none;
