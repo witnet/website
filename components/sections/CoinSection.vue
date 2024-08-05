@@ -45,31 +45,16 @@
         </div>
         <client-only>
           <CustomButton :type="ButtonType.dark" class="mb-md">
-            <a
-              :href="
-                $device.isDesktop
-                  ? release.releaseUrl
-                  : 'https://docs.witnet.io/node-operators/docker-quick-start-guide'
-              "
-              target="_blank"
-            >
-              <i18n-t
-                :keypath="
-                  $device.isDesktop
-                    ? 'coin.run_in_platform.main-alt'
-                    : 'coin.run_in_platform.main-mobile'
-                "
-                tag="p"
-                scope="global"
-              >
-                <span v-if="$device.isDesktop" class="ml-[4px]">{{
+            <a :href="primaryActionUrl" target="_blank">
+              <i18n-t :keypath="primaryActionLocalePath" tag="p" scope="global">
+                <span v-if="isDesktop" class="ml-[4px]">{{
                   release.platform
                 }}</span>
               </i18n-t>
             </a>
           </CustomButton>
         </client-only>
-        <p v-if="$device.isDesktop" class="text text-wit-blue-500">
+        <p v-if="isDesktop" class="text text-wit-blue-500">
           {{ release.platform }} • x86_64 • {{ size }} MB
           <!-- TODO: uncomment if tooltip is needed -->
           <!-- <TooltipBase
@@ -207,6 +192,7 @@ import { URLS } from '@/constants'
 import { ButtonType } from '~/types'
 
 const { t } = useI18n()
+const { isDesktop } = useDevice()
 
 const release = ref({
   platform: '',
@@ -218,6 +204,16 @@ const size = computed(() => {
   return (release.value.size / 1024 / 1024).toFixed(1)
 })
 
+const primaryActionUrl = computed(() => {
+  return isDesktop
+    ? release.value.releaseUrl
+    : 'https://docs.witnet.io/node-operators/docker-quick-start-guide'
+})
+const primaryActionLocalePath = computed(() => {
+  return isDesktop
+    ? 'coin.run_in_platform.main-alt'
+    : 'coin.run_in_platform.main-mobile'
+})
 onMounted(async () => {
   if (import.meta.client) {
     const latestRelease = await getLatestRelease(window.navigator)
