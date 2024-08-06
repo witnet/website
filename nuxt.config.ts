@@ -76,12 +76,12 @@ export default defineNuxtConfig({
           content: 'Wit/Oracle',
         },
       ],
-      script: [
-        {
-          type: 'text/javascript',
-          src: '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',
-        },
-      ],
+      // script: [
+      //   {
+      //     type: 'text/javascript',
+      //     src: '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',
+      //   },
+      // ],
       link: [
         {
           rel: 'preload',

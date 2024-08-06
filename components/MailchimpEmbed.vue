@@ -11,6 +11,12 @@
       jQuery.noConflict(true)
     </component>
   </div> -->
+  <component
+    :is="'script'"
+    type="text/javascript"
+    url="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    async
+  />
   <form
     id="mc-embedded-subscribe-form"
     action="https://witnet.us10.list-manage.com/subscribe/post?u=5a67ab2b3f2db1c50be62f761&amp;id=aaf328ec13&amp;f_id=007362e5f0"
