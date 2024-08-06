@@ -85,15 +85,15 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'preload',
-          href: 'fonts/nimbusmono-regular.woff',
-          as: 'font',
-          type: 'font/woff',
+          href: 'https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap',
+          as: 'style',
+          onload: "this.onload=null;this.rel='stylesheet'",
         },
         {
           rel: 'preload',
-          href: 'fonts/nimbusmono-bold.woff',
-          as: 'font',
-          type: 'font/woff',
+          href: 'https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap',
+          as: 'style',
+          onload: "this.onload=null;this.rel='stylesheet'",
         },
         { rel: 'apple-touch-icon', type: 'image/x-icon', href: '/favicon.ico' },
         {

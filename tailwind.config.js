@@ -31,7 +31,6 @@ export default {
     extend: {
       fontFamily: {
         title: ['Outfit', 'sans-serif'],
-        mono: ['NimbusMono', 'mono'],
       },
       // fontSize: {
       //   "9xl": "6.875rem",
