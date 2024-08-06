@@ -3,6 +3,7 @@
   <div>
     <a
       :href="url"
+      :aria-label="title"
       target="_blank"
       class="cursor-pointer"
       @mouseenter="toggleHover"

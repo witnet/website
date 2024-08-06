@@ -16,7 +16,7 @@
     </p>
 
     <SlashesIcon class="slashes w-[68px] sm:hidden"></SlashesIcon>
-    <a :href="url" target="_blank">
+    <a :href="url" :aria-label="action" target="_blank">
       <ArrowButton class="action">{{ action }}</ArrowButton>
     </a>
   </div>

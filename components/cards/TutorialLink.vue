@@ -1,5 +1,5 @@
 <template>
-  <a :href="url" target="_blank" class="link">
+  <a :href="url" :aria-label="name" target="_blank" class="link">
     <p>{{ name }}</p>
   </a>
 </template>

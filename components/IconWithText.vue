@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" target="_blank">
+  <a :href="link" :aria-label="text" target="_blank">
     <div class="flex items-center icon-container">
       <RoundedIcon class="rounded-icon mr-md">
         <slot></slot>

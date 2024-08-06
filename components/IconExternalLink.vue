@@ -1,5 +1,5 @@
 <template>
-  <a class="link" :href="url" target="_blank">
+  <a :aria-label="url" class="link" :href="url" target="_blank">
     <icon :class="`icon h-auto ${width} p-[16px] -m-[16px]`" />
   </a>
 </template>

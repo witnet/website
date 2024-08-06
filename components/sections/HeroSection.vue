@@ -89,6 +89,7 @@
         <NuxtLink
           to="#WhatIsWitnet"
           rel="home"
+          aria-label="What is Witnet section"
           class="arrow flex justify-items-center"
         >
           <ArrowDownIcon class="m-xl z-20 w-[40px]" />

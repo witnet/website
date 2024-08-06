@@ -8,7 +8,7 @@
     <NuxtLayout name="navbar">
       <TopBar :nav-links="navLinks">
         <template #logo>
-          <NuxtLink to="/" rel="home">
+          <NuxtLink to="/" aria-label="home" rel="home">
             <WitnetLogo />
           </NuxtLink>
         </template>
