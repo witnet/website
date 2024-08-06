@@ -14,7 +14,9 @@
         <DashesIcon class="w-[80px] h-auto" />
       </div>
       <div class="mt-lg">
-        <MailchimpEmbed />
+        <ClientOnly>
+          <MailchimpEmbed />
+        </ClientOnly>
       </div>
     </template>
     <template #right>

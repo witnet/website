@@ -4,11 +4,13 @@
     rel="stylesheet"
     type="text/css"
   />
-  <component :is="'script'" async>
-    ;(function ($) { window.fnames = new Array() window.ftypes = new Array()
-    fnames[0] = 'EMAIL' ftypes[0] = 'email' })(jQuery) var $mcj =
-    jQuery.noConflict(true)
-  </component>
+  <!-- <div v-if="allowUseWindow">
+    <component :is="'script'" async>
+      ;(function ($) { window.fnames = new Array() window.ftypes = new Array()
+      fnames[0] = 'EMAIL' ftypes[0] = 'email' })(jQuery) var $mcj =
+      jQuery.noConflict(true)
+    </component>
+  </div> -->
   <form
     id="mc-embedded-subscribe-form"
     action="https://witnet.us10.list-manage.com/subscribe/post?u=5a67ab2b3f2db1c50be62f761&amp;id=aaf328ec13&amp;f_id=007362e5f0"
@@ -65,6 +67,14 @@
 <script setup>
 const { t } = useI18n()
 const subscribeLocale = t('newsletter.action')
+const allowUseWindow = ref(false)
+onMounted(() => {
+  if (import.meta.client) {
+    allowUseWindow.value = true
+  } else {
+    allowUseWindow.value = false
+  }
+})
 </script>
 
 <style lang="scss">
