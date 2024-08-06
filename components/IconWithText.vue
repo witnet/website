@@ -28,7 +28,7 @@ defineProps({
 
 <style lang="scss">
 .rounded-icon {
-  @apply bg-wit-blue-500;
+  @apply bg-wit-blue-500 transition-colors;
 }
 .icon-container:hover > .rounded-icon {
   @apply bg-wit-blue-300;

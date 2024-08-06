@@ -8,7 +8,7 @@
     <template #top>
       <RotateOnScroll
         section-id="stake"
-        start-position="-50% top"
+        start-position="-100% top"
         end-position="+=200%"
       >
         <BlueStarIcon class="w-auto h-[400px]" />
