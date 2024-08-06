@@ -37,7 +37,6 @@ function startAnimation() {
         pin: false,
         scrub: 0.5,
         start: props.startPosition,
-        markers: true,
         end: props.endPosition,
       },
     })

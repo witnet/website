@@ -81,7 +81,6 @@ function startAnimation() {
   ScrollTrigger.create({
     trigger: content.value,
     animation: tl,
-    markers: true,
     pin: false,
     scrub: true,
     start: '-200% top',
