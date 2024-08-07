@@ -36,7 +36,7 @@
     "typescript": "^5.5.4",
     "vite-svg-loader": "^5.1.0",
     "vue": "^3.4.35",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.4.3"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^8.3.3",
