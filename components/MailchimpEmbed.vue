@@ -4,13 +4,6 @@
     rel="stylesheet"
     type="text/css"
   />
-  <!-- <div v-if="allowUseWindow">
-    <component :is="'script'" async>
-      ;(function ($) { window.fnames = new Array() window.ftypes = new Array()
-      fnames[0] = 'EMAIL' ftypes[0] = 'email' })(jQuery) var $mcj =
-      jQuery.noConflict(true)
-    </component>
-  </div> -->
   <component
     :is="'script'"
     type="text/javascript"
