@@ -66,7 +66,7 @@
               <i18n-t keypath="coin.learn_more" tag="span" scope="global">
                 <a
                   href="https://docs.witnet.io/node-operators/requirements"
-                  target="_blanc"
+                  target="_blank"
                   class="underline"
                   >{{ t('coin.learn-more-link') }}</a
                 >
@@ -85,7 +85,7 @@
           <i18n-t keypath="coin.learn_more" tag="span" scope="global">
             <a
               href="https://docs.witnet.io/node-operators/requirements"
-              target="_blanc"
+              target="_blank"
               class="underline"
               >{{ t('coin.learn-more-link') }}</a
             >
