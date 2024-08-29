@@ -90,7 +90,7 @@
   },
   "build-section": {
     "title": {
-      "key_features": "Why Witnet great for building{0}",
+      "key_features": "Why is Witnet great for building{0}",
       "dot": "?"
     },
     "description": "Learn about the unique features that make Witnet the ultimate solution to sourcing data into smart contracts and blockchains reliably.",
