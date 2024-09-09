@@ -1,19 +1,23 @@
 <template>
-  <div class="card border-2 border-black-950 rounded-lg px-xl py-lg">
-    <div class="flex items-center">
-      <div
-        class="text-md circle border border-black-950 rounded-full h-fit p-sm mr-md text-black-950"
-      >
-        {{ formattedIndex }}
-      </div>
-      <h3 class="title-h5">{{ title }}</h3>
-    </div>
-    <hr class="hr my-md" />
-    <p class="text">{{ description }}</p>
-  </div>
+  <WCard :type="CardType.Base">
+    <template #header>
+      <div class="flex items-center">
+        <div
+          class="font-normal text-base circle border border-black-950 rounded-full h-fit p-sm mr-md text-black-950"
+        >
+          {{ formattedIndex }}
+        </div>
+        <h3 class="title-h5">{{ title }}</h3>
+      </div></template
+    >
+    <template #description>
+      <p class="text">{{ description }}</p>
+    </template>
+  </WCard>
 </template>
 
 <script setup lang="ts">
+import { WCard, CardType } from 'wit-vue-ui'
 const props = defineProps({
   index: {
     type: Number,
@@ -38,21 +42,6 @@ const formattedIndex = computed(() => {
 </script>
 
 <style scoped lang="scss">
-.card {
-  box-shadow: 7px 10px 0px rgb(0, 0, 0);
-  margin-bottom: 10px;
-  margin-right: 7px;
-}
-
-.title-h2 {
-  font-weight: bold;
-}
-
-.hr {
-  height: 3px;
-  background-color: black; /* Modern Browsers */
-}
-
 .circle {
   line-height: 1;
   // font-size: 24px;

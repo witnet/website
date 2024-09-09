@@ -96,33 +96,6 @@
     content: attr(data-text);
   }
 
-  /* Button */
-  .btn {
-    @apply w-full py-sm px-md-alt cursor-pointer border-2 border-black-950;
-  }
-  .btn-primary {
-    @apply font-semibold rounded-full bg-wit-blue-500 hover:bg-wit-blue-400 text-black-950 focus:outline-none focus:ring focus:ring-wit-blue-500 focus:ring-opacity-80 shadow-[3px_7px_0px] shadow-black-950 hover:shadow-none hover:translate-x-xs hover:translate-y-xs ease-[cubic-bezier(0.25,0.4,0.55,1.4)] duration-75;
-  }
-  .btn-dark {
-    @apply font-semibold rounded-full bg-white-50 hover:bg-white-100 text-black-950 focus:outline-none focus:ring focus:ring-wit-blue-500 focus:ring-opacity-80 shadow-[3px_7px_0px] shadow-wit-blue-500 hover:shadow-none hover:translate-x-xs hover:translate-y-xs ease-[cubic-bezier(0.25,0.4,0.55,1.4)] duration-75;
-  }
-  .btn-secondary {
-    @apply font-semibold rounded-full bg-black-950 hover:bg-black-900 text-white-50 focus:outline-none focus:ring focus:ring-black-500 focus:ring-opacity-80 border-2 shadow-[3px_7px_0px] shadow-black-950;
-  }
-  .btn-terciary {
-    @apply font-semibold rounded-full border-white-50 bg-black-950 hover:bg-black-900 text-white-50 focus:outline-none focus:ring focus:ring-black-500 focus:ring-opacity-80 border-2;
-    white-space: nowrap;
-  }
-  .btn-disabled {
-    @apply cursor-not-allowed font-semibold rounded-full shadow-md bg-wit-blue-500 text-black-950 bg-opacity-80;
-  }
-  /* Navbar */
-  .navbar-links {
-    @apply text-white-50 sm:bg-black-950;
-  }
-  .nav-link {
-    @apply text-black-950 sm:text-white-50;
-  }
   .section-description-max-w {
     @apply max-w-md-x-screen sm:max-w-max md:max-w-lg-x-screen;
   }

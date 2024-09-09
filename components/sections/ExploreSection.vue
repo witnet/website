@@ -23,16 +23,16 @@
       </div>
 
       <div class="grid grid-cols-2 sm:grid-cols-1 gap-lg mt-lg">
-        <ExplorerLink
+        <WCard
           v-for="explorer in explorers"
           :key="explorer.title"
           class="min-w-80"
-          shadow-color="black"
+          :type="CardType.Link"
           :title="explorer.title"
-          :url="explorer.url"
+          :link="explorer.url"
           ><template #description
             ><p class="text-black-950">{{ explorer.description }}</p></template
-          ></ExplorerLink
+          ></WCard
         >
       </div>
     </template>
@@ -40,6 +40,7 @@
 </template>
 
 <script setup lang="ts">
+import { WCard, CardType } from 'wit-vue-ui'
 import { URLS } from '@/constants'
 import ArrowTurnRightIcon from '@/assets/svg/arrow_turn_right.svg?component'
 

@@ -144,7 +144,7 @@ export default defineNuxtConfig({
     },
     locales: Object.values(languageLocales),
   },
-  css: ['~/assets/styles/tailwind.css', '~/assets/styles/main.scss'],
+  css: ['~/assets/styles/main.scss', '~/assets/styles/tailwind.css'],
   components: [{ path: '~/components', pathPrefix: false }],
   vite: {
     plugins: [

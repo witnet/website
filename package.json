@@ -21,6 +21,7 @@
     "@nuxtjs/color-mode": "^3.4.4",
     "@nuxtjs/device": "^3.1.1",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@types/lodash.snakecase": "^4.1.9",
     "@types/vue-select": "^3.16.8",
     "@typescript-eslint/parser": "^8.2.0",
     "@vueuse/core": "^11.0.3",
@@ -43,6 +44,7 @@
     "@nuxtjs/i18n": "^8.5.2",
     "gsap": "^3.12.5",
     "lodash.snakecase": "^4.1.1",
-    "vue-select": "^4.0.0-beta.3"
+    "vue-select": "^4.0.0-beta.3",
+    "wit-vue-ui": "file:../wit-vue-ui/wit-vue-ui-0.1.0.tgz"
   }
 }

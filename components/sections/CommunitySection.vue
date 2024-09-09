@@ -17,26 +17,26 @@
         {{ t('community.description') }}
       </p>
       <div class="grid grid-cols-2 gap-3xl mt-lg sm:grid-cols-1">
-        <IconWithText
+        <WIconText
           v-for="social in socials"
           :key="social.name"
-          :text-color="'text-link-dark'"
+          :dark="true"
           class="w-72 mb-4 sm:mb-0 cursor-pointer"
           :text="social.name"
           :link="social.url"
+          :position="IconTextPosition.Right"
+          :bold="true"
+          :rounded="true"
         >
-          <component :is="social.icon" class="community-icon" />
-        </IconWithText>
+          <WIcon :name="social.icon" />
+        </WIconText>
       </div>
     </template>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import Twitter from '@/assets/svg/socials/twitter.svg?component'
-import Telegram from '@/assets/svg/socials/telegram.svg?component'
-import Discord from '@/assets/svg/socials/discord.svg?component'
-import Github from '@/assets/svg/socials/github.svg?component'
+import { WIconText, WIcon, IconName, IconTextPosition } from 'wit-vue-ui'
 import { URLS } from '@/constants'
 
 const { t } = useI18n()
@@ -44,33 +44,23 @@ const { t } = useI18n()
 const socials = [
   {
     name: 'Twitter',
-    icon: Twitter,
+    icon: IconName.X,
     url: URLS.x,
   },
   {
     name: 'Telegram',
-    icon: Telegram,
+    icon: IconName.Telegram,
     url: URLS.telegram,
   },
   {
     name: 'Discord',
-    icon: Discord,
+    icon: IconName.Discord,
     url: URLS.discord,
   },
   {
     name: 'Github',
-    icon: Github,
+    icon: IconName.Github,
     url: URLS.github,
   },
 ]
 </script>
-
-<style lang="scss">
-.community-icon {
-  width: 45px;
-  height: 45px;
-  .social-icon {
-    @apply fill-black-950 !important;
-  }
-}
-</style>

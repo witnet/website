@@ -6,30 +6,13 @@
       class="fixed bottom-2xl left-sm-x-screen lg:left-lg md:left-md z-50 h-max w-auto sm:hidden"
     />
     <NuxtLayout name="navbar">
-      <TopBar :nav-links="navLinks">
+      <WNavbar :nav-links="navLinks" , :redirection-active="false">
         <template #logo>
           <NuxtLink to="/" aria-label="home" rel="home">
             <WitnetLogo />
           </NuxtLink>
         </template>
-        <template v-for="link in navLinks" :key="link.key" #[link.key]>
-          <InnerLink
-            :hash="link.key"
-            class="text font-[500] flex cursor-pointer sm:text-white-50 relative p-[8px] m-[-8px] pl-[16px]"
-            @mouseover="activateLink(link)"
-            @mouseleave="clearActiveLinks"
-          >
-            <Transition name="fade">
-              <NavigationCursor
-                v-if="link.active"
-                class="w-sm h-auto absolute top-[16px] left-[4px]"
-              />
-            </Transition>
-            <span /><span class="slash text-wit-blue-500">/</span
-            >{{ t(link.locale) }}
-          </InnerLink>
-        </template>
-      </TopBar>
+      </WNavbar>
     </NuxtLayout>
     <!-- <Compoennt /> -->
     <!-- <client-only>
@@ -44,8 +27,8 @@
 
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n'
+import { WNavbar } from 'wit-vue-ui'
 import WitnetLogo from '@/assets/svg/witnet-logo.svg?component'
-import NavigationCursor from '@/assets/svg/navigation-cursor.svg?component'
 const { t } = useI18n()
 type NavLink = {
   key: string
@@ -61,29 +44,23 @@ const navLinks: Ref<Array<NavLink>> = ref([
     active: false,
     to: '/stake',
     rel: 'stake',
-    locale: 'nav_bar.route.stake',
+    locale: t('nav_bar.route.stake'),
   },
   {
     key: 'buy',
     active: false,
     to: '/buy',
     rel: 'buy',
-    locale: 'nav_bar.route.buy',
+    locale: t('nav_bar.route.buy'),
   },
   {
     key: 'build',
     active: false,
     to: '/build',
     rel: 'build',
-    locale: 'nav_bar.route.build',
+    locale: t('nav_bar.route.build'),
   },
 ])
-function activateLink(link: NavLink) {
-  link.active = true
-}
-function clearActiveLinks() {
-  navLinks.value.forEach((link) => (link.active = false))
-}
 </script>
 
 <style lang="scss">

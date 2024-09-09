@@ -2,8 +2,7 @@
   <NuxtLayout
     name="section"
     :frame-classes="'bg-wit-blue-500'"
-    :content-classes="'grid justify-items-center gap-md h-max'"
-    :height="'h-lg-y-screen sm:h-[max-content]'"
+    :content-classes="'grid justify-items-center gap-md h-max h-lg-y-screen sm:h-[max-content]'"
   >
     <template #content>
       <i18n-t
@@ -23,24 +22,26 @@
       <div
         class="h-max gap-md md:gap-xl grid grid-cols-2 md:grid-cols-1 w-full justify-between md:justify-items-center"
       >
-        <OutOfBoundariesCard
+        <WCard
           v-for="wallet in wallets"
           :key="wallet.title"
           :title="wallet.title"
           :description="wallet.description"
-          :action="wallet.action"
           :url="wallet.url"
+          :url-label="wallet.action"
+          :type="CardType.Icon"
         >
           <template #icon>
             <component :is="wallet.icon" class="icon" />
           </template>
-        </OutOfBoundariesCard>
+        </WCard>
       </div>
     </template>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
+import { WCard, CardType } from 'wit-vue-ui'
 import SheikahIcon from '@/assets/svg/sheikah.svg?component'
 import MywitwalletIcon from '@/assets/svg/mywitwallet.svg?component'
 import { URLS } from '@/constants'

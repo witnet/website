@@ -2,9 +2,8 @@
   <NuxtLayout
     name="section"
     :center-left-content="false"
-    :content-classes="'hero p-[24px_100px] sm:[&.hero]:p-[0px_32px] xs:p-[0px_16px]'"
+    :content-classes="'hero p-[24px_100px] sm:[&.hero]:p-[0px_32px] xs:p-[0px_16px] h-lg-y-screen max-h-[900px] md:max-h-[100vh]'"
     :section-animation="false"
-    :height="'h-lg-y-screen max-h-[900px] md:max-h-[100vh]'"
   >
     <template #content>
       <div
@@ -83,9 +82,9 @@
           <h2 class="text text-center">{{ $t('hero.description') }}</h2>
         </div>
         <!-- TODO: Uncomment when url or action is provided -->
-        <!-- <CustomButton :type="ButtonType.primary" class="z-20">
+        <!-- <WButton :type="ButtonType.primary" class="z-20">
           {{ $t('hero.action') }}
-        </CustomButton> -->
+        </WButton> -->
         <NuxtLink
           to="#WhatIsWitnet"
           rel="home"
@@ -100,7 +99,8 @@
 </template>
 
 <script setup lang="ts">
-// import { ButtonType } from '@/types'
+// TODO: Uncomment when url or action is provided
+// import { WButton } from 'wit-vue-ui'
 import { useElementVisibility } from '@vueuse/core'
 import ArrowDownIcon from '@/assets/svg/arrow_down.svg?component'
 import DottedBg from '@/assets/svg/dotted_background.svg?component'

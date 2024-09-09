@@ -1,29 +1,29 @@
 <template>
-  <div
-    class="border-2 border-black-950 rounded-lg px-lg py-lg w-72 shadow-black-950 shadow-[7px_10px_0px]"
-  >
-    <h3 class="title-h5">{{ title }}</h3>
-
-    <hr class="hr my-md" />
-
-    <ul class="marker:text-wit-blue-500 grid gap-md">
-      <li
-        v-for="tutorial in tutorials"
-        :key="tutorial.name"
-        class="list-disc link-list-item ml-md"
-      >
-        <TutorialLink
+  <WCard :type="CardType.Base">
+    <template #header
+      ><h3 class="title-h5">{{ title }}</h3></template
+    >
+    <template #description>
+      <ul class="marker:text-wit-blue-500 grid gap-md">
+        <li
+          v-for="tutorial in tutorials"
           :key="tutorial.name"
-          class="block"
-          :name="tutorial.name"
-          :url="tutorial.url"
-        />
-      </li>
-    </ul>
-  </div>
+          class="list-disc link-list-item ml-md"
+        >
+          <TutorialLink
+            :key="tutorial.name"
+            class="block"
+            :name="tutorial.name"
+            :url="tutorial.url"
+          />
+        </li>
+      </ul>
+    </template>
+  </WCard>
 </template>
 <script setup lang="ts">
 import type { PropType } from 'vue'
+import { WCard, CardType } from 'wit-vue-ui'
 import type { TutorialLink } from '~/types'
 
 defineProps({

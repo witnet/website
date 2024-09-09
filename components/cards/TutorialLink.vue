@@ -1,6 +1,6 @@
 <template>
   <a :href="url" :aria-label="name" target="_blank" class="link">
-    <p>{{ name }}</p>
+    <p class="text">{{ name }}</p>
   </a>
 </template>
 <script setup lang="ts">

@@ -3,7 +3,7 @@
     id="stake"
     name="section"
     :frame-classes="'bg-black-950'"
-    :content-classes="'grid justify-items-center pt-[240px]'"
+    :content-classes="'grid justify-items-center [&&]:pt-[240px]'"
   >
     <template #top>
       <RotateOnScroll
@@ -44,7 +44,7 @@
           </div>
         </div>
         <client-only>
-          <CustomButton :type="ButtonType.dark" class="mb-md">
+          <WButton :type="ButtonType.dark" class="mb-md">
             <a :href="primaryActionUrl" target="_blank">
               <i18n-t :keypath="primaryActionLocalePath" tag="p" scope="global">
                 <span v-if="isDesktop" class="ml-[4px]">{{
@@ -52,30 +52,10 @@
                 }}</span>
               </i18n-t>
             </a>
-          </CustomButton>
+          </WButton>
         </client-only>
         <p v-if="isDesktop" class="text text-wit-blue-500">
           {{ release.platform }} • x86_64 • {{ size }} MB
-          <!-- TODO: uncomment if tooltip is needed -->
-          <!-- <TooltipBase
-            bg-color="bg-white-50"
-            text-color="text-black-950"
-            :tooltip-text="t('coin.learn_more')"
-          >
-            <template #tooltip>
-              <i18n-t keypath="coin.learn_more" tag="span" scope="global">
-                <a
-                  href="https://docs.witnet.io/node-operators/requirements"
-                  target="_blank"
-                  class="underline"
-                  >{{ t('coin.learn-more-link') }}</a
-                >
-              </i18n-t>
-            </template>
-            <template #main>
-              <span class="text-xs ml-xs">ⓘ</span>
-            </template>
-          </TooltipBase> -->
         </p>
 
         <p
@@ -146,14 +126,14 @@
         </div>
         <!-- TODO: uncomment when wit/2 is live
         <div class="grid grid-flow-col md:grid-flow-row gap-md mt-xl">
-          <ExplorerLink
+          <WCard
             v-for="explorer in explorers"
             :key="explorer.title"
             class="mb-md 2xl:mr-md"
-            shadow-color="blue"
+            :type="CardType.Link"
             :title="explorer.title"
             :description="explorer.description"
-            :url="explorer.url"
+            :link="explorer.url"
           >
             <template #description>
               <i18n-t
@@ -171,7 +151,7 @@
                 </span>
               </i18n-t>
             </template>
-          </ExplorerLink>
+          </WCard>
         </div> -->
       </div>
     </template>
@@ -179,7 +159,9 @@
 </template>
 
 <script setup lang="ts">
-// import { URLS } from '@/constants'
+import { WButton } from 'wit-vue-ui'
+// TODO: uncomment when wit/2 is live
+// import { WButton, WCard, CardType } from 'wit-vue-ui'
 import { getLatestRelease } from '../../utils/getLatestRelease'
 import DockerIcon from '@/assets/svg/docker.svg?component'
 import WindowsIcon from '@/assets/svg/windows.svg?component'
