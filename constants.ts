@@ -1,4 +1,4 @@
-import { localeCodes, type LanguageDictionary } from './types'
+import { LocaleCodes, type Locale } from './types'
 
 export const URLS: Record<string, string> = {
   ado: 'https://github.com/adoracles/',
@@ -73,17 +73,17 @@ export const URLS: Record<string, string> = {
   solidity_sdk: 'https://www.npmjs.com/package/witnet-solidity',
 }
 
-export const languageLocales: LanguageDictionary = {
-  [localeCodes.en]: {
+export const languageLocales: Record<LocaleCodes, Locale> = {
+  [LocaleCodes.en]: {
     code: 'en-US',
     iso: 'en-US',
     name: 'ENGLISH',
     file: 'en-US.json',
   },
-  // [localeCodes.es]: {
-  //   code: 'es-ES',
-  //   iso: 'es-ES',
-  //   name: 'ESPAÑOL',
-  //   file: 'es-ES.json',
-  // },
+  [LocaleCodes.es]: {
+    code: 'es-ES',
+    iso: 'es-ES',
+    name: 'ESPAÑOL',
+    file: 'es-ES.json',
+  },
 }

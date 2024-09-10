@@ -32,7 +32,7 @@
 <script setup lang="ts">
 import vSelect from 'vue-select'
 import { languageLocales } from '@/constants'
-import { localeCodes, type Locale } from '@/types'
+import { LocaleCodes, type Locale } from '@/types'
 import esESIcon from '@/assets/svg/sp-flags.svg?component'
 import enUSIcon from '@/assets/svg/flag-eeuu.svg?component'
 import 'vue-select/dist/vue-select.css'
@@ -46,7 +46,7 @@ defineProps({
 })
 
 type Option = {
-  label: localeCodes
+  label: LocaleCodes
 }
 interface Dictionary {
   [key: string]: any
@@ -59,14 +59,14 @@ const language = computed({
   },
 })
 
-const languageCodes: ComputedRef<Array<Locale>> = computed(() => {
-  return Object.values(languageLocales).map((locale) => locale.code)
+const languageCodes: ComputedRef<Array<string>> = computed(() => {
+  return Object.values(languageLocales).map((locale: Locale) => locale.code)
 })
 
 const iconMap: Dictionary = computed(() => {
   return {
-    [localeCodes.es]: esESIcon,
-    [localeCodes.en]: enUSIcon,
+    [LocaleCodes.es]: esESIcon,
+    [LocaleCodes.en]: enUSIcon,
   }
 })
 </script>

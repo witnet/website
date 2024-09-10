@@ -1,4 +1,4 @@
-export enum localeCodes {
+export enum LocaleCodes {
   en = 'en-US',
   es = 'es-ES',
 }
@@ -16,11 +16,6 @@ export enum ButtonType {
   secondary = 'secondary',
   terciary = 'terciary',
   disabled = 'disabled',
-}
-
-export interface LanguageDictionary {
-  [localeCodes.en]: Locale
-  // [localeCodes.es]: Locale
 }
 
 export type TutorialLink = {
