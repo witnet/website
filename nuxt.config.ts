@@ -116,7 +116,12 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/i18n', '@nuxtjs/color-mode', '@nuxtjs/device'],
+  modules: [
+    '@nuxtjs/i18n',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/device',
+    'nuxt-security',
+  ],
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
     fallback: 'dark', // fallback value if not system preference found
