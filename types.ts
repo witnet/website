@@ -1,6 +1,6 @@
 export enum LocaleCodes {
   en = 'en-US',
-  es = 'es-ES',
+  // es = 'es-ES',
 }
 
 export type Locale = {

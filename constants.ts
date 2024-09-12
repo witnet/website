@@ -80,10 +80,10 @@ export const languageLocales: Record<LocaleCodes, Locale> = {
     name: 'ENGLISH',
     file: 'en-US.json',
   },
-  [LocaleCodes.es]: {
-    code: 'es-ES',
-    iso: 'es-ES',
-    name: 'ESPAÑOL',
-    file: 'es-ES.json',
-  },
+  // [LocaleCodes.es]: {
+  //   code: 'es-ES',
+  //   iso: 'es-ES',
+  //   name: 'ESPAÑOL',
+  //   file: 'es-ES.json',
+  // },
 }
