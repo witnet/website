@@ -45,6 +45,6 @@
     "gsap": "^3.12.5",
     "lodash.snakecase": "^4.1.1",
     "vue-select": "^4.0.0-beta.3",
-    "wit-vue-ui": "file:../wit-vue-ui/wit-vue-ui-0.1.0.tgz"
+    "wit-vue-ui": "^0.1.1"
   }
 }
