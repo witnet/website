@@ -29,7 +29,7 @@
           class="min-w-80"
           :type="CardType.Link"
           :title="explorer.title"
-          :link="explorer.url"
+          :url="explorer.url"
           ><template #description
             ><p class="text-black-950">{{ explorer.description }}</p></template
           ></WCard
