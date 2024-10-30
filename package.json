@@ -23,7 +23,7 @@
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@types/lodash.snakecase": "^4.1.9",
     "@types/vue-select": "^3.16.8",
-    "@typescript-eslint/parser": "^8.2.0",
+    "@typescript-eslint/parser": "^8.12.2",
     "@vueuse/core": "^11.0.3",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.56.0",
