@@ -121,7 +121,11 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/device',
     'nuxt-security',
+    'nuxt-gtag',
   ],
+  gtag: {
+    id: 'G-XXXXXXXXXX',
+  },
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
     fallback: 'dark', // fallback value if not system preference found
