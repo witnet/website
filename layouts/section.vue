@@ -5,7 +5,7 @@
         ref="content"
         :class="`content p-[100px] m-[0_auto] max-w-[1100px] w-full sm:p-[70px_32px] xs:p-[70px_16px] z-50 ${height} ${contentClasses}`"
       >
-        <slot name="content"></slot>
+        <slot name="content" />
       </div>
     </div>
     <div
@@ -16,13 +16,13 @@
           : 'absolute top-[0px] left-sm-x-screen lg:left-lg md:left-md'
       "
     >
-      <slot name="left"></slot>
+      <slot name="left" />
     </div>
     <div
       class="sm:hidden"
       :class="'absolute top-[-210px] left-auto w-screen flex justify-center'"
     >
-      <slot name="top"></slot>
+      <slot name="top" />
     </div>
     <div
       class="sm:hidden"
@@ -32,7 +32,7 @@
           : 'absolute top-[0px] right-sm-x-screen lg:left-lg md:left-md'
       "
     >
-      <slot name="right"></slot>
+      <slot name="right" />
     </div>
   </div>
 </template>

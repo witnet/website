@@ -28,7 +28,7 @@
             <span class="text-wit-blue-500">{{ $t('coin.title.mark') }}</span>
           </i18n-t>
 
-          <p class="mx-xl line transform md:rotate-90 sm:rotate-90"></p>
+          <p class="mx-xl line transform md:rotate-90 sm:rotate-90" />
           <div class="max-w-md md:text-center">
             <i18n-t
               keypath="coin.description1"
@@ -43,20 +43,7 @@
             <p class="text text-white-50">{{ $t('coin.description3') }}</p>
           </div>
         </div>
-        <client-only>
-          <WButton :type="ButtonType.dark" class="mb-md">
-            <a :href="primaryActionUrl" target="_blank">
-              <i18n-t :keypath="primaryActionLocalePath" tag="p" scope="global">
-                <span v-if="isDesktop" class="ml-[4px]">{{
-                  release.platform
-                }}</span>
-              </i18n-t>
-            </a>
-          </WButton>
-        </client-only>
-        <p v-if="isDesktop" class="text text-wit-blue-500">
-          {{ release.platform }} • x86_64 • {{ size }} MB
-        </p>
+        <DownloadNodeBtn />
 
         <p
           class="text-large text-white-50 text-center section-description-max-w mb-xl"
@@ -159,10 +146,8 @@
 </template>
 
 <script setup lang="ts">
-import { WButton } from 'wit-vue-ui'
 // TODO: uncomment when wit/2 is live
 // import { WButton, WCard, CardType } from 'wit-vue-ui'
-import { getLatestRelease } from '../../utils/getLatestRelease'
 import DockerIcon from '@/assets/svg/docker.svg?component'
 import WindowsIcon from '@/assets/svg/windows.svg?component'
 import AppleIcon from '@/assets/svg/apple.svg?component'
@@ -171,37 +156,8 @@ import RaspberryIcon from '@/assets/svg/raspberry.svg?component'
 import BlueStarIcon from '@/assets/svg/blue-horizontal-star.svg?component'
 
 import { URLS } from '@/constants'
-import { ButtonType } from '~/types'
 
 const { t } = useI18n()
-const { isDesktop } = useDevice()
-
-const release = ref({
-  platform: '',
-  releaseUrl: '',
-  size: 0,
-})
-
-const size = computed(() => {
-  return (release.value.size / 1024 / 1024).toFixed(1)
-})
-
-const primaryActionUrl = computed(() => {
-  return isDesktop
-    ? release.value.releaseUrl
-    : 'https://docs.witnet.io/node-operators/docker-quick-start-guide'
-})
-const primaryActionLocalePath = computed(() => {
-  return isDesktop
-    ? 'coin.run_in_platform.main-alt'
-    : 'coin.run_in_platform.main-mobile'
-})
-onMounted(async () => {
-  if (import.meta.client) {
-    const latestRelease = await getLatestRelease(window.navigator)
-    release.value = latestRelease
-  }
-})
 
 // const { t } = useI18n()
 // TODO uncomment when wit/2 is live

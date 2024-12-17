@@ -5,9 +5,9 @@
       class="section"
       :style="{ background: backgroundColor }"
     >
-      <slot></slot>
+      <slot />
     </div>
-    <slot v-else></slot>
+    <slot v-else />
   </div>
 </template>
 

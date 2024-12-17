@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <div class="prose h-screen"></div>
+    <div class="prose h-screen" />
   </NuxtLayout>
 </template>
 

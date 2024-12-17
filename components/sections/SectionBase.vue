@@ -10,7 +10,7 @@
           class="title title-h2 text-center max-w-screen-md"
           :class="{ 'mb-md': !separator }"
         >
-          <slot name="title"></slot>
+          <slot name="title" />
         </h2>
 
         <h3
@@ -18,7 +18,7 @@
           class="title title-h2 text-center max-w-screen-md"
           :class="{ 'mb-md': !separator }"
         >
-          <slot name="title"></slot>
+          <slot name="title" />
         </h3>
 
         <DashesIcon v-if="separator" class="m-xl dashes" />
@@ -27,7 +27,7 @@
           {{ description }}
         </p>
       </div>
-      <slot name="content"></slot>
+      <slot name="content" />
     </div>
   </div>
 </template>

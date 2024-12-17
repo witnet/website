@@ -45,6 +45,7 @@ import { WCard, CardType } from 'wit-vue-ui'
 import SheikahIcon from '@/assets/svg/sheikah.svg?component'
 import MywitwalletIcon from '@/assets/svg/mywitwallet.svg?component'
 import { URLS } from '@/constants'
+import type { FunctionalComponent, SVGAttributes } from 'vue'
 
 const { t } = useI18n()
 type WalletInfo = {
@@ -52,7 +53,7 @@ type WalletInfo = {
   description: string
   url: string
   action: string
-  icon: any
+  icon: FunctionalComponent<SVGAttributes>
 }
 const wallets: Array<WalletInfo> = [
   {

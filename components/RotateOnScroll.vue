@@ -1,6 +1,6 @@
 <template>
   <div ref="blueStar" class="h-max w-auto">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

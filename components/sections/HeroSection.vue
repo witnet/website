@@ -127,7 +127,7 @@ const squareIcon2 = ref(null)
 const myText = ref(null)
 const myText2 = ref(null)
 const textKeyIndex = ref(0)
-const svgElm: { elm: any }[] = [
+const svgElm: { elm: globalThis.Ref<null, null> }[] = [
   {
     elm: zigzagIcon,
   },
@@ -200,7 +200,7 @@ watch(targetIsVisible, () => {
   }
 })
 
-function startMoveAnimation(e: any) {
+function startMoveAnimation(e: MouseEvent) {
   svgElm.forEach((icon, index) => {
     gsap.killTweensOf(icon.elm.value)
     gsap.to(icon.elm.value, {
