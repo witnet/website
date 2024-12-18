@@ -87,3 +87,7 @@ export const languageLocales: Record<LocaleCodes, Locale> = {
   //   file: 'es-ES.json',
   // },
 }
+export const GITHUB_RELEASE_URL =
+  'https://github.com/witnet/witnet-rust/releases/latest'
+export const URL_RELEASE_BASE =
+  'https://api.github.com/repos/witnet/witnet-rust/releases/latest'

@@ -1,38 +1,58 @@
-import { getBrowserOs } from './getBrowserOs'
-// TODO: move to constants
-export const URL_RELEASE_BASE =
-  'https://api.github.com/repos/witnet/witnet-rust/releases/latest'
+import { GITHUB_RELEASE_URL } from '../constants'
 
-export async function getLatestRelease(navigator: any) {
-  return await fetch(URL_RELEASE_BASE).then(async (result: any) => {
-    const json = await result.json()
-    const os = await getBrowserOs(navigator).toLowerCase()
-    const macRelease = json.assets.find((asset: any) =>
-      asset.browser_download_url.includes('apple'),
-    )
-    const linuxRelease = json.assets.find((asset: any) =>
+export type Release = {
+  platform: string
+  releaseUrl: string
+  downloadName: string | null
+  size: number | null
+}
+
+export type LatestReleaseResponse = {
+  assets: Array<ReleaseAsset>
+}
+
+export type ReleaseAsset = {
+  browser_download_url: string
+  name: string | null
+}
+
+export function getLatestRelease({
+  os,
+  data,
+}: {
+  os: string
+  data: LatestReleaseResponse | undefined
+}): Release | null {
+  if (data) {
+    const macRelease: ReleaseAsset = data.assets.find((asset: ReleaseAsset) => {
+      return asset.browser_download_url.includes('apple')
+    }) ?? { browser_download_url: GITHUB_RELEASE_URL, name: null }
+    const linuxRelease: ReleaseAsset = data.assets.find((asset: ReleaseAsset) =>
       asset.browser_download_url.includes('aarch64-unknown-linux-gnu'),
-    )
-    const windowsRelease = json.assets.find((asset: any) =>
-      asset.browser_download_url.includes('x86_64-pc-windows'),
-    )
-    const release = {
+    ) ?? { browser_download_url: GITHUB_RELEASE_URL, name: null }
+    const windowsRelease: ReleaseAsset = data.assets.find(
+      (asset: ReleaseAsset) =>
+        asset.browser_download_url.includes('x86_64-pc-windows'),
+    ) ?? { browser_download_url: GITHUB_RELEASE_URL, name: null }
+
+    const release: Record<string, Release> = {
       linux: {
-        platform: 'Linux',
+        platform: 'GNU / Linux',
         releaseUrl: linuxRelease.browser_download_url,
-        size: linuxRelease.size,
+        downloadName: linuxRelease.name,
       },
-      win: {
+      macos: {
+        platform: 'Mac OS',
+        releaseUrl: macRelease.browser_download_url,
+        downloadName: macRelease.name,
+      },
+      windows: {
         platform: 'Windows',
         releaseUrl: windowsRelease.browser_download_url,
-        size: linuxRelease.size,
-      },
-      mac: {
-        platform: 'macOS',
-        releaseUrl: macRelease.browser_download_url,
-        size: linuxRelease.size,
+        downloadName: null,
       },
     }
-    return (release as any)[os] as any
-  })
+    return release[os]
+  }
+  return null
 }

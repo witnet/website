@@ -5,7 +5,7 @@
     :class="[backgroundClass, `background-${background}`]"
   >
     <div class="flex flex-col max-w-7xl">
-      <slot></slot>
+      <slot />
     </div>
   </div>
 </template>

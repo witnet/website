@@ -1,6 +1,6 @@
 <template>
   <div ref="arrow">
-    <ArrowRightIcon class="arrow ml-md h-[14px]"></ArrowRightIcon>
+    <ArrowRightIcon class="arrow ml-md h-[14px]" />
   </div>
 </template>
 

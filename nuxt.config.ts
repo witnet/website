@@ -150,6 +150,7 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/styles/main.scss', '~/assets/styles/tailwind.css'],
   components: [{ path: '~/components', pathPrefix: false }],
+  compatibilityDate: '2024-12-17',
   vite: {
     plugins: [
       svgLoader({
@@ -172,6 +173,7 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: '@use "~/assets/styles/colors.scss" as *;',
+          api: 'modern-compiler',
         },
       },
     },

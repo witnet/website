@@ -1,3 +1,5 @@
+import type { IconName } from '@fortawesome/fontawesome-svg-core'
+
 export enum LocaleCodes {
   en = 'en-US',
   // es = 'es-ES',
@@ -8,6 +10,12 @@ export type Locale = {
   iso: string
   name: string
   file: string
+}
+
+export type Exchange = {
+  name: string
+  logo: IconName
+  link: string
 }
 
 export enum ButtonType {

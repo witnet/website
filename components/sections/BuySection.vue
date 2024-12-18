@@ -37,10 +37,11 @@
 
 <script setup lang="ts">
 import { WIconText, WIcon, IconName, IconTextPosition } from 'wit-vue-ui'
-import { URLS } from '../../constants.js'
+import { URLS } from '@/constants.js'
+import type { Exchange } from '@/types.js'
 
 const { t } = useI18n()
-const exchanges: Array<any> = [
+const exchanges: Array<Exchange> = [
   {
     name: t('buy-section.exchanges.gate'),
     logo: IconName.Gate,

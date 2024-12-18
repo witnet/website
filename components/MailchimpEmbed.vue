@@ -31,16 +31,8 @@
         />
       </div>
       <div id="mce-responses" class="clear">
-        <div
-          id="mce-error-response"
-          class="response"
-          style="display: none"
-        ></div>
-        <div
-          id="mce-success-response"
-          class="response"
-          style="display: none"
-        ></div>
+        <div id="mce-error-response" class="response" style="display: none" />
+        <div id="mce-success-response" class="response" style="display: none" />
       </div>
       <div style="position: absolute; left: -5000px" aria-hidden="true">
         <input
