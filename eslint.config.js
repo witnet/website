@@ -17,7 +17,6 @@ export default createConfigForNuxt().prepend(
       'public',
       '.nuxt',
       'docs/**/*',
-      'DEBUG=1/**/*',
       '.output',
       'docs/_nuxt/*',
     ],
