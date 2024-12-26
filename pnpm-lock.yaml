@@ -79,8 +79,8 @@ importers:
         specifier: 3.0.2
         version: 3.0.2(magicast@0.3.5)(rollup@4.28.1)
       nuxt-security:
-        specifier: 2.0.0
-        version: 2.0.0(magicast@0.3.5)(rollup@4.28.1)
+        specifier: 2.1.5
+        version: 2.1.5(magicast@0.3.5)(rollup@4.28.1)
       postcss:
         specifier: ^8.4.40
         version: 8.4.49
@@ -2812,8 +2812,9 @@ packages:
   nuxt-gtag@3.0.2:
     resolution: {integrity: sha512-0Spu/rffPxW7REebkjE22qQOuVZIQuyIuvd61InDdJU+d+gRIqWhrUuKBWdk43N/J1elj+cTK2kEdk5FQX7vdQ==}
 
-  nuxt-security@2.0.0:
-    resolution: {integrity: sha512-zlcB8uNDLipuJ0r1UHnns4rj8WwIfrni+DQeE8h9PIytCgRCBzuxsf/xNNTKJqXkoV4VGF2XGwrIzM9zdL4xFg==}
+  nuxt-security@2.1.5:
+    resolution: {integrity: sha512-2nrkEsj1tS7RqqFq+sdmYatsAtISHt/o91w8xfMPeUz95CYxZ+HPbodKf+oAGdOmmCJcgYs6e+5XNba45M6BIw==}
+    engines: {node: '>=18.0.0'}
 
   nuxt@3.14.1592:
     resolution: {integrity: sha512-roWAQH4Mb6WY72cNos+YVw0DgTCNAhNygiAMCedM7hbX6ESTR2n3VH7tU0yIWDPe/hfFdii4M4wWTTNHOtS44g==}
@@ -7189,7 +7190,7 @@ snapshots:
       - rollup
       - supports-color
 
-  nuxt-security@2.0.0(magicast@0.3.5)(rollup@4.28.1):
+  nuxt-security@2.1.5(magicast@0.3.5)(rollup@4.28.1):
     dependencies:
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.28.1)
       basic-auth: 2.0.1
