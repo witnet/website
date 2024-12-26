@@ -22,7 +22,7 @@ export default createConfigForNuxt().prepend(
     ],
   },
   {
-    files: ['pages/*.vue'],
+    files: ['pages/*.vue', '**/*.vue'],
     rules: {
       'vue/multi-word-component-names': 0,
       'vue/html-self-closing': [
