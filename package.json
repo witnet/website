@@ -32,7 +32,7 @@
     "globals": "^15.13.0",
     "nuxt": "^3.12.4",
     "nuxt-gtag": "3.0.2",
-    "nuxt-security": "2.0.0",
+    "nuxt-security": "2.1.5",
     "postcss": "^8.4.40",
     "prettier": "^3.1.1",
     "sass": "^1.69.7",
