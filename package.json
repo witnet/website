@@ -45,7 +45,7 @@
     "user-agent-data-types": "^0.4.2"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^8.5.2",
+    "@nuxtjs/i18n": "^9.1.1",
     "gsap": "^3.12.5",
     "lodash.snakecase": "^4.1.1",
     "vue-select": "^4.0.0-beta.3",
