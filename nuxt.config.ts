@@ -138,9 +138,8 @@ export default defineNuxtConfig({
   },
   i18n: {
     lazy: true,
-    langDir: 'locales',
     strategy: 'prefix_except_default',
-    defaultLocale: 'en-US',
+    defaultLocale: 'en',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',

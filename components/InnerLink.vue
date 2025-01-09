@@ -1,6 +1,6 @@
 <template>
   <nuxt-link
-    :to="{ path: localePath('/'), hash: `#${hash}` }"
+    :to="{ path: $localePath('/'), hash: `#${hash}` }"
     @click="handleClick(hash)"
   >
     <slot />

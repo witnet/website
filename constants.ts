@@ -75,16 +75,14 @@ export const URLS: Record<string, string> = {
 
 export const languageLocales: Record<LocaleCodes, Locale> = {
   [LocaleCodes.en]: {
-    code: 'en-US',
-    iso: 'en-US',
-    name: 'ENGLISH',
-    file: 'en-US.json',
+    code: 'en',
+    file: 'en.json',
   },
   // [LocaleCodes.es]: {
-  //   code: 'es-ES',
-  //   iso: 'es-ES',
+  //   code: 'es',
+  //   language: 'es-ES',
   //   name: 'ESPAÑOL',
-  //   file: 'es-ES.json',
+  //   file: 'es.json',
   // },
 }
 export const GITHUB_RELEASE_URL =
