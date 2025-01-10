@@ -6,8 +6,11 @@ export enum LocaleCodes {
 }
 
 export type Locale = {
+  key: LocaleCodes
   code: string
   file: string
+  label: string
+  icon: string | null
 }
 
 export type Exchange = {

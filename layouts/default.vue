@@ -14,14 +14,12 @@
         </template>
       </WNavbar>
     </NuxtLayout>
-    <!-- <Compoennt /> -->
     <!-- <client-only>
       <ThemeSwitch class="theme-switch" />
       </client-only> -->
     <div class="grid grid-auto mt-8">
       <slot />
     </div>
-    <!-- <FooterSection /> -->
   </div>
 </template>
 
