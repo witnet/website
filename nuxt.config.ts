@@ -107,6 +107,20 @@ export default defineNuxtConfig({
         { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '2D2C39' },
         { rel: 'shortcut icon', href: '/favicon.ico' },
       ],
+      script: [
+        {
+          textContent: `
+            <!-- Twitter conversion tracking base code -->
+            <script>
+            !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+            },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+            a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+            twq('config','ovifm');
+            </script>
+            <!-- End Twitter conversion tracking base code -->`,
+          type: 'text/javascript',
+        },
+      ],
     },
   },
   devtools: { enabled: true },
