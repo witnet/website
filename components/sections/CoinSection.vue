@@ -40,7 +40,6 @@
               <span>{{ $t('coin.description1-1') }}</span>
             </i18n-t>
             <p class="text text-white-50">{{ $t('coin.description2') }}</p>
-            <p class="text text-white-50">{{ $t('coin.description3') }}</p>
           </div>
         </div>
         <DownloadNodeBtn />
@@ -48,7 +47,7 @@
         <p
           class="text-large text-white-50 text-center section-description-max-w mb-xl"
         >
-          {{ t('coin.participate-alt-1') }}
+          {{ t('coin.participate') }}
           <i18n-t keypath="coin.learn_more" tag="span" scope="global">
             <a
               href="https://docs.witnet.io/node-operators/requirements"
@@ -57,10 +56,6 @@
               >{{ t('coin.learn-more-link') }}</a
             >
           </i18n-t>
-          <!--TODO: uncomment when public testnet is live
-          {{ t('coin.participate2') }}
-          TODO: uncomment when wit/2 is live
-          {{ t('coin.participate') }} -->
         </p>
 
         <div
