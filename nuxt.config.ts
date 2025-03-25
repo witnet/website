@@ -137,6 +137,13 @@ export default defineNuxtConfig({
     'nuxt-security',
     'nuxt-gtag',
   ],
+  security: {
+    headers: {
+      contentSecurityPolicy: {
+        'form-action': ["'self'", "https://*.list-manage.com"],
+      },
+    },
+  },
   gtag: {
     id: 'GTM-ND5BQG9',
   },
