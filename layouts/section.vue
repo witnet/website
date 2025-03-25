@@ -84,7 +84,7 @@ function startAnimation() {
     pin: false,
     scrub: true,
     start: '-200% top',
-    end: '-120% top',
+    end: '-150% top',
   })
 }
 </script>
