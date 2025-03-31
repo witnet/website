@@ -19,7 +19,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/vue-fontawesome": "^3.0.6",
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint-config": "^0.7.4",
+    "@nuxt/eslint-config": "^1.3.0",
     "@nuxtjs/color-mode": "^3.4.4",
     "@nuxtjs/device": "^3.1.1",
     "@types/lodash.snakecase": "^4.1.9",
