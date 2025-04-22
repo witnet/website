@@ -9,7 +9,8 @@
     "route": {
       "stake": "stake",
       "buy": "buy",
-      "build": "build"
+      "build": "build",
+      "calendar": "calendar"
     }
   },
   "hero": {
@@ -178,6 +179,16 @@
     "title": "myWitWallet",
     "description": "Opt for myWitWallet for instant transactions without the wait for synchronization, perfect for quick and easy sending and receiving of WIT.",
     "action": "Download myWitWallet"
+  },
+  "calendar": {
+    "title": "Events",
+    "description-title": "Lorem ipsum",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit.",
+    "all": "All",
+    "online": "Online",
+    "offline": "Offline",
+    "upcomming-events": "Upcomming events",
+    "past-events": "Past events"
   },
   "footer": {
     "documentation": "Documentation",

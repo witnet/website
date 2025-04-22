@@ -25,7 +25,6 @@ export default defineEventHandler(async (_event) => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .map((page: any) => {
         const properties = page.properties
-
         return {
           id: page.id,
           title: properties.title?.title[0]?.plain_text || '',

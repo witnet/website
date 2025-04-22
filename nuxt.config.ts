@@ -141,6 +141,12 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         'form-action': ["'self'", 'https://*.list-manage.com'],
+        'img-src': [
+          "'self'",
+          'data:',
+          'https://cloudinary-marketing-res.cloudinary.com',
+          'https://www.google.es/ads/ga-audiences',
+        ],
       },
     },
   },
@@ -148,8 +154,8 @@ export default defineNuxtConfig({
     id: 'GTM-ND5BQG9',
   },
   colorMode: {
-    preference: 'system', // default value of $colorMode.preference
-    fallback: 'dark', // fallback value if not system preference found
+    preference: 'light', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
     hid: 'nuxt-color-mode-script',
     globalName: '__NUXT_COLOR_MODE__',
     componentName: 'ColorScheme',
