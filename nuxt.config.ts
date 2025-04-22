@@ -140,7 +140,7 @@ export default defineNuxtConfig({
   security: {
     headers: {
       contentSecurityPolicy: {
-        'form-action': ["'self'", "https://*.list-manage.com"],
+        'form-action': ["'self'", 'https://*.list-manage.com'],
       },
     },
   },
