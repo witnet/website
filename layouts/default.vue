@@ -20,6 +20,7 @@
     <div class="grid grid-auto mt-8">
       <slot />
     </div>
+    <FooterSection />
   </div>
 </template>
 
@@ -40,21 +41,21 @@ const navLinks: Ref<Array<NavLink>> = ref([
   {
     key: 'stake',
     active: false,
-    to: '/stake',
+    to: 'https://witnet.io/#stake',
     rel: 'stake',
     locale: t('nav_bar.route.stake'),
   },
   {
     key: 'buy',
     active: false,
-    to: '/buy',
+    to: 'https://witnet.io/#buy',
     rel: 'buy',
     locale: t('nav_bar.route.buy'),
   },
   {
     key: 'build',
     active: false,
-    to: '/build',
+    to: 'https://witnet.io/#build',
     rel: 'build',
     locale: t('nav_bar.route.build'),
   },

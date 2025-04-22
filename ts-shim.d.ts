@@ -1,1 +1,1 @@
-declare module 'wit-vue-ui'
+// declare module 'wit-vue-ui'
