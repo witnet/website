@@ -1,4 +1,8 @@
+import { createHash } from 'node:crypto'
+import fs from 'fs'
+import path from 'path'
 import { Client } from '@notionhq/client'
+import { CACHE_DIR } from '../utils'
 
 export default defineEventHandler(async (_event) => {
   const { NOTION_DATABASE_ID, NOTION_API_KEY } = process.env
@@ -41,11 +45,17 @@ export default defineEventHandler(async (_event) => {
           publish: properties.publish?.checkbox || false,
         }
       })
-      .filter((item) => item.publish)
+
+    // Download images and store them if fs
+    const imageURLs = await downloadImages(items)
+
+    const events = items.map((item, index) => {
+      return { ...item, bannerImage: imageURLs[index] }
+    })
 
     return {
       success: true,
-      data: items,
+      data: events.filter((item) => item.publish),
     }
   } catch (error) {
     console.error('Error fetching data from Notion:', error)
@@ -55,3 +65,46 @@ export default defineEventHandler(async (_event) => {
     }
   }
 })
+
+async function downloadImages(items: Array<{ bannerImage: string }>) {
+  // Make sure the cache directory exists
+  fs.mkdirSync(CACHE_DIR, { recursive: true })
+
+  const promises = items.map((item) => {
+    if (item.bannerImage) {
+      const imageName = item.bannerImage.split('/')[3] || ''
+      console.log('Downloading image:', imageName)
+      // Create hash for the image URL (to use as filename)
+      const hash = createHash('sha256').update(imageName).digest('hex')
+      const ext = path.extname(imageName) || '.jpg' // basic extension fallback
+      const filePath = path.join(CACHE_DIR, `${hash}${ext}`)
+
+      if (!fs.existsSync(filePath)) {
+        // Download from Notion. Public signed URL valid for 1 hour
+        fetch(item.bannerImage)
+          .then(async (response) => {
+            if (!response.ok) {
+              throw new Error(`Image fetch failed ${JSON.stringify(response)}`)
+            }
+            return response.arrayBuffer()
+          })
+          .then((arrayBuffer) => {
+            // Don't use fs.writeFileSync because it will block the event loop
+            // and cause performance issues
+            fs.writeFile(filePath, Buffer.from(arrayBuffer), {}, (err) => {
+              console.error('Error writing image to cache:', err)
+            })
+            return `/api/image/${hash}${ext}`
+          })
+          .catch((err) => {
+            console.error('Error downloading image:', err)
+          })
+      } else {
+        console.log('Image already exists in cache:', filePath)
+        return `/api/image/${hash}${ext}`
+      }
+    }
+  })
+
+  return Promise.all(promises)
+}
