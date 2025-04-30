@@ -123,6 +123,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+  runtimeConfig: {
+    public: {
+      calendarApiUrl: process.env.CALENDAR_API_URL,
+    },
+  },
   devtools: { enabled: true },
   postcss: {
     plugins: {

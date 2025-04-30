@@ -45,7 +45,7 @@
                 class="grid grid-cols-[max-content_1fr] gap-md justify-items-start items-center"
               >
                 <h3 class="text text-xl">
-                  {{ $t('calendar.upcomming-events') }}
+                  {{ $t('calendar.upcoming-events') }}
                 </h3>
                 <DashesIcon class="w-[80px] h-auto" />
               </div>
@@ -62,7 +62,7 @@
                 class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 w-max gap-y-xl"
               >
                 <WCard
-                  v-for="event in upcommingEvets"
+                  v-for="event in upcomingEvents"
                   :key="event.title"
                   :type="CardType.Icon"
                   :url="event.url"
@@ -107,7 +107,7 @@
                 </WCard>
               </div>
             </div>
-            <div v-if="pastEvets.length" class="grid gap-lg">
+            <div v-if="pastEvents.length" class="grid gap-lg">
               <div
                 class="grid grid-cols-[max-content_1fr] gap-md justify-items-start items-center"
               >
@@ -145,7 +145,7 @@ import {
   WLoadingPlaceholder,
 } from 'wit-vue-ui'
 import DashesIcon from '@/assets/svg/dashes-blue.svg?component'
-
+const config = useRuntimeConfig()
 const { t } = useI18n()
 definePageMeta({
   colorMode: 'light',
@@ -153,11 +153,11 @@ definePageMeta({
 const months = ref([
   'Jan',
   'Feb',
-  'March',
-  'April',
+  'Mar',
+  'Apr',
   'May',
   'June',
-  'July',
+  'Jul',
   'Aug',
   'Sept',
   'Oct',
@@ -222,7 +222,9 @@ const labels: Ref<Array<Label>> = ref([
 ])
 
 const getData = async () => {
-  const { data: events } = await useFetch('../api/data')
+  const { data: events } = await useFetch(
+    config.public.calendarApiUrl as string,
+  )
   return events.value as Response
 }
 
@@ -253,7 +255,7 @@ function valueToCol(
   }
 }
 const table = computed(() => {
-  return eventsListToTableRows(pastEvets.value)
+  return eventsListToTableRows(pastEvents.value)
 })
 const setTagsAndLabelsColor: Record<string, string> = {
   online: 'bg-wit-blue-600',
@@ -295,7 +297,7 @@ const eventsList: Ref<Event[]> = computed(() => {
   }
   return []
 })
-const upcommingEvets: Ref<Event[]> = computed(() => {
+const upcomingEvents: Ref<Event[]> = computed(() => {
   const allEvents = eventsList.value
   return filterDataByGroup(
     filterDataByEventType(
@@ -303,14 +305,14 @@ const upcommingEvets: Ref<Event[]> = computed(() => {
         return Date.parse(eventA.date) - Date.parse(eventB.date)
       }),
     ),
-    EventsGroup.upcomming,
+    EventsGroup.upcoming,
   )
 })
-const pastEvets: Ref<Event[]> = computed(() => {
-  const upcommingEvets = eventsList.value
+const pastEvents: Ref<Event[]> = computed(() => {
+  const upcomingEvents = eventsList.value
   return filterDataByGroup(
     filterDataByEventType(
-      upcommingEvets.sort((eventA: Event, eventB: Event) => {
+      upcomingEvents.sort((eventA: Event, eventB: Event) => {
         return Date.parse(eventB.date) - Date.parse(eventA.date)
       }),
     ),
@@ -318,12 +320,12 @@ const pastEvets: Ref<Event[]> = computed(() => {
   )
 })
 enum EventsGroup {
-  upcomming = 'Upcomming events',
+  upcoming = 'Upcoming events',
   past = 'Past events',
 }
 function filterDataByGroup(data: Event[], group: EventsGroup) {
   return data.filter((event: Event) => {
-    return group == EventsGroup.upcomming
+    return group == EventsGroup.upcoming
       ? Date.parse(event.date) > new Date().getTime()
       : Date.parse(event.date) < new Date().getTime()
   })
