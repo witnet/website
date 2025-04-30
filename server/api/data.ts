@@ -76,7 +76,7 @@ async function downloadImages(items: Array<{ bannerImage: string }>) {
 
   const promises = items.map((item) => {
     if (item.bannerImage) {
-      const imageName = item.bannerImage.split('/')[3] || ''
+      const imageName = item.bannerImage.split('/')[5].split('?')[0] || ''
       console.log('Downloading image:', imageName)
       // Create hash for the image URL (to use as filename)
       const hash = createHash('sha256').update(imageName).digest('hex')
