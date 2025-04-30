@@ -221,20 +221,13 @@ const labels: Ref<Array<Label>> = ref([
   },
 ])
 
-const getData = async () => {
-  const { data: events } = await useFetch(
-    config.public.calendarApiUrl as string,
-  )
-  return events.value as Response
-}
+const { data: events, error } = await useFetch(
+  config.public.calendarApiUrl as string,
+)
 
-const responseData: Ref<Response | null> = ref(null)
-
-onMounted(() => {
-  nextTick(async () => {
-    responseData.value = await getData()
-  })
-})
+const responseData: Ref<Response | null> = computed(() =>
+  !error.value ? (events.value as Response) : null,
+)
 
 function valueToCol(
   value: string | number | Chip[],
