@@ -24,8 +24,8 @@ importers:
         specifier: ^4.0.0-beta.3
         version: 4.0.0-beta.6(vue@3.5.13(typescript@5.8.3))
       wit-vue-ui:
-        specifier: ^0.2.3
-        version: 0.2.3(jiti@2.4.2)(postcss@8.5.3)(vue@3.5.13(typescript@5.8.3))
+        specifier: ^0.2.4
+        version: 0.2.4(jiti@2.4.2)(postcss@8.5.3)(vue@3.5.13(typescript@5.8.3))
     devDependencies:
       '@eslint/js':
         specifier: ^9.18.0
@@ -4902,8 +4902,8 @@ packages:
     resolution: {integrity: sha512-DLiFIXYC5fMPxaRg832S6F5mJYvePtmO5G9v9IgUFPhXm9/GkXarH/TUrBAVzhTCzAj9anE/+GjrgXp/54nOgw==}
     engines: {node: '>= 12.0.0'}
 
-  wit-vue-ui@0.2.3:
-    resolution: {integrity: sha512-0UjJuGjYFZhou7jDtxcPzyIqFO/OYDl6dlmChpjZ4mLnTWMYGsIK7+jEm1kQRYBJmuCi76J2J3R1ROnMzVCZYA==}
+  wit-vue-ui@0.2.4:
+    resolution: {integrity: sha512-ZJaA8HMcqP4Rhyq4Rizr/ZLzTVVrRfqLsTJrIcSiZaSR9gv1y1F/qHt3sOJy/saJOuENPjq4TfDvd8JETFDa1A==}
     peerDependencies:
       vue: 3.4.38
 
@@ -10320,7 +10320,7 @@ snapshots:
       triple-beam: 1.4.1
       winston-transport: 4.9.0
 
-  wit-vue-ui@0.2.3(jiti@2.4.2)(postcss@8.5.3)(vue@3.5.13(typescript@5.8.3)):
+  wit-vue-ui@0.2.4(jiti@2.4.2)(postcss@8.5.3)(vue@3.5.13(typescript@5.8.3)):
     dependencies:
       gsap: 3.13.0
       postcss-cli: 11.0.1(jiti@2.4.2)(postcss@8.5.3)
