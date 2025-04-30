@@ -67,7 +67,7 @@
                   :type="CardType.Icon"
                   :url="event.url"
                   :url-label="event.actionText"
-                  class="w-[300px]"
+                  class="card"
                 >
                   <template #icon>
                     <div class="grid text-center">
@@ -194,29 +194,35 @@ type Response = {
 const labels: Ref<Array<Label>> = ref([
   {
     sortType: Sort.alphabetically,
+    break: true,
     label: 'Title',
     index: 0,
   },
   {
     sortType: Sort.alphabetically,
+    break: true,
     label: 'Description',
     index: 1,
   },
   {
     label: 'Tags',
+    break: false,
     index: 2,
   },
   {
     label: 'Labels',
+    break: false,
     index: 3,
   },
   {
     sortType: 2,
     label: 'Date',
+    break: false,
     index: 4,
   },
   {
     label: 'Link',
+    break: false,
     index: 5,
   },
 ])
@@ -338,6 +344,10 @@ function filterDataByEventType(data: Event[]) {
 .line {
   border: 2px solid $blue;
   height: 150px;
+}
+
+.card {
+  width: 300px;
 }
 
 @media (max-width: 600px) {
