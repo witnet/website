@@ -49,13 +49,18 @@ export default defineEventHandler(async (_event) => {
     // Download images and store them if fs
     const imageURLs = await downloadImages(items)
 
-    const events = items.map((item, index) => {
-      return { ...item, bannerImage: imageURLs[index] }
-    })
+    const events = items
+      .map((item, index) => ({ ...item, bannerImage: imageURLs[index] }))
+      .filter((item) => item.publish)
+      .sort((a, b) => {
+        const dateA = new Date(a.date)
+        const dateB = new Date(b.date)
+        return dateB.getTime() - dateA.getTime()
+      })
 
     return {
       success: true,
-      data: events.filter((item) => item.publish),
+      data: events,
     }
   } catch (error) {
     console.error('Error fetching data from Notion:', error)
