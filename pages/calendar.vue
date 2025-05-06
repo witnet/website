@@ -150,7 +150,7 @@ const { t } = useI18n()
 definePageMeta({
   colorMode: 'light',
 })
-const months = ref([
+const months = [
   'Jan',
   'Feb',
   'Mar',
@@ -163,7 +163,7 @@ const months = ref([
   'Oct',
   'Nov',
   'Dec',
-])
+]
 enum Tag {
   online = 'Online',
   offline = 'Offline',
@@ -191,7 +191,7 @@ type Response = {
   data: Event[]
 }
 
-const labels: Ref<Array<Label>> = ref([
+const labels: Ref<Array<Label>> = [
   {
     sortType: Sort.alphabetically,
     break: true,
@@ -225,15 +225,20 @@ const labels: Ref<Array<Label>> = ref([
     break: false,
     index: 5,
   },
-])
+]
 
 const { data: events, error } = await useFetch(
   config.public.calendarApiUrl as string,
 )
 
-const responseData: Ref<Response | null> = computed(() =>
-  !error.value ? (events.value as Response) : null,
-)
+const responseData: Ref<Event[]> = computed(() => {
+  const response = !error.value ? (events.value as Response) : null
+  if (response?.success) {
+    return [...response.data]
+  } else {
+    return []
+  }
+})
 
 function valueToCol(
   value: string | number | Chip[],
@@ -290,33 +295,30 @@ function eventsListToTableRows(events: Event[]): Row[] {
     valueToCol(event.actionText, labels.value[5].label, event.url),
   ])
 }
-const eventsList: Ref<Event[]> = computed(() => {
-  if (responseData.value && responseData.value.success) {
-    return responseData.value.data
-  }
-  return []
-})
+
+function ascendingOrder(data: Event[]): Event[] {
+  return data.sort((eventA: Event, eventB: Event) => {
+    return Date.parse(eventA.date) - Date.parse(eventB.date)
+  })
+}
+const sortedDataAscending = computed(() => ascendingOrder(responseData.value))
+function descendingOrder(data: Event[]): Event[] {
+  return data.sort((eventA: Event, eventB: Event) => {
+    return Date.parse(eventB.date) - Date.parse(eventA.date)
+  })
+}
+const sortedDataDescending = computed(() => descendingOrder(responseData.value))
 const upcomingEvents: Ref<Event[]> = computed(() => {
-  const allEvents = eventsList.value
-  return filterDataByGroup(
-    filterDataByEventType(
-      allEvents.sort((eventA: Event, eventB: Event) => {
-        return Date.parse(eventA.date) - Date.parse(eventB.date)
-      }),
-    ),
-    EventsGroup.upcoming,
+  const filteredDataEventByType = filterDataByEventType(
+    sortedDataAscending.value,
   )
+  return filterDataByGroup(filteredDataEventByType, EventsGroup.upcoming)
 })
 const pastEvents: Ref<Event[]> = computed(() => {
-  const upcomingEvents = eventsList.value
-  return filterDataByGroup(
-    filterDataByEventType(
-      upcomingEvents.sort((eventA: Event, eventB: Event) => {
-        return Date.parse(eventB.date) - Date.parse(eventA.date)
-      }),
-    ),
-    EventsGroup.past,
+  const filteredDataEventByType = filterDataByEventType(
+    sortedDataDescending.value,
   )
+  return filterDataByGroup(filteredDataEventByType, EventsGroup.past)
 })
 enum EventsGroup {
   upcoming = 'Upcoming events',
