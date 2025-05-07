@@ -115,12 +115,7 @@
                 <DashesIcon class="w-[80px] h-auto" />
               </div>
               <div class="overflow-x-auto">
-                <WTable
-                  class="border rounded-full"
-                  :data="table"
-                  :labels="labels"
-                  :long="true"
-                />
+                <WTable :data="table" :labels="labels" :long="true" />
               </div>
             </div>
           </div>
