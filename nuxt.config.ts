@@ -3,7 +3,12 @@ import svgLoader from 'vite-svg-loader'
 import { languageLocales } from './constants'
 
 export default defineNuxtConfig({
-  ssr: true,
+  routeRules: {
+    // Homepage pre-rendered at build time
+    '/': { prerender: true },
+    // calendar page generated on demand, revalidates in background, cached until API response changes
+    '/calendar': { swr: true },
+  },
   app: {
     baseURL: '/',
     head: {
