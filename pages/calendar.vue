@@ -191,7 +191,7 @@ type Response = {
   data: Event[]
 }
 
-const labels: Ref<Array<Label>> = [
+const labels: Array<Label> = [
   {
     sortType: Sort.alphabetically,
     break: true,
@@ -269,8 +269,8 @@ const setTagsAndLabelsColor: Record<string, string> = {
 }
 function eventsListToTableRows(events: Event[]): Row[] {
   return events.map((event: Event) => [
-    valueToCol(event.title, labels.value[0].label),
-    valueToCol(event.description, labels.value[1].label),
+    valueToCol(event.title, labels[0].label),
+    valueToCol(event.description, labels[1].label),
     valueToCol(
       event.tags.map((tag): Chip => {
         return {
@@ -279,7 +279,7 @@ function eventsListToTableRows(events: Event[]): Row[] {
             setTagsAndLabelsColor[tag.toLocaleLowerCase()] ?? 'bg-black-950',
         }
       }),
-      labels.value[2].label,
+      labels[2].label,
     ),
     valueToCol(
       event.labels.map((tag): Chip => {
@@ -289,25 +289,26 @@ function eventsListToTableRows(events: Event[]): Row[] {
             setTagsAndLabelsColor[tag.toLocaleLowerCase()] ?? 'bg-black-950',
         }
       }),
-      labels.value[3].label,
+      labels[3].label,
     ),
-    valueToCol(event.date.slice(0, 10), labels.value[4].label),
-    valueToCol(event.actionText, labels.value[5].label, event.url),
+    valueToCol(event.date.slice(0, 10), labels[4].label),
+    valueToCol(event.actionText, labels[5].label, event.url),
   ])
 }
 
-function ascendingOrder(data: Event[]): Event[] {
-  return data.sort((eventA: Event, eventB: Event) => {
-    return Date.parse(eventA.date) - Date.parse(eventB.date)
+function sortByDate(data: Event[], sortType: Sort) {
+  return data.sort((a, b) => {
+    const diff = Date.parse(a.date) - Date.parse(b.date)
+    return sortType === Sort.ascentant ? diff : -diff
   })
 }
-const sortedDataAscending = computed(() => ascendingOrder(responseData.value))
-function descendingOrder(data: Event[]): Event[] {
-  return data.sort((eventA: Event, eventB: Event) => {
-    return Date.parse(eventB.date) - Date.parse(eventA.date)
-  })
-}
-const sortedDataDescending = computed(() => descendingOrder(responseData.value))
+const sortedDataAscending = computed(() =>
+  sortByDate(responseData.value, Sort.ascentant),
+)
+const sortedDataDescending = computed(() =>
+  sortByDate(responseData.value, Sort.descendant),
+)
+
 const upcomingEvents: Ref<Event[]> = computed(() => {
   const filteredDataEventByType = filterDataByEventType(
     sortedDataAscending.value,
