@@ -75,7 +75,7 @@
                         {{ event.date.slice(8, 10) }}
                       </p>
                       <p class="text-black-950 text-lg font-bold">
-                        {{ months[parseInt(event.date.slice(5, 7))] }}
+                        {{ months[parseInt(event.date.slice(5, 7)) - 1] }}
                       </p>
                     </div>
                   </template>
