@@ -1,0 +1,39 @@
+# ! Docker-Compose Specification
+version: "3.9"
+
+# ! Default Logging Driver
+x-logging:
+      &default-loki
+      driver: loki
+      options:
+        loki-url: "LOKI-REPLACE-ME"
+        max-size: "200m"
+
+# ! Define Project Network
+networks:
+  Website:
+
+# ? Services
+services:
+  webserver:
+    image: caddy:2.7.6
+    container_name: webserver
+    ports:
+      - target: 80
+        published: 80
+        mode: host
+      - target: 443
+        published: 443
+        mode: host
+    volumes:
+      - /home/ubuntu/website/Caddyfile:/etc/caddy/Caddyfile
+    networks:
+      - Website
+    logging: *default-loki
+
+  website:
+    image: witnet/website:<LATEST_PROD>
+    container_name: website
+    networks:
+      - Website
+    logging: *default-loki
