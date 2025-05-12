@@ -28,7 +28,7 @@ export default defineEventHandler(async (_event) => {
         return {
           id: page.id,
           title: properties.title?.title[0]?.plain_text || '',
-          bannerImage: properties.banner?.files[0]?.file?.url || '',
+          bannerImage: getImageUrl(properties.banner?.files[0]) || '',
           description: properties.description?.rich_text[0]?.plain_text || '',
           date: properties.date?.date?.start || '',
           url: properties.url?.url || '',
@@ -69,6 +69,23 @@ export default defineEventHandler(async (_event) => {
     }
   }
 })
+
+function getImageUrl(
+  file:
+    | { type: string; file: { url: string } }
+    | { type: string; external: { url: string } },
+) {
+  if ('file' in file) {
+    return file.file.url
+  } else if ('external' in file) {
+    return file.external.url
+  } else {
+    // unreachable, file_upload is only generated using the Notion API
+    // https://developers.notion.com/reference/file-object#file-uploads
+    console.error('Unknown file type:', JSON.stringify(file))
+    return ''
+  }
+}
 
 async function downloadImages(items: Array<{ bannerImage: string }>) {
   // Make sure the cache directory exists
