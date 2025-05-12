@@ -182,8 +182,8 @@
   },
   "calendar": {
     "title": "Events",
-    "description-title": "Lorem ipsum",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit.",
+    "description-title": "Witnet Events Hub",
+    "description": "Explore where Witnet is sharing decentralized oracle tech, trustless data feeds, and blockchain insights — from global events to community calls and live streams",
     "all": "All",
     "online": "Online",
     "offline": "Offline",
