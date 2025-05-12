@@ -20,7 +20,7 @@
                 {{ t('calendar.description-title') }}
               </h4>
               <p class="text text-black-950">{{ t('calendar.description') }}</p>
-              <div class="flex gap-md sm:justify-center">
+              <div class="flex gap-md sm:justify-center pt-sm">
                 <button
                   v-for="tag in tags"
                   :key="tag"
