@@ -6,6 +6,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "prepare": "nuxt prepare",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint:js": "eslint -c eslint.config.js --ignore-pattern .gitignore .",
@@ -51,6 +52,6 @@
     "gsap": "^3.12.7",
     "lodash.snakecase": "^4.1.1",
     "vue-select": "^4.0.0-beta.3",
-    "wit-vue-ui": "^0.2.4"
+    "wit-vue-ui": "^0.2.6"
   }
 }

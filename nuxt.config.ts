@@ -23,60 +23,49 @@ export default defineNuxtConfig({
           content: 'viewport-fit=cover, width=device-width, initial-scale=1',
         },
         {
-          hid: 'title',
           name: 'title',
           content: 'Wit/Oracle: The most powerful oracle, provably.',
         },
         {
-          hid: 'description',
           name: 'description',
           content:
             'Secure your smart contracts and dApps with the Wit/Oracle: powered by Proof-of-Stake, and offering unrivalled reliability and censorship resistance.',
         },
         {
-          hid: 'twitter:title',
           name: 'twitter:title',
           content: 'Wit/Oracle: The most powerful oracle, provably.',
         },
         {
-          hid: 'twitter:description',
           name: 'twitter:description',
           content:
             'Secure your smart contracts and dApps with the Wit/Oracle: powered by Proof-of-Stake, and offering unrivalled reliability and censorship resistance.',
         },
         {
-          hid: 'twitter:image',
           name: 'twitter:image',
           content: '/meta-image.png',
         },
         {
-          hid: 'twitter:image:alt',
           name: 'twitter:image:alt',
           content: 'Wit/Oracle',
         },
         {
-          hid: 'og:title',
           property: 'og:title',
           content: 'Wit/Oracle: The most powerful oracle, provably.',
         },
         {
-          hid: 'og:description',
           property: 'og:description',
           content:
             'Secure your smart contracts and dApps with the Wit/Oracle: powered by Proof-of-Stake, and offering unrivalled reliability and censorship resistance.',
         },
         {
-          hid: 'og:image',
           property: 'og:image',
           content: '/meta-image.png',
         },
         {
-          hid: 'og:image:secure_url',
           property: 'og:image:secure_url',
           content: '/meta-image.png',
         },
         {
-          hid: 'og:image:alt',
           property: 'og:image:alt',
           content: 'Wit/Oracle',
         },
