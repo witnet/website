@@ -85,7 +85,9 @@
                         :src="event.bannerImage"
                         class="w-[200px] h-auto justify-self-center"
                       />
-                      <h3 class="text-2xl text-black-950 font-semibold my-sm">
+                      <h3
+                        class="text-2xl text-black-950 font-semibold my-sm mt-md"
+                      >
                         {{ event.title }}
                       </h3>
                     </div></template
