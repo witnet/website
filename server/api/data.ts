@@ -113,7 +113,9 @@ async function downloadImages(items: Array<{ bannerImage: string }>) {
             // Don't use fs.writeFileSync because it will block the event loop
             // and cause performance issues
             fs.writeFile(filePath, Buffer.from(arrayBuffer), {}, (err) => {
-              console.error('Error writing image to cache:', err)
+              if (err) {
+                console.error('Error writing image to cache:', err)
+              }
             })
             return `/api/image/${hash}${ext}`
           })
