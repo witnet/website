@@ -1,0 +1,49 @@
+---
+- hosts: all
+  tasks:
+    - name: Install Loki Log Driver
+      shell: docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions || /bin/true
+
+    - name: Create Deployment Directory
+      file:
+        path: /home/ubuntu/website
+        state: directory
+
+    - name: Copy Docker Compose File
+      copy:
+        src: ./docker-compose.yml
+        dest: /home/ubuntu/website/docker-compose.yml
+
+    - name: Copy Caddy File
+      copy:
+        src: ./Caddyfile
+        dest: /home/ubuntu/website/Caddyfile
+      register: Domain
+
+    - name: Login Into Docker hub Registry
+      community.docker.docker_login:
+        username: "{{ lookup('env','DOCKER_USERNAME') }}"
+        password: "{{ lookup('env','DOCKER_PASSWORD') }}"
+        reauthorize: yes
+
+    - name: Deploy
+      shell: |
+        cd /home/ubuntu/website
+        docker compose up -d
+        sleep 30
+      args:
+        executable: /bin/bash
+
+    - name: Update Webserver in case of DNS change
+      shell: docker restart webserver
+      when: Domain.changed
+
+    - name: Prune Useless Docker Images
+      shell: |
+        docker container prune -f
+        docker image prune -a -f
+
+    - name: List Images & Containers for SHA256 Comparsion if needed
+      shell: |
+        docker image ls
+        docker ps
