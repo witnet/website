@@ -4,34 +4,38 @@
     :ado-description="t('footer.ado_text')"
   >
     <template #custom-contributors>
-      <i18n-t
-        keypath="footer.copyright.base1"
-        class="copyright max-w-100 footer-text"
-        tag="span"
-        scope="global"
-      >
-        <a
-          class="underline py-1 footer-text"
-          :href="URLS.witnet_foundation"
-          target="_blank"
-          >{{ $t('footer.copyright.witnet_foundation') }}</a
+      <ClientOnly>
+        <i18n-t
+          keypath="footer.copyright.base1"
+          class="copyright max-w-100 footer-text"
+          tag="span"
+          scope="global"
         >
-      </i18n-t>
+          <a
+            class="underline py-1 footer-text"
+            :href="URLS.witnet_foundation"
+            target="_blank"
+            >{{ $t('footer.copyright.witnet_foundation') }}</a
+          >
+        </i18n-t>
+      </ClientOnly>
     </template>
     <template #custom-license>
-      <i18n-t
-        keypath="footer.copyright.base2"
-        class="copyright max-w-100 footer-text"
-        tag="p"
-        scope="global"
-      >
-        <a
-          class="underline py-1 footer-text"
-          href="https://creativecommons.org/publicdomain/zero/1.0/"
-          target="_blank"
-          >{{ $t('footer.copyright.license') }}</a
+      <ClientOnly>
+        <i18n-t
+          keypath="footer.copyright.base2"
+          class="copyright max-w-100 footer-text"
+          tag="p"
+          scope="global"
         >
-      </i18n-t>
+          <a
+            class="underline py-1 footer-text"
+            href="https://creativecommons.org/publicdomain/zero/1.0/"
+            target="_blank"
+            >{{ $t('footer.copyright.license') }}</a
+          >
+        </i18n-t>
+      </ClientOnly>
     </template>
   </WFooter>
 </template>
