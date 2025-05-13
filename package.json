@@ -1,6 +1,7 @@
 {
   "name": "witnet.io",
   "private": true,
+  "version": "2.1.0",
   "type": "module",
   "scripts": {
     "build": "nuxt build",
