@@ -1,5 +1,6 @@
 module.exports = {
-    apps: [{
+  apps: [
+    {
       name: 'witnet-website',
       port: '3000',
       exec_mode: 'cluster',
@@ -8,7 +9,8 @@ module.exports = {
       env: {
         PORT: 3000,
         HOST: '0.0.0.0',
-        NODE_ENV: 'production'
-      }
-    }]
+        NODE_ENV: 'production',
+      },
+    },
+  ],
 }
