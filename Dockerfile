@@ -6,7 +6,7 @@ COPY . .
 
 RUN npm install -g pnpm pm2
 RUN pnpm install
-RUN pnpm build
+RUN export CALENDAR_API_URL="/api/data" && pnpm build
 
 EXPOSE 3000
 

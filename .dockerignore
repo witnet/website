@@ -1,0 +1,5 @@
+node_modules
+ansible
+.output
+.nuxt
+.env
