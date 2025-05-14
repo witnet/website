@@ -33,6 +33,8 @@ jobs:
           CADDY: ${{ secrets.CADDY_FILE }}
           AINV: ${{ secrets.ANSIBLE_INVENTORY }}
           APKEY: ${{ secrets.ANSIBLE_PRIVATE_KEY }}
+          NAPIK: ${{ secrets.NOTION_API_KEY }}
+          NDID: ${{ secrets.NOTION_DATABASE_ID }}
         run: |
           echo "$AINV" > ./ansible/inventory.ini
           echo "$APKEY" > ./ansible/key.pem
@@ -40,6 +42,8 @@ jobs:
           chmod 400 ./ansible/key.pem
           sed -i "s#LOKI-REPLACE-ME#$LOKI#g" ./ansible/docker-compose.yml
           sed -i "s#<LATEST_PROD>#${{ steps.gettag.outputs.TAG }}#g" ./ansible/docker-compose.yml
+          sed -i "s#<NDID>#$NDID#g" ./ansible/docker-compose.yml
+          sed -i "s#<NAPIK>#$NAPIK#g" ./ansible/docker-compose.yml
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v6

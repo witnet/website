@@ -34,6 +34,10 @@ services:
   website:
     image: witnet/website:<LATEST_PROD>
     container_name: website
+    environment:
+      - NOTION_API_KEY=<NAPIK>
+      - NOTION_DATABASE_ID=<NDID>
+      - CALENDAR_API_URL="/api/data"
     networks:
       - Website
     logging: *default-loki
