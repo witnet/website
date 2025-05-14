@@ -228,6 +228,10 @@ const { data: events, error } = await useFetch(
   config.public.calendarApiUrl as string,
 )
 
+console.log('events', events.value)
+console.log('error', error.value)
+console.log('config', config.public.calendarApiUrl)
+
 const responseData: Ref<Event[]> = computed(() => {
   const response = !error.value ? (events.value as Response) : null
   if (response?.success) {
