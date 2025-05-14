@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     // calendar page generated on demand, revalidates in background, cached until API response changes
     '/calendar': { swr: true },
   },
+  debug: true,
   app: {
     baseURL: '/',
     head: {

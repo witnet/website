@@ -4,6 +4,10 @@
       content-classes="[&&]:p-[100px_0px] [&&]:sm:p-[100px_24px] [&&]:md:p-[100px_80px]"
     >
       <template #content>
+        <div>
+          {{ events }}
+        </div>
+        <div>{{ error }}</div>
         <div class="flex flex-col items-center gap-md">
           <div
             class="flex justify-center items-center mb-xl flex-row md:flex-col sm:flex-col"
