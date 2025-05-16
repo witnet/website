@@ -144,6 +144,37 @@ import {
 import DashesIcon from '@/assets/svg/dashes-blue.svg?component'
 const config = useRuntimeConfig()
 const { t } = useI18n()
+useHead({
+  title: 'Wit/Events Hub',
+  meta: [
+    { name: 'title', content: 'Wit/Events Hub' },
+    {
+      name: 'description',
+      content:
+        'Explore where Witnet is sharing decentralized oracle tech, trustless data feeds, and blockchain insights — from global events to community calls and live streams',
+    },
+    { name: 'og:title', content: 'Wit/Events Hub' },
+    {
+      name: 'og:description',
+      content:
+        'Explore where Witnet is sharing decentralized oracle tech, trustless data feeds, and blockchain insights — from global events to community calls and live streams',
+    },
+    { name: 'twitter:title', content: 'Wit/Events Hub' },
+    {
+      name: 'twitter:description',
+      content:
+        'Explore where Witnet is sharing decentralized oracle tech, trustless data feeds, and blockchain insights — from global events to community calls and live streams',
+    },
+  ],
+})
+useSeoMeta({
+  title: 'Witnet Events Hub',
+  description:
+    'Explore where Witnet is sharing decentralized oracle tech, trustless data feeds, and blockchain insights — from global events to community calls and live streams',
+  ogTitle: 'Witnet Events Hub',
+  ogDescription:
+    'Explore where Witnet is sharing decentralized oracle tech, trustless data feeds, and blockchain insights — from global events to community calls and live streams',
+})
 definePageMeta({
   colorMode: 'light',
 })
@@ -259,10 +290,13 @@ const table = computed(() => {
   return eventsListToTableRows(pastEvents.value)
 })
 const setTagsAndLabelsColor: Record<string, string> = {
-  online: 'bg-wit-blue-600',
+  staking: 'bg-wit-blue-950',
+  defi: 'bg-wit-blue-900',
+  online: 'bg-wit-blue-800',
+  community: 'bg-wit-blue-700',
   offline: 'bg-black-950',
-  defi: 'bg-wit-blue-700',
-  gaming: 'bg-gray-800',
+  dev: 'bg-black-500',
+  gaming: 'bg-gray-600',
 }
 function eventsListToTableRows(events: Event[]): Row[] {
   return events.map((event: Event) => [
