@@ -12,6 +12,11 @@
       "build": "construye"
     }
   },
+  "banner": {
+    "title": "Programa de Embajadores de Witnet – Temporada 5",
+    "description": "Gana XP. Desbloquea recompensas exclusivas. Impulsa la revolución de los oráculos",
+    "actions": "Zeely"
+  },
   "hero": {
     "title": {
       "main": "El oráculo {0} {1} {2}",
