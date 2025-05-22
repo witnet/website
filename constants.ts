@@ -2,8 +2,7 @@ import { LocaleCodes, type Locale } from './types'
 
 export const URLS: Record<string, string> = {
   ado: 'https://github.com/adoracles/',
-  advocateProgram:
-    'https://witnet.notion.site/The-Witnet-Advocate-Program-f572baff6b1d49a69d4db785a924fc61',
+  advocateProgram: '#',
   bitmart: 'https://www.bitmart.com/trade/en-US?symbol=WIT_USDT',
   block_explorer: 'https://witnet.network/',
   changelly: 'https://changelly.com/exchange/wit',
@@ -71,6 +70,7 @@ export const URLS: Record<string, string> = {
   randomness:
     'https://docs.witnet.io/smart-contracts/witnet-randomness-oracle/generating-randomness',
   solidity_sdk: 'https://www.npmjs.com/package/witnet-solidity',
+  zealyQuestboard: 'https://zealy.io/cw/witnet/questboard',
 }
 
 export const languageLocales: Record<LocaleCodes, Locale> = {
@@ -93,3 +93,4 @@ export const GITHUB_RELEASE_URL =
   'https://github.com/witnet/witnet-rust/releases/latest'
 export const URL_RELEASE_BASE =
   'https://api.github.com/repos/witnet/witnet-rust/releases/latest'
+export const BANNER_END_DATE = '2025-06-01T10:00:00'
