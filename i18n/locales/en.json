@@ -13,6 +13,11 @@
       "calendar": "calendar"
     }
   },
+  "banner": {
+    "title": "Witnet Advocate Program – Season 5",
+    "description": "Earn XP. Unlock exclusive rewards. Champion the oracle revolution",
+    "action": "Zeely"
+  },
   "hero": {
     "title": {
       "main": "The most {0} {1} {2} {3} {4}",

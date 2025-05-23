@@ -93,3 +93,4 @@ export const GITHUB_RELEASE_URL =
   'https://github.com/witnet/witnet-rust/releases/latest'
 export const URL_RELEASE_BASE =
   'https://api.github.com/repos/witnet/witnet-rust/releases/latest'
+export const BANNER_END_DATE = '2025-06-01T10:00:00'
