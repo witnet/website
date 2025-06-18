@@ -4,7 +4,7 @@
     <div
       class="p-6 w-full grid grid-rows-[max-content_1fr_max-content] bg-white dark:text-wit-blue-500 min-h-screen relative"
       :class="{
-        'mt-[80px] md:mt-[150px] sm:mt-[200px] xs:mt-[216px]': ': bannerMargin',
+        'mt-[80px] md:mt-[150px] sm:mt-[200px] xs:mt-[216px]': bannerMargin,
       }"
     >
       <SocialLinks

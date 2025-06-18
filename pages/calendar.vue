@@ -297,6 +297,7 @@ const setTagsAndLabelsColor: Record<string, string> = {
   offline: 'bg-black-950',
   dev: 'bg-black-500',
   gaming: 'bg-gray-600',
+  web3: 'bg-wit-blue-600',
 }
 function eventsListToTableRows(events: Event[]): Row[] {
   return events.map((event: Event) => [
