@@ -91,7 +91,7 @@ const minutesFormated = computed(() => minutes.value % 60)
 const hoursFormated = computed(() => hours.value % 24)
 const isCountdownFinished = computed(() => currentTime.value > targetTime)
 const actionLink = computed(() =>
-  isCountdownFinished.value ? URLS.advocateProgram : URLS.zealyQuestboard,
+  isCountdownFinished.value ? URLS.zealyQuestboard : URLS.advocateProgram,
 )
 const actionText = computed(() =>
   isCountdownFinished.value ? t('banner.post-action') : t('banner.prev-action'),
