@@ -12,14 +12,6 @@
       "build": "construye"
     }
   },
-  "banner": {
-    "prev-title": "Programa de Embajadores de Witnet – Temporada 5",
-    "post-title": "Witnet Advocate Program – Season 5 begins now!",
-    "prev-description": "Gana XP. Desbloquea recompensas exclusivas. Impulsa la revolución de los oráculos",
-    "post-description": "Join the mission",
-    "prev-action": "Check out Zealy",
-    "post-action": "Claim your reward"
-  },
   "hero": {
     "title": {
       "main": "El oráculo {0} {1} {2}",
