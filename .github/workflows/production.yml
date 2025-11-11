@@ -23,8 +23,7 @@ jobs:
       - name: Get the latest tag
         id: gettag
         run: |
-          git fetch --tags
-          echo ::set-output name=TAG::$(git describe --tags $(git rev-list --tags --max-count=1))
+          echo "TAG=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
 
       - name: Create Deployment Files
         shell: bash
@@ -41,7 +40,7 @@ jobs:
           echo "$CADDY" > ./ansible/Caddyfile
           chmod 400 ./ansible/key.pem
           sed -i "s#LOKI-REPLACE-ME#$LOKI#g" ./ansible/docker-compose.yml
-          sed -i "s#<LATEST_PROD>#${{ steps.gettag.outputs.TAG }}#g" ./ansible/docker-compose.yml
+          sed -i "s#<LATEST_PROD>#${{ github.ref_name }}#g" ./ansible/docker-compose.yml
           sed -i "s#<NDID>#$NDID#g" ./ansible/docker-compose.yml
           sed -i "s#<NAPIK>#$NAPIK#g" ./ansible/docker-compose.yml
 
