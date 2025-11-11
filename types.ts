@@ -1,4 +1,4 @@
-import type { IconName } from '@fortawesome/fontawesome-svg-core'
+import type { IconName } from 'wit-vue-ui'
 
 export enum LocaleCodes {
   en = 'en',

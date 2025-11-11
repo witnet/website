@@ -1,6 +1,10 @@
 import { LocaleCodes, type Locale } from './types'
 
 export const URLS: Record<string, string> = {
+  uniswap: "https://app.uniswap.org/explore/tokens/ethereum/0xcafe5De18756817D98F4603F6828397406D4CaFE?inputCurrency=NATIVE",
+  pancakeswap: "https://pancakeswap.finance/swap?inputCurrency=ETH&chain=eth&outputCurrency=0xcafe5De18756817D98F4603F6828397406D4CaFE&chainOut=eth",
+  dextools: "https://www.dextools.io/app/en/ether/pair-explorer/0x1471491e583aceb6c500d5a108770eaadffe626e225cad2af427b0c75fc5e686?t=1761672940434",
+  oneinch: "https://app.1inch.io/swap?src=1:ETH&dst=1:WIT",
   ado: 'https://github.com/adoracles/',
   advocateProgram: '#',
   bitmart: 'https://www.bitmart.com/trade/en-US?symbol=WIT_USDT',
@@ -10,11 +14,9 @@ export const URLS: Record<string, string> = {
   discord: 'https://discord.gg/witnet',
   docker_node: 'https://hub.docker.com/r/witnet/witnet-rust/tags',
   documentation: 'https://docs.witnet.io/',
-  gate: 'https://www.gate.io/trade/WIT_USDT',
   github: 'https://github.com/witnet',
   grantProgram:
     'https://witnet.notion.site/The-Witnet-Grant-Program-0e6bc5ddbe4a4bf8a22c262dedfe268f',
-  letsexchange: 'https://letsexchange.io/coin/wit',
   linux_node: 'https://github.com/witnet/witnet-rust/releases',
   macos_node: 'https://github.com/witnet/witnet-rust/releases',
   mediaKit:

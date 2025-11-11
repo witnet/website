@@ -73,12 +73,10 @@
     "title": "Buy $WIT{0}",
     "description": "$WIT, the native coin of Witnet, is available on trusted and well-known crypto exchanges. By staking $WIT, you become a valuable part of the Wit/Community, contributing to the security, growth, and success of the decentralized future with Witnet.",
     "exchanges": {
-      "gate": "Gate.io",
-      "mexc": "MEXC",
-      "bitmart": "Bitmart",
-      "changelly": "Changelly",
-      "simpleswap": "SimpleSwap",
-      "letsexchange": "LetsExchange"
+      "uniswap": "Uniswap",
+      "pancakeswap": "PancakeSwap",
+      "dextools": "DexTools",
+      "oneinch": "1inch"
     }
   },
   "secure-section": {

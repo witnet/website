@@ -47,3 +47,6 @@
       shell: |
         docker image ls
         docker ps
+
+
+

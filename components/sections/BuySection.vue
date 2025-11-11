@@ -17,7 +17,7 @@
         {{ t('buy-section.description') }}
       </p>
       <div
-        class="grid grid-cols-3 gap-xl mt-xl sm:grid-cols-1 md:grid-cols-2 justify-items-left"
+        class="grid grid-cols-2 gap-xl mt-xl sm:grid-cols-1 md:grid-cols-2 justify-items-left"
       >
         <WIconText
           v-for="exchange in exchanges"
@@ -43,34 +43,26 @@ import type { Exchange } from '@/types.js'
 const { t } = useI18n()
 const exchanges: Array<Exchange> = [
   {
-    name: t('buy-section.exchanges.gate'),
-    logo: IconName.Gate,
-    link: URLS.gate,
+    name: t('buy-section.exchanges.uniswap'),
+    logo: IconName.Uniswap,
+    link: URLS.uniswap,
   },
   {
-    name: t('buy-section.exchanges.mexc'),
-    logo: IconName.Mexc,
-    link: URLS.mexc,
+    name: t('buy-section.exchanges.pancakeswap'),
+    logo: IconName.Pancakeswap,
+    link: URLS.pancakeswap,
   },
   {
-    name: t('buy-section.exchanges.bitmart'),
-    logo: IconName.Bitmart,
-    link: URLS.bitmart,
+    name: t('buy-section.exchanges.dextools'),
+    logo: IconName.Dextools,
+    link: URLS.dextools,
   },
   {
-    name: t('buy-section.exchanges.changelly'),
-    logo: IconName.Changelly,
-    link: URLS.changelly,
-  },
-  {
-    name: t('buy-section.exchanges.simpleswap'),
-    logo: IconName.Simpleswap,
-    link: URLS.simpleSwap,
-  },
-  {
-    name: t('buy-section.exchanges.letsexchange'),
-    logo: IconName.Letsexchange,
-    link: URLS.letsexchange,
-  },
+    name: t('buy-section.exchanges.oneinch'),
+    logo: IconName.Oneinch,
+    link: URLS.oneinch,
+  }
 ]
+
+console.log('exchanges', exchanges)
 </script>
