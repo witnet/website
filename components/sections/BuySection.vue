@@ -61,7 +61,7 @@ const exchanges: Array<Exchange> = [
     name: t('buy-section.exchanges.oneinch'),
     logo: IconName.Oneinch,
     link: URLS.oneinch,
-  }
+  },
 ]
 
 console.log('exchanges', exchanges)
